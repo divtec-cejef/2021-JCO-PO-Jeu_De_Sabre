@@ -1,0 +1,52 @@
+{
+    "name": "PSMoveActions",
+    "maps": [
+        {
+            "name": "Buttons",
+            "id": "0edbfaf2-e0c3-47b5-811f-1fe6ea50643e",
+            "actions": [
+                {
+                    "name": "Trigger",
+                    "type": "Button",
+                    "id": "ec66f6cb-3411-4310-96d0-9cdab3fcf8ce",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "8039d6ac-2d46-47e3-977f-65e6fdc31801",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3a1e1f6c-180b-4172-a061-6444da62380f",
+                    "path": "<HID::Sony Computer Entertainment Motion Controller>/button21",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "808fd5d8-7fcb-44d9-91e3-64a97a022890",
+                    "path": "<HID::Sony Computer Entertainment Motion Controller>/button20",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
