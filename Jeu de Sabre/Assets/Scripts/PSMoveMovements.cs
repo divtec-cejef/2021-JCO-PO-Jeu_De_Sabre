@@ -73,7 +73,7 @@ public class PSMoveMovements : MonoBehaviour
      */
     private void ChangeColor()
     {
-        Color BasicColor = Color.white; 
+        Color BasicColor = Color.yellow; 
         // switch (ColorCount){
         //     case 1: BasicColor = cRed; break;
         //     case 2:BasicColor = cBlue; break;
@@ -87,53 +87,36 @@ public class PSMoveMovements : MonoBehaviour
         gameObject.GetComponent<Renderer>().material.color = BasicColor;
         ColorCount++;
     }
-    
-    public void SetLED(Color color) {
-        PSMoveAPI.psmove_set_leds(move, (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
-    }
 
     private void Update() {
+        /* Vérifie si l'initialisation est terminé avant d'agir sur le PSMove */
         if (TestConnection.initDone)
         {
             PSMoveAPI.psmove_update_leds(move);
-
-            PSMove_Battery_Level batteryLvl = PSMoveAPI.psmove_get_battery(move);
-            //LedColorBattery(b);
+            //PSMove_Battery_Level batteryLvl = PSMoveAPI.psmove_get_battery(move);
+            //LedColorBattery(batteryLvl);
             
+            /* Récupère l'orientation du PSMove */
             PSMoveAPI.psmove_poll(move);
-
-            //print(PSMoveAPI.psmove_get_accelerometer_frame(move,frame ,ref ow, ref ox, ref oy, ref oz));
             PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
             print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
 
+            /* Affectation de l'orientation à l'objet en cours */
             quaternion = new Quaternion (-axeX, axeZ, axeY, ow);
             transform.rotation = quaternion;
         }
     }
 
+    /**
+     * Lorsque le jeu est fermé, déconnexion des PSMove
+     */
     private void OnApplicationQuit() {
         PSMoveAPI.psmove_disconnect(move);
     }
-
-    private float getDivValue(float value, float maxValue, float divValue = 360f)
-    {
-        double div = divValue / maxValue;
-        value = (float)(div * value);
-        return value;
-    }
-
-    private void printOrientationValue(float attitude, float bank, float heading)
-    {
-        bool flag = false;
-        /*if (heading < 0){
-            heading *= -1;
-        }*/
-        double div = 360.0f / 5000.0f;
-        //print(heading);
-        heading = (float)(div * heading);
-        //print(attitude + " " + heading + " " + bank);
-    }
     
+    /**
+     * Modifie la couleur de la LED du PSMove en fonction du niveau de batterie passé en paramètre
+     */
     void LedColorBattery(PSMove_Battery_Level battery){
         switch (battery)
         {
@@ -155,11 +138,24 @@ public class PSMoveMovements : MonoBehaviour
                 break;
         }
     }
+    
+    /**
+     * Permet de traduire la couleur passéE en paramètre au format demandé par la fonction psmove_set_leds()
+     */
+    public void SetLED(Color color) {
+        PSMoveAPI.psmove_set_leds(move, (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
+    }
 
+    /**
+     * Permet d'activer les contrôles des boutons
+     */
     void OnEnable(){
         actions.Buttons.Enable();
     }
 
+    /**
+     * Permet de désactiver les contrôles des boutons
+     */
     void OnDisable(){
         actions.Buttons.Disable();
     }
