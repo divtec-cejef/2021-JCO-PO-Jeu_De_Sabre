@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657892, g: 0.4964128, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -382,8 +382,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899207705}
-  - component: {fileID: 1899207704}
-  - component: {fileID: 1899207703}
   m_Layer: 0
   m_Name: Katana
   m_TagString: Untagged
@@ -391,30 +389,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1899207703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899207702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd62b59e1915ddf4c96ab9457b32447d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1899207704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899207702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3933bc7bac594749904915697f60231, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1899207705
 Transform:
   m_ObjectHideFlags: 0
