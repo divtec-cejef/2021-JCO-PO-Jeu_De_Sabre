@@ -18,8 +18,7 @@ public class COLLISION : MonoBehaviour
    private void OnCollisionEnter(Collision collision)
    {
       compteur++;
-      
-      
+
    }
    
 
