@@ -100,6 +100,16 @@ public class PSMoveMovements : MonoBehaviour
             PSMoveAPI.psmove_poll(move);
             PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
             print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
+            /*
+            float owConp = 0.0007f;
+            float axeXConp = 0.01f;
+            float axeYConp =0.003f;
+            float axeZConp =0.009f;
+            */
+            ow -= 0.0015f;
+            axeX -= 0.01f;
+            axeY -= 0.003f;
+            axeZ += 0.01f;
 
             /* Affectation de l'orientation à l'objet en cours */
             quaternion = new Quaternion (-axeX, axeZ, axeY, ow);
