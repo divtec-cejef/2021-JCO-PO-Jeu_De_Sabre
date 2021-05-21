@@ -99,7 +99,7 @@ public class PSMoveMovements : MonoBehaviour
             /* Récupère l'orientation du PSMove */
             PSMoveAPI.psmove_poll(move);
             PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
-            print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
+            //print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
 
             /* Affectation de l'orientation à l'objet en cours */
             quaternion = new Quaternion (-axeX, axeZ, axeY, ow);
