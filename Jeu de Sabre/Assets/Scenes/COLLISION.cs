@@ -1,13 +1,15 @@
 
 using System;
 using UnityEngine;
-
+using System.Collections;
+using System.Timers;
 using UnityEngine.UI;
 
 public class COLLISION : MonoBehaviour
 {
    public int compteur;
-
+  
+   
    void OnGUI()
    {
       GUI.TextArea(new Rect(0, 0, 30, 20), compteur.ToString());
@@ -16,14 +18,10 @@ public class COLLISION : MonoBehaviour
    private void OnCollisionEnter(Collision collision)
    {
       compteur++;
-      PSMoveAPI.psmove_set_rumble(TestConnection.handle, 250);
-
-      foreach (ContactPoint contact in collision.contacts)
-      {
-         Debug.DrawRay(contact.point, contact.normal, Color.white);
-      }
-
+      
+      
    }
+   
 
    /*
    void OnCollisionStay(Collision collision)
