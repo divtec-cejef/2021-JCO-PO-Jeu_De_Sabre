@@ -1,11 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering.VirtualTexturing;
-
-public class PSMoveMovements : MonoBehaviour
+public class PSMoveSabre1 : MonoBehaviour
 {
     // Permet de récupérer l'appui d'une touche du PSMove
     private PSMoveActions actions;
@@ -33,7 +30,7 @@ public class PSMoveMovements : MonoBehaviour
      */
     public static void init()
     {
-        move = TestConnection.handle;
+        move = TestConnection.manette_1;
         PSMoveAPI.psmove_reset_orientation(move);
         PSMoveAPI.psmove_enable_orientation(move, PSMove_Bool.PSMove_True);
     }
@@ -107,13 +104,6 @@ public class PSMoveMovements : MonoBehaviour
         }
     }
 
-    /**
-     * Lorsque le jeu est fermé, déconnexion des PSMove
-     */
-    private void OnApplicationQuit() {
-        PSMoveAPI.psmove_disconnect(move);
-    }
-    
     /**
      * Modifie la couleur de la LED du PSMove en fonction du niveau de batterie passé en paramètre
      */

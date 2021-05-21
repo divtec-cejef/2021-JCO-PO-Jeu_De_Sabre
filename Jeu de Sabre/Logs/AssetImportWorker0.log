@@ -1,0 +1,1133 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'fr' Physical Memory: 8060 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57197
+Successfully changed project path to: C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 54.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics 655 (ID=0x3ea5)
+    Vendor:   
+    VRAM:     4030 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001758 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.138 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001586 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 49.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.952 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1552 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.8 MB.
+System memory in use after: 80.6 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1998.
+Total: 2.945300 ms (FindLiveObjects: 0.469700 ms CreateObjectMapping: 0.198600 ms MarkObjects: 1.912200 ms  DeleteObjects: 0.364000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Sol.mat
+  artifactKey: Guid(1faf510a65b346e42bd330a0f9d32543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sol.mat using Guid(1faf510a65b346e42bd330a0f9d32543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f236602c33a02c611a8ec5cee86aa3') in 0.100821 seconds
+  Import took 0.104008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(b12952a7ed7b7c4428167a866c16790d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(b12952a7ed7b7c4428167a866c16790d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12622ce5781c49b21420d3bbc2ba0e76') in 0.027422 seconds
+  Import took 0.031006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(f6501323ce2ab7e41b92da77868226ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(f6501323ce2ab7e41b92da77868226ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c838a7085da10b2d22c444b43eb81a6f') in 0.017590 seconds
+  Import took 0.021698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.680185 seconds.
+  path: Assets/PolygonSamurai/Textures/Characters_Texture_01.png
+  artifactKey: Guid(023f25b440efc7a42a0352ee7464260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/Characters_Texture_01.png using Guid(023f25b440efc7a42a0352ee7464260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64dd9c0bbddbca5e53be2bbd00628194') in 0.027757 seconds
+  Import took 0.031776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/PolygonSamurai/Textures/Characters_Texture_02.png
+  artifactKey: Guid(0f0a3e20c1fa73c498e81e6c4ad76d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/Characters_Texture_02.png using Guid(0f0a3e20c1fa73c498e81e6c4ad76d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5758f334d12803f8fa7a25ddc9c2fa68') in 0.025326 seconds
+  Import took 0.029717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Emmision_Night.png
+  artifactKey: Guid(9430476696fc3204ea56ee7ac65539c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Emmision_Night.png using Guid(9430476696fc3204ea56ee7ac65539c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885d4499ff3e1e7beff88a02727f72c7') in 0.028995 seconds
+  Import took 0.035454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/PolygonSamurai/Textures/Characters_Texture_03.png
+  artifactKey: Guid(41ac08dd23d0c8649897f02aca9b74c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/Characters_Texture_03.png using Guid(41ac08dd23d0c8649897f02aca9b74c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe62e4fa5bb80849adc5cd85fa5d4dc') in 0.019957 seconds
+  Import took 0.028067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000650 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_03.png
+  artifactKey: Guid(d0d8bf027b133cd4a94474a9a760f2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_03.png using Guid(d0d8bf027b133cd4a94474a9a760f2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb4d2a3960dbe96f87fd8131d915e52') in 0.017863 seconds
+  Import took 0.023001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_01.png
+  artifactKey: Guid(57fee65f3ac7eb64e874d0c659e718ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_01.png using Guid(57fee65f3ac7eb64e874d0c659e718ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41615eddf407cc57dada0531873d2b92') in 0.015189 seconds
+  Import took 0.018464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_04.png
+  artifactKey: Guid(f37027a7baf844d41b58d162d542e902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_04.png using Guid(f37027a7baf844d41b58d162d542e902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f900f2c50c1012d8e6d422f028520d6d') in 0.016327 seconds
+  Import took 0.019963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_02.png
+  artifactKey: Guid(5dc12c55c5128854093642240dd83424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_02.png using Guid(5dc12c55c5128854093642240dd83424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef8fe35120b2788b09fdfa3172653c9') in 0.011205 seconds
+  Import took 0.013954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.152213 seconds.
+  path: Assets/Scripts/PSMoveSabre1.cs
+  artifactKey: Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveSabre1.cs using Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18743d5d99315ed0ae5db70c702df27') in 0.009406 seconds
+  Import took 0.012416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028427 seconds.
+  path: Assets/Scripts/PSMoveSabre1.cs
+  artifactKey: Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveSabre1.cs using Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18743d5d99315ed0ae5db70c702df27') in 0.002854 seconds
+  Import took 0.007876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.870102 seconds.
+  path: Assets/Scripts/PSMoveSabre2.cs
+  artifactKey: Guid(d731cb36e852dce4d9a3b269d7597a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveSabre2.cs using Guid(d731cb36e852dce4d9a3b269d7597a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1f80bec935180e65adbe42a87e71bc') in 0.007771 seconds
+  Import took 0.011688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.948298 seconds.
+  path: Assets/Scenes/LeGazon.mat
+  artifactKey: Guid(44320aef2d2069d4a9367bd0a6c0de6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LeGazon.mat using Guid(44320aef2d2069d4a9367bd0a6c0de6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23887a968a55ca09b7808305a22a103b') in 0.021286 seconds
+  Import took 0.024866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Scenes/LeViolet.mat
+  artifactKey: Guid(6fc1bf5ea9e025646bfae7ca8d9433da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LeViolet.mat using Guid(6fc1bf5ea9e025646bfae7ca8d9433da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e481ab5ab68b9d0eac95080090a478f') in 0.023835 seconds
+  Import took 0.027096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000684 seconds.
+  path: Assets/Scenes/LeGazon.mat
+  artifactKey: Guid(44320aef2d2069d4a9367bd0a6c0de6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LeGazon.mat using Guid(44320aef2d2069d4a9367bd0a6c0de6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23887a968a55ca09b7808305a22a103b') in 0.019447 seconds
+  Import took 0.024171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007685 seconds.
+  path: Assets/Scenes/LeViolet.mat
+  artifactKey: Guid(6fc1bf5ea9e025646bfae7ca8d9433da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LeViolet.mat using Guid(6fc1bf5ea9e025646bfae7ca8d9433da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e481ab5ab68b9d0eac95080090a478f') in 0.023973 seconds
+  Import took 0.028810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 134.711356 seconds.
+  path: Assets/Scenes/PlayerControl.inputactions
+  artifactKey: Guid(20151e3e49e7e6a4fb18bcb6a6dc0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayerControl.inputactions using Guid(20151e3e49e7e6a4fb18bcb6a6dc0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2d2039372334cf10b3e4a6bd429256') in 0.031010 seconds
+  Import took 0.038480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Scenes/TRANSPARET.mat
+  artifactKey: Guid(e30ddce9659b1e5489da84e41f39ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TRANSPARET.mat using Guid(e30ddce9659b1e5489da84e41f39ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52171c5d763753b887bac612216b73ae') in 0.030351 seconds
+  Import took 0.038054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000764 seconds.
+  path: Assets/Scenes/PlayerControl.inputactions
+  artifactKey: Guid(20151e3e49e7e6a4fb18bcb6a6dc0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayerControl.inputactions using Guid(20151e3e49e7e6a4fb18bcb6a6dc0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2d2039372334cf10b3e4a6bd429256') in 0.004238 seconds
+  Import took 0.007851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022691 seconds.
+  path: Assets/Scenes/TRANSPARET.mat
+  artifactKey: Guid(e30ddce9659b1e5489da84e41f39ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TRANSPARET.mat using Guid(e30ddce9659b1e5489da84e41f39ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52171c5d763753b887bac612216b73ae') in 0.011080 seconds
+  Import took 0.017209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.451943 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(6fc25711be0372c4e88628e4fbc73c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(6fc25711be0372c4e88628e4fbc73c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ddc38c0b7badee3cb39db0023cc02ef') in 0.003723 seconds
+  Import took 0.008459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.031394 seconds.
+  path: Assets/Scripts/Collision_FX.cs
+  artifactKey: Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision_FX.cs using Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca727b58641699a274c3a8b9c928133') in 0.017155 seconds
+  Import took 0.022351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.198112 seconds.
+  path: Assets/Scripts/Collision_FX.cs
+  artifactKey: Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision_FX.cs using Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1434219514310a7b69dd8eaafa2a04e0') in 0.004429 seconds
+  Import took 0.008537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.023091 seconds.
+  path: Assets/Scripts/Collision_FX.cs
+  artifactKey: Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision_FX.cs using Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec6f4130942c6a26776f02831fb4123') in 0.019427 seconds
+  Import took 0.028878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.121380 seconds.
+  path: Assets/Scripts/Collision_FX.cs
+  artifactKey: Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision_FX.cs using Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590fd7b8f6a7a958785f1528f3ebab37') in 0.003874 seconds
+  Import took 0.008596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.732283 seconds.
+  path: Assets/Scripts/Collision_FX.cs
+  artifactKey: Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision_FX.cs using Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db800b73b3a823315ddf5f663a52b02') in 0.005092 seconds
+  Import took 0.012543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.696944 seconds.
+  path: Assets/Scripts/PSMoveSabre1.cs
+  artifactKey: Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveSabre1.cs using Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b9e4cfc29359596a6fb11ef26599f7') in 0.009782 seconds
+  Import took 0.013091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 338.068539 seconds.
+  path: Assets/Scripts/COLLISION.cs
+  artifactKey: Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/COLLISION.cs using Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f35f0a59365550f35af9decf374159') in 0.010767 seconds
+  Import took 0.014587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.031093 seconds.
+  path: Assets/Scripts/PSMoveApi.cs
+  artifactKey: Guid(31496d4a37ab281428c03af57716abe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveApi.cs using Guid(31496d4a37ab281428c03af57716abe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81daf5705de00e19ebcb5281db1cc880') in 0.007763 seconds
+  Import took 0.011806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.654563 seconds.
+  path: Assets/Scripts/PSMoveSabre1.cs
+  artifactKey: Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveSabre1.cs using Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778e44d4f7b26cc041d9576a6b0ac967') in 0.002530 seconds
+  Import took 0.006355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.282974 seconds.
+  path: Assets/Scripts/TestConnection.cs
+  artifactKey: Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TestConnection.cs using Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '478647c3860f2e8ec4623ca766d12dc8') in 0.010783 seconds
+  Import took 0.016276 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003704 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.968 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1528 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.2 MB.
+System memory in use after: 82.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2044.
+Total: 3.204000 ms (FindLiveObjects: 0.245800 ms CreateObjectMapping: 0.127800 ms MarkObjects: 2.182900 ms  DeleteObjects: 0.646500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.293089 seconds.
+  path: Assets/Scripts/TestConnection.cs
+  artifactKey: Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TestConnection.cs using Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9439ae3118cd20f30a9c194413e7d0c7') in 0.004940 seconds
+  Import took 0.008409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001290 seconds.
+  path: Assets/Scripts/TestConnection.cs
+  artifactKey: Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TestConnection.cs using Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9439ae3118cd20f30a9c194413e7d0c7') in 0.002988 seconds
+  Import took 0.006322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.397994 seconds.
+  path: Assets/Scripts/PSMoveSabr33e1.cs
+  artifactKey: Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveSabr33e1.cs using Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebd5fdbf720f6aa9b3b82057f602a1f') in 0.010649 seconds
+  Import took 0.018381 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001811 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.900 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1528 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2047.
+Total: 3.160000 ms (FindLiveObjects: 0.390300 ms CreateObjectMapping: 0.124400 ms MarkObjects: 2.310700 ms  DeleteObjects: 0.333800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001308 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.882 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1529 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2051.
+Total: 3.034800 ms (FindLiveObjects: 0.409500 ms CreateObjectMapping: 0.146900 ms MarkObjects: 2.016300 ms  DeleteObjects: 0.461200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001355 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.954 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1529 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2054.
+Total: 3.124300 ms (FindLiveObjects: 0.238100 ms CreateObjectMapping: 0.083300 ms MarkObjects: 2.468600 ms  DeleteObjects: 0.333000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001473 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.935 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1528 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2056.
+Total: 3.266700 ms (FindLiveObjects: 0.370600 ms CreateObjectMapping: 0.086600 ms MarkObjects: 2.175300 ms  DeleteObjects: 0.633000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001562 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.968 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1528 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2059.
+Total: 2.485100 ms (FindLiveObjects: 0.162500 ms CreateObjectMapping: 0.053800 ms MarkObjects: 1.909300 ms  DeleteObjects: 0.357600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001321 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.980 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1528 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2062.
+Total: 2.514000 ms (FindLiveObjects: 0.289500 ms CreateObjectMapping: 0.151900 ms MarkObjects: 1.566300 ms  DeleteObjects: 0.505500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.811938 seconds.
+  path: Assets/Scripts/PSMoveSabr33e1.cs
+  artifactKey: Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveSabr33e1.cs using Guid(cd62b59e1915ddf4c96ab9457b32447d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e93086493430c2b3b9796fa543334c0') in 0.014793 seconds
+  Import took 0.020092 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001979 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.892 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1527 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2064.
+Total: 4.004900 ms (FindLiveObjects: 0.354500 ms CreateObjectMapping: 0.154800 ms MarkObjects: 3.110700 ms  DeleteObjects: 0.382800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.534331 seconds.
+  path: Assets/Scripts/FX_Collision.cs
+  artifactKey: Guid(ffb9420eaf570184fbbab4037a8dd06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FX_Collision.cs using Guid(ffb9420eaf570184fbbab4037a8dd06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aeef57351f1bdf0d5ffe3ac79071a67') in 0.013063 seconds
+  Import took 0.017417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.238627 seconds.
+  path: Assets/Scripts/PSMoveSabre1.cs
+  artifactKey: Guid(3f2630479ac971346bd2f86cb6822db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveSabre1.cs using Guid(3f2630479ac971346bd2f86cb6822db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c60154adda509d012a0a5b4a1c92ea') in 0.002454 seconds
+  Import took 0.005655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001985 seconds.
+  path: Assets/Scripts/PSMoveSabre1.cs
+  artifactKey: Guid(3f2630479ac971346bd2f86cb6822db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PSMoveSabre1.cs using Guid(3f2630479ac971346bd2f86cb6822db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c60154adda509d012a0a5b4a1c92ea') in 0.004605 seconds
+  Import took 0.009293 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001858 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1527 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2067.
+Total: 2.436200 ms (FindLiveObjects: 0.162100 ms CreateObjectMapping: 0.056600 ms MarkObjects: 1.860800 ms  DeleteObjects: 0.355500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001296 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.905 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1526 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2069.
+Total: 3.187900 ms (FindLiveObjects: 0.266200 ms CreateObjectMapping: 0.112100 ms MarkObjects: 2.392600 ms  DeleteObjects: 0.415700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.233804 seconds.
+  path: Assets/Scripts/Collision_FX.cs
+  artifactKey: Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision_FX.cs using Guid(8f80b1763e753574fbc9a53984df23d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b25a29963a000353012ee1d768d336') in 0.006360 seconds
+  Import took 0.009650 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001733 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.874 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.7 MB.
+System memory in use after: 82.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2071.
+Total: 5.622300 ms (FindLiveObjects: 0.603800 ms CreateObjectMapping: 0.182300 ms MarkObjects: 4.248900 ms  DeleteObjects: 0.583400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.318134 seconds.
+  path: Assets/PolygonSamurai/Prefabs/SM_Env_Tile_Grass_01.prefab
+  artifactKey: Guid(1675f8fe62f57654b95150d7df83d94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/SM_Env_Tile_Grass_01.prefab using Guid(1675f8fe62f57654b95150d7df83d94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c19bb96ea9cb0869e46a65396dc6eb1') in 0.071937 seconds
+  Import took 0.075384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.422927 seconds.
+  path: Assets/PolygonSamurai/Models/Characters.fbx
+  artifactKey: Guid(2ba66718d3169ae42a05d8facf302228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Characters.fbx using Guid(2ba66718d3169ae42a05d8facf302228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c3c95367566f88aede41596b738a26') in 0.272456 seconds
+  Import took 0.276437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Large_Blank_01.fbx
+  artifactKey: Guid(b6d5426c179b1c34280f706016bd54ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Large_Blank_01.fbx using Guid(b6d5426c179b1c34280f706016bd54ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c834169e6698e5af1850f60b4d127229') in 0.025768 seconds
+  Import took 0.029210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Gates_01.fbx
+  artifactKey: Guid(446a1942afb45b444b3a90542051070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Gates_01.fbx using Guid(446a1942afb45b444b3a90542051070a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ecf0c7ab21b5d95907f4a1a7efa5493') in 0.022916 seconds
+  Import took 0.025679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Small_Blank_01.fbx
+  artifactKey: Guid(af67303f9876d7e47b2085bfed994180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Small_Blank_01.fbx using Guid(af67303f9876d7e47b2085bfed994180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c680210f2ab5dda7b3e00ae5ebeea8d') in 0.024098 seconds
+  Import took 0.027291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Small_01_Convex.asset
+  artifactKey: Guid(b8dd2d74a42b862479efa2711c85332a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Small_01_Convex.asset using Guid(b8dd2d74a42b862479efa2711c85332a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10d16e4b7258f9493d07779735e01916') in 0.014035 seconds
+  Import took 0.017911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Block_Stairs_01.fbx
+  artifactKey: Guid(263c79b67299cb047a9649f135611a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Block_Stairs_01.fbx using Guid(263c79b67299cb047a9649f135611a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b892681292543487fa747c13e030ade') in 0.023446 seconds
+  Import took 0.027092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Block_CornerPillar_01.fbx
+  artifactKey: Guid(7ee2a8c34f4efd249970453c6d7849e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Block_CornerPillar_01.fbx using Guid(7ee2a8c34f4efd249970453c6d7849e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2a9b13b2f73703c20f2b6915312885') in 0.020312 seconds
+  Import took 0.023864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Large_01.fbx
+  artifactKey: Guid(e5e795c309a42cd4c93ac649a4865013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Large_01.fbx using Guid(e5e795c309a42cd4c93ac649a4865013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bce46f6eb395a1fe7a18f0006c6161c') in 0.017712 seconds
+  Import took 0.020956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Large_03_Convex.asset
+  artifactKey: Guid(3376722d140ee4e479a694da69713fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Large_03_Convex.asset using Guid(3376722d140ee4e479a694da69713fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1bf0560628b8292b525a7e1d00c2d45') in 0.015755 seconds
+  Import took 0.019150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Large_01_Convex.asset
+  artifactKey: Guid(586a9bafd301412428be66168ee82799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Large_01_Convex.asset using Guid(586a9bafd301412428be66168ee82799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aead5e608ce0150a566e2ec5849d42f') in 0.015776 seconds
+  Import took 0.018674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Small_Windows_01.fbx
+  artifactKey: Guid(2ea58930a3c94b4499d944ec24a5471b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Small_Windows_01.fbx using Guid(2ea58930a3c94b4499d944ec24a5471b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8924702d4710d2f65b7471ee79998a8e') in 0.018988 seconds
+  Import took 0.022076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Small_01.fbx
+  artifactKey: Guid(d2e9cff8127e7dc4c86284b6b9f7ad1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Small_01.fbx using Guid(d2e9cff8127e7dc4c86284b6b9f7ad1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94894a9a925abec58bb1ffe891296169') in 0.021831 seconds
+  Import took 0.024857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Block_01_Convex.asset
+  artifactKey: Guid(7a317fc7fa2275545b6f330e4038bcff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Block_01_Convex.asset using Guid(7a317fc7fa2275545b6f330e4038bcff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6223cf26b8eb1789ddfc3e3cc39891c') in 0.022363 seconds
+  Import took 0.025174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_01_Convex 1.asset
+  artifactKey: Guid(62d4e4a6a92ab8c4b824456e1cd75078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_01_Convex 1.asset using Guid(62d4e4a6a92ab8c4b824456e1cd75078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b97ca7bda9c9a0a959d7722c08cdb2') in 0.020280 seconds
+  Import took 0.023583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_01_Convex.asset
+  artifactKey: Guid(262f2a80e70ee804fa107d9bdb47c8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_01_Convex.asset using Guid(262f2a80e70ee804fa107d9bdb47c8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '396c807d3544a9be852e129c64792312') in 0.015215 seconds
+  Import took 0.018049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Large_Windows_01.fbx
+  artifactKey: Guid(5469d3b36f6d86642b46472ee88217b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Large_Windows_01.fbx using Guid(5469d3b36f6d86642b46472ee88217b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba8e7e4bbb84414d22f284e230fc134') in 0.019308 seconds
+  Import took 0.022542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Top_01.fbx
+  artifactKey: Guid(eed3e0b25e36d2c49a2e7495ae050776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Top_01.fbx using Guid(eed3e0b25e36d2c49a2e7495ae050776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236436dc53488943bfa17f4dae8782ad') in 0.016437 seconds
+  Import took 0.019713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Medium_Windows_01.fbx
+  artifactKey: Guid(dceba9251b44d394c87ffb00c65e73bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Medium_Windows_01.fbx using Guid(dceba9251b44d394c87ffb00c65e73bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffa1d72aefd2b5026ffebec0c10cf02') in 0.020037 seconds
+  Import took 0.022954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_02.fbx
+  artifactKey: Guid(6e26c8013ca9bf242aca305e2d2e33f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_02.fbx using Guid(6e26c8013ca9bf242aca305e2d2e33f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '110b21161eab9b617d44e9cda29c1cef') in 0.019823 seconds
+  Import took 0.022853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Small_02_Convex.asset
+  artifactKey: Guid(24b0fe19312d487418c3ac21732f1e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Small_02_Convex.asset using Guid(24b0fe19312d487418c3ac21732f1e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c40da733a7ef8d3135343d92686621b4') in 0.014501 seconds
+  Import took 0.017832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Large_03.fbx
+  artifactKey: Guid(2633809f3f509d94d807335e87e7eaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Large_03.fbx using Guid(2633809f3f509d94d807335e87e7eaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01fe40b2a0f32093ff442c2910a2d8de') in 0.023269 seconds
+  Import took 0.026443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Large_02_Convex.asset
+  artifactKey: Guid(f61390718776a0f488e81792e47dcb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Large_02_Convex.asset using Guid(f61390718776a0f488e81792e47dcb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab861d68586fc1a40ef7c2258a80215') in 0.015492 seconds
+  Import took 0.018158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Large_02.fbx
+  artifactKey: Guid(db41c1fd11d663b4fac9962d93078aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Large_02.fbx using Guid(db41c1fd11d663b4fac9962d93078aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e85fa6dad6476d6cdeef60ee1d657a') in 0.020366 seconds
+  Import took 0.024146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Block_CornerPillar_01_Convex 1.asset
+  artifactKey: Guid(5bc6cfeed539a764a80de555bbb111a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Block_CornerPillar_01_Convex 1.asset using Guid(5bc6cfeed539a764a80de555bbb111a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3317ba96630ca5fa615836771d81f0c5') in 0.018630 seconds
+  Import took 0.021789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_01.fbx
+  artifactKey: Guid(bb95b6e622b5d3b4487593fbd1b80d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_01.fbx using Guid(bb95b6e622b5d3b4487593fbd1b80d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e9c9bfa55180616e30a2cb050251a6') in 0.020056 seconds
+  Import took 0.022679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_BridgeCover_01.fbx
+  artifactKey: Guid(02e9f47cbe1b0944bafb85d3ec8c7fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_BridgeCover_01.fbx using Guid(02e9f47cbe1b0944bafb85d3ec8c7fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a9e72e1ede3d7ff38a49ce16f3d018') in 0.019351 seconds
+  Import took 0.022579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Block_CornerPillar_01_Convex.asset
+  artifactKey: Guid(12be5a64efc1acd4a908e5ae149b859d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Block_CornerPillar_01_Convex.asset using Guid(12be5a64efc1acd4a908e5ae149b859d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0611f1f68015559c0fed6b302804fccf') in 0.017502 seconds
+  Import took 0.021170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_02_Convex.asset
+  artifactKey: Guid(32afe8bbd474ca44a97244fb0171c224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_02_Convex.asset using Guid(32afe8bbd474ca44a97244fb0171c224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5545b8b06f8d9ee2354ec21e8c273cb1') in 0.015090 seconds
+  Import took 0.017883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Medium_Blank_01.fbx
+  artifactKey: Guid(d681687983887c74eb3fd2dfda489b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Base_Medium_Blank_01.fbx using Guid(d681687983887c74eb3fd2dfda489b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586d4878bd5160646cca23e12df473f2') in 0.016264 seconds
+  Import took 0.019971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_01_Convex 2.asset
+  artifactKey: Guid(37923ab0307f24e4b9a6fa3de551d5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Castle_Roof_Addon_01_Convex 2.asset using Guid(37923ab0307f24e4b9a6fa3de551d5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a634ce01c685ed39d227f4123092d995') in 0.023569 seconds
+  Import took 0.026780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Large_Door_01.fbx
+  artifactKey: Guid(03a980fb20d66824a865a405634ef233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Large_Door_01.fbx using Guid(03a980fb20d66824a865a405634ef233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b79d9e0dae2cd40baa96fe649ba8e96') in 0.021294 seconds
+  Import took 0.024685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Block_01.fbx
+  artifactKey: Guid(18ba8b39888e8f840b772920dbdbd8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Block_01.fbx using Guid(18ba8b39888e8f840b772920dbdbd8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4454053844abc0d2a2491ab9db43133b') in 0.019180 seconds
+  Import took 0.022668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Small_02.fbx
+  artifactKey: Guid(d571117ebbdedcd49bc58f214915f724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Small_02.fbx using Guid(d571117ebbdedcd49bc58f214915f724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af5638146ed962bbeb4e2fa436e1ad6') in 0.020519 seconds
+  Import took 0.023946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000501 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Bld_Base_Large_DoorWay_01.fbx
+  artifactKey: Guid(7f216871dfcf7cf46990bc9dafc424bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Bld_Base_Large_DoorWay_01.fbx using Guid(7f216871dfcf7cf46990bc9dafc424bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61796573810581cd64c326bd5a19f0e') in 0.019855 seconds
+  Import took 0.024005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.375043 seconds.
+  path: Assets/Scripts/TestConnection.cs
+  artifactKey: Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TestConnection.cs using Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e729a5fdbfc8f053da8868912f9d43') in 0.009656 seconds
+  Import took 0.014810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.710932 seconds.
+  path: Assets/Scripts/TestConnection.cs
+  artifactKey: Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TestConnection.cs using Guid(d3933bc7bac594749904915697f60231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f270687893e25a3682b52aaa624314') in 0.005523 seconds
+  Import took 0.010182 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.928 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.6 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2079.
+Total: 2.181100 ms (FindLiveObjects: 0.162200 ms CreateObjectMapping: 0.055400 ms MarkObjects: 1.599200 ms  DeleteObjects: 0.363100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001260 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.924 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2082.
+Total: 3.156600 ms (FindLiveObjects: 0.369300 ms CreateObjectMapping: 0.126300 ms MarkObjects: 2.308500 ms  DeleteObjects: 0.351500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001428 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.869 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.5 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2085.
+Total: 2.765900 ms (FindLiveObjects: 0.194900 ms CreateObjectMapping: 0.049100 ms MarkObjects: 2.139700 ms  DeleteObjects: 0.381300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002415 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.841 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.6 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2088.
+Total: 2.566600 ms (FindLiveObjects: 0.389300 ms CreateObjectMapping: 0.098300 ms MarkObjects: 1.716300 ms  DeleteObjects: 0.361800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001367 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.868 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.6 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2091.
+Total: 2.872900 ms (FindLiveObjects: 0.409800 ms CreateObjectMapping: 0.143700 ms MarkObjects: 1.947700 ms  DeleteObjects: 0.370600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001444 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.851 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.6 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2094.
+Total: 3.261600 ms (FindLiveObjects: 0.402200 ms CreateObjectMapping: 0.102700 ms MarkObjects: 2.077000 ms  DeleteObjects: 0.677900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001435 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.871 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.8 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2097.
+Total: 5.738300 ms (FindLiveObjects: 0.430300 ms CreateObjectMapping: 0.159200 ms MarkObjects: 4.377200 ms  DeleteObjects: 0.769100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001556 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.856 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.8 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2100.
+Total: 2.914800 ms (FindLiveObjects: 0.567200 ms CreateObjectMapping: 0.172000 ms MarkObjects: 1.832900 ms  DeleteObjects: 0.340700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001559 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.882 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.8 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2103.
+Total: 3.139800 ms (FindLiveObjects: 0.396600 ms CreateObjectMapping: 0.138200 ms MarkObjects: 2.255500 ms  DeleteObjects: 0.348600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001468 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.876 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.8 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2106.
+Total: 2.904200 ms (FindLiveObjects: 0.411700 ms CreateObjectMapping: 0.094800 ms MarkObjects: 2.069400 ms  DeleteObjects: 0.327200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002204 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.475 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1525 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.8 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2109.
+Total: 4.229100 ms (FindLiveObjects: 0.332100 ms CreateObjectMapping: 0.130700 ms MarkObjects: 3.185700 ms  DeleteObjects: 0.577900 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
