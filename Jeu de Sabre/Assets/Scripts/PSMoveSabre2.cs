@@ -30,7 +30,7 @@ public class PSMoveSabre2 : MonoBehaviour
      */
     public static void init()
     {
-        move = TestConnection.handle1;
+        move = TestConnection.manette_2;
         PSMoveAPI.psmove_reset_orientation(move);
         PSMoveAPI.psmove_enable_orientation(move, PSMove_Bool.PSMove_True);
         
@@ -81,9 +81,9 @@ public class PSMoveSabre2 : MonoBehaviour
         //     case 5: BasicColor = cMagenta;
         //             ColorCount = 0; break;
         //     default: BasicColor = cWhite; break;
-        // }
+        // }§
         SetLED(BasicColor);
-        gameObject.GetComponent<Renderer>().material.color = BasicColor;
+        //gameObject.GetComponent<Renderer>().material.color = BasicColor;
         ColorCount++;
     }
 
@@ -98,17 +98,19 @@ public class PSMoveSabre2 : MonoBehaviour
             /* Récupère l'orientation du PSMove */
             PSMoveAPI.psmove_poll(move);
             PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
-            print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
+            
+            // CA FAIT CRASHER LE JEU QUAND ON L'ARRETE AVEC CE PRINT, PK PAS
+            //print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
             /*
             float owConp = 0.0007f;
             float axeXConp = 0.01f;
             float axeYConp =0.003f;
             float axeZConp =0.009f;
             */
-            ow -= 0.0015f;
-            axeX -= 0.01f;
-            axeY -= 0.003f;
-            axeZ += 0.01f;
+            ow += 0.0f;
+            axeX -= 0.2f;
+            axeY -= 0.0009f;
+            axeZ += 0.0009f;
 
             /* Affectation de l'orientation à l'objet en cours */
             quaternion = new Quaternion (-axeX, axeZ, axeY, ow);
@@ -116,13 +118,6 @@ public class PSMoveSabre2 : MonoBehaviour
         }
     }
 
-    /**
-     * Lorsque le jeu est fermé, déconnexion des PSMove
-     */
-    private void OnApplicationQuit() {
-        PSMoveAPI.psmove_disconnect(move);
-    }
-    
     /**
      * Modifie la couleur de la LED du PSMove en fonction du niveau de batterie passé en paramètre
      */
