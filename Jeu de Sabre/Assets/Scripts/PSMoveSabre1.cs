@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.VirtualTexturing;
 
-public class PSMoveSabre1 : MonoBehaviour
+public class PSMoveMovements : MonoBehaviour
 {
     // Permet de récupérer l'appui d'une touche du PSMove
     private PSMoveActions actions;
@@ -24,6 +24,7 @@ public class PSMoveSabre1 : MonoBehaviour
     private int ColorCount;
     ArrayList colorList = new ArrayList();
 
+    
     // Quaternion permettant d'affecter l'orientation du PSMove au sabre
     Quaternion quaternion;
 
@@ -32,7 +33,7 @@ public class PSMoveSabre1 : MonoBehaviour
      */
     public static void init()
     {
-        move = TestConnection.manette_1;
+        move = TestConnection.handle;
         PSMoveAPI.psmove_reset_orientation(move);
         PSMoveAPI.psmove_enable_orientation(move, PSMove_Bool.PSMove_True);
     }
@@ -83,9 +84,10 @@ public class PSMoveSabre1 : MonoBehaviour
         //     default: BasicColor = cWhite; break;
         // }
         SetLED(BasicColor);
-        //gameObject.GetComponent<Renderer>().material.color = BasicColor;
+        gameObject.GetComponent<Renderer>().material.color = BasicColor;
         ColorCount++;
     }
+
     private void Update() {
         /* Vérifie si l'initialisation est terminé avant d'agir sur le PSMove */
         if (TestConnection.initDone)
@@ -97,26 +99,21 @@ public class PSMoveSabre1 : MonoBehaviour
             /* Récupère l'orientation du PSMove */
             PSMoveAPI.psmove_poll(move);
             PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
-            
-            // CA FAIT CRASHER LE JEU QUAND ON L'ARRETE AVEC CE PRINT, PK PAS
             //print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
-            /*
-            float owConp = 0.0007f;
-            float axeXConp = 0.01f;
-            float axeYConp =0.003f;
-            float axeZConp =0.009f;
-            */
-            ow += 0.0f;
-            axeX -= 0.2f;
-            axeY -= 0.0009f;
-            axeZ += 0.0009f;
-            
+
             /* Affectation de l'orientation à l'objet en cours */
             quaternion = new Quaternion (-axeX, axeZ, axeY, ow);
             transform.rotation = quaternion;
         }
     }
 
+    /**
+     * Lorsque le jeu est fermé, déconnexion des PSMove
+     */
+    private void OnApplicationQuit() {
+        PSMoveAPI.psmove_disconnect(move);
+    }
+    
     /**
      * Modifie la couleur de la LED du PSMove en fonction du niveau de batterie passé en paramètre
      */

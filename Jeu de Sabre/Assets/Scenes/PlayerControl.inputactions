@@ -1,0 +1,52 @@
+{
+    "name": "PlayerControl",
+    "maps": [
+        {
+            "name": "AvantArriere",
+            "id": "21e647d8-daa1-4844-9c52-b797ba2ca2b4",
+            "actions": [
+                {
+                    "name": "Avancer",
+                    "type": "Button",
+                    "id": "411d551a-e823-43cf-8962-c689f6b02502",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Reculer",
+                    "type": "Button",
+                    "id": "3f5be688-154c-4b5c-9514-6b4d01dba640",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "75f81fc9-5d1e-4ff9-8a20-112176b21488",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Avancer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0ff871eb-ccb4-4ed3-a174-a9350863b1f6",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reculer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
