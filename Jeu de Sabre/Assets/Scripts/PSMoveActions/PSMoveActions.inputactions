@@ -16,7 +16,7 @@
                 {
                     "name": "Move",
                     "type": "Button",
-                    "id": "8039d6ac-2d46-47e3-977f-65e6fdc31801",
+                    "id": "9e2cf744-48c5-482f-8057-b9d919dd266c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -36,7 +36,7 @@
                 },
                 {
                     "name": "",
-                    "id": "808fd5d8-7fcb-44d9-91e3-64a97a022890",
+                    "id": "37ed2e36-dcf4-4600-95ef-46015b8d6b38",
                     "path": "<HID::Sony Computer Entertainment Motion Controller>/button20",
                     "interactions": "",
                     "processors": "",
