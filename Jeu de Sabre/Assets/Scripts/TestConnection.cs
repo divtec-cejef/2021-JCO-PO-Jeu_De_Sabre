@@ -14,7 +14,7 @@ public class TestConnection : MonoBehaviour {
         
         if(init == PSMove_Bool.PSMove_True) {
             /* Récupération des manettes PSMove */
-            manette_1 = PSMoveAPI.psmove_connect_by_id(0);
+            manette_1 = PSMoveAPI.psmove_connect();
             manette_2 = PSMoveAPI.psmove_connect_by_id(1);
 
             // Variable utilsée pour afficher les erreurs
@@ -52,13 +52,16 @@ public class TestConnection : MonoBehaviour {
                 default:
                     Debug.Log("Connexion établie avec les Manettes");
                     // Initialisation terminée
-                    initDone = true;
+                    
                     
                     // Initialisation des mouvements de la manette
-                    PSMoveSabre1.init();
+                    
                     PSMoveSabre2.init();
                     break;
-            }
+            } 
+            initDone = true;
+            PSMoveSabre1.init();
+            
         } 
         /* Si l'API PSMove n'a pas pu être initialisé */
         else {

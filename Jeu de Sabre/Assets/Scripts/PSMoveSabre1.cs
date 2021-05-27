@@ -40,8 +40,8 @@ public class PSMoveSabre1 : MonoBehaviour
      */
     void Awake(){
         actions = new PSMoveActions();
-        actions.Buttons.Trigger.performed += ctx => ChangeColor();
-        actions.Buttons.Move.performed += ctx => defaultCalibration();
+        //actions.Buttons.Trigger.performed += ctx => ChangeColor();
+        //actions.Buttons.Move.performed += ctx => defaultCalibration();
         //actions.Buttons.Move.performed += ctx => LedColorBattery(battery:);
         // Génération de la liste de couleur
         setColorList();
