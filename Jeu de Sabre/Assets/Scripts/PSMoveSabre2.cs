@@ -94,11 +94,11 @@ public class PSMoveSabre2 : MonoBehaviour
             PSMoveAPI.psmove_update_leds(move);
             //PSMove_Battery_Level batteryLvl = PSMoveAPI.psmove_get_battery(move);
             //LedColorBattery(batteryLvl);
-            
+
             /* Récupère l'orientation du PSMove */
             PSMoveAPI.psmove_poll(move);
             PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
-            
+        
             // CA FAIT CRASHER LE JEU QUAND ON L'ARRETE AVEC CE PRINT, PK PAS
             //print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
             /*
@@ -108,13 +108,16 @@ public class PSMoveSabre2 : MonoBehaviour
             float axeZConp =0.009f;
             */
             ow += 0.0f;
-            axeX -= 0.2f;
+            axeX += 0.0f;
             axeY -= 0.0009f;
             axeZ += 0.0009f;
-
+        
             /* Affectation de l'orientation à l'objet en cours */
-            quaternion = new Quaternion (-axeX, axeZ, axeY, ow);
+            quaternion = new Quaternion (axeX, axeZ, -axeY, ow);
             transform.rotation = quaternion;
+            
+            
+            
         }
     }
 
