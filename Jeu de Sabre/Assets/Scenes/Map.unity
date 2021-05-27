@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4499929, g: 0.5000499, b: 0.5755171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44752467, g: 0.49301934, b: 0.55134326, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6974,13 +6974,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278654868}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.31, y: 12.93, z: -7.26}
+  m_LocalRotation: {x: -0, y: 0.9230676, z: -0, w: 0.38463762}
+  m_LocalPosition: {x: 11.67, y: 14.14, z: 15.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 58
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 134.757, z: 0}
 --- !u!1001 &281474220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30675,8 +30675,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.8113208, g: 0.6193189, b: 0.3023318, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 0.65910137, b: 0, a: 1}
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -30685,7 +30685,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.67
     m_Bias: 0.55
     m_NormalBias: 3
     m_NearPlane: 0.2
@@ -30733,13 +30733,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280402456}
-  m_LocalRotation: {x: 0.5266041, y: 0.76835346, z: -0.20017226, w: 0.30373055}
+  m_LocalRotation: {x: -0.35945576, y: 0.22259872, z: 0.52814037, w: -0.73641646}
   m_LocalPosition: {x: 16.77, y: 18.75, z: 6.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 60
-  m_LocalEulerAnglesHint: {x: 38.866, y: -199.189, z: -297.975}
+  m_LocalEulerAnglesHint: {x: 17.115, y: -407.759, z: 641.083}
 --- !u!1001 &1280802566
 PrefabInstance:
   m_ObjectHideFlags: 0
