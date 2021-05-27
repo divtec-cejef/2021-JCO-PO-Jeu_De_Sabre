@@ -16,6 +16,8 @@ public class PSMoveSabre2 : MonoBehaviour
     private float axeX;
     private float axeY;
     private float axeZ;
+
+    private float multiplierX = -22;
     
     // Compteur permettant de modifier la couleur
     private int ColorCount;
@@ -108,13 +110,24 @@ public class PSMoveSabre2 : MonoBehaviour
             float axeZConp =0.009f;
             */
             ow += 0.0f;
-            axeX -= 0.2f;
+            axeX -= 0.0f;
             axeY -= 0.0009f;
             axeZ += 0.0009f;
 
             /* Affectation de l'orientation à l'objet en cours */
             quaternion = new Quaternion (-axeX, axeZ, axeY, ow);
             transform.rotation = quaternion;
+            
+            
+            if (PSMoveAPI.psmove_get_trigger(move) == 'ÿ')
+            {
+                PSMoveAPI.psmove_set_rumble(move, 255);
+            }
+            else
+            {
+                PSMoveAPI.psmove_set_rumble(move, 0);
+
+            }
         }
     }
 

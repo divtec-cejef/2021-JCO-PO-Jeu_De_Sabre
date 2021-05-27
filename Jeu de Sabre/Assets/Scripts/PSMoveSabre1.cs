@@ -110,6 +110,17 @@ public class PSMoveSabre1 : MonoBehaviour
             axeX -= 0.2f;
             axeY -= 0.0009f;
             axeZ += 0.0009f;
+
+
+            if (PSMoveAPI.psmove_get_trigger(move) == 'ÿ')
+            {
+                PSMoveAPI.psmove_set_rumble(move, 255);
+            }
+            else
+            {
+                PSMoveAPI.psmove_set_rumble(move, 0);
+
+            }
             
             /* Affectation de l'orientation à l'objet en cours */
             quaternion = new Quaternion (-axeX, axeZ, axeY, ow);
