@@ -1,0 +1,143 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.985; Version 2009; 64bit' Language: 'fr' Physical Memory: 8060 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59602
+Successfully changed project path to: C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 49.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics 655 (ID=0x3ea5)
+    Vendor:   
+    VRAM:     4030 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001887 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.280 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001644 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000024A78E9F880 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.092 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1552 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.0 MB.
+System memory in use after: 75.7 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 1978.
+Total: 4.589400 ms (FindLiveObjects: 0.195300 ms CreateObjectMapping: 0.055800 ms MarkObjects: 1.831300 ms  DeleteObjects: 2.506100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/TRANSPARET.mat
+  artifactKey: Guid(e30ddce9659b1e5489da84e41f39ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TRANSPARET.mat using Guid(e30ddce9659b1e5489da84e41f39ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52171c5d763753b887bac612216b73ae') in 0.113087 seconds
+  Import took 0.116067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Scenes/LeViolet.mat
+  artifactKey: Guid(6fc1bf5ea9e025646bfae7ca8d9433da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LeViolet.mat using Guid(6fc1bf5ea9e025646bfae7ca8d9433da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e481ab5ab68b9d0eac95080090a478f') in 0.021716 seconds
+  Import took 0.027869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Scenes/LeGazon.mat
+  artifactKey: Guid(44320aef2d2069d4a9367bd0a6c0de6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LeGazon.mat using Guid(44320aef2d2069d4a9367bd0a6c0de6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23887a968a55ca09b7808305a22a103b') in 0.019053 seconds
+  Import took 0.027262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Scenes/PlayerControl.inputactions
+  artifactKey: Guid(20151e3e49e7e6a4fb18bcb6a6dc0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayerControl.inputactions using Guid(20151e3e49e7e6a4fb18bcb6a6dc0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2d2039372334cf10b3e4a6bd429256') in 0.021110 seconds
+  Import took 0.024695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005000 seconds.
+  path: Assets/Scenes/PlayerControl.inputactions
+  artifactKey: Guid(20151e3e49e7e6a4fb18bcb6a6dc0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayerControl.inputactions using Guid(20151e3e49e7e6a4fb18bcb6a6dc0b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2d2039372334cf10b3e4a6bd429256') in 0.003058 seconds
+  Import took 0.005969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.251963 seconds.
+  path: Assets/Scenes/COLLISION.cs
+  artifactKey: Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/COLLISION.cs using Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f35f0a59365550f35af9decf374159') in 0.019866 seconds
+  Import took 0.023818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 104.645628 seconds.
+  path: Assets/Scenes/COLLISION.cs
+  artifactKey: Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/COLLISION.cs using Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69bc30b40c2c5ce09ff4568a3e421564') in 0.006246 seconds
+  Import took 0.011830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003722 seconds.
+  path: Assets/Scenes/COLLISION.cs
+  artifactKey: Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/COLLISION.cs using Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69bc30b40c2c5ce09ff4568a3e421564') in 0.004255 seconds
+  Import took 0.010098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.262930 seconds.
+  path: Assets/Scenes/COLLISION.cs
+  artifactKey: Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/COLLISION.cs using Guid(9675f79d38dda4d4c979a5d64d766305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0705834ebbb30e20093e833834a5e8') in 0.002516 seconds
+  Import took 0.006889 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
