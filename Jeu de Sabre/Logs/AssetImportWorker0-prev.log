@@ -1,0 +1,1781 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 18363.592; Version 1909; 64bit' Language: 'fr' Physical Memory: 8060 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53365
+Successfully changed project path to: C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics 655 (ID=0x3ea5)
+    Vendor:   
+    VRAM:     4030 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001276 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.005 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001215 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 37.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.924 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1421 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.4 MB.
+System memory in use after: 69.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1862.
+Total: 2.150000 ms (FindLiveObjects: 0.154800 ms CreateObjectMapping: 0.045000 ms MarkObjects: 1.830700 ms  DeleteObjects: 0.118400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/PolygonSamurai/Textures/Characters_Texture_01.png
+  artifactKey: Guid(023f25b440efc7a42a0352ee7464260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/Characters_Texture_01.png using Guid(023f25b440efc7a42a0352ee7464260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd044dc7593dcb6765cfe0daccd0b4b09') in 0.131896 seconds
+  Import took 0.134583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/PolygonSamurai
+  artifactKey: Guid(463a3390308a79e44b41ee0f0fa072d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai using Guid(463a3390308a79e44b41ee0f0fa072d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc12156fa17e702b3611c9226ed4052') in 0.006112 seconds
+  Import took 0.008332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/PolygonSamurai/Textures
+  artifactKey: Guid(d6f13fa5d791ceb49ae4c220dbabe021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures using Guid(d6f13fa5d791ceb49ae4c220dbabe021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498d59b31ce4e9fe1ff6c2177bb10852') in 0.009194 seconds
+  Import took 0.013109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 466.391514 seconds.
+  path: Assets/PolygonSamurai/Models
+  artifactKey: Guid(da89ca123d5e6f94488373e74a968409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models using Guid(da89ca123d5e6f94488373e74a968409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59963425b9a2282ff3e0e703845b634a') in 0.011258 seconds
+  Import took 0.014481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.588995 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fan_01_Convex.asset
+  artifactKey: Guid(c6add06d0f29f4e4aa2f34720a1cff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fan_01_Convex.asset using Guid(c6add06d0f29f4e4aa2f34720a1cff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693b1091d934cc8243eb95ae371a013e') in 0.093331 seconds
+  Import took 0.096952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Straight_02_Convex.asset
+  artifactKey: Guid(630a895471fe70d438b5ea81e2a42929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Straight_02_Convex.asset using Guid(630a895471fe70d438b5ea81e2a42929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffaad7a721b513039e661eb8ca690eee') in 0.017596 seconds
+  Import took 0.020089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flag_03.fbx
+  artifactKey: Guid(396133ecfc33fa4439baa4336f7a5b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flag_03.fbx using Guid(396133ecfc33fa4439baa4336f7a5b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a43d44330ed11b163c8b4c7c3dccb29') in 0.054701 seconds
+  Import took 0.057740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Gong_02_Convex.asset
+  artifactKey: Guid(04feecea70465e4478cfd12edc6912a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Gong_02_Convex.asset using Guid(04feecea70465e4478cfd12edc6912a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9514baff147b6960b0371ca47ed34cc9') in 0.021603 seconds
+  Import took 0.024191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Gong_02.fbx
+  artifactKey: Guid(544f19b840a75a144a5c2e5e0eacdf27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Gong_02.fbx using Guid(544f19b840a75a144a5c2e5e0eacdf27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db3310775130aa401712712525ea270') in 0.031790 seconds
+  Import took 0.034568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Straight_01.fbx
+  artifactKey: Guid(2180f253867b6fa4ca2363a0992f6500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Straight_01.fbx using Guid(2180f253867b6fa4ca2363a0992f6500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e334966c7ec58759bb74df2428fb8d') in 0.026975 seconds
+  Import took 0.029725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Rope_01_Convex.asset
+  artifactKey: Guid(07e2fb49a188dd448b39d96035ab7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Rope_01_Convex.asset using Guid(07e2fb49a188dd448b39d96035ab7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04fbda4aec41fdae6e3e2f1d6f755f1') in 0.016653 seconds
+  Import took 0.019051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Shamisen_01_Convex.asset
+  artifactKey: Guid(8b7e23ead388a6f479fd49a52e20c263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Shamisen_01_Convex.asset using Guid(8b7e23ead388a6f479fd49a52e20c263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8cba7c1dc24ae5516cdb48959fc945e') in 0.017370 seconds
+  Import took 0.019918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Stone_Lantern_02_Convex.asset
+  artifactKey: Guid(8a67502f39578454b98399bb1bddd45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Stone_Lantern_02_Convex.asset using Guid(8a67502f39578454b98399bb1bddd45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64145d4696e56feda9be00eaab55f62f') in 0.016018 seconds
+  Import took 0.018600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_StoneCircle_01.fbx
+  artifactKey: Guid(afffb9c46f12d3b48a7ba602b78bb526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_StoneCircle_01.fbx using Guid(afffb9c46f12d3b48a7ba602b78bb526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13a41134312e571c97361213efd1f11e') in 0.027405 seconds
+  Import took 0.029994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Table_02_Convex.asset
+  artifactKey: Guid(9f7b97f5e06e3124d9788529d291a922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Table_02_Convex.asset using Guid(9f7b97f5e06e3124d9788529d291a922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e50c222f4291aaebc5cb28fc206dbf') in 0.019289 seconds
+  Import took 0.021611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Table_01.fbx
+  artifactKey: Guid(4e058b6a33a249346abb8cadd45a6e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Table_01.fbx using Guid(4e058b6a33a249346abb8cadd45a6e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe037a7952c0f931fc66bba4b42e468') in 0.033379 seconds
+  Import took 0.035754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Tent_01_Convex.asset
+  artifactKey: Guid(a080e7c45972f5247ab8038fc0adcebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Tent_01_Convex.asset using Guid(a080e7c45972f5247ab8038fc0adcebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f91d5813ff96562bdbfaf61a9ac3c3') in 0.017849 seconds
+  Import took 0.020460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_01.fbx
+  artifactKey: Guid(732f8f8eb62cf91438b43fee42258232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_01.fbx using Guid(732f8f8eb62cf91438b43fee42258232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b3d82a61252a965a866bfacd56cbce') in 0.039500 seconds
+  Import took 0.042172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Tent_01_Convex 2.asset
+  artifactKey: Guid(01f52894c16fb6a4a80bbf60387465ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Tent_01_Convex 2.asset using Guid(01f52894c16fb6a4a80bbf60387465ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224ef3bb1d74eb19e7069bed5113a17a') in 0.044290 seconds
+  Import took 0.046916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Table_02.fbx
+  artifactKey: Guid(54dd76714b244ec48b3476420186acb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Table_02.fbx using Guid(54dd76714b244ec48b3476420186acb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80f210d352c6b85b501550d714c4902') in 0.034633 seconds
+  Import took 0.037010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_StoneCircle_01_Convex.asset
+  artifactKey: Guid(bd5920bac9542c443b01e46fe563659f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_StoneCircle_01_Convex.asset using Guid(bd5920bac9542c443b01e46fe563659f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02635e7aee1297c4dd8073efcac133a3') in 0.015509 seconds
+  Import took 0.017852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_01_Convex.asset
+  artifactKey: Guid(87f19c6ee75dfb64faa2c865e6165cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_01_Convex.asset using Guid(87f19c6ee75dfb64faa2c865e6165cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d7ec56ecb55824e922778e8095572e') in 0.017102 seconds
+  Import took 0.019297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Post_01.fbx
+  artifactKey: Guid(19882076ec1a22a429574e02d352de1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Post_01.fbx using Guid(19882076ec1a22a429574e02d352de1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6fae454d23213218e4cdb566857894') in 0.032540 seconds
+  Import took 0.035349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fan_02_Convex.asset
+  artifactKey: Guid(a1d2ca2128b3f2045b24d906866b6b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fan_02_Convex.asset using Guid(a1d2ca2128b3f2045b24d906866b6b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d3f87d69cc34afe80017efdf559d62') in 0.016464 seconds
+  Import took 0.019224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flag_04.fbx
+  artifactKey: Guid(a84cad27fdc648343bf7cee4be0e5ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flag_04.fbx using Guid(a84cad27fdc648343bf7cee4be0e5ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e907598395f1b8265b57afb8211e0d') in 0.028794 seconds
+  Import took 0.031262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Bamboo_02_Convex.asset
+  artifactKey: Guid(0e653be0d77c2d54c960c9bf3d2bdfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Bamboo_02_Convex.asset using Guid(0e653be0d77c2d54c960c9bf3d2bdfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e33fd6e08db6139cd90ba289abc795d') in 0.016468 seconds
+  Import took 0.018853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flute_01.fbx
+  artifactKey: Guid(2ba5495455ada4440831e713757d798d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flute_01.fbx using Guid(2ba5495455ada4440831e713757d798d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a6b6f1c5cb8a4587be0f616840952ed') in 0.026055 seconds
+  Import took 0.028674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_06.fbx
+  artifactKey: Guid(583182e89a375e640b4e8c916a287d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_06.fbx using Guid(583182e89a375e640b4e8c916a287d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b49898f99e9ce2afe36d2364a6d99784') in 0.027870 seconds
+  Import took 0.030755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_07_Convex.asset
+  artifactKey: Guid(4bab08fa9a520ad45a2c4de4b2d12bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_07_Convex.asset using Guid(4bab08fa9a520ad45a2c4de4b2d12bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c1c642ed46ff6b1e8ba863a250dfb7') in 0.018324 seconds
+  Import took 0.020884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Table_01_Convex.asset
+  artifactKey: Guid(aa45df26e5f866447a8502e349902df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Table_01_Convex.asset using Guid(aa45df26e5f866447a8502e349902df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3368469a3fa923898f489c257d79290d') in 0.018964 seconds
+  Import took 0.021734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fan_04_Convex.asset
+  artifactKey: Guid(bfe1d1bb86a44aa438c258a35e91e748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fan_04_Convex.asset using Guid(bfe1d1bb86a44aa438c258a35e91e748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd625d6105bb7cdef308ab7fdcf7ab506') in 0.025502 seconds
+  Import took 0.028610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flag_03_Convex.asset
+  artifactKey: Guid(c884274f3ecc3ef4aaf19efdaffa94d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flag_03_Convex.asset using Guid(c884274f3ecc3ef4aaf19efdaffa94d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ef96dc7c3e95d6b0337d22c91e1141') in 0.020036 seconds
+  Import took 0.022691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Statue_Lion_02.fbx
+  artifactKey: Guid(c5157ec16c1e7614f850c56e741f7012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Statue_Lion_02.fbx using Guid(c5157ec16c1e7614f850c56e741f7012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc504e091f66aab1a984686abf9d9347') in 0.033857 seconds
+  Import took 0.036742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_06_Convex.asset
+  artifactKey: Guid(a84ef80d0a6e6a647b61479fea16c521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_06_Convex.asset using Guid(a84ef80d0a6e6a647b61479fea16c521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a1bac549e20494e2f98a9bf3adb178e') in 0.017767 seconds
+  Import took 0.020543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flag_04_Convex.asset
+  artifactKey: Guid(7b29370bf3a518440bcc7cda19ea84a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flag_04_Convex.asset using Guid(7b29370bf3a518440bcc7cda19ea84a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f8d23197d925f42ef495431b5ff91d') in 0.018632 seconds
+  Import took 0.021042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_JuMonjiYari_01_Convex.asset
+  artifactKey: Guid(300ea4afcc8afdd49b04afe55a8283f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_JuMonjiYari_01_Convex.asset using Guid(300ea4afcc8afdd49b04afe55a8283f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63abaaa8c2cc1da4d8991b5ffdcea0ac') in 0.017219 seconds
+  Import took 0.019728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Odachi_Covered_01.fbx
+  artifactKey: Guid(2124ef2054a696243a29f7352af130a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Odachi_Covered_01.fbx using Guid(2124ef2054a696243a29f7352af130a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629c375aa504b54a099f0e743809d22c') in 0.029200 seconds
+  Import took 0.031554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fan_05_Convex.asset
+  artifactKey: Guid(25cd4c5ad477eba4ca8890d3c2e329dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fan_05_Convex.asset using Guid(25cd4c5ad477eba4ca8890d3c2e329dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3739ea0c08faf72d3934d6a0c0e1efcb') in 0.022881 seconds
+  Import took 0.025496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_JuMonjiYari_01.fbx
+  artifactKey: Guid(4f2194cf11cf0744cae13eb755f7c3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_JuMonjiYari_01.fbx using Guid(4f2194cf11cf0744cae13eb755f7c3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7e9a5f3e135fcf2efe5a054f6fbaad') in 0.035763 seconds
+  Import took 0.038268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_01_Convex.asset
+  artifactKey: Guid(979d709c471969d448438af4c1a776c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_01_Convex.asset using Guid(979d709c471969d448438af4c1a776c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a93ff32fc1886bf7f8c7ad168098bca') in 0.018174 seconds
+  Import took 0.020786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Shuriken_02_Convex.asset
+  artifactKey: Guid(d7919788e24dbb042b8adcf5424ea6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Shuriken_02_Convex.asset using Guid(d7919788e24dbb042b8adcf5424ea6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1afa02a4261b9a39be5fc452da172b') in 0.021642 seconds
+  Import took 0.024230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Naginata_02_Convex.asset
+  artifactKey: Guid(783e725653c225d4dbd6f1983841248d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Naginata_02_Convex.asset using Guid(783e725653c225d4dbd6f1983841248d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1be8fd32edf85b9ebf5fc899cad11b') in 0.025486 seconds
+  Import took 0.028806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_05.fbx
+  artifactKey: Guid(2c1164bf438309f4a9d95be834f30fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_05.fbx using Guid(2c1164bf438309f4a9d95be834f30fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a391af34ba91a7b46d8b8d81a43157') in 0.036189 seconds
+  Import took 0.039284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_BoStaff_01.fbx
+  artifactKey: Guid(eea1c1d8005a1a34f8902cfbd7d619d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_BoStaff_01.fbx using Guid(eea1c1d8005a1a34f8902cfbd7d619d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2057e35dd8a5c29bf3e1688fc8723aa4') in 0.030332 seconds
+  Import took 0.033881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Straight_01_Convex.asset
+  artifactKey: Guid(3318942df93d6d143838c1be3f4ed768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Straight_01_Convex.asset using Guid(3318942df93d6d143838c1be3f4ed768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d563c87102b3425a679e627dc66be1') in 0.025625 seconds
+  Import took 0.028723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Gong_01_Convex 1.asset
+  artifactKey: Guid(34e0ed186c5f6ca4a92b4f67f987158b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Gong_01_Convex 1.asset using Guid(34e0ed186c5f6ca4a92b4f67f987158b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698d28a955ad1f6f311cfefa06e15dd1') in 0.022219 seconds
+  Import took 0.025242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Rake_01.fbx
+  artifactKey: Guid(4e26922c07a7e7e42b1ad5d1b241eb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Rake_01.fbx using Guid(4e26922c07a7e7e42b1ad5d1b241eb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da320fa1d9f4ee8b0f36118e13873bac') in 0.032620 seconds
+  Import took 0.035247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Zen_Lantern_01_Convex.asset
+  artifactKey: Guid(dd140ca9a5f2a6c43bc86393bc4f2f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Zen_Lantern_01_Convex.asset using Guid(dd140ca9a5f2a6c43bc86393bc4f2f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a4e78d4429c48d04670dc440a61781') in 0.018254 seconds
+  Import took 0.021230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Table_03.fbx
+  artifactKey: Guid(50f65d57c12d80448b8df9d9978fd888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Table_03.fbx using Guid(50f65d57c12d80448b8df9d9978fd888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0714bd37cb6ca2741a824a3f487e0dc') in 0.030679 seconds
+  Import took 0.033101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_03.fbx
+  artifactKey: Guid(09326ace84173494594c4c1a486f81ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_03.fbx using Guid(09326ace84173494594c4c1a486f81ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0c355bdce751b0da6f8b8a1b4f2f62') in 0.031694 seconds
+  Import took 0.034778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Odachi_Covered_01_Convex.asset
+  artifactKey: Guid(da188c37bbdedbb408645684bd7640cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Odachi_Covered_01_Convex.asset using Guid(da188c37bbdedbb408645684bd7640cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2651a5b62ed9993e31cf4736b51dea') in 0.018756 seconds
+  Import took 0.022306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Shuriken_01_Convex.asset
+  artifactKey: Guid(c17eaea5138b7204f81b30546a53e411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Shuriken_01_Convex.asset using Guid(c17eaea5138b7204f81b30546a53e411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4eebbe96b487a1c5ad9fe4d17fc0410') in 0.018751 seconds
+  Import took 0.021193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Bamboo_01.fbx
+  artifactKey: Guid(06ba6ffa6b26d9141a4c6a3121a8e967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Bamboo_01.fbx using Guid(06ba6ffa6b26d9141a4c6a3121a8e967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06a2ab41620ac932b70b63fe0bd6cfc3') in 0.033352 seconds
+  Import took 0.035634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flag_01_Convex.asset
+  artifactKey: Guid(28a18c532d7270d48b92d23d473b784e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flag_01_Convex.asset using Guid(28a18c532d7270d48b92d23d473b784e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98aa0c098466b6c1fdd7a5c3eefaf639') in 0.019691 seconds
+  Import took 0.023132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Ninjato_01.fbx
+  artifactKey: Guid(7c2b28ec14dda104a879fad015543b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Ninjato_01.fbx using Guid(7c2b28ec14dda104a879fad015543b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de89944c14313653bddbd533bd3ad751') in 0.033198 seconds
+  Import took 0.036137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_04.fbx
+  artifactKey: Guid(199b6d6f26c8d7540825a058c1a10709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_04.fbx using Guid(199b6d6f26c8d7540825a058c1a10709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe4979d84b560412bbf0bde5b500e83') in 0.029457 seconds
+  Import took 0.032179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flag_02.fbx
+  artifactKey: Guid(f61b5bce94479eb4cab38bcda6933ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flag_02.fbx using Guid(f61b5bce94479eb4cab38bcda6933ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce76b83a4b6aef4cfaaec39ac039cbd8') in 0.030257 seconds
+  Import took 0.033383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_03.fbx
+  artifactKey: Guid(04208439fd8ef8043af0e13251a109fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_03.fbx using Guid(04208439fd8ef8043af0e13251a109fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945a11247fee50db7b283a38fab412c3') in 0.032470 seconds
+  Import took 0.035163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flute_01_Convex.asset
+  artifactKey: Guid(cfba3ffa59948fd4ea676bb29d60e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flute_01_Convex.asset using Guid(cfba3ffa59948fd4ea676bb29d60e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7142a9801592bc9534bba32842206a') in 0.023325 seconds
+  Import took 0.026448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Naginata_01.fbx
+  artifactKey: Guid(64ca6f99f3d4f1a448d93dc652b871f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Naginata_01.fbx using Guid(64ca6f99f3d4f1a448d93dc652b871f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6737ffae8a97d52bbc485ea62d279c4a') in 0.034444 seconds
+  Import took 0.037397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_06_Convex.asset
+  artifactKey: Guid(4199a260b4c6f244684972d81db24138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_06_Convex.asset using Guid(4199a260b4c6f244684972d81db24138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2c205d7bd1fafb0f13abc68166c7c4') in 0.019163 seconds
+  Import took 0.022277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_02.fbx
+  artifactKey: Guid(1f486c35b7668e6469a0d2fbbc5fe03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_02.fbx using Guid(1f486c35b7668e6469a0d2fbbc5fe03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b44a44856a39a5b0eddbd3190b2fd61') in 0.032319 seconds
+  Import took 0.034715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Odachi_01.fbx
+  artifactKey: Guid(b8000949872c53948ba6fe5768471d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Odachi_01.fbx using Guid(b8000949872c53948ba6fe5768471d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d51c29cc2ca16f4260966baea723d96') in 0.023445 seconds
+  Import took 0.026415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Stone_Lantern_01_Convex.asset
+  artifactKey: Guid(531c870317927f94c87eed0b07ff8785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Stone_Lantern_01_Convex.asset using Guid(531c870317927f94c87eed0b07ff8785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7d91cae2a5214377996575a78ea7ee') in 0.019122 seconds
+  Import took 0.021897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_07.fbx
+  artifactKey: Guid(7d826f7e77ebb4e4f9c55212599b286f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_07.fbx using Guid(7d826f7e77ebb4e4f9c55212599b286f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413d0c4e965167450276bed116b23de4') in 0.030233 seconds
+  Import took 0.033142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_04_Convex.asset
+  artifactKey: Guid(70ceaf0ddecefd145ae92a6d3a32818f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_04_Convex.asset using Guid(70ceaf0ddecefd145ae92a6d3a32818f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40603c835acac7b4fa819b245559b709') in 0.023017 seconds
+  Import took 0.026536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_05_Convex.asset
+  artifactKey: Guid(e59b09f98e18e99419fcd81c532b03ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_05_Convex.asset using Guid(e59b09f98e18e99419fcd81c532b03ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '659a56c15f7815c4e078c5fd10443a36') in 0.034130 seconds
+  Import took 0.036809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_03.fbx
+  artifactKey: Guid(bb4518573dcb1854fb480dbee6aeb174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_03.fbx using Guid(bb4518573dcb1854fb480dbee6aeb174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43098b500b00d4a36e06b9c44e7f73d6') in 0.033636 seconds
+  Import took 0.036777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_02.fbx
+  artifactKey: Guid(56029c529665bc049ba53f762d48b38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_02.fbx using Guid(56029c529665bc049ba53f762d48b38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5fd035d5aaaa5bcf6366a63e1bdec1f') in 0.032757 seconds
+  Import took 0.035904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_02_Convex.asset
+  artifactKey: Guid(d8a1b899b2a52b245b2b3fe19564cc9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_02_Convex.asset using Guid(d8a1b899b2a52b245b2b3fe19564cc9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb224a54e6d7daa1008d30783b8dc5e') in 0.018951 seconds
+  Import took 0.022523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fan_05.fbx
+  artifactKey: Guid(75128fa6063bf304fa1ede7e64107fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fan_05.fbx using Guid(75128fa6063bf304fa1ede7e64107fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46bef9e0f20cad4ea620d1bf14f78d0') in 0.040027 seconds
+  Import took 0.042880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Stone_Lantern_02.fbx
+  artifactKey: Guid(e6070db524d5380489faf858cdbbb21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Stone_Lantern_02.fbx using Guid(e6070db524d5380489faf858cdbbb21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394f7400506e63380551a296103bbb7d') in 0.027701 seconds
+  Import took 0.030543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Gong_02_Convex 1.asset
+  artifactKey: Guid(5ecb6999ecba20d44b16f27bb6db4e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Gong_02_Convex 1.asset using Guid(5ecb6999ecba20d44b16f27bb6db4e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd97228401b7fdabe9680ed4e89359c') in 0.023534 seconds
+  Import took 0.026053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_03_Convex.asset
+  artifactKey: Guid(f574f3b94e9446b469624bd9f0320c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_03_Convex.asset using Guid(f574f3b94e9446b469624bd9f0320c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62bc6ade3ad398ad45b8766a4141163') in 0.021392 seconds
+  Import took 0.023740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_02_Convex.asset
+  artifactKey: Guid(3d2bb85f3875965489d89a3f5c6e9cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_02_Convex.asset using Guid(3d2bb85f3875965489d89a3f5c6e9cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80bde22fdec8f8bdaf85354b8b22772') in 0.018447 seconds
+  Import took 0.021027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_04_Convex.asset
+  artifactKey: Guid(fce6a960c16518d46b81601677f432bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_04_Convex.asset using Guid(fce6a960c16518d46b81601677f432bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8974964fce77c5768950f9e4fcdb4269') in 0.017725 seconds
+  Import took 0.020267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Tanto_01_Convex.asset
+  artifactKey: Guid(f50fe48b5a1b3c94cb89fddeb15ea848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Tanto_01_Convex.asset using Guid(f50fe48b5a1b3c94cb89fddeb15ea848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee99265d02d64c02963fc9aa0bf68dec') in 0.018837 seconds
+  Import took 0.022100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Kunai_01.fbx
+  artifactKey: Guid(0874e49ca958df4408653928f931e78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Kunai_01.fbx using Guid(0874e49ca958df4408653928f931e78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42688c4ed4f723de5bfc6a2b6d17e4d4') in 0.029726 seconds
+  Import took 0.032508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Sai_01_Convex.asset
+  artifactKey: Guid(aca36ec54c90f5849b5e22e1e57cf3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Sai_01_Convex.asset using Guid(aca36ec54c90f5849b5e22e1e57cf3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc43f1a450e72f35127a04a82a602bd6') in 0.020869 seconds
+  Import took 0.024260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Shuriken_02.fbx
+  artifactKey: Guid(8ceced44a9006d84caf8e9b647143dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Shuriken_02.fbx using Guid(8ceced44a9006d84caf8e9b647143dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0f26e1213f0cf1495515a41d00cd8b') in 0.032080 seconds
+  Import took 0.034764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Shuriken_01.fbx
+  artifactKey: Guid(5590c4383aa072f45a366ea9f2b838d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Shuriken_01.fbx using Guid(5590c4383aa072f45a366ea9f2b838d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36dd5624dc5c6f6adcae9558f0d1cbb9') in 0.037498 seconds
+  Import took 0.039878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_01.fbx
+  artifactKey: Guid(86ca0d33a2ea5534db34350a3ae4f7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_01.fbx using Guid(86ca0d33a2ea5534db34350a3ae4f7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b9b54d22bbdaa975bd203afd39881a') in 0.033270 seconds
+  Import took 0.035646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_02.fbx
+  artifactKey: Guid(8f7e56c4c778c1a49b24e3f03d3dd118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_02.fbx using Guid(8f7e56c4c778c1a49b24e3f03d3dd118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eadc97707f53548ed60a909b248d49af') in 0.032392 seconds
+  Import took 0.035302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Training_Pole_01.fbx
+  artifactKey: Guid(9b8b80bc7d048fb44bd48b0f704562af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Training_Pole_01.fbx using Guid(9b8b80bc7d048fb44bd48b0f704562af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea00973673ad0f6ba62422d39ba509e9') in 0.036125 seconds
+  Import took 0.038615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_04.fbx
+  artifactKey: Guid(d4ff54291231f924cb9a31f741e9bc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_04.fbx using Guid(d4ff54291231f924cb9a31f741e9bc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53c3f1db0192dd69c8aa6964e218041') in 0.038074 seconds
+  Import took 0.040622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Tent_01.fbx
+  artifactKey: Guid(67d852d3cccb16c4790033a216602bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Tent_01.fbx using Guid(67d852d3cccb16c4790033a216602bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49491b2e7f58bfc3075dc4faa964364e') in 0.031297 seconds
+  Import took 0.033710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flag_01.fbx
+  artifactKey: Guid(1c1eded0489c08f4e8a22e954ca6c831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flag_01.fbx using Guid(1c1eded0489c08f4e8a22e954ca6c831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b38b052d57a43d72e26a31e2b282a9') in 0.034357 seconds
+  Import took 0.037269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_02_Convex.asset
+  artifactKey: Guid(33ba5b1665a78ff408db0978dcfece96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_StoneBrazier_02_Convex.asset using Guid(33ba5b1665a78ff408db0978dcfece96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071bcdfb3def6ef6a72486aa201caf48') in 0.018900 seconds
+  Import took 0.021557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Naginata_01_Convex.asset
+  artifactKey: Guid(51a19614a1f22394da2dc94965a7c75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Naginata_01_Convex.asset using Guid(51a19614a1f22394da2dc94965a7c75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b562b8214f765718758c8300d2d8d4d9') in 0.017737 seconds
+  Import took 0.020951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Flag_02_Convex.asset
+  artifactKey: Guid(d6d54690724490e4c85afdf7e36e4404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Flag_02_Convex.asset using Guid(d6d54690724490e4c85afdf7e36e4404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca674089cf5485f6c78aa9c852e14b3d') in 0.018538 seconds
+  Import took 0.021382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_01.fbx
+  artifactKey: Guid(e28c3f6c0af6c1a4fa058ccacf3c30c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_01.fbx using Guid(e28c3f6c0af6c1a4fa058ccacf3c30c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62289d5223582110af0f9434eaa26f8d') in 0.031115 seconds
+  Import took 0.033952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fan_02.fbx
+  artifactKey: Guid(0fa00ec24b2d03547aa810eed3f58cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fan_02.fbx using Guid(0fa00ec24b2d03547aa810eed3f58cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8719f97474edcbb7a43947adc4d3ba78') in 0.030003 seconds
+  Import took 0.032548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Paper_Lantern_02.fbx
+  artifactKey: Guid(3730fc0701d09bc498ccc37662d8e616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Paper_Lantern_02.fbx using Guid(3730fc0701d09bc498ccc37662d8e616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33a5cd9563ee9812b3f548cd3639b0d') in 0.033896 seconds
+  Import took 0.036274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_06.fbx
+  artifactKey: Guid(00c79b32d0c6e2a4c84eb28c03eb67c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_06.fbx using Guid(00c79b32d0c6e2a4c84eb28c03eb67c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0bc082360f1611adddd3fbf6fe2462d') in 0.032053 seconds
+  Import took 0.034603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_BoStaff_01_Convex.asset
+  artifactKey: Guid(60fcbdd9c00345e48abb22e3b81263d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_BoStaff_01_Convex.asset using Guid(60fcbdd9c00345e48abb22e3b81263d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36db6e75a05b5d79e14a7f74f9561ace') in 0.017473 seconds
+  Import took 0.020911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Tanto_01.fbx
+  artifactKey: Guid(089abf828fdceb44f9219e7b0bedbb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Tanto_01.fbx using Guid(089abf828fdceb44f9219e7b0bedbb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34cf1b77aa8301a9423a5adeb081813f') in 0.048753 seconds
+  Import took 0.051581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Statue_Lion_01.fbx
+  artifactKey: Guid(b5e2ea86a0188d54eb5da1baf166c6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Statue_Lion_01.fbx using Guid(b5e2ea86a0188d54eb5da1baf166c6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e568df7a875226d8b8bc4b70eaab0d03') in 0.036301 seconds
+  Import took 0.039215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Statue_Lion_02_Convex.asset
+  artifactKey: Guid(894b97c763ce2974786142fa63ac8514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Statue_Lion_02_Convex.asset using Guid(894b97c763ce2974786142fa63ac8514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50172decec62b72ae50bb04103c915a4') in 0.017497 seconds
+  Import took 0.020131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Kunai_02_Convex.asset
+  artifactKey: Guid(2de1d8f289659ba40a20a3828a8dcbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Kunai_02_Convex.asset using Guid(2de1d8f289659ba40a20a3828a8dcbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92d7a35db6ebc8cf5d767e13bb54965') in 0.020415 seconds
+  Import took 0.023823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Sai_01.fbx
+  artifactKey: Guid(171157f0a2f94e54abb81e6fc8d972c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Sai_01.fbx using Guid(171157f0a2f94e54abb81e6fc8d972c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a1c09cbd10f2ceb060601fd0c8c199') in 0.032823 seconds
+  Import took 0.035599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Gong_01_Convex.asset
+  artifactKey: Guid(95dce49b3b1f37e40b6954a63a2e2c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Gong_01_Convex.asset using Guid(95dce49b3b1f37e40b6954a63a2e2c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08acd73fe851ed665897309846bbfdb4') in 0.018539 seconds
+  Import took 0.021337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Kunai_02.fbx
+  artifactKey: Guid(69356944df3eacc49a3b281b608c72b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Kunai_02.fbx using Guid(69356944df3eacc49a3b281b608c72b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f1fec9d4e1b913fa81e97fa4e898c4') in 0.031403 seconds
+  Import took 0.033822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_07.fbx
+  artifactKey: Guid(f47f2d22c29d1554e850998361a0c15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_07.fbx using Guid(f47f2d22c29d1554e850998361a0c15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f291b8c287fb44e5ea70d8055788c9') in 0.039167 seconds
+  Import took 0.041582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Bamboo_01_Convex.asset
+  artifactKey: Guid(c75eb1c92d841ab46bce62ef9a6592d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Bamboo_01_Convex.asset using Guid(c75eb1c92d841ab46bce62ef9a6592d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '551f3615a51e0686e6620d79e52cbef9') in 0.015770 seconds
+  Import took 0.018339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_03_Convex.asset
+  artifactKey: Guid(0ad69ae346a984a459f5960221f6b7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_03_Convex.asset using Guid(0ad69ae346a984a459f5960221f6b7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f87cec22c4fba20b01b9fbc37d5c84') in 0.019727 seconds
+  Import took 0.022140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Training_Pole_01_Convex.asset
+  artifactKey: Guid(bfc4a7a2dc4b75c4f8c9343fd77087d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Training_Pole_01_Convex.asset using Guid(bfc4a7a2dc4b75c4f8c9343fd77087d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523b44a31a952fc904c30b09d83745b9') in 0.026265 seconds
+  Import took 0.028961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Tanto_Covered_01_Convex.asset
+  artifactKey: Guid(c4b8d9406ab859d44ad63bf61611b0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Tanto_Covered_01_Convex.asset using Guid(c4b8d9406ab859d44ad63bf61611b0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a56937450289e7ad20cc55f4bda903') in 0.019701 seconds
+  Import took 0.022418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Odachi_01_Convex.asset
+  artifactKey: Guid(97d780cd24e029c479f4479908356198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Odachi_01_Convex.asset using Guid(97d780cd24e029c479f4479908356198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2298c3bf19f28d3b819c700810a2b3') in 0.020883 seconds
+  Import took 0.024140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Paper_Lantern_01_Convex.asset
+  artifactKey: Guid(8fa67db2f72ab47428a6d7111600b403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Paper_Lantern_01_Convex.asset using Guid(8fa67db2f72ab47428a6d7111600b403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74fa2a7c026c232856f8d10104cfd3d') in 0.021125 seconds
+  Import took 0.024285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Zen_Bamboo_01.fbx
+  artifactKey: Guid(06a42d5bae85cac46a85cda32fd99d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Zen_Bamboo_01.fbx using Guid(06a42d5bae85cac46a85cda32fd99d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc1810a4a637251ed6b09f90861bd31') in 0.029886 seconds
+  Import took 0.032241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fan_03.fbx
+  artifactKey: Guid(772612bcacf97104196108230ddf15b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fan_03.fbx using Guid(772612bcacf97104196108230ddf15b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa04aa5ee62881e7f9a88703aa0aeb1') in 0.032144 seconds
+  Import took 0.034521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fan_03_Convex.asset
+  artifactKey: Guid(0ce93f3985778fb4cb7cc5d5ff369f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fan_03_Convex.asset using Guid(0ce93f3985778fb4cb7cc5d5ff369f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19150406291050a03d84a569360f1a8e') in 0.017588 seconds
+  Import took 0.020096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Gong_01.fbx
+  artifactKey: Guid(a49e6a9f1fbba6b4eb7f67474629cf26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Gong_01.fbx using Guid(a49e6a9f1fbba6b4eb7f67474629cf26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b7f43a9ea3130162899712948f890e') in 0.030561 seconds
+  Import took 0.033639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_03_Convex.asset
+  artifactKey: Guid(e6443f05a437f7c44984a2b6ec41097e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_03_Convex.asset using Guid(e6443f05a437f7c44984a2b6ec41097e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f748c5911ce2fc9f0c0e941973d07788') in 0.017745 seconds
+  Import took 0.020521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Bamboo_02.fbx
+  artifactKey: Guid(018c1f705e0803644bba526cb58ee152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Bamboo_02.fbx using Guid(018c1f705e0803644bba526cb58ee152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d9a094e57682f79e3d577be76987316') in 0.035828 seconds
+  Import took 0.038857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_05.fbx
+  artifactKey: Guid(f04ab638af497f44481ea5cb54107f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_05.fbx using Guid(f04ab638af497f44481ea5cb54107f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e324cd616572385a3215665f03138507') in 0.034489 seconds
+  Import took 0.036836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Tonfa_01_Convex.asset
+  artifactKey: Guid(ac4ad5f29bf3ccb4eb4b00857f662422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Tonfa_01_Convex.asset using Guid(ac4ad5f29bf3ccb4eb4b00857f662422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d897ee53e805fe564f04be50b73e992') in 0.016894 seconds
+  Import took 0.019747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Tent_01_Convex 1.asset
+  artifactKey: Guid(9036d558a124a674d8269818f6f035eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Tent_01_Convex 1.asset using Guid(9036d558a124a674d8269818f6f035eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee81ffc52879d4788286c43b43ae14bb') in 0.038543 seconds
+  Import took 0.041343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Pot_01_Convex.asset
+  artifactKey: Guid(9efbe59bf8009a843961c5b63fec0ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Pot_01_Convex.asset using Guid(9efbe59bf8009a843961c5b63fec0ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e76224f456ab12d474df5de53135737') in 0.018120 seconds
+  Import took 0.020725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Paper_Lantern_02_Convex.asset
+  artifactKey: Guid(0877eb97b351a5143926b14e031331e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Paper_Lantern_02_Convex.asset using Guid(0877eb97b351a5143926b14e031331e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0615de42b7f90397354955eb89a73a') in 0.022922 seconds
+  Import took 0.025847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Tanto_Covered_01.fbx
+  artifactKey: Guid(074382d7e6527684b957396000cadbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Tanto_Covered_01.fbx using Guid(074382d7e6527684b957396000cadbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7230455b3c376106ec70bf6f05c501d5') in 0.038173 seconds
+  Import took 0.040957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_07_Convex.asset
+  artifactKey: Guid(47bbb0f7bea514545a4c9effa60ac5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_07_Convex.asset using Guid(47bbb0f7bea514545a4c9effa60ac5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7edef078ea0c33ec59684ab616b6b0c') in 0.017722 seconds
+  Import took 0.020385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Zen_Lantern_01.fbx
+  artifactKey: Guid(31ff77f025f608b43a5b0b011373e9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Zen_Lantern_01.fbx using Guid(31ff77f025f608b43a5b0b011373e9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9965be631b8cf16e13e52f27c9bc7c8') in 0.032737 seconds
+  Import took 0.036041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Rake_01_Convex.asset
+  artifactKey: Guid(ed8ed350424e54940a41b4df013324c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Rake_01_Convex.asset using Guid(ed8ed350424e54940a41b4df013324c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def74efc1aac1be4c50395ab459c81d7') in 0.019387 seconds
+  Import took 0.021884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Shamisen_01.fbx
+  artifactKey: Guid(c3fc280b51e310b46ab84c95f06c45a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Shamisen_01.fbx using Guid(c3fc280b51e310b46ab84c95f06c45a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d623ea3e0c9ad74fc80f43bf51050a') in 0.033079 seconds
+  Import took 0.035604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Zen_Bamboo_01_Convex.asset
+  artifactKey: Guid(45d355643d7bf3a45941628d92cf3c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Zen_Bamboo_01_Convex.asset using Guid(45d355643d7bf3a45941628d92cf3c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316715e6a7819124d6305e505fe405c9') in 0.018974 seconds
+  Import took 0.021914 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Naginata_02.fbx
+  artifactKey: Guid(e39a2e88f35468144a8e51d4ac3f4019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Naginata_02.fbx using Guid(e39a2e88f35468144a8e51d4ac3f4019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7100abe140c5bc30d6b656da89ba0bd4') in 0.031375 seconds
+  Import took 0.034362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Kunai_01_Convex.asset
+  artifactKey: Guid(99d24853a6bb5d94a9f59fc48fa9d56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Kunai_01_Convex.asset using Guid(99d24853a6bb5d94a9f59fc48fa9d56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af67843d8f45341eea4213a34483a79') in 0.018484 seconds
+  Import took 0.020939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Tonfa_01.fbx
+  artifactKey: Guid(6734858c2a2d28d479c95c535440dc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Tonfa_01.fbx using Guid(6734858c2a2d28d479c95c535440dc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5270d4da6dfb0d71bc913d0814e4606') in 0.034043 seconds
+  Import took 0.036531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Rope_01.fbx
+  artifactKey: Guid(70ab489b53b95d449a57e1ced66b506e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Rope_01.fbx using Guid(70ab489b53b95d449a57e1ced66b506e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886eb0bbf8c07f4042af2a1e9ebdcae0') in 0.031627 seconds
+  Import took 0.034024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fan_04.fbx
+  artifactKey: Guid(a039ff0bb51a5944fbe87c44d18a1ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fan_04.fbx using Guid(a039ff0bb51a5944fbe87c44d18a1ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '788969d7b77d1dff2345d796c6d4fe02') in 0.033688 seconds
+  Import took 0.036047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Wep_Ninjato_01_Convex.asset
+  artifactKey: Guid(3353b81db00fa6f4ba7f43ee3daf9d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Wep_Ninjato_01_Convex.asset using Guid(3353b81db00fa6f4ba7f43ee3daf9d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e9526f03422f0260962155d8c87a01') in 0.018610 seconds
+  Import took 0.021261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_08.fbx
+  artifactKey: Guid(d0dd364ed63b6fc4cb2297a337e0cf5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_08.fbx using Guid(d0dd364ed63b6fc4cb2297a337e0cf5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b9db59e964a5ab7618ab0eef94722e3') in 0.031077 seconds
+  Import took 0.033975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Paper_Lantern_01.fbx
+  artifactKey: Guid(15b04dd3ef68e7a4988ccecfb3ccefee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Paper_Lantern_01.fbx using Guid(15b04dd3ef68e7a4988ccecfb3ccefee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecf3f6d85b0b36501adce778cb791a5c') in 0.032008 seconds
+  Import took 0.034900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Straight_02.fbx
+  artifactKey: Guid(3a78954775435f14b9817bed406fb85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Straight_02.fbx using Guid(3a78954775435f14b9817bed406fb85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f226ca7e454c67f002dfc5628c81b2') in 0.032630 seconds
+  Import took 0.034945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Stone_Lantern_01.fbx
+  artifactKey: Guid(dfb0053eb66848949bf97d40525e1c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Stone_Lantern_01.fbx using Guid(dfb0053eb66848949bf97d40525e1c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493ec6d1e3476abf91a7d8254a8a8564') in 0.033625 seconds
+  Import took 0.036196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Post_01_Convex.asset
+  artifactKey: Guid(4550aabb2a422a14fa9decb678ac6328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Fence_Simple_Post_01_Convex.asset using Guid(4550aabb2a422a14fa9decb678ac6328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c8d20adf601aefeb3ce8aa70ab15dd') in 0.019550 seconds
+  Import took 0.022840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/PolygonSamurai/Models/SM_Prop_Vegetables_08_Convex.asset
+  artifactKey: Guid(a68421fa03d0fc44587e928ec1d440cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/SM_Prop_Vegetables_08_Convex.asset using Guid(a68421fa03d0fc44587e928ec1d440cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5fa4192d7be244bfe4bae643d15c48') in 0.019154 seconds
+  Import took 0.022621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.308356 seconds.
+  path: Assets/PolygonSamurai/Models/FixedScaleCharacters/Materials/Characters_Texture_01.mat
+  artifactKey: Guid(c92aa1e5ff21e25489d26492b46c7048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/FixedScaleCharacters/Materials/Characters_Texture_01.mat using Guid(c92aa1e5ff21e25489d26492b46c7048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a8666f9f87217868b3ac69adb56196') in 0.036012 seconds
+  Import took 0.039516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.672172 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_01.mat
+  artifactKey: Guid(61838ec19db54eb4d879d80a8b9bce11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_01.mat using Guid(61838ec19db54eb4d879d80a8b9bce11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '114c8242878b45198c1da906632111fd') in 0.031854 seconds
+  Import took 0.035856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_02.mat
+  artifactKey: Guid(c49fd74d06e3dc34a96c919e2351aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_02.mat using Guid(c49fd74d06e3dc34a96c919e2351aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48f928d427122bbbf4dc944ed50735c') in 0.021035 seconds
+  Import took 0.025634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_01.mat
+  artifactKey: Guid(61838ec19db54eb4d879d80a8b9bce11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_01.mat using Guid(61838ec19db54eb4d879d80a8b9bce11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '114c8242878b45198c1da906632111fd') in 0.019265 seconds
+  Import took 0.022314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_02.mat
+  artifactKey: Guid(c49fd74d06e3dc34a96c919e2351aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_02.mat using Guid(c49fd74d06e3dc34a96c919e2351aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48f928d427122bbbf4dc944ed50735c') in 0.012717 seconds
+  Import took 0.016248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.230315 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_01.fbx
+  artifactKey: Guid(6aa0fc812da0ace48935f77e6bb53777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_01.fbx using Guid(6aa0fc812da0ace48935f77e6bb53777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42aab2b7e56e67237c468f177d2735d') in 0.032889 seconds
+  Import took 0.036440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Large_02.fbx
+  artifactKey: Guid(9c849e9755bff36449bdd9662c451f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Large_02.fbx using Guid(9c849e9755bff36449bdd9662c451f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198906a7f7790393b1dc5dd6f72d97da') in 0.046745 seconds
+  Import took 0.049333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Medium_01.fbx
+  artifactKey: Guid(6355cf8183f40f4439c082c98e514453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Medium_01.fbx using Guid(6355cf8183f40f4439c082c98e514453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9064b38a8e19172b78d34f36123f47bf') in 0.041591 seconds
+  Import took 0.047183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Addon_03.fbx
+  artifactKey: Guid(698fca4c4e32bb54b8e14d79943b4858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Addon_03.fbx using Guid(698fca4c4e32bb54b8e14d79943b4858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384f35d3efd4a47fa721b2089ec664e9') in 0.042938 seconds
+  Import took 0.046397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Extension_01.fbx
+  artifactKey: Guid(8aa30b56b605c8a459bbcc000055ce71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Extension_01.fbx using Guid(8aa30b56b605c8a459bbcc000055ce71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7d249ddef5db585b3b4dbe6d8ec3a1') in 0.043516 seconds
+  Import took 0.048319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Large_Windows_01.fbx
+  artifactKey: Guid(159276003ee68e94ca247677e2e9e992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Large_Windows_01.fbx using Guid(159276003ee68e94ca247677e2e9e992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa4139ab70f092eb6b4e520c3fd005e') in 0.034123 seconds
+  Import took 0.036632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Base_Small_01.fbx
+  artifactKey: Guid(e5575745a751dc84ab9d474a6dfa73de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Base_Small_01.fbx using Guid(e5575745a751dc84ab9d474a6dfa73de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26bd164a05a35b417b91006227071d0c') in 0.031972 seconds
+  Import took 0.034790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_Extension_01.fbx
+  artifactKey: Guid(7531b13bc298c2a42adb9a88f3ba3dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_Extension_01.fbx using Guid(7531b13bc298c2a42adb9a88f3ba3dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9c72946944bcc7707c9db3f8665f6c') in 0.031894 seconds
+  Import took 0.034998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Window_01.fbx
+  artifactKey: Guid(ba02f5925740bdd4285db44752e012ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Window_01.fbx using Guid(ba02f5925740bdd4285db44752e012ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292362a3a1889ed2fec7fdce3d8668a4') in 0.029371 seconds
+  Import took 0.032269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Large_01.fbx
+  artifactKey: Guid(59503e954137cb440b6390b1b501fd12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Large_01.fbx using Guid(59503e954137cb440b6390b1b501fd12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcc73c5d82d25491765d4d0798fc76c') in 0.032828 seconds
+  Import took 0.036005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Door_01.fbx
+  artifactKey: Guid(4d51a89d180ab434792f6845888c65ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Door_01.fbx using Guid(4d51a89d180ab434792f6845888c65ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da9a0b23407521f69ab0e9f449a9cdf') in 0.037246 seconds
+  Import took 0.039702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Small_02.fbx
+  artifactKey: Guid(ee25e4ac293d7fc4fb50f2ed8524bae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Small_02.fbx using Guid(ee25e4ac293d7fc4fb50f2ed8524bae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4fe37b3ba864f7585d44ae4639090a0') in 0.032271 seconds
+  Import took 0.034810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Medium_Windows_01.fbx
+  artifactKey: Guid(182c9985b703099438885963edeb0c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Medium_Windows_01.fbx using Guid(182c9985b703099438885963edeb0c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b1abc280a6128ecd26c7261d75a998') in 0.032886 seconds
+  Import took 0.035706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Addon_01.fbx
+  artifactKey: Guid(9c4fe6b50f8766c49ba7e9cfce8c7a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Addon_01.fbx using Guid(9c4fe6b50f8766c49ba7e9cfce8c7a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81d510c6a178f22f57682bd94246c6d') in 0.034469 seconds
+  Import took 0.036966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Small_01.fbx
+  artifactKey: Guid(5d2ef2acf77e5914fa848ad012d7e8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Small_01.fbx using Guid(5d2ef2acf77e5914fa848ad012d7e8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd544ab2bb0d9783d93721305345cc5c0') in 0.034565 seconds
+  Import took 0.037420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Small_Windows_01.fbx
+  artifactKey: Guid(762180f3cad25374ab847ad78545cf41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Small_Windows_01.fbx using Guid(762180f3cad25374ab847ad78545cf41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f730db3d47f42b4b7d1c3a286305d7') in 0.033567 seconds
+  Import took 0.036510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Roof_Long_Thatch_01.fbx
+  artifactKey: Guid(afcc8cce57253e348bfb77b13a84c6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Roof_Long_Thatch_01.fbx using Guid(afcc8cce57253e348bfb77b13a84c6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86da6093d8f63a79585a3d275d815d18') in 0.034997 seconds
+  Import took 0.037531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Roof_Wood_01.fbx
+  artifactKey: Guid(c8ff6883620cdfb418bea485badb0e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Roof_Wood_01.fbx using Guid(c8ff6883620cdfb418bea485badb0e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b75d797a2d9670f93082c8aeb414a00') in 0.033309 seconds
+  Import took 0.035888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Door_02.fbx
+  artifactKey: Guid(55d549445235db84abd5ea1b33692c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Door_02.fbx using Guid(55d549445235db84abd5ea1b33692c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e423da6bef3a2521cdc20dbf09785bbc') in 0.037889 seconds
+  Import took 0.040930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Room_Long_02.fbx
+  artifactKey: Guid(f3a04cd6ae448a04099e9a5021339b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Room_Long_02.fbx using Guid(f3a04cd6ae448a04099e9a5021339b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d06281655089505a1b10a2d0eddff2') in 0.032665 seconds
+  Import took 0.035208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_04.fbx
+  artifactKey: Guid(cd09294da7a637146892f4ca16e03f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_04.fbx using Guid(cd09294da7a637146892f4ca16e03f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd8f3e26e003caaa53b5d772482cec1') in 0.036740 seconds
+  Import took 0.039479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Tower_01.fbx
+  artifactKey: Guid(340db4f0994138149901a0c6c909c24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Tower_01.fbx using Guid(340db4f0994138149901a0c6c909c24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3365021d931490e10947712b03dee0') in 0.039920 seconds
+  Import took 0.042307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Small_01.fbx
+  artifactKey: Guid(d9117d72a2954fc47a7e107359ec0485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Small_01.fbx using Guid(d9117d72a2954fc47a7e107359ec0485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd309288737c2abc44b3656c485083cd5') in 0.031862 seconds
+  Import took 0.034286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Addon_04.fbx
+  artifactKey: Guid(f9a7daed87c556444b5a35a1af8b0271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Addon_04.fbx using Guid(f9a7daed87c556444b5a35a1af8b0271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12072a6696c04238ec5153037d3e0a2f') in 0.033342 seconds
+  Import took 0.036021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Small_Legs_01.fbx
+  artifactKey: Guid(c9421a4049e100044a59dbdee1341467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Small_Legs_01.fbx using Guid(c9421a4049e100044a59dbdee1341467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '163d5f559d52a4d01d923c237f3dd241') in 0.035581 seconds
+  Import took 0.037964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_02.fbx
+  artifactKey: Guid(d48b0b09cd3384241b28bc0af448dc3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_02.fbx using Guid(d48b0b09cd3384241b28bc0af448dc3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f89214b5117fc33599eb138503e2ae08') in 0.041199 seconds
+  Import took 0.043627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Medium_01.fbx
+  artifactKey: Guid(4a42306855aede74396179eb7fffd548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Medium_01.fbx using Guid(4a42306855aede74396179eb7fffd548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849eafbd93bae390ae91286d94c8e700') in 0.030409 seconds
+  Import took 0.032823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Top_01.fbx
+  artifactKey: Guid(7130d7007426b634494e36644c00344e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Top_01.fbx using Guid(7130d7007426b634494e36644c00344e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66595e1e3b5a98520854151a94e49f3a') in 0.033691 seconds
+  Import took 0.036119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Top_01.fbx
+  artifactKey: Guid(a2f5411d966cb49489bd8c70f7fed316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Top_01.fbx using Guid(a2f5411d966cb49489bd8c70f7fed316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a731a1b837c6fcaaeda616e7f55eb0a0') in 0.057345 seconds
+  Import took 0.060327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_01.fbx
+  artifactKey: Guid(c9420dcbd511bfa44888045dcf0f6d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_01.fbx using Guid(c9420dcbd511bfa44888045dcf0f6d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f31744cfcd8b62e249fdd5db682f86') in 0.032246 seconds
+  Import took 0.034967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Room_Long_03.fbx
+  artifactKey: Guid(424439dfcc4e6024b89a2e633e6bb01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Room_Long_03.fbx using Guid(424439dfcc4e6024b89a2e633e6bb01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b7696443783664553289fbc07c7ae21') in 0.033340 seconds
+  Import took 0.035824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Addon_02.fbx
+  artifactKey: Guid(266dc1eedd61e77458a2595128ef4bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Addon_02.fbx using Guid(266dc1eedd61e77458a2595128ef4bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0e519c7e2ce137ead2961fa2dea04a') in 0.040680 seconds
+  Import took 0.043139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Medium_01.fbx
+  artifactKey: Guid(920ec11bb92d8e549927ee09c8b7f064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Medium_01.fbx using Guid(920ec11bb92d8e549927ee09c8b7f064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce55ecc9e64cf6c1bb03a33cf2f0f064') in 0.031283 seconds
+  Import took 0.033768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Roof_Long_Wood_01.fbx
+  artifactKey: Guid(fa6705ef1e209c14aad16b0525e1b858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Roof_Long_Wood_01.fbx using Guid(fa6705ef1e209c14aad16b0525e1b858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22cde568817e29047ca34a603fc929a') in 0.032796 seconds
+  Import took 0.035121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Door_02.fbx
+  artifactKey: Guid(73d69da36327c584682699c7310b8021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Door_02.fbx using Guid(73d69da36327c584682699c7310b8021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561d580f8e7d5940eb8718dfd6b839b5') in 0.033226 seconds
+  Import took 0.035544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_02.fbx
+  artifactKey: Guid(7c117194bb357c84a9480a00e9cab4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_02.fbx using Guid(7c117194bb357c84a9480a00e9cab4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b073b8037e1c0d6cefb6e9cf7d089ab') in 0.030855 seconds
+  Import took 0.033111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_03.fbx
+  artifactKey: Guid(905aff6d7ef679645a202dffcef5ff44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_03.fbx using Guid(905aff6d7ef679645a202dffcef5ff44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6227bfa6aed73d1e7589d66f8f2568d4') in 0.037075 seconds
+  Import took 0.039326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_DoorWay_01.fbx
+  artifactKey: Guid(82199ebcd87a43241899d0599c5ea2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_DoorWay_01.fbx using Guid(82199ebcd87a43241899d0599c5ea2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d9da2d8b502dd66b739c8ff3f473ee') in 0.033320 seconds
+  Import took 0.035984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_CornerPillar_01.fbx
+  artifactKey: Guid(0cbeeb187cb883a43b060ba0151abef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_CornerPillar_01.fbx using Guid(0cbeeb187cb883a43b060ba0151abef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43089186c10b2331eb981fbfed58e05b') in 0.030583 seconds
+  Import took 0.033419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Tip_01.fbx
+  artifactKey: Guid(deb8ccf3ae2c9e248bddf6986c604924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Tip_01.fbx using Guid(deb8ccf3ae2c9e248bddf6986c604924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ac8f5ee8bd411aa7eeff7bba15a4837') in 0.033482 seconds
+  Import took 0.035951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Small_02.fbx
+  artifactKey: Guid(108b4f268729a714685128e121ea5fd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Small_02.fbx using Guid(108b4f268729a714685128e121ea5fd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52d6cf78513911afb8c5cca3d40ed1d') in 0.032423 seconds
+  Import took 0.034748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Large_Legs_01.fbx
+  artifactKey: Guid(43ee244b900b26d4ebf8c56f2b5c02b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Large_Legs_01.fbx using Guid(43ee244b900b26d4ebf8c56f2b5c02b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b91434527e0f744ffe1a0f6aec86036b') in 0.040070 seconds
+  Import took 0.042458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Medium_Blank_01.fbx
+  artifactKey: Guid(c2c56ac378930894e8235601d2d0a4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Medium_Blank_01.fbx using Guid(c2c56ac378930894e8235601d2d0a4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9aec00e659a71bd84db011a04f4f0a') in 0.036122 seconds
+  Import took 0.038639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_02.fbx
+  artifactKey: Guid(120c408e8e0a06442ac7ade93890893e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_02.fbx using Guid(120c408e8e0a06442ac7ade93890893e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81047e60bac416350e6545f61c588d6c') in 0.031610 seconds
+  Import took 0.034221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Medium_02.fbx
+  artifactKey: Guid(3cce3aef1132bba4582d160852b22906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Medium_02.fbx using Guid(3cce3aef1132bba4582d160852b22906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26644f81c8ac67b611eae951d4d5d3c4') in 0.029332 seconds
+  Import took 0.031839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Gates_01.fbx
+  artifactKey: Guid(cba42eed6a80e3640bc1fa66e339c0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Gates_01.fbx using Guid(cba42eed6a80e3640bc1fa66e339c0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1072bdd687e4d5c8293e28522ee04ba0') in 0.029350 seconds
+  Import took 0.032355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Stairs_01.fbx
+  artifactKey: Guid(d40e31ad5db4e7b43a382371868db3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Stairs_01.fbx using Guid(d40e31ad5db4e7b43a382371868db3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a1dade61c54b2ffd017931bb8e4348') in 0.029360 seconds
+  Import took 0.031693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Small_01.fbx
+  artifactKey: Guid(0683bfe04fa9da74a845b36f16f06425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Small_01.fbx using Guid(0683bfe04fa9da74a845b36f16f06425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '995452cbeaf17f14f2967b6523b42628') in 0.027808 seconds
+  Import took 0.030204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Small_Blank_01.fbx
+  artifactKey: Guid(d0f20216f8ecdbf479fd82759f386533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Small_Blank_01.fbx using Guid(d0f20216f8ecdbf479fd82759f386533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25390fb02886a4171461a07eada2b1fc') in 0.027981 seconds
+  Import took 0.030502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Door_01.fbx
+  artifactKey: Guid(741ae2e4168f41c4fa72a74c3aa215e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Door_01.fbx using Guid(741ae2e4168f41c4fa72a74c3aa215e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a928624ff511d6be32c58f4859bae03') in 0.028195 seconds
+  Import took 0.031315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_BridgeCover_01.fbx
+  artifactKey: Guid(09649ec1f5e630743adb33ef235e9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_BridgeCover_01.fbx using Guid(09649ec1f5e630743adb33ef235e9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd6248d68235b4d9212046b13f763ba') in 0.032793 seconds
+  Import took 0.035081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Medium_Legs_01.fbx
+  artifactKey: Guid(1fd78bc1f0291e64d9a84e2971e8a1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Medium_Legs_01.fbx using Guid(1fd78bc1f0291e64d9a84e2971e8a1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70b873ef13e83c6569beeba8ba02b0d') in 0.029756 seconds
+  Import took 0.032105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Base_Large_01.fbx
+  artifactKey: Guid(0c73311182d0d7b41a0dd3bbc210659f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Base_Large_01.fbx using Guid(0c73311182d0d7b41a0dd3bbc210659f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff77008fd244f26505c27a7d6f067d9f') in 0.029062 seconds
+  Import took 0.031389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Window_01.fbx
+  artifactKey: Guid(67e669c1b69361948830060ea36e31ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Window_01.fbx using Guid(67e669c1b69361948830060ea36e31ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7553f34265512196aa18bfa95f6241c') in 0.026531 seconds
+  Import took 0.029186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Room_Long_01.fbx
+  artifactKey: Guid(be4e1e6b43889bd40a01b7d8bbbabdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Room_Long_01.fbx using Guid(be4e1e6b43889bd40a01b7d8bbbabdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6868485d808e245b283c11f81e8a7583') in 0.027772 seconds
+  Import took 0.030145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Addon_01.fbx
+  artifactKey: Guid(b4481112b26031742a8e5d09889520df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Addon_01.fbx using Guid(b4481112b26031742a8e5d09889520df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e19ff3079d490f2effc51df6f40741b5') in 0.029377 seconds
+  Import took 0.031824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Roof_Thatch_01.fbx
+  artifactKey: Guid(d265fa2b6da4ab34cab17109ddad5061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Roof_Thatch_01.fbx using Guid(d265fa2b6da4ab34cab17109ddad5061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5b4c044b08c71d30fb39747f26e3a4') in 0.030609 seconds
+  Import took 0.032806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Addon_02.fbx
+  artifactKey: Guid(b5618a35caf9d604387920f9f848fc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Addon_02.fbx using Guid(b5618a35caf9d604387920f9f848fc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee802b25a791d8b5dc6b1e35c1abbc7') in 0.035204 seconds
+  Import took 0.037520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Window_01.fbx
+  artifactKey: Guid(91667464bed438a4db0871535b72fa84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Window_01.fbx using Guid(91667464bed438a4db0871535b72fa84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44fa13c38af1eebf34aae1b77484794') in 0.033513 seconds
+  Import took 0.036096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Base_Medium_01.fbx
+  artifactKey: Guid(0f5360f6e1a2d8046ad0655501752a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Base_Medium_01.fbx using Guid(0f5360f6e1a2d8046ad0655501752a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac014ff1e16a15ae4b8442648a9aeaa') in 0.037036 seconds
+  Import took 0.040258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Small_01.fbx
+  artifactKey: Guid(4489cef563286d046bd9014adc68dd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Small_01.fbx using Guid(4489cef563286d046bd9014adc68dd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a779ac7d36ec95f3f6869fa0264685a') in 0.031798 seconds
+  Import took 0.034565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Small_02.fbx
+  artifactKey: Guid(d703b957e813c744391dcdfb1062692d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Small_02.fbx using Guid(d703b957e813c744391dcdfb1062692d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6dbd126a21e4af264f014e1195d62b') in 0.030500 seconds
+  Import took 0.033078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_Door_01.fbx
+  artifactKey: Guid(1d8ed89e387c8204ebf91087a323b154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_Door_01.fbx using Guid(1d8ed89e387c8204ebf91087a323b154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1037e6eeb624066df702ffb4adcf01') in 0.055260 seconds
+  Import took 0.057861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Addon_01.fbx
+  artifactKey: Guid(093d6053b4468eb43b759002616adeaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Addon_01.fbx using Guid(093d6053b4468eb43b759002616adeaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7eee8259db31430e8a38a2ff8c2466') in 0.036290 seconds
+  Import took 0.039177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_03.fbx
+  artifactKey: Guid(71934ee003ffd66489499b50fe24566c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_03.fbx using Guid(71934ee003ffd66489499b50fe24566c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b0578c87e608edafc80845680517fe') in 0.033772 seconds
+  Import took 0.036790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Large_Blank_01.fbx
+  artifactKey: Guid(dff1168d014c8de49ace3cebbbda5d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Large_Blank_01.fbx using Guid(dff1168d014c8de49ace3cebbbda5d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7b78f3d8bd0639414bcd6adf0ed061') in 0.033671 seconds
+  Import took 0.036068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Large_01.fbx
+  artifactKey: Guid(5855588751c6542428abe8d6ec3a4110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Platform_Large_01.fbx using Guid(5855588751c6542428abe8d6ec3a4110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1165bbde52d78df2067aa11d577c5f8d') in 0.035098 seconds
+  Import took 0.037462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_01.fbx
+  artifactKey: Guid(cb7229af973e8794791d43fdffd32fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_Long_01.fbx using Guid(cb7229af973e8794791d43fdffd32fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b153d571e537c3cf1b0e514d8a10b94') in 0.031991 seconds
+  Import took 0.034463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_01.fbx
+  artifactKey: Guid(c2a9a0b86f889e94083fda7f372e5a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_House_Base_01.fbx using Guid(c2a9a0b86f889e94083fda7f372e5a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e388042788bab8d21f1a4b249b0dc2') in 0.030507 seconds
+  Import took 0.032664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Large_01.fbx
+  artifactKey: Guid(3d54353b10e007946a733d3b02a27411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Temple_Roof_Large_01.fbx using Guid(3d54353b10e007946a733d3b02a27411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db9c20df362cf46db1dee1310f6ab67') in 0.028971 seconds
+  Import took 0.031237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_Stairs_01.fbx
+  artifactKey: Guid(2dd303d4bbfc0e9429774c36d894f7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_Stairs_01.fbx using Guid(2dd303d4bbfc0e9429774c36d894f7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f693f2b26bc0e185900daaf4db3f92a8') in 0.029999 seconds
+  Import took 0.032301 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
