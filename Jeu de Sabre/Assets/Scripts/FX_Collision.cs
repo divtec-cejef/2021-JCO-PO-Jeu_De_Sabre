@@ -5,13 +5,16 @@ using UnityEngine;
 public class FX_Collision : MonoBehaviour
 {
     public GameObject FX;
-   
+    
+
+
     
     private void OnCollisionEnter(Collision collision)
     {
         PSMoveAPI.psmove_set_rumble(TestConnection.manette_1, 250);
         PSMoveAPI.psmove_set_rumble(TestConnection.manette_2, 250);
         invokeParticleEffect();
+        
     }
 
     private void OnCollisionExit(Collision other)

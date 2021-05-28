@@ -33,6 +33,7 @@ public class PSMoveSabre1 : MonoBehaviour
         move = TestConnection.manette_1;
         PSMoveAPI.psmove_reset_orientation(move);
         PSMoveAPI.psmove_enable_orientation(move, PSMove_Bool.PSMove_True);
+        
     }
 
     /**
@@ -41,7 +42,7 @@ public class PSMoveSabre1 : MonoBehaviour
     void Awake(){
         actions = new PSMoveActions();
         //actions.Buttons.Trigger.performed += ctx => ChangeColor();
-        //actions.Buttons.Move.performed += ctx => defaultCalibration();
+        actions.Buttons.Move.performed += ctx => defaultCalibration();
         //actions.Buttons.Move.performed += ctx => LedColorBattery(battery:);
         // Génération de la liste de couleur
         setColorList();
