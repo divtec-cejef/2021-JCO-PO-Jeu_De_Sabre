@@ -1,0 +1,157 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.985; Version 2004; 64bit' Language: 'fr' Physical Memory: 16331 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\Unity\Unity\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57588
+Successfully changed project path to: C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 45.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path E:/Unity/Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1b83)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'E:/Unity/Unity/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001300 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 50.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.083 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001916 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 43.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.058 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1419 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.6 MB.
+System memory in use after: 69.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1861.
+Total: 2.602300 ms (FindLiveObjects: 0.194500 ms CreateObjectMapping: 0.036300 ms MarkObjects: 2.259100 ms  DeleteObjects: 0.110300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Brown.mat
+  artifactKey: Guid(1d42c932d2f4ce4459fefc6cd4c5aa15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Brown.mat using Guid(1d42c932d2f4ce4459fefc6cd4c5aa15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f46cf1d33e72ed1d312dd370c65590e') in 0.212638 seconds
+  Import took 0.215815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Clouds_Mat.mat
+  artifactKey: Guid(2b4db85464d9b394c9dc14cc2fba12ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Clouds_Mat.mat using Guid(2b4db85464d9b394c9dc14cc2fba12ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c0b7b238ecca3ec76a5b3d3ed52089') in 0.020248 seconds
+  Import took 0.023152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_04.mat
+  artifactKey: Guid(812c74b7f623a484c94aab57ba457ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_04.mat using Guid(812c74b7f623a484c94aab57ba457ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5798132ae3b1c6452a9d079faeac2b') in 0.019217 seconds
+  Import took 0.022254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_03.mat
+  artifactKey: Guid(f58eb4014cacded4d89c32b81aa213c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_03.mat using Guid(f58eb4014cacded4d89c32b81aa213c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdab6e68ab8a16ed912d2de82edcae27') in 0.018514 seconds
+  Import took 0.021497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Water_Mat.mat
+  artifactKey: Guid(670efced5793a754f8ef786c262b4727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Water_Mat.mat using Guid(670efced5793a754f8ef786c262b4727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1e5932d85926d234aabd2cd368e488') in 0.016250 seconds
+  Import took 0.019366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Fire_FX.mat
+  artifactKey: Guid(e8bc6160ccf0e9b4e950bcb511403374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Fire_FX.mat using Guid(e8bc6160ccf0e9b4e950bcb511403374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c33838ebbf1cd38699993399b4a08f5') in 0.015569 seconds
+  Import took 0.018366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Black.mat
+  artifactKey: Guid(15462656d6ff7074ba33213741cb3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Black.mat using Guid(15462656d6ff7074ba33213741cb3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f8178ed7d2e48c6dc881ae92efce59') in 0.025272 seconds
+  Import took 0.027889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Matl_White.mat
+  artifactKey: Guid(6d0613f500c022f48ae1dde75d4fc3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Matl_White.mat using Guid(6d0613f500c022f48ae1dde75d4fc3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb382a9396840c079c3dce410db26d79') in 0.023286 seconds
+  Import took 0.025825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_02.mat
+  artifactKey: Guid(9bc501b055c1fa247ba4c5d1f89d1579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_02.mat using Guid(9bc501b055c1fa247ba4c5d1f89d1579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7589cbef9e76b019ccdf56e3518f5429') in 0.013404 seconds
+  Import took 0.015868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/PolygonSamurai/Materials/Layout_BaseMesh_Gen_Grey.mat
+  artifactKey: Guid(189f7e75960e51e4c80462cfef0332db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Layout_BaseMesh_Gen_Grey.mat using Guid(189f7e75960e51e4c80462cfef0332db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afe91e09d3542c8e75d69050aac4c62') in 0.014878 seconds
+  Import took 0.017435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_01.mat
+  artifactKey: Guid(4eaaa3032586832468e97a6452e498a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_01.mat using Guid(4eaaa3032586832468e97a6452e498a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ceb5e10e4ce7c8ec809d976f0e0171') in 0.014947 seconds
+  Import took 0.017438 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
