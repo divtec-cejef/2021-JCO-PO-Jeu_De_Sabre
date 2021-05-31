@@ -84,7 +84,7 @@ public class PSMoveSabre2 : MonoBehaviour
             /* Si le Trigger est enfoncé, activation de la parade */
             if (trigger == 'ÿ')
             {
-                parade.onParadeEnabled(ref quaternion, axeX, axeZ, axeY, ow, Color.red);
+                parade.onParadeEnabled(ref quaternion, axeX, axeZ, -axeY, ow, Color.red);
             }
 
             if (trigger != 'ÿ' || parade.getCanceled() || !parade.getParade())
@@ -94,6 +94,7 @@ public class PSMoveSabre2 : MonoBehaviour
                 /* Récupère l'orientation du PSMove */
                 PSMoveAPI.psmove_poll(move);
                 PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
+
 
                 // CA FAIT CRASHER LE JEU QUAND ON L'ARRETE AVEC CE PRINT, PK PAS
                 //print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
@@ -110,7 +111,6 @@ public class PSMoveSabre2 : MonoBehaviour
 
                 /* Affectation de l'orientation à l'objet en cours */
                 quaternion = new Quaternion(axeX, axeZ, -axeY, ow);
-                print("No parade " + quaternion);
                 transform.rotation = quaternion;
             }
         }

@@ -66,7 +66,7 @@ public class Parade
                defaultPos = katanaAxis.transform.position;
             }
 
-            MonoBehaviour.print("Parade " + quaternion);
+            //MonoBehaviour.print("Parade " + quaternion);
             
             // katanaAxis.transform.position = tremblement;
             //

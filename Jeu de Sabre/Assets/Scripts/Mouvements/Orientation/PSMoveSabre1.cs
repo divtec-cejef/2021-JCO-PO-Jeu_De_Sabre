@@ -147,7 +147,7 @@ public class PSMoveSabre1 : MonoBehaviour
                 
                 // TODO Modification de la valeur retournée par le PSMove qui se désaxe au fur et a mesure
                 ow += 0.0f;
-                axeX -= 0.2f;
+                axeX -= 0.0f;
                 axeY -= 0.0009f;
                 axeZ += 0.0009f;
                 
