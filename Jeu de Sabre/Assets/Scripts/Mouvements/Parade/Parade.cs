@@ -5,7 +5,7 @@ using UnityEngine.InputSystem.Interactions;
 
 public class Parade
 {
-    private System.IntPtr move;
+    private PSMoveUtils.PSMoveID move_id;
     
     /* Si le joueur est en parade */
     private bool isParade;
@@ -30,7 +30,7 @@ public class Parade
     private GameObject fxEffect2;
     
     
-    public Parade(float timerParade, float cooldownParade, GameObject fx1, GameObject fx2, GameObject fxPos, GameObject katanaAxis, System.IntPtr move)
+    public Parade(float timerParade, float cooldownParade, GameObject fx1, GameObject fx2, GameObject fxPos, GameObject katanaAxis, PSMoveUtils.PSMoveID move_id)
     {
         this.timerParade = timerParade;
         this.cooldownParade = cooldownParade;
@@ -38,7 +38,7 @@ public class Parade
         FXParade_2 = fx2;
         FXParadePos = fxPos;
         this.katanaAxis = katanaAxis;
-        this.move = move;
+        this.move_id = move_id;
     }
 
     /// <summary>
@@ -55,14 +55,14 @@ public class Parade
         {
             if (!isParade)
             {
-               PSMoveUtils.setLED(move, parryColor);
+               PSMoveUtils.setLED(move_id, parryColor);
                fxEffect1 = MonoBehaviour.Instantiate(FXParade_1, FXParadePos.transform.position, FXParadePos.transform.rotation);
                fxEffect2 = MonoBehaviour.Instantiate(FXParade_2, FXParadePos.transform.position, FXParadePos.transform.rotation);
 
                quaternion = new Quaternion(axeX, axeZ, axeY, ow);
                katanaAxis.transform.rotation = quaternion;
                
-               PSMoveUtils.setVibration(move, 255);
+               PSMoveUtils.setVibration(move_id, 255);
                defaultPos = katanaAxis.transform.position;
             }
 
@@ -109,10 +109,10 @@ public class Parade
     {
         if (isParade)
         {
-            PSMoveUtils.setLED(move, Color.green);
+            PSMoveUtils.setLED(move_id, Color.green);
             timerParade = 3.0f;
             isCanceled = false;
-            PSMoveUtils.setVibration(move, 0);
+            PSMoveUtils.setVibration(move_id, 0);
             MonoBehaviour.Destroy(fxEffect1);
             MonoBehaviour.Destroy(fxEffect2);
             isReady = false;

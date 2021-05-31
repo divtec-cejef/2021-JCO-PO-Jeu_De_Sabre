@@ -40,7 +40,8 @@ public class PSMoveSabre1 : MonoBehaviour
     public GameObject FXParade2;
     /* Emplacement de l'effet de parade */
     public GameObject FXParadePos;
-    
+
+    public static bool isColliding = false;
     
     // Variables utilisées pour gérer l'orientation du sabre
     private float ow = 0;
@@ -67,7 +68,7 @@ public class PSMoveSabre1 : MonoBehaviour
         // Activation et réinitialisation de l'orientation de la manette
         PSMoveAPI.psmove_enable_orientation(move, PSMove_Bool.PSMove_True);
         PSMoveAPI.psmove_reset_orientation(move);
-        PSMoveUtils.setLED(move, Color.green);
+        PSMoveUtils.setLED(PSMoveUtils.PSMoveID.Manette_1, Color.green);
     }
 
     /**
@@ -77,7 +78,7 @@ public class PSMoveSabre1 : MonoBehaviour
     void Awake(){
         actions = new PSMoveActions();
         actions.Buttons.Move.performed += ctx => defaultCalibration();
-        parade = new Parade(3.0f, 5.0f, FXParade, FXParade2, FXParadePos, gameObject, move);
+        parade = new Parade(3.0f, 5.0f, FXParade, FXParade2, FXParadePos, gameObject, PSMoveUtils.PSMoveID.Manette_1);
         //actions.Buttons.Move.performed += ctx => LedColorBattery(battery:);
     }
 
@@ -106,57 +107,61 @@ public class PSMoveSabre1 : MonoBehaviour
             //print("Parade : " + isParade + ", Canceled : " + isCanceled + ", Ready : " + isReady);
 
             parade.updateParadeCooldown();
-            // /* Si le joueur n'est pas prêt à executer une parade et qu'un n'est pas déjà en parade */
-            // if (!isReady && !isParade)
-            // {
-            //     /* Si le timer n'est pas terminé, décompte du timer */
-            //     if (cooldownParade > 1.0f)
-            //     {
-            //         cooldownParade -= Time.deltaTime;
-            //     }
-            //     /* Si le timer est terminé, réactivation de la parade et réinitialisation du cooldown*/
-            //     else
-            //     {
-            //         isReady = true;
-            //         cooldownParade = 5.0f;
-            //     }
-            // }
-            
-            // Fonction permettant d'avertir le PSMove qu'on va agir sur ses capteurs
-            PSMoveAPI.psmove_poll(move);
-            
-            // Récupération de l'état du Trigger 'T'
-            char trigger = PSMoveAPI.psmove_get_trigger(move);
-            
-            /* Si le Trigger est enfoncé, activation de la parade */
-            if (trigger == 'ÿ')
+
+            if (!isColliding)
             {
-                parade.onParadeEnabled(ref quaternion, -axeX, axeZ, axeY, ow, Color.blue);
-            }
-            
-            // Si le Trigger n'est pas enfoncé ou que l'ancienne parade à été annulée
-            // Réactivation de l'orientation du sabre
-            if (trigger != 'ÿ' || parade.getCanceled() || !parade.getParade())
-            {
-                // Désactivation de la parade
-                parade.onParadeDisabled();
-            
-                // Récupération de l'orientation du PSMove
+                // /* Si le joueur n'est pas prêt à executer une parade et qu'un n'est pas déjà en parade */
+                // if (!isReady && !isParade)
+                // {
+                //     /* Si le timer n'est pas terminé, décompte du timer */
+                //     if (cooldownParade > 1.0f)
+                //     {
+                //         cooldownParade -= Time.deltaTime;
+                //     }
+                //     /* Si le timer est terminé, réactivation de la parade et réinitialisation du cooldown*/
+                //     else
+                //     {
+                //         isReady = true;
+                //         cooldownParade = 5.0f;
+                //     }
+                // }
+
+                // Fonction permettant d'avertir le PSMove qu'on va agir sur ses capteurs
                 PSMoveAPI.psmove_poll(move);
-                PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
-            
-                // CA FAIT CRASHER LE JEU QUAND ON L'ARRETE AVEC CE PRINT, PK PAS
-                //print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
-            
-                // TODO Modification de la valeur retournée par le PSMove qui se désaxe au fur et a mesure
-                ow += 0.0f;
-                axeX -= 0.0f;
-                axeY -= 0.0f;
-                axeZ += 0.0009f;
-            
-                // Affectation de l'orientation du PSMove à l'objet en cours 
-                quaternion = new Quaternion(-axeX, axeZ, axeY, ow);
-                transform.rotation = quaternion;
+
+                // Récupération de l'état du Trigger 'T'
+                char trigger = PSMoveAPI.psmove_get_trigger(move);
+
+                /* Si le Trigger est enfoncé, activation de la parade */
+                if (trigger == 'ÿ')
+                {
+                    parade.onParadeEnabled(ref quaternion, -axeX, axeZ, axeY, ow, Color.blue);
+                }
+
+                // Si le Trigger n'est pas enfoncé ou que l'ancienne parade à été annulée
+                // Réactivation de l'orientation du sabre
+                if (trigger != 'ÿ' || parade.getCanceled() || !parade.getParade())
+                {
+                    // Désactivation de la parade
+                    parade.onParadeDisabled();
+
+                    // Récupération de l'orientation du PSMove
+                    PSMoveAPI.psmove_poll(move);
+                    PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
+
+                    // CA FAIT CRASHER LE JEU QUAND ON L'ARRETE AVEC CE PRINT, PK PAS
+                    //print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
+
+                    // TODO Modification de la valeur retournée par le PSMove qui se désaxe au fur et a mesure
+                    ow += 0.0f;
+                    axeX -= 0.0f;
+                    axeY -= 0.0f;
+                    axeZ += 0.0009f;
+
+                    // Affectation de l'orientation du PSMove à l'objet en cours 
+                    quaternion = new Quaternion(-axeX, axeZ, axeY, ow);
+                    transform.rotation = quaternion;
+                }
             }
         }
     }

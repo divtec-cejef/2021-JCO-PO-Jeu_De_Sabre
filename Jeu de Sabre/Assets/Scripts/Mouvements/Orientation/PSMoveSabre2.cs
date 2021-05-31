@@ -40,7 +40,7 @@ public class PSMoveSabre2 : MonoBehaviour
         move = TestConnection.manette_2;
         PSMoveAPI.psmove_reset_orientation(move);
         PSMoveAPI.psmove_enable_orientation(move, PSMove_Bool.PSMove_True);
-        PSMoveUtils.setLED(move, Color.green);
+        PSMoveUtils.setLED(PSMoveUtils.PSMoveID.Manette_2, Color.green);
     }
 
     /**
@@ -49,7 +49,7 @@ public class PSMoveSabre2 : MonoBehaviour
     void Awake(){
         actions = new PSMoveActions();
         actions.Buttons.Move.performed += ctx => defaultCalibration();
-        parade = new Parade(3.0f, 5.0f, FXParade_1, FXParade_2, FXParadePos, gameObject, move);
+        parade = new Parade(3.0f, 5.0f, FXParade_1, FXParade_2, FXParadePos, gameObject, PSMoveUtils.PSMoveID.Manette_2);
 
     }
 

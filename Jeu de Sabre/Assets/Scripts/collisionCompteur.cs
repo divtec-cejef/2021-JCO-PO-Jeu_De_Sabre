@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class collisionCompteur : MonoBehaviour
 {
     private int compteur;
-    public Rigidbody rb;
-    public float vitesseCoup;
+    //public Rigidbody rb;
+    public float vitesseCoup = 0;
     Vector3 vitesseVector;
 
     void FixedUpdate()

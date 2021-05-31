@@ -64,7 +64,8 @@ public class PrefabCreator : MonoBehaviour
     private void SaveAsPrefab()
     {
         bool result = false;
-        PrefabUtility.SaveAsPrefabAsset(_objForSave, "Assets/HYPERCASUAL - Stickman Customization/PrefabCreator/" + _objForSave.name + ".prefab", out result);
+        //TODO reparer ca
+        //PrefabUtility.SaveAsPrefabAsset(_objForSave, "Assets/HYPERCASUAL - Stickman Customization/PrefabCreator/" + _objForSave.name + ".prefab", out result);
         Destroy(_objForSave);
     }
 
@@ -204,7 +205,8 @@ public class PrefabCreator : MonoBehaviour
     {
         Material newMaterial = new Material(mat);
 
-        AssetDatabase.CreateAsset(newMaterial, _materialPath + gameObjName + "_" + RandomNumber() + ".mat"); // _materialPath + gameObjName + "/mat_" + RandomNumber() + ".mat");
+        //TODO Reparer ca
+        //AssetDatabase.CreateAsset(newMaterial, _materialPath + gameObjName + "_" + RandomNumber() + ".mat"); // _materialPath + gameObjName + "/mat_" + RandomNumber() + ".mat");
 
         return newMaterial;
     }

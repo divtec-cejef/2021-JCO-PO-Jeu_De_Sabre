@@ -43,7 +43,8 @@ public class ColourSkinChanger : MonoBehaviour
         Material newMaterial = new Material(skinMaterial);
         newMaterial.color = new Color(rCanal, gCanal, bCanal, 1);
 
-        AssetDatabase.CreateAsset(newMaterial, "Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/" + "Skin_" + newCharacterPrefabName+ ".mat");
+        //TODO reparer ca
+        //AssetDatabase.CreateAsset(newMaterial, "Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/" + "Skin_" + newCharacterPrefabName+ ".mat");
 
         return newMaterial;
     }
