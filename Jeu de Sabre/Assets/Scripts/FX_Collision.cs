@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,19 +6,20 @@ using UnityEngine;
 public class FX_Collision : MonoBehaviour
 {
     public GameObject FX;
+
     
 
 
-    
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         PSMoveAPI.psmove_set_rumble(TestConnection.manette_1, 250);
         PSMoveAPI.psmove_set_rumble(TestConnection.manette_2, 250);
         invokeParticleEffect();
         
     }
+    
 
-    private void OnCollisionExit(Collision other)
+    private void OnTriggerExit(Collider other)
     {
         PSMoveAPI.psmove_set_rumble(TestConnection.manette_1, 0);
         PSMoveAPI.psmove_set_rumble(TestConnection.manette_2, 0);

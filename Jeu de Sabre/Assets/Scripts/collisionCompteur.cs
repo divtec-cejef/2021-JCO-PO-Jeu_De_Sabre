@@ -13,8 +13,8 @@ public class collisionCompteur : MonoBehaviour
 
     void FixedUpdate()
     {
-        vitesseCoup = rb.velocity.magnitude;
-        Debug.Log("c'est la vitesse " + vitesseCoup);
+        //vitesseCoup = rb.velocity.magnitude;
+        //Debug.Log("c'est la vitesse " + vitesseCoup);
         
         //Debug.Log("C'est le vecteur " + vitesseVector.ToString());
         //Debug.Log("c'est la vitesse " + vitesseCoup);
@@ -29,7 +29,7 @@ public class collisionCompteur : MonoBehaviour
     public int OnDamage(float speed)
     {
         //le multiplicateur sert a rendre la vitesse lisible
-        speed *= 10000000;
+        //speed *= 10000000;
         
         int degat = 0;
         if (speed >= 0 && speed < 2)
@@ -70,9 +70,12 @@ public class collisionCompteur : MonoBehaviour
    
     private void OnCollisionEnter(Collision collision)
     {
-
-        compteur += OnDamage(vitesseCoup);;
+        //compteur += OnDamage(vitesseCoup);;
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        compteur += OnDamage(vitesseCoup);;
+    }
 }
