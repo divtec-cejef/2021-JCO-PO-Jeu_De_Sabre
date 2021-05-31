@@ -121,39 +121,39 @@ public class PSMoveSabre1 : MonoBehaviour
             //         cooldownParade = 5.0f;
             //     }
             // }
-
+            
             // Fonction permettant d'avertir le PSMove qu'on va agir sur ses capteurs
             PSMoveAPI.psmove_poll(move);
-
+            
             // Récupération de l'état du Trigger 'T'
             char trigger = PSMoveAPI.psmove_get_trigger(move);
-
+            
             /* Si le Trigger est enfoncé, activation de la parade */
             if (trigger == 'ÿ')
             {
                 parade.onParadeEnabled(ref quaternion, -axeX, axeZ, axeY, ow, Color.blue);
             }
-
+            
             // Si le Trigger n'est pas enfoncé ou que l'ancienne parade à été annulée
             // Réactivation de l'orientation du sabre
             if (trigger != 'ÿ' || parade.getCanceled() || !parade.getParade())
             {
                 // Désactivation de la parade
                 parade.onParadeDisabled();
-
+            
                 // Récupération de l'orientation du PSMove
                 PSMoveAPI.psmove_poll(move);
                 PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
-
+            
                 // CA FAIT CRASHER LE JEU QUAND ON L'ARRETE AVEC CE PRINT, PK PAS
                 //print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
-
+            
                 // TODO Modification de la valeur retournée par le PSMove qui se désaxe au fur et a mesure
                 ow += 0.0f;
                 axeX -= 0.0f;
                 axeY -= 0.0f;
                 axeZ += 0.0009f;
-
+            
                 // Affectation de l'orientation du PSMove à l'objet en cours 
                 quaternion = new Quaternion(-axeX, axeZ, axeY, ow);
                 transform.rotation = quaternion;
