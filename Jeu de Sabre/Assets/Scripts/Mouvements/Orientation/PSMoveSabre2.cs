@@ -105,8 +105,8 @@ public class PSMoveSabre2 : MonoBehaviour
                 float axeZConp =0.009f;
                 */
                 ow += 0.0f;
-                axeX -= 0.2f;
-                axeY -= 0.0009f;
+                axeX -= 0.0f;
+                axeY -= 0.0f;
                 axeZ += 0.0009f;
 
                 /* Affectation de l'orientation à l'objet en cours */

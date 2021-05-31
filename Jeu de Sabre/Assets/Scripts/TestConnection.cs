@@ -13,15 +13,15 @@ public class TestConnection : MonoBehaviour {
         
         if(init == PSMove_Bool.PSMove_True) {
             /* Récupération des manettes PSMove */
-            //manette_1 = PSMoveAPI.psmove_connect();
-            manette_2 = PSMoveAPI.psmove_connect();
+            manette_1 = PSMoveAPI.psmove_connect_by_id(0);
+            manette_2 = PSMoveAPI.psmove_connect_by_id(1);
 
             // Variable utilsée pour afficher les erreurs
             int errorNbr = -1;
             
             /* Vérification de la validité de la manette 1 */
-            //if(manette_1 == IntPtr.Zero || PSMoveAPI.psmove_update_leds(manette_1) == 0)
-            //    errorNbr = 0;
+            if(manette_1 == IntPtr.Zero || PSMoveAPI.psmove_update_leds(manette_1) == 0)
+                errorNbr = 0;
             
             /* Vérification de la validité de la manette 2 */
             if (manette_2 == IntPtr.Zero || PSMoveAPI.psmove_update_leds(manette_2) == 0)
@@ -54,7 +54,7 @@ public class TestConnection : MonoBehaviour {
                     initDone = true;
                     
                     // Initialisation des mouvements de la manette
-                    //PSMoveSabre1.init();
+                    PSMoveSabre1.init();
                     PSMoveSabre2.init();
                     break;
             }
@@ -69,7 +69,7 @@ public class TestConnection : MonoBehaviour {
      * Déconnection des manettes lors de la fermeture de l'application
      */
     private void OnApplicationQuit() {
-        //PSMoveAPI.psmove_disconnect(manette_1);
+        PSMoveAPI.psmove_disconnect(manette_1);
         PSMoveAPI.psmove_disconnect(manette_2);
     }
 }
