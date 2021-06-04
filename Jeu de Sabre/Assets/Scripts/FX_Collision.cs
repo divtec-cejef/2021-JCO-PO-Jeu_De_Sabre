@@ -5,17 +5,24 @@ using UnityEngine;
 
 public class FX_Collision : MonoBehaviour
 {
-    public GameObject FX;
-
+    public GameObject FX_Player;
+    public GameObject FX_Katana;
     
 
 
     private void OnTriggerEnter(Collider collision)
     {
-        PSMoveAPI.psmove_set_rumble(TestConnection.manette_1, 250);
-        PSMoveAPI.psmove_set_rumble(TestConnection.manette_2, 250);
-        invokeParticleEffect();
-        
+        if (collision.gameObject.name == "SM_Wep_Odachi_01")
+        {
+            invokeParticleEffect(FX_Katana);
+        }
+        else if (collision.gameObject.name == "Characters_J2")
+        {
+            invokeParticleEffect(FX_Player);
+        } else if (collision.gameObject.name != "Characters_J1")
+        {
+            PSMoveAPI.psmove_set_rumble(TestConnection.manette_1, 250);
+        }
     }
     
 
@@ -25,9 +32,9 @@ public class FX_Collision : MonoBehaviour
         PSMoveAPI.psmove_set_rumble(TestConnection.manette_2, 0);
     }
 
-    void invokeParticleEffect()
+    void invokeParticleEffect(GameObject Arc_En_Ciel)
     {
-        GameObject effect =  (GameObject) Instantiate(FX, transform.position, FX.transform.rotation);
+        GameObject effect =  (GameObject) Instantiate(Arc_En_Ciel, transform.position, Arc_En_Ciel.transform.rotation);
         Destroy(effect, 2f);
     }
 }

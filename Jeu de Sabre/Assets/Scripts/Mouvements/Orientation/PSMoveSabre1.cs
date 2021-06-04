@@ -40,8 +40,10 @@ public class PSMoveSabre1 : MonoBehaviour
     public GameObject FXParade2;
     /* Emplacement de l'effet de parade */
     public GameObject FXParadePos;
+    
 
     public static bool isColliding = false;
+    
     
     // Variables utilisées pour gérer l'orientation du sabre
     private float ow = 0;
@@ -108,24 +110,8 @@ public class PSMoveSabre1 : MonoBehaviour
 
             parade.updateParadeCooldown();
 
-            //if (!isColliding)
-            //{
-                // /* Si le joueur n'est pas prêt à executer une parade et qu'un n'est pas déjà en parade */
-                // if (!isReady && !isParade)
-                // {
-                //     /* Si le timer n'est pas terminé, décompte du timer */
-                //     if (cooldownParade > 1.0f)
-                //     {
-                //         cooldownParade -= Time.deltaTime;
-                //     }
-                //     /* Si le timer est terminé, réactivation de la parade et réinitialisation du cooldown*/
-                //     else
-                //     {
-                //         isReady = true;
-                //         cooldownParade = 5.0f;
-                //     }
-                // }
-
+            if (!isColliding)
+            {
                 // Fonction permettant d'avertir le PSMove qu'on va agir sur ses capteurs
                 PSMoveAPI.psmove_poll(move);
 
@@ -148,6 +134,7 @@ public class PSMoveSabre1 : MonoBehaviour
                     // Récupération de l'orientation du PSMove
                     PSMoveAPI.psmove_poll(move);
                     PSMoveAPI.psmove_get_orientation(move, ref ow, ref axeX, ref axeY, ref axeZ);
+                    
 
                     // CA FAIT CRASHER LE JEU QUAND ON L'ARRETE AVEC CE PRINT, PK PAS
                     //print("OW : " + ow + ". OX : " + axeX/**763.0f*/ + ". OY : " + axeY/**26*/ + ". OZ : " + axeZ/**3.19f*/);
@@ -160,106 +147,13 @@ public class PSMoveSabre1 : MonoBehaviour
 
                     // Affectation de l'orientation du PSMove à l'objet en cours 
                     quaternion = new Quaternion(-axeX, axeZ, axeY, ow);
-                    transform.rotation = quaternion;
+
+                    transform.rotation = Quaternion.Lerp(transform.rotation, quaternion, 0.07f);
+                    //transform.rotation = quaternion;
                 }
-            //}
+            }
         }
     }
-
-
-    // /// <summary>
-    // /// Vérification de activation de la parade, active aussi tout les effets secondaires lié à la parade
-    // /// </summary>
-    // private void activerParade()
-    // {
-    //     /* Si la parade n'est pas annulé et que le joueur est prêt à parer */
-    //     if (!isCanceled && isReady)
-    //     {
-    //         /* Si le joueur n'est pas déjà en parade */
-    //         if (!isParade)
-    //         {
-    //             SetLED(Color.blue);
-    //
-    //             // Création de l'effet visuel
-    //             effect = (GameObject) Instantiate(FXParade, FXParadePos.transform.position, FXParadePos.transform.rotation);
-    //             effect2 = (GameObject) Instantiate(FXParade2, FXParadePos.transform.position, FXParadePos.transform.rotation);
-    //             quaternion = new Quaternion(-axeX, axeZ, axeY, ow);
-    //             transform.rotation = quaternion;
-    //             // Vibration de la manette
-    //             PSMoveAPI.psmove_set_rumble(move, 255);
-    //             // Sauvegarde de la position originale
-    //             defaultPos = transform.position;
-    //         }
-    //         
-    //
-    //         transform.position = tremblement;
-    //
-    //         if (tremblement.magnitude <= transform.position.magnitude + 0.1 &&
-    //             tremblement.magnitude >= transform.position.magnitude - 0.1)
-    //         {
-    //             transform.position = Random.insideUnitSphere * 0.025f;
-    //         }
-    //
-    //         tremblement.x = Mathf.SmoothStep(tremblement.x, transform.position.x, Time.deltaTime * 200);
-    //         tremblement.y = Mathf.SmoothStep(tremblement.y, transform.position.y, Time.deltaTime * 200);
-    //         tremblement.z = Mathf.SmoothStep(tremblement.z, transform.position.z, Time.deltaTime * 200);
-    //         
-    //         // Mise à jour du timer de la parade
-    //         ParadeTimer();
-    //         isParade = true;
-    //     }
-    // }
-
-    // /// <summary>
-    // /// Gère le timer de la parade en cours
-    // /// </summary>
-    // private void ParadeTimer()
-    // {
-    //     /* Si le timer n'est pas terminé, décompte du timer */
-    //     if (timerParade > 1.0f)
-    //     {
-    //         timerParade -= Time.deltaTime;
-    //     }
-    //     /* Si le timer est terminé, annulation de la parade et réinitialisation du timer */
-    //     else
-    //     {
-    //         isCanceled = true;
-    //         timerParade = 3.0f;
-    //         isReady = false;
-    //     }
-    //
-    // }
-
-    // /// <summary>
-    // /// Permet d'effectuer toutes les actions lié à la sortie d'une parade
-    // /// </summary>
-    // private void desactiverParade()
-    // {
-    //     if (isParade)
-    //     {
-    //         SetLED(Color.green);
-    //         timerParade = 3.0f;
-    //         isCanceled = false;
-    //         PSMoveAPI.psmove_set_rumble(move, 0);
-    //         Destroy(effect);
-    //         Destroy(effect2);
-    //         isReady = false;
-    //         transform.position = defaultPos;
-    //     }
-    //     isParade = false;
-    // }
-
-    // private void OnGUI()
-    // {
-    //     GUI.TextArea(new Rect(0,0,100,20), cooldownParade.ToString());
-    //     GUI.TextArea(new Rect(0,21,100,20), timerParade.ToString());
-    // }
-
-    /// <summary>
-    /// Permet d'activer la led du PSMove
-    /// </summary>
-    /// <param name="color"></param>
-   
     /**
      * Permet d'activer les contrôles des boutons
      */
@@ -272,5 +166,10 @@ public class PSMoveSabre1 : MonoBehaviour
      */
     void OnDisable(){
         actions.Buttons.Disable();
+    }
+
+    public static void setPosition()
+    {
+        
     }
 }

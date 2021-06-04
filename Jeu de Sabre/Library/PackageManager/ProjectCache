@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637572043123439520
+      ticks: 637571764447008754
     m_Hash: 4203124176
   m_LockFileStatus:
     m_FilePath: C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637572043123439520
+      ticks: 637571764447018725
     m_Hash: 2993836661
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -165,7 +165,6 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
-        - 3.0.7
         compatible:
         - 1.0.2
         - 1.0.6
@@ -191,7 +190,6 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
-        - 3.0.7
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -540,11 +538,9 @@ m_PackageAssets:
         - 1.1.20
         - 1.1.22
         - 1.1.24
-        - 1.1.26
         compatible:
         - 1.1.24
-        - 1.1.26
-        verified: 1.1.26
+        verified: 1.1.24
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6

@@ -30,10 +30,13 @@ public class CollisionSabre1 : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "SM_Wep_Odachi_01")
-        {
-            //PSMoveSabre1.isColliding = true;
+        { 
+            PSMoveSabre1.isColliding = true;
+            PSMoveSabre1.setPosition();
+            PSMoveSabre1.isColliding = false;
+
         }
-        else if (other.gameObject.name == "Characters_J2")
+        else if (other.gameObject.name == "Characters_J2" )
         {
             score += OnDamage(vitesseCoup);
         }
