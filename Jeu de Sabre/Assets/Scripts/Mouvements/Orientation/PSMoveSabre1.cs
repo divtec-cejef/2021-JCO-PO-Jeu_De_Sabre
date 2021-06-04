@@ -108,8 +108,8 @@ public class PSMoveSabre1 : MonoBehaviour
 
             parade.updateParadeCooldown();
 
-            if (!isColliding)
-            {
+            //if (!isColliding)
+            //{
                 // /* Si le joueur n'est pas prêt à executer une parade et qu'un n'est pas déjà en parade */
                 // if (!isReady && !isParade)
                 // {
@@ -162,7 +162,7 @@ public class PSMoveSabre1 : MonoBehaviour
                     quaternion = new Quaternion(-axeX, axeZ, axeY, ow);
                     transform.rotation = quaternion;
                 }
-            }
+            //}
         }
     }
 

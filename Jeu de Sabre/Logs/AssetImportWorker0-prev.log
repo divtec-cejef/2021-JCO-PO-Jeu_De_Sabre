@@ -1,0 +1,1397 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.985; Version 2004; 64bit' Language: 'fr' Physical Memory: 16331 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\Unity\Unity\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52939
+Successfully changed project path to: C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 53.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path E:/Unity/Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1b83)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'E:/Unity/Unity/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001236 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 49.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.082 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001972 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 50.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.172 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1440 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.5 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1887.
+Total: 2.086700 ms (FindLiveObjects: 0.196200 ms CreateObjectMapping: 0.040200 ms MarkObjects: 1.756700 ms  DeleteObjects: 0.092100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Or.mat
+  artifactKey: Guid(9ffc95822da5489418ca50839931b0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Or.mat using Guid(9ffc95822da5489418ca50839931b0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdcfabe091a6b84aeadf604fb2d1b164') in 0.217162 seconds
+  Import took 0.220017 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003237 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.9 MB.
+System memory in use after: 74.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1930.
+Total: 2.269000 ms (FindLiveObjects: 0.207000 ms CreateObjectMapping: 0.037900 ms MarkObjects: 1.949400 ms  DeleteObjects: 0.072900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1153.532757 seconds.
+  path: Assets/Scripts/Mouvements/Orientation/PSMoveSabre1.cs
+  artifactKey: Guid(3f2630479ac971346bd2f86cb6822db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouvements/Orientation/PSMoveSabre1.cs using Guid(3f2630479ac971346bd2f86cb6822db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0965e1b7fc7555ad01f511f194b5ff') in 0.025006 seconds
+  Import took 0.028228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011477 seconds.
+  path: Assets/Scripts/Mouvements/Orientation/PSMoveSabre1.cs
+  artifactKey: Guid(3f2630479ac971346bd2f86cb6822db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouvements/Orientation/PSMoveSabre1.cs using Guid(3f2630479ac971346bd2f86cb6822db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0965e1b7fc7555ad01f511f194b5ff') in 0.003155 seconds
+  Import took 0.005978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.965938 seconds.
+  path: Assets/PolygonSamurai/Materials
+  artifactKey: Guid(c6ded36a6b3ea844bba3f56eb3ea3e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials using Guid(c6ded36a6b3ea844bba3f56eb3ea3e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85fa58992f3870963f7ca01daf7c7e3e') in 0.009784 seconds
+  Import took 0.013356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059417 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_01.mat
+  artifactKey: Guid(61838ec19db54eb4d879d80a8b9bce11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_01.mat using Guid(61838ec19db54eb4d879d80a8b9bce11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a87c17d77a2b60e162313cc630e2a7b') in 0.079784 seconds
+  Import took 0.082697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Brown.mat
+  artifactKey: Guid(1d42c932d2f4ce4459fefc6cd4c5aa15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Brown.mat using Guid(1d42c932d2f4ce4459fefc6cd4c5aa15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ccfa0f752415735cf31806ca302407') in 0.027515 seconds
+  Import took 0.030289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_03.mat
+  artifactKey: Guid(948d2d81149b1704bae6d8bd0ff78a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_03.mat using Guid(948d2d81149b1704bae6d8bd0ff78a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251438301364fd828b9b7d65db2310a4') in 0.022064 seconds
+  Import took 0.026395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_02.mat
+  artifactKey: Guid(9a6368653bd828747ba38151e7103742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_02.mat using Guid(9a6368653bd828747ba38151e7103742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b51dd2f86fb14f9ee106610e77d08d51') in 0.024650 seconds
+  Import took 0.028331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_04.mat
+  artifactKey: Guid(4ccf967449e553347b1b3389133f7db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_04.mat using Guid(4ccf967449e553347b1b3389133f7db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f282ed9da0e5710bf9fd96baaec8fd0') in 0.019178 seconds
+  Import took 0.022509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Clouds_Mat.mat
+  artifactKey: Guid(2b4db85464d9b394c9dc14cc2fba12ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Clouds_Mat.mat using Guid(2b4db85464d9b394c9dc14cc2fba12ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002376786573a8dec1e2f2a8ddaeb216') in 0.019253 seconds
+  Import took 0.022530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_04.mat
+  artifactKey: Guid(812c74b7f623a484c94aab57ba457ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_04.mat using Guid(812c74b7f623a484c94aab57ba457ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e38702b33caafa447d579a5eef48a9e') in 0.020122 seconds
+  Import took 0.023907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_03.mat
+  artifactKey: Guid(f58eb4014cacded4d89c32b81aa213c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_03.mat using Guid(f58eb4014cacded4d89c32b81aa213c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c9db25fc4b854f43303de2c5d30af6') in 0.018523 seconds
+  Import took 0.022521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_03.mat
+  artifactKey: Guid(50ef2e349497eeb45bb893f60790a42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_03.mat using Guid(50ef2e349497eeb45bb893f60790a42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81ec0340db0e171a75fc3d3619c2303b') in 0.029215 seconds
+  Import took 0.033192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Water_Mat.mat
+  artifactKey: Guid(670efced5793a754f8ef786c262b4727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Water_Mat.mat using Guid(670efced5793a754f8ef786c262b4727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38322cce140148855354cade7489b7f3') in 0.015007 seconds
+  Import took 0.018425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Petals_Mat.mat
+  artifactKey: Guid(7e532f6673ab31641bfaaf50f0651df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Petals_Mat.mat using Guid(7e532f6673ab31641bfaaf50f0651df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2582a1dec8d2466108f98c780e0aef') in 0.016239 seconds
+  Import took 0.019628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Emmision_Night.mat
+  artifactKey: Guid(8e69766d06efcc64a90dc2b678c2ad8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Emmision_Night.mat using Guid(8e69766d06efcc64a90dc2b678c2ad8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819c95dcf24a548414fd6da30f80a477') in 0.025746 seconds
+  Import took 0.029229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Fire_FX.mat
+  artifactKey: Guid(e8bc6160ccf0e9b4e950bcb511403374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Fire_FX.mat using Guid(e8bc6160ccf0e9b4e950bcb511403374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eba689682d04535173ed1eaa61e5152') in 0.016522 seconds
+  Import took 0.019827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Black.mat
+  artifactKey: Guid(15462656d6ff7074ba33213741cb3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Black.mat using Guid(15462656d6ff7074ba33213741cb3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5144f2e19fd188a2fe9faa2fc90a0629') in 0.018787 seconds
+  Import took 0.023088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Matl_White.mat
+  artifactKey: Guid(6d0613f500c022f48ae1dde75d4fc3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Matl_White.mat using Guid(6d0613f500c022f48ae1dde75d4fc3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22357dc2f34576201f3b50704fab49c8') in 0.015860 seconds
+  Import took 0.019289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_02.mat
+  artifactKey: Guid(9bc501b055c1fa247ba4c5d1f89d1579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_02.mat using Guid(9bc501b055c1fa247ba4c5d1f89d1579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '305c53dc37272ea2e2d9e78eb662b9a7') in 0.017531 seconds
+  Import took 0.020580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/PolygonSamurai/Materials/Layout_BaseMesh_Gen_Grey.mat
+  artifactKey: Guid(189f7e75960e51e4c80462cfef0332db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Layout_BaseMesh_Gen_Grey.mat using Guid(189f7e75960e51e4c80462cfef0332db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '406b24adbed514fee8870345ba46722f') in 0.015689 seconds
+  Import took 0.018330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_02.mat
+  artifactKey: Guid(c49fd74d06e3dc34a96c919e2351aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_02.mat using Guid(c49fd74d06e3dc34a96c919e2351aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f2e7c7cfe86745b866347db5b5fbc6') in 0.015345 seconds
+  Import took 0.018068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_01.mat
+  artifactKey: Guid(4eaaa3032586832468e97a6452e498a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_01.mat using Guid(4eaaa3032586832468e97a6452e498a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d45c200419040196a49f7addb68113') in 0.019026 seconds
+  Import took 0.022196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_01.mat
+  artifactKey: Guid(17a14e062db60544b93d69dba591711d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_01.mat using Guid(17a14e062db60544b93d69dba591711d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '402db3608d1fd5d6ec6010c9f4eee141') in 0.017239 seconds
+  Import took 0.019998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_01.mat
+  artifactKey: Guid(4eaaa3032586832468e97a6452e498a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_01.mat using Guid(4eaaa3032586832468e97a6452e498a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d45c200419040196a49f7addb68113') in 0.014290 seconds
+  Import took 0.017088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.663399 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments
+  artifactKey: Guid(3613cccff852ac245948b540630485cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments using Guid(3613cccff852ac245948b540630485cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54720618416de708c78fc40fde80df0') in 0.008932 seconds
+  Import took 0.011646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055707 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Archway_01.prefab
+  artifactKey: Guid(eee7d30a1967a4b4283d35b0dbddc6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Archway_01.prefab using Guid(eee7d30a1967a4b4283d35b0dbddc6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a5e1c722b999f8b2d0d4a430607a1d') in 0.029312 seconds
+  Import took 0.032199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Group_03.prefab
+  artifactKey: Guid(c82b63a254bfc9e40bcf435672db5919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Group_03.prefab using Guid(c82b63a254bfc9e40bcf435672db5919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d989a957d92a03de81af47a8680e137') in 0.018484 seconds
+  Import took 0.021318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bush_02.prefab
+  artifactKey: Guid(bf927057f20014040b17e9dcc8dd8ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bush_02.prefab using Guid(bf927057f20014040b17e9dcc8dd8ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b18c0ecdde9909719e1cb919fb7ed616') in 0.024838 seconds
+  Import took 0.028044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cloud_02.prefab
+  artifactKey: Guid(dcacebb11cce36848bb6026a957274e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cloud_02.prefab using Guid(dcacebb11cce36848bb6026a957274e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8da066e6c1ae81477b3a69457504592') in 0.017495 seconds
+  Import took 0.020328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cloud_01.prefab
+  artifactKey: Guid(fce21d78c935cb94398126a3ac77cee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cloud_01.prefab using Guid(fce21d78c935cb94398126a3ac77cee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fbae99c7b35697fcbe32bc445e623b') in 0.019947 seconds
+  Import took 0.022447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_01.prefab
+  artifactKey: Guid(5ae1db1e12efb2e4cae407c5f8558a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_01.prefab using Guid(5ae1db1e12efb2e4cae407c5f8558a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf39fdc1d477cb48861657992f73f8d') in 0.023402 seconds
+  Import took 0.026246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Fence_01.prefab
+  artifactKey: Guid(f613fa6361aad2d46bcd3644f1a9b0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Fence_01.prefab using Guid(f613fa6361aad2d46bcd3644f1a9b0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05dcf4d346aff155490ecf05e572e1a') in 0.016266 seconds
+  Import took 0.019102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cliff_01.prefab
+  artifactKey: Guid(34a675b8d0a8d1942bf90a99edbc6178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cliff_01.prefab using Guid(34a675b8d0a8d1942bf90a99edbc6178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc7e4b089840dd405a0cce583d39b29') in 0.022447 seconds
+  Import took 0.025293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_03.prefab
+  artifactKey: Guid(fa9bcfece259b73429a1a259e9cf9260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_03.prefab using Guid(fa9bcfece259b73429a1a259e9cf9260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1576c10d974b4eb4a92e0cd3338b52fb') in 0.020765 seconds
+  Import took 0.023649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Lillypad_Large_01.prefab
+  artifactKey: Guid(86d10820cadee3d4d868dc6c7f063920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Lillypad_Large_01.prefab using Guid(86d10820cadee3d4d868dc6c7f063920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8eb9810b7554d651e741e0f52837c85') in 0.020447 seconds
+  Import took 0.023316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Flowers_02.prefab
+  artifactKey: Guid(8264d38330b69044a8a7dff1b33b4fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Flowers_02.prefab using Guid(8264d38330b69044a8a7dff1b33b4fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb09eda942b8ff91366f78eb93a1df06') in 0.016141 seconds
+  Import took 0.019366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PaddyHills_01.prefab
+  artifactKey: Guid(0445c5a5488d44240889f029111bc356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PaddyHills_01.prefab using Guid(0445c5a5488d44240889f029111bc356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fad39061d3fd17614ef3b9c18da0fa4') in 0.024144 seconds
+  Import took 0.027194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Lillypad_Small_01.prefab
+  artifactKey: Guid(43179a0b56b254d47bd4dc03a7a91654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Lillypad_Small_01.prefab using Guid(43179a0b56b254d47bd4dc03a7a91654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ee4029281265bac70bd726afad8faa') in 0.020623 seconds
+  Import took 0.024564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_DirtPath_02.prefab
+  artifactKey: Guid(e5078773fedcadc43b2a5a6e38b714a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_DirtPath_02.prefab using Guid(e5078773fedcadc43b2a5a6e38b714a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c02a70ff9376ccc50c599638bccf2f0d') in 0.026167 seconds
+  Import took 0.028982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_05.prefab
+  artifactKey: Guid(d71188ec11ee08d48855bf0b7ae87c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_05.prefab using Guid(d71188ec11ee08d48855bf0b7ae87c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afcd2148070e71063176066c21918469') in 0.028296 seconds
+  Import took 0.031908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_01.prefab
+  artifactKey: Guid(985a75c432aa0134d9025eaf3afe5962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_01.prefab using Guid(985a75c432aa0134d9025eaf3afe5962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b407e281e84c00dd6ea545d068914317') in 0.018266 seconds
+  Import took 0.021726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_04.prefab
+  artifactKey: Guid(537a3c36645b45141a5e7efa507bb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_04.prefab using Guid(537a3c36645b45141a5e7efa507bb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a82070db546b775cf043d2d5c450dc7') in 0.027860 seconds
+  Import took 0.031258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bridge_03.prefab
+  artifactKey: Guid(888171bc6f5636d439be5aaeec6224f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bridge_03.prefab using Guid(888171bc6f5636d439be5aaeec6224f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66003c757f0a53b7fc91fa033f519023') in 0.016977 seconds
+  Import took 0.019742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cloud_03.prefab
+  artifactKey: Guid(4e31c5d88fdcdeb43a688ddc999aabdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cloud_03.prefab using Guid(4e31c5d88fdcdeb43a688ddc999aabdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b95ecdcac77fb39e7e80584893a014') in 0.027187 seconds
+  Import took 0.030757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bush_03.prefab
+  artifactKey: Guid(7189dbbe71d3f654c9b61871602d64f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bush_03.prefab using Guid(7189dbbe71d3f654c9b61871602d64f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c86e5afe085e7746d876f6be5474d2') in 0.027932 seconds
+  Import took 0.031957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_TSection_01.prefab
+  artifactKey: Guid(3d776f65859f5b14480d1e7d16384e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_TSection_01.prefab using Guid(3d776f65859f5b14480d1e7d16384e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6672f59b80de0d0c2a2bc08c170432') in 0.027025 seconds
+  Import took 0.031204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondEdge_04.prefab
+  artifactKey: Guid(a0cee07249d5a5c4cb2790dad28db781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondEdge_04.prefab using Guid(a0cee07249d5a5c4cb2790dad28db781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6c8a94bed523b8b68e550aeda0d4c5') in 0.026306 seconds
+  Import took 0.032289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_01.prefab
+  artifactKey: Guid(f8624e5be3abfc240a2fe78522a9a0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_01.prefab using Guid(f8624e5be3abfc240a2fe78522a9a0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8cb62d94928485695f96124aed300ed') in 0.027094 seconds
+  Import took 0.032036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_03.prefab
+  artifactKey: Guid(49e18fe0af1663a4ab219069d3080ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_03.prefab using Guid(49e18fe0af1663a4ab219069d3080ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c689746ce1dbdeb6e7b82e3cc34f0f') in 0.028735 seconds
+  Import took 0.034367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_Large_01.prefab
+  artifactKey: Guid(1113625db48b7c5488c4e88ee69bfab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_Large_01.prefab using Guid(1113625db48b7c5488c4e88ee69bfab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6870be985f3b3e93cb031218f90bc33b') in 0.022273 seconds
+  Import took 0.026606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Plant_02.prefab
+  artifactKey: Guid(5c21d3ac5e1ee174aa93596412fe09bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Plant_02.prefab using Guid(5c21d3ac5e1ee174aa93596412fe09bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e387ec090a315bcdc87a620219eb36') in 0.034054 seconds
+  Import took 0.038583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondGround_01.prefab
+  artifactKey: Guid(c234e5dbb5bf41f44b4c23242f473abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondGround_01.prefab using Guid(c234e5dbb5bf41f44b4c23242f473abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ecb6416fe27f0cde4c1e4752280856') in 0.024070 seconds
+  Import took 0.028417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_DirtPath_01.prefab
+  artifactKey: Guid(8776e403def3e7041878fb7252302fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_DirtPath_01.prefab using Guid(8776e403def3e7041878fb7252302fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd6f368cbf8a327a94272e968e7f7c4') in 0.029449 seconds
+  Import took 0.033900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_05.prefab
+  artifactKey: Guid(9921da663a60b4c468ccb77ee5854c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_05.prefab using Guid(9921da663a60b4c468ccb77ee5854c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8006ae8e803df55596ab7e23de5d566e') in 0.023415 seconds
+  Import took 0.027367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_03.prefab
+  artifactKey: Guid(a9174db97e3b3dc4f92d2bc47f8b6464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_03.prefab using Guid(a9174db97e3b3dc4f92d2bc47f8b6464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0db5ae0eb8f3aca190351e5d43e122') in 0.031557 seconds
+  Import took 0.036079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_02.prefab
+  artifactKey: Guid(9b07d3f75bc828a419183410854772fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_02.prefab using Guid(9b07d3f75bc828a419183410854772fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874c9d9e4547ba3f902cda4c090f347c') in 0.023065 seconds
+  Import took 0.027482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_RicePlant_02.prefab
+  artifactKey: Guid(2a47d0bd64cd05d488d7ec1a627d4e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_RicePlant_02.prefab using Guid(2a47d0bd64cd05d488d7ec1a627d4e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9a86b5a156e91f3b1cb868a7e88c34') in 0.026358 seconds
+  Import took 0.031163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_04.prefab
+  artifactKey: Guid(4c0e698d1b8b92f47b69e9eaa595c9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_04.prefab using Guid(4c0e698d1b8b92f47b69e9eaa595c9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '766fd26ad500ddd5a88fc5ab6f4913eb') in 0.032923 seconds
+  Import took 0.037155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Hill_Cascade_02.prefab
+  artifactKey: Guid(18472ac9af326994c84777304a5ebb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Hill_Cascade_02.prefab using Guid(18472ac9af326994c84777304a5ebb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3865b3432847c1d88c3f4b43f32fb7fb') in 0.029832 seconds
+  Import took 0.034088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cliff_02.prefab
+  artifactKey: Guid(ab7b2a78c153230498a3dcb55285599c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Cliff_02.prefab using Guid(ab7b2a78c153230498a3dcb55285599c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3d79b0b88189c482010c5f831460b4') in 0.029598 seconds
+  Import took 0.034511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondEdge_02.prefab
+  artifactKey: Guid(20ac264703c52b34dbe2d75ece55400f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondEdge_02.prefab using Guid(20ac264703c52b34dbe2d75ece55400f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb5250e11dd7625454efb709568d3da') in 0.030696 seconds
+  Import took 0.035799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_Straight_02.prefab
+  artifactKey: Guid(fa137f7d0860a204a9ee3970de8ac823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_Straight_02.prefab using Guid(fa137f7d0860a204a9ee3970de8ac823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dafe20b572ec3860f4fbe3461772d59') in 0.029836 seconds
+  Import took 0.034100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_03.prefab
+  artifactKey: Guid(76516cbc5c8406e4786a17be3ba845ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_03.prefab using Guid(76516cbc5c8406e4786a17be3ba845ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3a3c6557bafd68bb2d0a788d48a610') in 0.032221 seconds
+  Import took 0.036179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_02.prefab
+  artifactKey: Guid(e65196b926c4fd64aabaac8bda5066a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_02.prefab using Guid(e65196b926c4fd64aabaac8bda5066a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7638dd236c1c31ecf068ca6076f0965c') in 0.031352 seconds
+  Import took 0.036307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000715 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_Fuji_01.prefab
+  artifactKey: Guid(15dac40cfbd3f464692a496075cb613b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_Fuji_01.prefab using Guid(15dac40cfbd3f464692a496075cb613b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a3297c4c1c963ff46a8e7d0d8d9571') in 0.036742 seconds
+  Import took 0.041775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bridge_02.prefab
+  artifactKey: Guid(2785a08cbf7168647bd368d6dc28b3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bridge_02.prefab using Guid(2785a08cbf7168647bd368d6dc28b3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e1b02caad92b75cba029000e6a9aba') in 0.026353 seconds
+  Import took 0.032689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Hill_Cascade_01.prefab
+  artifactKey: Guid(e08677c1b49c5424dbd5bb2c10a2b4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Hill_Cascade_01.prefab using Guid(e08677c1b49c5424dbd5bb2c10a2b4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6088d98878f47ff4f97af279fe7cce') in 0.023537 seconds
+  Import took 0.028251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondEdge_03.prefab
+  artifactKey: Guid(3136246d5d300ae4dbf39178c452bf29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondEdge_03.prefab using Guid(3136246d5d300ae4dbf39178c452bf29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f9e3f974fa4261042fad604f452939') in 0.020576 seconds
+  Import took 0.024507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_Large_02.prefab
+  artifactKey: Guid(9e9a29f29089ccd489eb5a42f847c637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_Large_02.prefab using Guid(9e9a29f29089ccd489eb5a42f847c637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f850181ddccdf05f3d4969562694d2d') in 0.020239 seconds
+  Import took 0.023633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_RicePlant_01.prefab
+  artifactKey: Guid(b38971ffd2db94e47a9327178180b5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_RicePlant_01.prefab using Guid(b38971ffd2db94e47a9327178180b5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce361cdbd9d23f7a04e04d4ab169144') in 0.017248 seconds
+  Import took 0.020746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_05.prefab
+  artifactKey: Guid(efa9dbfd4b326284e91283df33b9ac84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_05.prefab using Guid(efa9dbfd4b326284e91283df33b9ac84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4399e82f20164b7f9a88c33c9c3fc15e') in 0.023013 seconds
+  Import took 0.027087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Hill_Cascade_03.prefab
+  artifactKey: Guid(7fcb882b6013d7c49b689178d3be0317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Hill_Cascade_03.prefab using Guid(7fcb882b6013d7c49b689178d3be0317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ac688a461a7f350f4529186d6b6346') in 0.018627 seconds
+  Import took 0.021907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Group_02.prefab
+  artifactKey: Guid(c3f8f1a1e2a428a4caaa99166d9b94fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Group_02.prefab using Guid(c3f8f1a1e2a428a4caaa99166d9b94fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d0be5b45d430db6c2c920bdbf0e7725') in 0.022982 seconds
+  Import took 0.027269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondEdge_01.prefab
+  artifactKey: Guid(bb255af77a215e4468fbcb741f7b6e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondEdge_01.prefab using Guid(bb255af77a215e4468fbcb741f7b6e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f94baaf0500d1692d39723ccf63ae7') in 0.019529 seconds
+  Import took 0.023521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Fuji_01.prefab
+  artifactKey: Guid(152e287be55ae4245ad12fc2cf75e4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Fuji_01.prefab using Guid(152e287be55ae4245ad12fc2cf75e4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e328a00fce0bf4f09f0faf545c1eb4') in 0.022680 seconds
+  Import took 0.026601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Lillypad_Large_02.prefab
+  artifactKey: Guid(372b396d424dd694ab562de7a7f9bba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Lillypad_Large_02.prefab using Guid(372b396d424dd694ab562de7a7f9bba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69bfa73d7e0638d95175e42f284bc83b') in 0.021631 seconds
+  Import took 0.024700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Plant_03.prefab
+  artifactKey: Guid(cf1e291b54d6c80499a660fa10ec0906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Plant_03.prefab using Guid(cf1e291b54d6c80499a660fa10ec0906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0afa6820b7f4ce3c82a6459eac60c251') in 0.020209 seconds
+  Import took 0.024003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bridge_Curved_01.prefab
+  artifactKey: Guid(2c556cf92c981904599239a20eff8561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bridge_Curved_01.prefab using Guid(2c556cf92c981904599239a20eff8561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8566852ea1dbc745e86cb1e0ac28002') in 0.020643 seconds
+  Import took 0.024463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_DirtPath_03.prefab
+  artifactKey: Guid(fdb14778778841d4ca455d31f9ebab07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_DirtPath_03.prefab using Guid(fdb14778778841d4ca455d31f9ebab07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd11f28750fbc346a8ba5db0d95aaa543') in 0.036320 seconds
+  Import took 0.040185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Flowers_01.prefab
+  artifactKey: Guid(e7b4dccb938d3a445bfc764b94a93230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Flowers_01.prefab using Guid(e7b4dccb938d3a445bfc764b94a93230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810772dccb73cb279981b3b5ab3a7907') in 0.018447 seconds
+  Import took 0.023802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_02.prefab
+  artifactKey: Guid(beba9d81b4a57ba4ba6efd32c5f3e818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_GroundMound_02.prefab using Guid(beba9d81b4a57ba4ba6efd32c5f3e818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7dbe06789c2f484794ba27e9b1c2106') in 0.029571 seconds
+  Import took 0.033087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_01.prefab
+  artifactKey: Guid(4eccd96fd5d470a4ebcf08d6be459c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_01.prefab using Guid(4eccd96fd5d470a4ebcf08d6be459c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac7c9c67a4e6381d865a650ed50cbfa2') in 0.021416 seconds
+  Import took 0.024434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_Straight_01.prefab
+  artifactKey: Guid(099a5fe687af77045aae042cee368d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_Straight_01.prefab using Guid(099a5fe687af77045aae042cee368d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e974ebcd3305388f7794e8965e81e28') in 0.032427 seconds
+  Import took 0.036270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_Corner_01.prefab
+  artifactKey: Guid(ade56aa6dcfbeb8438ea1848ca8ca4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_Corner_01.prefab using Guid(ade56aa6dcfbeb8438ea1848ca8ca4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa445f0e8aef381fde3cda112c9466b') in 0.028464 seconds
+  Import took 0.032401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_End_01.prefab
+  artifactKey: Guid(7850a120707be2b4c8681ab2d45a90af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_End_01.prefab using Guid(7850a120707be2b4c8681ab2d45a90af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8a7d7f39315524e2ab8b6aa20c4cbd') in 0.028344 seconds
+  Import took 0.031251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_04.prefab
+  artifactKey: Guid(d3838916a07877c4e951a3c92b56d39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Tree_04.prefab using Guid(d3838916a07877c4e951a3c92b56d39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f0c6b214e74fdfee59c85e061cbc24') in 0.022548 seconds
+  Import took 0.025766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Fence_Post_01.prefab
+  artifactKey: Guid(df12a06ba20b4484d96f15fe0a7ff9e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Fence_Post_01.prefab using Guid(df12a06ba20b4484d96f15fe0a7ff9e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c02d3aa5f26af749ed4f5c509149ab') in 0.016330 seconds
+  Import took 0.019452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Lillypad_Large_03.prefab
+  artifactKey: Guid(b0d8a378c3dbe474fb09e04e0114b895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Lillypad_Large_03.prefab using Guid(b0d8a378c3dbe474fb09e04e0114b895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06656477323ebf50263fea7b9cc9268') in 0.021787 seconds
+  Import took 0.024980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondGround_02.prefab
+  artifactKey: Guid(995d4e49c487c3949b4f44e01c66e1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_PondGround_02.prefab using Guid(995d4e49c487c3949b4f44e01c66e1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f66b519f52f658dd8fb1b437327fd0f') in 0.026275 seconds
+  Import took 0.029470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bridge_01.prefab
+  artifactKey: Guid(64e5943ef1d7c2f429d7ec7243fff500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bridge_01.prefab using Guid(64e5943ef1d7c2f429d7ec7243fff500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb48f60c9b0c1f89bab2b4b077558317') in 0.029254 seconds
+  Import took 0.033179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Group_01.prefab
+  artifactKey: Guid(4fea5a90bb0cca941a178051e6ea4b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bamboo_Group_01.prefab using Guid(4fea5a90bb0cca941a178051e6ea4b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e534124abe34f8fa132e8633b84e902e') in 0.021168 seconds
+  Import took 0.025247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bush_01.prefab
+  artifactKey: Guid(8c701e5c327022a4ebdc63a77af08f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Bush_01.prefab using Guid(8c701e5c327022a4ebdc63a77af08f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b948f8ffc7314a88d0974a8016a77c') in 0.025168 seconds
+  Import took 0.028978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_02.prefab
+  artifactKey: Guid(caf97e31442506841be027f481cfb3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_FarmTerrace_02.prefab using Guid(caf97e31442506841be027f481cfb3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1273319eac7c7c13ff19035f9839b4f3') in 0.026848 seconds
+  Import took 0.030132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_4Way_01.prefab
+  artifactKey: Guid(357d369e3196fba4dad7b06e403a52e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Path_4Way_01.prefab using Guid(357d369e3196fba4dad7b06e403a52e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '924ef47ac37e37ecbed4202bac3ab538') in 0.027593 seconds
+  Import took 0.030874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Plant_01.prefab
+  artifactKey: Guid(ec9fba5daf2bc864ab90c7a3e935acae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Plant_01.prefab using Guid(ec9fba5daf2bc864ab90c7a3e935acae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22d588be0cc152ee6cad167e0405c73') in 0.026650 seconds
+  Import took 0.029395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015475 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Plant_01.prefab
+  artifactKey: Guid(ec9fba5daf2bc864ab90c7a3e935acae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Plant_01.prefab using Guid(ec9fba5daf2bc864ab90c7a3e935acae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22d588be0cc152ee6cad167e0405c73') in 0.010192 seconds
+  Import took 0.013344 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001895 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.021 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.2 MB.
+System memory in use after: 74.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1934.
+Total: 2.031000 ms (FindLiveObjects: 0.180600 ms CreateObjectMapping: 0.036600 ms MarkObjects: 1.751300 ms  DeleteObjects: 0.061300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.400799 seconds.
+  path: Assets/Scripts/Mouvements/Parade/Parade.cs
+  artifactKey: Guid(0badd5fe951d1974dbdc3b6c60a640e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouvements/Parade/Parade.cs using Guid(0badd5fe951d1974dbdc3b6c60a640e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ca08e6f47026b2d133f627516757e4') in 0.012046 seconds
+  Import took 0.015342 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002003 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.880 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.2 MB.
+System memory in use after: 74.3 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1937.
+Total: 2.011900 ms (FindLiveObjects: 0.177400 ms CreateObjectMapping: 0.043100 ms MarkObjects: 1.729100 ms  DeleteObjects: 0.060600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 341.492900 seconds.
+  path: Assets/PolygonParticleFX/Prefabs/FX_GlowSpot_01.prefab
+  artifactKey: Guid(6066b7833d493734a9af353bbd046758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Prefabs/FX_GlowSpot_01.prefab using Guid(6066b7833d493734a9af353bbd046758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05979ee5f4a834b2df9ff5e1861e760d') in 0.039953 seconds
+  Import took 0.042807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.249580 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Sphere_03.fbx
+  artifactKey: Guid(357d53aa062ebb04e8e5aaa195e1a5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Sphere_03.fbx using Guid(357d53aa062ebb04e8e5aaa195e1a5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7039145d37f3b525f2908cf0805d28f') in 0.232994 seconds
+  Import took 0.236291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001611 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Sphere_03.fbx
+  artifactKey: Guid(357d53aa062ebb04e8e5aaa195e1a5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Sphere_03.fbx using Guid(357d53aa062ebb04e8e5aaa195e1a5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7039145d37f3b525f2908cf0805d28f') in 0.012231 seconds
+  Import took 0.014864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.374657 seconds.
+  path: Assets/PolygonParticleFX/Prefabs/FX_Hexagon_01.prefab
+  artifactKey: Guid(ec5dead71a3be2046a4e57ab9fb113a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Prefabs/FX_Hexagon_01.prefab using Guid(ec5dead71a3be2046a4e57ab9fb113a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a5e3cd646405da91735562bb90d128a') in 0.012523 seconds
+  Import took 0.016152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.293660 seconds.
+  path: Assets/PolygonParticleFX/Materials/PolygonParticleFX_Circle.mat
+  artifactKey: Guid(f3053f8556ff7cf4fb59de5cf109104e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Materials/PolygonParticleFX_Circle.mat using Guid(f3053f8556ff7cf4fb59de5cf109104e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5adccc58207865f5ee4b50413b494d00') in 0.031283 seconds
+  Import took 0.034201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015769 seconds.
+  path: Assets/PolygonParticleFX/Materials/PolygonParticleFX_Circle.mat
+  artifactKey: Guid(f3053f8556ff7cf4fb59de5cf109104e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Materials/PolygonParticleFX_Circle.mat using Guid(f3053f8556ff7cf4fb59de5cf109104e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5adccc58207865f5ee4b50413b494d00') in 0.013031 seconds
+  Import took 0.016523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.013610 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Sphere.fbx
+  artifactKey: Guid(219de587148d8bb41a8e255859dafe53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Sphere.fbx using Guid(219de587148d8bb41a8e255859dafe53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90948fa37597d2555482c692242f8cac') in 0.019199 seconds
+  Import took 0.022811 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002453 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.007 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.4 MB.
+System memory in use after: 74.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1944.
+Total: 3.129800 ms (FindLiveObjects: 0.200800 ms CreateObjectMapping: 0.108200 ms MarkObjects: 2.705300 ms  DeleteObjects: 0.113300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002041 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.020 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.4 MB.
+System memory in use after: 74.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1947.
+Total: 2.211400 ms (FindLiveObjects: 0.209200 ms CreateObjectMapping: 0.035500 ms MarkObjects: 1.894300 ms  DeleteObjects: 0.070600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6107.553344 seconds.
+  path: Assets/New Terrain 2.asset
+  artifactKey: Guid(21389da26c6323e46ae0b16ea7cf21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 2.asset using Guid(21389da26c6323e46ae0b16ea7cf21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0529a95b8afbab1708e2dba18e00a94') in 0.044116 seconds
+  Import took 0.047557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 205.740343 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Bubble.png
+  artifactKey: Guid(60847f2556c444a438e138e034f0ae83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Bubble.png using Guid(60847f2556c444a438e138e034f0ae83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '704d95cd3574415357b06ec07bf37d73') in 0.080301 seconds
+  Import took 0.084229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Portal_Single_Chipped.png
+  artifactKey: Guid(8a4b0e610ec24c44aaf3f934e7ab1392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Portal_Single_Chipped.png using Guid(8a4b0e610ec24c44aaf3f934e7ab1392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760a66af496f8f7dbeb14cd31190ac64') in 0.014785 seconds
+  Import took 0.017555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Swipe_01.png
+  artifactKey: Guid(ce1c15ae60b1d1147a4c121b6c97d6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Swipe_01.png using Guid(ce1c15ae60b1d1147a4c121b6c97d6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375a148650128346f08163865c27c393') in 0.021644 seconds
+  Import took 0.024715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Bubble_02.png
+  artifactKey: Guid(6c7a37c6766adfc4fac5dffdb14284f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Bubble_02.png using Guid(6c7a37c6766adfc4fac5dffdb14284f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b136d27ba5ef69fb55fb33999031a7d') in 0.015861 seconds
+  Import took 0.020575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Hexagon.png
+  artifactKey: Guid(9b13fd76834a28c4fa9ea626ba446015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Hexagon.png using Guid(9b13fd76834a28c4fa9ea626ba446015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c0d26b7ad95cde3c55bb012a30b906') in 0.016206 seconds
+  Import took 0.019558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_GroundBreak.png
+  artifactKey: Guid(b42eef5c44cfeff449e52cd481203575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_GroundBreak.png using Guid(b42eef5c44cfeff449e52cd481203575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bcf497cc12c04d59d0a4eb8279013b1') in 0.016127 seconds
+  Import took 0.019456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Wind.png
+  artifactKey: Guid(bdf00413f80cc3f48a0036afb20b48bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Wind.png using Guid(bdf00413f80cc3f48a0036afb20b48bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8324b2704bb27b76df765bbeb79fcf73') in 0.017983 seconds
+  Import took 0.021710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_BulletTrail.png
+  artifactKey: Guid(03f9cd753cdaef945b4cefdcda283901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_BulletTrail.png using Guid(03f9cd753cdaef945b4cefdcda283901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8825a76fc1daabcef6481b7a1bdef916') in 0.018660 seconds
+  Import took 0.021818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Fumes_04.png
+  artifactKey: Guid(2eb84df899ad7fc4aa3b987e587d5fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Fumes_04.png using Guid(2eb84df899ad7fc4aa3b987e587d5fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5554755b9d8eaae24947f4a735e44697') in 0.015159 seconds
+  Import took 0.018456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_01.png
+  artifactKey: Guid(7cc0b541520b0734c80ea6934a192675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_01.png using Guid(7cc0b541520b0734c80ea6934a192675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5b4176d01ae3c21a5f2d232c0f02b4') in 0.015861 seconds
+  Import took 0.019077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_HalfCircle.png
+  artifactKey: Guid(ce52a7627f791234aa84f247915ff610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_HalfCircle.png using Guid(ce52a7627f791234aa84f247915ff610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b73eecdd317659abee4a364b54c337a') in 0.015266 seconds
+  Import took 0.017892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_Dark_01.png
+  artifactKey: Guid(913d37094a541b842b4f18f393f40ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_Dark_01.png using Guid(913d37094a541b842b4f18f393f40ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8292056d27009f26c851e7ff793b2a') in 0.015761 seconds
+  Import took 0.018458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Soft_Spot.png
+  artifactKey: Guid(d5170007006368747b4faea8550619cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Soft_Spot.png using Guid(d5170007006368747b4faea8550619cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b6427b3534bd44c16cd891fab222fba') in 0.014779 seconds
+  Import took 0.018076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Smoke_01.png
+  artifactKey: Guid(608b0bba5c9806149ae5d24a33c606de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Smoke_01.png using Guid(608b0bba5c9806149ae5d24a33c606de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1a33f6d1ddf137050395445a6daf39') in 0.018709 seconds
+  Import took 0.022341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Swipe_02.png
+  artifactKey: Guid(a9a7424a52149bb4b84da7a71341f1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Swipe_02.png using Guid(a9a7424a52149bb4b84da7a71341f1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad05d4353e769fcd5e292914328e4a5') in 0.018443 seconds
+  Import took 0.022047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Texture_01_A.png
+  artifactKey: Guid(67cb44fbdc202b44e971ac2b57d5ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Texture_01_A.png using Guid(67cb44fbdc202b44e971ac2b57d5ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b439a910464f020b560825cee82533a') in 0.020376 seconds
+  Import took 0.022882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Fumes_02.png
+  artifactKey: Guid(35fe97dffff1d60489cad17aa767c885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Fumes_02.png using Guid(35fe97dffff1d60489cad17aa767c885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5154852022a651b3860dfd1d9880a95') in 0.019225 seconds
+  Import took 0.022168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_RainbowCircle.png
+  artifactKey: Guid(b9f7df66400b4354b98f61c735542521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_RainbowCircle.png using Guid(b9f7df66400b4354b98f61c735542521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2682ecf97280448c8dec50a70c22b10') in 0.015306 seconds
+  Import took 0.018184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Lightning_02.png
+  artifactKey: Guid(b1351c11dea42f845af85e73da6579f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Lightning_02.png using Guid(b1351c11dea42f845af85e73da6579f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76493099ba78b2be19ff43b5bf49fa57') in 0.014204 seconds
+  Import took 0.017290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_RitualCircle_01.png
+  artifactKey: Guid(a0b77b3cfe92a174e82c48936951c8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_RitualCircle_01.png using Guid(a0b77b3cfe92a174e82c48936951c8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cfb0c955b8770e1cb10a6c152ae357b') in 0.016255 seconds
+  Import took 0.019351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Sparkle.png
+  artifactKey: Guid(3ccce67bd48bfcd459a2ef0393fdf83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Sparkle.png using Guid(3ccce67bd48bfcd459a2ef0393fdf83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a998a1b1744c3afed538a0767aa1735') in 0.014564 seconds
+  Import took 0.017593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Wings_Grid.png
+  artifactKey: Guid(5f9e461b624488b4e8132701494f4867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Wings_Grid.png using Guid(5f9e461b624488b4e8132701494f4867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3e4c66f4da2677200540724d5e48f0') in 0.013938 seconds
+  Import took 0.016870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_02.png
+  artifactKey: Guid(3b8dc5e143e5ce748bbbb8cca21399cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_02.png using Guid(3b8dc5e143e5ce748bbbb8cca21399cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e269d79e13320833bf9d52abbecadeec') in 0.016593 seconds
+  Import took 0.019144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Ring_02.png
+  artifactKey: Guid(d22dd282ce7c3874d954fa2e7893991b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Ring_02.png using Guid(d22dd282ce7c3874d954fa2e7893991b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0296eb869df91b089bccb9d9ae23bb9d') in 0.015333 seconds
+  Import took 0.018912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Soft_Spot_Dark.png
+  artifactKey: Guid(c8660b4dcd717b846900ad32c22a9162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Soft_Spot_Dark.png using Guid(c8660b4dcd717b846900ad32c22a9162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa33e3912107ac34537ba7c0771059d') in 0.015059 seconds
+  Import took 0.018357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_SemiCircle.png
+  artifactKey: Guid(f07e4b81cfc00d24e88a4b58da56db3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_SemiCircle.png using Guid(f07e4b81cfc00d24e88a4b58da56db3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def5ab6be744243a5218f6623f54b667') in 0.016286 seconds
+  Import took 0.019828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Shell_01.png
+  artifactKey: Guid(2458a5e8960caf942b6e5fdee34bcdf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Shell_01.png using Guid(2458a5e8960caf942b6e5fdee34bcdf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '246dea68ae9604e5766662ccc8350526') in 0.015787 seconds
+  Import took 0.019445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 100.418359 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_Large_03.prefab
+  artifactKey: Guid(8b5dd1b6a17bdea4993b38cc660e9240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_Large_03.prefab using Guid(8b5dd1b6a17bdea4993b38cc660e9240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249aab406dc5be0663c7173403fb7fc6') in 0.046585 seconds
+  Import took 0.049911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_SteppingStone_03.prefab
+  artifactKey: Guid(c14fb016084df564595efe3fe51fd084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_SteppingStone_03.prefab using Guid(c14fb016084df564595efe3fe51fd084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3087abe49b826783d6650090772dc2') in 0.018965 seconds
+  Import took 0.021851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_SteppingStone_02.prefab
+  artifactKey: Guid(9d442dbeb186c044cbef98f75585b818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_SteppingStone_02.prefab using Guid(9d442dbeb186c044cbef98f75585b818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5c3ef33a5a1f9dfd4aa70ba95ac5ee') in 0.025158 seconds
+  Import took 0.028418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tile_Zen_02.prefab
+  artifactKey: Guid(171a2c601e774044496e4a5da2819e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tile_Zen_02.prefab using Guid(171a2c601e774044496e4a5da2819e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa2ff643c831f63f723d15c2ae80b83f') in 0.018235 seconds
+  Import took 0.021905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tree_03.prefab
+  artifactKey: Guid(c8d48f4ada079cc42a6c3a3102ceb41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tree_03.prefab using Guid(c8d48f4ada079cc42a6c3a3102ceb41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81a10583ae6d5a097a9ea582c79ad4d') in 0.022121 seconds
+  Import took 0.025296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_SteppingStone_01.prefab
+  artifactKey: Guid(accfc68d2a56fbe4a939df14dd3999bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_SteppingStone_01.prefab using Guid(accfc68d2a56fbe4a939df14dd3999bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd786832edb0f7c5504a02a3cd136962c') in 0.021118 seconds
+  Import took 0.024719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tree_01.prefab
+  artifactKey: Guid(d87f80d13c8f1ac4e8d5a2a5f23d6df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tree_01.prefab using Guid(d87f80d13c8f1ac4e8d5a2a5f23d6df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f43a01ab1e318e49d6d1455c6558eaff') in 0.017391 seconds
+  Import took 0.020533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tile_Dirt_01.prefab
+  artifactKey: Guid(4e083bfd88778534b8133830f4df0328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tile_Dirt_01.prefab using Guid(4e083bfd88778534b8133830f4df0328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9522efad16bc6d3909c49426cb9fafb') in 0.021299 seconds
+  Import took 0.024223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_SteppingStone_04.prefab
+  artifactKey: Guid(4a03f352523c574468263a3f46b2ec46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_SteppingStone_04.prefab using Guid(4a03f352523c574468263a3f46b2ec46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13a46370e4969876d0725d87602cea5') in 0.020693 seconds
+  Import took 0.023976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tile_Sand_01.prefab
+  artifactKey: Guid(63bc7f5bb5dbc6145884ef96eb005370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tile_Sand_01.prefab using Guid(63bc7f5bb5dbc6145884ef96eb005370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd785545583964ff2aa772159c7a97ef2') in 0.019070 seconds
+  Import took 0.021629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_WoodEdge_Straight_01.prefab
+  artifactKey: Guid(83f8ea0ad890006469de7091d250ddae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_WoodEdge_Straight_01.prefab using Guid(83f8ea0ad890006469de7091d250ddae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67a5d803cd29bb4a037b34ef52ace08') in 0.018056 seconds
+  Import took 0.021177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tile_Zen_01.prefab
+  artifactKey: Guid(41c35096e0cbfb242a2303d967e4aa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tile_Zen_01.prefab using Guid(41c35096e0cbfb242a2303d967e4aa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c812b3670a730dd01d887cb23562876') in 0.018983 seconds
+  Import took 0.021683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tree_02.prefab
+  artifactKey: Guid(e5e4bafcab767fc459df0280771e3a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tree_02.prefab using Guid(e5e4bafcab767fc459df0280771e3a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19065f96173ccaf67c16de1cb952b25b') in 0.019092 seconds
+  Import took 0.022158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_Large_04.prefab
+  artifactKey: Guid(a868a7c36da415147a7eaa14f3ba7577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Rock_Large_04.prefab using Guid(a868a7c36da415147a7eaa14f3ba7577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6821b9dbd0712b55e891ff6bb67cf447') in 0.018459 seconds
+  Import took 0.021219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_WoodEdge_Corner_01.prefab
+  artifactKey: Guid(18c0e8eb46512a548b9ca921ce99df0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_WoodEdge_Corner_01.prefab using Guid(18c0e8eb46512a548b9ca921ce99df0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22bc1b54b2da1a5a0e83f04e970346d8') in 0.016901 seconds
+  Import took 0.019797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tulips_02.prefab
+  artifactKey: Guid(e6fad05c4d5f2224aaa5c991267146d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tulips_02.prefab using Guid(e6fad05c4d5f2224aaa5c991267146d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026723aacc64aae0cedf5487b77b8975') in 0.018870 seconds
+  Import took 0.022178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tree_04.prefab
+  artifactKey: Guid(5a4e7db6b5d138a48ac28d3c085acb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tree_04.prefab using Guid(5a4e7db6b5d138a48ac28d3c085acb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933d87001fd9d8c754570b3fb1258b9d') in 0.015886 seconds
+  Import took 0.018711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tulips_01.prefab
+  artifactKey: Guid(625541a65d7179346a2fac339f4d3f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Environments/SM_Env_Tulips_01.prefab using Guid(625541a65d7179346a2fac339f4d3f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d52e16bc7b003032561c3c1689be17') in 0.019562 seconds
+  Import took 0.022810 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002223 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.961 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.3 MB.
+System memory in use after: 74.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1956.
+Total: 2.495600 ms (FindLiveObjects: 0.198100 ms CreateObjectMapping: 0.037100 ms MarkObjects: 1.770200 ms  DeleteObjects: 0.489100 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

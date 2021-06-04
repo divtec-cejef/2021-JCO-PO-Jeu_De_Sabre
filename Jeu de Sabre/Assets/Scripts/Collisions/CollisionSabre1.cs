@@ -12,7 +12,7 @@ public class CollisionSabre1 : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.TextArea(new Rect(0, 0, 100, 20), "Points " + score.ToString());
+        GUI.TextArea(new Rect(0, 0, 200, 20), "Points " + score.ToString());
     }
    
     //Récuperer la vitesse du sabre et definir les damages en consequences
@@ -31,7 +31,7 @@ public class CollisionSabre1 : MonoBehaviour
     {
         if (other.gameObject.name == "SM_Wep_Odachi_01")
         {
-            PSMoveSabre1.isColliding = true;
+            //PSMoveSabre1.isColliding = true;
         }
         else if (other.gameObject.name == "Characters_J2")
         {
