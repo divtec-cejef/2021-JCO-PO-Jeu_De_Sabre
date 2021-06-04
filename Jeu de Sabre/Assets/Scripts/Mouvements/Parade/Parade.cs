@@ -94,6 +94,11 @@ public class Parade
         if (timerParade > 1.0f)
         {
             timerParade -= Time.deltaTime;
+
+            if (!Player.decreaseStamina(getPlayer(), 0.2f))
+            {
+                timerParade = 0;
+            }
         }
         /* Si le timer est terminé, annulation de la parade et réinitialisation du timer */
         else
@@ -162,6 +167,11 @@ public class Parade
     public bool getReady()
     {
         return isReady;
+    }
+
+    private Player.Joueur getPlayer()
+    {
+        return this.move_id == 0 ? Player.Joueur.P1 : Player.Joueur.P2;
     }
     
     

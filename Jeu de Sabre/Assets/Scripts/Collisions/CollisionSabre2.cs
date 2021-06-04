@@ -4,24 +4,9 @@ using UnityEngine;
 
 public class CollisionSabre2 : MonoBehaviour
 {
-    private int score;
-    public float vitesseCoup = 0;
-    Vector3 vitesseVector;
-
-    void OnGUI()
-    {
-        GUI.TextArea(new Rect(0, 0, 100, 20), "Points " + score.ToString());
-    }
-   
     //Récuperer la vitesse du sabre et definir les damages en consequences
     public int OnDamage(float speed)
     {
-        //le multiplicateur sert a rendre la vitesse lisible
-        //speed *= 10000000;
-
-
-        //Debug.Log("c'est les damage " + degat);
-        
         return 1;
     }
 
@@ -29,11 +14,11 @@ public class CollisionSabre2 : MonoBehaviour
     {
         if (other.gameObject.name == "SM_Wep_Odachi_01")
         {
-            //PSMoveSabre1.isColliding = true;
+            //PSMoveSabre2.isColliding = true;
         }
         else if (other.gameObject.name == "Characters_J1")
         {
-            score += OnDamage(vitesseCoup);
+            Player.updatePlayerScore(Player.Joueur.P2, 10);
         }
     }
 }

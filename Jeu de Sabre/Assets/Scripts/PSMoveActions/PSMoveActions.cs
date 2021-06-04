@@ -33,6 +33,22 @@ public class @PSMoveActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""attak"",
+                    ""type"": ""Button"",
+                    ""id"": ""cc74512d-07b4-4804-a238-4f53216eef34"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""recul"",
+                    ""type"": ""Button"",
+                    ""id"": ""181d4c2a-43dc-4935-949b-5904137cfc16"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -57,6 +73,28 @@ public class @PSMoveActions : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""41aa84b4-0a37-4f9f-85f7-42074a048e8e"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""attak"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9f3e14e4-bdff-49a2-86e3-bfa0dd9a23cd"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""recul"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -67,6 +105,8 @@ public class @PSMoveActions : IInputActionCollection, IDisposable
         m_Buttons = asset.FindActionMap("Buttons", throwIfNotFound: true);
         m_Buttons_Trigger = m_Buttons.FindAction("Trigger", throwIfNotFound: true);
         m_Buttons_Move = m_Buttons.FindAction("Move", throwIfNotFound: true);
+        m_Buttons_attak = m_Buttons.FindAction("attak", throwIfNotFound: true);
+        m_Buttons_recul = m_Buttons.FindAction("recul", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -118,12 +158,16 @@ public class @PSMoveActions : IInputActionCollection, IDisposable
     private IButtonsActions m_ButtonsActionsCallbackInterface;
     private readonly InputAction m_Buttons_Trigger;
     private readonly InputAction m_Buttons_Move;
+    private readonly InputAction m_Buttons_attak;
+    private readonly InputAction m_Buttons_recul;
     public struct ButtonsActions
     {
         private @PSMoveActions m_Wrapper;
         public ButtonsActions(@PSMoveActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Trigger => m_Wrapper.m_Buttons_Trigger;
         public InputAction @Move => m_Wrapper.m_Buttons_Move;
+        public InputAction @attak => m_Wrapper.m_Buttons_attak;
+        public InputAction @recul => m_Wrapper.m_Buttons_recul;
         public InputActionMap Get() { return m_Wrapper.m_Buttons; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -139,6 +183,12 @@ public class @PSMoveActions : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_ButtonsActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_ButtonsActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_ButtonsActionsCallbackInterface.OnMove;
+                @attak.started -= m_Wrapper.m_ButtonsActionsCallbackInterface.OnAttak;
+                @attak.performed -= m_Wrapper.m_ButtonsActionsCallbackInterface.OnAttak;
+                @attak.canceled -= m_Wrapper.m_ButtonsActionsCallbackInterface.OnAttak;
+                @recul.started -= m_Wrapper.m_ButtonsActionsCallbackInterface.OnRecul;
+                @recul.performed -= m_Wrapper.m_ButtonsActionsCallbackInterface.OnRecul;
+                @recul.canceled -= m_Wrapper.m_ButtonsActionsCallbackInterface.OnRecul;
             }
             m_Wrapper.m_ButtonsActionsCallbackInterface = instance;
             if (instance != null)
@@ -149,6 +199,12 @@ public class @PSMoveActions : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @attak.started += instance.OnAttak;
+                @attak.performed += instance.OnAttak;
+                @attak.canceled += instance.OnAttak;
+                @recul.started += instance.OnRecul;
+                @recul.performed += instance.OnRecul;
+                @recul.canceled += instance.OnRecul;
             }
         }
     }
@@ -157,5 +213,7 @@ public class @PSMoveActions : IInputActionCollection, IDisposable
     {
         void OnTrigger(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
+        void OnAttak(InputAction.CallbackContext context);
+        void OnRecul(InputAction.CallbackContext context);
     }
 }
