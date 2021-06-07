@@ -20,8 +20,7 @@ public class CollisionSabre1 : MonoBehaviour
     {
         //le multiplicateur sert a rendre la vitesse lisible
         //speed *= 10000000;
-
-
+        
         //Debug.Log("c'est les damage " + degat);
         
         return 1;

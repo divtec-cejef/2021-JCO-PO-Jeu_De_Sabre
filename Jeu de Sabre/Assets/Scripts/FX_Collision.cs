@@ -14,15 +14,14 @@ public class FX_Collision : MonoBehaviour
     {
         if (collision.gameObject.name == "SM_Wep_Odachi_01")
         {
+            PSMoveAPI.psmove_set_rumble(TestConnection.manette_1, 250);
             invokeParticleEffect(FX_Katana);
         }
         else if (collision.gameObject.name == "Characters_J2")
         {
-            invokeParticleEffect(FX_Player);
-        } else if (collision.gameObject.name != "Characters_J1")
-        {
             PSMoveAPI.psmove_set_rumble(TestConnection.manette_1, 250);
-        }
+            invokeParticleEffect(FX_Player);
+        } 
     }
     
 
