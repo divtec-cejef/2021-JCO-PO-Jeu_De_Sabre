@@ -15,11 +15,11 @@ C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49794
+59862
 Successfully changed project path to: C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 68.28 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 76.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,239 +35,83 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002324 seconds.
+Registered in 0.001829 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 62.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 59.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.175 seconds
+- Completed reload, in  2.736 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001432 seconds.
+Registered in 0.002019 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 63.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 60.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.061 seconds
+- Completed reload, in  1.035 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1607 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1608 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 93.0 MB.
 System memory in use after: 93.0 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2074.
-Total: 2.543100 ms (FindLiveObjects: 0.484800 ms CreateObjectMapping: 0.132100 ms MarkObjects: 1.781100 ms  DeleteObjects: 0.143900 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2075.
+Total: 2.243500 ms (FindLiveObjects: 0.383700 ms CreateObjectMapping: 0.048800 ms MarkObjects: 1.679200 ms  DeleteObjects: 0.130500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF Atlas.png
-  artifactKey: Guid(51bda5a7ed19c4c39bbb02ae0c80c2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF Atlas.png using Guid(51bda5a7ed19c4c39bbb02ae0c80c2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67cce8bcebc397b91d3655eb14fc898') in 0.108260 seconds
-  Import took 0.111445 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF Atlas.png
-  artifactKey: Guid(24afcf316a3a944c3bf86bc27a2f93fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF Atlas.png using Guid(24afcf316a3a944c3bf86bc27a2f93fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378978f2539427e57934037f33a2dcfc') in 0.033311 seconds
-  Import took 0.037820 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF Atlas.png
-  artifactKey: Guid(b69bbc81e50d34f86a06fa187435ee02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF Atlas.png using Guid(b69bbc81e50d34f86a06fa187435ee02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37b6319d5f52b0a2b31e6bad48921fd') in 0.024990 seconds
-  Import took 0.030850 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000371 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF Atlas.png
-  artifactKey: Guid(c0ea2ae774e27444a8284898f02e41a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF Atlas.png using Guid(c0ea2ae774e27444a8284898f02e41a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e588cf33f00a72fe7576e1761ccd936') in 0.029501 seconds
-  Import took 0.034954 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF Atlas.png
-  artifactKey: Guid(be2c5d62ca95142e3b9dc4d4a638b2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF Atlas.png using Guid(be2c5d62ca95142e3b9dc4d4a638b2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9f29bf5dd73549bf364fdc85be824e') in 0.025256 seconds
-  Import took 0.028846 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF Atlas.png
-  artifactKey: Guid(344ece39f87ef42eda903eba1635395a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF Atlas.png using Guid(344ece39f87ef42eda903eba1635395a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4ae3db3e09de074ecb101a05942eb1') in 0.037543 seconds
-  Import took 0.041061 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF Atlas.png
-  artifactKey: Guid(b549307935a4b424aa346ab218ec8f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF Atlas.png using Guid(b549307935a4b424aa346ab218ec8f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2378ff41d21fafbaf1c7f668ab7e837e') in 0.021713 seconds
-  Import took 0.025306 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF Atlas.png
-  artifactKey: Guid(542168a59ebb940cc91d3c3ec1325445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF Atlas.png using Guid(542168a59ebb940cc91d3c3ec1325445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39da0c32d998e07a320917dea1d84b5c') in 0.026279 seconds
-  Import took 0.031684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF Atlas.png
-  artifactKey: Guid(35891abd43bca4b8dbaff570b5c0c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF Atlas.png using Guid(35891abd43bca4b8dbaff570b5c0c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c1a2b8353933267fa4806d85c7287c') in 0.025055 seconds
-  Import took 0.028197 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000365 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF Atlas.png
-  artifactKey: Guid(d454a327204cd4185bcb58aab6137a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF Atlas.png using Guid(d454a327204cd4185bcb58aab6137a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c2d94a5906f13be8102bbc8bea7387') in 0.024397 seconds
-  Import took 0.028708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF Atlas.png
-  artifactKey: Guid(dd36f1e4d1d8145d4ae67ed98e44ce90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF Atlas.png using Guid(dd36f1e4d1d8145d4ae67ed98e44ce90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db465cbc32854418c3b5e5d5fe315283') in 0.026353 seconds
-  Import took 0.030120 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF Atlas.png
-  artifactKey: Guid(aa9fdc7ac23d342798922793111065d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF Atlas.png using Guid(aa9fdc7ac23d342798922793111065d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3b2c68f8b7912a7b13d3c0f2cc8e46') in 0.019754 seconds
-  Import took 0.023475 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts
-  artifactKey: Guid(56eb8fbbd6e7e4f1b951c497e9cdffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts using Guid(56eb8fbbd6e7e4f1b951c497e9cdffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81bdcb2907dad80beb73c1a5fa8ef449') in 0.007700 seconds
-  Import took 0.011366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF Atlas.png
-  artifactKey: Guid(3b98b1d4d020f485d839d46f3d718b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF Atlas.png using Guid(3b98b1d4d020f485d839d46f3d718b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684975c31224c34dfe7aac929f4360cc') in 0.028550 seconds
-  Import took 0.031547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF Atlas.png
-  artifactKey: Guid(f4318018eb26b46dd83e7f4c0bfb4a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF Atlas.png using Guid(f4318018eb26b46dd83e7f4c0bfb4a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1861946e3774c097a00e1bb45d2a94f4') in 0.032103 seconds
-  Import took 0.035984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF Atlas.png
-  artifactKey: Guid(4b1d1d44f277248ae92feb4eb833a4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF Atlas.png using Guid(4b1d1d44f277248ae92feb4eb833a4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49776395ef6f8da5aafde87b205eed66') in 0.024835 seconds
-  Import took 0.028426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF Atlas.png
-  artifactKey: Guid(f2c790a55f5074ff7aa3b33040acfadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF Atlas.png using Guid(f2c790a55f5074ff7aa3b33040acfadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4bd2ae2485b163592dfff252a42f59') in 0.025146 seconds
-  Import took 0.029644 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001496 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.926 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1584 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.4 MB.
-System memory in use after: 94.5 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2085.
-Total: 2.323900 ms (FindLiveObjects: 0.155000 ms CreateObjectMapping: 0.082100 ms MarkObjects: 2.008300 ms  DeleteObjects: 0.077200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001994 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.910 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1584 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.5 MB.
-System memory in use after: 94.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2088.
-Total: 3.232300 ms (FindLiveObjects: 0.174800 ms CreateObjectMapping: 0.060600 ms MarkObjects: 2.756700 ms  DeleteObjects: 0.238800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001348 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.918 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1585 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.5 MB.
-System memory in use after: 94.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2092.
-Total: 2.178200 ms (FindLiveObjects: 0.158000 ms CreateObjectMapping: 0.054600 ms MarkObjects: 1.886300 ms  DeleteObjects: 0.077600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 3350.938650 seconds.
   path: Assets/Scripts/Timer.cs
   artifactKey: Guid(40b09dbab139fa44cbaec40fea3aca4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Timer.cs using Guid(40b09dbab139fa44cbaec40fea3aca4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2f501c566b7804dddd242dc179b2ae') in 0.011411 seconds
-  Import took 0.015126 seconds .
+Start importing Assets/Scripts/Timer.cs using Guid(40b09dbab139fa44cbaec40fea3aca4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bfb3fbd3cb32280e597de42fe173b62') in 0.036008 seconds
+  Import took 0.041640 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002079 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.340 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1585 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.4 MB.
+System memory in use after: 91.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2078.
+Total: 7.408200 ms (FindLiveObjects: 0.414200 ms CreateObjectMapping: 0.189600 ms MarkObjects: 6.466200 ms  DeleteObjects: 0.333400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001481 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.944 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1585 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.4 MB.
+System memory in use after: 91.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2081.
+Total: 2.798900 ms (FindLiveObjects: 0.280100 ms CreateObjectMapping: 0.083300 ms MarkObjects: 2.354500 ms  DeleteObjects: 0.080200 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

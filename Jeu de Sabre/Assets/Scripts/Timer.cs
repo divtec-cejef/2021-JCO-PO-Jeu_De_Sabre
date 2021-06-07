@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Timer : MonoBehaviour
     public GameObject FXFinal;
     private bool final = false;
     public Camera CAM;
-    
+    public Text timerGame;
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class Timer : MonoBehaviour
         if (timer > 0)
         {
             timer -= Time.deltaTime;
+            timerGame.text = formatTime((int) timer);
         }
     }
 
@@ -36,9 +38,9 @@ public class Timer : MonoBehaviour
             if (!final)
             {
                 final = true;
-                GameObject effect = Instantiate(FXFinal, transform.position, transform.rotation);
-                Rect a = new Rect(0, 0, 1, 1);
-                CAM.rect = a;
+                //GameObject effect = Instantiate(FXFinal, transform.position, transform.rotation);
+                //Rect a = new Rect(0, 0, 1, 1);
+                //CAM.rect = a;
                 
                 return "AAAAAAAAAAAAAAAAAAAA !!!!!!!!!!";
             }
@@ -61,8 +63,8 @@ public class Timer : MonoBehaviour
         return format;
     }
 
-    private void OnGUI()
+   /* private void OnGUI()
     {
         GUI.TextArea(new Rect(Screen.width / 2 - 75, 30, 150, 20), "Time : " + formatTime((int) timer));
-    }
+    }*/
 }
