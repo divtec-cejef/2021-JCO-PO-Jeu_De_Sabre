@@ -13,7 +13,7 @@ public class TestConnection : MonoBehaviour {
         
         if(init == PSMove_Bool.PSMove_True) {
             /* Récupération des manettes PSMove */
-            manette_1 = PSMoveAPI.psmove_connect_by_id(0);
+            manette_1 = PSMoveAPI.psmove_connect();
             //manette_2 = PSMoveAPI.psmove_connect_by_id(1);
 
             // Variable utilsée pour afficher les erreurs

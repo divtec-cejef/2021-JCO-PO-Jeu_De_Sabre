@@ -7,54 +7,70 @@ using UnityEngine.PlayerLoop;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
-public class Attaque : MonoBehaviour
+public class Attaque
 {
 
-    public GameObject Player1;
+    private GameObject Player1Axis;
     
-    public GameObject Player2;
-    float move;
-    float move2;
+    private GameObject Player2Axis;
 
-    public bool isAttacking;
-    private bool isDefending = false;
 
+    private GameObject Player1Char;
+    private GameObject Player1Trans;
+    private GameObject Player2Char;
+    private GameObject Player2Trans;
+    
+
+    
     private PSMoveActions actions;
-    
-    private void Awake()
+    private Animator anime1;
+    private Animator anime1Trans;
+    private Animator anime2;
+    private Animator anime2Trans;
+
+
+    public Attaque(GameObject P1A, GameObject P2A, GameObject P1C, GameObject P1T, GameObject P2C, GameObject P2T)
     {
-        actions = new PSMoveActions();
-        actions.Buttons.attak.performed += ctx => move = ctx.ReadValue<float>();
-        actions.Buttons.attak.canceled += crx => move = 0;
+        Player1Axis = P1A;
+        Player2Axis = P2A;
+        Player1Char = P1C;
+        Player1Trans = P1T;
+        Player2Char = P2C;
+        Player2Trans = P2T;
+    }
+
+    public void onAttack(Player.Joueur attacker)
+    {
+        if (attacker == Player.Joueur.P1)
+        {
+            anime1 = Player1Char.GetComponent<Animator>();
+            anime1Trans = Player1Trans.GetComponent<Animator>();
+            anime1.SetTrigger("isAttacking");
+            anime1Trans.SetTrigger("isAttacking");
+            
+            anime2 = Player2Char.GetComponent<Animator>();
+            anime2Trans = Player2Trans.GetComponent<Animator>();
+            anime2.SetTrigger("isHit");
+            anime2Trans.SetTrigger("isHit");
+        }
+        else
+        {
+            
+        }
         
-        actions.Buttons.recul.performed += ctx => move2 = ctx.ReadValue<float>();
-        actions.Buttons.recul.canceled += crx => move2 = 0;
-    }
-
-    public void onAttaque(Player.Joueur agresseur)
-    {
-
     }
     
-    
-
-    private void OnEnable()
-    {
-        actions.Buttons.Enable();
-    }
-
-    private void OnDisable()
-    {
-        actions.Buttons.Disable();
-    }
-
     private void Update()
     {
-        Player1.transform.position = Vector3.Lerp(Player1.transform.position, new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z + move * 1.5f), 0.5f*Time.deltaTime);
-        Player1.transform.position = Vector3.Lerp(Player1.transform.position, new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z - move2 * 1.5f), 0.5f*Time.deltaTime);
-
+        //Player1.transform.position = Vector3.Lerp(Player1.transform.position, new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z + move * 1.5f), 0.5f*Time.deltaTime);
+        //Player1.transform.position = Vector3.Lerp(Player1.transform.position, new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z - move2 * 1.5f), 0.5f*Time.deltaTime);
         
-       // Quaternion.Lerp( )
+    
+        
+        //anim.SetBool("isRunning", move != 0);
+
+
+        // Quaternion.Lerp( )
         
     // if (isAttacking)
     // {
