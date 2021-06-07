@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class TrackingAdvers : MonoBehaviour
 {
+    //Objet à traquer
     [SerializeField] Transform targetJoueur;
     Vector3 offsetCameraJ;
     
+    //Sensibilité de l'objet qui va se déplacé en fonction des déplacement de l'objet traqué 
     [Range(0.01f, 1.0f)]
     [SerializeField] float smooth;
 
