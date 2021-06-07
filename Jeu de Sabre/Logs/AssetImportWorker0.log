@@ -15,11 +15,11 @@ C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53902
+49794
 Successfully changed project path to: C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 87.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 68.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,318 +35,239 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003690 seconds.
+Registered in 0.002324 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 53.43 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 62.98 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.522 seconds
+- Completed reload, in  1.175 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001290 seconds.
+Registered in 0.001432 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-00000276748C1A30 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027674C45430 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276749D7290 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027674C58840 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027677C48020 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027674840410 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002767516E430 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027674C58840 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027677C75A30 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027677D68010 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276749D7290 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 49.69 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 63.10 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.999 seconds
+- Completed reload, in  1.061 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1442 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.0 MB.
-System memory in use after: 83.0 MB.
+Unloading 1607 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.0 MB.
+System memory in use after: 93.0 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1907.
-Total: 2.417400 ms (FindLiveObjects: 0.203300 ms CreateObjectMapping: 0.048200 ms MarkObjects: 2.027600 ms  DeleteObjects: 0.137400 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2074.
+Total: 2.543100 ms (FindLiveObjects: 0.484800 ms CreateObjectMapping: 0.132100 ms MarkObjects: 1.781100 ms  DeleteObjects: 0.143900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/TrackingAdvers.cs
-  artifactKey: Guid(0650c628cfed75746bc8bcc799ccf6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/TrackingAdvers.cs using Guid(0650c628cfed75746bc8bcc799ccf6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ae56cce80fa2d0a2de61125414edf2') in 0.039890 seconds
-  Import took 0.044154 seconds .
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF Atlas.png
+  artifactKey: Guid(51bda5a7ed19c4c39bbb02ae0c80c2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF Atlas.png using Guid(51bda5a7ed19c4c39bbb02ae0c80c2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67cce8bcebc397b91d3655eb14fc898') in 0.108260 seconds
+  Import took 0.111445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF Atlas.png
+  artifactKey: Guid(24afcf316a3a944c3bf86bc27a2f93fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF Atlas.png using Guid(24afcf316a3a944c3bf86bc27a2f93fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378978f2539427e57934037f33a2dcfc') in 0.033311 seconds
+  Import took 0.037820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF Atlas.png
+  artifactKey: Guid(b69bbc81e50d34f86a06fa187435ee02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF Atlas.png using Guid(b69bbc81e50d34f86a06fa187435ee02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37b6319d5f52b0a2b31e6bad48921fd') in 0.024990 seconds
+  Import took 0.030850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF Atlas.png
+  artifactKey: Guid(c0ea2ae774e27444a8284898f02e41a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF Atlas.png using Guid(c0ea2ae774e27444a8284898f02e41a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e588cf33f00a72fe7576e1761ccd936') in 0.029501 seconds
+  Import took 0.034954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF Atlas.png
+  artifactKey: Guid(be2c5d62ca95142e3b9dc4d4a638b2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF Atlas.png using Guid(be2c5d62ca95142e3b9dc4d4a638b2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9f29bf5dd73549bf364fdc85be824e') in 0.025256 seconds
+  Import took 0.028846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF Atlas.png
+  artifactKey: Guid(344ece39f87ef42eda903eba1635395a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF Atlas.png using Guid(344ece39f87ef42eda903eba1635395a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4ae3db3e09de074ecb101a05942eb1') in 0.037543 seconds
+  Import took 0.041061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF Atlas.png
+  artifactKey: Guid(b549307935a4b424aa346ab218ec8f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF Atlas.png using Guid(b549307935a4b424aa346ab218ec8f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2378ff41d21fafbaf1c7f668ab7e837e') in 0.021713 seconds
+  Import took 0.025306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF Atlas.png
+  artifactKey: Guid(542168a59ebb940cc91d3c3ec1325445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF Atlas.png using Guid(542168a59ebb940cc91d3c3ec1325445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39da0c32d998e07a320917dea1d84b5c') in 0.026279 seconds
+  Import took 0.031684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF Atlas.png
+  artifactKey: Guid(35891abd43bca4b8dbaff570b5c0c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF Atlas.png using Guid(35891abd43bca4b8dbaff570b5c0c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c1a2b8353933267fa4806d85c7287c') in 0.025055 seconds
+  Import took 0.028197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF Atlas.png
+  artifactKey: Guid(d454a327204cd4185bcb58aab6137a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF Atlas.png using Guid(d454a327204cd4185bcb58aab6137a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c2d94a5906f13be8102bbc8bea7387') in 0.024397 seconds
+  Import took 0.028708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF Atlas.png
+  artifactKey: Guid(dd36f1e4d1d8145d4ae67ed98e44ce90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF Atlas.png using Guid(dd36f1e4d1d8145d4ae67ed98e44ce90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db465cbc32854418c3b5e5d5fe315283') in 0.026353 seconds
+  Import took 0.030120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF Atlas.png
+  artifactKey: Guid(aa9fdc7ac23d342798922793111065d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF Atlas.png using Guid(aa9fdc7ac23d342798922793111065d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3b2c68f8b7912a7b13d3c0f2cc8e46') in 0.019754 seconds
+  Import took 0.023475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts
+  artifactKey: Guid(56eb8fbbd6e7e4f1b951c497e9cdffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts using Guid(56eb8fbbd6e7e4f1b951c497e9cdffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81bdcb2907dad80beb73c1a5fa8ef449') in 0.007700 seconds
+  Import took 0.011366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF Atlas.png
+  artifactKey: Guid(3b98b1d4d020f485d839d46f3d718b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF Atlas.png using Guid(3b98b1d4d020f485d839d46f3d718b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684975c31224c34dfe7aac929f4360cc') in 0.028550 seconds
+  Import took 0.031547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF Atlas.png
+  artifactKey: Guid(f4318018eb26b46dd83e7f4c0bfb4a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF Atlas.png using Guid(f4318018eb26b46dd83e7f4c0bfb4a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1861946e3774c097a00e1bb45d2a94f4') in 0.032103 seconds
+  Import took 0.035984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF Atlas.png
+  artifactKey: Guid(4b1d1d44f277248ae92feb4eb833a4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF Atlas.png using Guid(4b1d1d44f277248ae92feb4eb833a4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49776395ef6f8da5aafde87b205eed66') in 0.024835 seconds
+  Import took 0.028426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF Atlas.png
+  artifactKey: Guid(f2c790a55f5074ff7aa3b33040acfadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF Atlas.png using Guid(f2c790a55f5074ff7aa3b33040acfadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4bd2ae2485b163592dfff252a42f59') in 0.025146 seconds
+  Import took 0.029644 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001297 seconds.
+Registered in 0.001496 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-00000276749B7790 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276748B1010 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276749F5F60 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276745EC030 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027675052E10 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276748B1010 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002767516E430 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276745EC030 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027678100080 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027678CC6020 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027674D4A870 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1584 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.4 MB.
+System memory in use after: 94.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2085.
+Total: 2.323900 ms (FindLiveObjects: 0.155000 ms CreateObjectMapping: 0.082100 ms MarkObjects: 2.008300 ms  DeleteObjects: 0.077200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001994 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.910 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1584 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.5 MB.
+System memory in use after: 94.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2088.
+Total: 3.232300 ms (FindLiveObjects: 0.174800 ms CreateObjectMapping: 0.060600 ms MarkObjects: 2.756700 ms  DeleteObjects: 0.238800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001348 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.918 seconds
+Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.913 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1437 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.1 MB.
-System memory in use after: 83.1 MB.
+Unloading 1585 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.5 MB.
+System memory in use after: 94.6 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1910.
-Total: 2.397100 ms (FindLiveObjects: 0.135700 ms CreateObjectMapping: 0.040600 ms MarkObjects: 2.159400 ms  DeleteObjects: 0.060000 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2092.
+Total: 2.178200 ms (FindLiveObjects: 0.158000 ms CreateObjectMapping: 0.054600 ms MarkObjects: 1.886300 ms  DeleteObjects: 0.077600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 213.701906 seconds.
-  path: Assets/Scripts/TrackingAdvers.cs
-  artifactKey: Guid(0650c628cfed75746bc8bcc799ccf6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/TrackingAdvers.cs using Guid(0650c628cfed75746bc8bcc799ccf6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ece3c73db3e8ac9eba119e215af953') in 0.007145 seconds
-  Import took 0.011943 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.106483 seconds.
-  path: Assets/Scripts/CameraCharacterInvisible.cs
-  artifactKey: Guid(2c7dbedd3dc66b942a21fc0390911e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CameraCharacterInvisible.cs using Guid(2c7dbedd3dc66b942a21fc0390911e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf0e716a2ce7c0f5eff2947525ae660') in 0.010103 seconds
-  Import took 0.016274 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004450 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000027674CFD780 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027674B0BEA0 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276749F5F60 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276783603A0 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027679F67640 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027679872070 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002767516E430 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000276746C9020 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027674C2E020 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027678BF1010 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027674D4A870 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.855 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1436 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.1 MB.
-System memory in use after: 83.2 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1912.
-Total: 2.132500 ms (FindLiveObjects: 0.136900 ms CreateObjectMapping: 0.042500 ms MarkObjects: 1.875900 ms  DeleteObjects: 0.076400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006593 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002764A378AC0 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027678DB8030 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027679AD2BC0 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027675042010 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027679FD2ED0 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027679871040 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027677D20020 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027675042010 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027674C2E020 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027678BF1010 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000027677DCA040 doesn't match image C:\Projet\UnityProjet\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.392 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1436 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.1 MB.
-System memory in use after: 83.2 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1915.
-Total: 2.805900 ms (FindLiveObjects: 0.237800 ms CreateObjectMapping: 0.061000 ms MarkObjects: 2.402600 ms  DeleteObjects: 0.102400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005455 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invalid AssetDatabase path: /Editor/EditorResources/cm_logo_sm.png. Use path relative to the project folder.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.AssetDatabase:LoadAssetAtPath<UnityEngine.Texture2D> (string)
-Cinemachine.Editor.CinemachineSettings:get_CinemachineLogoTexture () (at Library/PackageCache/com.unity.cinemachine@2.6.5/Editor/Windows/CinemachineSettings.cs:205)
-Cinemachine.Editor.CinemachineSettings:.cctor () (at Library/PackageCache/com.unity.cinemachine@2.6.5/Editor/Windows/CinemachineSettings.cs:237)
-Cinemachine.CinemachineColliderPrefs:.cctor () (at Library/PackageCache/com.unity.cinemachine@2.6.5/Editor/Windows/CinemachineColliderPrefs.cs:61)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.cinemachine@2.6.5/Editor/Windows/CinemachineSettings.cs line 205]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.864 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1582 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.0 MB.
-System memory in use after: 88.1 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2063.
-Total: 2.921800 ms (FindLiveObjects: 0.375900 ms CreateObjectMapping: 0.092100 ms MarkObjects: 2.378400 ms  DeleteObjects: 0.074000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001226 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.863 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2067.
-Total: 2.623100 ms (FindLiveObjects: 0.393300 ms CreateObjectMapping: 0.117300 ms MarkObjects: 2.020800 ms  DeleteObjects: 0.089700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001276 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.973 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1582 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2070.
-Total: 2.325200 ms (FindLiveObjects: 0.152900 ms CreateObjectMapping: 0.050700 ms MarkObjects: 2.033500 ms  DeleteObjects: 0.087100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001635 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.904 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1582 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2073.
-Total: 2.416800 ms (FindLiveObjects: 0.145800 ms CreateObjectMapping: 0.044600 ms MarkObjects: 2.138600 ms  DeleteObjects: 0.085900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001515 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.821 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1582 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2076.
-Total: 2.887200 ms (FindLiveObjects: 0.151800 ms CreateObjectMapping: 0.047500 ms MarkObjects: 2.612700 ms  DeleteObjects: 0.073900 ms)
+  Time since last request: 3350.938650 seconds.
+  path: Assets/Scripts/Timer.cs
+  artifactKey: Guid(40b09dbab139fa44cbaec40fea3aca4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Timer.cs using Guid(40b09dbab139fa44cbaec40fea3aca4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2f501c566b7804dddd242dc179b2ae') in 0.011411 seconds
+  Import took 0.015126 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
