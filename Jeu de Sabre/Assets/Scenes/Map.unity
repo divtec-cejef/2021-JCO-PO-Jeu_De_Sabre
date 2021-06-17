@@ -21906,22 +21906,8 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 1
---- !u!64 &621658024
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621658020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: b8000949872c53948ba6fe5768471d8c, type: 3}
 --- !u!1001 &623478766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55109,6 +55095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesseCoup: 0
+  sabreOue: {fileID: 1884040784}
 --- !u!114 &1613916305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55137,22 +55124,8 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 1
---- !u!64 &1613916307
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613916302}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: b8000949872c53948ba6fe5768471d8c, type: 3}
 --- !u!1 &1614883315
 GameObject:
   m_ObjectHideFlags: 0

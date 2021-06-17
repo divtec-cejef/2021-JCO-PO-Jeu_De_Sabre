@@ -29,6 +29,8 @@ public class PSMoveSabre1 : MonoBehaviour
     // private bool isReady = true;
     
     
+    //LA VARIABLE GLOBAL
+    private int frameCompteur = 0;
     
     // /* Délai avant que la parade ne se désactive */
     // private float timerParade = 3.0f; // Secondes
@@ -52,7 +54,10 @@ public class PSMoveSabre1 : MonoBehaviour
     private float axeZ;
 
     /* Quaternion permettant d'affecter l'orientation du PSMove au sabre */
-    Quaternion quaternion;
+    public static Quaternion quaternion;
+
+    public static Quaternion frameQuaternion;
+
 
 
     private Parade parade;
@@ -150,8 +155,25 @@ public class PSMoveSabre1 : MonoBehaviour
 
                     transform.rotation = Quaternion.Lerp(transform.rotation, quaternion, 0.07f);
                     //transform.rotation = quaternion;
+
+                    
+                    
+                }
+//tu recupere les frames dactions du sabre
+//et toutes le 20 frames genre tu stock dans une variable
+    
+
+                if (frameCompteur >= 50)
+                {
+                    frameCompteur = 0;
+                    frameQuaternion = quaternion;
+                }
+                else
+                {
+                    frameCompteur++;
                 }
             }
+            
         }
     }
     /**
@@ -164,12 +186,19 @@ public class PSMoveSabre1 : MonoBehaviour
     /**
      * Permet de désactiver les contrôles des boutons
      */
-    void OnDisable(){
+    void OnDisable(){ 
         actions.Buttons.Disable();
     }
 
     public static void setPosition()
     {
+        //la rotation la ici hophophop
+        
+        
+        //on stop le mouvement pour quil se recalibre
+        
         
     }
+
+    
 }

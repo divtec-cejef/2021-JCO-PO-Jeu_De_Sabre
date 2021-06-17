@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -9,6 +10,10 @@ public class CollisionSabre1 : MonoBehaviour
     private int score;
     public float vitesseCoup = 0;
     Vector3 vitesseVector;
+    public GameObject sabreOue;
+
+
+    private float timer = 0.0f;
 
     void OnGUI()
     {
@@ -31,13 +36,28 @@ public class CollisionSabre1 : MonoBehaviour
         if (other.gameObject.name == "SM_Wep_Odachi_01")
         { 
             PSMoveSabre1.isColliding = true;
-            PSMoveSabre1.setPosition();
-            PSMoveSabre1.isColliding = false;
+            sabreOue.transform.rotation = Quaternion.Lerp(transform.rotation, PSMoveSabre1.frameQuaternion, 0.07f);
 
         }
         else if (other.gameObject.name == "Characters_J2" )
         {
             score += OnDamage(vitesseCoup);
+        }
+    }
+
+    private void Update()
+    {
+        if (PSMoveSabre1.isColliding)
+        {
+            if (timer > 1.0f)
+            {
+                PSMoveSabre1.isColliding = false;
+                timer = 0.0f;
+            }
+            else
+            {
+                timer += Time.deltaTime;
+            }
         }
     }
 }
