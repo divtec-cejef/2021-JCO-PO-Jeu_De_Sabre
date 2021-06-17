@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 
 public class CollisionSabre1 : MonoBehaviour
@@ -17,6 +19,11 @@ public class CollisionSabre1 : MonoBehaviour
     
     public GameObject Player2Char;
     public GameObject Player2Trans;
+
+    public GameObject sabre;
+    public Text text_J1;
+
+    private float timer = 0;
     
     //Récuperer la vitesse du sabre et definir les damages en consequences
     public int OnDamage(float speed)
@@ -37,12 +44,14 @@ public class CollisionSabre1 : MonoBehaviour
         if (other.gameObject.name == "SM_Wep_Odachi_01")
         {
             //PSMoveSabre1.isColliding = true;
+            //sabre.transform.rotation = Quaternion.Lerp(sabre.transform.rotation, PSMoveSabre1.lastQuaternion, 0.5f);
+
         }
         else if (other.gameObject.name == "Characters_J2")
         {
             if (Player.decreaseStamina(Player.Joueur.P1, 20))
             {
-                Player.updatePlayerScore(Player.Joueur.P1, 10);
+                Player.updatePlayerScore(Player.Joueur.P1, 10, text_J1);
                 attaque.onAttack(Player.Joueur.P1);
             }
             else
@@ -50,5 +59,21 @@ public class CollisionSabre1 : MonoBehaviour
                 Debug.Log("Pas assez de stamina, attends un peu");
             }
         }
+    }
+
+    private void Update()
+    {
+       /* if (!PSMoveSabre1.isColliding) return;
+        
+        if (timer > 3.0f)
+        {
+            timer = 0;
+            PSMoveSabre1.isColliding = false;
+            
+        }
+        else
+        {
+            timer += Time.deltaTime;
+        }*/
     }
 }

@@ -18,7 +18,7 @@ public class CollisionSabre2 : MonoBehaviour
         }
         else if (other.gameObject.name == "Characters_J1")
         {
-            Player.updatePlayerScore(Player.Joueur.P2, 10);
+            //Player.updatePlayerScore(Player.Joueur.P2, 10);
         }
     }
 }

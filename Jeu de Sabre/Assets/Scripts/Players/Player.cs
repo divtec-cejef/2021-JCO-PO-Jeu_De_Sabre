@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -11,9 +12,9 @@ public class Player : MonoBehaviour
         P2
     }
 
-    public static void updatePlayerScore(Joueur j, int score)
+    public static void updatePlayerScore(Joueur j, int score, Text text)
     {
-        Score.updateScore(j, score);
+        Score.updateScore(j, score, text);
     }
 
     public static int getScore(Joueur j)

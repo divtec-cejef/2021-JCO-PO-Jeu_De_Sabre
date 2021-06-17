@@ -47,15 +47,14 @@ public class PSMoveSabre1 : MonoBehaviour
     private float axeY;
     private float axeZ;
 
+    private int frame = 0;
+
     /* Quaternion permettant d'affecter l'orientation du PSMove au sabre */
     Quaternion quaternion;
 
+    public static Quaternion lastQuaternion;
 
     private Parade parade;
-
-
-    private int frame = 1;
-
     /**
      * Fonction qui se lance juste après le test de la connexion des PSMove
      */
@@ -106,23 +105,8 @@ public class PSMoveSabre1 : MonoBehaviour
 
             parade.updateParadeCooldown();
 
-            //if (!isColliding)
-            //{
-                // /* Si le joueur n'est pas prêt à executer une parade et qu'un n'est pas déjà en parade */
-                // if (!isReady && !isParade)
-                // {
-                //     /* Si le timer n'est pas terminé, décompte du timer */
-                //     if (cooldownParade > 1.0f)
-                //     {
-                //         cooldownParade -= Time.deltaTime;
-                //     }
-                //     /* Si le timer est terminé, réactivation de la parade et réinitialisation du cooldown*/
-                //     else
-                //     {
-                //         isReady = true;
-                //         cooldownParade = 5.0f;
-                //     }
-                // }
+            if (!isColliding)
+            {
 
                 // Fonction permettant d'avertir le PSMove qu'on va agir sur ses capteurs
                 PSMoveAPI.psmove_poll(move);
@@ -157,10 +141,30 @@ public class PSMoveSabre1 : MonoBehaviour
                     axeZ += 0.0009f;
 
                     // Affectation de l'orientation du PSMove à l'objet en cours 
-                    quaternion = new Quaternion(-axeX, axeZ, axeY, ow);
-                    transform.rotation = quaternion;
+                    // if (frame > 50)
+                    // {
+                    //     frame = 0;
+                    //     lastQuaternion = transform.rotation;
+                    // }
+                    // else
+                    // {
+                        frame++;
+                        quaternion = new Quaternion(-axeX, axeZ, axeY, ow);
+                        transform.rotation = quaternion;
+                    // }
+                    
                 }
-            //}
+            }
+            // else
+            // {
+            //     transform.rotation = lastQuaternion;
+            //     ow = 0;
+            //     axeX = 0;
+            //     axeY = 0;
+            //     axeZ = 0;
+            // }
+
+           
         }
     }
 

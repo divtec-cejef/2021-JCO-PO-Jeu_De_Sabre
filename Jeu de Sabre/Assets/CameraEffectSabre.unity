@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657892, g: 0.4964128, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44943482, g: 0.49638313, b: 0.5588729, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2567,7 +2567,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530747656}
-  m_LocalRotation: {x: 0.07476614, y: -0.00000011521979, z: 0.0000000086387155, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.0000001237989, z: 0.000000009281943, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8504,7 +8504,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852455699}
-  m_LocalRotation: {x: 0.07476614, y: -0.00000011521979, z: 0.0000000086387155, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.0000001237989, z: 0.000000009281943, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -8757,7 +8757,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16eeaa16e7a73f74d8dc23f795c12c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesseCoup: 0
+  Player1Axis: {fileID: 0}
+  Player2Axis: {fileID: 0}
+  Player1Char: {fileID: 0}
+  Player1Trans: {fileID: 0}
+  Player2Char: {fileID: 0}
+  Player2Trans: {fileID: 0}
 --- !u!65 &883149521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8771,21 +8776,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.077461235, y: 1.0073229, z: 0.10088045}
   m_Center: {x: 0, y: 0.76696634, z: -0.032679033}
---- !u!114 &883149522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883149519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f2630479ac971346bd2f86cb6822db9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FXParade: {fileID: 0}
-  FXParade2: {fileID: 0}
-  FXParadePos: {fileID: 0}
 --- !u!1 &889522402
 GameObject:
   m_ObjectHideFlags: 0
@@ -15943,23 +15933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29924db78f5febc48b43eeb4e0a3eb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesseCoup: 0
---- !u!114 &1680979483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680979480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d731cb36e852dce4d9a3b269d7597a53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 0
-  FXParade_1: {fileID: 0}
-  FXParade_2: {fileID: 0}
-  FXParadePos: {fileID: 0}
 --- !u!1 &1747524830
 GameObject:
   m_ObjectHideFlags: 0

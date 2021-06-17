@@ -10,7 +10,7 @@ public class Tracker_1 : MonoBehaviour
     private static System.IntPtr tracker;
     public static void init()
     {
-        tracker = TestConnection.tracker_1;
+        //tracker = TestConnection.tracker_1;
 
         PSMoveAPI.psmove_tracker_enable(tracker, TestConnection.manette_1);
     }
