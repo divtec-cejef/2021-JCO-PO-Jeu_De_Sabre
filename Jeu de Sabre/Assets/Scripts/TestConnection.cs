@@ -5,6 +5,7 @@ public class TestConnection : MonoBehaviour {
 
     public static IntPtr manette_1;
     public static IntPtr manette_2;
+    public static IntPtr tracker_1;
     public static bool initDone = false;
 
 	private void Start () {
@@ -15,6 +16,7 @@ public class TestConnection : MonoBehaviour {
             /* Récupération des manettes PSMove */
             manette_1 = PSMoveAPI.psmove_connect();
             //manette_2 = PSMoveAPI.psmove_connect_by_id(1);
+            tracker_1 = PSMoveAPI.psmove_tracker_new();
 
             // Variable utilsée pour afficher les erreurs
             int errorNbr = -1;
@@ -22,7 +24,7 @@ public class TestConnection : MonoBehaviour {
             /* Vérification de la validité de la manette 1 */
             if(manette_1 == IntPtr.Zero || PSMoveAPI.psmove_update_leds(manette_1) == 0)
                 errorNbr = 0;
-            
+
             /* Vérification de la validité de la manette 2 */
             // if (manette_2 == IntPtr.Zero || PSMoveAPI.psmove_update_leds(manette_2) == 0)
             // {
@@ -31,6 +33,12 @@ public class TestConnection : MonoBehaviour {
             //     else
             //         errorNbr = 1;
             // }
+
+
+            if (tracker_1 == IntPtr.Zero)
+            {
+                Debug.LogError("Cam");
+            }
             
             /* Affichage des potentielles erreurs */
             switch (errorNbr)
@@ -49,13 +57,14 @@ public class TestConnection : MonoBehaviour {
                     break;
                 /* Si toute les manettes fonctionnent */
                 default:
-                    Debug.Log("Connexion établie avec les Manettes");
+                    //Debug.Log("Connexion établie avec les Manettes");
                     // Initialisation terminée
                     initDone = true;
                     
                     // Initialisation des mouvements de la manette
                     PSMoveSabre1.init();
                     //PSMoveSabre2.init();
+                    Tracker_1.init();
                     break;
             }
         } 

@@ -18,8 +18,6 @@ public class PSMoveSabre1 : MonoBehaviour
     
     /* Manette PSMove */
     private static System.IntPtr move;
-    /* Camera PSEye */
-    private static System.IntPtr camera;
 
     // /* Si le joueur est en parade */
     // public static bool isParade = false;
