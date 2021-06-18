@@ -9,24 +9,22 @@ public class Score : MonoBehaviour
     private static int scoreJ1 = 0;
     private static int scoreJ2 = 0;
 
-    public Text text_1;
-    public Text text_2;
-    
-    
     /// <summary>
     /// Permet de mettre à jour le score de chaque joueur
     /// </summary>
     /// <param name="j">Le joueur auquel on veut attribuer les points</param>
     /// <param name="score">Le nombre de point à ajouter à son score</param>
-    public static void updateScore(Player.Joueur j, int score, Text text)
+    public static void updateScore(Player.Joueur player, int score, Text text)
     {
-        if (j == Player.Joueur.P1)
+        if (player == Player.Joueur.P1)
         {
             scoreJ1 += score;
+            GameInit.getUiUpdater().onScoreUpdate(player);
         }
         else
         {
             scoreJ2 += score;
+            GameInit.getUiUpdater().onScoreUpdate(player);
         }
     }
     

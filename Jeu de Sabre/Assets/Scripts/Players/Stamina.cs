@@ -24,12 +24,18 @@ public class Stamina : MonoBehaviour
     /// </summary>
     /// <param name="j">Le joueur auquel on veut attribuer les points</param>
     /// <param name="score">Le nombre de point à ajouter à son score</param>
-    private static void updateStamina(Player.Joueur j, float score)
+    private static void updateStamina(Player.Joueur player, float stamina)
     {
-        if (j == Player.Joueur.P1)
-            stamJ1 += score;
+        if (player == Player.Joueur.P1)
+        {
+            stamJ1 += stamina;
+            GameInit.getUiUpdater().onStaminaUpdate(player);
+        }
         else
-            stamJ2 += score;
+        {
+            stamJ2 += stamina;
+            GameInit.getUiUpdater().onStaminaUpdate(player);
+        }
     }
     
     /// <summary>
@@ -54,10 +60,10 @@ public class Stamina : MonoBehaviour
             stamJ2 = 0;
     }
     
-    public static bool decreaseStamina(Player.Joueur j, float amount)
+    public static bool decreaseStamina(Player.Joueur player, float amount)
     {
 
-        if (j == Player.Joueur.P1)
+        if (player == Player.Joueur.P1)
         {
             if (stamJ1 < amount)
             {
@@ -65,6 +71,7 @@ public class Stamina : MonoBehaviour
             }
             
             stamJ1 -= amount;
+            GameInit.getUiUpdater().onStaminaUpdate(player);
             canRegenJ1 = false;
             return true;
         }
@@ -75,6 +82,7 @@ public class Stamina : MonoBehaviour
                 return false;
             }
             stamJ2 -= amount;
+            GameInit.getUiUpdater().onStaminaUpdate(player);
             canRegenJ2 = false;
             return true;
         }

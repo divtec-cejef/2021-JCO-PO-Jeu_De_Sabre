@@ -5,7 +5,7 @@ using UnityEngine.InputSystem.Interactions;
 
 public class Parade
 {
-    private PSMoveUtils.PSMoveID move_id;
+    private Player.Joueur player;
     
     /* Si le joueur est en parade */
     private bool isParade;
@@ -30,7 +30,7 @@ public class Parade
     private GameObject fxEffect2;
     
     
-    public Parade(float timerParade, float cooldownParade, GameObject fx1, GameObject fx2, GameObject fxPos, GameObject katanaAxis, PSMoveUtils.PSMoveID move_id)
+    public Parade(float timerParade, float cooldownParade, GameObject fx1, GameObject fx2, GameObject fxPos, GameObject katanaAxis, Player.Joueur player)
     {
         this.timerParade = timerParade;
         this.cooldownParade = cooldownParade;
@@ -38,7 +38,7 @@ public class Parade
         FXParade_2 = fx2;
         FXParadePos = fxPos;
         this.katanaAxis = katanaAxis;
-        this.move_id = move_id;
+        this.player = player;
     }
 
     /// <summary>
@@ -55,14 +55,16 @@ public class Parade
         {
             if (!isParade)
             {
-               PSMoveUtils.setLED(move_id, parryColor);
-               fxEffect1 = MonoBehaviour.Instantiate(FXParade_1, FXParadePos.transform.position, FXParadePos.transform.rotation);
-               fxEffect2 = MonoBehaviour.Instantiate(FXParade_2, FXParadePos.transform.position, FXParadePos.transform.rotation);
+               PSMoveUtils.setLED(player, parryColor);
+               var rotation = FXParadePos.transform.rotation;
+               var position = FXParadePos.transform.position;
+               fxEffect1 = MonoBehaviour.Instantiate(FXParade_1, position, rotation);
+               fxEffect2 = MonoBehaviour.Instantiate(FXParade_2, position, rotation);
 
                quaternion = new Quaternion(axeX, axeZ, axeY, ow);
                katanaAxis.transform.rotation = quaternion;
                
-               PSMoveUtils.setVibration(move_id, 255);
+               PSMoveUtils.setVibration(player, 255);
                defaultPos = katanaAxis.transform.position;
             }
 
@@ -95,7 +97,7 @@ public class Parade
         {
             timerParade -= Time.deltaTime;
 
-            if (!Player.decreaseStamina(getPlayer(), 0.2f))
+            if (!Player.decreaseStamina(player, 0.2f))
             {
                 timerParade = 0;
             }
@@ -114,10 +116,10 @@ public class Parade
     {
         if (isParade)
         {
-            PSMoveUtils.setLED(move_id, Color.green);
+            PSMoveUtils.setLED(player, Color.green);
             timerParade = 3.0f;
             isCanceled = false;
-            PSMoveUtils.setVibration(move_id, 0);
+            PSMoveUtils.setVibration(player, 0);
             MonoBehaviour.Destroy(fxEffect1);
             MonoBehaviour.Destroy(fxEffect2);
             isReady = false;
@@ -145,16 +147,6 @@ public class Parade
         }
     }
 
-    
-
-
-    private void OnGUI()
-    {
-        GUI.TextArea(new Rect(0,0,100,20), cooldownParade.ToString());
-        GUI.TextArea(new Rect(0,21,100,20), timerParade.ToString());
-    }
-    
-    
     public bool getParade()
     {
         return isParade;
@@ -168,13 +160,4 @@ public class Parade
     {
         return isReady;
     }
-
-    private Player.Joueur getPlayer()
-    {
-        return this.move_id == 0 ? Player.Joueur.P1 : Player.Joueur.P2;
-    }
-    
-    
-    
-    
 }

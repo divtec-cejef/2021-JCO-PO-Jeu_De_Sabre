@@ -12,28 +12,28 @@ public class PSMoveUtils
         Manette_2 = 1,
     }
     
-    public static void setLED(PSMoveID move_id, Color color)
+    public static void setLED(Player.Joueur player, Color color)
     {
-        if (move_id == PSMoveID.Manette_1)
+        if (player == Player.Joueur.P1)
         {
-            PSMoveAPI.psmove_set_leds(TestConnection.manette_1, (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
+            PSMoveAPI.psmove_set_leds(GameInit.getControllerHandler().getController1(), (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
         }
         else
         {
-            PSMoveAPI.psmove_set_leds(TestConnection.manette_2, (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
+            PSMoveAPI.psmove_set_leds(GameInit.getControllerHandler().getController2(), (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
         }
         
     }
 
-    public static void setVibration(PSMoveID move_id, System.Byte level)
+    public static void setVibration(Player.Joueur player, System.Byte level)
     {
-        if (move_id == PSMoveID.Manette_1)
+        if (player == Player.Joueur.P1)
         {
-            PSMoveAPI.psmove_set_rumble(TestConnection.manette_1, level);
+            PSMoveAPI.psmove_set_rumble(GameInit.getControllerHandler().getController1(), level);
         }
         else
         {
-            PSMoveAPI.psmove_set_rumble(TestConnection.manette_2, level);
+            PSMoveAPI.psmove_set_rumble(GameInit.getControllerHandler().getController2(), level);
         }
     }
 }

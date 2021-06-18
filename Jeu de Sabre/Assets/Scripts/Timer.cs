@@ -3,66 +3,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Timer : MonoBehaviour
+public class Timer
 {
-
-    public int maxTime;
     private float timer;
-    public GameObject FXFinal;
-    private bool final = false;
-    public Camera CAM;
-    
+    private GameObject sound;
 
-    private void Start()
+    public Timer(int time, GameObject sound)
     {
-        timer = maxTime;
+        timer = time;
+        this.sound = sound;
     }
 
-    private void Update()
+    public void onUpdate()
     {
         if (timer > 0)
         {
             timer -= Time.deltaTime;
+            GameInit.getUiUpdater().onTimerUpdate();
         }
     }
 
-
-    private String formatTime(int time)
+    public int getTimer()
     {
-        String format = "";
-
-        if (time <= 0)
-        {
-            if (!final)
-            {
-                final = true;
-                GameObject effect = Instantiate(FXFinal, transform.position, transform.rotation);
-                Rect a = new Rect(0, 0, 1, 1);
-                CAM.rect = a;
-                
-                return "AAAAAAAAAAAAAAAAAAAA !!!!!!!!!!";
-            }
-        }
-        
-        if (time / 60 < 10)
-        {
-            format += "0";
-        }
-
-        format += time / 60 + ":";
-
-        if (time % 60 < 10)
-        {
-            format += "0";
-        }
-
-        format += time % 60;
-
-        return format;
+        return (int) timer;
     }
 
-    private void OnGUI()
+    public GameObject getSound()
     {
-        GUI.TextArea(new Rect(Screen.width / 2 - 75, 30, 150, 20), "Time : " + formatTime((int) timer));
+        return sound;
     }
+
 }

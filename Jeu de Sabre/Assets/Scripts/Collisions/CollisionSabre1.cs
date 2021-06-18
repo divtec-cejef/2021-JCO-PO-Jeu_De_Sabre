@@ -45,35 +45,21 @@ public class CollisionSabre1 : MonoBehaviour
         {
             //PSMoveSabre1.isColliding = true;
             //sabre.transform.rotation = Quaternion.Lerp(sabre.transform.rotation, PSMoveSabre1.lastQuaternion, 0.5f);
-
         }
         else if (other.gameObject.name == "Characters_J2")
         {
             if (Player.decreaseStamina(Player.Joueur.P1, 20))
             {
-                Player.updatePlayerScore(Player.Joueur.P1, 10, text_J1);
+                Player.updatePlayerScore(Player.Joueur.P1, 70, text_J1);
                 attaque.onAttack(Player.Joueur.P1);
+                var position = new Vector3(11.9f, 11.0f, 15.6f);
+                var rotation = new Quaternion(0, 0, 0, 0);
+                Instantiate(GameInit.getSoundHandler().getDamangeSound(), position, rotation);
             }
             else
             {
                 Debug.Log("Pas assez de stamina, attends un peu");
             }
         }
-    }
-
-    private void Update()
-    {
-       /* if (!PSMoveSabre1.isColliding) return;
-        
-        if (timer > 3.0f)
-        {
-            timer = 0;
-            PSMoveSabre1.isColliding = false;
-            
-        }
-        else
-        {
-            timer += Time.deltaTime;
-        }*/
     }
 }
