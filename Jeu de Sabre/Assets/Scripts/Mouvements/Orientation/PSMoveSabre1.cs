@@ -160,20 +160,21 @@ public class PSMoveSabre1 : MonoBehaviour
                     
                 }
 //tu recupere les frames dactions du sabre
-//et toutes le 20 frames genre tu stock dans une variable
+//et toutes le 50 frames genre tu stock dans une variable
     
 
-                if (frameCompteur >= 50)
+                if (frameCompteur >= 100)
                 {
                     frameCompteur = 0;
                     frameQuaternion = quaternion;
+                    print("oui");
                 }
                 else
                 {
                     frameCompteur++;
+                    print(frameCompteur);
                 }
             }
-            
         }
     }
     /**

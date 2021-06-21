@@ -1,0 +1,1232 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.985; Version 2009; 64bit' Language: 'fr' Physical Memory: 8060 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64831
+Successfully changed project path to: C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 51.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics 655 (ID=0x3ea5)
+    Vendor:   
+    VRAM:     4030 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002762 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 43.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.198 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001261 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000221F095C010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 41.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.922 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1440 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.8 MB.
+System memory in use after: 82.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1904.
+Total: 2.720600 ms (FindLiveObjects: 0.494600 ms CreateObjectMapping: 0.123100 ms MarkObjects: 1.954800 ms  DeleteObjects: 0.146200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Collisions
+  artifactKey: Guid(3fa50b1ffbba6734d91d17520cf89af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collisions using Guid(3fa50b1ffbba6734d91d17520cf89af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1f73e75111bcc1df3b7d4ab2b5f7b6') in 0.013564 seconds
+  Import took 0.016232 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001381 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000221EE1B1010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.896 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.8 MB.
+System memory in use after: 82.9 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1907.
+Total: 2.955700 ms (FindLiveObjects: 0.398100 ms CreateObjectMapping: 0.055100 ms MarkObjects: 2.415800 ms  DeleteObjects: 0.084700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001249 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000221EDD75010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.993 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.9 MB.
+System memory in use after: 83.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1910.
+Total: 2.107800 ms (FindLiveObjects: 0.147600 ms CreateObjectMapping: 0.049000 ms MarkObjects: 1.847000 ms  DeleteObjects: 0.063100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001212 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000221F072B010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.883 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.9 MB.
+System memory in use after: 83.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1913.
+Total: 2.373100 ms (FindLiveObjects: 0.336400 ms CreateObjectMapping: 0.125200 ms MarkObjects: 1.850500 ms  DeleteObjects: 0.059800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001453 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000221EDD75010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.851 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.9 MB.
+System memory in use after: 83.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1916.
+Total: 2.491900 ms (FindLiveObjects: 0.314800 ms CreateObjectMapping: 0.056400 ms MarkObjects: 2.031000 ms  DeleteObjects: 0.088100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001570 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000222138B0010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.885 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.9 MB.
+System memory in use after: 83.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1919.
+Total: 4.494500 ms (FindLiveObjects: 0.397400 ms CreateObjectMapping: 0.187000 ms MarkObjects: 3.830200 ms  DeleteObjects: 0.076600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001378 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022213902010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.898 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.9 MB.
+System memory in use after: 83.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1922.
+Total: 4.087900 ms (FindLiveObjects: 0.411400 ms CreateObjectMapping: 0.068500 ms MarkObjects: 3.540600 ms  DeleteObjects: 0.065800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004799 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022213986010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.266 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.9 MB.
+System memory in use after: 83.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1925.
+Total: 1.985100 ms (FindLiveObjects: 0.159200 ms CreateObjectMapping: 0.042500 ms MarkObjects: 1.719200 ms  DeleteObjects: 0.062900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2222.292099 seconds.
+  path: Assets/Scripts/Collisions/CollisionSabre1.cs
+  artifactKey: Guid(16eeaa16e7a73f74d8dc23f795c12c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collisions/CollisionSabre1.cs using Guid(16eeaa16e7a73f74d8dc23f795c12c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be21b41dd23d9df10c4666e04938a042') in 0.030210 seconds
+  Import took 0.032962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007011 seconds.
+  path: Assets/Scripts/Collisions/CollisionSabre1.cs
+  artifactKey: Guid(16eeaa16e7a73f74d8dc23f795c12c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collisions/CollisionSabre1.cs using Guid(16eeaa16e7a73f74d8dc23f795c12c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be21b41dd23d9df10c4666e04938a042') in 0.003252 seconds
+  Import took 0.006747 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001400 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022213A42040 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.0 MB.
+System memory in use after: 83.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1928.
+Total: 2.071200 ms (FindLiveObjects: 0.189100 ms CreateObjectMapping: 0.056500 ms MarkObjects: 1.683700 ms  DeleteObjects: 0.140700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1895.179295 seconds.
+  path: Assets/Scripts/Collisions/CollisionSabre1.cs
+  artifactKey: Guid(16eeaa16e7a73f74d8dc23f795c12c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collisions/CollisionSabre1.cs using Guid(16eeaa16e7a73f74d8dc23f795c12c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2265d0c8b4dc3b10bf078f66ac19112e') in 0.021710 seconds
+  Import took 0.027446 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001772 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022213A32030 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.446 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.0 MB.
+System memory in use after: 83.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1931.
+Total: 5.401000 ms (FindLiveObjects: 0.462000 ms CreateObjectMapping: 0.146800 ms MarkObjects: 4.662100 ms  DeleteObjects: 0.124600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001261 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022213AA4030 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.893 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.0 MB.
+System memory in use after: 83.1 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1934.
+Total: 2.886900 ms (FindLiveObjects: 0.218600 ms CreateObjectMapping: 0.080400 ms MarkObjects: 2.496500 ms  DeleteObjects: 0.089900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 654.837115 seconds.
+  path: Assets/Scripts/Collisions/CollisionSabre1.cs
+  artifactKey: Guid(16eeaa16e7a73f74d8dc23f795c12c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collisions/CollisionSabre1.cs using Guid(16eeaa16e7a73f74d8dc23f795c12c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b16fccf00b2a2304ef2b1ed0bb1659') in 0.011192 seconds
+  Import took 0.018056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 114.921103 seconds.
+  path: Assets/Scripts/Collisions/New Physic Material.physicMaterial
+  artifactKey: Guid(caa1e89e31812574abd3799d6d5abc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collisions/New Physic Material.physicMaterial using Guid(caa1e89e31812574abd3799d6d5abc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204eb52622ca82ba4b88ddc5befac6bb') in 0.038219 seconds
+  Import took 0.042993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.532374 seconds.
+  path: Assets/Scripts/Collisions/Rebondi.physicMaterial
+  artifactKey: Guid(caa1e89e31812574abd3799d6d5abc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collisions/Rebondi.physicMaterial using Guid(caa1e89e31812574abd3799d6d5abc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea66b0283cb9ad6cd8b1800824057db3') in 0.009355 seconds
+  Import took 0.016132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009831 seconds.
+  path: Assets/Scripts/Collisions/Rebondi.physicMaterial
+  artifactKey: Guid(caa1e89e31812574abd3799d6d5abc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collisions/Rebondi.physicMaterial using Guid(caa1e89e31812574abd3799d6d5abc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea66b0283cb9ad6cd8b1800824057db3') in 0.002710 seconds
+  Import took 0.005828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 203.334878 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Healthcube_01.fbx
+  artifactKey: Guid(6d5a0bc0860313841bc19d04b364d8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Healthcube_01.fbx using Guid(6d5a0bc0860313841bc19d04b364d8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aace3468eb2114339a02babe3daa6a3f') in 0.221478 seconds
+  Import took 0.224913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Sphere_01.fbx
+  artifactKey: Guid(319d9b31292d2e04f88a3599f04b7786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Sphere_01.fbx using Guid(319d9b31292d2e04f88a3599f04b7786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ce950021d22eed1e50e82cf4a04128') in 0.028342 seconds
+  Import took 0.031808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/shuriken_weapon.fbx
+  artifactKey: Guid(0457739f1d242f44eadb513ed1ad5ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/shuriken_weapon.fbx using Guid(0457739f1d242f44eadb513ed1ad5ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1576e8c04226fadfe2149f3fc74c7cb') in 0.057657 seconds
+  Import took 0.060879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Base_Large_DoorWay_01_Collision.fbx
+  artifactKey: Guid(354fa95830fec3d4eba1a1c03a5e12f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Base_Large_DoorWay_01_Collision.fbx using Guid(354fa95830fec3d4eba1a1c03a5e12f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0158a8a2bac758385afcea0bc622eb') in 0.036269 seconds
+  Import took 0.039589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Money_Coin_01.fbx
+  artifactKey: Guid(21f9ef9f074f5304d9971cd99755a1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Money_Coin_01.fbx using Guid(21f9ef9f074f5304d9971cd99755a1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eafab5e4bbac96e2606006d055bf4d80') in 0.029639 seconds
+  Import took 0.033170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Shard_Rock_03.fbx
+  artifactKey: Guid(cfd0443e83a32b649a2b2814020436cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Shard_Rock_03.fbx using Guid(cfd0443e83a32b649a2b2814020436cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc7eba106791a6eefa5e885ef187005') in 0.028583 seconds
+  Import took 0.031586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Skull_02.fbx
+  artifactKey: Guid(796fd1b9bc60bbc4fa8f9cb6dccbb7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Skull_02.fbx using Guid(796fd1b9bc60bbc4fa8f9cb6dccbb7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e9f532828991e1660dc865f6fce531a') in 0.033245 seconds
+  Import took 0.037086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Spark_01.fbx
+  artifactKey: Guid(f870a2bb43691584296e16a56b98920b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Spark_01.fbx using Guid(f870a2bb43691584296e16a56b98920b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6399ca2b48ae2ed3649c630528d08d95') in 0.027369 seconds
+  Import took 0.030490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Sphere_Spikes_01.fbx
+  artifactKey: Guid(26e5fa40fa447fd429607f152a8eba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Sphere_Spikes_01.fbx using Guid(26e5fa40fa447fd429607f152a8eba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b02faa0cf19b21e6d4bff7bd4127150') in 0.025424 seconds
+  Import took 0.028884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/katana_weapon.fbx
+  artifactKey: Guid(16a2564d4aed99a4fbe5a502397e1327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/katana_weapon.fbx using Guid(16a2564d4aed99a4fbe5a502397e1327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ffd49f62908b287b26f9415131da4cc') in 0.035257 seconds
+  Import took 0.038212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Sphere_Pivot_01.fbx
+  artifactKey: Guid(24f5f033eb0f6b543a548b5e7268b7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Sphere_Pivot_01.fbx using Guid(24f5f033eb0f6b543a548b5e7268b7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cd265c5284a5fd28c998a062516a894') in 0.031976 seconds
+  Import took 0.034636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Sphere_02.fbx
+  artifactKey: Guid(3d4c37fb8fc8e6a4cbfd5d1691942a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Sphere_02.fbx using Guid(3d4c37fb8fc8e6a4cbfd5d1691942a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d461b87f48539d0b00c0344ac16aaae') in 0.026530 seconds
+  Import took 0.029597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Money_Note_01.fbx
+  artifactKey: Guid(3798343052282a14da592c41bfc00849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Money_Note_01.fbx using Guid(3798343052282a14da592c41bfc00849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd29ae05c66f781c6a93dadd80609ee') in 0.024969 seconds
+  Import took 0.029377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Vine_02.fbx
+  artifactKey: Guid(5c3970b909d28bc44862dc5b826d0a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Vine_02.fbx using Guid(5c3970b909d28bc44862dc5b826d0a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5c5bf9a03e5e144a41becc4e3d63d7') in 0.023105 seconds
+  Import took 0.025926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Shard_Rock_01.fbx
+  artifactKey: Guid(80d58589634d74c4db24453c22522574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Shard_Rock_01.fbx using Guid(80d58589634d74c4db24453c22522574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ecdef4bed04ee5a100ef9156fb83d07') in 0.021216 seconds
+  Import took 0.023474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Shard_Rock_04.fbx
+  artifactKey: Guid(3951b21bc57173e47be7774cab60d47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Shard_Rock_04.fbx using Guid(3951b21bc57173e47be7774cab60d47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed20be508504e7851ca2e6d709ca137') in 0.025857 seconds
+  Import took 0.028313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Sphere_Puff_01.fbx
+  artifactKey: Guid(ea8b579fee027444ba23862cc3cc5956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Sphere_Puff_01.fbx using Guid(ea8b579fee027444ba23862cc3cc5956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc6391f1ceb89c17a8973601e36693d') in 0.023381 seconds
+  Import took 0.025787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Heart_01.fbx
+  artifactKey: Guid(14c8c21ade1af6a49968dac473c756f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Heart_01.fbx using Guid(14c8c21ade1af6a49968dac473c756f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e05746888375e795547f8c3fbe7269') in 0.029147 seconds
+  Import took 0.031564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/pistol_weapon.fbx
+  artifactKey: Guid(639a7ae843a8a7043853f7f4c493158d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/pistol_weapon.fbx using Guid(639a7ae843a8a7043853f7f4c493158d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ac3b5986c4271cdc1fa875bd18a87c') in 0.029394 seconds
+  Import took 0.031755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/shotgun_weapon.fbx
+  artifactKey: Guid(0dd0c1daf362dbc448b6edf442d6a60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/shotgun_weapon.fbx using Guid(0dd0c1daf362dbc448b6edf442d6a60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a16b7929cd45b133572f4b3d85ee52') in 0.029140 seconds
+  Import took 0.031489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Content/Models/plane.fbx
+  artifactKey: Guid(9f0ffa4cea595ec4f91a5ed9fb309333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Content/Models/plane.fbx using Guid(9f0ffa4cea595ec4f91a5ed9fb309333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f5e471d99fff75328459587e45a664f') in 0.028802 seconds
+  Import took 0.031349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Vine_01.fbx
+  artifactKey: Guid(8ffd52849720fc94e85116e8a516870a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Vine_01.fbx using Guid(8ffd52849720fc94e85116e8a516870a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151d92c6c0bf5520a219c43decd8bd6d') in 0.025419 seconds
+  Import took 0.027943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Animations/Idle.fbx
+  artifactKey: Guid(6c6a14ea2fad2b44d8e299225ec0e991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Animations/Idle.fbx using Guid(6c6a14ea2fad2b44d8e299225ec0e991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4817976701da9eb51893f79b77528d42') in 0.030912 seconds
+  Import took 0.033372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Star.fbx
+  artifactKey: Guid(e85294d06423fe64c8ff30e832f26a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Star.fbx using Guid(e85294d06423fe64c8ff30e832f26a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fea1c39e9aef3b0b9d73090e9584bc2') in 0.022924 seconds
+  Import took 0.025421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Question_01.fbx
+  artifactKey: Guid(3f944baf59b70184884a2e70d08fbc8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Question_01.fbx using Guid(3f944baf59b70184884a2e70d08fbc8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e889a44d8a546746b91fd48067e5f68') in 0.022052 seconds
+  Import took 0.024514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Vine_03.fbx
+  artifactKey: Guid(f2d9cca9ec7e3e4468eb7a7e4f0db98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Vine_03.fbx using Guid(f2d9cca9ec7e3e4468eb7a7e4f0db98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9815e2d782f58e641faf680ea51ba3') in 0.024974 seconds
+  Import took 0.027393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Block_Stairs_01_Collision.fbx
+  artifactKey: Guid(fd79626336a822b4aaee83d2ec1cb110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Block_Stairs_01_Collision.fbx using Guid(fd79626336a822b4aaee83d2ec1cb110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff80b6f6ef79714c084a3620cb381872') in 0.034230 seconds
+  Import took 0.036751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/kalash_weapon.fbx
+  artifactKey: Guid(4874370f6b8da3a43a55d09116920d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/kalash_weapon.fbx using Guid(4874370f6b8da3a43a55d09116920d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2689bdb084818b9e3662b59496898e61') in 0.027945 seconds
+  Import took 0.030339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Sphere_Spikes_02.fbx
+  artifactKey: Guid(fd71f565f844ac04b92d939242ffed9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Sphere_Spikes_02.fbx using Guid(fd71f565f844ac04b92d939242ffed9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902ae95feafc49e68d11592eacb90a3c') in 0.023441 seconds
+  Import took 0.025859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/knife_weapon.fbx
+  artifactKey: Guid(56f6cb4e32f06fe49bdba20d114c8fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Content/Models/Weapons/knife_weapon.fbx using Guid(56f6cb4e32f06fe49bdba20d114c8fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0ac7afa58960805e03d92faf6472b6') in 0.027973 seconds
+  Import took 0.030807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/PolygonParticleFX/Materials/FX_Plane_Particle.obj
+  artifactKey: Guid(30479c000e383a745bd05d57364b1f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Materials/FX_Plane_Particle.obj using Guid(30479c000e383a745bd05d57364b1f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed160016bc13b63520480c5c4d7e1041') in 0.029472 seconds
+  Import took 0.032057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Ring_01.fbx
+  artifactKey: Guid(d8ce0e1d424a10942b12ca0471197832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Ring_01.fbx using Guid(d8ce0e1d424a10942b12ca0471197832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6482e9a0dc4f14f6a540847e179c5275') in 0.023364 seconds
+  Import took 0.025880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Shard_Rock_02.fbx
+  artifactKey: Guid(229fc241a317bb44084236f392685781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Shard_Rock_02.fbx using Guid(229fc241a317bb44084236f392685781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c90bd602b04cb5036ed10d9efc524cb8') in 0.022715 seconds
+  Import took 0.025050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Tower_01.fbx
+  artifactKey: Guid(262ce25addbd16a4ea185c1f6797cf38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Tower_01.fbx using Guid(262ce25addbd16a4ea185c1f6797cf38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e133767249dd4a08557cf271d14d5fba') in 0.023670 seconds
+  Import took 0.026033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_WoodChip_01.fbx
+  artifactKey: Guid(8f7555f2a39ae4d47acc3d1fde3b0066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_WoodChip_01.fbx using Guid(8f7555f2a39ae4d47acc3d1fde3b0066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d99668ff35f9b7bc41337e54f97f78') in 0.023338 seconds
+  Import took 0.025690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Star_Pivot.fbx
+  artifactKey: Guid(a95782c1aa2915647a6294f31ef1dfb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Star_Pivot.fbx using Guid(a95782c1aa2915647a6294f31ef1dfb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1033fd1a4f8efa6db6e4e40189b5002') in 0.023557 seconds
+  Import took 0.025942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/PolygonParticleFX/Models/FX_Shard_Rock_Small_01.fbx
+  artifactKey: Guid(2e68dbddeabab79469c7e0ad08418c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Models/FX_Shard_Rock_Small_01.fbx using Guid(2e68dbddeabab79469c7e0ad08418c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '397026439e3eabd8633919b980df47bf') in 0.022189 seconds
+  Import took 0.024774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.865974 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Accessory_1276318424.mat
+  artifactKey: Guid(da3a4e31147d309498b37d970374a0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Accessory_1276318424.mat using Guid(da3a4e31147d309498b37d970374a0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4140991851ab0a2b84aaa5296c57c533') in 0.062537 seconds
+  Import took 0.066422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseFace.mat
+  artifactKey: Guid(b678cbdcc978cb849a115f6dba30407b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseFace.mat using Guid(b678cbdcc978cb849a115f6dba30407b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192eb730755d9122b73cb640222c794f') in 0.057920 seconds
+  Import took 0.062064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000722 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseHairAndHats.mat
+  artifactKey: Guid(d6c234a2df9d8a64b9a027742295472e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseHairAndHats.mat using Guid(d6c234a2df9d8a64b9a027742295472e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40de4fc1a133f6d2a034e8647fbd3d9') in 0.040737 seconds
+  Import took 0.045152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/face/Materials/face_1.mat
+  artifactKey: Guid(6fcfff9bb8f976244b9a572139541d5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/face/Materials/face_1.mat using Guid(6fcfff9bb8f976244b9a572139541d5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'affd57f865aa0da4bbb3db9f84520272') in 0.049054 seconds
+  Import took 0.053003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseClothesDown.mat
+  artifactKey: Guid(3c6b4ca972827dd46877dcef3846df7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseClothesDown.mat using Guid(3c6b4ca972827dd46877dcef3846df7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb7caf3e874af77f06800f0b8781fe2') in 0.020654 seconds
+  Import took 0.024848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/face/Materials/face_5.mat
+  artifactKey: Guid(13733d5ce72487b4680df324b853dee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/face/Materials/face_5.mat using Guid(13733d5ce72487b4680df324b853dee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b2b14e98bf54ee549d9ac7153b0d28f') in 0.037700 seconds
+  Import took 0.042364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/face/Materials/face_4.mat
+  artifactKey: Guid(2af45cbbb9ff5b44d909c74c8f72c605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/face/Materials/face_4.mat using Guid(2af45cbbb9ff5b44d909c74c8f72c605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb23aa6eb54c99b5ecbd2496fffe2ec') in 0.032282 seconds
+  Import took 0.035436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Face_7007336432.mat
+  artifactKey: Guid(7fb12ae9cc3143e45b7f1f459b4f4c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Face_7007336432.mat using Guid(7fb12ae9cc3143e45b7f1f459b4f4c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab5ea087f18b8287267e44a1795ff9b') in 0.054388 seconds
+  Import took 0.058945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/BitMaterial.mat
+  artifactKey: Guid(5f4be1ee3b0261a45a281896cf5bcbca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/BitMaterial.mat using Guid(5f4be1ee3b0261a45a281896cf5bcbca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561d07d288fb3f83efbaa64e76916abc') in 0.022577 seconds
+  Import took 0.026133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/PolygonSamurai/Models/FixedScaleCharacters/Materials/Characters_Texture_01.mat
+  artifactKey: Guid(c92aa1e5ff21e25489d26492b46c7048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/FixedScaleCharacters/Materials/Characters_Texture_01.mat using Guid(c92aa1e5ff21e25489d26492b46c7048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc70af0f534e016022973389be88e6f0') in 0.028509 seconds
+  Import took 0.030938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/KnifeMaterial.mat
+  artifactKey: Guid(ccfc46a377d134f4f831511747f7ea11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/KnifeMaterial.mat using Guid(ccfc46a377d134f4f831511747f7ea11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab24e94152741a2eb8d09acfd82222d0') in 0.020138 seconds
+  Import took 0.022957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/hair_texture/Materials/hair_3_texture.mat
+  artifactKey: Guid(cd7a620421d00a24f92ca025afc328a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/hair_texture/Materials/hair_3_texture.mat using Guid(cd7a620421d00a24f92ca025afc328a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '160568987910e5cc596afb7bb657a7f8') in 0.031343 seconds
+  Import took 0.034653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/Materials/lambert1.mat
+  artifactKey: Guid(ec7ad3eb43f22204bba67930ad7a7ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/Materials/lambert1.mat using Guid(ec7ad3eb43f22204bba67930ad7a7ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfff489ddbd342491349498c5ea59357') in 0.026827 seconds
+  Import took 0.030326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Hair_7673764502.mat
+  artifactKey: Guid(7280ead67b11a2d44a7f65d883afdc1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Hair_7673764502.mat using Guid(7280ead67b11a2d44a7f65d883afdc1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ecac5fedfcfefab781d6992bee15f39') in 0.021663 seconds
+  Import took 0.024756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/hat_texture/Materials/hat_3_texture.mat
+  artifactKey: Guid(5b2c789bb6e4da940b6d52bf453ecc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/hat_texture/Materials/hat_3_texture.mat using Guid(5b2c789bb6e4da940b6d52bf453ecc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83734e5bfc18d715eda571de02c2a038') in 0.021717 seconds
+  Import took 0.024381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Accessory_1276318424.mat
+  artifactKey: Guid(da3a4e31147d309498b37d970374a0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Accessory_1276318424.mat using Guid(da3a4e31147d309498b37d970374a0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4140991851ab0a2b84aaa5296c57c533') in 0.017662 seconds
+  Import took 0.020722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseSkin.mat
+  artifactKey: Guid(d008be761492612478aa7bf9efb87465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseSkin.mat using Guid(d008be761492612478aa7bf9efb87465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1bebd1cd2501ba12d0a7bdcd082763e') in 0.027124 seconds
+  Import took 0.031030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/facial_accessory_textures/Materials/facial_accessory_8_texture.mat
+  artifactKey: Guid(1637a32fd6c60bd4ba3b581a10c924bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/facial_accessory_textures/Materials/facial_accessory_8_texture.mat using Guid(1637a32fd6c60bd4ba3b581a10c924bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b9b18304685a316b9e087b0d2cf2d7') in 0.029621 seconds
+  Import took 0.032985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseClothes.mat
+  artifactKey: Guid(6ccec0e8d91a1d747ac6777ebd951198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseClothes.mat using Guid(6ccec0e8d91a1d747ac6777ebd951198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccdee5bca57929ddc82ccc0bf0750df6') in 0.022774 seconds
+  Import took 0.025798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/facial_accessory_textures/Materials/facial_accessory_1_texture.mat
+  artifactKey: Guid(45939b45fb68857488100ae2e12365af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/facial_accessory_textures/Materials/facial_accessory_1_texture.mat using Guid(45939b45fb68857488100ae2e12365af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513b303ecfa1ae9c09038fc8b5aa3bbf') in 0.061169 seconds
+  Import took 0.064241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/clothes_texture/Materials/cloth_17_texture.mat
+  artifactKey: Guid(59c694d56fb4adc40aaec762197796af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/clothes_texture/Materials/cloth_17_texture.mat using Guid(59c694d56fb4adc40aaec762197796af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4b904bf9c281feb6f6b3f002428324') in 0.032302 seconds
+  Import took 0.034948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/facial_accessory_textures/Materials/facial_accessory_3_texture.mat
+  artifactKey: Guid(813f4ad7de6ba4f449ec383eb0514696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/facial_accessory_textures/Materials/facial_accessory_3_texture.mat using Guid(813f4ad7de6ba4f449ec383eb0514696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2f996b9fc0a1e9685b4564129373ad') in 0.034676 seconds
+  Import took 0.037893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/CrowbarMaterial.mat
+  artifactKey: Guid(88aae55302fd41b47b77e4616a48437c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/CrowbarMaterial.mat using Guid(88aae55302fd41b47b77e4616a48437c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82bfa2ab4b3c72a5b8ba7f4c65fca8cf') in 0.022965 seconds
+  Import took 0.025858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/hat_texture/Materials/hat_17_texture.mat
+  artifactKey: Guid(760ce669403229a4daeb1947261f7748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/hat_texture/Materials/hat_17_texture.mat using Guid(760ce669403229a4daeb1947261f7748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc15cb07d5fa62567eab673ce63b293a') in 0.036136 seconds
+  Import took 0.039091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/BodyUp_2031407640.mat
+  artifactKey: Guid(54986588b89aaac4b8ffbcf5ce6c8b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/BodyUp_2031407640.mat using Guid(54986588b89aaac4b8ffbcf5ce6c8b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81b016c269cb9be230289860a5d1f64f') in 0.023157 seconds
+  Import took 0.026621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/AxeMaterial.mat
+  artifactKey: Guid(5fd0c85601b9f8547a061832953772b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/AxeMaterial.mat using Guid(5fd0c85601b9f8547a061832953772b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0981ed85d9fe5f4ca721fa7a3b1e4b') in 0.029846 seconds
+  Import took 0.033724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/face/Materials/face_3.mat
+  artifactKey: Guid(d545600cf1fd0cb4796a0c7fbacd940e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/face/Materials/face_3.mat using Guid(d545600cf1fd0cb4796a0c7fbacd940e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13a36f95e597f6e538c322fdf6c77a30') in 0.034258 seconds
+  Import took 0.038677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/hat_texture/Materials/hat_5_texture.mat
+  artifactKey: Guid(f8c49b8f24dccec4196b4faa0cc3a1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/hat_texture/Materials/hat_5_texture.mat using Guid(f8c49b8f24dccec4196b4faa0cc3a1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06429bcf110439ef1da45cabecd1835') in 0.033910 seconds
+  Import took 0.036635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/KalashMaterial.mat
+  artifactKey: Guid(d7b22575f78505242a37167e69b0aec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/KalashMaterial.mat using Guid(d7b22575f78505242a37167e69b0aec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec47470b6116cc5e2dec037a3c9f93c') in 0.020573 seconds
+  Import took 0.023626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/KatanaMaterial.mat
+  artifactKey: Guid(1206d94fe47f6614ba96db0c9826622e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/WeaponsMaterial/KatanaMaterial.mat using Guid(1206d94fe47f6614ba96db0c9826622e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39158637ed538f37524492559c652ef3') in 0.030797 seconds
+  Import took 0.034545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/clothes_texture/Materials/cloth_15_texture.mat
+  artifactKey: Guid(58a27b777570f8c4189c488bf039cb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/clothes_texture/Materials/cloth_15_texture.mat using Guid(58a27b777570f8c4189c488bf039cb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd88ae472085d8ec4f4dbdc4e9eb7ffda') in 0.070736 seconds
+  Import took 0.074937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Textures/facial_accessory_textures/Materials/facial_accessory_6_texture.mat
+  artifactKey: Guid(d7de6403fb06a884c9b2cc56cfe7883d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Textures/facial_accessory_textures/Materials/facial_accessory_6_texture.mat using Guid(d7de6403fb06a884c9b2cc56cfe7883d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ed17aec30456812b6339d6006bcbb9') in 0.037990 seconds
+  Import took 0.041673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Legs_2166462845.mat
+  artifactKey: Guid(0ff7d906c3bc38347ad3148a496259ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/MaterialsCreator/Legs_2166462845.mat using Guid(0ff7d906c3bc38347ad3148a496259ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b2acfac2bb78c60ad83ca72e62f1b6') in 0.022598 seconds
+  Import took 0.026446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseFacialAccessory.mat
+  artifactKey: Guid(a34fd2e3cfcac2b4a97d7f7e54d0f773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseFacialAccessory.mat using Guid(a34fd2e3cfcac2b4a97d7f7e54d0f773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58791da3c2e0068ef744171d358e2824') in 0.022994 seconds
+  Import took 0.026850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.246978 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Prefabs/Weapons/AxePrefab.prefab
+  artifactKey: Guid(c4fa3a0ca11afb4429d593be5a8b3988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Prefabs/Weapons/AxePrefab.prefab using Guid(c4fa3a0ca11afb4429d593be5a8b3988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b123308a5ca4658f8309a4d84ca7273') in 0.017913 seconds
+  Import took 0.022330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Prefabs/Weapons/BitPrefab.prefab
+  artifactKey: Guid(82f30fde7a9b3be40b6d2dde00788d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Prefabs/Weapons/BitPrefab.prefab using Guid(82f30fde7a9b3be40b6d2dde00788d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4cbd3786ff818d6bef4f081950979ae') in 0.009603 seconds
+  Import took 0.013517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034299 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_Black.prefab
+  artifactKey: Guid(f7988944762557542877880bd717822e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_Black.prefab using Guid(f7988944762557542877880bd717822e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f716bc1c77e07217b67ab3302b686a2b') in 0.138703 seconds
+  Import took 0.143294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_Brown.prefab
+  artifactKey: Guid(aec173cd5cb500548ad9d9b40112ad02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_Brown.prefab using Guid(aec173cd5cb500548ad9d9b40112ad02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e934c19ac27a1995e0c2106a62bb4cbf') in 0.040694 seconds
+  Import took 0.044392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_White.prefab
+  artifactKey: Guid(eb053838e6978164e89d7ffea7c387d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_White.prefab using Guid(eb053838e6978164e89d7ffea7c387d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5b68b49665688466c8d577966d0b14') in 0.035992 seconds
+  Import took 0.039721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_White.prefab
+  artifactKey: Guid(6aa43cee182a20e4587aba4c27d6ba0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_White.prefab using Guid(6aa43cee182a20e4587aba4c27d6ba0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3eee6ff0890dbb57b10d53e89a81b4') in 0.023973 seconds
+  Import took 0.027403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_Brown.prefab
+  artifactKey: Guid(61812b6ed71bf114d99332fe32bb4891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_Brown.prefab using Guid(61812b6ed71bf114d99332fe32bb4891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce11724936824d95e7c7edac6cff2bef') in 0.022647 seconds
+  Import took 0.025790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_Black.prefab
+  artifactKey: Guid(b4a5cf1272516ff4e8a48553e0e715f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_Black.prefab using Guid(b4a5cf1272516ff4e8a48553e0e715f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aa505a1236b2ce0c692addef728e06b') in 0.021177 seconds
+  Import took 0.024919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/HYPERCASUAL - Stickman Customization/Prefabs/Weapons/CrowbarPrefab.prefab
+  artifactKey: Guid(6045839ca707e084b9dda0d1af53d009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HYPERCASUAL - Stickman Customization/Prefabs/Weapons/CrowbarPrefab.prefab using Guid(6045839ca707e084b9dda0d1af53d009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b393c980f1cb7b2f367ca4a015e6bb7') in 0.007259 seconds
+  Import took 0.010203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_White.prefab
+  artifactKey: Guid(f82dc55a17e91bd4689a985e021ce900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_White.prefab using Guid(f82dc55a17e91bd4689a985e021ce900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81405eadb57e82636e2d0c20b815101') in 0.023478 seconds
+  Import took 0.026768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_Black.prefab
+  artifactKey: Guid(b49aa43dd99419842bd25be74ac6d48d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_Black.prefab using Guid(b49aa43dd99419842bd25be74ac6d48d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc7fb00f96f01ea5ce58a2743835e73') in 0.020541 seconds
+  Import took 0.023885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_White.prefab
+  artifactKey: Guid(437cc727618d0944386404d53f0f3cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_White.prefab using Guid(437cc727618d0944386404d53f0f3cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53f205e67ce9984028b6aca4ba042b7a') in 0.028380 seconds
+  Import took 0.032050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_Brown.prefab
+  artifactKey: Guid(7a406827440b9f844be79d439f210820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_Brown.prefab using Guid(7a406827440b9f844be79d439f210820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca1b03088554757c8aa534835eebba5') in 0.022771 seconds
+  Import took 0.026262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_Brown.prefab
+  artifactKey: Guid(4e75ae9099e9df246a58c6fd3c7a54f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_Brown.prefab using Guid(4e75ae9099e9df246a58c6fd3c7a54f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '203e5d55558ef7fead85bf75950d2c72') in 0.023499 seconds
+  Import took 0.026804 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001303 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022213F4A7E0 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.873 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1987.
+Total: 2.809500 ms (FindLiveObjects: 0.168000 ms CreateObjectMapping: 0.046300 ms MarkObjects: 2.505100 ms  DeleteObjects: 0.088600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002067 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022214039010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.978 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1990.
+Total: 4.210800 ms (FindLiveObjects: 0.406800 ms CreateObjectMapping: 0.162900 ms MarkObjects: 3.563300 ms  DeleteObjects: 0.075100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006131 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022214039010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.885 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1993.
+Total: 2.400400 ms (FindLiveObjects: 0.210900 ms CreateObjectMapping: 0.101800 ms MarkObjects: 2.020300 ms  DeleteObjects: 0.065700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001290 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022213F4A7E0 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.034 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1996.
+Total: 2.507100 ms (FindLiveObjects: 0.266300 ms CreateObjectMapping: 0.151900 ms MarkObjects: 2.023300 ms  DeleteObjects: 0.064200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001514 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022213F4A7E0 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.881 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1999.
+Total: 2.595200 ms (FindLiveObjects: 0.281500 ms CreateObjectMapping: 0.082700 ms MarkObjects: 2.166200 ms  DeleteObjects: 0.063500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001287 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000222141DF090 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.960 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2002.
+Total: 2.777200 ms (FindLiveObjects: 0.162000 ms CreateObjectMapping: 0.050200 ms MarkObjects: 2.468800 ms  DeleteObjects: 0.095000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001455 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022214245050 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.908 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2005.
+Total: 3.005800 ms (FindLiveObjects: 0.513400 ms CreateObjectMapping: 0.142500 ms MarkObjects: 2.261900 ms  DeleteObjects: 0.086900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001352 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000222142CD0D0 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.312 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2008.
+Total: 3.832100 ms (FindLiveObjects: 0.327900 ms CreateObjectMapping: 0.153200 ms MarkObjects: 3.232200 ms  DeleteObjects: 0.115700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001356 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002221430F010 doesn't match image C:\Users\KNT\Documents\GitHub\2021-JCO-PO-Jeu_De_Sabre\Jeu de Sabre\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.894 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1435 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.6 MB.
+System memory in use after: 101.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2011.
+Total: 2.281100 ms (FindLiveObjects: 0.239300 ms CreateObjectMapping: 0.063500 ms MarkObjects: 1.851300 ms  DeleteObjects: 0.125500 ms)
+

@@ -36,8 +36,8 @@ public class CollisionSabre1 : MonoBehaviour
         if (other.gameObject.name == "SM_Wep_Odachi_01")
         { 
             PSMoveSabre1.isColliding = true;
-            sabreOue.transform.rotation = Quaternion.Lerp(transform.rotation, PSMoveSabre1.frameQuaternion, 0.07f);
-
+            sabreOue.transform.rotation = Quaternion.Lerp(PSMoveSabre1.frameQuaternion, PSMoveSabre1.quaternion, 0.07f);
+            
         }
         else if (other.gameObject.name == "Characters_J2" )
         {
@@ -49,7 +49,8 @@ public class CollisionSabre1 : MonoBehaviour
     {
         if (PSMoveSabre1.isColliding)
         {
-            if (timer > 1.0f)
+            
+            if (timer > 0.5f)
             {
                 PSMoveSabre1.isColliding = false;
                 timer = 0.0f;
