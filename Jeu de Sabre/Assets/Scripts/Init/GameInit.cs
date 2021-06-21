@@ -35,11 +35,16 @@ public class GameInit : MonoBehaviour
     public Text timer_j1;
     public Text timer_j2;
 
+    public GameObject katana1;
+    public GameObject katana2;
+
     public int timerDuration;
 
     public GameObject timerSound;
 
     public GameObject damageSound;
+
+    private bool isTimerInit = false;
     
     private void Awake()
     {
@@ -52,10 +57,10 @@ public class GameInit : MonoBehaviour
             controllerHandler = connecter.getHandler();
             
             katana_1 = new KatanaOrientation(Player.Joueur.P1, controllerHandler.getController1(), FXParade_P1,
-                FXParade2_P1, FXParadePos_P1, KatanaAxis_P1);
+                FXParade2_P1, FXParadePos_P1, KatanaAxis_P1, katana1);
             
             katana_2 = new KatanaOrientation(Player.Joueur.P2, controllerHandler.getController2(), FXParade_P2,
-                FXParade2_P2, FXParadePos_P2, KatanaAxis_P2);
+                FXParade2_P2, FXParadePos_P2, KatanaAxis_P2, katana2);
 
             Katana_1.init();
             Katana_2.init();
@@ -63,7 +68,7 @@ public class GameInit : MonoBehaviour
             updater = new UiUpdater(Score_j1, Score_j2, Stamina_j1, Stamina_j2, timer_j1, timer_j2);
             
             timer = new Timer(timerDuration, timerSound);
-
+            isTimerInit = true;
             soundHandler = new SoundHandler(timerSound, damageSound);
         }
         else
@@ -109,7 +114,8 @@ public class GameInit : MonoBehaviour
     
     private void Update()
     {
-        getTimer().onUpdate();
+        if(isTimerInit)
+            getTimer().onUpdate();
     }
 
     /**

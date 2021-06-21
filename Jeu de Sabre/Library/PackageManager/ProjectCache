@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637595124067161708
-    m_Hash: 3132505677
+      ticks: 637598541510690113
+    m_Hash: 4278679672
   m_LockFileStatus:
     m_FilePath: C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637595125050521072
+      ticks: 637598541510809792
     m_Hash: 682642053
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -82,6 +82,7 @@ m_PackageAssets:
         - 2.7.1
         - 2.7.2
         - 2.7.3
+        - 2.7.4
         - 2.8.0-exp.1
         - 2.8.0-exp.2
         - 2.8.0-pre.1
@@ -103,6 +104,7 @@ m_PackageAssets:
         - 2.7.1
         - 2.7.2
         - 2.7.3
+        - 2.7.4
         - 2.8.0-exp.1
         - 2.8.0-exp.2
         - 2.8.0-pre.1
@@ -192,6 +194,7 @@ m_PackageAssets:
         - 1.3.7
         - 1.3.8
         - 1.3.9
+        - 1.4.9
         - 1.5.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
@@ -205,6 +208,7 @@ m_PackageAssets:
         - 2.1.0-preview.6
         compatible:
         - 1.3.9
+        - 1.4.9
         - 1.5.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
@@ -675,10 +679,12 @@ m_PackageAssets:
         - 1.1.22
         - 1.1.24
         - 1.1.26
+        - 1.1.27
         compatible:
         - 1.1.24
         - 1.1.26
-        verified: 1.1.26
+        - 1.1.27
+        verified: 1.1.27
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6

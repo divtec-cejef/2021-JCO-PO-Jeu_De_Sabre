@@ -20,6 +20,8 @@ public class KatanaOrientation
     private Parade parade;
 
     private GameObject katanaAxis;
+
+    private Rigidbody rbKatana;
     
     // Variables utilisées pour gérer l'orientation du sabre
     private float ow;
@@ -27,7 +29,7 @@ public class KatanaOrientation
     private float axeY;
     private float axeZ;
     
-    public KatanaOrientation(Player.Joueur player, IntPtr controller, GameObject FXParade, GameObject FXParade2, GameObject FXParadePos, GameObject katanaAxis)
+    public KatanaOrientation(Player.Joueur player, IntPtr controller, GameObject FXParade, GameObject FXParade2, GameObject FXParadePos, GameObject katanaAxis, GameObject katana)
     {
         this.player = player;
         this.controller = controller;
@@ -35,6 +37,7 @@ public class KatanaOrientation
         this.FXParade2 = FXParade2;
         this.FXParadePos = FXParadePos;
         this.katanaAxis = katanaAxis;
+        rbKatana = katana.GetComponent<Rigidbody>();
     
         // Activation et réinitialisation de l'orientation de la manette
         PSMoveAPI.psmove_enable_orientation(controller, PSMove_Bool.PSMove_True);
@@ -74,7 +77,11 @@ public class KatanaOrientation
 
             currentOrientation = player == Player.Joueur.P1 ? new Quaternion(-axeX, axeZ, axeY, ow) : new Quaternion(axeX, axeZ, -axeY, ow);
 
-            katanaAxis.transform.rotation = currentOrientation;
+            
+            //var v = new Vector3(-axeX, axeZ, axeY);
+            katanaAxis.transform.rotation = Quaternion.Lerp(katanaAxis.transform.rotation, currentOrientation, 1f);
+
+            //katanaAxis.transform.rotation = currentOrientation;
         }
     }
     

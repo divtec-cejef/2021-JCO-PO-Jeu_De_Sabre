@@ -22,22 +22,17 @@ public class CollisionSabre1 : MonoBehaviour
 
     public GameObject sabre;
     public Text text_J1;
-
+    public GameObject fx;
     private float timer = 0;
-    
-    //Récuperer la vitesse du sabre et definir les damages en consequences
-    public int OnDamage(float speed)
-    {
-        return 1;
-    }
+   
 
     private Attaque attaque;
     
     private void Awake()
     {
-
         attaque = new Attaque(Player1Axis, Player2Axis, Player1Char, Player1Trans, Player2Char, Player2Trans);
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -46,7 +41,7 @@ public class CollisionSabre1 : MonoBehaviour
             //PSMoveSabre1.isColliding = true;
             //sabre.transform.rotation = Quaternion.Lerp(sabre.transform.rotation, PSMoveSabre1.lastQuaternion, 0.5f);
         }
-        else if (other.gameObject.name == "Characters_J2")
+        else if (other.gameObject.name.Equals("Characters_J2"))
         {
             if (Player.decreaseStamina(Player.Joueur.P1, 20))
             {
@@ -54,7 +49,8 @@ public class CollisionSabre1 : MonoBehaviour
                 attaque.onAttack(Player.Joueur.P1);
                 var position = new Vector3(11.9f, 11.0f, 15.6f);
                 var rotation = new Quaternion(0, 0, 0, 0);
-                Instantiate(GameInit.getSoundHandler().getDamangeSound(), position, rotation);
+                Destroy(Instantiate(GameInit.getSoundHandler().getDamangeSound(), position, rotation), 2.0f);
+                Destroy(Instantiate(fx, position, rotation), 1.0f);
             }
             else
             {

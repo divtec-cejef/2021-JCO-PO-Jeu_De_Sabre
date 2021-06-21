@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Katana_1 : MonoBehaviour
 {

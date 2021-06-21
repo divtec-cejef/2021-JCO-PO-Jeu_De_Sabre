@@ -30,6 +30,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -72,6 +80,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -87,13 +99,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1838}
     - Class: 114
-      Script: {instanceID: 2042}
+      Script: {instanceID: 2040}
     - Class: 114
-      Script: {instanceID: 2050}
+      Script: {instanceID: 2048}
     - Class: 114
-      Script: {instanceID: 2096}
+      Script: {instanceID: 2094}
     - Class: 114
-      Script: {instanceID: 2104}
+      Script: {instanceID: 2102}
     - Class: 114
       Script: {instanceID: 2402}
     - Class: 114
@@ -405,12 +417,6 @@ ScriptsOnlyBuild:
     className: FaceElementChanger
   - hash:
       serializedVersion: 2
-      Hash: 58c4e9c8c763ec7f114853f49ed329bd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: collisionCompteur
-  - hash:
-      serializedVersion: 2
       Hash: 295831406da5907d41f58d84acd55d8d
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -439,6 +445,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: EnumerableTestState
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Katana_2
   - hash:
       serializedVersion: 2
       Hash: 62824bb9557c7e987502f2fbd2a26819
@@ -481,12 +493,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NewBehaviourScript
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -651,7 +657,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 00554c40853cdf83c07c7d89101e39a8
+      Hash: c11e71e2dac5b2f0bc02596823a70123
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameInit
@@ -939,7 +945,7 @@ ScriptsOnlyBuild:
     className: CinemachineIndependentImpulseListener
   - hash:
       serializedVersion: 2
-      Hash: 18e4112f585fa9e9a51c653b96263ae9
+      Hash: ab509055fbc94f8661faccb7ff50a0d5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CollisionSabre1
@@ -1249,13 +1255,7 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBlendListCamera
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Katana_2
   platform: 19
   scenePathNames:
   - Assets/Scenes/Map.unity
-  playerPath: C:/Users/KNT/Desktop/KatanaNoTatakai-1.0/Jeu de Sabre.exe
+  playerPath: C:/Users/KNT/Desktop/KatanaNoTatakai-1.1/Jeu de Sabre.exe
