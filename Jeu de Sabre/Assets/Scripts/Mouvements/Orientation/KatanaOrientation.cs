@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Schema;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 public class KatanaOrientation
 { 
@@ -28,6 +28,8 @@ public class KatanaOrientation
     private float axeX;
     private float axeY;
     private float axeZ;
+
+    private float dirX, dirY;
     
     public KatanaOrientation(Player.Joueur player, IntPtr controller, GameObject FXParade, GameObject FXParade2, GameObject FXParadePos, GameObject katanaAxis, GameObject katana)
     {
@@ -37,7 +39,7 @@ public class KatanaOrientation
         this.FXParade2 = FXParade2;
         this.FXParadePos = FXParadePos;
         this.katanaAxis = katanaAxis;
-        rbKatana = katana.GetComponent<Rigidbody>();
+        rbKatana = katanaAxis.GetComponent<Rigidbody>();
     
         // Activation et réinitialisation de l'orientation de la manette
         PSMoveAPI.psmove_enable_orientation(controller, PSMove_Bool.PSMove_True);
@@ -48,6 +50,13 @@ public class KatanaOrientation
 
     public void onUpdate()
     {
+        dirX = Input.GetAxis("Horizontal") * 5;
+        dirY = Input.GetAxis("Vertical") * 5;
+
+        //Debug.Log(dirX + " " + dirY);
+        
+        
+        
         // Met à jour la led de la manette
         PSMoveAPI.psmove_update_leds(controller);
         // Met à jour le cooldown de la parade
@@ -79,12 +88,23 @@ public class KatanaOrientation
 
             
             //var v = new Vector3(-axeX, axeZ, axeY);
-            katanaAxis.transform.rotation = Quaternion.Lerp(katanaAxis.transform.rotation, currentOrientation, 1f);
+            katanaAxis.transform.rotation = Quaternion.Lerp(katanaAxis.transform.rotation, currentOrientation, 0.07f);
 
             //katanaAxis.transform.rotation = currentOrientation;
         }
     }
-    
+
+    public void onFixedUpdate()
+    {
+        var c = new Vector3(dirX, dirY, rbKatana.velocity.z);
+        // Debug.Log(c);
+        rbKatana.velocity = c;
+    }
+
+    public Parade getParade()
+    {
+        return parade;
+    }
     
     public void defaultCalibration()
     {

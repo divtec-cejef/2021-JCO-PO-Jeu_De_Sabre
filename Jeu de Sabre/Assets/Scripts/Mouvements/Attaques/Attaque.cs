@@ -21,8 +21,6 @@ public class Attaque
     private GameObject Player2Trans;
     
 
-    
-    private PSMoveActions actions;
     private Animator anime1;
     private Animator anime1Trans;
     private Animator anime2;
@@ -41,22 +39,22 @@ public class Attaque
 
     public void onAttack(Player.Joueur attacker)
     {
-        if (attacker == Player.Joueur.P1)
-        {
-            anime1 = Player1Char.GetComponent<Animator>();
-            anime1Trans = Player1Trans.GetComponent<Animator>();
-            anime1.SetTrigger("isAttacking");
-            anime1Trans.SetTrigger("isAttacking");
-            
-            anime2 = Player2Char.GetComponent<Animator>();
-            anime2Trans = Player2Trans.GetComponent<Animator>();
-            anime2.SetTrigger("isHit");
-            anime2Trans.SetTrigger("isHit");
-        }
-        else
-        {
-            
-        }
+        // if (attacker == Player.Joueur.P1)
+        // {
+        //     anime1 = Player1Char.GetComponent<Animator>();
+        //     anime1Trans = Player1Trans.GetComponent<Animator>();
+        //     anime1.SetTrigger("isAttacking");
+        //     anime1Trans.SetTrigger("isAttacking");
+        //     
+        //     anime2 = Player2Char.GetComponent<Animator>();
+        //     anime2Trans = Player2Trans.GetComponent<Animator>();
+        //     anime2.SetTrigger("isHit");
+        //     anime2Trans.SetTrigger("isHit");
+        // }
+        // else
+        // {
+        //     
+        // }
         
     }
     

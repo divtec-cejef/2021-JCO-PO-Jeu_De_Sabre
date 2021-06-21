@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
     /// </summary>
     /// <param name="j">Le joueur auquel on veut attribuer les points</param>
     /// <param name="score">Le nombre de point à ajouter à son score</param>
-    public static void updateScore(Player.Joueur player, int score, Text text)
+    public static void updateScore(Player.Joueur player, int score)
     {
         if (player == Player.Joueur.P1)
         {

@@ -124,6 +124,6 @@ public class GameInit : MonoBehaviour
     private void OnApplicationQuit()
     {
         PSMoveAPI.psmove_disconnect(controllerHandler.getController1());
-        //PSMoveAPI.psmove_disconnect(controllerHandler.getController2());
+        PSMoveAPI.psmove_disconnect(controllerHandler.getController2());
     }
 }

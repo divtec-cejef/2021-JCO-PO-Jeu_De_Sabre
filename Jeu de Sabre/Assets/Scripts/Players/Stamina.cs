@@ -37,6 +37,21 @@ public class Stamina : MonoBehaviour
             GameInit.getUiUpdater().onStaminaUpdate(player);
         }
     }
+
+
+    public static void setStamina(Player.Joueur player, float value)
+    {
+        if (player == Player.Joueur.P1)
+        {
+            stamJ1 = value;
+            GameInit.getUiUpdater().onStaminaUpdate(player);
+        }
+        else
+        {
+            stamJ2 = value;
+            GameInit.getUiUpdater().onStaminaUpdate(player);
+        }
+    }
     
     /// <summary>
     /// Renvoie le score actuel

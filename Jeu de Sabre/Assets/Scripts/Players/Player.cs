@@ -9,12 +9,13 @@ public class Player : MonoBehaviour
     public enum Joueur
     {
         P1,
-        P2
+        P2,
+        Other
     }
 
-    public static void updatePlayerScore(Joueur j, int score, Text text)
+    public static void updatePlayerScore(Joueur j, int score)
     {
-        Score.updateScore(j, score, text);
+        Score.updateScore(j, score);
     }
 
     public static int getScore(Joueur j)
@@ -30,6 +31,11 @@ public class Player : MonoBehaviour
     public static bool decreaseStamina(Joueur j, float amount)
     {
         return Stamina.decreaseStamina(j, amount);
+    }
+
+    public static void setStamina(Joueur j, float stamina)
+    {
+        Stamina.setStamina(j, stamina);
     }
     
     public static float getStamina(Joueur j)

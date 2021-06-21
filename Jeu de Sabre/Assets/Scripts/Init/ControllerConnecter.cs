@@ -17,8 +17,8 @@ public class ControllerConnecter : MonoBehaviour {
         
         if(init == PSMove_Bool.PSMove_True) {
             /* Récupération des manettes PSMove */
-            controller_1 = PSMoveAPI.psmove_connect();
-            //manette_2 = PSMoveAPI.psmove_connect_by_id(1);
+            controller_1 = PSMoveAPI.psmove_connect_by_id(0);
+            controller_2 = PSMoveAPI.psmove_connect_by_id(1);
             //tracker_1 = PSMoveAPI.psmove_tracker_new();
 
             
@@ -28,13 +28,13 @@ public class ControllerConnecter : MonoBehaviour {
                 errors = 0;
 
             /* Vérification de la validité de la manette 2 */
-            // if (controller_2 == IntPtr.Zero || PSMoveAPI.psmove_update_leds(controller_2) == 0)
-            // {
-            //     if (errors == 0)
-            //         errors = 2;
-            //     else
-            //         errors = 1;
-            // }
+            if (controller_2 == IntPtr.Zero || PSMoveAPI.psmove_update_leds(controller_2) == 0)
+            {
+                if (errors == 0)
+                    errors = 2;
+                else
+                    errors = 1;
+            }
 
             // Si il y'a une erreur
             if (errors != -1) 

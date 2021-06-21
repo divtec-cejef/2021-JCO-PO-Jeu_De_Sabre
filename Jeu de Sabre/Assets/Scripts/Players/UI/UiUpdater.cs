@@ -1,7 +1,10 @@
 using System;
 using System.Collections;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.InputSystem.Interactions;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 public class UiUpdater
 {
@@ -39,13 +42,6 @@ public class UiUpdater
 
     public void onStaminaUpdate(Player.Joueur player)
     {
-        var position = stamina_j1.transform.position;
-        
-        position = new Vector3(
-            position.x + Player.getStamina(player) / 2.0f,
-            position.y,
-            position.z);
-        
         if (player == Player.Joueur.P1)
         {
             stamina_j1.transform.localScale = new Vector3(
@@ -53,8 +49,7 @@ public class UiUpdater
                 stamina_j1.transform.localScale.y,
                 stamina_j1.transform.localScale.z);
 
-            
-            //stamina_j1.transform.position = position;
+
         }
         else
         {
