@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637599643328292207
-    m_Hash: 3493863599
+      ticks: 637599699379215382
+    m_Hash: 977777509
   m_LockFileStatus:
     m_FilePath: C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637599643328412083
-    m_Hash: 1365222639
+      ticks: 637599699379215382
+    m_Hash: 4197532965
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
