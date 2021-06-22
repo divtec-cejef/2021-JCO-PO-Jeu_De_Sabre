@@ -5,19 +5,20 @@ using UnityEngine;
 
 public class Stamina : MonoBehaviour
 {
-    private static float stamJ1 = 100.0f;
-    private static float stamJ2 = 100.0f;
+    private static float stamJ1;
+    private static float stamJ2;
 
     public static bool canRegenJ1 = true;
     public static bool canRegenJ2 = true;
 
-    // private static bool isRegenJ1 = false;
-    // private static bool isRegenJ2 = false;
-
     public static float timerJ1 = 0;
     public static float timerJ2 = 0;
 
-    private float regenRate = 0.1f;
+    public static void initStamina()
+    {
+        stamJ1 = GameInit.getGameConfig().stamina_amount;
+        stamJ2 = GameInit.getGameConfig().stamina_amount;
+    }
     
     /// <summary>
     /// Permet de mettre à jour le score de chaque joueur
@@ -37,7 +38,6 @@ public class Stamina : MonoBehaviour
             GameInit.getUiUpdater().onStaminaUpdate(player);
         }
     }
-
 
     public static void setStamina(Player.Joueur player, float value)
     {
@@ -132,19 +132,19 @@ public class Stamina : MonoBehaviour
             timerJ2 = 0.0f;
         }
 
-        if (stamJ1 < 100.0f  && canRegenJ1)
+        if (stamJ1 < GameInit.getGameConfig().stamina_amount  && canRegenJ1)
         {
-            if (stamJ1 + regenRate > 100.0f)
-                stamJ1 = 100.0f;
+            if (stamJ1 + GameInit.getGameConfig().stamina_regeneration_rate > GameInit.getGameConfig().stamina_amount)
+                stamJ1 = GameInit.getGameConfig().stamina_amount;
             else
-                updateStamina(Player.Joueur.P1, regenRate);
+                updateStamina(Player.Joueur.P1, GameInit.getGameConfig().stamina_regeneration_rate);
         }
-        if (stamJ2 < 100.0f  && canRegenJ2)
+        if (stamJ2 < GameInit.getGameConfig().stamina_amount  && canRegenJ2)
         {
-            if (stamJ2 + regenRate > 100.0f)
-                stamJ2 = 100.0f;
+            if (stamJ2 + GameInit.getGameConfig().stamina_regeneration_rate > GameInit.getGameConfig().stamina_amount)
+                stamJ2 = GameInit.getGameConfig().stamina_amount;
             else
-                updateStamina(Player.Joueur.P2, regenRate);
+                updateStamina(Player.Joueur.P2, GameInit.getGameConfig().stamina_regeneration_rate);
         }
         
         //print(stamJ1);

@@ -17,7 +17,7 @@ public class CollisionSabres : MonoBehaviour
         if (!GameInit.getKatanaPlayer1().getParade().getParade() &&
             !GameInit.getKatanaPlayer2().getParade().getParade())
         {
-            Physics.IgnoreCollision(other.collider, katana_1.GetComponent<Collider>(), true);
+            //Physics.IgnoreCollision(other.collider, katana_1.GetComponent<Collider>(), true);
             return;
         }
         

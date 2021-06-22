@@ -32,7 +32,7 @@ public class Parade
     public Parade(float timerParade, float cooldownParade, GameObject fx1, GameObject fx2, GameObject fxPos, GameObject katanaAxis, Player.Joueur player)
     {
         this.timerParade = timerParade;
-        this.cooldownParade = cooldownParade;
+        this.cooldownParade = 1.0f;
         FXParade_1 = fx1;
         FXParade_2 = fx2;
         FXParadePos = fxPos;
@@ -96,7 +96,7 @@ public class Parade
         {
             timerParade -= Time.deltaTime;
 
-            if (!Player.decreaseStamina(player, 0.2f))
+            if (!Player.decreaseStamina(player, GameInit.getGameConfig().parade_stamina_decrease_rate))
             {
                 timerParade = 0;
             }
@@ -105,7 +105,7 @@ public class Parade
         else
         {
             isCanceled = true;
-            timerParade = 3.0f;
+            timerParade = GameInit.getGameConfig().parade_duration;
             isReady = false;
         }
     }
@@ -116,7 +116,7 @@ public class Parade
         if (isParade)
         {
             PSMoveUtils.setLED(player, Color.green);
-            timerParade = 3.0f;
+            timerParade = GameInit.getGameConfig().parade_duration;
             isCanceled = false;
             PSMoveUtils.setVibration(player, 0);
             MonoBehaviour.Destroy(fxEffect1);
@@ -133,15 +133,15 @@ public class Parade
         if (!isReady && !isParade)
         {
             /* Si le timer n'est pas terminé, décompte du timer */
-            if (cooldownParade > 1.0f)
+            if (cooldownParade < GameInit.getGameConfig().parade_duration)
             {
-                cooldownParade -= Time.deltaTime;
+                cooldownParade += Time.deltaTime;
             }
             /* Si le timer est terminé, réactivation de la parade et réinitialisation du cooldown*/
             else
             {
                 isReady = true;
-                cooldownParade = 5.0f;
+                cooldownParade = GameInit.getGameConfig().parade_duration;
             }
         }
     }
@@ -158,5 +158,15 @@ public class Parade
     public bool getReady()
     {
         return isReady;
+    }
+    
+    public float getParadeTimer()
+    {
+        return timerParade;
+    }
+
+    public float getCooldownTimer()
+    {
+        return cooldownParade;
     }
 }

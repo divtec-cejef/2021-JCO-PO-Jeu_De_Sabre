@@ -22,6 +22,8 @@ public class KatanaOrientation
     private GameObject katanaAxis;
 
     private Rigidbody rbKatana;
+
+    public static bool canMove;
     
     // Variables utilisées pour gérer l'orientation du sabre
     private float ow;
@@ -45,52 +47,72 @@ public class KatanaOrientation
         PSMoveAPI.psmove_enable_orientation(controller, PSMove_Bool.PSMove_True);
         PSMoveAPI.psmove_reset_orientation(controller);
         
-        parade = new Parade(3.0f, 5.0f, FXParade, FXParade2, FXParadePos, katanaAxis, player);
+        parade = new Parade(GameInit.getGameConfig().parade_duration, GameInit.getGameConfig().parade_duration, FXParade, FXParade2, FXParadePos, katanaAxis, player);
     }
 
     public void onUpdate()
     {
-        dirX = Input.GetAxis("Horizontal") * 5;
-        dirY = Input.GetAxis("Vertical") * 5;
-
-        //Debug.Log(dirX + " " + dirY);
+        canMove = !GameInit.isGamePaused;
         
-        
-        
-        // Met à jour la led de la manette
-        PSMoveAPI.psmove_update_leds(controller);
-        // Met à jour le cooldown de la parade
-        parade.updateParadeCooldown();
-        
-        
-        //Is Colliding
-
-        PSMoveAPI.psmove_poll(controller);
-        char trigger = PSMoveAPI.psmove_get_trigger(controller);
-
-        
-        if (trigger == 'ÿ')
+        if (canMove)
         {
-            if (player == Player.Joueur.P1)
-                parade.onParadeEnabled(ref currentOrientation, -axeX, axeZ, axeY, ow, Color.blue);
-            else
-                parade.onParadeEnabled(ref currentOrientation, axeX, axeZ, -axeY, ow, Color.red);
-        }
+            dirX = Input.GetAxis("Horizontal") * 5;
+            dirY = Input.GetAxis("Vertical") * 5;
 
-        if (trigger != 'ÿ' || parade.getCanceled() || !parade.getParade())
-        {
-            parade.onParadeDisabled();
+            //Debug.Log(dirX + " " + dirY);
+            bool a = Input.GetMouseButtonDown(1);
+            if (a)
+                defaultCalibration(Player.Joueur.P2);
+            bool b = Input.GetMouseButtonDown(0);
+            if (b)
+                defaultCalibration(Player.Joueur.P1);
+            bool c = Input.GetMouseButtonDown(2);
+            if (c)
+            {
+                defaultCalibration(Player.Joueur.P1);
+                defaultCalibration(Player.Joueur.P2);
+            }
+
+
+
+            // Met à jour la led de la manette
+            PSMoveAPI.psmove_update_leds(controller);
+            // Met à jour le cooldown de la parade
+            parade.updateParadeCooldown();
+
+
+            //Is Colliding
 
             PSMoveAPI.psmove_poll(controller);
-            PSMoveAPI.psmove_get_orientation(controller, ref ow, ref axeX, ref axeY, ref axeZ);
+            char trigger = PSMoveAPI.psmove_get_trigger(controller);
 
-            currentOrientation = player == Player.Joueur.P1 ? new Quaternion(-axeX, axeZ, axeY, ow) : new Quaternion(axeX, axeZ, -axeY, ow);
 
-            
-            //var v = new Vector3(-axeX, axeZ, axeY);
-            katanaAxis.transform.rotation = Quaternion.Lerp(katanaAxis.transform.rotation, currentOrientation, 0.07f);
+            if (trigger == 'ÿ')
+            {
+                if (player == Player.Joueur.P1)
+                    parade.onParadeEnabled(ref currentOrientation, -axeX, axeZ, axeY, ow, Color.blue);
+                else
+                    parade.onParadeEnabled(ref currentOrientation, axeX, axeZ, -axeY, ow, Color.red);
+            }
 
-            //katanaAxis.transform.rotation = currentOrientation;
+            if (trigger != 'ÿ' || parade.getCanceled() || !parade.getParade())
+            {
+                parade.onParadeDisabled();
+
+                PSMoveAPI.psmove_poll(controller);
+                PSMoveAPI.psmove_get_orientation(controller, ref ow, ref axeX, ref axeY, ref axeZ);
+
+                currentOrientation = player == Player.Joueur.P1
+                    ? new Quaternion(-axeX, axeZ, axeY, ow)
+                    : new Quaternion(axeX, axeZ, -axeY, ow);
+
+
+                //var v = new Vector3(-axeX, axeZ, axeY);
+                katanaAxis.transform.rotation =
+                    Quaternion.Lerp(katanaAxis.transform.rotation, currentOrientation, GameInit.getGameConfig().katana_lerp_duration);
+
+                //katanaAxis.transform.rotation = currentOrientation;
+            }
         }
     }
 
@@ -106,9 +128,17 @@ public class KatanaOrientation
         return parade;
     }
     
-    public void defaultCalibration()
+    public static void defaultCalibration(Player.Joueur player)
     {
-        PSMoveAPI.psmove_reset_orientation(controller);
+        if (player == Player.Joueur.P1)
+        {
+            PSMoveAPI.psmove_reset_orientation(GameInit.getControllerHandler().getController1());
+        }
+        else
+        {
+            PSMoveAPI.psmove_reset_orientation(GameInit.getControllerHandler().getController2());
+        }
+        
     }
 
     

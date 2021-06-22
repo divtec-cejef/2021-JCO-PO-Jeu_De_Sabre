@@ -36,31 +36,29 @@ public class CollisionPlayers : MonoBehaviour
     {
         Player.Joueur player = Player.Joueur.Other;
         
-        if (other.CompareTag("Katana1"))
-        {
+        if (other.CompareTag("Katana1") && !gameObject.CompareTag("Player1"))
             player = Player.Joueur.P1;
-        }
-        else if (other.CompareTag("Katana2"))
-        {
+        
+        else if (other.CompareTag("Katana2") && !gameObject.CompareTag("Player2"))
             player = Player.Joueur.P2;
-        }
-
+        
+        
         if (player == Player.Joueur.Other) 
             return;
         
-        if (Player.decreaseStamina(player, 20))
+        if (Player.decreaseStamina(player, GameInit.getGameConfig().attack_stamina_decrease))
         {
-            Player.updatePlayerScore(player, 70);
+            Player.updatePlayerScore(player, GameInit.getGameConfig().attack_score_amount);
             attaque.onAttack(player);
-
+            var position = new Vector3(11.9f, 11.0f, 15.6f);
+            var rotation = new Quaternion(0, 0, 0, 0);
+            Destroy(Instantiate(GameInit.getSoundHandler().getDamangeSound(), position, rotation), 2.0f);
         }
         else
         {
             //Debug.Log("Pas assez de stamina, attends un peu");
         }
 
-        var position = new Vector3(11.9f, 11.0f, 15.6f);
-        var rotation = new Quaternion(0, 0, 0, 0);
-        Destroy(Instantiate(GameInit.getSoundHandler().getDamangeSound(), position, rotation), 2.0f);
+        
     }
 }

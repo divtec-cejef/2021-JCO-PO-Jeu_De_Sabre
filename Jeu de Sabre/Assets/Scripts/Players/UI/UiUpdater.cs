@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Diagnostics;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.Interactions;
 using UnityEngine.UI;
@@ -8,18 +9,21 @@ using Debug = UnityEngine.Debug;
 
 public class UiUpdater
 {
-    private Text text_j1;
-    private Text text_j2;
+    private TextMeshProUGUI text_j1;
+    private TextMeshProUGUI text_j2;
 
-    private GameObject stamina_j1;
-    private GameObject stamina_j2;
+    private Slider stamina_j1;
+    private Slider stamina_j2;
 
-    private Text timer_j1;
-    private Text timer_j2;
+    private TextMeshProUGUI timer_j1;
+    private TextMeshProUGUI timer_j2;
+    
+    private Slider parade_j1;
+    private Slider parade_j2;
 
     private bool isSound = false;
     
-    public UiUpdater(Text text_j1, Text text_j2, GameObject stamina_j1, GameObject stamina_j2, Text timer_j1, Text timer_j2)
+    public UiUpdater(TextMeshProUGUI text_j1, TextMeshProUGUI text_j2, Slider stamina_j1, Slider stamina_j2, TextMeshProUGUI timer_j1, TextMeshProUGUI timer_j2, Slider parade_j1, Slider parade_j2)
     {
         this.text_j1 = text_j1;
         this.text_j2 = text_j2;
@@ -29,6 +33,15 @@ public class UiUpdater
 
         this.timer_j1 = timer_j1;
         this.timer_j2 = timer_j2;
+
+        this.parade_j1 = parade_j1;
+        this.parade_j2 = parade_j2;
+
+        this.stamina_j1.maxValue = GameInit.getGameConfig().stamina_amount;
+        this.stamina_j2.maxValue = GameInit.getGameConfig().stamina_amount;
+        
+        this.parade_j1.maxValue = GameInit.getGameConfig().parade_duration - 1;
+        this.parade_j2.maxValue = GameInit.getGameConfig().parade_duration - 1;
     }
 
     public void onScoreUpdate(Player.Joueur player)
@@ -44,21 +57,11 @@ public class UiUpdater
     {
         if (player == Player.Joueur.P1)
         {
-            stamina_j1.transform.localScale = new Vector3(
-                Player.getStamina(player), 
-                stamina_j1.transform.localScale.y,
-                stamina_j1.transform.localScale.z);
-
-
+            stamina_j1.value = Player.getStamina(player);
         }
         else
         {
-            stamina_j2.transform.localScale = new Vector3(
-                Player.getStamina(player), 
-                stamina_j2.transform.localScale.y,
-                stamina_j2.transform.localScale.z);
-            
-            //stamina_j2.transform.position = position;
+            stamina_j2.value = Player.getStamina(player);
         }
     }
 
@@ -118,4 +121,67 @@ public class UiUpdater
 
         return format;
     }
+
+
+    public void updateParadeTimer(Player.Joueur player)
+    {
+        if (player == Player.Joueur.P1)
+        {
+            float timer = GameInit.getKatanaPlayer1().getParade().getParadeTimer();
+            timer--;
+            
+            parade_j1.value = timer;
+        }
+        else
+        {
+            float timer = GameInit.getKatanaPlayer2().getParade().getParadeTimer();
+            timer--;
+            parade_j2.value = timer;
+        }
+    }
+
+    public void onUpdateParadeCooldown(Player.Joueur player)
+    {
+        if (player == Player.Joueur.P1)
+        {
+            float cooldown = GameInit.getKatanaPlayer1().getParade().getCooldownTimer();
+            cooldown--;
+            
+            parade_j1.value = cooldown;
+        }
+        else
+        {
+            float cooldown = GameInit.getKatanaPlayer2().getParade().getCooldownTimer();
+            cooldown--;
+            parade_j2.value = cooldown;
+        }
+    }
+
+    public void onParadeEnabled(Player.Joueur player)
+    {
+        if (player == Player.Joueur.P1)
+        {
+            parade_j1.gameObject.SetActive(true);
+        }
+        else
+        {
+            parade_j2.gameObject.SetActive(true);
+        }
+        
+    }
+
+    public void onParadeDisabled(Player.Joueur player)
+    {
+        if (player == Player.Joueur.P1)
+        {
+            parade_j1.value = parade_j1.maxValue;
+            parade_j1.gameObject.SetActive(false);
+        }
+        else
+        {
+            parade_j2.value = parade_j2.maxValue;
+            parade_j2.gameObject.SetActive(false);
+        }
+    }
+    
 }

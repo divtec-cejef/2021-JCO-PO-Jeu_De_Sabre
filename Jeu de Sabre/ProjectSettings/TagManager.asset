@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Katana1
   - Katana2
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
