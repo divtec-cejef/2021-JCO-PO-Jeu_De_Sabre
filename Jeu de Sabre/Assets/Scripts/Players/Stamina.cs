@@ -146,8 +146,5 @@ public class Stamina : MonoBehaviour
             else
                 updateStamina(Player.Joueur.P2, GameInit.getGameConfig().stamina_regeneration_rate);
         }
-        
-        //print(stamJ1);
-        
     }
 }

@@ -38,6 +38,9 @@ public class GameInit : MonoBehaviour
 
     public TextMeshProUGUI timer_j1;
     public TextMeshProUGUI timer_j2;
+    
+    public TextMeshProUGUI classement_j1;
+    public TextMeshProUGUI classement_j2;
 
     public GameObject katana1;
     public GameObject katana2;
@@ -60,14 +63,14 @@ public class GameInit : MonoBehaviour
     private void Awake()
     {
         multi = new MultiDisplay();
-        multi.init();
+        multi.init();String userDir = Environment.GetFolderPath(System.Environment.SpecialFolder.UserProfile);
         
         connecter = new ControllerConnecter();
         if (connecter.init())
         {
-        
+            userDir += "\\Documents\\katana_no_tatakai_properties.json";
             String json = "";
-            String[] lines= System.IO.File.ReadAllLines(@"C:\Users\KNT\Documents\katana_no_tatakai_properties.json");
+            String[] lines= System.IO.File.ReadAllLines(@userDir);
             foreach (String line in lines)
             {
                 json += line;
@@ -88,7 +91,7 @@ public class GameInit : MonoBehaviour
             Katana_1.init();
             Katana_2.init();
 
-            updater = new UiUpdater(Score_j1, Score_j2, Stamina_j1, Stamina_j2, timer_j1, timer_j2, Parade_j1, Parade_j2);
+            updater = new UiUpdater(Score_j1, Score_j2, Stamina_j1, Stamina_j2, timer_j1, timer_j2, Parade_j1, Parade_j2, classement_j1, classement_j2);
             
             timer = new Timer(config.game_time, timerSound);
             isTimerInit = true;

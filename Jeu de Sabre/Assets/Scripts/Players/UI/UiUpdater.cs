@@ -21,9 +21,12 @@ public class UiUpdater
     private Slider parade_j1;
     private Slider parade_j2;
 
+    private TextMeshProUGUI classement_j1;
+    private TextMeshProUGUI classement_j2;
+
     private bool isSound = false;
     
-    public UiUpdater(TextMeshProUGUI text_j1, TextMeshProUGUI text_j2, Slider stamina_j1, Slider stamina_j2, TextMeshProUGUI timer_j1, TextMeshProUGUI timer_j2, Slider parade_j1, Slider parade_j2)
+    public UiUpdater(TextMeshProUGUI text_j1, TextMeshProUGUI text_j2, Slider stamina_j1, Slider stamina_j2, TextMeshProUGUI timer_j1, TextMeshProUGUI timer_j2, Slider parade_j1, Slider parade_j2, TextMeshProUGUI classement_j1, TextMeshProUGUI classement_j2)
     {
         this.text_j1 = text_j1;
         this.text_j2 = text_j2;
@@ -37,6 +40,9 @@ public class UiUpdater
         this.parade_j1 = parade_j1;
         this.parade_j2 = parade_j2;
 
+        this.classement_j1 = classement_j1;
+        this.classement_j2 = classement_j2;
+        
         this.stamina_j1.maxValue = GameInit.getGameConfig().stamina_amount;
         this.stamina_j2.maxValue = GameInit.getGameConfig().stamina_amount;
         
@@ -50,6 +56,21 @@ public class UiUpdater
             text_j1.text = formatScore(Player.getScore(player));
         else
             text_j2.text = formatScore(Player.getScore(player));
+
+        if (Player.getScore(Player.Joueur.P1) > Player.getScore((Player.Joueur.P2)))
+        {
+            classement_j1.text = "1er";
+            classement_j1.color = new Color(0.9f, 0.7f, 0.0f, 1);
+            classement_j2.text = "2ème";
+            classement_j2.color = new Color(0.6f, 0.6f, 0.6f, 1);
+        }
+        else
+        {
+            classement_j1.text = "2ème";
+            classement_j1.color = new Color(0.6f, 0.6f, 0.6f, 1);
+            classement_j2.text = "1er";
+            classement_j2.color = new Color(0.6f, 0.6f, 0.6f, 1);
+        }
     }
 
 
