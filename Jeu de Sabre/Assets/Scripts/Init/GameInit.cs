@@ -5,6 +5,7 @@ using System.ComponentModel.Design.Serialization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.Layouts;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameInit : MonoBehaviour
@@ -188,9 +189,12 @@ public class GameInit : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quitting game...");
-        Application.Quit();
+        Time.timeScale = 1f;
+        isGamePaused = false;
+        SceneManager.LoadScene("MainMenu");
     }
+    
+    
 
     /**
      * Déconnection des manettes lors de la fermeture de l'application

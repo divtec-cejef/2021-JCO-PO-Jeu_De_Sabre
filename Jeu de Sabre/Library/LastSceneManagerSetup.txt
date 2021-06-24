@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/UI.unity
+- path: Assets/Scenes/MainMenu.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
@@ -7,7 +7,7 @@ sceneSetups:
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/Scenes/OptiCamV2.unity
+- path: Assets/Scenes/LAMAPAKARIM.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
