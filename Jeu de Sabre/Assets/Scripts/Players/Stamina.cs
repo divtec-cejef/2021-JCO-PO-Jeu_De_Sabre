@@ -14,12 +14,16 @@ public class Stamina : MonoBehaviour
     public static float timerJ1 = 0;
     public static float timerJ2 = 0;
 
+    private void Awake()
+    {
+        StartCoroutine(updateStamina());
+    }
+
     public static void initStamina()
     {
         stamJ1 = GameInit.getGameConfig().stamina_amount;
         stamJ2 = GameInit.getGameConfig().stamina_amount;
     }
-    
     /// <summary>
     /// Permet de mettre à jour le score de chaque joueur
     /// </summary>
@@ -112,42 +116,82 @@ public class Stamina : MonoBehaviour
             timerJ2 = 0.0f;
     }
     
-    private void Update()
-    {
-        if (!canRegenJ1)
-            timerJ1 += Time.deltaTime;
-        
-        if (!canRegenJ2)
-            timerJ2 += Time.deltaTime;
-        
-        if (timerJ1 >= 2.0f)
-        {
-            canRegenJ1 = true;
-            timerJ1 = 0.0f;
-        }
-        
-        if (timerJ2 >= 2.0f)
-        {
-            canRegenJ2 = true;
-            timerJ2 = 0.0f;
-        }
+    // private void Update()
+    // {
+    //     
+    //     if (!canRegenJ1)
+    //         timerJ1 += Time.deltaTime;
+    //
+    //     if (!canRegenJ2)
+    //         timerJ2 += Time.deltaTime;
+    //
+    //     if (timerJ1 >= 2.0f)
+    //     {
+    //         canRegenJ1 = true;
+    //         timerJ1 = 0.0f;
+    //     }
+    //
+    //     if (timerJ2 >= 2.0f)
+    //     {
+    //         canRegenJ2 = true;
+    //         timerJ2 = 0.0f;
+    //     }
+    //
+    //     if (stamJ1 < GameInit.getGameConfig().stamina_amount && canRegenJ1)
+    //     {
+    //         if (stamJ1 + GameInit.getGameConfig().stamina_regeneration_rate >
+    //             GameInit.getGameConfig().stamina_amount)
+    //             stamJ1 = GameInit.getGameConfig().stamina_amount;
+    //         else
+    //             updateStamina(Player.Joueur.P1, GameInit.getGameConfig().stamina_regeneration_rate);
+    //     }
+    //
+    //     if (stamJ2 < GameInit.getGameConfig().stamina_amount && canRegenJ2)
+    //     {
+    //         if (stamJ2 + GameInit.getGameConfig().stamina_regeneration_rate >
+    //             GameInit.getGameConfig().stamina_amount)
+    //             stamJ2 = GameInit.getGameConfig().stamina_amount;
+    //         else
+    //             updateStamina(Player.Joueur.P2, GameInit.getGameConfig().stamina_regeneration_rate);
+    //     }
+    //     //print(stamJ1);
+    // }
+    // }
 
-        if (stamJ1 < GameInit.getGameConfig().stamina_amount  && canRegenJ1)
+    IEnumerator updateStamina()
+    {
+
+        while (true)
         {
-            if (stamJ1 + GameInit.getGameConfig().stamina_regeneration_rate > GameInit.getGameConfig().stamina_amount)
-                stamJ1 = GameInit.getGameConfig().stamina_amount;
-            else
-                updateStamina(Player.Joueur.P1, GameInit.getGameConfig().stamina_regeneration_rate);
+            yield return new WaitForSecondsRealtime(.25f);
+            
+            if (stamJ1 < GameInit.getGameConfig().stamina_amount)
+            {
+                if (stamJ1 + GameInit.getGameConfig().stamina_regeneration_rate >
+                    GameInit.getGameConfig().stamina_amount)
+                    stamJ1 = GameInit.getGameConfig().stamina_amount;
+                else
+                    updateStamina(Player.Joueur.P1, GameInit.getGameConfig().stamina_regeneration_rate);
+            }
+            
+            if (stamJ2 < GameInit.getGameConfig().stamina_amount)
+            {
+                if (stamJ2 + GameInit.getGameConfig().stamina_regeneration_rate >
+                    GameInit.getGameConfig().stamina_amount)
+             
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    stamJ2 = GameInit.getGameConfig().stamina_amount;
+                else
+                    updateStamina(Player.Joueur.P2, GameInit.getGameConfig().stamina_regeneration_rate);
+            }
         }
-        if (stamJ2 < GameInit.getGameConfig().stamina_amount  && canRegenJ2)
-        {
-            if (stamJ2 + GameInit.getGameConfig().stamina_regeneration_rate > GameInit.getGameConfig().stamina_amount)
-                stamJ2 = GameInit.getGameConfig().stamina_amount;
-            else
-                updateStamina(Player.Joueur.P2, GameInit.getGameConfig().stamina_regeneration_rate);
-        }
-        
-        //print(stamJ1);
-        
     }
 }

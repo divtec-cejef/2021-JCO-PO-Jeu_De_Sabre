@@ -1,8 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Parade
+public class Parade : MonoBehaviour
 {
     private Player.Joueur player;
     
@@ -53,8 +52,8 @@ public class Parade
         if (!isCanceled && isReady)
         {
             if (!isParade)
-            {
-               PSMoveUtils.setLED(player, parryColor);
+            { 
+                PSMoveUtils.setLED(player, parryColor);
                var rotation = FXParadePos.transform.rotation;
                var position = FXParadePos.transform.position;
                fxEffect1 = MonoBehaviour.Instantiate(FXParade_1, position, rotation);
@@ -95,11 +94,6 @@ public class Parade
         if (timerParade > 1.0f)
         {
             timerParade -= Time.deltaTime;
-
-            if (!Player.decreaseStamina(player, GameInit.getGameConfig().parade_stamina_decrease_rate))
-            {
-                timerParade = 0;
-            }
         }
         /* Si le timer est terminé, annulation de la parade et réinitialisation du timer */
         else
@@ -110,7 +104,20 @@ public class Parade
         }
     }
 
-    
+    public IEnumerator asdf()
+    {
+        print("lalalalla");
+        // while (timerParade > 1.0f && isParade)
+        // {
+        //     yield return new WaitForSecondsRealtime(.5f);
+        //     // if (!Player.decreaseStamina(player, GameInit.getGameConfig().parade_stamina_decrease_rate))
+        //     // {
+        //     //     timerParade = 0;
+        //     // }
+        // }
+        yield return null;
+    }
+
     public void onParadeDisabled()
     {
         if (isParade)

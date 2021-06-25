@@ -30,6 +30,12 @@ public class KatanaOrientation
     private float axeX;
     private float axeY;
     private float axeZ;
+    
+    private float prevOw = 0;
+    private float prevAxeX = 0;
+    private float prevAxeY = 0;
+    private float prevAxeZ = 0;
+    
 
     private float dirX, dirY;
     
@@ -102,10 +108,42 @@ public class KatanaOrientation
                 PSMoveAPI.psmove_poll(controller);
                 PSMoveAPI.psmove_get_orientation(controller, ref ow, ref axeX, ref axeY, ref axeZ);
 
+                float Xmin = prevAxeX - 0.05f;
+                float Xmax = prevAxeX + 0.05f;
+                if (axeX >= Xmin && axeX <= Xmax)
+                {
+                    
+                }
+                
+                float Zmin = prevAxeZ - 0.05f;
+                float Zmax = prevAxeZ + 0.05f;
+                if (axeZ >= Zmin && axeZ <= Zmax)
+                {
+                    axeZ = prevAxeZ;
+                }
+                
+                float Ymin = prevAxeY - 0.05f;
+                float Ymax = prevAxeY + 0.05f;
+                if (axeY >= Ymin && axeY <= Ymax)
+                {
+                    axeY = prevAxeY;
+                }
+                
+                float Wmin = prevOw - 0.005f;
+                float Wmax = prevOw + 0.005f;
+                if (ow >= Wmin && ow <= Wmax)
+                {
+                    ow = prevOw;
+                }
+                
+                prevAxeX = axeX;
+                prevAxeZ = axeZ;
+                prevAxeY = axeY;
+                prevOw = ow;
+
                 currentOrientation = player == Player.Joueur.P1
                     ? new Quaternion(-axeX, axeZ, axeY, ow)
                     : new Quaternion(axeX, axeZ, -axeY, ow);
-
 
                 //var v = new Vector3(-axeX, axeZ, axeY);
                 katanaAxis.transform.rotation =
@@ -139,6 +177,27 @@ public class KatanaOrientation
             PSMoveAPI.psmove_reset_orientation(GameInit.getControllerHandler().getController2());
         }
         
+    }
+
+
+    public float getX()
+    {
+        return axeX;
+    }
+    
+    public float getY()
+    {
+        return axeY;
+    }
+    
+    public float getZ()
+    {
+        return axeZ;
+    }
+    
+    public float getW()
+    {
+        return ow;
     }
 
     

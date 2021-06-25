@@ -61,13 +61,14 @@ public class GameInit : MonoBehaviour
     {
         multi = new MultiDisplay();
         multi.init();
+        String userDir = Environment.GetFolderPath(System.Environment.SpecialFolder.UserProfile);
         
         connecter = new ControllerConnecter();
         if (connecter.init())
         {
-        
+            userDir += "\\Documents\\katana_no_tatakai_properties.json";
             String json = "";
-            String[] lines= System.IO.File.ReadAllLines(@"C:\Users\KNT\Documents\katana_no_tatakai_properties.json");
+            String[] lines= System.IO.File.ReadAllLines(@userDir);
             foreach (String line in lines)
             {
                 json += line;
