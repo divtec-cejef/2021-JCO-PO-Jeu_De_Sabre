@@ -19,6 +19,8 @@ public class Katana_2 : MonoBehaviour
             KOrientation.onUpdate();
 
             plot.AddKey(Time.realtimeSinceStartup, KOrientation.getY());
+
+            print(KOrientation.getParade().getParade());
         }
             
     }

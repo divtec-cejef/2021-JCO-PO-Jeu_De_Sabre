@@ -13,6 +13,9 @@ public class MultiDisplay : MonoBehaviour
         //Vérifie si d'autre écran sont disponible à l'affichage du jeu         
         for (int i = 1; i < Display.displays.Length; i++)
             Display.displays[i].Activate();
-        
+
+        // Display.displays[1].Activate();
+        // Display.displays[2].Activate();
+
     }
 }

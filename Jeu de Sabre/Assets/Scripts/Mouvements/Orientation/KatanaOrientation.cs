@@ -53,7 +53,9 @@ public class KatanaOrientation
         PSMoveAPI.psmove_enable_orientation(controller, PSMove_Bool.PSMove_True);
         PSMoveAPI.psmove_reset_orientation(controller);
         
-        parade = new Parade(GameInit.getGameConfig().parade_duration, GameInit.getGameConfig().parade_duration, FXParade, FXParade2, FXParadePos, katanaAxis, player);
+        //parade = new Parade(GameInit.getGameConfig().parade_duration, GameInit.getGameConfig().parade_duration, FXParade, FXParade2, FXParadePos, katanaAxis, player);
+        katanaAxis.AddComponent<Parade>().init(GameInit.getGameConfig().parade_duration, GameInit.getGameConfig().parade_duration, FXParade, FXParade2, FXParadePos, katanaAxis, player);
+        parade = katanaAxis.GetComponent<Parade>();
     }
 
     public void onUpdate()

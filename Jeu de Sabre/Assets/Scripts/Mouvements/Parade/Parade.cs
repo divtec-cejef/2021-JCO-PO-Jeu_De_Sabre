@@ -28,7 +28,19 @@ public class Parade : MonoBehaviour
     private GameObject fxEffect2;
     
     
-    public Parade(float timerParade, float cooldownParade, GameObject fx1, GameObject fx2, GameObject fxPos, GameObject katanaAxis, Player.Joueur player)
+    // public Parade(float timerParade, float cooldownParade, GameObject fx1, GameObject fx2, GameObject fxPos, GameObject katanaAxis, Player.Joueur player)
+    // {
+    //     this.timerParade = timerParade;
+    //     this.cooldownParade = 1.0f;
+    //     FXParade_1 = fx1;
+    //     FXParade_2 = fx2;
+    //     FXParadePos = fxPos;
+    //     this.katanaAxis = katanaAxis;
+    //     this.player = player;
+    // }
+
+    public void init(float timerParade, float cooldownParade, GameObject fx1, GameObject fx2, GameObject fxPos,
+        GameObject katanaAxis, Player.Joueur player)
     {
         this.timerParade = timerParade;
         this.cooldownParade = 1.0f;
@@ -38,7 +50,7 @@ public class Parade : MonoBehaviour
         this.katanaAxis = katanaAxis;
         this.player = player;
     }
-
+    
     /// <summary>
     /// Vérification et activation de la parade, active aussi tout les effets secondaires liés à la parade
     /// </summary>
@@ -64,6 +76,8 @@ public class Parade : MonoBehaviour
                
                PSMoveUtils.setVibration(player, 255);
                defaultPos = katanaAxis.transform.position;
+
+               StartCoroutine(decreaseStaminaOverTime());
             }
 
             //MonoBehaviour.print("Parade " + quaternion);
@@ -104,18 +118,16 @@ public class Parade : MonoBehaviour
         }
     }
 
-    public IEnumerator asdf()
+    public IEnumerator decreaseStaminaOverTime()
     {
-        print("lalalalla");
-        // while (timerParade > 1.0f && isParade)
-        // {
-        //     yield return new WaitForSecondsRealtime(.5f);
-        //     // if (!Player.decreaseStamina(player, GameInit.getGameConfig().parade_stamina_decrease_rate))
-        //     // {
-        //     //     timerParade = 0;
-        //     // }
-        // }
-        yield return null;
+        while (true)
+        {
+            yield return new WaitForSecondsRealtime(.25f);
+            if (!Player.decreaseStamina(player, GameInit.getGameConfig().parade_stamina_decrease_rate))
+            {
+                timerParade = 0;
+            }
+        }
     }
 
     public void onParadeDisabled()
@@ -136,7 +148,7 @@ public class Parade : MonoBehaviour
 
     public void updateParadeCooldown()
     {
-        /* Si le joueur n'est pas prêt à executer une parade et qu'un n'est pas déjà en parade */
+        /* Si le joueur n'est pas prêt à executer une parade et qu'il n'est pas déjà en parade */
         if (!isReady && !isParade)
         {
             /* Si le timer n'est pas terminé, décompte du timer */

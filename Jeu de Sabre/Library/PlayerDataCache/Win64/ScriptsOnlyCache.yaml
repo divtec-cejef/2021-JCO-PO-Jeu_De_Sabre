@@ -193,13 +193,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4598}
     - Class: 114
-      Script: {instanceID: 4896}
+      Script: {instanceID: 4892}
     - Class: 114
-      Script: {instanceID: 4986}
+      Script: {instanceID: 4982}
     - Class: 114
-      Script: {instanceID: 5062}
+      Script: {instanceID: 5058}
     - Class: 114
-      Script: {instanceID: 5102}
+      Script: {instanceID: 5098}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1428,4 +1428,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Map.unity
-  playerPath: C:/Users/KNT/Desktop/KatanaNoTatakai-3.8/Jeu de Sabre.exe
+  playerPath: E:/Bureau/Nique/Jeu de Sabre.exe

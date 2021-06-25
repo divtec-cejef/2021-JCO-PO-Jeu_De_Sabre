@@ -165,7 +165,7 @@ public class Stamina : MonoBehaviour
         {
             yield return new WaitForSecondsRealtime(.25f);
             
-            if (stamJ1 < GameInit.getGameConfig().stamina_amount)
+            if (stamJ1 < GameInit.getGameConfig().stamina_amount/* || !GameInit.getKatanaPlayer1().getParade().getParade()*/)
             {
                 if (stamJ1 + GameInit.getGameConfig().stamina_regeneration_rate >
                     GameInit.getGameConfig().stamina_amount)
@@ -174,20 +174,11 @@ public class Stamina : MonoBehaviour
                     updateStamina(Player.Joueur.P1, GameInit.getGameConfig().stamina_regeneration_rate);
             }
             
-            if (stamJ2 < GameInit.getGameConfig().stamina_amount)
+            if (stamJ2 < GameInit.getGameConfig().stamina_amount/*  || !GameInit.getKatanaPlayer2().getParade().getParade()*/)
             {
                 if (stamJ2 + GameInit.getGameConfig().stamina_regeneration_rate >
                     GameInit.getGameConfig().stamina_amount)
              
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     stamJ2 = GameInit.getGameConfig().stamina_amount;
                 else
                     updateStamina(Player.Joueur.P2, GameInit.getGameConfig().stamina_regeneration_rate);
