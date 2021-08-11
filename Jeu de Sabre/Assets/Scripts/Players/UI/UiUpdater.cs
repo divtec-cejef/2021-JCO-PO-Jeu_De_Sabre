@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Diagnostics;
+using Init;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.Interactions;
@@ -25,6 +26,7 @@ public class UiUpdater
     
     public UiUpdater(TextMeshProUGUI text_j1, TextMeshProUGUI text_j2, Slider stamina_j1, Slider stamina_j2, TextMeshProUGUI timer_j1, TextMeshProUGUI timer_j2, Slider parade_j1, Slider parade_j2)
     {
+        Debug.Log("\tRécupération des composants graphiques...");
         this.text_j1 = text_j1;
         this.text_j2 = text_j2;
 
@@ -140,22 +142,22 @@ public class UiUpdater
         }
     }
 
-    public void onUpdateParadeCooldown(Player.Joueur player)
-    {
-        if (player == Player.Joueur.P1)
-        {
-            float cooldown = GameInit.getKatanaPlayer1().getParade().getCooldownTimer();
-            cooldown--;
-            
-            parade_j1.value = cooldown;
-        }
-        else
-        {
-            float cooldown = GameInit.getKatanaPlayer2().getParade().getCooldownTimer();
-            cooldown--;
-            parade_j2.value = cooldown;
-        }
-    }
+    // public void onUpdateParadeCooldown(Player.Joueur player)
+    // {
+    //     if (player == Player.Joueur.P1)
+    //     {
+    //         float cooldown = GameInit.getKatanaPlayer1().getParade().getCooldownTimer();
+    //         cooldown--;
+    //         
+    //         parade_j1.value = cooldown;
+    //     }
+    //     else
+    //     {
+    //         float cooldown = GameInit.getKatanaPlayer2().getParade().getCooldownTimer();
+    //         cooldown--;
+    //         parade_j2.value = cooldown;
+    //     }
+    // }
 
     public void onParadeEnabled(Player.Joueur player)
     {

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Init;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,10 +30,10 @@ public class Score : MonoBehaviour
     }
     
     /// <summary>
-    /// Renvoie le score actuel
+    /// Permet de récupéer le score actuel du joueur
     /// </summary>
     /// <param name="j">Le joueur auquel on veut récupérer les points</param>
-    /// <returns></returns>
+    /// <returns>Le score du joueur</returns>
     public static int getScore(Player.Joueur j)
     {
         return j == Player.Joueur.P1 ? scoreJ1 : scoreJ2;
