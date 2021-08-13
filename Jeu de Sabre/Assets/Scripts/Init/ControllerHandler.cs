@@ -4,31 +4,32 @@ namespace Init
 {
     public class ControllerHandler
     {
-        private IntPtr controller_1;
-        private IntPtr controller_2;
+        private IntPtr player1Controller;
+        
+        private IntPtr player2Controller;
     
-        public ControllerHandler(IntPtr controller_1, IntPtr controller_2)
+        public ControllerHandler(IntPtr player1Controller, IntPtr player2Controller)
         {
-            this.controller_1 = controller_1;
-            this.controller_2 = controller_2;
+            this.player1Controller = player1Controller;
+            this.player2Controller = player2Controller;
         }
     
         /// <summary>
         /// Permet de récupérer la manette 1
         /// </summary>
         /// <returns>La manette 1</returns>
-        public IntPtr getController1()
+        public IntPtr GetPlayer1Controller()
         {
-            return controller_1;
+            return player1Controller;
         }
     
         /// <summary>
         /// Permet de récupérer la manette 2
         /// </summary>
         /// <returns>La manette 2</returns>
-        public IntPtr getController2()
+        public IntPtr GetPlayer2Controller()
         {
-            return controller_2;
+            return player2Controller;
         }
     }
 }

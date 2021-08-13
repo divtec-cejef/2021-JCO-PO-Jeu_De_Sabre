@@ -1,13 +1,14 @@
 using Init;
+using Players;
 using UnityEngine;
 
 namespace Collisions
 {
     public class CollisionSabres : MonoBehaviour
     {
-        public GameObject collisionFx;
+        [SerializeField] private GameObject collisionFx;
+        
         private GameObject collision;
-        //public GameObject katana_1;
     
         private void OnCollisionEnter(Collision other)
         {
@@ -16,8 +17,8 @@ namespace Collisions
                 return;
 
             // TODO mettre ca dans la parade et pas dans la gestio des collision
-            if (!GameInit.getKatanaPlayer1().getParade().getParade() &&
-                !GameInit.getKatanaPlayer2().getParade().getParade())
+            if (!GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParade() &&
+                !GameInit.GetPlayer2KatanaOrientation().GetPlayerParade().GetParade())
             {
                 //Physics.IgnoreCollision(other.collider, katana_1.GetComponent<Collider>(), true);
                 return;
@@ -25,21 +26,21 @@ namespace Collisions
         
         
             // Si le joueur 1 est en parade, baisse de la stamina du joueur 2
-            if (GameInit.getKatanaPlayer1().getParade().getParade())
+            if (GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParade())
             {
-                Player.setStamina(Player.Joueur.P2, 0);
+                Player.SetStamina(Player.PLAYER.P2, 0);
             }
         
             // Si le joueur 2 est en parade, baisse de la stamina du joueur 1
-            else if (GameInit.getKatanaPlayer2().getParade().getParade())
+            else if (GameInit.GetPlayer2KatanaOrientation().GetPlayerParade().GetParade())
             {
-                Player.setStamina(Player.Joueur.P1, 0);
+                Player.SetStamina(Player.PLAYER.P1, 0);
             }
         
             // TODO si ils sont les deux en parade bah c'est celui qui y est depuis le moins de temps qui gagne je pense
 
-            print("1 : " + GameInit.getKatanaPlayer1().getParade().getParade() + ". 2 : " +
-                  GameInit.getKatanaPlayer2().getParade().getParade() + ".");
+            print("1 : " + GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParade() + ". 2 : " +
+                  GameInit.GetPlayer2KatanaOrientation().GetPlayerParade().GetParade() + ".");
         
         
             // Affichage de l'effet de collision sur le point de contact
@@ -49,14 +50,14 @@ namespace Collisions
             collision = Instantiate(collisionFx, pos, rot);
         
             // Vibration des manettes
-            PSMoveUtils.setVibration(Player.Joueur.P1, 255);
-            PSMoveUtils.setVibration(Player.Joueur.P2, 255);
+            PSMoveUtils.SetVibration(Player.PLAYER.P1, 255);
+            PSMoveUtils.SetVibration(Player.PLAYER.P2, 255);
         }
 
         private void OnCollisionExit(Collision other)
         {
             // Stoppe la vibration des manettes
-            PSMoveUtils.setVibration(Player.Joueur.P1, 0); PSMoveUtils.setVibration(Player.Joueur.P2, 0); 
+            PSMoveUtils.SetVibration(Player.PLAYER.P1, 0); PSMoveUtils.SetVibration(Player.PLAYER.P2, 0); 
             // Physics.IgnoreCollision(other.collider, katana_1.GetComponent<Collider>(), false);
         
             // Detruit l'effet de collision

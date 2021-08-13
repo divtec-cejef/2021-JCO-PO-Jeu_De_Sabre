@@ -5646,7 +5646,7 @@ GameObject:
   - component: {fileID: 167445325}
   - component: {fileID: 167445328}
   m_Layer: 8
-  m_Name: Characters_J2
+  m_Name: Player2Character
   m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5732,13 +5732,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16eeaa16e7a73f74d8dc23f795c12c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1Axis: {fileID: 1693520416}
-  Player2Axis: {fileID: 1196220590}
-  Player1Char: {fileID: 420766661}
-  Player1Trans: {fileID: 732586691}
-  Player2Char: {fileID: 167445323}
-  Player2Trans: {fileID: 1890980698}
-  katana: {fileID: 1155284530}
+  player1Axis: {fileID: 0}
+  player2Axis: {fileID: 0}
+  player1Character: {fileID: 0}
+  player1CharacterTransparent: {fileID: 0}
+  player2Character: {fileID: 0}
+  player2CharacterTransparent: {fileID: 0}
+  player2KatanaObject: {fileID: 0}
 --- !u!1001 &168099398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6471,7 +6471,7 @@ GameObject:
   - component: {fileID: 182215872}
   - component: {fileID: 182215873}
   m_Layer: 0
-  m_Name: Katana2 (1)
+  m_Name: Player2KatanaAxis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6974,7 +6974,7 @@ GameObject:
   - component: {fileID: 196049068}
   - component: {fileID: 196049069}
   m_Layer: 0
-  m_Name: Katana_J1
+  m_Name: Player1KatanaAxis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7012,7 +7012,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 126
   m_CollisionDetection: 1
 --- !u!114 &196049069
 MonoBehaviour:
@@ -12684,7 +12684,7 @@ GameObject:
   - component: {fileID: 343876779}
   - component: {fileID: 343876780}
   m_Layer: 9
-  m_Name: CM vcam2
+  m_Name: Player2VirtualCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12697,7 +12697,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343876778}
-  m_LocalRotation: {x: 0.07476614, y: -0.00000011521978, z: 0.0000000086387155, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.000000112261844, z: 0.000000008416941, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13764,7 +13764,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 889512904}
+    m_TransformParent: {fileID: 1184995555}
     m_Modifications:
     - target: {fileID: 730556413640352262, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -13776,7 +13776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255416545940, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Name
-      value: Score_J2
+      value: Player2ScoreText
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255416545940, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Layer
@@ -13876,11 +13876,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255435453753, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Name
-      value: HUD_J2
+      value: Player2HUD
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255435453753, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858084256786391565, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
+      propertyPath: m_Name
+      value: Player2TimerText
       objectReference: {fileID: 0}
     - target: {fileID: 4858084256786391565, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Layer
@@ -13900,7 +13904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7200604815052386801, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Name
-      value: Stamina_Slider_J2
+      value: Player2StaminaSlider
       objectReference: {fileID: 0}
     - target: {fileID: 7200604815052386801, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Layer
@@ -13945,6 +13949,10 @@ PrefabInstance:
     - target: {fileID: 8925130766446913692, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8925130766676212375, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
+      propertyPath: m_Name
+      value: Player2ParadeSlider
       objectReference: {fileID: 0}
     - target: {fileID: 8925130766676212375, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_IsActive
@@ -15493,7 +15501,7 @@ GameObject:
   - component: {fileID: 420766664}
   - component: {fileID: 420766666}
   m_Layer: 9
-  m_Name: Characters_J1
+  m_Name: Player1Character
   m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15579,13 +15587,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16eeaa16e7a73f74d8dc23f795c12c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1Axis: {fileID: 1693520416}
-  Player2Axis: {fileID: 1196220590}
-  Player1Char: {fileID: 420766661}
-  Player1Trans: {fileID: 732586691}
-  Player2Char: {fileID: 167445323}
-  Player2Trans: {fileID: 1890980698}
-  katana: {fileID: 1676751040}
+  player1Axis: {fileID: 1693520416}
+  player2Axis: {fileID: 1196220590}
+  player1Character: {fileID: 420766661}
+  player1CharacterTransparent: {fileID: 732586691}
+  player2Character: {fileID: 167445323}
+  player2CharacterTransparent: {fileID: 1890980698}
+  player2KatanaObject: {fileID: 1676751040}
 --- !u!1001 &421425569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18397,7 +18405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488150077}
   m_Layer: 0
-  m_Name: FX_Katana_2
+  m_Name: Player2KatanaFxPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18411,7 +18419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488150076}
   m_LocalRotation: {x: -0.7071068, y: 0.0000000037252903, z: 0.0000000037252903, w: 0.7071068}
-  m_LocalPosition: {x: -0.0069996025, y: 1.4700003, z: -0.04199955}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 182215872}
@@ -23257,7 +23265,7 @@ GameObject:
   - component: {fileID: 659598599}
   - component: {fileID: 659598598}
   m_Layer: 0
-  m_Name: Main_Droite
+  m_Name: Player2MainDroite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26344,7 +26352,7 @@ GameObject:
   - component: {fileID: 732586694}
   - component: {fileID: 732586695}
   m_Layer: 8
-  m_Name: Characters_J1Trans
+  m_Name: Player1CharacterTransparent
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26674,7 +26682,7 @@ GameObject:
   - component: {fileID: 736549301}
   - component: {fileID: 736549300}
   m_Layer: 0
-  m_Name: Main_Gauche
+  m_Name: Player1MainGauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32559,7 +32567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 889512904}
   m_Layer: 0
-  m_Name: Joueur 2
+  m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32581,7 +32589,6 @@ Transform:
   - {fileID: 182215872}
   - {fileID: 343876779}
   - {fileID: 1893022991}
-  - {fileID: 4858084255070292364}
   m_Father: {fileID: 1196220591}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -35798,7 +35805,7 @@ GameObject:
   - component: {fileID: 977854700}
   - component: {fileID: 977854699}
   m_Layer: 0
-  m_Name: Main_Gauche
+  m_Name: Player2MainGauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41235,7 +41242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1133660340}
   m_Layer: 0
-  m_Name: Joueur 1
+  m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41257,7 +41264,6 @@ Transform:
   - {fileID: 196049067}
   - {fileID: 1463762963}
   - {fileID: 1766081694}
-  - {fileID: 4858084256342498250}
   m_Father: {fileID: 1693520417}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42531,7 +42537,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 184202, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_Name
-      value: SM_Wep_Odachi_01
+      value: Player1KatanaObject
       objectReference: {fileID: 0}
     - target: {fileID: 184202, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_TagString
@@ -42559,7 +42565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalPosition.y
@@ -42567,35 +42573,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9999854
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.005243166
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00077413284
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0011112505
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.601
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.088
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.127
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
@@ -42635,12 +42641,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c8a07ecdf8c19046ab147f6f5978931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plot:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &1156076793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43559,7 +43559,7 @@ GameObject:
   - component: {fileID: 1179605716}
   - component: {fileID: 1179605715}
   m_Layer: 0
-  m_Name: Main_Droite
+  m_Name: Player1MainDroite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43912,6 +43912,8 @@ Transform:
   - {fileID: 793880879}
   - {fileID: 1824293159}
   - {fileID: 1839062611}
+  - {fileID: 4858084256342498250}
+  - {fileID: 4858084255070292364}
   - {fileID: 1691318216}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -44531,7 +44533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1196220591}
   m_Layer: 0
-  m_Name: J2_Axis
+  m_Name: Player2Axis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50768,7 +50770,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1133660340}
+    m_TransformParent: {fileID: 1184995555}
     m_Modifications:
     - target: {fileID: 730556413640352262, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -50780,7 +50782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255416545940, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Name
-      value: Score_J1
+      value: Player1ScoreText
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255416545940, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Layer
@@ -50804,7 +50806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255435453749, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255435453749, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -50880,11 +50882,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255435453753, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Name
-      value: HUD_J1
+      value: Player1HUD
       objectReference: {fileID: 0}
     - target: {fileID: 4858084255435453753, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858084256786391565, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
+      propertyPath: m_Name
+      value: Player1TimerText
       objectReference: {fileID: 0}
     - target: {fileID: 4858084256786391565, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Layer
@@ -50904,7 +50910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7200604815052386801, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Name
-      value: Stamina_Slider_J1
+      value: Player1StaminaSlider
       objectReference: {fileID: 0}
     - target: {fileID: 7200604815052386801, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_Layer
@@ -50949,6 +50955,10 @@ PrefabInstance:
     - target: {fileID: 8925130766446913692, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8925130766676212375, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
+      propertyPath: m_Name
+      value: Player1ParadeSlider
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c3019f9cd0cf19478a199dd813325a5, type: 3}
@@ -62117,7 +62127,7 @@ GameObject:
   - component: {fileID: 1463762963}
   - component: {fileID: 1463762964}
   m_Layer: 8
-  m_Name: CM vcam1
+  m_Name: Player1VirtualCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68731,7 +68741,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 184202, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_Name
-      value: SM_Wep_Odachi_02
+      value: Player2KatanaObject
       objectReference: {fileID: 0}
     - target: {fileID: 184202, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_TagString
@@ -68759,7 +68769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.014694912
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalPosition.y
@@ -68767,23 +68777,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0005042553
-      objectReference: {fileID: 0}
-    - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
-      propertyPath: m_LocalRotation.w
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
-      propertyPath: m_LocalRotation.y
+      propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -68791,7 +68801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416848, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -68821,12 +68831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ac8e7a286b83444be20170500c09ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plot:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!136 &1676751042
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -69160,6 +69164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1691318216}
+  - component: {fileID: 1691318217}
   m_Layer: 0
   m_Name: PlayerAxis
   m_TagString: Untagged
@@ -69175,14 +69180,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691318215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.002064705, y: 0.000000044703484, z: 0.0034980774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1693520417}
   - {fileID: 1196220591}
   m_Father: {fileID: 1184995555}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1691318217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691318215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6fbfe038e34a3498420a405393646b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anglesToRotate: {x: 0, y: 50, z: 0}
 --- !u!4 &1692631523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 494806, guid: 83f8ea0ad890006469de7091d250ddae, type: 3}
@@ -69198,7 +69216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1693520417}
   m_Layer: 0
-  m_Name: J1_Axis
+  m_Name: Player1Axis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71525,7 +71543,7 @@ GameObject:
   - component: {fileID: 1766081696}
   - component: {fileID: 1766081697}
   m_Layer: 8
-  m_Name: CameraJ1
+  m_Name: Player1Camera
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73206,31 +73224,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1ParadeFx1: {fileID: 1242912157399330, guid: 6066b7833d493734a9af353bbd046758, type: 3}
-  FXParade2_P1: {fileID: 1767212646799992, guid: ec5dead71a3be2046a4e57ab9fb113a9, type: 3}
-  FXParadePos_P1: {fileID: 2022402563}
-  KatanaAxis_P1: {fileID: 196049066}
+  player1ParadeFx2: {fileID: 1767212646799992, guid: ec5dead71a3be2046a4e57ab9fb113a9, type: 3}
+  player1ParadeFxPos: {fileID: 2022402563}
+  player1KatanaAxis: {fileID: 196049066}
   player2ParadeFx1: {fileID: 1747586400421602, guid: 27a7f93524a582440b2e162bf001be78, type: 3}
-  FXParade2_P2: {fileID: 1714552243977966, guid: f36719335e2592340b7bbb6a8ea33882, type: 3}
-  FXParadePos_P2: {fileID: 488150076}
-  KatanaAxis_P2: {fileID: 182215871}
-  vCameraJ1: {fileID: 1463762964}
-  vCameraJ2: {fileID: 343876780}
-  Score_j1: {fileID: 4858084256390765673}
-  Score_j2: {fileID: 4858084255118560815}
-  Stamina_j1: {fileID: 636870482}
-  Stamina_j2: {fileID: 355493406}
-  timer_j1: {fileID: 4858084255545691376}
-  timer_j2: {fileID: 4858084256958406326}
-  katana1: {fileID: 1155284530}
-  katana2: {fileID: 1676751040}
-  Parade_j1: {fileID: 581194978}
-  Parade_j2: {fileID: 1432842557}
-  timerSound: {fileID: 6257895150640254608, guid: 0f8a027844ab1904694a7c6247862f47, type: 3}
-  damageSound: {fileID: 381649370423924802, guid: 43df1abccd5a2ea4a8ee721072dfffb3, type: 3}
-  pauseMenuUi: {fileID: 335171582}
-  pauseMenuUi2: {fileID: 240672851}
-  player1Ui: {fileID: 1750265160}
-  player2Ui: {fileID: 892376514}
+  player2ParadeFx2: {fileID: 1714552243977966, guid: f36719335e2592340b7bbb6a8ea33882, type: 3}
+  player2ParadeFxPos: {fileID: 488150076}
+  player2KatanaAxis: {fileID: 182215871}
+  player1VirtualCamera: {fileID: 1463762964}
+  player2VirtualCamera: {fileID: 343876780}
+  player1ScoreText: {fileID: 4858084256390765673}
+  player2ScoreText: {fileID: 4858084255118560815}
+  player1TimerText: {fileID: 4858084255545691376}
+  player2TimerText: {fileID: 4858084256958406326}
+  player1StaminaSlider: {fileID: 636870482}
+  player2StaminaSlider: {fileID: 355493406}
+  player1ParadeSlider: {fileID: 581194978}
+  player2ParadeSlider: {fileID: 1432842557}
+  player1KatanaObject: {fileID: 1155284530}
+  player2KatanaObject: {fileID: 1676751040}
+  soundTimer: {fileID: 6257895150640254608, guid: 0f8a027844ab1904694a7c6247862f47, type: 3}
+  soundDamage: {fileID: 381649370423924802, guid: 43df1abccd5a2ea4a8ee721072dfffb3, type: 3}
+  player1PauseMenuPanel: {fileID: 240672851}
+  player2PauseMenuPanel: {fileID: 335171582}
+  player1HudPanel: {fileID: 1750265160}
+  player2HudPanel: {fileID: 892376514}
 --- !u!4 &1824293159
 Transform:
   m_ObjectHideFlags: 0
@@ -75805,7 +75823,7 @@ GameObject:
   - component: {fileID: 1890980701}
   - component: {fileID: 1890980702}
   m_Layer: 9
-  m_Name: Characters_J2Trans
+  m_Name: Player2CharacterTransparent
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75898,7 +75916,7 @@ GameObject:
   - component: {fileID: 1893022996}
   - component: {fileID: 1893022995}
   m_Layer: 9
-  m_Name: CameraJ2
+  m_Name: Player2Camera
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75911,7 +75929,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893022990}
-  m_LocalRotation: {x: 0.07476614, y: -0.00000011521978, z: 0.0000000086387155, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.000000112261844, z: 0.000000008416941, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -81108,7 +81126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022402564}
   m_Layer: 0
-  m_Name: FX_Katana_1
+  m_Name: Player1KatanaFxPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81121,13 +81139,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022402563}
-  m_LocalRotation: {x: -0.7071068, y: 0.0000000037252903, z: 0.0000000037252903, w: 0.7071068}
-  m_LocalPosition: {x: -0.02999972, y: 1.47, z: -28.18}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 196049067}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2024069926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 443510, guid: 2a47d0bd64cd05d488d7ec1a627d4e9d, type: 3}

@@ -1,189 +1,211 @@
 using System;
-using System.Collections;
-using System.Diagnostics;
 using Init;
+using Mouvements.Parade;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem.Interactions;
 using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
+using Object = UnityEngine.Object;
 
-public class UiUpdater
+namespace Players.UI
 {
-    private TextMeshProUGUI text_j1;
-    private TextMeshProUGUI text_j2;
-
-    private Slider stamina_j1;
-    private Slider stamina_j2;
-
-    private TextMeshProUGUI timer_j1;
-    private TextMeshProUGUI timer_j2;
-    
-    private Slider parade_j1;
-    private Slider parade_j2;
-
-    private bool isSound = false;
-    
-    public UiUpdater(TextMeshProUGUI text_j1, TextMeshProUGUI text_j2, Slider stamina_j1, Slider stamina_j2, TextMeshProUGUI timer_j1, TextMeshProUGUI timer_j2, Slider parade_j1, Slider parade_j2)
+    public class UiUpdater
     {
-        Debug.Log("\tRécupération des composants graphiques...");
-        this.text_j1 = text_j1;
-        this.text_j2 = text_j2;
-
-        this.stamina_j1 = stamina_j1;
-        this.stamina_j2 = stamina_j2;
-
-        this.timer_j1 = timer_j1;
-        this.timer_j2 = timer_j2;
-
-        this.parade_j1 = parade_j1;
-        this.parade_j2 = parade_j2;
-
-        this.stamina_j1.maxValue = GameInit.getGameConfig().stamina_amount;
-        this.stamina_j2.maxValue = GameInit.getGameConfig().stamina_amount;
+        private TextMeshProUGUI player1ScoreText;
         
-        this.parade_j1.maxValue = GameInit.getGameConfig().parade_duration - 1;
-        this.parade_j2.maxValue = GameInit.getGameConfig().parade_duration - 1;
-    }
+        private TextMeshProUGUI player2ScoreText;
 
-    public void onScoreUpdate(Player.Joueur player)
-    {
-        if (player == Player.Joueur.P1)
-            text_j1.text = formatScore(Player.getScore(player));
-        else
-            text_j2.text = formatScore(Player.getScore(player));
-    }
-
-
-    public void onStaminaUpdate(Player.Joueur player)
-    {
-        if (player == Player.Joueur.P1)
-        {
-            stamina_j1.value = Player.getStamina(player);
-        }
-        else
-        {
-            stamina_j2.value = Player.getStamina(player);
-        }
-    }
-
-    private String formatScore(int score)
-    {
-        String scoreString;
+        private Slider player1StaminaSlider;
         
-        if (score >= 1000)
-            scoreString =  score.ToString();
-        else
-        {
-            scoreString = "0" + score;
+        private Slider player2StaminaSlider;
 
-            if (score >= 100) 
-                return "Score : " + scoreString;
+        private TextMeshProUGUI player1TimerText;
+        
+        private TextMeshProUGUI player2TimerText;
+    
+        private Slider player1ParadeSlider;
+        
+        private Slider player2ParadeSlider;
+
+        private bool m_IsSoundPlaying;
+    
+        public UiUpdater(TextMeshProUGUI player1ScoreText, TextMeshProUGUI player2ScoreText, Slider player1StaminaSlider, Slider player2StaminaSlider, TextMeshProUGUI player1TimerText, TextMeshProUGUI player2TimerText, Slider player1ParadeSlider, Slider player2ParadeSlider)
+        {
+            m_IsSoundPlaying = false;
+            Debug.Log("\tRécupération des composants graphiques...");
+            this.player1ScoreText = player1ScoreText;
+            this.player2ScoreText = player2ScoreText;
+
+            this.player1StaminaSlider = player1StaminaSlider;
+            this.player2StaminaSlider = player2StaminaSlider;
+
+            this.player1TimerText = player1TimerText;
+            this.player2TimerText = player2TimerText;
+
+            this.player1ParadeSlider = player1ParadeSlider;
+            this.player2ParadeSlider = player2ParadeSlider;
+
+            this.player1StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
+            this.player2StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
+        
+            this.player1ParadeSlider.maxValue = GameInit.GetGameConfig().parade_duration;
+            this.player2ParadeSlider.maxValue = GameInit.GetGameConfig().parade_duration;
+        }
+
+        public void OnScoreUpdate(Player.PLAYER player)
+        {
+            if (player == Player.PLAYER.P1)
+                player1ScoreText.text = FormatScore(Player.GetScore(player));
+            else
+                player2ScoreText.text = FormatScore(Player.GetScore(player));
+        }
+
+
+        public void OnStaminaUpdate(Player.PLAYER player)
+        {
+            if (player == Player.PLAYER.P1)
+            {
+                player1StaminaSlider.value = Player.GetStamina(player);
+            }
+            else
+            {
+                player2StaminaSlider.value = Player.GetStamina(player);
+            }
+        }
+
+        private String FormatScore(int score)
+        {
+            String scoreString;
+        
+            if (score >= 1000)
+                scoreString =  score.ToString();
+            else
+            {
+                scoreString = "0" + score;
+
+                if (score >= 100) 
+                    return "Score : " + scoreString;
             
-            scoreString = "0" + scoreString;
-            
-            if (score < 10)
                 scoreString = "0" + scoreString;
-        }
-        
-        return "Score : " + scoreString;
-    }
-    
-    public void onTimerUpdate()
-    {
-        timer_j1.text = timer_j2.text = formatTime(GameInit.getTimer().getTimer());
-    }
-    
-    private String formatTime(int time)
-    {
-        String format = "";
-
-        if (time <= 20 && !isSound)
-        {
-            var position = new Vector3(11.9f, 11.0f, 15.6f);
-            var rotation = new Quaternion(0, 0, 0, 0);
-            MonoBehaviour.Instantiate(GameInit.getSoundHandler().getTimerSound(), position, rotation);
-            isSound = true;
-        }
-        
-        
-        if (time / 60 < 10)
-        {
-            format += "0";
-        }
-
-        format += time / 60 + ":";
-
-        if (time % 60 < 10)
-        {
-            format += "0";
-        }
-
-        format += time % 60;
-
-        return format;
-    }
-
-
-    public void updateParadeTimer(Player.Joueur player)
-    {
-        if (player == Player.Joueur.P1)
-        {
-            float timer = GameInit.getKatanaPlayer1().getParade().getParadeTimer();
-            timer--;
             
-            parade_j1.value = timer;
+                if (score < 10)
+                    scoreString = "0" + scoreString;
+            }
+        
+            return "Score : " + scoreString;
         }
-        else
+    
+        public void OnTimerUpdate()
         {
-            float timer = GameInit.getKatanaPlayer2().getParade().getParadeTimer();
-            timer--;
-            parade_j2.value = timer;
+            player1TimerText.text = player2TimerText.text = FormatTime(GameInit.GetTimer().getTimer());
         }
-    }
+    
+        private String FormatTime(int time)
+        {
+            String format = "";
 
-    // public void onUpdateParadeCooldown(Player.Joueur player)
-    // {
-    //     if (player == Player.Joueur.P1)
-    //     {
-    //         float cooldown = GameInit.getKatanaPlayer1().getParade().getCooldownTimer();
-    //         cooldown--;
-    //         
-    //         parade_j1.value = cooldown;
-    //     }
-    //     else
-    //     {
-    //         float cooldown = GameInit.getKatanaPlayer2().getParade().getCooldownTimer();
-    //         cooldown--;
-    //         parade_j2.value = cooldown;
-    //     }
-    // }
+            if (time <= 20 && !m_IsSoundPlaying)
+            {
+                var position = new Vector3(11.9f, 11.0f, 15.6f);
+                var rotation = new Quaternion(0, 0, 0, 0);
+                Object.Instantiate(GameInit.GetSoundHandler().GetTimerSound(), position, rotation);
+                m_IsSoundPlaying = true;
+            }
+        
+        
+            if (time / 60 < 10)
+            {
+                format += "0";
+            }
 
-    public void onParadeEnabled(Player.Joueur player)
-    {
-        if (player == Player.Joueur.P1)
-        {
-            parade_j1.gameObject.SetActive(true);
+            format += time / 60 + ":";
+
+            if (time % 60 < 10)
+            {
+                format += "0";
+            }
+
+            format += time % 60;
+
+            return format;
         }
-        else
+
+        public void OnParadeEnabled(Player.PLAYER player)
         {
-            parade_j2.gameObject.SetActive(true);
+            if (player == Player.PLAYER.P1)
+            {
+                Stamina.CanPlayer1Regen(false);
+                player1ParadeSlider.gameObject.SetActive(true);
+            }
+            else
+            {
+                Stamina.CanPlayer2Regen(false);
+                player2ParadeSlider.gameObject.SetActive(true);
+            }
         }
         
-    }
+        public void OnParadeUpdate(Player.PLAYER player)
+        {
+            switch (player)
+            {
+                case Player.PLAYER.P1:
+                    player1ParadeSlider.value = GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParadeTimer();
+                    break;
+                case Player.PLAYER.P2:
+                    player2ParadeSlider.value = GameInit.GetPlayer2KatanaOrientation().GetPlayerParade().GetParadeTimer();
+                    break;
+                default:
+                    Debug.LogError("Impossible d'identifier le joueur");
+                    break;
+            }
+        }
 
-    public void onParadeDisabled(Player.Joueur player)
-    {
-        if (player == Player.Joueur.P1)
+        public void OnParadeDisabled(Player.PLAYER player)
         {
-            parade_j1.value = parade_j1.maxValue;
-            parade_j1.gameObject.SetActive(false);
+            switch (player)
+            {
+                case Player.PLAYER.P1:
+                {
+                    Stamina.CanPlayer1Regen(true);
+                
+                    Parade parade = GameInit.GetPlayer1KatanaOrientation().GetPlayerParade();
+                    float timer = parade.GetParadeTimer();
+                    if (timer < GameInit.GetGameConfig().parade_duration)
+                    {
+                        timer += 1f * Time.deltaTime;
+                    }
+                    else
+                    {
+                        timer = GameInit.GetGameConfig().parade_duration;
+                        parade.SetReady(true);
+                        player1ParadeSlider.gameObject.SetActive(false);
+                    }
+                    parade.SetParadeTimer(timer);
+                    player1ParadeSlider.value = timer;
+                    break;
+                }
+                case Player.PLAYER.P2:
+                {
+                    Stamina.CanPlayer2Regen(true);
+                
+                    Parade parade = GameInit.GetPlayer2KatanaOrientation().GetPlayerParade();
+                    float timer = parade.GetParadeTimer();
+                    if (timer < GameInit.GetGameConfig().parade_duration)
+                    {
+                        timer += 1f * Time.deltaTime;
+                    }
+                    else
+                    {
+                        timer = GameInit.GetGameConfig().parade_duration;
+                        parade.SetReady(true);
+                        player2ParadeSlider.gameObject.SetActive(false);
+                    }
+                    parade.SetParadeTimer(timer);
+                    player2ParadeSlider.value = timer;
+                    break;
+                }
+            }
         }
-        else
-        {
-            parade_j2.value = parade_j2.maxValue;
-            parade_j2.gameObject.SetActive(false);
-        }
-    }
     
+    }
 }

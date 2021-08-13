@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using Init;
+using Players;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using Vector2 = UnityEngine.Vector2;
@@ -38,10 +39,10 @@ public class AttackMouvements
         Player2Trans = P2T;
     }
 
-    public void onAttack(Player.Joueur attacker, Player.Joueur defender)
+    public void onAttack(Player.PLAYER attacker, Player.PLAYER defender)
     {
-        GameInit.getCameraShaking().ShakeCamera(attacker, 1.0f, .1f);
-        GameInit.getCameraShaking().ShakeCamera(defender, 1.0f, .2f);
+        GameInit.GetCameraShaking().ShakeCamera(attacker, 1.0f, .1f);
+        GameInit.GetCameraShaking().ShakeCamera(defender, 1.0f, .2f);
         
         // if (attacker == Player.Joueur.P1)
         // {

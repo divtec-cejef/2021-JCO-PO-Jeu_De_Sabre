@@ -1,40 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using Init;
+using Players;
 using UnityEngine;
 
 public class PSMoveUtils
 {
-
-    public enum PSMoveID
+    public static void SetLed(Player.PLAYER player, Color color)
     {
-        Manette_1 = 0,
-        Manette_2 = 1,
-    }
-    
-    public static void setLED(Player.Joueur player, Color color)
-    {
-        if (player == Player.Joueur.P1)
+        if (player == Player.PLAYER.P1)
         {
-            PSMoveAPI.psmove_set_leds(GameInit.getControllerHandler().getController1(), (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
+            PSMoveAPI.psmove_set_leds(GameInit.GetControllerHandler().GetPlayer1Controller(), (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
         }
         else
         {
-            PSMoveAPI.psmove_set_leds(GameInit.getControllerHandler().getController2(), (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
+            PSMoveAPI.psmove_set_leds(GameInit.GetControllerHandler().GetPlayer2Controller(), (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
         }
         
     }
 
-    public static void setVibration(Player.Joueur player, System.Byte level)
+    public static void SetVibration(Player.PLAYER player, System.Byte level)
     {
-        if (player == Player.Joueur.P1)
+        if (player == Player.PLAYER.P1)
         {
-            PSMoveAPI.psmove_set_rumble(GameInit.getControllerHandler().getController1(), level);
+            PSMoveAPI.psmove_set_rumble(GameInit.GetControllerHandler().GetPlayer1Controller(), level);
         }
         else
         {
-            PSMoveAPI.psmove_set_rumble(GameInit.getControllerHandler().getController2(), level);
+            PSMoveAPI.psmove_set_rumble(GameInit.GetControllerHandler().GetPlayer2Controller(), level);
         }
     }
 }

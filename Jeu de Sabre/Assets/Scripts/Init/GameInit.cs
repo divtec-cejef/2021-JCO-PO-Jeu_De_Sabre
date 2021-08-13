@@ -3,6 +3,8 @@ using Camera;
 using Cinemachine;
 using Mouvements.Orientation;
 using Players;
+using Players.UI;
+using Sounds;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,59 +13,99 @@ namespace Init
 {
     public class GameInit : MonoBehaviour
     {
-        private static UiUpdater updater;
-        private static ControllerConnecter connecter;
-        private static ControllerHandler controllerHandler;
-        private static Timer timer;
-        private static SoundHandler soundHandler;
-        private static GameConfig config;
-        private static KatanaOrientation katana_1;
-        private static KatanaOrientation katana_2;
-        private static CameraShaking cameraShaking;
+        private static UiUpdater _updater;
+        
+        private static ControllerConnecter _connecter;
+        
+        private static ControllerHandler _controllerHandler;
+        
+        private static Timer _timer;
+        
+        private static SoundHandler _soundHandler;
+        
+        private static GameConfig _config;
+        
+        private static KatanaOrientation _katana1;
+        
+        private static KatanaOrientation _katana2;
+        
+        private static CameraShaking _cameraShaking;
+        
         private MultiDisplay multiDisplay;
         
+        
         [SerializeField] private GameObject player1ParadeFx1;
-        [SerializeField] private GameObject FXParade2_P1;
-        [SerializeField] private GameObject FXParadePos_P1;
-        [SerializeField] private GameObject KatanaAxis_P1;
-    
+        
+        [SerializeField] private GameObject player1ParadeFx2;
+        
+        [SerializeField] private GameObject player1ParadeFxPos;
+        
+        [SerializeField] private GameObject player1KatanaAxis;
+        
+
         [SerializeField] private GameObject player2ParadeFx1;
-        [SerializeField] private GameObject FXParade2_P2;
-        [SerializeField] private GameObject FXParadePos_P2;
-        [SerializeField] private GameObject KatanaAxis_P2;
-
-        [SerializeField] private CinemachineVirtualCamera vCameraJ1;
-        [SerializeField] private CinemachineVirtualCamera vCameraJ2;
         
-        [SerializeField] private TextMeshProUGUI Score_j1;
-        [SerializeField] private TextMeshProUGUI Score_j2;
-
-        [SerializeField] private Slider Stamina_j1;
-        [SerializeField] private Slider Stamina_j2;
-
-        [SerializeField] private TextMeshProUGUI timer_j1;
-        [SerializeField] private TextMeshProUGUI timer_j2;
+        [SerializeField] private GameObject player2ParadeFx2;
         
-        [SerializeField] private GameObject katana1;
-        [SerializeField] private GameObject katana2;
-
-        [SerializeField] private Slider Parade_j1;
-        [SerializeField] private Slider Parade_j2;
+        [SerializeField] private GameObject player2ParadeFxPos;
         
-        [SerializeField] private GameObject timerSound;
-        [SerializeField] private GameObject damageSound;
+        [SerializeField] private GameObject player2KatanaAxis;
 
-        [SerializeField] private GameObject pauseMenuUi;
-        [SerializeField] private GameObject pauseMenuUi2;
-        [SerializeField] private GameObject player1Ui;
-        [SerializeField] private GameObject player2Ui;
+        
+        [SerializeField] private CinemachineVirtualCamera player1VirtualCamera;
+        
+        [SerializeField] private CinemachineVirtualCamera player2VirtualCamera;
+        
+        
+        [SerializeField] private TextMeshProUGUI player1ScoreText;
+        
+        [SerializeField] private TextMeshProUGUI player2ScoreText;
+        
+        
+        [SerializeField] private TextMeshProUGUI player1TimerText;
+        
+        [SerializeField] private TextMeshProUGUI player2TimerText;
+        
+        
+        [SerializeField] private Slider player1StaminaSlider;
+        
+        [SerializeField] private Slider player2StaminaSlider;
 
-        public static bool isGamePaused = false;
-        public static bool isDebugMenuOn = false;
-        private bool isTimerInit = false;
+        
+        [SerializeField] private Slider player1ParadeSlider;
+        
+        [SerializeField] private Slider player2ParadeSlider;
+        
+        
+        [SerializeField] private GameObject player1KatanaObject;
+        
+        [SerializeField] private GameObject player2KatanaObject;
+
+        
+        [SerializeField] private GameObject soundTimer;
+        
+        [SerializeField] private GameObject soundDamage;
+
+        
+        [SerializeField] private GameObject player1PauseMenuPanel;
+        
+        [SerializeField] private GameObject player2PauseMenuPanel;
+        
+        [SerializeField] private GameObject player1HudPanel;
+        
+        [SerializeField] private GameObject player2HudPanel;
+
+        public static bool isGamePaused;
+        
+        public static bool isDebugMenuOn;
+        
+        private bool isTimerInit;
     
         private void Awake()
         {
+            isGamePaused = false;
+            isDebugMenuOn = false;
+            isTimerInit = false;
             // Initialisation de l'affichage sur plusieurs écrans
             print("Intitialisation de l'affichage multiple...");
             gameObject.AddComponent<MultiDisplay>();
@@ -74,10 +116,10 @@ namespace Init
         
             // Initialisation de la connexion des manettes
             print("Initialisation des manettes...");
-            connecter = new ControllerConnecter();
+            _connecter = new ControllerConnecter();
         
             // Si l'initialisation est passée
-            if (connecter.Init())
+            if (_connecter.Init())
             {
                 // Récupération et lecture du fichier de configuration
                 print("Récupération de la configuration du jeu...");
@@ -88,7 +130,7 @@ namespace Init
                 {
                     json += line;
                 }
-                config = JsonUtility.FromJson<GameConfig>(json);
+                _config = JsonUtility.FromJson<GameConfig>(json);
 
                 // Initialisation de l'endurance
                 print("Initialisation du système d'endurance...");
@@ -96,41 +138,45 @@ namespace Init
             
                 // Récupération des manettes
                 print("Récupération des manettes...");
-                controllerHandler = connecter.getHandler();
+                _controllerHandler = _connecter.GetHandler();
             
                 // Initialisation de l'orientation de la manette 1
                 print("Initialisation de la rotation du joueur 1...");
-                katana_1 = new KatanaOrientation(Player.Joueur.P1, controllerHandler.getController1(), player1ParadeFx1,
-                    FXParade2_P1, FXParadePos_P1, KatanaAxis_P1, katana1);
+                _katana1 = new KatanaOrientation(Player.PLAYER.P1, _controllerHandler.GetPlayer1Controller(), player1ParadeFx1,
+                    player1ParadeFx2, player1ParadeFxPos, player1KatanaAxis, player1KatanaObject, player1ParadeSlider);
                 Katana1.Init();
             
                 print("Initialisation de la rotation du joueur 2...");
                 // Initialisation de l'orientation de la mentte 2
-                katana_2 = new KatanaOrientation(Player.Joueur.P2, controllerHandler.getController2(), player2ParadeFx1,
-                    FXParade2_P2, FXParadePos_P2, KatanaAxis_P2, katana2);
+                _katana2 = new KatanaOrientation(Player.PLAYER.P2, _controllerHandler.GetPlayer2Controller(), player2ParadeFx1,
+                    player2ParadeFx2, player2ParadeFxPos, player2KatanaAxis, player2KatanaObject, player2ParadeSlider);
                 Katana2.Init();
 
                 // Initialisation de la classe chargée de mettre à jour le HUD
                 print("Initialisation de la mise à jour de l'affichage");
-                updater = new UiUpdater(Score_j1, Score_j2, Stamina_j1, Stamina_j2, timer_j1, timer_j2, Parade_j1, Parade_j2);
+                _updater = new UiUpdater(player1ScoreText, player2ScoreText, player1StaminaSlider, player2StaminaSlider, player1TimerText, player2TimerText, player1ParadeSlider, player2ParadeSlider);
             
                 // Initialisation du timer
                 print("Initialisation du timer...");
-                timer = new Timer(config.game_time, timerSound);
+                _timer = new Timer(_config.game_time, soundTimer);
                 isTimerInit = true;
             
                 // Initialisaion du gestionnaire de son
                 print("Initialisation de gestionnaire de son...");
-                soundHandler = new SoundHandler(timerSound, damageSound);
+                _soundHandler = new SoundHandler(soundTimer, soundDamage);
 
                 // Initialisation du tremblement de caméra
                 print("Configuration du tremblement des cameras...");
-                gameObject.AddComponent<CameraShaking>().Init(vCameraJ1, vCameraJ2);
-                cameraShaking = gameObject.GetComponent<CameraShaking>();
+                gameObject.AddComponent<CameraShaking>().Init(player1VirtualCamera, player2VirtualCamera);
+                _cameraShaking = gameObject.GetComponent<CameraShaking>();
+                
+                // Activation de la Led des manettes
+                PSMoveUtils.SetLed(Player.PLAYER.P1, Color.yellow);
+                PSMoveUtils.SetLed(Player.PLAYER.P2, Color.yellow);
             }
             else
             {
-                print(connecter.getError());
+                print(_connecter.GetError());
             }
         }
     
@@ -138,84 +184,84 @@ namespace Init
         /// Permet de récupérer la connexion des manettes
         /// </summary>
         /// <returns>Le ControllerConnecter des manettes</returns>
-        public static ControllerConnecter getControllerConnecter()
+        public static ControllerConnecter GetControllerConnecter()
         {
-            return connecter;
+            return _connecter;
         }
     
         /// <summary>
         /// Permet de récupérer les manettes
         /// </summary>
         /// <returns>Le ControllerHandler des manettes</returns>
-        public static ControllerHandler getControllerHandler()
+        public static ControllerHandler GetControllerHandler()
         {
-            return controllerHandler;
+            return _controllerHandler;
         }
     
         /// <summary>
         /// Permet de récupérer la gestion de l'orientation de la manette 1
         /// </summary>
         /// <returns>Le KatanaOrientation de la manette 1</returns>
-        public static KatanaOrientation getKatanaPlayer1()
+        public static KatanaOrientation GetPlayer1KatanaOrientation()
         {
-            return katana_1;
+            return _katana1;
         }
     
         /// <summary>
         /// Permet de récupérer la gestion de l'orientation de la manette 2
         /// </summary>
         /// <returns>Le KatanaOrientation de la manette 2</returns>
-        public static KatanaOrientation getKatanaPlayer2()
+        public static KatanaOrientation GetPlayer2KatanaOrientation()
         {
-            return katana_2;
+            return _katana2;
         }
     
         /// <summary>
         /// Permet de récupérer l'objet chargé de mettre à jour le HUD
         /// </summary>
         /// <returns>Le UiUpdater permettant de mettre à jour le HUD</returns>
-        public static UiUpdater getUiUpdater()
+        public static UiUpdater GetUiUpdater()
         {
-            return updater;
+            return _updater;
         }
 
         /// <summary>
         /// Permet de récupérer l'objet chargé de mettre à jour le timer
         /// </summary>
         /// <returns>Le Timer permettant de mettre à jour le timer</returns>
-        public static Timer getTimer()
+        public static Timer GetTimer()
         {
-            return timer;
+            return _timer;
         }
 
         /// <summary>
         /// Permet de récupérer la configuration chargée depuis le fichier Json
         /// </summary>
         /// <returns>Le GameConfig contenant toutes les configuration du jeu</returns>
-        public static GameConfig getGameConfig()
+        public static GameConfig GetGameConfig()
         {
-            return config;
+            return _config;
         }
 
         /// <summary>
         /// Permet de récupérer la classe contenant les sons du jeu
         /// </summary>
         /// <returns>Le SoundHandler contenant les sons du jeu</returns>
-        public static SoundHandler getSoundHandler()
+        public static SoundHandler GetSoundHandler()
         {
-            return soundHandler;
+            return _soundHandler;
         }
 
-        public static CameraShaking getCameraShaking()
+        public static CameraShaking GetCameraShaking()
         {
-            return cameraShaking;
+            return _cameraShaking;
         }
     
         private void Update()
         {
             // Dès que le timer est initialisé, mise à jour de celui-ci
             if(isTimerInit)
-                getTimer().onUpdate();
+                GetTimer().onUpdate();
         
             // Affichage ou désactivation du menu pause lors de l'appui sur la touche Echape
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -228,11 +274,11 @@ namespace Init
 
             // Recalibration du sabre 1 lors de l'appui sur la touche 1
             if (Input.GetKeyDown(KeyCode.Alpha1))
-                KatanaOrientation.defaultCalibration(Player.Joueur.P1);
+                KatanaOrientation.SetDefaultCalibration(Player.PLAYER.P1);
         
             // Recalibration du sabre 2 lors de l'appui sur la touche 2
             if (Input.GetKeyDown(KeyCode.Alpha2))
-                KatanaOrientation.defaultCalibration(Player.Joueur.P2);
+                KatanaOrientation.SetDefaultCalibration(Player.PLAYER.P2);
         }
 
         /// <summary>
@@ -241,19 +287,19 @@ namespace Init
         public void Resume()
         {
             // Activation du HUD des joueurs
-            player1Ui.SetActive(true);
-            player2Ui.SetActive(true);
+            player1HudPanel.SetActive(true);
+            player2HudPanel.SetActive(true);
         
             // Désactivation du menu pause des joueurs
-            pauseMenuUi.SetActive(false);
-            pauseMenuUi2.SetActive(false);
+            player1PauseMenuPanel.SetActive(false);
+            player2PauseMenuPanel.SetActive(false);
         
             // Relancement du temps en jeu
             Time.timeScale = 1f;
         
             // Recalibration des sabres des joueurs
-            KatanaOrientation.defaultCalibration(Player.Joueur.P1);
-            KatanaOrientation.defaultCalibration(Player.Joueur.P2);
+            KatanaOrientation.SetDefaultCalibration(Player.PLAYER.P1);
+            KatanaOrientation.SetDefaultCalibration(Player.PLAYER.P2);
         
             isGamePaused = false;
         }
@@ -264,12 +310,12 @@ namespace Init
         private void Pause()
         {
             // Désactivation du HUD des joueurs
-            player1Ui.SetActive(false);
-            player2Ui.SetActive(false);
+            player1HudPanel.SetActive(false);
+            player2HudPanel.SetActive(false);
         
             // Activation du menu pause des joueurs
-            pauseMenuUi.SetActive(true);
-            pauseMenuUi2.SetActive(true);
+            player1PauseMenuPanel.SetActive(true);
+            player2PauseMenuPanel.SetActive(true);
         
             // Mise en pause du temps en jeu
             Time.timeScale = 0f;
@@ -289,8 +335,8 @@ namespace Init
         private void OnApplicationQuit()
         {
             // Déconnexion des manettes à la fermeture du jeu
-            PSMoveAPI.psmove_disconnect(controllerHandler.getController1());
-            PSMoveAPI.psmove_disconnect(controllerHandler.getController2());
+            PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer1Controller());
+            PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer2Controller());
         }
     }
 }

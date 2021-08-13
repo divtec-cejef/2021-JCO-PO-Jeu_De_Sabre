@@ -6,10 +6,13 @@ namespace Init
 {
     public class ControllerConnecter {
 
-        private IntPtr controller_1;
-        private IntPtr controller_2;
+        private IntPtr player1Controller;
+        
+        private IntPtr player2Controller;
+        
         // Variable utilsée pour afficher les erreurs
         private int errors = -1;
+        
         private ControllerHandler handler;
     
         public bool Init()
@@ -20,16 +23,16 @@ namespace Init
         
             if(init == PSMove_Bool.PSMove_True) {
                 /* Récupération des manettes PSMove */
-                controller_1 = PSMoveAPI.psmove_connect_by_id(0);
-                controller_2 = PSMoveAPI.psmove_connect_by_id(1);
+                player1Controller = PSMoveAPI.psmove_connect_by_id(0);
+                player2Controller = PSMoveAPI.psmove_connect_by_id(1);
                 //tracker_1 = PSMoveAPI.psmove_tracker_new();
 
                 /* Vérification de la validité de la manette 1 */
-                if(controller_1 == IntPtr.Zero || PSMoveAPI.psmove_update_leds(controller_1) == 0)
+                if(player1Controller == IntPtr.Zero || PSMoveAPI.psmove_update_leds(player1Controller) == 0)
                     errors = 0;
 
                 /* Vérification de la validité de la manette 2 */
-                if (controller_2 == IntPtr.Zero || PSMoveAPI.psmove_update_leds(controller_2) == 0)
+                if (player2Controller == IntPtr.Zero || PSMoveAPI.psmove_update_leds(player2Controller) == 0)
                 {
                     if (errors == 0)
                         errors = 2;
@@ -43,7 +46,7 @@ namespace Init
             
                 // Création d'un ControllerHandler permettant de stocker les manettes durant le jeu
                 Debug.Log("\tGénération du gestionnaire des manettes...");
-                handler = new ControllerHandler(controller_1, controller_2);
+                handler = new ControllerHandler(player1Controller, player2Controller);
                 return true;
 
             } 
@@ -56,7 +59,7 @@ namespace Init
         /// Permet de récupérer le handler des manettes pour les réutiliser ailleurs
         /// </summary>
         /// <returns>Le handler des manettes</returns>
-        public ControllerHandler getHandler()
+        public ControllerHandler GetHandler()
         {
             return handler;
         }
@@ -65,7 +68,7 @@ namespace Init
         /// Permet de récupérer les erreurs relatives à la connection des manettes
         /// </summary>
         /// <returns>L'erreur de la connection</returns>
-        public String getError()
+        public String GetError()
         {
             String error = null;
             switch (errors)
