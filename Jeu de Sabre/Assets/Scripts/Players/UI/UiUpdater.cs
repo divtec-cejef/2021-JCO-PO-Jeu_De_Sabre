@@ -29,6 +29,18 @@ namespace Players.UI
 
         private bool m_IsSoundPlaying;
     
+        
+        /// <summary>
+        /// Constructeur du UiUpdater
+        /// </summary>
+        /// <param name="player1ScoreText">Le texte correspondant au score du joueur 1</param>
+        /// <param name="player2ScoreText">Le texte correspondant au score du joueur 2</param>
+        /// <param name="player1StaminaSlider">Le slider correspondant a la stamina du joueur 1</param>
+        /// <param name="player2StaminaSlider">Le slider correspondant a la stamina du joueur 2</param>
+        /// <param name="player1TimerText">Le texte correspondant au timer du joueur 1</param>
+        /// <param name="player2TimerText">Le texte correspondant au timer du joueur 2</param>
+        /// <param name="player1ParadeSlider">Le slider correspondant a la slider du joueur 1</param>
+        /// <param name="player2ParadeSlider">Le slider correspondant a la slider du joueur 2</param>
         public UiUpdater(TextMeshProUGUI player1ScoreText, TextMeshProUGUI player2ScoreText, Slider player1StaminaSlider, Slider player2StaminaSlider, TextMeshProUGUI player1TimerText, TextMeshProUGUI player2TimerText, Slider player1ParadeSlider, Slider player2ParadeSlider)
         {
             m_IsSoundPlaying = false;
@@ -52,6 +64,10 @@ namespace Players.UI
             this.player2ParadeSlider.maxValue = GameInit.GetGameConfig().parade_duration;
         }
 
+        /// <summary>
+        /// Permet de mettre à jour le score
+        /// </summary>
+        /// <param name="player">Le joueur auquel on veut mettre à jour le score</param>
         public void OnScoreUpdate(Player.PLAYER player)
         {
             if (player == Player.PLAYER.P1)
@@ -60,19 +76,24 @@ namespace Players.UI
                 player2ScoreText.text = FormatScore(Player.GetScore(player));
         }
 
-
+        /// <summary>
+        /// Permet de mettre à jour la stamina
+        /// </summary>
+        /// <param name="player">Le joueur auquel on veut mettre à jour la stamina</param>
         public void OnStaminaUpdate(Player.PLAYER player)
         {
             if (player == Player.PLAYER.P1)
-            {
                 player1StaminaSlider.value = Player.GetStamina(player);
-            }
+            
             else
-            {
                 player2StaminaSlider.value = Player.GetStamina(player);
-            }
         }
 
+        /// <summary>
+        /// Permet de formater le score au format 0000
+        /// </summary>
+        /// <param name="score">Le score a formater</param>
+        /// <returns>Le score formaté</returns>
         private String FormatScore(int score)
         {
             String scoreString;
@@ -95,11 +116,19 @@ namespace Players.UI
             return "Score : " + scoreString;
         }
     
+        /// <summary>
+        /// Permet de mettre à jour le timer
+        /// </summary>
         public void OnTimerUpdate()
         {
-            player1TimerText.text = player2TimerText.text = FormatTime(GameInit.GetTimer().getTimer());
+            player1TimerText.text = player2TimerText.text = FormatTime(GameInit.GetTimer().GetTimer());
         }
     
+        /// <summary>
+        /// Permet de formatter le timer au format 00:00
+        /// </summary>
+        /// <param name="time">Le timer a formatter</param>
+        /// <returns>Le timer formatté</returns>
         private String FormatTime(int time)
         {
             String format = "";
@@ -130,6 +159,10 @@ namespace Players.UI
             return format;
         }
 
+        /// <summary>
+        /// Permet de mettre à jour l'affichage au déclenchement de la parade
+        /// </summary>
+        /// <param name="player">Le joueur auquel on veut mettre à jour la parade</param>
         public void OnParadeEnabled(Player.PLAYER player)
         {
             if (player == Player.PLAYER.P1)
@@ -144,6 +177,10 @@ namespace Players.UI
             }
         }
         
+        /// <summary>
+        /// Permet de mettre à jour l'affichage de la parade
+        /// </summary>
+        /// <param name="player">Le joueur auquel on veut mettre à jour la parade</param>
         public void OnParadeUpdate(Player.PLAYER player)
         {
             switch (player)
@@ -160,6 +197,10 @@ namespace Players.UI
             }
         }
 
+        /// <summary>
+        /// Permet de mettre à jour l'affichage à l'arrêt de la parade
+        /// </summary>
+        /// <param name="player">Le joueur auquel on veut mettre à jour la parade</param>
         public void OnParadeDisabled(Player.PLAYER player)
         {
             switch (player)
@@ -206,6 +247,5 @@ namespace Players.UI
                 }
             }
         }
-    
     }
 }

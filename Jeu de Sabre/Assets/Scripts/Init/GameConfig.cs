@@ -29,14 +29,5 @@ namespace Init
         public int stun_multiplier;
         
         public float katana_lerp_duration;
-
-
-        // public String getValue()
-        // {
-        //     return game_time + " " + run_out_of_time + " " + parade_duration + " " + parade_multiplier + " " +
-        //            parade_stamina_decrease_rate + " " + stamina_amount + " " + stamina_regeneration_rate + " " +
-        //            attack_score_amount + " " +
-        //            attack_stamina_decrease + " " + stun_multiplier + " " + katana_lerp_duration;
-        // }
     }
 }

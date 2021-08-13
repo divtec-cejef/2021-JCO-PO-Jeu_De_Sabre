@@ -23,8 +23,7 @@ namespace Collisions
                 //Physics.IgnoreCollision(other.collider, katana_1.GetComponent<Collider>(), true);
                 return;
             }
-        
-        
+            
             // Si le joueur 1 est en parade, baisse de la stamina du joueur 2
             if (GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParade())
             {
@@ -37,7 +36,7 @@ namespace Collisions
                 Player.SetStamina(Player.PLAYER.P1, 0);
             }
         
-            // TODO si ils sont les deux en parade bah c'est celui qui y est depuis le moins de temps qui gagne je pense
+            // TODO si ils sont les deux en parade bah c'est celui qui y est depuis le moins de temps qui gagne
 
             print("1 : " + GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParade() + ". 2 : " +
                   GameInit.GetPlayer2KatanaOrientation().GetPlayerParade().GetParade() + ".");

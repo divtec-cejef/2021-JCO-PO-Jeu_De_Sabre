@@ -69,6 +69,5 @@ namespace Players
         {
             return Stamina.GetStamina(j);
         }
-    
     }
 }

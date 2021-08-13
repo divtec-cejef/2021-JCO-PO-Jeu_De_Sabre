@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using Init;
 using UnityEngine;
 
@@ -44,15 +43,6 @@ namespace Mouvements.Orientation
         
             player1KatanaOrientation.onUpdate();
             //plot.AddKey(Time.realtimeSinceStartup, KOrientation.getY());
-        }
-        
-        // TODO ca c'est pour les déplacements au clavier mais ca va dégager
-        private void FixedUpdate()
-        {
-            if (isInitDone)
-            {
-                player1KatanaOrientation.onFixedUpdate();
-            }
         }
     }
 }

@@ -7,7 +7,6 @@ namespace Camera
 {
     public class CameraShaking : MonoBehaviour
     {
-
         private CinemachineVirtualCamera player1VirtualCamera;
         
         private CinemachineVirtualCamera player2VirtualCamera;
@@ -20,13 +19,25 @@ namespace Camera
         
         private float player2Intensity;
 
-        public void Init(CinemachineVirtualCamera vCam1, CinemachineVirtualCamera vCam2)
+        /// <summary>
+        /// Initialisation du tremblement des caméras
+        /// </summary>
+        /// <param name="player1VirtualCamera">La caméra virtuelle du joueur 1</param>
+        /// <param name="player2VirtualCamera">La caméra virtuelle du joueur 2</param>
+        public void Init(CinemachineVirtualCamera player1VirtualCamera, CinemachineVirtualCamera player2VirtualCamera)
         {
             print("\tRécupération des caméras virtuelles...");
-            this.player1VirtualCamera = vCam1;
-            this.player2VirtualCamera = vCam2;
+            this.player1VirtualCamera = player1VirtualCamera;
+            this.player2VirtualCamera = player2VirtualCamera;
         }
 
+        /// <summary>
+        /// Permet de faire trembler la caméra du joueur passé en paramètre
+        /// </summary>
+        /// <param name="player">Le joueur auquel on veut faire trembler la caméra</param>
+        /// <param name="intensity">L'intensité du tremblement</param>
+        /// <param name="duration">La durée du tremblement</param>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public void ShakeCamera(Player.PLAYER player, float intensity, float duration)
         {
             switch (player)
@@ -48,6 +59,11 @@ namespace Camera
             }
         }
 
+        /// <summary>
+        /// Permet de faire tremblé la caméra
+        /// </summary>
+        /// <param name="vCam">La caméra virtuel du joueur</param>
+        /// <param name="intensity">L'intensité du tremblement</param>
         private void Shake(CinemachineVirtualCamera vCam, float intensity)
         {
             CinemachineBasicMultiChannelPerlin perlin =

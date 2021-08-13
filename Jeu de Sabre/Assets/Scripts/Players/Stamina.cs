@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Runtime.CompilerServices;
 using Init;
 using UnityEngine;
 
@@ -13,17 +10,11 @@ namespace Players
 
         private static bool canPlayer1Regen;
         private static bool canPlayer2Regen;
-        //
-        // public static bool canRegenJ1 = true;
-        // public static bool canRegenJ2 = true;
-        //
-        // public static float timerJ1 = 0;
-        // public static float timerJ2 = 0;
 
         private void Awake()
         {
             print("\tLancement de la mise à jour de la stamina...");
-            //StartCoroutine(UpdateStamina());
+            
             player1Stamina = GameInit.GetGameConfig().stamina_amount;
             player2Stamina = GameInit.GetGameConfig().stamina_amount;
 
@@ -125,58 +116,6 @@ namespace Players
             }
         }
 
-
-        // public static void resetTimer(Player.Joueur j)
-        // {
-        //     if (j == Player.Joueur.P1)
-        //         timerJ1 = 0.0f;
-        //     else
-        //         timerJ2 = 0.0f;
-        // }
-    
-        // private void Update()
-        // {
-        //     
-        //     if (!canRegenJ1)
-        //         timerJ1 += Time.deltaTime;
-        //
-        //     if (!canRegenJ2)
-        //         timerJ2 += Time.deltaTime;
-        //
-        //     if (timerJ1 >= 2.0f)
-        //     {
-        //         canRegenJ1 = true;
-        //         timerJ1 = 0.0f;
-        //     }
-        //
-        //     if (timerJ2 >= 2.0f)
-        //     {
-        //         canRegenJ2 = true;
-        //         timerJ2 = 0.0f;
-        //     }
-        //
-        //     if (stamJ1 < GameInit.getGameConfig().stamina_amount && canRegenJ1)
-        //     {
-        //         if (stamJ1 + GameInit.getGameConfig().stamina_regeneration_rate >
-        //             GameInit.getGameConfig().stamina_amount)
-        //             stamJ1 = GameInit.getGameConfig().stamina_amount;
-        //         else
-        //             updateStamina(Player.Joueur.P1, GameInit.getGameConfig().stamina_regeneration_rate);
-        //     }
-        //
-        //     if (stamJ2 < GameInit.getGameConfig().stamina_amount && canRegenJ2)
-        //     {
-        //         if (stamJ2 + GameInit.getGameConfig().stamina_regeneration_rate >
-        //             GameInit.getGameConfig().stamina_amount)
-        //             stamJ2 = GameInit.getGameConfig().stamina_amount;
-        //         else
-        //             updateStamina(Player.Joueur.P2, GameInit.getGameConfig().stamina_regeneration_rate);
-        //     }
-        //     //print(stamJ1);
-        // }
-        // }
-
-
         private void Update()
         {
             if(canPlayer1Regen)
@@ -205,54 +144,37 @@ namespace Players
                 UpdateStamina(Player.PLAYER.P2, GameInit.GetGameConfig().stamina_regeneration_rate);
         }
 
-        // private static IEnumerator UpdateStamina()
-        // {
-        //     while (true)
-        //     {
-        //         yield return new WaitForSecondsRealtime(GameInit.GetGameConfig().stamina_regeneration_time);
-        //     
-        //         if(canPlayer1Regen)
-        //         {
-        //             if (player1Stamina < GameInit.GetGameConfig().stamina_amount /* || !GameInit.getKatanaPlayer1().getParade().getParade()*/)
-        //             {
-        //                 if (player1Stamina + GameInit.GetGameConfig().stamina_regeneration_rate >
-        //                     GameInit.GetGameConfig().stamina_amount)
-        //                     player1Stamina = GameInit.GetGameConfig().stamina_amount;
-        //                 else
-        //                     UpdateStamina(Player.PLAYER.P1, GameInit.GetGameConfig().stamina_regeneration_rate);
-        //             }
-        //         }
-        //
-        //         if (!canPlayer2Regen) 
-        //             continue;
-        //
-        //         if (!(player2Stamina < GameInit.GetGameConfig().stamina_amount)) 
-        //             continue;
-        //         
-        //         if (player2Stamina + GameInit.GetGameConfig().stamina_regeneration_rate >
-        //             GameInit.GetGameConfig().stamina_amount)
-        //
-        //             player2Stamina = GameInit.GetGameConfig().stamina_amount;
-        //         else
-        //             UpdateStamina(Player.PLAYER.P2, GameInit.GetGameConfig().stamina_regeneration_rate);
-        //     }
-        // }
-
+        /// <summary>
+        /// Permet de modifier si le joueur 1 peut régénérer
+        /// </summary>
+        /// <param name="canPlayer1Regen">Est-ce que le joueur 1 peut régénérer</param>
         public static void CanPlayer1Regen(bool canPlayer1Regen)
         {
             Stamina.canPlayer1Regen = canPlayer1Regen;
         }
         
+        /// <summary>
+        /// Permet de récupérer si le joueur 1 peut régénérer
+        /// </summary>
+        /// <returns>Est-ce que le joueur 1 peut régénérer</returns>
         public static bool CanPlayer1Regen()
         {
             return canPlayer1Regen;
         }
         
+        /// <summary>
+        /// Permet de modifier si le joueur 2 peut régénérer
+        /// </summary>
+        /// <param name="canPlayer1Regen">Est-ce que le joueur 2 peut régénérer</param>
         public static void CanPlayer2Regen(bool canPlayer2Regen)
         {
             Stamina.canPlayer2Regen = canPlayer2Regen;
         }
         
+        /// <summary>
+        /// Permet de récupérer si le joueur 2 peut régénérer
+        /// </summary>
+        /// <returns>Est-ce que le joueur 2 peut régénérer</returns>
         public static bool CanPlayer2Regen()
         {
             return canPlayer2Regen;

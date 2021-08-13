@@ -2,7 +2,6 @@ using System;
 using Init;
 using Players;
 using UnityEngine;
-using UnityEngine.InputSystem.Interactions;
 using UnityEngine.UI;
 
 namespace Mouvements.Orientation
@@ -66,8 +65,6 @@ namespace Mouvements.Orientation
             PSMoveAPI.psmove_enable_orientation(playerController, PSMove_Bool.PSMove_True);
             PSMoveAPI.psmove_reset_orientation(playerController);
         
-            //parade = new Parade(GameInit.getGameConfig().parade_duration, GameInit.getGameConfig().parade_duration, FXParade, FXParade2, FXParadePos, katanaAxis, player);
-        
             // Initialisation de la parade
             Debug.Log("\tConfiguration de la parade...");
             playerKatanaAxis.AddComponent<Parade.Parade>().Init(GameInit.GetGameConfig().parade_duration, playerParadeFx1, playerParadeFx2, playerParadeFxPos, playerKatanaAxis, player, this, paradeSlider);
@@ -87,42 +84,9 @@ namespace Mouvements.Orientation
             if (!canMove)
                 return;
 
-            // // TODO c'est pour le clavier
-            // dirX = Input.GetAxis("Horizontal") * 5;
-            // dirY = Input.GetAxis("Vertical") * 5;
-
             // Met à jour la led de la manette
             PSMoveAPI.psmove_update_leds(playerController);
         
-            // Met à jour le cooldown de la parade
-            // parade.UpdateParadeCooldown();
-
-            // Récupération de la valeur de la gachette de la manette
-            PSMoveAPI.psmove_poll(playerController);
-            char trigger = PSMoveAPI.psmove_get_trigger(playerController);
-
-            // Si le joueur est en parade, mise à jour de la parade
-            // [mise à jour]
-            
-            // Si la gachette est enfoncé
-            // ('ÿ' est la valeur retourné par l'API PSMove lorsque la gachette est enfoncée au maximum)
-            // if (trigger == 'ÿ')
-            // {
-            //     // Activation de la parade chez le joueur correspondant
-            //     if (player == Player.Joueur.P1)
-            //         parade.OnParadeEnabled(ref currentOrientation, -axeX, axeZ, axeY, ow, Color.blue);
-            //     else
-            //         parade.OnParadeEnabled(ref currentOrientation, axeX, axeZ, -axeY, ow, Color.red);
-            // }
-
-            // Si le joueur n'est pas en parade, réactivation des controles du sabre
-            
-            // Si la gachette est relaché ou que la parade a été annulée ou que le joueur n'est plus en parade
-            // if (trigger != 'ÿ' || /*parade.getCanceled() ||*/ !parade.getParade())
-            // {
-            // Désactivation de la parade
-            //parade.OnParadeDisabled();
-
             // Récupération de l'orientation
             PSMoveAPI.psmove_poll(playerController);
             PSMoveAPI.psmove_get_orientation(playerController, ref ow, ref axeX, ref axeY, ref axeZ);
@@ -164,27 +128,12 @@ namespace Mouvements.Orientation
             prevAxeY = axeY;
             prevOw = ow;
 
-        
             // Sauvegarde de la rotation
             currentOrientation = new Quaternion(-axeX, axeZ, axeY, ow);
-            // player == Player.PLAYER.P1
-            //     ? new Quaternion(-axeX, axeZ, axeY, ow)
-            //     : new Quaternion(axeX, axeZ, -axeY, ow);
 
-            //Debug.Log(currentOrientation);
-            
             // Application de la rotation de la manette à l'objet en jeu
             playerKatanaAxis.transform.localRotation =
                 Quaternion.Lerp(playerKatanaAxis.transform.localRotation, currentOrientation, GameInit.GetGameConfig().katana_lerp_duration);
-            //}
-        }
-
-        public void onFixedUpdate()
-        {
-            // //TODO les déplacements au clavier
-            // var c = new Vector3(dirX, dirY, rbKatana.velocity.z);
-            // // Debug.Log(c);
-            // rbKatana.velocity = c;
         }
 
         /// <summary>
@@ -202,51 +151,34 @@ namespace Mouvements.Orientation
         /// <param name="player">Le joueur auquel on souhaite réinitialiser la manette</param>
         public static void SetDefaultCalibration(Player.PLAYER player)
         {
-            if (player == Player.PLAYER.P1)
-            {
-                PSMoveAPI.psmove_reset_orientation(GameInit.GetControllerHandler().GetPlayer1Controller());
-            }
-            else
-            {
-                PSMoveAPI.psmove_reset_orientation(GameInit.GetControllerHandler().GetPlayer2Controller());
-            }
-        
+            PSMoveAPI.psmove_reset_orientation(player == Player.PLAYER.P1 ? GameInit.GetControllerHandler().GetPlayer1Controller() : GameInit.GetControllerHandler().GetPlayer2Controller());
         }
 
-
+        /// <summary>
+        /// Permet de savoir si le katana peut bouger
+        /// </summary>
+        /// <returns>Est-ce que le katana peut bouger</returns>
         public bool CanMove()
         {
             return canMove;
         }
         
+        /// <summary>
+        /// Permet de modifier si le katana peut bouger
+        /// </summary>
+        /// <param name="canMove">Est-ce que le katana peut bouger</param>
         public void CanMove(bool canMove)
         {
             this.canMove = canMove;
         }
 
+        /// <summary>
+        /// Permet de récupérer l'orientation actuel du katana
+        /// </summary>
+        /// <returns>L'orientation actuel du katana</returns>
         public Quaternion getCurrentQuaternion()
         {
             return currentOrientation;
-        }
-        
-        public float getX()
-        {
-            return axeX;
-        }
-    
-        public float getY()
-        {
-            return axeY;
-        }
-    
-        public float getZ()
-        {
-            return axeZ;
-        }
-    
-        public float getW()
-        {
-            return ow;
         }
     }
 }

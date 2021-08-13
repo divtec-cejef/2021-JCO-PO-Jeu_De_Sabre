@@ -17,6 +17,5 @@ namespace Mouvements
             Vector3 newPosition = targetOffset.transform.position + follower;
             transform.position = newPosition;
         }
-
     }
 }

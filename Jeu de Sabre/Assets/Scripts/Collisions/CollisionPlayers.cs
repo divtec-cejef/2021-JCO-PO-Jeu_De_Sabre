@@ -67,8 +67,6 @@ namespace Collisions
             {
                 //Debug.Log("Pas assez de stamina, attends un peu");
             }
-
-        
         }
     }
 }

@@ -15,23 +15,27 @@ namespace Init
         
         private ControllerHandler handler;
     
+        /// <summary>
+        /// Initialisation des manettes
+        /// </summary>
+        /// <returns>Si une erreur a été détecté</returns>
         public bool Init()
         {
-        
-            /* Initialisation de l'API PSMove */
+            // Initialisation de l'API PSMove
             PSMove_Bool init = PSMoveAPI.psmove_init(PSMoveAPI.PSMove_Version.PSMOVE_CURRENT_VERSION);
         
             if(init == PSMove_Bool.PSMove_True) {
-                /* Récupération des manettes PSMove */
+                // Récupération des manettes PSMove
                 player1Controller = PSMoveAPI.psmove_connect_by_id(0);
                 player2Controller = PSMoveAPI.psmove_connect_by_id(1);
+                
                 //tracker_1 = PSMoveAPI.psmove_tracker_new();
 
-                /* Vérification de la validité de la manette 1 */
+                // Vérification de la validité de la manette 1
                 if(player1Controller == IntPtr.Zero || PSMoveAPI.psmove_update_leds(player1Controller) == 0)
                     errors = 0;
 
-                /* Vérification de la validité de la manette 2 */
+                // Vérification de la validité de la manette 2
                 if (player2Controller == IntPtr.Zero || PSMoveAPI.psmove_update_leds(player2Controller) == 0)
                 {
                     if (errors == 0)
@@ -50,7 +54,7 @@ namespace Init
                 return true;
 
             } 
-            /* Si l'API PSMove n'a pas pu être initialisé */
+            // Si l'API PSMove n'a pas pu être initialisé
             errors = 3;
             return false;
         }

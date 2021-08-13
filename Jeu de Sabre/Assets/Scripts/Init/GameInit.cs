@@ -252,6 +252,10 @@ namespace Init
             return _soundHandler;
         }
 
+        /// <summary>
+        /// Permet de récupérer la classe gérant les tremblements de caméra
+        /// </summary>
+        /// <returns></returns>
         public static CameraShaking GetCameraShaking()
         {
             return _cameraShaking;
@@ -261,7 +265,7 @@ namespace Init
         {
             // Dès que le timer est initialisé, mise à jour de celui-ci
             if(isTimerInit)
-                GetTimer().onUpdate();
+                GetTimer().OnUpdate();
         
             // Affichage ou désactivation du menu pause lors de l'appui sur la touche Echape
             if (Input.GetKeyDown(KeyCode.Escape))
