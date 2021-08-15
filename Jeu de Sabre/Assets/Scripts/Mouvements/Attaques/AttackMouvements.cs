@@ -42,7 +42,7 @@ public class AttackMouvements
     public void onAttack(Player.PLAYER attacker, Player.PLAYER defender)
     {
         GameInit.GetCameraShaking().ShakeCamera(attacker, 1.0f, .1f);
-        GameInit.GetCameraShaking().ShakeCamera(defender, 1.0f, .2f);
+        GameInit.GetCameraShaking().ShakeCamera(defender, 1.0f, .3f);
         
         // if (attacker == Player.Joueur.P1)
         // {

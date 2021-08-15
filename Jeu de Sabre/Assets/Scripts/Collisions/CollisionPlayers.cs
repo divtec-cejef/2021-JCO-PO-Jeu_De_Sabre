@@ -1,6 +1,8 @@
+using System;
 using Init;
 using Players;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Collisions
 {
@@ -13,14 +15,31 @@ namespace Collisions
         [SerializeField] private GameObject player1Character;
         
         [SerializeField] private GameObject player1CharacterTransparent;
-    
+        
+        [SerializeField] private Transform player1LeftCollisionCheck;
+        
+        [SerializeField] private Transform player2LeftCollisionCheck;
+        
+        [SerializeField] private Transform player1RightCollisionCheck;
+        
+        [SerializeField] private Transform player2RightCollisionCheck;
+
+        [SerializeField] private LayerMask sabre1;
+        
+        [SerializeField] private LayerMask sabre2;
+        
         [SerializeField] private GameObject player2Character;
         
         [SerializeField] private GameObject player2CharacterTransparent;
 
+        [SerializeField] private bool updateRotation;
+
         // Le sabre du joueur 2 (Le sabre du joueur 1 est l'objet associé à ce script)
-        [SerializeField]
-        private GameObject player2KatanaObject;
+        [SerializeField] private GameObject player2KatanaObject;
+        
+        private static float rotTimer = 0f;
+        private static float backTimer = 0f;
+        private static bool isColliding;
     
         //private float timer = 0;
     
@@ -30,6 +49,103 @@ namespace Collisions
         {
             // Initialisaiton de la classe chargée d'effectuer les mouvements des joueurs lors d'une attaque
             attack = new AttackMouvements(player1Axis, player2Axis, player1Character, player1CharacterTransparent, player2Character, player2CharacterTransparent);
+        }
+
+
+        private void Update()
+        {
+            if (!updateRotation) return;
+
+            float rotationTime = Random.Range(.05f, .25f);
+            float rotationAngle = Random.Range(100, 200);
+            bool backwardMouvement = Random.Range(0, 2) == 0;
+            float backwardTime = Random.Range(.02f, .1f);
+            float backwardDistance = Random.Range(1, 10);
+            
+            var position = player1LeftCollisionCheck.position;
+            Vector3 player1StartLeft = new Vector3(position.x, position.y - 1.1f, position.z);
+            Vector3 player1EndLeft = new Vector3(position.x, position.y + 1.1f, position.z);
+            bool isPlayer1Left = Physics.CheckCapsule(player1StartLeft, player1EndLeft, 0.1f, sabre2);
+
+            if (isPlayer1Left && rotTimer == 0 && !isColliding)
+            {
+                Travelling.anglesToRotate = new Vector3(0, -rotationAngle, 0);
+                if (backwardMouvement)
+                {
+                    Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
+                    backTimer = .01f;
+                } 
+                rotTimer = .01f;
+            }
+
+            var position1 = player1RightCollisionCheck.position;
+            Vector3 player1StatRight = new Vector3(position1.x, position1.y - 1.1f, position1.z);
+            Vector3 player1EndRight = new Vector3(position1.x, position1.y + 1.1f, position1.z);
+            bool isPlayer1Right = Physics.CheckCapsule(player1StatRight, player1EndRight, 0.1f, sabre2);
+
+            if (isPlayer1Right && rotTimer == 0 && !isColliding)
+            {
+                Travelling.anglesToRotate = new Vector3(0, +rotationAngle, 0);
+                if (backwardMouvement)
+                {
+                    Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
+                    backTimer = .01f;
+                } 
+                rotTimer = .01f;
+            }
+
+            var position2 = player2LeftCollisionCheck.position;
+            Vector3 player2StartLeft = new Vector3(position2.x, position2.y - 1.1f, position2.z);
+            Vector3 player2EndLeft = new Vector3(position2.x, position2.y + 1.1f, position2.z);
+            bool isPlayer2Left = Physics.CheckCapsule(player2StartLeft, player2EndLeft, 0.1f, sabre1);
+
+            if (isPlayer2Left && rotTimer == 0 && !isColliding)
+            {
+                Travelling.anglesToRotate = new Vector3(0, -rotationAngle, 0);
+                if (backwardMouvement)
+                {
+                    Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
+                    backTimer = .01f;
+                } 
+                rotTimer = .01f;
+            }
+
+            var position3 = player2RightCollisionCheck.position;
+            Vector3 player2StartRight = new Vector3(position3.x, position3.y - 1.1f, position3.z);
+            Vector3 player2EndRight = new Vector3(position3.x, position3.y + 1.1f, position3.z);
+            bool isPlayer2Right = Physics.CheckCapsule(player2StartRight, player2EndRight, 0.1f, sabre1);
+
+            if (isPlayer2Right && rotTimer == 0 && !isColliding)
+            {
+                Travelling.anglesToRotate = new Vector3(0, +rotationAngle, 0);
+                if (backwardMouvement)
+                {
+                    Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
+                    backTimer = .01f;
+                } 
+                rotTimer = .01f;
+            }
+            
+            if (rotTimer != 0f)
+            {
+                isColliding = true;
+                rotTimer += Time.deltaTime;
+                if (rotTimer > rotationTime)
+                {
+                    isColliding = false;
+                    rotTimer = 0f;
+                    Travelling.anglesToRotate = Vector3.zero;
+                }
+            }
+            if (backTimer != 0f)
+            {
+                backTimer += Time.deltaTime;
+                if (backTimer > rotationTime)
+                {
+                    backTimer = 0f;
+                    Travelling.distanceToMove = Vector3.zero;
+                }
+            }
         }
 
         private void OnTriggerEnter(Collider other)

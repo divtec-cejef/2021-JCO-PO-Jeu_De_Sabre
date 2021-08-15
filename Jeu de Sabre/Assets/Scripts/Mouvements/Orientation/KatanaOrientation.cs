@@ -57,8 +57,6 @@ namespace Mouvements.Orientation
             this.playerParadeFx2 = playerParadeFx2;
             this.playerParadeFxPos = playerParadeFxPos;
             this.playerKatanaAxis = playerKatanaAxis;
-            // TODO ca aussi c'est pour les déplacements clavier 
-            //rbKatana = playerKatanaAxis.GetComponent<Rigidbody>();
     
             // Activation et réinitialisation de l'orientation de la manette
             Debug.Log("\tActivation et réinitialisation de l'orientation de la manette...");
