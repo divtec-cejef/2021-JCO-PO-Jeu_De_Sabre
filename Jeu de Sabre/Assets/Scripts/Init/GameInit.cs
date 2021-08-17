@@ -30,6 +30,8 @@ namespace Init
         private static KatanaOrientation _katana2;
         
         private static CameraShaking _cameraShaking;
+
+        private static EmoteHandler _emoteHandler;
         
         private MultiDisplay multiDisplay;
         
@@ -169,6 +171,10 @@ namespace Init
                 print("Configuration du tremblement des cameras...");
                 gameObject.AddComponent<CameraShaking>().Init(player1VirtualCamera, player2VirtualCamera);
                 _cameraShaking = gameObject.GetComponent<CameraShaking>();
+
+                // Initialisation des emotes
+                print("Initialisation des emotes...");
+                _emoteHandler = new EmoteHandler();
                 
                 // Activation de la Led des manettes
                 PSMoveUtils.SetLed(Player.PLAYER.P1, Color.yellow);
@@ -259,6 +265,11 @@ namespace Init
         public static CameraShaking GetCameraShaking()
         {
             return _cameraShaking;
+        }
+
+        public static EmoteHandler GetEmoteHandler()
+        {
+            return _emoteHandler;
         }
     
         private void Update()

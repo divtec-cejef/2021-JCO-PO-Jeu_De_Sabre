@@ -32,7 +32,13 @@ namespace Collisions
         
         [SerializeField] private GameObject player2CharacterTransparent;
 
+        [SerializeField] private GameObject player1Face;
+        
+        [SerializeField] private GameObject player2Face;
+
         [SerializeField] private bool updateRotation;
+        
+        [SerializeField] private bool updateEmote;
 
         // Le sabre du joueur 2 (Le sabre du joueur 1 est l'objet associé à ce script)
         [SerializeField] private GameObject player2KatanaObject;
@@ -170,10 +176,23 @@ namespace Collisions
             {
                 // Mise à jour du score du joueur
                 Player.UpdatePlayerScore(player, GameInit.GetGameConfig().attack_score_amount);
-            
+                
                 // Animations et mouvements de l'attaque
                 attack.onAttack(player, player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1);
-            
+
+                if(updateEmote){
+                    if (player == Player.PLAYER.P1)
+                    {
+                        player2Face.GetComponent<Renderer>().material =
+                            GameInit.GetEmoteHandler().GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT);
+                    }
+                    else
+                    {
+                        player1Face.GetComponent<Renderer>().material =
+                            GameInit.GetEmoteHandler().GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT);
+                    }
+                }
+                
                 // Le son TODO changer ca plus tard
                 var position = new Vector3(11.9f, 11.0f, 15.6f);
                 var rotation = new Quaternion(0, 0, 0, 0);
