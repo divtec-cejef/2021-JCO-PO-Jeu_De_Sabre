@@ -4,8 +4,8 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Map.unity
-  isLoaded: 1
-  isActive: 1
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/OptiCamV2.unity
   isLoaded: 0
@@ -14,4 +14,8 @@ sceneSetups:
 - path: Assets/Scenes/test.unity
   isLoaded: 0
   isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/LaMapAMaxime.unity
+  isLoaded: 1
+  isActive: 1
   isSubScene: 0
