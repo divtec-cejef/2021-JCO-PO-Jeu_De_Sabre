@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 using Random = UnityEngine.Random;
 
 public class EmoteHandler : MonoBehaviour
@@ -22,8 +21,8 @@ public class EmoteHandler : MonoBehaviour
     private bool resetFace = false;
     private float timer;
     private GameObject playerFace;
-    
-    public EmoteHandler()
+
+    private void Awake()
     {
         timer = 0;
         sad = EmotePlayer.GetSadEmote();
@@ -42,7 +41,6 @@ public class EmoteHandler : MonoBehaviour
                 rand = Random.Range(0, sad.Count - 1);
                 currentEmote =  sad[rand];
                 break;
-                
             case EMOTE_TYPE.ANGRY:
                 rand = Random.Range(0, angry.Count - 1);
                 currentEmote = angry[rand];
@@ -58,36 +56,22 @@ public class EmoteHandler : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, null);
         }
-
-        this.playerFace = playerFace;
-        timer = resetTime;
-        this.resetFace = resetFace;
+        StartCoroutine(ResetFace(playerFace, resetTime));
         return currentEmote;
     }
 
-    private void Update()
+    IEnumerator ResetFace(GameObject playerFace, float timer)
     {
-        if (resetFace)
+        yield return new WaitForSeconds(timer);
+        if (0 == Random.Range(0, 1))
         {
-            if (timer > 0)
-            {
-                timer -= Time.deltaTime;
-            }
-            else
-            {
-                resetFace = false;
-                
-                if (0 == Random.Range(0, 1))
-                {
-                    playerFace.GetComponent<Renderer>().material =
-                        GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false); 
-                }
-                else
-                {
-                    playerFace.GetComponent<Renderer>().material =
-                        GetRandomEmote(EMOTE_TYPE.ANGRY, playerFace, 0, false); 
-                }
-            }
+            playerFace.GetComponent<Renderer>().material =
+                GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false); 
+        }
+        else
+        {
+            playerFace.GetComponent<Renderer>().material =
+                GetRandomEmote(EMOTE_TYPE.ANGRY, playerFace, 0, false); 
         }
     }
 }

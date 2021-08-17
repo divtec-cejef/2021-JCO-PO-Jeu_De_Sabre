@@ -176,6 +176,8 @@ namespace Init
 
                 // Initialisation des emotes
                 print("Initialisation des emotes...");
+                gameObject.AddComponent<EmoteHandler>();
+                
                 _player1EmoteHandler = new EmoteHandler();
                 _player2EmoteHandler = new EmoteHandler();
                 
