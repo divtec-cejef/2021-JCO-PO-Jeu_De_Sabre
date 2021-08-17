@@ -2,9 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using Random = UnityEngine.Random;
 
-public class EmoteHandler
+public class EmoteHandler : MonoBehaviour
 {
     public enum EMOTE_TYPE
     {
@@ -18,16 +19,20 @@ public class EmoteHandler
     private List<Material> angry;
     private List<Material> hurt;
     private List<Material> happy;
-
+    private bool resetFace = false;
+    private float timer;
+    private GameObject playerFace;
+    
     public EmoteHandler()
     {
+        timer = 0;
         sad = EmotePlayer.GetSadEmote();
         angry = EmotePlayer.GetAngryEmote();
         hurt = EmotePlayer.GetHurtEmote();
         happy = EmotePlayer.GetHappyEmote();
     }
 
-    public Material GetRandomEmote(EMOTE_TYPE type)
+    public Material GetRandomEmote(EMOTE_TYPE type, GameObject playerFace, float resetTime, bool resetFace)
     {
         int rand;
         Material currentEmote;
@@ -53,7 +58,36 @@ public class EmoteHandler
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, null);
         }
+
+        this.playerFace = playerFace;
+        timer = resetTime;
+        this.resetFace = resetFace;
         return currentEmote;
     }
-    
+
+    private void Update()
+    {
+        if (resetFace)
+        {
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            else
+            {
+                resetFace = false;
+                
+                if (0 == Random.Range(0, 1))
+                {
+                    playerFace.GetComponent<Renderer>().material =
+                        GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false); 
+                }
+                else
+                {
+                    playerFace.GetComponent<Renderer>().material =
+                        GetRandomEmote(EMOTE_TYPE.ANGRY, playerFace, 0, false); 
+                }
+            }
+        }
+    }
 }

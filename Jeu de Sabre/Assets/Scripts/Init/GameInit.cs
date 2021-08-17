@@ -31,7 +31,9 @@ namespace Init
         
         private static CameraShaking _cameraShaking;
 
-        private static EmoteHandler _emoteHandler;
+        private static EmoteHandler _player1EmoteHandler;
+        
+        private static EmoteHandler _player2EmoteHandler;
         
         private MultiDisplay multiDisplay;
         
@@ -149,7 +151,7 @@ namespace Init
                 Katana1.Init();
             
                 print("Initialisation de la rotation du joueur 2...");
-                // Initialisation de l'orientation de la mentte 2
+                // Initialisation de l'orientation de la manette 2
                 _katana2 = new KatanaOrientation(Player.PLAYER.P2, _controllerHandler.GetPlayer2Controller(), player2ParadeFx1,
                     player2ParadeFx2, player2ParadeFxPos, player2KatanaAxis, player2KatanaObject, player2ParadeSlider);
                 Katana2.Init();
@@ -174,7 +176,9 @@ namespace Init
 
                 // Initialisation des emotes
                 print("Initialisation des emotes...");
-                _emoteHandler = new EmoteHandler();
+                _player1EmoteHandler = new EmoteHandler();
+                _player2EmoteHandler = new EmoteHandler();
+                
                 
                 // Activation de la Led des manettes
                 PSMoveUtils.SetLed(Player.PLAYER.P1, Color.yellow);
@@ -267,9 +271,9 @@ namespace Init
             return _cameraShaking;
         }
 
-        public static EmoteHandler GetEmoteHandler()
+        public static EmoteHandler GetEmoteHandler(Player.PLAYER player)
         {
-            return _emoteHandler;
+            return player == Player.PLAYER.P1 ? _player1EmoteHandler : _player2EmoteHandler;
         }
     
         private void Update()

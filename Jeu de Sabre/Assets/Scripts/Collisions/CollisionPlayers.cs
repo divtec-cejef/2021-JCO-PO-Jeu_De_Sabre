@@ -43,7 +43,7 @@ namespace Collisions
         // Le sabre du joueur 2 (Le sabre du joueur 1 est l'objet associé à ce script)
         [SerializeField] private GameObject player2KatanaObject;
         
-        private static float rotTimer = 0f;
+        private static float roteTimer = 0f;
         private static float backTimer = 0f;
         private static bool isColliding;
     
@@ -73,7 +73,7 @@ namespace Collisions
             Vector3 player1EndLeft = new Vector3(position.x, position.y + 1.1f, position.z);
             bool isPlayer1Left = Physics.CheckCapsule(player1StartLeft, player1EndLeft, 0.1f, sabre2);
 
-            if (isPlayer1Left && rotTimer == 0 && !isColliding)
+            if (isPlayer1Left && roteTimer == 0 && !isColliding)
             {
                 Travelling.anglesToRotate = new Vector3(0, -rotationAngle, 0);
                 if (backwardMouvement)
@@ -81,7 +81,7 @@ namespace Collisions
                     Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
                     backTimer = .01f;
                 } 
-                rotTimer = .01f;
+                roteTimer = .01f;
             }
 
             var position1 = player1RightCollisionCheck.position;
@@ -89,7 +89,7 @@ namespace Collisions
             Vector3 player1EndRight = new Vector3(position1.x, position1.y + 1.1f, position1.z);
             bool isPlayer1Right = Physics.CheckCapsule(player1StatRight, player1EndRight, 0.1f, sabre2);
 
-            if (isPlayer1Right && rotTimer == 0 && !isColliding)
+            if (isPlayer1Right && roteTimer == 0 && !isColliding)
             {
                 Travelling.anglesToRotate = new Vector3(0, +rotationAngle, 0);
                 if (backwardMouvement)
@@ -97,7 +97,7 @@ namespace Collisions
                     Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
                     backTimer = .01f;
                 } 
-                rotTimer = .01f;
+                roteTimer = .01f;
             }
 
             var position2 = player2LeftCollisionCheck.position;
@@ -105,7 +105,7 @@ namespace Collisions
             Vector3 player2EndLeft = new Vector3(position2.x, position2.y + 1.1f, position2.z);
             bool isPlayer2Left = Physics.CheckCapsule(player2StartLeft, player2EndLeft, 0.1f, sabre1);
 
-            if (isPlayer2Left && rotTimer == 0 && !isColliding)
+            if (isPlayer2Left && roteTimer == 0 && !isColliding)
             {
                 Travelling.anglesToRotate = new Vector3(0, -rotationAngle, 0);
                 if (backwardMouvement)
@@ -113,7 +113,7 @@ namespace Collisions
                     Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
                     backTimer = .01f;
                 } 
-                rotTimer = .01f;
+                roteTimer = .01f;
             }
 
             var position3 = player2RightCollisionCheck.position;
@@ -121,7 +121,7 @@ namespace Collisions
             Vector3 player2EndRight = new Vector3(position3.x, position3.y + 1.1f, position3.z);
             bool isPlayer2Right = Physics.CheckCapsule(player2StartRight, player2EndRight, 0.1f, sabre1);
 
-            if (isPlayer2Right && rotTimer == 0 && !isColliding)
+            if (isPlayer2Right && roteTimer == 0 && !isColliding)
             {
                 Travelling.anglesToRotate = new Vector3(0, +rotationAngle, 0);
                 if (backwardMouvement)
@@ -129,17 +129,17 @@ namespace Collisions
                     Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
                     backTimer = .01f;
                 } 
-                rotTimer = .01f;
+                roteTimer = .01f;
             }
             
-            if (rotTimer != 0f)
+            if (roteTimer != 0f)
             {
                 isColliding = true;
-                rotTimer += Time.deltaTime;
-                if (rotTimer > rotationTime)
+                roteTimer += Time.deltaTime;
+                if (roteTimer > rotationTime)
                 {
                     isColliding = false;
-                    rotTimer = 0f;
+                    roteTimer = 0f;
                     Travelling.anglesToRotate = Vector3.zero;
                 }
             }
@@ -184,12 +184,12 @@ namespace Collisions
                     if (player == Player.PLAYER.P1)
                     {
                         player2Face.GetComponent<Renderer>().material =
-                            GameInit.GetEmoteHandler().GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT);
+                            GameInit.GetEmoteHandler(Player.PLAYER.P2).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player2Face, 1f, true);
                     }
                     else
                     {
                         player1Face.GetComponent<Renderer>().material =
-                            GameInit.GetEmoteHandler().GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT);
+                            GameInit.GetEmoteHandler(Player.PLAYER.P1).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player1Face, 1f, true);
                     }
                 }
                 
