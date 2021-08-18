@@ -33,6 +33,7 @@ public class EmotePlayer : MonoBehaviour
 
     private void Awake()
     {
+        print("AWAKE");
         _sad_1 = sad_1;
         _sad_2 = sad_2;
         _sad_3 = sad_3;

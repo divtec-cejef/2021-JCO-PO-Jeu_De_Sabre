@@ -12,6 +12,9 @@ namespace Players
         private static bool canPlayer1Regen;
         private static bool canPlayer2Regen;
 
+        public static bool isPlayer1Exhausted;
+        public static bool isPlayer2Exhausted;
+
         private void Awake()
         {
             print("\tLancement de la mise à jour de la stamina...");
@@ -21,6 +24,9 @@ namespace Players
 
             canPlayer1Regen = true;
             canPlayer2Regen = true;
+
+            isPlayer1Exhausted = false;
+            isPlayer2Exhausted = false;
         }
 
         /// <summary>
@@ -120,14 +126,39 @@ namespace Players
         private void Update()
         {
             //Change L'expression du joueur quand il n'a plus de stamina 
-            if (Player.GetStamina(Player.PLAYER.P1) < 10)
+            if (Player.GetStamina(Player.PLAYER.P1) < GameInit.GetGameConfig().attack_stamina_decrease)
             {
-                GameInit.GetEmoteHandler(Player.PLAYER.P1).GetRandomEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face,true);
+                if(!isPlayer1Exhausted)
+                {
+                    isPlayer1Exhausted = true;
+                    GameInit.GetEmoteHandler(Player.PLAYER.P1).SetEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face, false);
+                }
+            }
+            else
+            {
+                if (isPlayer1Exhausted)
+                {
+                    GameInit.GetEmoteHandler(Player.PLAYER.P1).ResetFace(CollisionPlayers._player1Face);
+                    isPlayer1Exhausted = false;
+                }
             }
 
-            if (Player.GetStamina(Player.PLAYER.P2) < 10)
+            //Change L'expression du joueur quand il n'a plus de stamina 
+            if (Player.GetStamina(Player.PLAYER.P2) < GameInit.GetGameConfig().attack_stamina_decrease)
             {
-                GameInit.GetEmoteHandler(Player.PLAYER.P2).GetRandomEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player2Face, true);
+                if(!isPlayer2Exhausted)
+                {
+                    isPlayer2Exhausted = true;
+                    GameInit.GetEmoteHandler(Player.PLAYER.P2).ResetFace(CollisionPlayers._player2Face);
+                }
+            }
+            else
+            {
+                if (isPlayer2Exhausted)
+                {
+                    GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player2Face,false);
+                    isPlayer2Exhausted = false;
+                }
             }
             
             

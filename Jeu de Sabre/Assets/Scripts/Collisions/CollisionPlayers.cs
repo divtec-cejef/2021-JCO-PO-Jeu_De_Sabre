@@ -70,7 +70,7 @@ namespace Collisions
 
             float rotationTime = Random.Range(.05f, .25f);
             float rotationAngle = Random.Range(100, 200);
-            bool backwardMouvement = Random.Range(0, 2) == 0;
+            bool backwardMouvement = Random.Range(0, 3) == 0;
             float backwardTime = Random.Range(.02f, .1f);
             float backwardDistance = Random.Range(1, 10);
             
@@ -163,39 +163,39 @@ namespace Collisions
         private void OnTriggerEnter(Collider other)
         {
             // Initialisation du joueur qui a effectuer l'attaque
-            Player.PLAYER player = Player.PLAYER.Other;
+            Player.PLAYER attackerPlayer = Player.PLAYER.Other;
         
             // Si le sabre du joueur 1 entre en collision avec autre chose que son propre joueur
             if (other.CompareTag("Katana1") && !gameObject.CompareTag("Player1"))
-                player = Player.PLAYER.P1;
+                attackerPlayer = Player.PLAYER.P1;
         
             // Si le sabre du joueur 2 entre en collision avec autre chose que son propre joueur
             else if (other.CompareTag("Katana2") && !gameObject.CompareTag("Player2"))
-                player = Player.PLAYER.P2;
+                attackerPlayer = Player.PLAYER.P2;
         
             // Si aucune condition n'est respectée et que player n'a pas été modifié, la collision n'est pas valable
-            if (player == Player.PLAYER.Other) 
+            if (attackerPlayer == Player.PLAYER.Other) 
                 return;
         
             // Si le joueur à assez d'endurance pour porter le coup
-            if (Player.DecreaseStamina(player, GameInit.GetGameConfig().attack_stamina_decrease))
+            if (Player.DecreaseStamina(attackerPlayer, GameInit.GetGameConfig().attack_stamina_decrease))
             {
                 // Mise à jour du score du joueur
-                Player.UpdatePlayerScore(player, GameInit.GetGameConfig().attack_score_amount);
+                Player.UpdatePlayerScore(attackerPlayer, GameInit.GetGameConfig().attack_score_amount);
                 
                 // Animations et mouvements de l'attaque
-                attack.onAttack(player, player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1);
+                attack.onAttack(attackerPlayer, attackerPlayer == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1);
 
                 if(updateEmote){
-                    if (player == Player.PLAYER.P1)
+                    if (attackerPlayer == Player.PLAYER.P1)
                     {
-                        player1Face.GetComponent<Renderer>().material =
-                            GameInit.GetEmoteHandler(Player.PLAYER.P1).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player1Face, 1f,true);
+                        if(!Stamina.isPlayer2Exhausted)
+                            GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.HURT, player2Face, 1f,true);
                     }
                     else
                     {
-                        player2Face.GetComponent<Renderer>().material =
-                            GameInit.GetEmoteHandler(Player.PLAYER.P2).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player2Face, 1f,true);
+                        if(!Stamina.isPlayer1Exhausted)
+                            GameInit.GetEmoteHandler(Player.PLAYER.P1).SetEmote(EmoteHandler.EMOTE_TYPE.HURT, player1Face, 1f,true);
                     }
                 }
                 
