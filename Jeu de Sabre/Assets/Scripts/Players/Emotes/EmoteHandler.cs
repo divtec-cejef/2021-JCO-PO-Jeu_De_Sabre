@@ -56,7 +56,11 @@ public class EmoteHandler : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, null);
         }
-        StartCoroutine(ResetFace(playerFace, resetTime));
+
+        if (resetFace)
+        {
+            StartCoroutine(ResetFace(playerFace, resetTime));
+        }
         return currentEmote;
     }
 

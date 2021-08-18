@@ -60,32 +60,32 @@ public class EmotePlayer : MonoBehaviour
     
     public static List<Material> GetAngryEmote()
     {
-        List<Material> sad = new List<Material>();
-        sad.Add(_angry_1);
-        sad.Add(_angry_2);
-        sad.Add(_angry_3);
+        List<Material> angry = new List<Material>();
+        angry.Add(_angry_1);
+        angry.Add(_angry_2);
+        angry.Add(_angry_3);
 
-        return sad;
+        return angry;
     }
     
     public static List<Material> GetHurtEmote()
     {
-        List<Material> sad = new List<Material>();
-        sad.Add(_hurt_1);
-        sad.Add(_hurt_2);
-        sad.Add(_hurt_3);
+        List<Material> hurt = new List<Material>();
+        hurt.Add(_hurt_1);
+        hurt.Add(_hurt_2);
+        hurt.Add(_hurt_3);
 
-        return sad;
+        return hurt;
     }
     
     public static List<Material> GetHappyEmote()
     {
-        List<Material> sad = new List<Material>();
-        sad.Add(_happy_1);
-        sad.Add(_happy_2);
-        sad.Add(_happy_3);
+        List<Material> happy = new List<Material>();
+        happy.Add(_happy_1);
+        happy.Add(_happy_2);
+        happy.Add(_happy_3);
 
-        return sad;
+        return happy;
     }
     
 }

@@ -184,12 +184,12 @@ namespace Collisions
                     if (player == Player.PLAYER.P1)
                     {
                         player2Face.GetComponent<Renderer>().material =
-                            GameInit.GetEmoteHandler(Player.PLAYER.P2).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player2Face, 1f, true);
+                            GameInit.GetEmoteHandler(Player.PLAYER.P2).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player2Face, 1f,true);
                     }
                     else
                     {
                         player1Face.GetComponent<Renderer>().material =
-                            GameInit.GetEmoteHandler(Player.PLAYER.P1).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player1Face, 1f, true);
+                            GameInit.GetEmoteHandler(Player.PLAYER.P1).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player1Face, 1f,true);
                     }
                 }
                 
