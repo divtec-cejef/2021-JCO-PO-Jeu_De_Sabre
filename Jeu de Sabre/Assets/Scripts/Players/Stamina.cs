@@ -1,3 +1,4 @@
+using Collisions;
 using Init;
 using UnityEngine;
 
@@ -118,6 +119,18 @@ namespace Players
 
         private void Update()
         {
+            //Change L'expression du joueur quand il n'a plus de stamina 
+            if (Player.GetStamina(Player.PLAYER.P1) < 10)
+            {
+                GameInit.GetEmoteHandler(Player.PLAYER.P1).GetRandomEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face,true);
+            }
+
+            if (Player.GetStamina(Player.PLAYER.P2) < 10)
+            {
+                GameInit.GetEmoteHandler(Player.PLAYER.P2).GetRandomEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player2Face, true);
+            }
+            
+            
             if(canPlayer1Regen)
             {
                 if (player1Stamina < GameInit.GetGameConfig().stamina_amount /* || !GameInit.getKatanaPlayer1().getParade().getParade()*/)
@@ -135,7 +148,7 @@ namespace Players
 
             if (!(player2Stamina < GameInit.GetGameConfig().stamina_amount)) 
                 return;
-                
+
             if (player2Stamina + GameInit.GetGameConfig().stamina_regeneration_rate >
                 GameInit.GetGameConfig().stamina_amount)
 
@@ -180,4 +193,5 @@ namespace Players
             return canPlayer2Regen;
         }
     }
+    
 }

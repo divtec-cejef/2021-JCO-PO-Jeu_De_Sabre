@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.21293569, g: 0.21293569, b: 0.21293569, a: 1}
+  m_IndirectSpecularColor: {r: 0.08988297, g: 0.07305313, b: 0.14573157, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12711,7 +12711,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343876778}
-  m_LocalRotation: {x: 0.07476614, y: -0.0000001236406, z: 0.000000009270076, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.00000011521978, z: 0.0000000086387155, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15679,6 +15679,7 @@ MonoBehaviour:
   happy_1: {fileID: 2100000, guid: 0d4f200ef64a43f44889793802bf29b8, type: 2}
   happy_2: {fileID: 2100000, guid: 5e1608cc1df50e841a3b98931d786996, type: 2}
   happy_3: {fileID: 2100000, guid: 5a91be8ecbf64204699b171ad0ead293, type: 2}
+  exhausted_1: {fileID: 2100000, guid: 359c94333642dfb4895912146dc32864, type: 2}
 --- !u!1001 &421425569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76188,7 +76189,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893022990}
-  m_LocalRotation: {x: 0.07476614, y: -0.0000001236406, z: 0.000000009270076, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.00000011521978, z: 0.0000000086387155, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

@@ -36,6 +36,9 @@ namespace Collisions
         
         [SerializeField] private GameObject player2Face;
 
+        public static GameObject _player1Face;
+        public static GameObject _player2Face;
+
         [SerializeField] private bool updateRotation;
         
         [SerializeField] private bool updateEmote;
@@ -53,6 +56,9 @@ namespace Collisions
     
         private void Awake()
         {
+            _player1Face = player1Face;
+            _player2Face = player2Face;
+            
             // Initialisaiton de la classe chargée d'effectuer les mouvements des joueurs lors d'une attaque
             attack = new AttackMouvements(player1Axis, player2Axis, player1Character, player1CharacterTransparent, player2Character, player2CharacterTransparent);
         }
@@ -183,13 +189,13 @@ namespace Collisions
                 if(updateEmote){
                     if (player == Player.PLAYER.P1)
                     {
-                        player2Face.GetComponent<Renderer>().material =
-                            GameInit.GetEmoteHandler(Player.PLAYER.P2).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player2Face, 1f,true);
+                        player1Face.GetComponent<Renderer>().material =
+                            GameInit.GetEmoteHandler(Player.PLAYER.P1).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player1Face, 1f,true);
                     }
                     else
                     {
-                        player1Face.GetComponent<Renderer>().material =
-                            GameInit.GetEmoteHandler(Player.PLAYER.P1).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player1Face, 1f,true);
+                        player2Face.GetComponent<Renderer>().material =
+                            GameInit.GetEmoteHandler(Player.PLAYER.P2).GetRandomEmote(EmoteHandler.EMOTE_TYPE.HURT, player2Face, 1f,true);
                     }
                 }
                 

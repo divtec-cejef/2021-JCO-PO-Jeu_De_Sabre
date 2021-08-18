@@ -11,13 +11,16 @@ public class EmoteHandler : MonoBehaviour
         SAD,
         ANGRY,
         HURT,
-        HAPPY
+        HAPPY,
+        EXHAUSTED
     }
     
     private List<Material> sad;
     private List<Material> angry;
     private List<Material> hurt;
     private List<Material> happy;
+    private List<Material> exhausted;
+    
     private bool resetFace = false;
     private float timer;
     private GameObject playerFace;
@@ -29,6 +32,7 @@ public class EmoteHandler : MonoBehaviour
         angry = EmotePlayer.GetAngryEmote();
         hurt = EmotePlayer.GetHurtEmote();
         happy = EmotePlayer.GetHappyEmote();
+        exhausted = EmotePlayer.GetExhaustedEmote();
     }
 
     public Material GetRandomEmote(EMOTE_TYPE type, GameObject playerFace, float resetTime, bool resetFace)
@@ -53,15 +57,22 @@ public class EmoteHandler : MonoBehaviour
                 rand = Random.Range(0, happy.Count - 1);
                 currentEmote = happy[rand];
                 break;
+            case EMOTE_TYPE.EXHAUSTED:
+                rand = Random.Range(0, exhausted.Count - 1);
+                currentEmote = exhausted[rand];
+                break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, null);
         }
 
-        if (resetFace)
-        {
-            StartCoroutine(ResetFace(playerFace, resetTime));
-        }
+        if (resetFace) StartCoroutine(ResetFace(playerFace, resetTime));
+                 
         return currentEmote;
+    }
+    
+    public Material GetRandomEmote(EMOTE_TYPE type, GameObject playerFace, bool resetFace)
+    {
+        return GetRandomEmote(type, playerFace, 1f, resetFace);
     }
 
     IEnumerator ResetFace(GameObject playerFace, float timer)
