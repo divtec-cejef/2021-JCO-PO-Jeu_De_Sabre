@@ -1,0 +1,13 @@
+{
+   "game_time":120,
+   "run_out_of_time":20,
+   "parade_duration":7.0,
+   "parade_multiplier":3,
+   "parade_stamina_decrease_rate":5,
+   "stamina_amount":100.0,
+   "stamina_regeneration_rate":1,
+   "attack_score_amount":50,
+   "attack_stamina_decrease":10.0,
+   "stun_multiplier":2,
+   "katana_lerp_duration":0.1
+}
