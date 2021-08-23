@@ -1,97 +1,637 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1052; Version 2009; 64bit' Language: 'fr' Physical Memory: 8060 MB
+OS: 'Windows 10 Home; OS build 19043.1165; Version 2009; 64bit' Language: 'fr' Physical Memory: 16331 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+E:\Unity\Unity\2020.3.7f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65385
-Successfully changed project path to: C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
-C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+61648
+Successfully changed project path to: C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 84.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 91.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/KNT/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+[Subsystems] Discovering subsystems at path E:/Unity/Unity/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Plus Graphics 655 (ID=0x3ea5)
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1b83)
     Vendor:   
-    VRAM:     4030 MB
-    Driver:   27.20.100.8681
+    VRAM:     6052 MB
+    Driver:   27.21.14.5671
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Mono path[0] = 'E:/Unity/Unity/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/Unity/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity/Unity/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001980 seconds.
+Register platform support module: E:/Unity/Unity/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001459 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 73.23 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 93.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.376 seconds
+- Completed reload, in  1.111 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001547 seconds.
+Registered in 0.002417 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 68.88 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 98.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.074 seconds
+- Completed reload, in  1.216 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1801 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.0 MB.
-System memory in use after: 104.4 MB.
+Unloading 1804 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.4 MB.
+System memory in use after: 105.8 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2257.
-Total: 2.768000 ms (FindLiveObjects: 0.535000 ms CreateObjectMapping: 0.071900 ms MarkObjects: 1.788000 ms  DeleteObjects: 0.372200 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2260.
+Total: 2.860000 ms (FindLiveObjects: 0.293700 ms CreateObjectMapping: 0.048800 ms MarkObjects: 2.123300 ms  DeleteObjects: 0.392600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/New Terrain 2.asset
-  artifactKey: Guid(21389da26c6323e46ae0b16ea7cf21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 2.asset using Guid(21389da26c6323e46ae0b16ea7cf21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9962c7321dc665c267072ef9a1934b82') in 0.045905 seconds
-  Import took 0.050695 seconds .
+  path: Assets/PolygonAdventure/Models/SM_Bld_Fence_01_Snow.fbx
+  artifactKey: Guid(9b5ae795ab2ed73419d0856d6be60ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/SM_Bld_Fence_01_Snow.fbx using Guid(9b5ae795ab2ed73419d0856d6be60ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42fdf9ab8f6df9da9802041033e6af3') in 0.211152 seconds
+  Import took 0.215683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/PolygonAdventure/Models/Collision/SM_Bld_Fence_01_Snow_Convex 1.asset
+  artifactKey: Guid(c6cd4150d7c9bc44299ab69d099e74d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/Collision/SM_Bld_Fence_01_Snow_Convex 1.asset using Guid(c6cd4150d7c9bc44299ab69d099e74d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0ae6392f0978eb410937ce9ea286f1') in 0.021556 seconds
+  Import took 0.026947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/PolygonAdventure/Models/Collision/SM_Bld_Fence_02_Snow_Convex.asset
+  artifactKey: Guid(37deafe0c1a4ff9449e0eab721d876c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/Collision/SM_Bld_Fence_02_Snow_Convex.asset using Guid(37deafe0c1a4ff9449e0eab721d876c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f8b3a7befa1adf84f8fe4a0b291aa68') in 0.014427 seconds
+  Import took 0.018582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/PolygonAdventure/Models/SM_Bld_Market_Snow_01.fbx
+  artifactKey: Guid(b71215d163f7b2e43a5a7d2a8bb824f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/SM_Bld_Market_Snow_01.fbx using Guid(b71215d163f7b2e43a5a7d2a8bb824f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbe3f198ef5336dda7bfefaf4abee8d') in 0.025128 seconds
+  Import took 0.029421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/PolygonAdventure/Models/Collision/SM_Bld_Fence_02_Snow_Convex 1.asset
+  artifactKey: Guid(da017beccd6136b4f986e49d115df26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/Collision/SM_Bld_Fence_02_Snow_Convex 1.asset using Guid(da017beccd6136b4f986e49d115df26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3fec12f62c6ab7d3ca5a88dde406cca') in 0.018316 seconds
+  Import took 0.022583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Large_Windows_01.fbx
+  artifactKey: Guid(159276003ee68e94ca247677e2e9e992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Large_Windows_01.fbx using Guid(159276003ee68e94ca247677e2e9e992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa4139ab70f092eb6b4e520c3fd005e') in 0.023505 seconds
+  Import took 0.027344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/PolygonAdventure/Models/Collision/SM_Bld_Hut_01_Snow_Convex.asset
+  artifactKey: Guid(ca6031c7a16abb94894439030a864577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/Collision/SM_Bld_Hut_01_Snow_Convex.asset using Guid(ca6031c7a16abb94894439030a864577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60b6b8fd1a3bb20059fe255f3d07b9dd') in 0.013494 seconds
+  Import took 0.017933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/PolygonAdventure/Models/Collision/SM_Bld_Fence_01_Snow_Convex.asset
+  artifactKey: Guid(4e14312aedaeaf240be5ac2d76395df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/Collision/SM_Bld_Fence_01_Snow_Convex.asset using Guid(4e14312aedaeaf240be5ac2d76395df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89575a150733a62dae09aa827e66b3d7') in 0.013729 seconds
+  Import took 0.018264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_02.fbx
+  artifactKey: Guid(120c408e8e0a06442ac7ade93890893e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_02.fbx using Guid(120c408e8e0a06442ac7ade93890893e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81047e60bac416350e6545f61c588d6c') in 0.027962 seconds
+  Import took 0.032364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Medium_Blank_01.fbx
+  artifactKey: Guid(c2c56ac378930894e8235601d2d0a4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Medium_Blank_01.fbx using Guid(c2c56ac378930894e8235601d2d0a4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9aec00e659a71bd84db011a04f4f0a') in 0.023750 seconds
+  Import took 0.027790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Gates_01.fbx
+  artifactKey: Guid(cba42eed6a80e3640bc1fa66e339c0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Gates_01.fbx using Guid(cba42eed6a80e3640bc1fa66e339c0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1072bdd687e4d5c8293e28522ee04ba0') in 0.022064 seconds
+  Import took 0.026364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Large_01.fbx
+  artifactKey: Guid(59503e954137cb440b6390b1b501fd12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Large_01.fbx using Guid(59503e954137cb440b6390b1b501fd12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcc73c5d82d25491765d4d0798fc76c') in 0.023356 seconds
+  Import took 0.028094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/PolygonAdventure/Models/SM_Bld_Fence_02_Snow.fbx
+  artifactKey: Guid(cb09e6efbb00cd546817bc7660018c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/SM_Bld_Fence_02_Snow.fbx using Guid(cb09e6efbb00cd546817bc7660018c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e6f671c336994596299093b5f7d5937') in 0.024961 seconds
+  Import took 0.029373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Top_01.fbx
+  artifactKey: Guid(7130d7007426b634494e36644c00344e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Top_01.fbx using Guid(7130d7007426b634494e36644c00344e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66595e1e3b5a98520854151a94e49f3a') in 0.021184 seconds
+  Import took 0.025354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Small_02.fbx
+  artifactKey: Guid(ee25e4ac293d7fc4fb50f2ed8524bae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Small_02.fbx using Guid(ee25e4ac293d7fc4fb50f2ed8524bae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4fe37b3ba864f7585d44ae4639090a0') in 0.022471 seconds
+  Import took 0.026644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/PolygonAdventure/Models/Collision/SM_Bld_Hut_01_Snow_Convex 1.asset
+  artifactKey: Guid(c0455346219b8944e8be5f4c6bcdb896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/Collision/SM_Bld_Hut_01_Snow_Convex 1.asset using Guid(c0455346219b8944e8be5f4c6bcdb896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43e3f64b74f815003a666eb9c89ba1e') in 0.016934 seconds
+  Import took 0.020518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Medium_Windows_01.fbx
+  artifactKey: Guid(182c9985b703099438885963edeb0c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Medium_Windows_01.fbx using Guid(182c9985b703099438885963edeb0c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b1abc280a6128ecd26c7261d75a998') in 0.025975 seconds
+  Import took 0.030447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Addon_01.fbx
+  artifactKey: Guid(9c4fe6b50f8766c49ba7e9cfce8c7a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Addon_01.fbx using Guid(9c4fe6b50f8766c49ba7e9cfce8c7a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81d510c6a178f22f57682bd94246c6d') in 0.022673 seconds
+  Import took 0.026754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_Door_01.fbx
+  artifactKey: Guid(1d8ed89e387c8204ebf91087a323b154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_Door_01.fbx using Guid(1d8ed89e387c8204ebf91087a323b154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1037e6eeb624066df702ffb4adcf01') in 0.021961 seconds
+  Import took 0.026535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_01.fbx
+  artifactKey: Guid(c9420dcbd511bfa44888045dcf0f6d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_01.fbx using Guid(c9420dcbd511bfa44888045dcf0f6d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f31744cfcd8b62e249fdd5db682f86') in 0.027986 seconds
+  Import took 0.033667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/PolygonAdventure/Models/Collision/SM_Bld_Market_Snow_01_Convex.asset
+  artifactKey: Guid(ff438cedc2d044243a4aace7dfe86b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/Collision/SM_Bld_Market_Snow_01_Convex.asset using Guid(ff438cedc2d044243a4aace7dfe86b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e542173aab2d43777687f8abf1ca73') in 0.014765 seconds
+  Import took 0.019654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Small_Blank_01.fbx
+  artifactKey: Guid(d0f20216f8ecdbf479fd82759f386533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Small_Blank_01.fbx using Guid(d0f20216f8ecdbf479fd82759f386533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25390fb02886a4171461a07eada2b1fc') in 0.023894 seconds
+  Import took 0.028484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_03.fbx
+  artifactKey: Guid(71934ee003ffd66489499b50fe24566c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_03.fbx using Guid(71934ee003ffd66489499b50fe24566c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b0578c87e608edafc80845680517fe') in 0.028751 seconds
+  Import took 0.033726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Small_01.fbx
+  artifactKey: Guid(5d2ef2acf77e5914fa848ad012d7e8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Small_01.fbx using Guid(5d2ef2acf77e5914fa848ad012d7e8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd544ab2bb0d9783d93721305345cc5c0') in 0.025168 seconds
+  Import took 0.029435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_BridgeCover_01.fbx
+  artifactKey: Guid(09649ec1f5e630743adb33ef235e9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_BridgeCover_01.fbx using Guid(09649ec1f5e630743adb33ef235e9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd6248d68235b4d9212046b13f763ba') in 0.030852 seconds
+  Import took 0.035059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Addon_02.fbx
+  artifactKey: Guid(266dc1eedd61e77458a2595128ef4bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Addon_02.fbx using Guid(266dc1eedd61e77458a2595128ef4bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0e519c7e2ce137ead2961fa2dea04a') in 0.025125 seconds
+  Import took 0.030167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Small_Windows_01.fbx
+  artifactKey: Guid(762180f3cad25374ab847ad78545cf41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Small_Windows_01.fbx using Guid(762180f3cad25374ab847ad78545cf41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f730db3d47f42b4b7d1c3a286305d7') in 0.025989 seconds
+  Import took 0.030856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Medium_01.fbx
+  artifactKey: Guid(920ec11bb92d8e549927ee09c8b7f064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Roof_Medium_01.fbx using Guid(920ec11bb92d8e549927ee09c8b7f064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce55ecc9e64cf6c1bb03a33cf2f0f064') in 0.025465 seconds
+  Import took 0.030032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/PolygonAdventure/Materials/PolyAdventureMaterial_Snow_01.mat
+  artifactKey: Guid(fe202229726379c42adb32cce7658ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Materials/PolyAdventureMaterial_Snow_01.mat using Guid(fe202229726379c42adb32cce7658ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08c64a8afb08ba6f11f3dbcd97c0306') in 0.045100 seconds
+  Import took 0.049236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Large_Blank_01.fbx
+  artifactKey: Guid(dff1168d014c8de49ace3cebbbda5d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Castle_Base_Large_Blank_01.fbx using Guid(dff1168d014c8de49ace3cebbbda5d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7b78f3d8bd0639414bcd6adf0ed061') in 0.022609 seconds
+  Import took 0.026904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_01.fbx
+  artifactKey: Guid(6aa0fc812da0ace48935f77e6bb53777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_01.fbx using Guid(6aa0fc812da0ace48935f77e6bb53777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42aab2b7e56e67237c468f177d2735d') in 0.026125 seconds
+  Import took 0.029822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_DoorWay_01.fbx
+  artifactKey: Guid(82199ebcd87a43241899d0599c5ea2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Base_Large_DoorWay_01.fbx using Guid(82199ebcd87a43241899d0599c5ea2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d9da2d8b502dd66b739c8ff3f473ee') in 0.031123 seconds
+  Import took 0.035577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_CornerPillar_01.fbx
+  artifactKey: Guid(0cbeeb187cb883a43b060ba0151abef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_CornerPillar_01.fbx using Guid(0cbeeb187cb883a43b060ba0151abef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43089186c10b2331eb981fbfed58e05b') in 0.024315 seconds
+  Import took 0.028145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Pregabs_Fx_Paticle/Fx_Snow.prefab
+  artifactKey: Guid(750990e90431f499487035e155ff4b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Pregabs_Fx_Paticle/Fx_Snow.prefab using Guid(750990e90431f499487035e155ff4b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4214e634bdfcabd0c9df757ee0d21724') in 0.021525 seconds
+  Import took 0.025955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/PolygonAdventure/Models/SM_Bld_Hut_01_Snow.fbx
+  artifactKey: Guid(71bcc7358e55d684a93819f475ae0e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/SM_Bld_Hut_01_Snow.fbx using Guid(71bcc7358e55d684a93819f475ae0e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07361228229094f3ffe3809e6a3545b6') in 0.025090 seconds
+  Import took 0.028786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_Stairs_01.fbx
+  artifactKey: Guid(2dd303d4bbfc0e9429774c36d894f7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_Stairs_01.fbx using Guid(2dd303d4bbfc0e9429774c36d894f7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f693f2b26bc0e185900daaf4db3f92a8') in 0.022519 seconds
+  Import took 0.026457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonAdventure/Models/SM_Bld_Hut_01_Snow.fbx
+  artifactKey: Guid(71bcc7358e55d684a93819f475ae0e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonAdventure/Models/SM_Bld_Hut_01_Snow.fbx using Guid(71bcc7358e55d684a93819f475ae0e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07361228229094f3ffe3809e6a3545b6') in 0.015952 seconds
+  Import took 0.020459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016274 seconds.
+  path: Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_Stairs_01.fbx
+  artifactKey: Guid(2dd303d4bbfc0e9429774c36d894f7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Snow/SM_Bld_Snow_Block_Stairs_01.fbx using Guid(2dd303d4bbfc0e9429774c36d894f7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f693f2b26bc0e185900daaf4db3f92a8') in 0.014916 seconds
+  Import took 0.018606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.657517 seconds.
+  path: Assets/PolygonParticleFX/Prefabs/FX_Snow_01.prefab
+  artifactKey: Guid(02f7f04a484c69143a794e60d5a935b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Prefabs/FX_Snow_01.prefab using Guid(02f7f04a484c69143a794e60d5a935b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a08b2bb410e37ed2c4165b3d00273b') in 0.009263 seconds
+  Import took 0.013475 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001728 seconds.
+Registered in 0.002286 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.976 seconds
+- Completed reload, in  1.230 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1761 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.7 MB.
-System memory in use after: 101.2 MB.
+Unloading 1762 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.5 MB.
+System memory in use after: 105.9 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2260.
-Total: 2.704500 ms (FindLiveObjects: 0.295800 ms CreateObjectMapping: 0.108600 ms MarkObjects: 1.982500 ms  DeleteObjects: 0.316200 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2307.
+Total: 3.060900 ms (FindLiveObjects: 0.340500 ms CreateObjectMapping: 0.057100 ms MarkObjects: 2.231000 ms  DeleteObjects: 0.431000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 580.560545 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Bubble.png
+  artifactKey: Guid(60847f2556c444a438e138e034f0ae83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Bubble.png using Guid(60847f2556c444a438e138e034f0ae83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d8c055cb607d396d4ced4b85721e4c') in 0.099279 seconds
+  Import took 0.103663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Portal_Single_Chipped.png
+  artifactKey: Guid(8a4b0e610ec24c44aaf3f934e7ab1392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Portal_Single_Chipped.png using Guid(8a4b0e610ec24c44aaf3f934e7ab1392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '465059722aa8464241124bfad874045a') in 0.021282 seconds
+  Import took 0.025644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Swipe_01.png
+  artifactKey: Guid(ce1c15ae60b1d1147a4c121b6c97d6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Swipe_01.png using Guid(ce1c15ae60b1d1147a4c121b6c97d6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5cdac757932deabd0a43b8a6f23c6a') in 0.076716 seconds
+  Import took 0.081205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Fumes_04.png
+  artifactKey: Guid(2eb84df899ad7fc4aa3b987e587d5fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Fumes_04.png using Guid(2eb84df899ad7fc4aa3b987e587d5fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b865d740c68ae2d5453d82dbb22ed311') in 0.022993 seconds
+  Import took 0.027193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_01.png
+  artifactKey: Guid(7cc0b541520b0734c80ea6934a192675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_01.png using Guid(7cc0b541520b0734c80ea6934a192675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec72c507395a54f73db18dcb98f703b') in 0.014069 seconds
+  Import took 0.019008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Bubble_02.png
+  artifactKey: Guid(6c7a37c6766adfc4fac5dffdb14284f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Bubble_02.png using Guid(6c7a37c6766adfc4fac5dffdb14284f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d7afc6a1ad2112eb4fea550b5acb89') in 0.021003 seconds
+  Import took 0.027385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_HalfCircle.png
+  artifactKey: Guid(ce52a7627f791234aa84f247915ff610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_HalfCircle.png using Guid(ce52a7627f791234aa84f247915ff610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c946d7b77d35dc4927889838dc51b033') in 0.022747 seconds
+  Import took 0.027285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Hexagon.png
+  artifactKey: Guid(9b13fd76834a28c4fa9ea626ba446015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Hexagon.png using Guid(9b13fd76834a28c4fa9ea626ba446015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5131c1acddc66bedeec48d447173176') in 0.022954 seconds
+  Import took 0.027047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_Dark_01.png
+  artifactKey: Guid(913d37094a541b842b4f18f393f40ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_Dark_01.png using Guid(913d37094a541b842b4f18f393f40ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06c534aa5430982b145eaa11882a1aa6') in 0.022480 seconds
+  Import took 0.027486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_GroundBreak.png
+  artifactKey: Guid(b42eef5c44cfeff449e52cd481203575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_GroundBreak.png using Guid(b42eef5c44cfeff449e52cd481203575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18176042b0037076470a59de13a95f10') in 0.027111 seconds
+  Import took 0.032557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Wind.png
+  artifactKey: Guid(bdf00413f80cc3f48a0036afb20b48bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Wind.png using Guid(bdf00413f80cc3f48a0036afb20b48bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0138afc2724f9805cd662f8228c6a87f') in 0.022413 seconds
+  Import took 0.028651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Soft_Spot.png
+  artifactKey: Guid(d5170007006368747b4faea8550619cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Soft_Spot.png using Guid(d5170007006368747b4faea8550619cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23b2d0e1073f8f05e103e53115bec2e4') in 0.023617 seconds
+  Import took 0.028370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Smoke_01.png
+  artifactKey: Guid(608b0bba5c9806149ae5d24a33c606de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Smoke_01.png using Guid(608b0bba5c9806149ae5d24a33c606de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c2cdb3494bad50add57352e86c53b4') in 0.019971 seconds
+  Import took 0.024379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Swipe_02.png
+  artifactKey: Guid(a9a7424a52149bb4b84da7a71341f1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Swipe_02.png using Guid(a9a7424a52149bb4b84da7a71341f1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '968e640358b61b14632efe737aa97a8a') in 0.024070 seconds
+  Import took 0.028808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Texture_01_A.png
+  artifactKey: Guid(67cb44fbdc202b44e971ac2b57d5ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Texture_01_A.png using Guid(67cb44fbdc202b44e971ac2b57d5ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d82fee22f8ca59c56cff947ef6adc1') in 0.031926 seconds
+  Import took 0.038974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Fumes_02.png
+  artifactKey: Guid(35fe97dffff1d60489cad17aa767c885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Fumes_02.png using Guid(35fe97dffff1d60489cad17aa767c885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08fea57a9a88ee5d4eda34fe79d7ab76') in 0.034842 seconds
+  Import took 0.039279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_RainbowCircle.png
+  artifactKey: Guid(b9f7df66400b4354b98f61c735542521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_RainbowCircle.png using Guid(b9f7df66400b4354b98f61c735542521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556923d78bfe2d4c93e5dc6badb470fa') in 0.071444 seconds
+  Import took 0.081785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Lightning_02.png
+  artifactKey: Guid(b1351c11dea42f845af85e73da6579f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Lightning_02.png using Guid(b1351c11dea42f845af85e73da6579f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85ad69dc3f93dca1d0037bba42017a5') in 0.025296 seconds
+  Import took 0.029354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_RitualCircle_01.png
+  artifactKey: Guid(a0b77b3cfe92a174e82c48936951c8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_RitualCircle_01.png using Guid(a0b77b3cfe92a174e82c48936951c8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ade6d265242e441bef320baf5fe654') in 0.024936 seconds
+  Import took 0.028949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Sparkle.png
+  artifactKey: Guid(3ccce67bd48bfcd459a2ef0393fdf83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Sparkle.png using Guid(3ccce67bd48bfcd459a2ef0393fdf83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c93bd3dd22b938770f1cd16e5f367c7') in 0.022287 seconds
+  Import took 0.027005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Wings_Grid.png
+  artifactKey: Guid(5f9e461b624488b4e8132701494f4867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Wings_Grid.png using Guid(5f9e461b624488b4e8132701494f4867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e249f6326692a0851f40f748421100') in 0.037367 seconds
+  Import took 0.041122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_BulletTrail.png
+  artifactKey: Guid(03f9cd753cdaef945b4cefdcda283901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_BulletTrail.png using Guid(03f9cd753cdaef945b4cefdcda283901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '867ac9dad165e00ec8d00e005a9d88ed') in 0.019841 seconds
+  Import took 0.024251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_02.png
+  artifactKey: Guid(3b8dc5e143e5ce748bbbb8cca21399cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Circle_02.png using Guid(3b8dc5e143e5ce748bbbb8cca21399cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8974915a2963a8613ce23e45af4d6964') in 0.020689 seconds
+  Import took 0.024614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Ring_02.png
+  artifactKey: Guid(d22dd282ce7c3874d954fa2e7893991b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Ring_02.png using Guid(d22dd282ce7c3874d954fa2e7893991b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff9559467c949bea0a56859fcfdf281') in 0.021473 seconds
+  Import took 0.026807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Soft_Spot_Dark.png
+  artifactKey: Guid(c8660b4dcd717b846900ad32c22a9162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Soft_Spot_Dark.png using Guid(c8660b4dcd717b846900ad32c22a9162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac1b4e2501f79339dcbe48ef0ce4112') in 0.022587 seconds
+  Import took 0.026738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_SemiCircle.png
+  artifactKey: Guid(f07e4b81cfc00d24e88a4b58da56db3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_SemiCircle.png using Guid(f07e4b81cfc00d24e88a4b58da56db3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5d914b784fec9249731311275ae598') in 0.026095 seconds
+  Import took 0.030125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/PolygonParticleFX/Textures/PolygonParticles_Shell_01.png
+  artifactKey: Guid(2458a5e8960caf942b6e5fdee34bcdf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonParticleFX/Textures/PolygonParticles_Shell_01.png using Guid(2458a5e8960caf942b6e5fdee34bcdf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e905ac40722d9d3154985896ebbd2caf') in 0.019428 seconds
+  Import took 0.024267 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002493 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.065 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1762 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.7 MB.
+System memory in use after: 106.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2315.
+Total: 2.541500 ms (FindLiveObjects: 0.247300 ms CreateObjectMapping: 0.047600 ms MarkObjects: 1.859800 ms  DeleteObjects: 0.385500 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
