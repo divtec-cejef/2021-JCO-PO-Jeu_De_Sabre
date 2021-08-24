@@ -14,6 +14,7 @@ public class PSMoveUtils
         if (player == Player.PLAYER.P1)
         {
             PSMoveAPI.psmove_set_leds(GameInit.GetControllerHandler().GetPlayer1Controller(), (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
+            //PSMoveAPI.psmove_set_leds(GameInit.GetControllerHandler().GetPlayer1Controller(), (char)(color.r * 255), (char)(color.g * 255), (char)(color.b * 255));
         }
         else
         {

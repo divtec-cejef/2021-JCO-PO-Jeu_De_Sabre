@@ -16,6 +16,8 @@ namespace Init
         private static UiUpdater _updater;
         
         private static ControllerConnecter _connecter;
+
+        private static TrackerConnecter _tracker;
         
         private static ControllerHandler _controllerHandler;
         
@@ -121,7 +123,7 @@ namespace Init
             // Initialisation de la connexion des manettes
             print("Initialisation des manettes...");
             _connecter = new ControllerConnecter();
-        
+            
             // Si l'initialisation est passée
             if (_connecter.Init())
             {
@@ -144,6 +146,14 @@ namespace Init
                 print("Récupération des manettes...");
                 _controllerHandler = _connecter.GetHandler();
             
+                // Initialisation des trackers
+                print("Initialisation des trackers...");
+                gameObject.AddComponent<TrackerConnecter>();
+                _tracker = gameObject.GetComponent<TrackerConnecter>();
+                _tracker.Init();
+                // _tracker = new TrackerConnecter();
+                // _tracker.Init();
+
                 // Initialisation de l'orientation de la manette 1
                 print("Initialisation de la rotation du joueur 1...");
                 _katana1 = new KatanaOrientation(Player.PLAYER.P1, _controllerHandler.GetPlayer1Controller(), player1ParadeFx1,
@@ -183,8 +193,8 @@ namespace Init
                 
                 
                 // Activation de la Led des manettes
-                PSMoveUtils.SetLed(Player.PLAYER.P1, Color.yellow);
-                PSMoveUtils.SetLed(Player.PLAYER.P2, Color.yellow);
+                PSMoveUtils.SetLed(Player.PLAYER.P1, Color.magenta);
+                PSMoveUtils.SetLed(Player.PLAYER.P2, Color.magenta);
             }
             else
             {

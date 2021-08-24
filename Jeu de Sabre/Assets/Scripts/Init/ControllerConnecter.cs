@@ -23,7 +23,7 @@ namespace Init
         {
             // Initialisation de l'API PSMove
             PSMove_Bool init = PSMoveAPI.psmove_init(PSMoveAPI.PSMove_Version.PSMOVE_CURRENT_VERSION);
-        
+            
             if(init == PSMove_Bool.PSMove_True) {
                 // Récupération des manettes PSMove
                 player1Controller = PSMoveAPI.psmove_connect_by_id(0);
