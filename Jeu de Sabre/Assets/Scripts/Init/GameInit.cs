@@ -11,8 +11,7 @@ using UnityEngine.UI;
 
 namespace Init
 {
-    public class GameInit : MonoBehaviour
-    {
+    public class GameInit : MonoBehaviour {
         private static UiUpdater _updater;
         
         private static ControllerConnecter _connecter;
@@ -74,6 +73,11 @@ namespace Init
         [SerializeField] private Slider player1StaminaSlider;
         
         [SerializeField] private Slider player2StaminaSlider;
+        
+        //Effets de fatigues des joueurs
+        [SerializeField] private GameObject player1ExhaustedFx1;
+        
+        [SerializeField] private GameObject player2ExhaustedFx1;
 
         
         [SerializeField] private Slider player1ParadeSlider;
@@ -139,7 +143,10 @@ namespace Init
                 // Initialisation de l'endurance
                 print("Initialisation du système d'endurance...");
                 gameObject.AddComponent<Stamina>();
-            
+                Stamina.Init(player1ExhaustedFx1, player2ExhaustedFx1);
+
+                //Stamina stamina = new Stamina(player1ExhaustedFx1);
+
                 // Récupération des manettes
                 print("Récupération des manettes...");
                 _controllerHandler = _connecter.GetHandler();

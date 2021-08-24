@@ -12,7 +12,8 @@ public class EmoteHandler : MonoBehaviour
         ANGRY,
         HURT,
         HAPPY,
-        EXHAUSTED
+        EXHAUSTED,
+        STUN
     }
     
     private List<Material> sad;
@@ -20,6 +21,7 @@ public class EmoteHandler : MonoBehaviour
     private List<Material> hurt;
     private List<Material> happy;
     private List<Material> exhausted;
+    private List<Material> stun;
     
     private bool resetFace = false;
     private float timer;
@@ -60,6 +62,10 @@ public class EmoteHandler : MonoBehaviour
             case EMOTE_TYPE.EXHAUSTED:
                 rand = Random.Range(0, exhausted.Count - 1);
                 currentEmote = exhausted[rand];
+                break;
+            case EMOTE_TYPE.STUN:
+                rand = Random.Range(0, stun.Count - 1);
+                currentEmote = stun[rand];
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, null);

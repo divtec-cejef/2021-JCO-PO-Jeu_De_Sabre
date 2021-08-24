@@ -16,6 +16,7 @@ public class EmotePlayer : MonoBehaviour
     [SerializeField] private Material happy_2;
     [SerializeField] private Material happy_3;
     [SerializeField] private Material exhausted_1;
+    [SerializeField] private Material stun_1;
     
     private static Material _sad_1;
     private static Material _sad_2;
@@ -30,6 +31,7 @@ public class EmotePlayer : MonoBehaviour
     private static Material _happy_2;
     private static Material _happy_3;
     private static Material _exhausted_1;
+    private static Material _stun_1;
 
     private void Awake()
     {
@@ -50,6 +52,8 @@ public class EmotePlayer : MonoBehaviour
         _happy_3 = happy_3;
 
         _exhausted_1 = exhausted_1;
+
+        _stun_1 = stun_1;
     }
 
     public static List<Material> GetSadEmote()
@@ -97,5 +101,12 @@ public class EmotePlayer : MonoBehaviour
         List<Material> exhausted = new List<Material>();
         exhausted.Add(_exhausted_1);
         return exhausted;
+    }
+    
+    public static List<Material> GetStunEmote()
+    {
+        List<Material> stun = new List<Material>();
+        stun.Add(_stun_1);
+        return stun;
     }
 }

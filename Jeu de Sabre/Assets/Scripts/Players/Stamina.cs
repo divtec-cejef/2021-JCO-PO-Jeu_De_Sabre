@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Collisions;
 using Init;
 using UnityEngine;
@@ -6,21 +7,37 @@ namespace Players
 {
     public class Stamina : MonoBehaviour
     {
-        private static float player1Stamina;
-        private static float player2Stamina;
+        private static float _player1Stamina;
+        private static float _player2Stamina;
 
-        private static bool canPlayer1Regen;
-        private static bool canPlayer2Regen;
+        private static bool _canPlayer1Regen;
+        private static bool _canPlayer2Regen;
+        
+        //Effet de fatigue
+        private static GameObject _player1ExhaustedFx1;
+        private static GameObject _player2ExhaustedFx1;
+        private static bool _isPlayer1Exausted;
+        private static bool _isPlayer2Exausted;
+
+        public static void Init(GameObject player1ExhaustedFx1, GameObject player2ExhaustedFx1)
+        {
+            _player1ExhaustedFx1 = player1ExhaustedFx1;
+            _player2ExhaustedFx1 = player2ExhaustedFx1;
+            _player1ExhaustedFx1.SetActive(false);
+            _player2ExhaustedFx1.SetActive(false);
+            _isPlayer1Exausted = false;
+            _isPlayer2Exausted = false;
+        }
 
         private void Awake()
         {
             print("\tLancement de la mise à jour de la stamina...");
             
-            player1Stamina = GameInit.GetGameConfig().stamina_amount;
-            player2Stamina = GameInit.GetGameConfig().stamina_amount;
-
-            canPlayer1Regen = true;
-            canPlayer2Regen = true;
+            _player1Stamina = GameInit.GetGameConfig().stamina_amount;
+            _player2Stamina = GameInit.GetGameConfig().stamina_amount;
+    
+            _canPlayer1Regen = true;
+            _canPlayer2Regen = true;
         }
 
         /// <summary>
@@ -32,12 +49,12 @@ namespace Players
         {
             if (player == Player.PLAYER.P1)
             {
-                player1Stamina += value * Time.deltaTime;
+                _player1Stamina += value * Time.deltaTime;
                 GameInit.GetUiUpdater().OnStaminaUpdate(player);
             }
             else
             {
-                player2Stamina += value * Time.deltaTime;
+                _player2Stamina += value * Time.deltaTime;
                 GameInit.GetUiUpdater().OnStaminaUpdate(player);
             }
         }
@@ -51,12 +68,12 @@ namespace Players
         {
             if (player == Player.PLAYER.P1)
             {
-                player1Stamina = value;
+                _player1Stamina = value;
                 GameInit.GetUiUpdater().OnStaminaUpdate(player);
             }
             else
             {
-                player2Stamina = value;
+                _player2Stamina = value;
                 GameInit.GetUiUpdater().OnStaminaUpdate(player);
             }
         }
@@ -64,23 +81,23 @@ namespace Players
         /// <summary>
         /// Renvoie le score actuel
         /// </summary>
-        /// <param name="j">Le joueur auquel on veut récupérer les points</param>
+        /// <param name="player">Le joueur auquel on veut récupérer les points</param>
         /// <returns></returns>
-        public static float GetStamina(Player.PLAYER j)
+        public static float GetStamina(Player.PLAYER player)
         {
-            return j == Player.PLAYER.P1 ? player1Stamina : player2Stamina;
+            return player == Player.PLAYER.P1 ? _player1Stamina : _player2Stamina;
         }
 
         /// <summary>
         /// Réinitialise le score du joueur passé en paramètre
         /// </summary>
-        /// <param name="j">Le joueur auquel on veut réinitialiser les points</param>
-        public static void ReinitStamina(Player.PLAYER j)
+        /// <param name="player">Le joueur auquel on veut réinitialiser les points</param>
+        public static void ReinitStamina(Player.PLAYER player)
         {
-            if (j == Player.PLAYER.P1)
-                player1Stamina = 0;
+            if (player == Player.PLAYER.P1)
+                _player1Stamina = 0;
             else
-                player2Stamina = 0;
+                _player2Stamina = 0;
         }
     
         /// <summary>
@@ -94,65 +111,116 @@ namespace Players
 
             if (player == Player.PLAYER.P1)
             {
-                if (player1Stamina < amount)
+                if (_player1Stamina < amount)
                 {
                     return false;
                 }
             
-                player1Stamina -= amount;
+                _player1Stamina -= amount;
                 GameInit.GetUiUpdater().OnStaminaUpdate(player);
                 //canRegenJ1 = false;
                 return true;
             }
             else
             {
-                if (player2Stamina < amount)
+                if (_player2Stamina < amount)
                 {
                     return false;
                 }
-                player2Stamina -= amount;
+                _player2Stamina -= amount;
                 GameInit.GetUiUpdater().OnStaminaUpdate(player);
                 //canRegenJ2 = false;
                 return true;
             }
         }
 
+        /// <summary>
+        /// Fonction appelé lors de la première frame de la fatigue
+        /// </summary>
+        public static void OnExthaustedEnabled(Player.PLAYER player, GameObject playerFace)
+        {
+            SetExthausted(player, true);
+
+            if (player == Player.PLAYER.P1)
+                _player1ExhaustedFx1.SetActive(true);
+            else if (player == Player.PLAYER.P2)
+                _player2ExhaustedFx1.SetActive(true);
+
+            GameInit.GetEmoteHandler(player).GetRandomEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, playerFace,true);
+        }
+        
+        /// <summary>
+        /// Fonction appelé lorsque la fatigue s'arrête
+        /// </summary> 
+        public static void OnExthaustedDisabled(Player.PLAYER player)
+        {
+            SetExthausted(player, false);
+            if (player == Player.PLAYER.P1)
+                _player1ExhaustedFx1.SetActive(false);
+            else if (player == Player.PLAYER.P2)
+                _player2ExhaustedFx1.SetActive(false);
+        }
+        
+        /// <summary>
+        /// Permet de récupérer l'état actuel de fatigue
+        /// </summary>
+        /// <returns>L'état de fatigue</returns>
+        public static bool GetExthausted(Player.PLAYER player)
+        {
+            return player == Player.PLAYER.P1 ? _isPlayer1Exausted : _isPlayer2Exausted;
+        }
+        
+        /// <summary>
+        /// Permet de modifier l'état de fatigue visible du joueur
+        /// </summary>
+        /// <param name="isExthausted">Le nouvel état de fatigue</param>
+        public static void SetExthausted(Player.PLAYER player, bool isExthausted)
+        {
+            if (player == Player.PLAYER.P1)
+                _isPlayer1Exausted = isExthausted;
+            else if (player == Player.PLAYER.P2)
+                _isPlayer2Exausted = isExthausted;
+        }
+        
         private void Update()
         {
             //Change L'expression du joueur quand il n'a plus de stamina 
-            if (Player.GetStamina(Player.PLAYER.P1) < 10)
+            if (!_isPlayer1Exausted | !_isPlayer2Exausted)
             {
-                GameInit.GetEmoteHandler(Player.PLAYER.P1).GetRandomEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face,true);
-            }
-
-            if (Player.GetStamina(Player.PLAYER.P2) < 10)
-            {
-                GameInit.GetEmoteHandler(Player.PLAYER.P2).GetRandomEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player2Face, true);
+                if (Player.GetStamina(Player.PLAYER.P1) < GameInit.GetGameConfig().attack_stamina_decrease)
+                    OnExthaustedEnabled(Player.PLAYER.P1,CollisionPlayers._player1Face);
+                
+                else if (Player.GetStamina(Player.PLAYER.P2) < GameInit.GetGameConfig().attack_stamina_decrease)
+                    OnExthaustedEnabled(Player.PLAYER.P2,CollisionPlayers._player2Face);
+            }else {
+                if(_isPlayer1Exausted)
+                    OnExthaustedDisabled(Player.PLAYER.P1);
+                else
+                    OnExthaustedDisabled(Player.PLAYER.P2);
             }
             
-            
-            if(canPlayer1Regen)
+            if(_canPlayer1Regen)
             {
-                if (player1Stamina < GameInit.GetGameConfig().stamina_amount /* || !GameInit.getKatanaPlayer1().getParade().getParade()*/)
+                if (_player1Stamina < GameInit.GetGameConfig().stamina_amount /* || !GameInit.getKatanaPlayer1().getParade().getParade()*/)
                 {
-                    if (player1Stamina + GameInit.GetGameConfig().stamina_regeneration_rate >
+                    if (_player1Stamina + GameInit.GetGameConfig().stamina_regeneration_rate >
                         GameInit.GetGameConfig().stamina_amount)
-                        player1Stamina = GameInit.GetGameConfig().stamina_amount;
+                        _player1Stamina = GameInit.GetGameConfig().stamina_amount;
                     else
                         UpdateStamina(Player.PLAYER.P1, GameInit.GetGameConfig().stamina_regeneration_rate);
                 }
             }
 
-            if (!canPlayer2Regen)
+            if (!_canPlayer2Regen)
                 return;
 
-            if (!(player2Stamina < GameInit.GetGameConfig().stamina_amount)) 
+            if (!(_player2Stamina < GameInit.GetGameConfig().stamina_amount)) 
                 return;
 
-            if (player2Stamina + GameInit.GetGameConfig().stamina_regeneration_rate >
+            if (_player2Stamina + GameInit.GetGameConfig().stamina_regeneration_rate >
                 GameInit.GetGameConfig().stamina_amount)
 
-                player2Stamina = GameInit.GetGameConfig().stamina_amount;
+                _player2Stamina = GameInit.GetGameConfig().stamina_amount;
             else
                 UpdateStamina(Player.PLAYER.P2, GameInit.GetGameConfig().stamina_regeneration_rate);
         }
@@ -163,7 +231,7 @@ namespace Players
         /// <param name="canPlayer1Regen">Est-ce que le joueur 1 peut régénérer</param>
         public static void CanPlayer1Regen(bool canPlayer1Regen)
         {
-            Stamina.canPlayer1Regen = canPlayer1Regen;
+            Stamina._canPlayer1Regen = canPlayer1Regen;
         }
         
         /// <summary>
@@ -172,7 +240,7 @@ namespace Players
         /// <returns>Est-ce que le joueur 1 peut régénérer</returns>
         public static bool CanPlayer1Regen()
         {
-            return canPlayer1Regen;
+            return _canPlayer1Regen;
         }
         
         /// <summary>
@@ -181,7 +249,7 @@ namespace Players
         /// <param name="canPlayer1Regen">Est-ce que le joueur 2 peut régénérer</param>
         public static void CanPlayer2Regen(bool canPlayer2Regen)
         {
-            Stamina.canPlayer2Regen = canPlayer2Regen;
+            Stamina._canPlayer2Regen = canPlayer2Regen;
         }
         
         /// <summary>
@@ -190,7 +258,7 @@ namespace Players
         /// <returns>Est-ce que le joueur 2 peut régénérer</returns>
         public static bool CanPlayer2Regen()
         {
-            return canPlayer2Regen;
+            return _canPlayer2Regen;
         }
     }
     
