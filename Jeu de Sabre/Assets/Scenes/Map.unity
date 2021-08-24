@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.08988297, g: 0.07305313, b: 0.14573157, a: 1}
+  m_IndirectSpecularColor: {r: 0.21293569, g: 0.21293569, b: 0.21293569, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10262,7 +10262,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c63dbdce7a885be46a09a1292c576dd5, type: 2}
+  - {fileID: 2100000, guid: 1a398f971e6ba0841b8dbdd187d1f38b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12711,7 +12711,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343876778}
-  m_LocalRotation: {x: 0.07476614, y: -0.00000011521978, z: 0.0000000086387155, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.00000012379888, z: 0.000000009281943, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15667,19 +15667,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afdd0899d95996141a4f246341caba9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sad_1: {fileID: 2100000, guid: 554ea8d8aa2499c458cec51f3b56c73e, type: 2}
-  sad_2: {fileID: 2100000, guid: 2190da77c0769554695eb35ca0210665, type: 2}
-  sad_3: {fileID: 2100000, guid: 86d1f854079fdb04c954ec6e15a3c239, type: 2}
-  angry_1: {fileID: 2100000, guid: f8a4138bf9ae22f4bb6a1de4c5b4ef2b, type: 2}
-  angry_2: {fileID: 2100000, guid: d39de6a6e4160f844a6eb117291dc37e, type: 2}
-  angry_3: {fileID: 2100000, guid: b6ac71f500006124e9c72232f24fac64, type: 2}
-  hurt_1: {fileID: 2100000, guid: e624609c95a5abd47b41d08e7e30b391, type: 2}
-  hurt_2: {fileID: 2100000, guid: 7e38193b62e9dd943b8d66a3689af40a, type: 2}
-  hurt_3: {fileID: 2100000, guid: c2a11e62eef72c34d907d0929fdc68af, type: 2}
-  happy_1: {fileID: 2100000, guid: 0d4f200ef64a43f44889793802bf29b8, type: 2}
-  happy_2: {fileID: 2100000, guid: 5e1608cc1df50e841a3b98931d786996, type: 2}
-  happy_3: {fileID: 2100000, guid: 5a91be8ecbf64204699b171ad0ead293, type: 2}
-  exhausted_1: {fileID: 2100000, guid: 359c94333642dfb4895912146dc32864, type: 2}
+  sad_1: {fileID: 2100000, guid: 1f601a1ddc63dbd40bd5f84234469222, type: 2}
+  sad_2: {fileID: 2100000, guid: 6e6365712bd1fcb4bafcd2c46ed905de, type: 2}
+  sad_3: {fileID: 2100000, guid: b5616288bb20f9e4782e9764ae0f117b, type: 2}
+  angry_1: {fileID: 2100000, guid: 82623d82eda723545915d2829dd4a401, type: 2}
+  angry_2: {fileID: 2100000, guid: 611e126d4e29c0043a35c885eedf3a33, type: 2}
+  angry_3: {fileID: 2100000, guid: dc9e11e6774e83844833db2c4f886b05, type: 2}
+  hurt_1: {fileID: 2100000, guid: 321724c01bcd57848a26ef4736c7b20f, type: 2}
+  hurt_2: {fileID: 2100000, guid: 6d58a9e31edc4d74ebb3d492b8b68645, type: 2}
+  hurt_3: {fileID: 2100000, guid: 71042099052512948a4ffcf531efc6e2, type: 2}
+  happy_1: {fileID: 2100000, guid: cf69a2b011d6f5a43be55281495759ea, type: 2}
+  happy_2: {fileID: 2100000, guid: 11107787dac80b34f832d3570cdfa9e7, type: 2}
+  happy_3: {fileID: 2100000, guid: fb3e4a5c5b4ba2c43a2db32fd44485fb, type: 2}
+  exhausted_1: {fileID: 2100000, guid: 9772e2d6195f5984d83fa061490bcbd7, type: 2}
 --- !u!1001 &421425569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64364,7 +64364,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c63dbdce7a885be46a09a1292c576dd5, type: 2}
+  - {fileID: 2100000, guid: 6183d2fa2fc61a44e98396a652bd4258, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76189,7 +76189,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893022990}
-  m_LocalRotation: {x: 0.07476614, y: -0.00000011521978, z: 0.0000000086387155, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.00000012379888, z: 0.000000009281943, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
