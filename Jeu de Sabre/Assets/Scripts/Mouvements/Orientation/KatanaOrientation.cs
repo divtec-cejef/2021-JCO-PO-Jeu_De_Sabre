@@ -10,7 +10,7 @@ namespace Mouvements.Orientation
     { 
         private Player.PLAYER player;
     
-        private IntPtr playerController;
+        private MoveAPI playerController;
         
         /* Effet affiché au moment de la parade */ 
         private GameObject playerParadeFx1;
@@ -49,7 +49,7 @@ namespace Mouvements.Orientation
         /// <param name="playerParadeFxPos">La position de l'effet visuel lors de son apparition</param>
         /// <param name="playerKatanaAxis">L'axe de rotation du sabre</param>
         /// <param name="katana">Le sabre lui-même</param>
-        public KatanaOrientation(Player.PLAYER player, IntPtr playerController, GameObject playerParadeFx1, GameObject playerParadeFx2, GameObject playerParadeFxPos, GameObject playerKatanaAxis, GameObject katana, Slider paradeSlider)
+        public KatanaOrientation(Player.PLAYER player, MoveAPI playerController, GameObject playerParadeFx1, GameObject playerParadeFx2, GameObject playerParadeFxPos, GameObject playerKatanaAxis, GameObject katana, Slider paradeSlider)
         {
             this.player = player;
             this.playerController = playerController;
@@ -60,9 +60,8 @@ namespace Mouvements.Orientation
     
             // Activation et réinitialisation de l'orientation de la manette
             Debug.Log("\tActivation et réinitialisation de l'orientation de la manette...");
-            PSMoveAPI.psmove_enable_orientation(playerController, PSMove_Bool.PSMove_True);
-            PSMoveAPI.psmove_reset_orientation(playerController);
-        
+            playerController.ResetOrientation();
+
             // Initialisation de la parade
             Debug.Log("\tConfiguration de la parade...");
             playerKatanaAxis.AddComponent<Parade.Parade>().Init(GameInit.GetGameConfig().parade_duration, playerParadeFx1, playerParadeFx2, playerParadeFxPos, playerKatanaAxis, player, this, paradeSlider);
@@ -83,12 +82,16 @@ namespace Mouvements.Orientation
                 return;
 
             // Met à jour la led de la manette
-            PSMoveAPI.psmove_update_leds(playerController);
+            //PSMoveAPI.psmove_update_leds(playerController);
         
             // Récupération de l'orientation
-            PSMoveAPI.psmove_poll(playerController);
-            PSMoveAPI.psmove_get_orientation(playerController, ref ow, ref axeX, ref axeY, ref axeZ);
+            currentOrientation = playerController.Orientation;
 
+            axeX = currentOrientation.x;
+            axeY = currentOrientation.y;
+            axeZ = currentOrientation.z;
+            ow = currentOrientation.w;
+            
             // La c'est des trucs pour modifier tenter de recalibrer le sabre tout seul
             // C'est pas encore parfait
             {

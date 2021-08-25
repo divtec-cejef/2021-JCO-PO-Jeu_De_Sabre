@@ -125,7 +125,7 @@ namespace Init
             _connecter = new ControllerConnecter();
             
             // Si l'initialisation est passée
-            if (_connecter.Init())
+            if (_connecter.Init(gameObject))
             {
                 // Récupération et lecture du fichier de configuration
                 print("Récupération de la configuration du jeu...");
@@ -365,10 +365,10 @@ namespace Init
         private void OnApplicationQuit()
         {
             // Déconnexion des manettes à la fermeture du jeu
-            PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer1Controller());
-            PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer2Controller());
-            PSMoveAPI.psmove_tracker_free(TrackerConnecter.player1Tracker);
-            PSMoveAPI.psmove_tracker_free(TrackerConnecter.player2Tracker);
+            // PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer1Controller());
+            // PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer2Controller());
+            // PSMoveAPI.psmove_tracker_free(TrackerConnecter.player1Tracker);
+            // PSMoveAPI.psmove_tracker_free(TrackerConnecter.player2Tracker);
         }
     }
 }
