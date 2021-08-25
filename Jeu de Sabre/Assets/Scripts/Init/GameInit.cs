@@ -147,10 +147,9 @@ namespace Init
                 _controllerHandler = _connecter.GetHandler();
             
                 // Initialisation des trackers
-                print("Initialisation des trackers...");
-                gameObject.AddComponent<TrackerConnecter>();
-                _tracker = gameObject.GetComponent<TrackerConnecter>();
-                _tracker.Init();
+                // print("Initialisation des trackers...");
+                // gameObject.AddComponent<TrackerConnecter>();
+                // _tracker = gameObject.GetComponent<TrackerConnecter>();
                 // _tracker = new TrackerConnecter();
                 // _tracker.Init();
 
@@ -368,6 +367,8 @@ namespace Init
             // Déconnexion des manettes à la fermeture du jeu
             PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer1Controller());
             PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer2Controller());
+            PSMoveAPI.psmove_tracker_free(TrackerConnecter.player1Tracker);
+            PSMoveAPI.psmove_tracker_free(TrackerConnecter.player2Tracker);
         }
     }
 }
