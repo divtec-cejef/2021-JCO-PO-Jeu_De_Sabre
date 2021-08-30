@@ -67,12 +67,14 @@ namespace Collisions
         private void Update()
         {
             if (!updateRotation) return;
+            if (CollisionArene.isTrigger) return;
 
             float rotationTime = Random.Range(.05f, .25f);
             float rotationAngle = Random.Range(100, 200);
             bool backwardMouvement = Random.Range(0, 2) == 0;
             float backwardTime = Random.Range(.02f, .1f);
             float backwardDistance = Random.Range(1, 10);
+            
             
             var position = player1LeftCollisionCheck.position;
             Vector3 player1StartLeft = new Vector3(position.x, position.y - 1.1f, position.z);
@@ -89,7 +91,8 @@ namespace Collisions
                 } 
                 roteTimer = .01f;
             }
-
+            
+            
             var position1 = player1RightCollisionCheck.position;
             Vector3 player1StatRight = new Vector3(position1.x, position1.y - 1.1f, position1.z);
             Vector3 player1EndRight = new Vector3(position1.x, position1.y + 1.1f, position1.z);
@@ -106,6 +109,7 @@ namespace Collisions
                 roteTimer = .01f;
             }
 
+            
             var position2 = player2LeftCollisionCheck.position;
             Vector3 player2StartLeft = new Vector3(position2.x, position2.y - 1.1f, position2.z);
             Vector3 player2EndLeft = new Vector3(position2.x, position2.y + 1.1f, position2.z);
@@ -121,7 +125,8 @@ namespace Collisions
                 } 
                 roteTimer = .01f;
             }
-
+            
+            
             var position3 = player2RightCollisionCheck.position;
             Vector3 player2StartRight = new Vector3(position3.x, position3.y - 1.1f, position3.z);
             Vector3 player2EndRight = new Vector3(position3.x, position3.y + 1.1f, position3.z);
@@ -137,6 +142,7 @@ namespace Collisions
                 } 
                 roteTimer = .01f;
             }
+            
             
             if (roteTimer != 0f)
             {
