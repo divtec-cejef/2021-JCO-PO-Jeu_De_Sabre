@@ -49,11 +49,20 @@ namespace Collisions
         private static float roteTimer = 0f;
         private static float backTimer = 0f;
         private static bool isColliding;
-    
+
         //private float timer = 0;
     
         private AttackMouvements attack;
+
+        private bool isPlayer1Left = false;
+        private bool isPlayer1Right = false;
+        private bool isFirstCollisionPlayer1 = false;
+        
+        private bool isPlayer2Left = false;
+        private bool isPlayer2Right = false;
+        private bool isFirstCollisionPlayer2 = false;
     
+        
         private void Awake()
         {
             _player1Face = player1Face;
@@ -78,9 +87,16 @@ namespace Collisions
             var position = player1LeftCollisionCheck.position;
             Vector3 player1StartLeft = new Vector3(position.x, position.y - 1.1f, position.z);
             Vector3 player1EndLeft = new Vector3(position.x, position.y + 1.1f, position.z);
-            bool isPlayer1Left = Physics.CheckCapsule(player1StartLeft, player1EndLeft, 0.1f, sabre2);
+            isPlayer1Left = Physics.CheckCapsule(player1StartLeft, player1EndLeft, 0.1f, sabre2);
 
-            if (isPlayer1Left && roteTimer == 0 && !isColliding)
+            var position1 = player1RightCollisionCheck.position;
+            Vector3 player1StatRight = new Vector3(position1.x, position1.y - 1.1f, position1.z);
+            Vector3 player1EndRight = new Vector3(position1.x, position1.y + 1.1f, position1.z);
+            isPlayer1Right = Physics.CheckCapsule(player1StatRight, player1EndRight, 0.1f, sabre2);
+            Debug.Log(("IsPlayer1Right :"+ isPlayer1Right));
+            Debug.Log(("IsPlayer1Left :"+ isPlayer1Left));
+            
+            if (isPlayer1Left && roteTimer == 0 && !isPlayer1Right && !isColliding && isFirstCollisionPlayer1)
             {
                 Travelling.anglesToRotate = new Vector3(0, -rotationAngle, 0);
                 if (backwardMouvement)
@@ -89,15 +105,12 @@ namespace Collisions
                     backTimer = .01f;
                 } 
                 roteTimer = .01f;
+                isPlayer1Left = false;
+                isFirstCollisionPlayer1 = false;
+                Debug.Log(("C LA GOCHE isFirstCollisionPlayer1 :"+ isFirstCollisionPlayer1));
             }
             
-            
-            var position1 = player1RightCollisionCheck.position;
-            Vector3 player1StatRight = new Vector3(position1.x, position1.y - 1.1f, position1.z);
-            Vector3 player1EndRight = new Vector3(position1.x, position1.y + 1.1f, position1.z);
-            bool isPlayer1Right = Physics.CheckCapsule(player1StatRight, player1EndRight, 0.1f, sabre2);
-
-            if (isPlayer1Right && roteTimer == 0 && !isColliding)
+            if (isPlayer1Right && roteTimer == 0 && !isPlayer1Right && !isColliding && isFirstCollisionPlayer1)
             {
                 Travelling.anglesToRotate = new Vector3(0, +rotationAngle, 0);
                 if (backwardMouvement)
@@ -106,6 +119,9 @@ namespace Collisions
                     backTimer = .01f;
                 } 
                 roteTimer = .01f;
+                isPlayer1Right = false;
+                isFirstCollisionPlayer1 = false;
+                Debug.Log(("C LA DROUATE isFirstCollisionPlayer1 :"+ isFirstCollisionPlayer1));
             }
 
             
@@ -167,17 +183,22 @@ namespace Collisions
 
         private void OnTriggerEnter(Collider other)
         {
+            Debug.Log("UIOADIODIOJ");
             // Initialisation du joueur qui a effectuer l'attaque
             Player.PLAYER player = Player.PLAYER.Other;
-        
+
             // Si le sabre du joueur 1 entre en collision avec autre chose que son propre joueur
-            if (other.CompareTag("Katana1") && !gameObject.CompareTag("Player1"))
+            if (other.CompareTag("Katana1") && !gameObject.CompareTag("Player1")){
                 player = Player.PLAYER.P1;
-        
+                isFirstCollisionPlayer1 = true;
+            }
+
             // Si le sabre du joueur 2 entre en collision avec autre chose que son propre joueur
-            else if (other.CompareTag("Katana2") && !gameObject.CompareTag("Player2"))
+            else if (other.CompareTag("Katana2") && !gameObject.CompareTag("Player2")){
                 player = Player.PLAYER.P2;
-        
+                isFirstCollisionPlayer2 = true;
+            }
+            
             // Si aucune condition n'est respectée et que player n'a pas été modifié, la collision n'est pas valable
             if (player == Player.PLAYER.Other) 
                 return;
@@ -185,6 +206,7 @@ namespace Collisions
             // Si le joueur à assez d'endurance pour porter le coup
             if (Player.DecreaseStamina(player, GameInit.GetGameConfig().attack_stamina_decrease))
             {
+                
                 // Mise à jour du score du joueur
                 Player.UpdatePlayerScore(player, GameInit.GetGameConfig().attack_score_amount);
                 
