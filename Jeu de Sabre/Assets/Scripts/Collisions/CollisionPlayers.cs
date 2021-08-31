@@ -67,7 +67,6 @@ namespace Collisions
         private void Update()
         {
             if (!updateRotation) return;
-            if (CollisionArene.isTrigger) return;
 
             float rotationTime = Random.Range(.05f, .25f);
             float rotationAngle = Random.Range(100, 200);

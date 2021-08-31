@@ -8,7 +8,7 @@ public class CollisionArene : MonoBehaviour
 {
     [SerializeField] private Transform playerAxis;
     public static bool isTrigger = false;
-
+    private const float limitationArena = 0.25f;
     private void OnTriggerExit(Collider other)
     {
         if (!isTrigger)
@@ -24,12 +24,14 @@ public class CollisionArene : MonoBehaviour
     {
         if (isTrigger)
         {
-            //Teste si il est toujour dans l'arène    
-            if (playerAxis.localPosition.x < 0.25 && playerAxis.localPosition.x > -0.25f &&
-                playerAxis.localPosition.z < 0.25f && playerAxis.localPosition.z > -0.25f)
-                isTrigger = false;
+            //Teste si il est toujours dans l'arène
+            if (playerAxis.localPosition.x < limitationArena && playerAxis.localPosition.x > -limitationArena &&
+                playerAxis.localPosition.z < limitationArena && playerAxis.localPosition.z > -limitationArena)
+            {
+                isTrigger = false; 
+            }
             else
-                playerAxis.localPosition = Vector3.Lerp(playerAxis.localPosition, Vector3.zero, Time.deltaTime * 10f);
+                playerAxis.localPosition = Vector3.Lerp(playerAxis.localPosition, Vector3.zero, Time.deltaTime * 2f);
         }
     }
 }
