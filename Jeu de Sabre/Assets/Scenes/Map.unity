@@ -2148,6 +2148,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Effect_Exhausted
       objectReference: {fileID: 0}
+    - target: {fileID: 5320799468364229681, guid: 19715461d8ea5d84a9b384d20743ff5a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5320799468364229681, guid: 19715461d8ea5d84a9b384d20743ff5a, type: 3}
+      propertyPath: m_TagString
+      value: Player2
+      objectReference: {fileID: 0}
     - target: {fileID: 5320799468364229682, guid: 19715461d8ea5d84a9b384d20743ff5a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8012,6 +8020,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Effect_Stun
       objectReference: {fileID: 0}
+    - target: {fileID: 8572594069368776663, guid: f1fcb9be29b7bf64abe465f293114a7f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572594069368776663, guid: f1fcb9be29b7bf64abe465f293114a7f, type: 3}
+      propertyPath: m_TagString
+      value: Player1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1fcb9be29b7bf64abe465f293114a7f, type: 3}
 --- !u!4 &227656302 stripped
@@ -10382,7 +10398,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1a398f971e6ba0841b8dbdd187d1f38b, type: 2}
+  - {fileID: 2100000, guid: 0630c9f86e9d5334584af238398bea55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12831,7 +12847,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343876778}
-  m_LocalRotation: {x: 0.07476614, y: -0.0000001237989, z: 0.000000009281943, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.00000011521979, z: 0.0000000086387155, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15793,14 +15809,13 @@ MonoBehaviour:
   angry_1: {fileID: 2100000, guid: 82623d82eda723545915d2829dd4a401, type: 2}
   angry_2: {fileID: 2100000, guid: 611e126d4e29c0043a35c885eedf3a33, type: 2}
   angry_3: {fileID: 2100000, guid: dc9e11e6774e83844833db2c4f886b05, type: 2}
-  hurt_1: {fileID: 2100000, guid: 321724c01bcd57848a26ef4736c7b20f, type: 2}
-  hurt_2: {fileID: 2100000, guid: 6d58a9e31edc4d74ebb3d492b8b68645, type: 2}
-  hurt_3: {fileID: 2100000, guid: 71042099052512948a4ffcf531efc6e2, type: 2}
+  hurt_1: {fileID: 2100000, guid: 133c598bd0e4f53499a9dda35d6de057, type: 2}
+  hurt_2: {fileID: 2100000, guid: 5339b714223dd7242ba0bfa10b192451, type: 2}
+  hurt_3: {fileID: 2100000, guid: 07239d2209be15642b713ead411fc8cd, type: 2}
   happy_1: {fileID: 2100000, guid: cf69a2b011d6f5a43be55281495759ea, type: 2}
   happy_2: {fileID: 2100000, guid: 11107787dac80b34f832d3570cdfa9e7, type: 2}
   happy_3: {fileID: 2100000, guid: fb3e4a5c5b4ba2c43a2db32fd44485fb, type: 2}
   exhausted_1: {fileID: 2100000, guid: 9772e2d6195f5984d83fa061490bcbd7, type: 2}
-  stun_1: {fileID: 2100000, guid: f4bdce704c4f8774cb9944bbb679bed7, type: 2}
 --- !u!1001 &421425569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23929,9 +23944,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 672296641}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EffectP2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24297,6 +24312,14 @@ PrefabInstance:
     - target: {fileID: 8572594069368776663, guid: f1fcb9be29b7bf64abe465f293114a7f, type: 3}
       propertyPath: m_Name
       value: Effect_Stun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572594069368776663, guid: f1fcb9be29b7bf64abe465f293114a7f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572594069368776663, guid: f1fcb9be29b7bf64abe465f293114a7f, type: 3}
+      propertyPath: m_TagString
+      value: Player1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1fcb9be29b7bf64abe465f293114a7f, type: 3}
@@ -64728,7 +64751,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6183d2fa2fc61a44e98396a652bd4258, type: 2}
+  - {fileID: 2100000, guid: 0630c9f86e9d5334584af238398bea55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76624,7 +76647,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893022990}
-  m_LocalRotation: {x: 0.07476614, y: -0.0000001237989, z: 0.000000009281943, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.00000011521979, z: 0.0000000086387155, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -83368,9 +83391,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2080972518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EffectP1
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -12,8 +12,7 @@ public class EmoteHandler : MonoBehaviour
         ANGRY,
         HURT,
         HAPPY,
-        EXHAUSTED,
-        STUN
+        EXHAUSTED
     }
     
     private List<Material> sad;
@@ -21,7 +20,6 @@ public class EmoteHandler : MonoBehaviour
     private List<Material> hurt;
     private List<Material> happy;
     private List<Material> exhausted;
-    private List<Material> stun;
     
     private bool resetFace = false;
     private float timer;
@@ -29,49 +27,68 @@ public class EmoteHandler : MonoBehaviour
 
     private void Awake()
     {
+        //print("Awake!");
         timer = 0;
+    }
+
+    public void SetEmote(EMOTE_TYPE type, GameObject playerFace, float resetTime, bool resetFace)
+    {
+        playerFace.GetComponent<Renderer>().material = GetRandomEmote(type, playerFace, resetTime, resetFace);
+    }
+    
+    public void SetEmote(EMOTE_TYPE type, GameObject playerFace, bool resetFace)
+    {
+        playerFace.GetComponent<Renderer>().material = GetRandomEmote(type, playerFace, 1f, resetFace);
+    }
+    
+    
+    public Material GetRandomEmote(EMOTE_TYPE type, GameObject playerFace, float resetTime, bool resetFace)
+    {
+        int rand;
+        int counter;
+        Material currentEmote;
+
         sad = EmotePlayer.GetSadEmote();
         angry = EmotePlayer.GetAngryEmote();
         hurt = EmotePlayer.GetHurtEmote();
         happy = EmotePlayer.GetHappyEmote();
         exhausted = EmotePlayer.GetExhaustedEmote();
-    }
 
-    public Material GetRandomEmote(EMOTE_TYPE type, GameObject playerFace, float resetTime, bool resetFace)
-    {
-        int rand;
-        Material currentEmote;
         switch (type)
         {
             case EMOTE_TYPE.SAD:
-                rand = Random.Range(0, sad.Count - 1);
+                //List<Material> sad = EmotePlayer.GetSadEmote();
+                counter = sad.Count;
+                rand = Random.Range(0, counter);
                 currentEmote =  sad[rand];
                 break;
             case EMOTE_TYPE.ANGRY:
-                rand = Random.Range(0, angry.Count - 1);
+                counter = angry.Count;
+                rand = Random.Range(0, counter);
                 currentEmote = angry[rand];
                 break;
             case EMOTE_TYPE.HURT:
-                rand = Random.Range(0, hurt.Count - 1);
+                counter = hurt.Count;
+                rand = Random.Range(0, counter);
                 currentEmote = hurt[rand];
                 break;
             case EMOTE_TYPE.HAPPY:
-                rand = Random.Range(0, happy.Count - 1);
+                counter = happy.Count;
+                rand = Random.Range(0, counter);
                 currentEmote = happy[rand];
                 break;
             case EMOTE_TYPE.EXHAUSTED:
-                rand = Random.Range(0, exhausted.Count - 1);
-                currentEmote = exhausted[rand];
-                break;
-            case EMOTE_TYPE.STUN:
-                rand = Random.Range(0, stun.Count - 1);
-                currentEmote = stun[rand];
+                // int counter = exhausted.Count - 1;
+                //
+                // if (counter > 0) rand = Random.Range(0, exhausted.Count - 1);
+                // else rand = 0;
+                currentEmote = exhausted[0];
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, null);
         }
 
-        if (resetFace) StartCoroutine(ResetFace(playerFace, resetTime));
+        //if (resetFace) StartCoroutine(ResetFace(playerFace, resetTime));
                  
         return currentEmote;
     }
@@ -81,18 +98,11 @@ public class EmoteHandler : MonoBehaviour
         return GetRandomEmote(type, playerFace, 1f, resetFace);
     }
 
-    IEnumerator ResetFace(GameObject playerFace, float timer)
+    public void ResetFace(GameObject playerFace)
     {
-        yield return new WaitForSeconds(timer);
-        if (0 == Random.Range(0, 1))
-        {
-            playerFace.GetComponent<Renderer>().material =
-                GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false); 
-        }
+        if (0 == Random.Range(0, 2))
+            playerFace.GetComponent<Renderer>().material = GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false);
         else
-        {
-            playerFace.GetComponent<Renderer>().material =
-                GetRandomEmote(EMOTE_TYPE.ANGRY, playerFace, 0, false); 
-        }
+            playerFace.GetComponent<Renderer>().material = GetRandomEmote(EMOTE_TYPE.ANGRY, playerFace, 0, false);
     }
 }

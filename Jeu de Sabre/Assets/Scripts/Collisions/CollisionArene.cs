@@ -15,10 +15,7 @@ public class CollisionArene : MonoBehaviour
         {
             if (other.CompareTag("Player1") || other.CompareTag("Player2"))
             {
-
                 isTrigger = true;
-                Debug.Log("isTrigger : " + isTrigger);
-
             }
         }
     }

@@ -156,9 +156,15 @@ namespace Players
         {
             SetExthausted(player, false);
             if (player == Player.PLAYER.P1)
+            {
                 _player1ExhaustedFx1.SetActive(false);
+                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face, 1f,true);
+            }
             else if (player == Player.PLAYER.P2)
+            {
                 _player2ExhaustedFx1.SetActive(false);
+                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face, 1f,true);
+            }
         }
         
         /// <summary>
@@ -185,7 +191,7 @@ namespace Players
         private void Update()
         {
             //Change L'expression du joueur quand il n'a plus de stamina 
-            if (!_isPlayer1Exausted | !_isPlayer2Exausted)
+            if (!_isPlayer1Exausted || !_isPlayer2Exausted)
             {
                 if (Player.GetStamina(Player.PLAYER.P1) < GameInit.GetGameConfig().attack_stamina_decrease)
                     OnExthaustedEnabled(Player.PLAYER.P1,CollisionPlayers._player1Face);
