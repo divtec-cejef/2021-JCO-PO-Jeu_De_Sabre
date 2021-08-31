@@ -3,22 +3,24 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Collisions.CollisionPlayers
     - Collisions.CollisionSabres
-    - DebugScreen
+    - EmotePlayer
     - FPSCounter
-    - FollowElement
+    - Init.DebugScreen
     - Init.GameInit
+    - Mouvements.FollowElement
     - Mouvements.Orientation.Katana1
     - Mouvements.Orientation.Katana2
-    - MultiDisplay
     - TrackingAdvers
     - Travelling
     - UnityEngine.UI.Extensions.UIParticleSystem
     Cinemachine.dll:
+    - Cinemachine.CinemachineBasicMultiChannelPerlin
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineComposer
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineTransposer
     - Cinemachine.CinemachineVirtualCamera
+    - Cinemachine.NoiseSettings
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -120,7 +122,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1572}
+      Script: {instanceID: 1570}
+    - Class: 114
+      Script: {instanceID: 1576}
     - Class: 114
       Script: {instanceID: 1578}
     - Class: 114
@@ -128,37 +132,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 1766}
+      Script: {instanceID: 1768}
     - Class: 114
-      Script: {instanceID: 1918}
+      Script: {instanceID: 1920}
     - Class: 114
-      Script: {instanceID: 1930}
+      Script: {instanceID: 1932}
     - Class: 114
       Script: {instanceID: 2134}
     - Class: 114
       Script: {instanceID: 2142}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 2166}
     - Class: 114
-      Script: {instanceID: 2418}
+      Script: {instanceID: 2192}
     - Class: 114
-      Script: {instanceID: 2488}
+      Script: {instanceID: 2370}
     - Class: 114
-      Script: {instanceID: 2518}
+      Script: {instanceID: 2422}
     - Class: 114
-      Script: {instanceID: 2558}
+      Script: {instanceID: 2492}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 2522}
     - Class: 114
-      Script: {instanceID: 2706}
+      Script: {instanceID: 2562}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2708}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2752}
     - Class: 114
-      Script: {instanceID: 2850}
+      Script: {instanceID: 2772}
+    - Class: 114
+      Script: {instanceID: 2840}
     - Class: 114
       Script: {instanceID: 3026}
     - Class: 114
@@ -170,37 +176,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3268}
     - Class: 114
-      Script: {instanceID: 3528}
+      Script: {instanceID: 3530}
     - Class: 114
-      Script: {instanceID: 3658}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 3766}
+      Script: {instanceID: 3660}
     - Class: 114
       Script: {instanceID: 3768}
     - Class: 114
-      Script: {instanceID: 3848}
+      Script: {instanceID: 3770}
     - Class: 114
-      Script: {instanceID: 3904}
+      Script: {instanceID: 3850}
     - Class: 114
-      Script: {instanceID: 4140}
+      Script: {instanceID: 3906}
     - Class: 114
-      Script: {instanceID: 4306}
+      Script: {instanceID: 4142}
     - Class: 114
-      Script: {instanceID: 4510}
+      Script: {instanceID: 4308}
     - Class: 114
-      Script: {instanceID: 4574}
+      Script: {instanceID: 4514}
     - Class: 114
-      Script: {instanceID: 4596}
+      Script: {instanceID: 4578}
     - Class: 114
-      Script: {instanceID: 4890}
+      Script: {instanceID: 4602}
     - Class: 114
-      Script: {instanceID: 4980}
+      Script: {instanceID: 4810}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 4898}
     - Class: 114
-      Script: {instanceID: 5096}
+      Script: {instanceID: 4988}
     - Class: 114
-      Script: {instanceID: 306436}
+      Script: {instanceID: 5064}
+    - Class: 114
+      Script: {instanceID: 5104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -256,6 +264,12 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -296,12 +310,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Player
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -436,7 +444,7 @@ ScriptsOnlyBuild:
     className: TrackingAdvers
   - hash:
       serializedVersion: 2
-      Hash: 3500c7e732e4c8125d6c3767e4d6db42
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Travelling
@@ -446,6 +454,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: be5a7f1bfa00fdac12009229de3e0175
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Init
+    className: ControllerConnecter
+  - hash:
+      serializedVersion: 2
+      Hash: abfa3659cea4545252d7b212cac948e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Init
+    className: DebugScreen
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -496,6 +516,12 @@ ScriptsOnlyBuild:
     className: InputActionEditorWindow
   - hash:
       serializedVersion: 2
+      Hash: 99bd7c29eca056100247cec5b87ea0fc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EmotePlayer
+  - hash:
+      serializedVersion: 2
       Hash: 0bcc1c23e70eab6bb5ec7e5f89a0095d
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine.PostFX
@@ -526,7 +552,7 @@ ScriptsOnlyBuild:
     className: EnumerableTestState
   - hash:
       serializedVersion: 2
-      Hash: 554c609dd0485c0b42008904ef695f72
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mouvements.Orientation
     className: Katana2
@@ -632,12 +658,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -748,7 +768,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 961bed0f16e2ccac904ae4bfb30323dc
+      Hash: fabe4dd9f16d8c78edcdb8bd2c7c85a9
     assemblyName: Assembly-CSharp.dll
     namespaceName: Init
     className: GameInit
@@ -778,7 +798,7 @@ ScriptsOnlyBuild:
     className: TouchSimulation
   - hash:
       serializedVersion: 2
-      Hash: 554c609dd0485c0b42008904ef695f72
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mouvements.Orientation
     className: Katana1
@@ -818,6 +838,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputActionAssetEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 0b237c971d092556708dedd0b56fee04
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestRotation
   - hash:
       serializedVersion: 2
       Hash: d3f29ba27f28c1f558880c4df5545ed3
@@ -876,7 +902,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: d62883107f844249416ca3fbbd6cd9d2
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Mouvements
     className: FollowElement
   - hash:
       serializedVersion: 2
@@ -908,12 +934,6 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineFramingTransposer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Score
   - hash:
       serializedVersion: 2
       Hash: 8963690ef6f6b05ce03bfd8b5c26e20c
@@ -988,12 +1008,6 @@ ScriptsOnlyBuild:
     className: CinemachineTransposer
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MultiDisplay
-  - hash:
-      serializedVersion: 2
       Hash: 269ba92b8c3bdb61d65baa23d079d5db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1054,7 +1068,7 @@ ScriptsOnlyBuild:
     className: CinemachineIndependentImpulseListener
   - hash:
       serializedVersion: 2
-      Hash: 95d842999bb57bf91fd90c26e95f5e0c
+      Hash: 2845046e537d216d6027d2d16f2d9d1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: Collisions
     className: CollisionPlayers
@@ -1216,6 +1230,12 @@ ScriptsOnlyBuild:
     className: Actions
   - hash:
       serializedVersion: 2
+      Hash: cc7c13041a0854fcb2fd0b59a894854f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveAPI
+  - hash:
+      serializedVersion: 2
       Hash: dbfb4270852b0008a423a7418d9de4cf
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1288,6 +1308,12 @@ ScriptsOnlyBuild:
     className: LensDistortion
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Camera
+    className: CameraShaking
+  - hash:
+      serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1346,6 +1372,12 @@ ScriptsOnlyBuild:
     assemblyName: Boxophobic.Utils.Scripts.dll
     namespaceName: Boxophobic.Utils
     className: SettingsData
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EmoteHandler
   - hash:
       serializedVersion: 2
       Hash: d5630f96bd5a6a6eed7e1754c3fb8703
@@ -1418,13 +1450,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: AmbientOcclusion
-  - hash:
-      serializedVersion: 2
-      Hash: abfa3659cea4545252d7b212cac948e2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DebugScreen
   platform: 19
   scenePathNames:
   - Assets/Scenes/Map.unity
-  playerPath: C:/Users/Doryan LB/Documents/KatanaNoTatakai-4.0/Jeu de Sabre.exe
+  playerPath: C:/Users/KNT/Documents/Katana/Jeu de Sabre.exe

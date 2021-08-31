@@ -6987,6 +6987,7 @@ GameObject:
   - component: {fileID: 196049067}
   - component: {fileID: 196049068}
   - component: {fileID: 196049069}
+  - component: {fileID: 196049070}
   m_Layer: 0
   m_Name: Player1KatanaAxis
   m_TagString: Untagged
@@ -7041,6 +7042,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionFx: {fileID: 1784119767575136, guid: 3d103d65aaa62f34e8e9ad872c5735fb, type: 3}
+--- !u!114 &196049070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196049066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4d698ff1042d74f8980f618ae46ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xOffset: 15
+  yOffset: 15
+  zAmplitude: -3
+  zOffset: 3
 --- !u!1001 &199108783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12711,7 +12728,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343876778}
-  m_LocalRotation: {x: 0.07476614, y: -0.000000113203996, z: 0.0000000084875795, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.00000012379888, z: 0.000000009281943, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -42799,6 +42816,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 184202, guid: d44f072607d893145b2f6d39c8229bef, type: 3}
   m_PrefabInstance: {fileID: 1155284528}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1155284531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155284530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2578089a96464b348a5399c795afc7b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &1155284532
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -73502,6 +73531,10 @@ MonoBehaviour:
   player2StaminaSlider: {fileID: 355493406}
   player1ParadeSlider: {fileID: 581194978}
   player2ParadeSlider: {fileID: 1432842557}
+  player1WarningText: {fileID: 0}
+  player2WarningText: {fileID: 0}
+  player1WarningTextM: {fileID: 0}
+  player2WarningTextM: {fileID: 0}
   player1KatanaObject: {fileID: 1155284530}
   player2KatanaObject: {fileID: 1676751040}
   soundTimer: {fileID: 6257895150640254608, guid: 0f8a027844ab1904694a7c6247862f47, type: 3}
@@ -76189,7 +76222,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893022990}
-  m_LocalRotation: {x: 0.07476614, y: -0.000000113203996, z: 0.0000000084875795, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.00000012379888, z: 0.000000009281943, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

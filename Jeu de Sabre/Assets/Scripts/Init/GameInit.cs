@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Camera;
 using Cinemachine;
 using Mouvements.Orientation;
@@ -7,6 +8,7 @@ using Players.UI;
 using Sounds;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Init
@@ -16,8 +18,6 @@ namespace Init
         private static UiUpdater _updater;
         
         private static ControllerConnecter _connecter;
-
-        private static TrackerConnecter _tracker;
         
         private static ControllerHandler _controllerHandler;
         
@@ -83,6 +83,15 @@ namespace Init
         [SerializeField] private Slider player2ParadeSlider;
         
         
+        [SerializeField] private TextMeshProUGUI player1WarningText;
+        
+        [SerializeField] private TextMeshProUGUI player2WarningText;
+        
+        [SerializeField] private TextMeshProUGUI player1WarningTextM;
+        
+        [SerializeField] private TextMeshProUGUI player2WarningTextM;
+        
+        
         [SerializeField] private GameObject player1KatanaObject;
         
         [SerializeField] private GameObject player2KatanaObject;
@@ -104,11 +113,14 @@ namespace Init
         public static bool isGamePaused;
         
         public static bool isDebugMenuOn;
+
+        private bool isWarningActive;
         
         private bool isTimerInit;
     
         private void Awake()
         {
+            isWarningActive = false;
             isGamePaused = false;
             isDebugMenuOn = false;
             isTimerInit = false;
@@ -123,9 +135,9 @@ namespace Init
             // Initialisation de la connexion des manettes
             print("Initialisation des manettes...");
             _connecter = new ControllerConnecter();
-            
+        
             // Si l'initialisation est passée
-            if (_connecter.Init(gameObject))
+            if (_connecter.Init())
             {
                 // Récupération et lecture du fichier de configuration
                 print("Récupération de la configuration du jeu...");
@@ -136,6 +148,7 @@ namespace Init
                 {
                     json += line;
                 }
+                
                 _config = JsonUtility.FromJson<GameConfig>(json);
 
                 // Initialisation de l'endurance
@@ -146,13 +159,6 @@ namespace Init
                 print("Récupération des manettes...");
                 _controllerHandler = _connecter.GetHandler();
             
-                // Initialisation des trackers
-                // print("Initialisation des trackers...");
-                // gameObject.AddComponent<TrackerConnecter>();
-                // _tracker = gameObject.GetComponent<TrackerConnecter>();
-                // _tracker = new TrackerConnecter();
-                // _tracker.Init();
-
                 // Initialisation de l'orientation de la manette 1
                 print("Initialisation de la rotation du joueur 1...");
                 _katana1 = new KatanaOrientation(Player.PLAYER.P1, _controllerHandler.GetPlayer1Controller(), player1ParadeFx1,
@@ -187,20 +193,52 @@ namespace Init
                 print("Initialisation des emotes...");
                 gameObject.AddComponent<EmoteHandler>();
                 
-                _player1EmoteHandler = new EmoteHandler();
-                _player2EmoteHandler = new EmoteHandler();
+                //_player1EmoteHandler = new EmoteHandler();
+                //_player2EmoteHandler = new EmoteHandler();
                 
                 
                 // Activation de la Led des manettes
-                PSMoveUtils.SetLed(Player.PLAYER.P1, Color.magenta);
-                PSMoveUtils.SetLed(Player.PLAYER.P2, Color.magenta);
+                //PSMoveUtils.SetLed(Player.PLAYER.P1, Color.yellow);
+                //PSMoveUtils.SetLed(Player.PLAYER.P2, Color.yellow);
             }
             else
             {
                 print(_connecter.GetError());
+                DisplayWarningMessage(_connecter.GetError(), player1WarningText, player2WarningText, player1WarningTextM, player2WarningTextM);
             }
         }
     
+        private void DisplayWarningMessage(String errors, TextMeshProUGUI player1, TextMeshProUGUI player2, TextMeshProUGUI player1M, TextMeshProUGUI player2M)
+        {
+            player1.text = errors;
+            player2.text = errors;
+            player1.alignment = TextAlignmentOptions.Center;
+            player2.alignment = TextAlignmentOptions.Center;
+            player1M.gameObject.SetActive(true);
+            player2M.gameObject.SetActive(true);
+            StartCoroutine(WarningFlash(player1, player2));
+        }
+
+        private IEnumerator WarningFlash(TextMeshProUGUI player1, TextMeshProUGUI player2)
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(1f);
+                if (isWarningActive)
+                {
+                    player1.gameObject.SetActive(false);
+                    player2.gameObject.SetActive(false);
+                    isWarningActive = false;
+                }
+                else
+                {
+                    player1.gameObject.SetActive(true);
+                    player2.gameObject.SetActive(true);
+                    isWarningActive = true;
+                }
+            }
+        }
+        
         /// <summary>
         /// Permet de récupérer la connexion des manettes
         /// </summary>
@@ -359,16 +397,14 @@ namespace Init
         public void QuitGame()
         {
             Debug.Log("Quitting game...");
-            Application.Quit();
+            //SceneManager.LoadScene("MainMenu");
         }
 
         private void OnApplicationQuit()
         {
             // Déconnexion des manettes à la fermeture du jeu
-            // PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer1Controller());
-            // PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer2Controller());
-            // PSMoveAPI.psmove_tracker_free(TrackerConnecter.player1Tracker);
-            // PSMoveAPI.psmove_tracker_free(TrackerConnecter.player2Tracker);
+            PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer1Controller());
+            PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer2Controller());
         }
     }
 }

@@ -1,21 +1,9 @@
 sceneSetups:
-- path: Assets/Scenes/UI.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Scenes/Map.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/Scenes/OptiCamV2.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/test.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/CAMERA.unity
+- path: Assets/Scenes/TrackingTest.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
