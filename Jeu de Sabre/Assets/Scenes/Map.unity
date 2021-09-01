@@ -5815,7 +5815,7 @@ MonoBehaviour:
   player2CharacterTransparent: {fileID: 1890980698}
   player1Face: {fileID: 1519644797}
   player2Face: {fileID: 290511484}
-  updateRotation: 0
+  updateRotation: 1
   updateEmote: 1
   player2KatanaObject: {fileID: 1676751040}
 --- !u!1001 &168099398
@@ -12847,7 +12847,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343876778}
-  m_LocalRotation: {x: 0.07476614, y: -0.00000011521979, z: 0.0000000086387155, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.0000001237989, z: 0.000000009281943, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -76647,7 +76647,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893022990}
-  m_LocalRotation: {x: 0.07476614, y: -0.00000011521979, z: 0.0000000086387155, w: 0.99720114}
+  m_LocalRotation: {x: 0.07476614, y: -0.0000001237989, z: 0.000000009281943, w: 0.99720114}
   m_LocalPosition: {x: 0.0000009536743, y: 5.3422174, z: -1.9893951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
