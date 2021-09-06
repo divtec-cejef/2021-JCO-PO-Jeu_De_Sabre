@@ -21,9 +21,13 @@ namespace Collisions
         
         [SerializeField] private Transform player2LeftCollisionCheck;
         
+        [SerializeField] private Transform player1CenterCollisionCheck;
+        
         [SerializeField] private Transform player1RightCollisionCheck;
         
         [SerializeField] private Transform player2RightCollisionCheck;
+        
+        [SerializeField] private Transform player2CenterCollisionCheck;
 
         [SerializeField] private LayerMask sabre1;
         
@@ -57,10 +61,12 @@ namespace Collisions
 
         
         private bool isPlayer1Left = false;
+        private bool isPlayer1Center = false;
         private bool isPlayer1Right = false;
         private bool isFirstCollisionOfP1 = false;
         
         private bool isPlayer2Left = false;
+        private bool isPlayer2Center = false;
         private bool isPlayer2Right = false;
         private bool isFirstCollisionOfP2 = false;
     
@@ -88,15 +94,15 @@ namespace Collisions
             float backwardDistance  = Random.Range(1, 10);
 
             //Joueur 1 côté gauche
-            var position = player1LeftCollisionCheck.position;
-            Vector3 player1StartLeft = new Vector3(position.x, position.y - 1.1f, position.z);
-            Vector3 player1EndLeft = new Vector3(position.x, position.y + 1.1f, position.z);
+            var positionP1Left = player1LeftCollisionCheck.position;
+            Vector3 player1StartLeft = new Vector3(positionP1Left.x, positionP1Left.y - 1.1f, positionP1Left.z);
+            Vector3 player1EndLeft = new Vector3(positionP1Left.x, positionP1Left.y + 1.1f, positionP1Left.z);
             isPlayer1Left = Physics.CheckCapsule(player1StartLeft, player1EndLeft, 0.1f, sabre2);
-            
+
             //Joueur 1 côté droit
-            var position1 = player1RightCollisionCheck.position;
-            Vector3 player1StatRight = new Vector3(position1.x, position1.y - 1.1f, position1.z);
-            Vector3 player1EndRight = new Vector3(position1.x, position1.y + 1.1f, position1.z);
+            var positionP1Right = player1RightCollisionCheck.position;
+            Vector3 player1StatRight = new Vector3(positionP1Right.x, positionP1Right.y - 1.1f, positionP1Right.z);
+            Vector3 player1EndRight = new Vector3(positionP1Right.x, positionP1Right.y + 1.1f, positionP1Right.z);
             isPlayer1Right = Physics.CheckCapsule(player1StatRight, player1EndRight, 0.1f, sabre2);
 
             if (isPlayer1Left && roteTimer == 0 && !isPlayer1Right && isFirstCollisionOfP1)
@@ -110,7 +116,7 @@ namespace Collisions
                 roteTimer = .01f;
                 isPlayer1Left = false;
                 isFirstCollisionOfP1 = false;
-                //Debug.Log(("C LA GOCHE isFirstCollisionPlayer1 :"+ isFirstCollisionOfP1));
+                Debug.Log(("C la gaUche isFirstCollisionP1 :"+ isFirstCollisionOfP1));
                 
             }else if (isPlayer1Right && roteTimer == 0 && !isPlayer1Left && isFirstCollisionOfP1)
             {
@@ -123,9 +129,20 @@ namespace Collisions
                 roteTimer = .01f;
                 isPlayer1Right = false;
                 isFirstCollisionOfP1 = false;
-                //Debug.Log(("C LA DROUATE isFirstCollisionPlayer1 :"+ isFirstCollisionOfP1));
+                Debug.Log(("C la droite isFirstCollisionP1 :"+ isFirstCollisionOfP1));
+            }else if ( backTimer == 0 && !isPlayer1Left && !isPlayer1Right && isFirstCollisionOfP1)
+            {
+                if (backwardMouvement)
+                {
+                    Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
+                    backTimer = .01f;
+                } 
+                roteTimer = 0f;
+                Debug.Log(("C le center isFirstCollisionP1 :"+ isFirstCollisionOfP1));
+                isPlayer1Center = false;
+                isFirstCollisionOfP1 = false;
             }
-            
+
             var position2 = player2LeftCollisionCheck.position;
             Vector3 player2StartLeft = new Vector3(position2.x, position2.y - 1.1f, position2.z);
             Vector3 player2EndLeft = new Vector3(position2.x, position2.y + 1.1f, position2.z);
@@ -160,6 +177,17 @@ namespace Collisions
                 isPlayer2Right = false;
                 isFirstCollisionOfP2 = false;
                 //Debug.Log(("C LA DROUATE isFirstCollisionPlayer2 :"+ isFirstCollisionOfP2));
+            }else if ( backTimer == 0 && !isPlayer2Left && !isPlayer2Right && isFirstCollisionOfP2)
+            {
+                if (backwardMouvement)
+                {
+                    Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
+                    backTimer = .01f;
+                }
+                Debug.Log(("C le center isFirstCollisionP2 :"+ isFirstCollisionOfP2));
+                roteTimer = 0f;
+                isPlayer2Center = false;
+                isFirstCollisionOfP2 = false;
             }
             
             
@@ -192,11 +220,11 @@ namespace Collisions
                 if (isFirstCollisionOfP1)
                 {
                     isFirstCollisionOfP1 = false;
-                    //Debug.Log("Stay isFirstCollisionPlayer1 : "+ isFirstCollisionOfP1);
+                    Debug.Log("Stay isFirstCollisionPlayer1 : "+ isFirstCollisionOfP1);
                 } else if (isFirstCollisionOfP2)
                 {
                     isFirstCollisionOfP2 = false;
-                    //Debug.Log("Stay isFirstCollisionPlayer2 : "+ isFirstCollisionOfP2);
+                    Debug.Log("Stay isFirstCollisionPlayer2 : "+ isFirstCollisionOfP2);
                 } 
             }
         }
@@ -213,6 +241,7 @@ namespace Collisions
             {
                 player = Player.PLAYER.P1;
                 //isFirstCollisionOfP2 = true;
+                //timerEnd = false;
                 //Debug.Log( "isFirstCollisionOfP2 : "+isFirstCollisionOfP2 );
             }
 
@@ -221,6 +250,7 @@ namespace Collisions
             {
                 player = Player.PLAYER.P2;
                 //isFirstCollisionOfP1 = true;
+                //timerEnd = false;
                 //Debug.Log( "isFirstCollisionOfP1: "+isFirstCollisionOfP1 );
             }
 
@@ -232,6 +262,7 @@ namespace Collisions
             ko = player == Player.PLAYER.P1
                 ? GameInit.GetPlayer1KatanaOrientation()
                 : GameInit.GetPlayer2KatanaOrientation();
+            
             
             if (!ko.GetPlayerParade().GetParade())
             {
