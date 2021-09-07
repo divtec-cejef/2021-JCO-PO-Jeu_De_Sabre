@@ -71,7 +71,14 @@ namespace Collisions
         private bool isFirstCollisionOfP2 = false;
     
         private bool timerEnd = false;
-        
+
+        public enum TYPE_ATTACK
+        {
+            RIGHT,
+            LEFT,
+            CENTER
+            
+        }
         private void Awake()
         {
             _player1Face = player1Face;
@@ -116,8 +123,8 @@ namespace Collisions
                 roteTimer = .01f;
                 isPlayer1Left = false;
                 isFirstCollisionOfP1 = false;
-                Debug.Log(("C la gaUche isFirstCollisionP1 :"+ isFirstCollisionOfP1));
-                
+                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,TYPE_ATTACK.LEFT);
+                //Debug.Log(("C la gaUche isFirstCollisionP1 :"+ isFirstCollisionOfP1));
             }else if (isPlayer1Right && roteTimer == 0 && !isPlayer1Left && isFirstCollisionOfP1)
             {
                 Travelling.anglesToRotate = new Vector3(0, +rotationAngle, 0);
@@ -129,7 +136,8 @@ namespace Collisions
                 roteTimer = .01f;
                 isPlayer1Right = false;
                 isFirstCollisionOfP1 = false;
-                Debug.Log(("C la droite isFirstCollisionP1 :"+ isFirstCollisionOfP1));
+                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,TYPE_ATTACK.RIGHT);
+                //Debug.Log(("C la droite isFirstCollisionP1 :"+ isFirstCollisionOfP1));
             }else if ( backTimer == 0 && !isPlayer1Left && !isPlayer1Right && isFirstCollisionOfP1)
             {
                 if (backwardMouvement)
@@ -138,9 +146,10 @@ namespace Collisions
                     backTimer = .01f;
                 } 
                 roteTimer = 0f;
-                Debug.Log(("C le center isFirstCollisionP1 :"+ isFirstCollisionOfP1));
                 isPlayer1Center = false;
                 isFirstCollisionOfP1 = false;
+                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,TYPE_ATTACK.CENTER);
+                //Debug.Log(("C le center isFirstCollisionP1 :"+ isFirstCollisionOfP1));
             }
 
             var position2 = player2LeftCollisionCheck.position;
@@ -280,7 +289,7 @@ namespace Collisions
                     Player.UpdatePlayerScore(player, GameInit.GetGameConfig().attack_score_amount);
 
                     // Animations et mouvements de l'attaque
-                    attack.onAttack(player, player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1);
+                    //attack.onAttack(player, player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1);
 
                     if (updateEmote)
                     {
@@ -313,6 +322,16 @@ namespace Collisions
             {
                 //Debug.Log("parade.. arrete... maintenant.. s'il te plait...");
             }
+        }
+        
+        public bool getIsFirstCollisionOfP1()
+        {
+            return isFirstCollisionOfP1;
+        }
+        
+        public bool getIsFirstCollisionOfP2()
+        {
+            return isFirstCollisionOfP2;
         }
     }
 }

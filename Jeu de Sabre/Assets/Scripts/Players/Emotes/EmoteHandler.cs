@@ -88,9 +88,9 @@ public class EmoteHandler : MonoBehaviour
                 throw new ArgumentOutOfRangeException(nameof(type), type, null);
         }
 
-        //if (resetFace) StartCoroutine(ResetFace(playerFace, resetTime));
+        if (resetFace) ResetFace(playerFace);
                  
-        return currentEmote;
+        return currentEmote; 
     }
     
     public Material GetRandomEmote(EMOTE_TYPE type, GameObject playerFace, bool resetFace)
