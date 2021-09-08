@@ -1,0 +1,145 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'fr' Physical Memory: 8060 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51945
+Successfully changed project path to: C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 63.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics 655 (ID=0x3ea5)
+    Vendor:   
+    VRAM:     4030 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001847 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 67.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.136 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001781 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 65.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.020 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.1 MB.
+System memory in use after: 105.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2285.
+Total: 2.624500 ms (FindLiveObjects: 0.165700 ms CreateObjectMapping: 0.081100 ms MarkObjects: 2.263100 ms  DeleteObjects: 0.113500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Map/OcclusionCullingData.asset
+  artifactKey: Guid(7f502a068adec8749a191abb70ae1d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/OcclusionCullingData.asset using Guid(7f502a068adec8749a191abb70ae1d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c491ef7558282482f1341a9ce0020422') in 0.163017 seconds
+  Import took 0.172623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.979301 seconds.
+  path: Assets/Scripts/Mouvements/Attaques
+  artifactKey: Guid(60e4a279b134af449bd363b34b7366d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouvements/Attaques using Guid(60e4a279b134af449bd363b34b7366d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9a5b34e5d40fefd05c7ec414db4d2b') in 0.007876 seconds
+  Import took 0.011484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007076 seconds.
+  path: Assets/Scripts/Mouvements/Attaques
+  artifactKey: Guid(60e4a279b134af449bd363b34b7366d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouvements/Attaques using Guid(60e4a279b134af449bd363b34b7366d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9a5b34e5d40fefd05c7ec414db4d2b') in 0.004724 seconds
+  Import took 0.008800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.200844 seconds.
+  path: Assets/Scripts/Mouvements/Attaques/AttackMouvements.cs
+  artifactKey: Guid(d54387692837f8243abe35162252ae0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouvements/Attaques/AttackMouvements.cs using Guid(d54387692837f8243abe35162252ae0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e63626dca54d3ba2cc1bba136c492d') in 0.011350 seconds
+  Import took 0.014723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027198 seconds.
+  path: Assets/Scripts/Mouvements/Attaques/AttackMouvements.cs
+  artifactKey: Guid(d54387692837f8243abe35162252ae0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouvements/Attaques/AttackMouvements.cs using Guid(d54387692837f8243abe35162252ae0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e63626dca54d3ba2cc1bba136c492d') in 0.002873 seconds
+  Import took 0.007751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2771.526133 seconds.
+  path: Assets/Scripts/Mouvements/Attaques/AttackMouvements.cs
+  artifactKey: Guid(d54387692837f8243abe35162252ae0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouvements/Attaques/AttackMouvements.cs using Guid(d54387692837f8243abe35162252ae0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee650474c174ff1e6b268fa3752d6857') in 0.008327 seconds
+  Import took 0.083691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.194878 seconds.
+  path: Assets/Scripts/Mouvements/Attaques/AttackMouvements.cs
+  artifactKey: Guid(d54387692837f8243abe35162252ae0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouvements/Attaques/AttackMouvements.cs using Guid(d54387692837f8243abe35162252ae0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee650474c174ff1e6b268fa3752d6857') in 0.002830 seconds
+  Import took 0.008860 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005100 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.973 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1763 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.6 MB.
+System memory in use after: 100.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2288.
+Total: 2.334600 ms (FindLiveObjects: 0.299800 ms CreateObjectMapping: 0.102200 ms MarkObjects: 1.913500 ms  DeleteObjects: 0.017600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

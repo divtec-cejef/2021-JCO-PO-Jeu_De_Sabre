@@ -77,6 +77,8 @@ namespace Collisions
             
         }
 
+        private TYPE_ATTACK currentAttack = TYPE_ATTACK.CENTER;
+        
         private void Awake()
         {
             _player1Face = player1Face;
@@ -121,7 +123,8 @@ namespace Collisions
                 roteTimer = .01f;
                 isPlayer1Left = false;
                 isFirstCollisionOfP1 = false;
-                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,TYPE_ATTACK.LEFT);
+                currentAttack = TYPE_ATTACK.LEFT;
+                attack.onAttack(Player.PLAYER.P2,Player.PLAYER.P1,currentAttack,true);
                 //Debug.Log(("C la gaUche isFirstCollisionP1 :"+ isFirstCollisionOfP1));
             }else if (isPlayer1Right && roteTimer == 0 && !isPlayer1Left && isFirstCollisionOfP1)
             {
@@ -134,7 +137,8 @@ namespace Collisions
                 roteTimer = .01f;
                 isPlayer1Right = false;
                 isFirstCollisionOfP1 = false;
-                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,TYPE_ATTACK.RIGHT);
+                currentAttack = TYPE_ATTACK.RIGHT;
+                attack.onAttack(Player.PLAYER.P2,Player.PLAYER.P1,currentAttack,true);
                 //Debug.Log(("C la droite isFirstCollisionP1 :"+ isFirstCollisionOfP1));
             }else if ( backTimer == 0 && !isPlayer1Left && !isPlayer1Right && isFirstCollisionOfP1)
             {
@@ -146,7 +150,8 @@ namespace Collisions
                 roteTimer = 0f;
                 isPlayer1Center = false;
                 isFirstCollisionOfP1 = false;
-                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,TYPE_ATTACK.CENTER);
+                currentAttack = TYPE_ATTACK.CENTER;
+                attack.onAttack(Player.PLAYER.P2,Player.PLAYER.P1,currentAttack,true);
                 //Debug.Log(("C le center isFirstCollisionP1 :"+ isFirstCollisionOfP1));
             }
 
@@ -171,6 +176,8 @@ namespace Collisions
                 roteTimer = .01f;
                 isPlayer2Left = false;
                 isFirstCollisionOfP2 = false;
+                currentAttack = TYPE_ATTACK.LEFT;
+                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,currentAttack,true);
                 //Debug.Log(("C LA GOCHE isFirstCollisionPlayer2 :"+ isFirstCollisionOfP2));
             }else if (isPlayer2Right && roteTimer == 0 && !isPlayer2Left && isFirstCollisionOfP2)
             {
@@ -183,6 +190,8 @@ namespace Collisions
                 roteTimer = .01f;
                 isPlayer2Right = false;
                 isFirstCollisionOfP2 = false;
+                currentAttack = TYPE_ATTACK.RIGHT;
+                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,currentAttack,true);
                 //Debug.Log(("C LA DROUATE isFirstCollisionPlayer2 :"+ isFirstCollisionOfP2));
             }else if ( backTimer == 0 && !isPlayer2Left && !isPlayer2Right && isFirstCollisionOfP2)
             {
@@ -195,6 +204,8 @@ namespace Collisions
                 roteTimer = 0f;
                 isPlayer2Center = false;
                 isFirstCollisionOfP2 = false;
+                currentAttack = TYPE_ATTACK.CENTER;
+                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,currentAttack,true);
             }
             
             
@@ -217,6 +228,10 @@ namespace Collisions
                     backTimer = 0f;
                     Travelling.distanceToMove = Vector3.zero;
                 }
+            }
+            else
+            {
+                attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,currentAttack,false);
             }
         }
 

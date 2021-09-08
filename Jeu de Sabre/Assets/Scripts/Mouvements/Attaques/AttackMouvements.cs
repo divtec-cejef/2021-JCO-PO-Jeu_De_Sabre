@@ -40,7 +40,7 @@ public class AttackMouvements
         Player2Trans = P2T;
     }
 
-    public void onAttack(Player.PLAYER attacker, Player.PLAYER defender, CollisionPlayers.TYPE_ATTACK attack)
+    public void onAttack(Player.PLAYER attacker, Player.PLAYER defender, CollisionPlayers.TYPE_ATTACK attack,bool isActif)
     {
         GameInit.GetCameraShaking().ShakeCamera(attacker, 1.0f, .1f);
         GameInit.GetCameraShaking().ShakeCamera(defender, 1.0f, .3f);
@@ -51,10 +51,10 @@ public class AttackMouvements
         animeP2Trans = Player2Trans.GetComponent<Animator>();
 
         if (defender == Player.PLAYER.P1) 
-            typeAttack(attack, animeP1, animeP1Trans,animeP2, animeP2Trans);
+            typeAttack(attack, animeP1, animeP1Trans,animeP2, animeP2Trans,isActif);
         
         else if(defender == Player.PLAYER.P2) 
-            typeAttack(attack, animeP2, animeP2Trans,animeP1, animeP1Trans);
+            typeAttack(attack, animeP2, animeP2Trans,animeP1, animeP1Trans,isActif);
 
         // if (attacker == Player.Joueur.P1)
         // {
@@ -74,73 +74,75 @@ public class AttackMouvements
         // }
 
     }
-    
-    private void typeAttack(CollisionPlayers.TYPE_ATTACK attack, Animator animeDefender,Animator animeDefenderTrans ,
-        Animator animeAttacker, Animator animeAttackerTrans)
+
+    private void typeAttack(CollisionPlayers.TYPE_ATTACK attack, Animator animeDefender, Animator animeDefenderTrans,
+        Animator animeAttacker, Animator animeAttackerTrans, bool isActif)
     {
-        switch (attack)
         {
-            case CollisionPlayers.TYPE_ATTACK.RIGHT:
-                animeDefender.SetTrigger("isSlideWalkRight");
-                animeDefenderTrans.SetTrigger("isSlideWalkRight");
-                
-                animeAttacker.SetTrigger("isSlideWalkRight");
-                animeAttackerTrans.SetTrigger("isSlideWalkRight");
-                break;
-            case CollisionPlayers.TYPE_ATTACK.LEFT:
-                animeDefender.SetTrigger("isSlideWalkLeft");
-                animeDefenderTrans.SetTrigger("isSlideWalkLeft");
-                    
-                animeAttacker.SetTrigger("isSlideWalkLeft");
-                animeAttackerTrans.SetTrigger("isSlideWalkLeft");
-                break;
-            case CollisionPlayers.TYPE_ATTACK.CENTER:
-                animeDefender.SetTrigger("isMoveBack");
-                animeDefenderTrans.SetTrigger("isMoveBack");
-                    
-                animeAttacker.SetTrigger("isNormalWalk");
-                animeAttackerTrans.SetTrigger("isNormalWalk");
-                break;
+            switch (attack)
+            {
+                case CollisionPlayers.TYPE_ATTACK.RIGHT:
+                    animeDefender.SetBool("isSlideWalkRight", isActif);
+                    animeDefenderTrans.SetBool("isSlideWalkRight", isActif);
+
+                    animeAttacker.SetBool("isSlideWalkRight", isActif);
+                    animeAttackerTrans.SetBool("isSlideWalkRight", isActif);
+                    break;
+                case CollisionPlayers.TYPE_ATTACK.LEFT:
+                    animeDefender.SetBool("isSlideWalkLeft", isActif);
+                    animeDefenderTrans.SetBool("isSlideWalkLeft", isActif);
+
+                    animeAttacker.SetBool("isSlideWalkLeft", isActif);
+                    animeAttackerTrans.SetBool("isSlideWalkLeft", isActif);
+                    break;
+                case CollisionPlayers.TYPE_ATTACK.CENTER:
+                    animeDefender.SetBool("isMoveBack", isActif);
+                    animeDefenderTrans.SetBool("isMoveBack", isActif);
+
+                    animeAttacker.SetBool("isNormalWalk", isActif);
+                    animeAttackerTrans.SetBool("isNormalWalk", isActif);
+                    break;
+            }
         }
-    }
-    
-    private void Update()
-    {
-        //Player1.transform.position = Vector3.Lerp(Player1.transform.position, new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z + move * 1.5f), 0.5f*Time.deltaTime);
-        //Player1.transform.position = Vector3.Lerp(Player1.transform.position, new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z - move2 * 1.5f), 0.5f*Time.deltaTime);
-        
-    
-        
-        //anim.SetBool("isRunning", move != 0);
+
+        //private void Update()
+        //{
+            //Player1.transform.position = Vector3.Lerp(Player1.transform.position, new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z + move * 1.5f), 0.5f*Time.deltaTime);
+            //Player1.transform.position = Vector3.Lerp(Player1.transform.position, new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z - move2 * 1.5f), 0.5f*Time.deltaTime);
 
 
-        // Quaternion.Lerp( )
-        
-    // if (isAttacking)
-    // {
-    //
-    //     if (timer1 < 0.2f && !isDefending)
-    //     {
-    //         isDefending = true;
-    //     }
-    //     else if (timer1 > 0)
-    //     {
-    //         Player1.transform.Translate(new Vector3(0,0,0.05f));
-    //         timer1 -= Time.deltaTime;
-    //     }
-    //     else
-    //     {
-    //         isAttacking = false;
-    //     }
-    // }
-    //
-    // if (isDefending)
-    // {
-    //     if (timer2 > 0)
-    //     {
-    //         Player2.transform.Translate(new Vector3(0,0,0.05f));
-    //         timer2 -= Time.deltaTime;
-    //     }
-    // }
+
+            //anim.SetBool("isRunning", move != 0);
+
+
+            // Quaternion.Lerp( )
+
+            // if (isAttacking)
+            // {
+            //
+            //     if (timer1 < 0.2f && !isDefending)
+            //     {
+            //         isDefending = true;
+            //     }
+            //     else if (timer1 > 0)
+            //     {
+            //         Player1.transform.Translate(new Vector3(0,0,0.05f));
+            //         timer1 -= Time.deltaTime;
+            //     }
+            //     else
+            //     {
+            //         isAttacking = false;
+            //     }
+            // }
+            //
+            // if (isDefending)
+            // {
+            //     if (timer2 > 0)
+            //     {
+            //         Player2.transform.Translate(new Vector3(0,0,0.05f));
+            //         timer2 -= Time.deltaTime;
+            //     }
+            // }
+        //}
     }
 }
