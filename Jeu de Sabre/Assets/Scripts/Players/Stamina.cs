@@ -266,6 +266,19 @@ namespace Players
         {
             return _canPlayer2Regen;
         }
+
+
+        public static void Reset()
+        {
+            _player1ExhaustedFx1.SetActive(false);
+            _player2ExhaustedFx1.SetActive(false);
+            _isPlayer1Exausted = false;
+            _isPlayer2Exausted = false;
+            _player1Stamina = GameInit.GetGameConfig().stamina_amount;
+            _player2Stamina = GameInit.GetGameConfig().stamina_amount;
+            _canPlayer1Regen = true;
+            _canPlayer2Regen = true;
+        }
     }
     
 }

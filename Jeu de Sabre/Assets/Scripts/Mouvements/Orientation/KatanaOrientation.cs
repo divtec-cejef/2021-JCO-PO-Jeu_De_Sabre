@@ -62,13 +62,11 @@ namespace Mouvements.Orientation
             Debug.Log("\tActivation et réinitialisation de l'orientation de la manette...");
             PSMoveAPI.psmove_enable_orientation(playerController, PSMove_Bool.PSMove_True);
             PSMoveAPI.psmove_reset_orientation(playerController);
-        
+
             // Initialisation de la parade
             Debug.Log("\tConfiguration de la parade...");
             playerKatanaAxis.AddComponent<Parade.Parade>().Init(GameInit.GetGameConfig().parade_duration, playerParadeFx1, playerParadeFx2, playerParadeFxPos, playerKatanaAxis, player, this, paradeSlider);
             playerParade = playerKatanaAxis.GetComponent<Parade.Parade>();
-
-            canMove = true;
         }
 
         public void onUpdate()
@@ -88,7 +86,7 @@ namespace Mouvements.Orientation
             // Récupération de l'orientation
             PSMoveAPI.psmove_poll(playerController);
             PSMoveAPI.psmove_get_orientation(playerController, ref ow, ref axeX, ref axeY, ref axeZ);
-
+            
             // La c'est des trucs pour modifier tenter de recalibrer le sabre tout seul
             // C'est pas encore parfait
             {

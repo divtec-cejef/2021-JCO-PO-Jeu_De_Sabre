@@ -3,6 +3,7 @@ using Init;
 using Mouvements.Parade;
 using TMPro;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 using Object = UnityEngine.Object;
@@ -19,13 +20,17 @@ namespace Players.UI
         
         private Slider player2StaminaSlider;
 
-        private TextMeshProUGUI player1TimerText;
+        private TextMeshProUGUI timerText;
         
-        private TextMeshProUGUI player2TimerText;
-    
+        private TextMeshProUGUI countdownText;
+
         private Slider player1ParadeSlider;
         
         private Slider player2ParadeSlider;
+
+        private Slider player1HealthBar;
+        
+        private Slider player2HealthBar;
 
         private bool m_IsSoundPlaying;
     
@@ -37,11 +42,13 @@ namespace Players.UI
         /// <param name="player2ScoreText">Le texte correspondant au score du joueur 2</param>
         /// <param name="player1StaminaSlider">Le slider correspondant a la stamina du joueur 1</param>
         /// <param name="player2StaminaSlider">Le slider correspondant a la stamina du joueur 2</param>
-        /// <param name="player1TimerText">Le texte correspondant au timer du joueur 1</param>
+        /// <param name="timerText">Le texte correspondant au timer du joueur 1</param>
         /// <param name="player2TimerText">Le texte correspondant au timer du joueur 2</param>
         /// <param name="player1ParadeSlider">Le slider correspondant a la slider du joueur 1</param>
         /// <param name="player2ParadeSlider">Le slider correspondant a la slider du joueur 2</param>
-        public UiUpdater(TextMeshProUGUI player1ScoreText, TextMeshProUGUI player2ScoreText, Slider player1StaminaSlider, Slider player2StaminaSlider, TextMeshProUGUI player1TimerText, TextMeshProUGUI player2TimerText, Slider player1ParadeSlider, Slider player2ParadeSlider)
+        public UiUpdater(TextMeshProUGUI player1ScoreText, TextMeshProUGUI player2ScoreText, Slider player1StaminaSlider, 
+            Slider player2StaminaSlider, TextMeshProUGUI timerText, Slider player1ParadeSlider, Slider player2ParadeSlider,
+            Slider player1HealthBar, Slider player2HealthBar, TextMeshProUGUI countdownText)
         {
             m_IsSoundPlaying = false;
             Debug.Log("\tRécupération des composants graphiques...");
@@ -51,12 +58,15 @@ namespace Players.UI
             this.player1StaminaSlider = player1StaminaSlider;
             this.player2StaminaSlider = player2StaminaSlider;
 
-            this.player1TimerText = player1TimerText;
-            this.player2TimerText = player2TimerText;
+            this.timerText = timerText;
+            this.countdownText = countdownText;
 
             this.player1ParadeSlider = player1ParadeSlider;
             this.player2ParadeSlider = player2ParadeSlider;
 
+            this.player1HealthBar = player1HealthBar;
+            this.player2HealthBar = player2HealthBar;
+            
             this.player1StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
             this.player2StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
         
@@ -64,6 +74,17 @@ namespace Players.UI
             this.player2ParadeSlider.maxValue = GameInit.GetGameConfig().parade_duration;
         }
 
+        public void SetCountdownText(String text)
+        {
+            // if (!IntroAnim.startGame)
+            // {
+            //     IntroAnim.startGame = true;
+            //     countdownText.gameObject.GetComponent<IntroAnim>().StartEffect();  
+            // }
+            
+            countdownText.text = text;
+        }
+        
         /// <summary>
         /// Permet de mettre à jour le score
         /// </summary>
@@ -121,43 +142,52 @@ namespace Players.UI
         /// </summary>
         public void OnTimerUpdate()
         {
-            player1TimerText.text = player2TimerText.text = FormatTime(GameInit.GetTimer().GetTimer());
+            timerText.text = /*FormatTime(*/GameInit.GetTimer().GetTimer().ToString()/*)*/;
+        }
+
+
+        public void OnHealthUpdate()
+        {
+            UnityEngine.Debug.Log(Player.GetPlayerHealth(Player.PLAYER.P1));
+            UnityEngine.Debug.Log(Player.GetPlayerHealth(Player.PLAYER.P1));
+            player1HealthBar.value = Player.GetPlayerHealth(Player.PLAYER.P1);
+            player2HealthBar.value = Player.GetPlayerHealth(Player.PLAYER.P2);
         }
     
-        /// <summary>
-        /// Permet de formatter le timer au format 00:00
-        /// </summary>
-        /// <param name="time">Le timer a formatter</param>
-        /// <returns>Le timer formatté</returns>
-        private String FormatTime(int time)
-        {
-            String format = "";
-
-            if (time <= 20 && !m_IsSoundPlaying)
-            {
-                var position = new Vector3(11.9f, 11.0f, 15.6f);
-                var rotation = new Quaternion(0, 0, 0, 0);
-                Object.Instantiate(GameInit.GetSoundHandler().GetTimerSound(), position, rotation);
-                m_IsSoundPlaying = true;
-            }
-        
-        
-            if (time / 60 < 10)
-            {
-                format += "0";
-            }
-
-            format += time / 60 + ":";
-
-            if (time % 60 < 10)
-            {
-                format += "0";
-            }
-
-            format += time % 60;
-
-            return format;
-        }
+        // /// <summary>
+        // /// Permet de formatter le timer au format 00:00
+        // /// </summary>
+        // /// <param name="time">Le timer a formatter</param>
+        // /// <returns>Le timer formatté</returns>
+        // private String FormatTime(int time)
+        // {
+        //     String format = "";
+        //
+        //     if (time <= 20 && !m_IsSoundPlaying)
+        //     {
+        //         var position = new Vector3(11.9f, 11.0f, 15.6f);
+        //         var rotation = new Quaternion(0, 0, 0, 0);
+        //         Object.Instantiate(GameInit.GetSoundHandler().GetTimerSound(), position, rotation);
+        //         m_IsSoundPlaying = true;
+        //     }
+        //
+        //
+        //     if (time / 60 < 10)
+        //     {
+        //         format += "0";
+        //     }
+        //
+        //     format += time / 60 + ":";
+        //
+        //     if (time % 60 < 10)
+        //     {
+        //         format += "0";
+        //     }
+        //
+        //     format += time % 60;
+        //
+        //     return format;
+        // }
 
         /// <summary>
         /// Permet de mettre à jour l'affichage au déclenchement de la parade

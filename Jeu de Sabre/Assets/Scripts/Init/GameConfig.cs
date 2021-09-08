@@ -1,5 +1,4 @@
 using System;
-using Players;
 
 namespace Init
 {
@@ -30,5 +29,9 @@ namespace Init
         public int stun_multiplier;
         
         public float katana_lerp_duration;
+
+        public int player_health_amount;
+
+        public int player_health_decrease;
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Camera;
 using Cinemachine;
 using Mouvements.Orientation;
@@ -7,11 +8,15 @@ using Players.UI;
 using Sounds;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Color = UnityEngine.Color;
 
 namespace Init
 {
-    public class GameInit : MonoBehaviour {
+    public class GameInit : MonoBehaviour
+    {
         private static UiUpdater _updater;
         
         private static ControllerConnecter _connecter;
@@ -33,6 +38,10 @@ namespace Init
         private static EmoteHandler _player1EmoteHandler;
         
         private static EmoteHandler _player2EmoteHandler;
+
+        private static Round _round;
+
+        private static Players.Color _color;
         
         private MultiDisplay multiDisplay;
         
@@ -65,24 +74,36 @@ namespace Init
         [SerializeField] private TextMeshProUGUI player2ScoreText;
         
         
-        [SerializeField] private TextMeshProUGUI player1TimerText;
-        
-        [SerializeField] private TextMeshProUGUI player2TimerText;
-        
+        [FormerlySerializedAs("player1TimerText")] [SerializeField] private TextMeshProUGUI timerText;
+
+        [SerializeField] private TextMeshProUGUI countdownTimer;
         
         [SerializeField] private Slider player1StaminaSlider;
         
         [SerializeField] private Slider player2StaminaSlider;
+
+        
+        [SerializeField] private Slider player1ParadeSlider;
+        
+        [SerializeField] private Slider player2ParadeSlider;
+        
+        [SerializeField] private Slider player1HealthBar;
+        
+        [SerializeField] private Slider player2HealthBar;
         
         //Effets de fatigues des joueurs
         [SerializeField] private GameObject player1ExhaustedFx1;
         
         [SerializeField] private GameObject player2ExhaustedFx1;
 
+        [SerializeField] private Image blackPannel;
+
+        [SerializeField] private TextMeshProUGUI player1WarningText;
         
-        [SerializeField] private Slider player1ParadeSlider;
+        [SerializeField] private TextMeshProUGUI player1WarningTextM;
         
-        [SerializeField] private Slider player2ParadeSlider;
+        [SerializeField] private TextMeshProUGUI player1Name;
+        [SerializeField] private TextMeshProUGUI player2Name;
         
         
         [SerializeField] private GameObject player1KatanaObject;
@@ -99,24 +120,45 @@ namespace Init
         
         [SerializeField] private GameObject player2PauseMenuPanel;
         
-        [SerializeField] private GameObject player1HudPanel;
+        [FormerlySerializedAs("player1HudPanel")] [SerializeField] private GameObject playerHudPanel;
+
+        [SerializeField] private GameObject endScreen;
+
+        [SerializeField] private UnityEngine.Camera cameraTravelling;
+
         
-        [SerializeField] private GameObject player2HudPanel;
+        [SerializeField] private GameObject player1Hat;
+        
+        [SerializeField] private GameObject player1Body;
+        
+        [SerializeField] private GameObject player1Legs;
+        
+        [SerializeField] private GameObject player2Hat;
+        
+        [SerializeField] private GameObject player2Body;
+        
+        [SerializeField] private GameObject player2Legs;
 
         public static bool isGamePaused;
         
         public static bool isDebugMenuOn;
+
+        private bool isWarningActive;
         
         private bool isTimerInit;
     
         private void Awake()
         {
+            player1Name.text = Player.GetPlayerName(Player.PLAYER.P1);
+            player2Name.text = Player.GetPlayerName(Player.PLAYER.P2);
+            
+            isWarningActive = false;
             isGamePaused = false;
             isDebugMenuOn = false;
             isTimerInit = false;
-            // Initialisation de l'affichage sur plusieurs écrans
-            print("Intitialisation de l'affichage multiple...");
-            gameObject.AddComponent<MultiDisplay>();
+            // // Initialisation de l'affichage sur plusieurs écrans
+            // print("Intitialisation de l'affichage multiple...");
+            // gameObject.AddComponent<MultiDisplay>();
         
             // Récupération du chemin utilisateur de l'ordinateur
             print("Récupération du dossier utilisation...");
@@ -138,6 +180,7 @@ namespace Init
                 {
                     json += line;
                 }
+                
                 _config = JsonUtility.FromJson<GameConfig>(json);
 
                 // Initialisation de l'endurance
@@ -145,8 +188,10 @@ namespace Init
                 gameObject.AddComponent<Stamina>();
                 Stamina.Init(player1ExhaustedFx1, player2ExhaustedFx1);
 
-                //Stamina stamina = new Stamina(player1ExhaustedFx1);
-
+                // Initialisation de la vie
+                print("Initialisation du système de vie...");
+                gameObject.AddComponent<Health>();
+                
                 // Récupération des manettes
                 print("Récupération des manettes...");
                 _controllerHandler = _connecter.GetHandler();
@@ -156,20 +201,24 @@ namespace Init
                 _katana1 = new KatanaOrientation(Player.PLAYER.P1, _controllerHandler.GetPlayer1Controller(), player1ParadeFx1,
                     player1ParadeFx2, player1ParadeFxPos, player1KatanaAxis, player1KatanaObject, player1ParadeSlider);
                 Katana1.Init();
-            
+                _katana1.CanMove(false);
                 print("Initialisation de la rotation du joueur 2...");
                 // Initialisation de l'orientation de la manette 2
                 _katana2 = new KatanaOrientation(Player.PLAYER.P2, _controllerHandler.GetPlayer2Controller(), player2ParadeFx1,
                     player2ParadeFx2, player2ParadeFxPos, player2KatanaAxis, player2KatanaObject, player2ParadeSlider);
                 Katana2.Init();
+                _katana2.CanMove(false);
 
+                _color = gameObject.GetComponent<Players.Color>();
+                _color.ApplyPlayerColor(player1Hat, player1Body, player1Legs, Player.GetPlayerColor(Player.PLAYER.P1), player2Hat, player2Body, player2Legs, Player.GetPlayerColor(Player.PLAYER.P2));
+                
                 // Initialisation de la classe chargée de mettre à jour le HUD
                 print("Initialisation de la mise à jour de l'affichage");
-                _updater = new UiUpdater(player1ScoreText, player2ScoreText, player1StaminaSlider, player2StaminaSlider, player1TimerText, player2TimerText, player1ParadeSlider, player2ParadeSlider);
+                _updater = new UiUpdater(player1ScoreText, player2ScoreText, player1StaminaSlider, player2StaminaSlider, timerText, player1ParadeSlider, player2ParadeSlider, player1HealthBar, player2HealthBar, countdownTimer);
             
                 // Initialisation du timer
                 print("Initialisation du timer...");
-                _timer = new Timer(_config.game_time, soundTimer);
+                _timer = new Timer(_config.game_time, soundTimer, gameObject);
                 isTimerInit = true;
             
                 // Initialisaion du gestionnaire de son
@@ -190,15 +239,45 @@ namespace Init
                 
                 
                 // Activation de la Led des manettes
-                PSMoveUtils.SetLed(Player.PLAYER.P1, Color.yellow);
-                PSMoveUtils.SetLed(Player.PLAYER.P2, Color.yellow);
+                //PSMoveUtils.SetLed(Player.PLAYER.P1, Color.yellow);
+                //PSMoveUtils.SetLed(Player.PLAYER.P2, Color.yellow);
+
+                _round = gameObject.AddComponent<Round>();
+                _round.StartNextRound();
             }
             else
             {
                 print(_connecter.GetError());
+                DisplayWarningMessage(_connecter.GetError(), player1WarningText, player1WarningTextM);
             }
         }
     
+        private void DisplayWarningMessage(String errors, TextMeshProUGUI player1, TextMeshProUGUI player1M)
+        {
+            player1.text = errors;
+            player1.alignment = TextAlignmentOptions.Center;
+            player1M.gameObject.SetActive(true);
+            StartCoroutine(WarningFlash(player1));
+        }
+
+        private IEnumerator WarningFlash(TextMeshProUGUI player1)
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(1f);
+                if (isWarningActive)
+                {
+                    player1.gameObject.SetActive(false);
+                    isWarningActive = false;
+                }
+                else
+                {
+                    player1.gameObject.SetActive(true);
+                    isWarningActive = true;
+                }
+            }
+        }
+        
         /// <summary>
         /// Permet de récupérer la connexion des manettes
         /// </summary>
@@ -315,8 +394,7 @@ namespace Init
         public void Resume()
         {
             // Activation du HUD des joueurs
-            player1HudPanel.SetActive(true);
-            player2HudPanel.SetActive(true);
+            playerHudPanel.SetActive(true);
         
             // Désactivation du menu pause des joueurs
             player1PauseMenuPanel.SetActive(false);
@@ -338,8 +416,7 @@ namespace Init
         private void Pause()
         {
             // Désactivation du HUD des joueurs
-            player1HudPanel.SetActive(false);
-            player2HudPanel.SetActive(false);
+            playerHudPanel.SetActive(false);
         
             // Activation du menu pause des joueurs
             player1PauseMenuPanel.SetActive(true);
@@ -356,9 +433,104 @@ namespace Init
         /// </summary>
         public void QuitGame()
         {
+            // Mise en pause du temps en jeu
+            Time.timeScale = 1f;
+        
+            isGamePaused = false;
+        
             Debug.Log("Quitting game...");
-            Application.Quit();
+            SceneManager.LoadScene("MainMenu");
         }
+
+        public void OnTimerEnd()
+        {
+            StartCoroutine(DisplayEndScreen());
+        }
+
+        IEnumerator DisplayEndScreen()
+        {
+            float timer = 0f;
+ 
+            // Zoom in
+            while (timer < 1f)
+            {
+                yield return new WaitForEndOfFrame();
+                timer += Time.deltaTime;
+
+                /*blackPannel.rectTransform.localScale = new Vector3
+                (
+                    blackPannel.rectTransform.localScale.x + (Time.deltaTime * 250 * 2),
+                    blackPannel.rectTransform.localScale.y + (Time.deltaTime * 125 * 2)
+                );*/
+                blackPannel.GetComponent<Image>().color = new Color(0, 0, 0, timer);
+            }
+            
+            playerHudPanel.SetActive(false);
+            endScreen.SetActive(true);
+            cameraTravelling.gameObject.SetActive(true);
+            _katana1.CanMove(false);
+            _katana2.CanMove(false);
+
+            timer = 0;
+            
+            while (timer > 1f)
+            {
+                yield return new WaitForEndOfFrame();
+                timer -= Time.deltaTime;
+
+                /*blackPannel.rectTransform.localScale = new Vector3
+                (
+                    blackPannel.rectTransform.localScale.x + (Time.deltaTime * 250 * 2),
+                    blackPannel.rectTransform.localScale.y + (Time.deltaTime * 125 * 2)
+                );*/
+                blackPannel.GetComponent<Image>().color = new Color(0, 0, 0, timer);
+            }
+
+            // timer = 0f;
+            // //yield return new WaitForSeconds(Speed);
+            // while (timer < 1f)
+            // {
+            //     yield return new WaitForEndOfFrame();
+            //     timer += Time.deltaTime;
+            //
+            //     transform.localScale = new Vector3
+            //     (
+            //         transform.localScale.x - (Time.deltaTime * Strength * 2),
+            //         transform.localScale.y - (Time.deltaTime * Strength * 2)
+            //     );
+            // }
+            //yield return new WaitForSeconds(Speed);
+            yield return null;
+            
+            
+            
+            // float timer = 0f;
+            // while (timer < 1.275f)
+            // {
+            //     yield return new WaitForSeconds(2);
+            //     timer += Time.deltaTime;
+            //
+            //     blackPannel.GetComponent<Image>().color = new Color(0, 0, 0, timer * 2 * 100);
+            // }
+            //
+            // timer = 1.275f;
+            // playerHudPanel.SetActive(false);
+            // endScreen.SetActive(true);
+            // cameraTravelling.gameObject.SetActive(true);
+            // _katana1.CanMove(false);
+            // _katana2.CanMove(false);
+            //
+            // while (timer > 0f)
+            // {
+            //     yield return new WaitForEndOfFrame();
+            //     timer -= Time.deltaTime;
+            //
+            //     blackPannel.GetComponent<Image>().color = new Color(0, 0, 0, timer * 2 * 100);
+            // }
+            //
+            // yield return null;
+        }
+        
 
         private void OnApplicationQuit()
         {

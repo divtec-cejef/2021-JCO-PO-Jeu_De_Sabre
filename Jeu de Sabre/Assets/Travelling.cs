@@ -20,6 +20,7 @@ public class Travelling : MonoBehaviour
         transform.Rotate(new Vector3 (0f,1f,0f), anglesToRotate.y * Time.deltaTime,Space.Self);
         transform.Rotate(new Vector3 (0f,0f,1f), anglesToRotate.z * Time.deltaTime,Space.Self);
 
-        transform.Translate(distanceToMove * Time.deltaTime, Space.World);
+        transform.Translate(distanceToMove * Time.deltaTime, Space.Self);
+        
     }
 }

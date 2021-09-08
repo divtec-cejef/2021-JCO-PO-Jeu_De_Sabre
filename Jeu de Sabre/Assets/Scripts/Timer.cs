@@ -3,21 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using Init;
 using UnityEngine;
+using UnityEngine.InputSystem.Interactions;
 
 public class Timer
 {
     private float timer;
     private GameObject sound;
+    private bool isGameEnd;
+    private GameObject init;
 
     /// <summary>
     /// Constructeur du Timer
     /// </summary>
     /// <param name="time">La durée du timer</param>
     /// <param name="sound">Le son du timer</param>
-    public Timer(int time, GameObject sound)
+    public Timer(int time, GameObject sound, GameObject init)
     {
         timer = time;
         this.sound = sound;
+        isGameEnd = false;
+        this.init = init;
     }
 
     public void OnUpdate()
@@ -26,6 +31,12 @@ public class Timer
         {
             timer -= Time.deltaTime;
             GameInit.GetUiUpdater().OnTimerUpdate();
+        }
+        else
+        {
+            if (!isGameEnd)
+                init.GetComponent<GameInit>().OnTimerEnd();
+            isGameEnd = true;
         }
     }
 

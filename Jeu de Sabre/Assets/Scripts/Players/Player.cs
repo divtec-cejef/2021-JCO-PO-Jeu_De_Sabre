@@ -1,13 +1,59 @@
+using System;
+using Init;
+using UnityEngine;
+
 namespace Players
 {
     public class Player
     {
+        private static int player1Color;
+        private static int player2Color;
+        private static String player1Name = "Player 1";
+        private static String player2Name = "Player 2";
+        
         // Enum utiliser pour effectuer une action sur un joueur précis
         public enum PLAYER
         {
             P1,
             P2,
             Other
+        }
+
+        public static String GetPlayerName(PLAYER player)
+        {
+            return player == PLAYER.P1 ? player1Name : player2Name;
+        }
+
+        public static void SetPlayerNames(String name1, String name2)
+        {
+            player1Name = name1;
+            player2Name = name2;
+        }
+
+        public static int GetPlayerColor(PLAYER player)
+        {
+            return player == PLAYER.P1 ? player1Color : player2Color;
+        }
+        
+        public static void SetPlayerColors(int color1, int color2)
+        {
+            player1Color = color1;
+            player2Color = color2;
+        }
+
+        // public static void ApplyPlayerColor(GameObject hat1, GameObject body1, GameObject leg1, int color1, GameObject hat2, GameObject body2, GameObject leg2, int color2)
+        // {
+        //     ApplyPlayerColor(hat1, body1, leg1, color1, hat2, body2, leg2, color2);
+        // }
+        
+        public static bool DecreasePlayerHealth(PLAYER player, int amount)
+        {
+            return Health.DecreaseHealth(player, amount);
+        }
+
+        public static int GetPlayerHealth(PLAYER player)
+        {
+            return Health.GetPlayerHealth(player);
         }
 
         /// <summary>

@@ -79,19 +79,19 @@ namespace Init
             {
                 /* Si la manette 1 ne fonctionne pas */
                 case 0:
-                    error = "\tImpossible d'établir une connexion avec la Manette 1";
+                    error = "Impossible d'établir une connexion avec la Manette 1";
                     break;
                 /* Si la manette 2 ne fonctionne pas */
                 case 1:
-                    error = "\tImpossible d'établir une connexion avec la Manette 2";
+                    error = "Impossible d'établir une connexion avec la Manette 2";
                     break;
                 /*Si aucune manette de fonctionne */
                 case 2:
-                    error = "\tImpossible d'établir une connexion avec les Manettes";
+                    error = "Impossible d'établir une connexion avec les Manettes";
                     break;
                 /* Si l'api de fonctionne pas */
                 case 3:
-                    error = "\tImpossible d'initialiser l'API PSMove";
+                    error = "Impossible d'initialiser l'API PSMove";
                     break;
             }
             return error;

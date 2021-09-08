@@ -40,7 +40,7 @@ public class AttackMouvements
         Player2Trans = P2T;
     }
 
-    public void onAttack(Player.PLAYER defender, Player.PLAYER attacker,CollisionPlayers.TYPE_ATTACK attack)
+    public void onAttack(Player.PLAYER attacker, Player.PLAYER defender, CollisionPlayers.TYPE_ATTACK attack)
     {
         GameInit.GetCameraShaking().ShakeCamera(attacker, 1.0f, .1f);
         GameInit.GetCameraShaking().ShakeCamera(defender, 1.0f, .3f);
@@ -48,7 +48,7 @@ public class AttackMouvements
         animeP1 = Player1Char.GetComponent<Animator>();
         animeP1Trans = Player1Trans.GetComponent<Animator>();
         animeP2 = Player2Char.GetComponent<Animator>();
-       animeP2Trans = Player2Trans.GetComponent<Animator>();
+        animeP2Trans = Player2Trans.GetComponent<Animator>();
 
         if (defender == Player.PLAYER.P1) 
             typeAttack(attack, animeP1, animeP1Trans,animeP2, animeP2Trans);
@@ -56,8 +56,25 @@ public class AttackMouvements
         else if(defender == Player.PLAYER.P2) 
             typeAttack(attack, animeP2, animeP2Trans,animeP1, animeP1Trans);
 
-    }
+        // if (attacker == Player.Joueur.P1)
+        // {
+        //     anime1 = Player1Char.GetComponent<Animator>();
+        //     anime1Trans = Player1Trans.GetComponent<Animator>();
+        //     anime1.SetTrigger("isAttacking");
+        //     anime1Trans.SetTrigger("isAttacking");
+        //     
+        //     anime2 = Player2Char.GetComponent<Animator>();
+        //     anime2Trans = Player2Trans.GetComponent<Animator>();
+        //     anime2.SetTrigger("isHit");
+        //     anime2Trans.SetTrigger("isHit");
+        // }
+        // else
+        // {
+        //     
+        // }
 
+    }
+    
     private void typeAttack(CollisionPlayers.TYPE_ATTACK attack, Animator animeDefender,Animator animeDefenderTrans ,
         Animator animeAttacker, Animator animeAttackerTrans)
     {
@@ -78,16 +95,15 @@ public class AttackMouvements
                 animeAttackerTrans.SetTrigger("isSlideWalkLeft");
                 break;
             case CollisionPlayers.TYPE_ATTACK.CENTER:
-                animeDefender.SetTrigger("isNormalWalk");
-                animeDefenderTrans.SetTrigger("isNormalWalk");
+                animeDefender.SetTrigger("isMoveBack");
+                animeDefenderTrans.SetTrigger("isMoveBack");
                     
-                animeAttacker.SetTrigger("isMoveBack");
-                animeAttackerTrans.SetTrigger("isMoveBack");
+                animeAttacker.SetTrigger("isNormalWalk");
+                animeAttackerTrans.SetTrigger("isNormalWalk");
                 break;
         }
     }
     
-
     private void Update()
     {
         //Player1.transform.position = Vector3.Lerp(Player1.transform.position, new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z + move * 1.5f), 0.5f*Time.deltaTime);

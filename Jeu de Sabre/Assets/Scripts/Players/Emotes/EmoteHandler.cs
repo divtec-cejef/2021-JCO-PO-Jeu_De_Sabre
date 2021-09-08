@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Collisions;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -88,9 +89,10 @@ public class EmoteHandler : MonoBehaviour
                 throw new ArgumentOutOfRangeException(nameof(type), type, null);
         }
 
-        if (resetFace) ResetFace(playerFace);
-                 
-        return currentEmote; 
+        // if (resetFace) StartCoroutine(ResetFace(playerFace, resetTime));
+        // if (resetFace) ResetFace(playerFace);
+
+        return currentEmote;
     }
     
     public Material GetRandomEmote(EMOTE_TYPE type, GameObject playerFace, bool resetFace)
@@ -104,5 +106,11 @@ public class EmoteHandler : MonoBehaviour
             playerFace.GetComponent<Renderer>().material = GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false);
         else
             playerFace.GetComponent<Renderer>().material = GetRandomEmote(EMOTE_TYPE.ANGRY, playerFace, 0, false);
+    }
+
+    public void Reset()
+    {
+        CollisionPlayers._player1Face.GetComponent<Renderer>().material = GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false);
+        CollisionPlayers._player2Face.GetComponent<Renderer>().material = GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false);
     }
 }

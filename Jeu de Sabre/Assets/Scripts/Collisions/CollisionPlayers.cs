@@ -21,13 +21,9 @@ namespace Collisions
         
         [SerializeField] private Transform player2LeftCollisionCheck;
         
-        [SerializeField] private Transform player1CenterCollisionCheck;
-        
         [SerializeField] private Transform player1RightCollisionCheck;
         
         [SerializeField] private Transform player2RightCollisionCheck;
-        
-        [SerializeField] private Transform player2CenterCollisionCheck;
 
         [SerializeField] private LayerMask sabre1;
         
@@ -70,8 +66,9 @@ namespace Collisions
         private bool isPlayer2Right = false;
         private bool isFirstCollisionOfP2 = false;
     
+    
         private bool timerEnd = false;
-
+        
         public enum TYPE_ATTACK
         {
             RIGHT,
@@ -79,6 +76,7 @@ namespace Collisions
             CENTER
             
         }
+
         private void Awake()
         {
             _player1Face = player1Face;
@@ -190,7 +188,7 @@ namespace Collisions
             {
                 if (backwardMouvement)
                 {
-                    Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
+                    Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
                     backTimer = .01f;
                 }
                 Debug.Log(("C le center isFirstCollisionP2 :"+ isFirstCollisionOfP2));
@@ -229,11 +227,11 @@ namespace Collisions
                 if (isFirstCollisionOfP1)
                 {
                     isFirstCollisionOfP1 = false;
-                    Debug.Log("Stay isFirstCollisionPlayer1 : "+ isFirstCollisionOfP1);
+                    //Debug.Log("Stay isFirstCollisionPlayer1 : "+ isFirstCollisionOfP1);
                 } else if (isFirstCollisionOfP2)
                 {
                     isFirstCollisionOfP2 = false;
-                    Debug.Log("Stay isFirstCollisionPlayer2 : "+ isFirstCollisionOfP2);
+                    //Debug.Log("Stay isFirstCollisionPlayer2 : "+ isFirstCollisionOfP2);
                 } 
             }
         }
@@ -272,7 +270,6 @@ namespace Collisions
                 ? GameInit.GetPlayer1KatanaOrientation()
                 : GameInit.GetPlayer2KatanaOrientation();
             
-            
             if (!ko.GetPlayerParade().GetParade())
             {
                 // Si le joueur à assez d'endurance pour porter le coup
@@ -287,7 +284,7 @@ namespace Collisions
 
                     // Mise à jour du score du joueur
                     Player.UpdatePlayerScore(player, GameInit.GetGameConfig().attack_score_amount);
-
+                    bool playerStatus = Player.DecreasePlayerHealth(player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1, GameInit.GetGameConfig().player_health_decrease);
                     // Animations et mouvements de l'attaque
                     //attack.onAttack(player, player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1);
 
@@ -307,6 +304,11 @@ namespace Collisions
                         }
                     }
 
+                    if (!playerStatus)
+                    {
+                        //fin du round
+                    }
+                    
                     // Le son TODO changer ca plus tard
                     var position = new Vector3(11.9f, 11.0f, 15.6f);
                     var rotation = new Quaternion(0, 0, 0, 0);
@@ -323,7 +325,7 @@ namespace Collisions
                 //Debug.Log("parade.. arrete... maintenant.. s'il te plait...");
             }
         }
-        
+
         public bool getIsFirstCollisionOfP1()
         {
             return isFirstCollisionOfP1;
