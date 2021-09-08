@@ -3,6 +3,7 @@ using System.Collections;
 using Camera;
 using Cinemachine;
 using Mouvements.Orientation;
+using MySql.Data.MySqlClient;
 using Players;
 using Players.UI;
 using Sounds;
@@ -449,6 +450,7 @@ namespace Init
 
         IEnumerator DisplayEndScreen()
         {
+            EditData();
             float timer = 0f;
  
             // Zoom in
@@ -485,52 +487,33 @@ namespace Init
                 );*/
                 blackPannel.GetComponent<Image>().color = new Color(0, 0, 0, timer);
             }
-
-            // timer = 0f;
-            // //yield return new WaitForSeconds(Speed);
-            // while (timer < 1f)
-            // {
-            //     yield return new WaitForEndOfFrame();
-            //     timer += Time.deltaTime;
-            //
-            //     transform.localScale = new Vector3
-            //     (
-            //         transform.localScale.x - (Time.deltaTime * Strength * 2),
-            //         transform.localScale.y - (Time.deltaTime * Strength * 2)
-            //     );
-            // }
-            //yield return new WaitForSeconds(Speed);
             yield return null;
-            
-            
-            
-            // float timer = 0f;
-            // while (timer < 1.275f)
-            // {
-            //     yield return new WaitForSeconds(2);
-            //     timer += Time.deltaTime;
-            //
-            //     blackPannel.GetComponent<Image>().color = new Color(0, 0, 0, timer * 2 * 100);
-            // }
-            //
-            // timer = 1.275f;
-            // playerHudPanel.SetActive(false);
-            // endScreen.SetActive(true);
-            // cameraTravelling.gameObject.SetActive(true);
-            // _katana1.CanMove(false);
-            // _katana2.CanMove(false);
-            //
-            // while (timer > 0f)
-            // {
-            //     yield return new WaitForEndOfFrame();
-            //     timer -= Time.deltaTime;
-            //
-            //     blackPannel.GetComponent<Image>().color = new Color(0, 0, 0, timer * 2 * 100);
-            // }
-            //
-            // yield return null;
         }
         
+        public void EditData()
+        {
+            string connStr =
+                "Database=lacourseauxtrophees;Server=127.0.0.1;Uid=root;Password=Admlocal1;pooling=false;CharSet=utf8;port=3306";
+            MySqlConnection conn = new MySqlConnection(connStr);
+            try
+            {
+                conn.Open();
+                MySqlCommand Player1 = conn.CreateCommand();
+                Player1.CommandText = "UPDATE tb_player SET score_player = "+  Player.GetScore(Player.PLAYER.P1)+ ", current_game_player = 2 WHERE current_game_player = 1 AND number_player = 1; ";
+                Player1.ExecuteScalar();
+    
+                MySqlCommand Player2 = conn.CreateCommand();
+                Player2.CommandText = "UPDATE tb_player SET score_player = "+  Player.GetScore(Player.PLAYER.P2)+ ", current_game_player = 2 WHERE current_game_player = 1 AND number_player = 2; ";
+                Player2.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                print("Ca marche po - " + ex);
+            }
+            conn.Close();
+            print("Done.");
+        }
+
 
         private void OnApplicationQuit()
         {

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Camera;
+using MySql.Data.MySqlClient;
 using Players;
 using TMPro;
 using UnityEngine;
@@ -117,7 +118,7 @@ public class MenuActions : MonoBehaviour
         LoadingMenu.SetActive(true);
         Player.SetPlayerColors(player1Color, player2Color);
         Player.SetPlayerNames(player1Name, player2Name);
-        
+        InsertData();
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / 0.9f);
@@ -190,6 +191,33 @@ public class MenuActions : MonoBehaviour
         player2Name = s;
     }
     
+    public void InsertData()
+    {
+    
+        string connStr =
+            "Database=lacourseauxtrophees;Server=127.0.0.1;Uid=root;Password=Admlocal1;pooling=false;CharSet=utf8;port=3306";
+        MySqlConnection conn = new MySqlConnection(connStr);
+    
+        try
+        {
+        
+            conn.Open();
+            MySqlCommand Player1 = conn.CreateCommand();
+            Player1.CommandText = "INSERT INTO tb_player VALUES(null, '" + Player.GetPlayerName(Player.PLAYER.P1) + "', 0, " + Player.GetPlayerColor(Player.PLAYER.P1)+ ", 1, 1);";
+            Player1.ExecuteScalar();
+        
+            MySqlCommand Player2 = conn.CreateCommand();
+            Player2.CommandText = "INSERT INTO tb_player VALUES(null, '" + Player.GetPlayerName(Player.PLAYER.P2) + "', 0, " + Player.GetPlayerColor(Player.PLAYER.P2)+ ", 1, 2);";
+            Player2.ExecuteScalar();
+        }
+        catch (Exception ex)
+        {
+            print("Ca marche po - " + ex);
+        }
+        conn.Close();
+        print("Done.");
+    
+    }
     
     /* --------- Personnalisation du joueur --------- */
 
