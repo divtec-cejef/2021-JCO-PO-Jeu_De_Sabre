@@ -1,553 +1,357 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'fr' Physical Memory: 8060 MB
+OS: 'Windows 10 Home; OS build 19043.1165; Version 2009; 64bit' Language: 'fr' Physical Memory: 16331 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+E:\Unity\Unity\2020.3.7f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52368
-Successfully changed project path to: C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
-C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+51298
+Successfully changed project path to: C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 60.86 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 102.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+[Subsystems] Discovering subsystems at path E:/Unity/Unity/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Doryan LB/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Plus Graphics 655 (ID=0x3ea5)
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1b83)
     Vendor:   
-    VRAM:     4030 MB
-    Driver:   27.20.100.8681
+    VRAM:     6052 MB
+    Driver:   27.21.14.5671
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
+Mono path[0] = 'E:/Unity/Unity/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/Unity/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity/Unity/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56196
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002124 seconds.
+Register platform support module: E:/Unity/Unity/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.015772 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 61.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 80.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.117 seconds
+- Completed reload, in  4.965 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002049 seconds.
+Registered in 0.005775 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 67.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 79.25 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.097 seconds
+- Completed reload, in  1.258 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.1 MB.
-System memory in use after: 105.2 MB.
+System memory in use before: 105.3 MB.
+System memory in use after: 105.4 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2285.
-Total: 8.560500 ms (FindLiveObjects: 0.765100 ms CreateObjectMapping: 0.361900 ms MarkObjects: 7.124800 ms  DeleteObjects: 0.304500 ms)
+Total: 2.735600 ms (FindLiveObjects: 0.339800 ms CreateObjectMapping: 0.060700 ms MarkObjects: 2.229400 ms  DeleteObjects: 0.104300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseHairAndHats.mat
-  artifactKey: Guid(d6c234a2df9d8a64b9a027742295472e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HYPERCASUAL - Stickman Customization/Materials/BaseMaterials/BaseHairAndHats.mat using Guid(d6c234a2df9d8a64b9a027742295472e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e82be99ed746384161d2c3c80b305b') in 0.175511 seconds
-  Import took 0.182815 seconds .
+  path: Assets/Scenes/Map/Lightmap-11_comp_light.exr
+  artifactKey: Guid(cc13271bc3752054a874aca73e40e17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-11_comp_light.exr using Guid(cc13271bc3752054a874aca73e40e17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa2417ac2a86434c3d6ed57bf16ccbf') in 0.229961 seconds
+  Import took 0.234473 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000632 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small3.png
-  artifactKey: Guid(c50a0f6e42d5c4abeb157b1b97e14ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small3.png using Guid(c50a0f6e42d5c4abeb157b1b97e14ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '924b3d9d9772e3be62a927e3844f182b') in 0.066019 seconds
-  Import took 0.069360 seconds .
+  Time since last request: 0.000447 seconds.
+  path: Assets/Scenes/Map/Lightmap-1_comp_light.exr
+  artifactKey: Guid(ff39096b2f8e8864bbd30c8425eced05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-1_comp_light.exr using Guid(ff39096b2f8e8864bbd30c8425eced05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148159e00f211fca70d00053b6bab910') in 0.026480 seconds
+  Import took 0.030339 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/TexturesMaisCestMieux/Jambes_Torse/Materials/blanc.mat
-  artifactKey: Guid(7957f6cfbeea61c46a220cdad12bdcc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TexturesMaisCestMieux/Jambes_Torse/Materials/blanc.mat using Guid(7957f6cfbeea61c46a220cdad12bdcc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ec8eb775b36aef58edb82230ec56d9') in 0.036933 seconds
-  Import took 0.041418 seconds .
+  Time since last request: 0.000358 seconds.
+  path: Assets/Scenes/Map/Lightmap-7_comp_light.exr
+  artifactKey: Guid(840fba164ed40224e8a8165da9ae5e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-7_comp_light.exr using Guid(840fba164ed40224e8a8165da9ae5e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3beeacca55574a9c6d1749e6b97f7d') in 0.022724 seconds
+  Import took 0.026360 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000563 seconds.
-  path: Assets/BOXOPHOBIC/Utils/Resources/Boxophobic - BannerMiddle.psd
-  artifactKey: Guid(e3767adfa5dac5544830cd097ef6c09f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BOXOPHOBIC/Utils/Resources/Boxophobic - BannerMiddle.psd using Guid(e3767adfa5dac5544830cd097ef6c09f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb7f7d109558ac017cc0904f3d5c8f55') in 0.021490 seconds
-  Import took 0.027391 seconds .
+  Time since last request: 0.000386 seconds.
+  path: Assets/Scenes/Map/Lightmap-14_comp_dir.png
+  artifactKey: Guid(afbaab77cd8a5e6479f4a796146d1a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-14_comp_dir.png using Guid(afbaab77cd8a5e6479f4a796146d1a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49654c25bf0639197cd166d5d64748e5') in 0.085488 seconds
+  Import took 0.088963 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small4.png
-  artifactKey: Guid(35b4f3b51c8fc4c48ba3f7750be46e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small4.png using Guid(35b4f3b51c8fc4c48ba3f7750be46e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93d198447dd02e03ff10afaab5a8951') in 0.022978 seconds
-  Import took 0.027331 seconds .
+  Time since last request: 0.000319 seconds.
+  path: Assets/Scenes/Map/Lightmap-1_comp_dir.png
+  artifactKey: Guid(1c47b812f4fa6b048852b9ed7ee0698d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-1_comp_dir.png using Guid(1c47b812f4fa6b048852b9ed7ee0698d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '654a6e6dfe1b7a7f6b42f0486b2136f8') in 0.022034 seconds
+  Import took 0.025012 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_TableFrames.prefab
-  artifactKey: Guid(a6ad203b971da49cb8bd8d65d307901d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_TableFrames.prefab using Guid(a6ad203b971da49cb8bd8d65d307901d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba66c9068c65c5f2b3367574ee8a7f1') in 0.050664 seconds
-  Import took 0.054495 seconds .
+  Time since last request: 0.000249 seconds.
+  path: Assets/Scenes/Map/Lightmap-6_comp_light.exr
+  artifactKey: Guid(3ede200d853124c4283bef27f768b03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-6_comp_light.exr using Guid(3ede200d853124c4283bef27f768b03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '085b15f529b6c3096974bf520d56f063') in 0.022732 seconds
+  Import took 0.027607 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large1.png
-  artifactKey: Guid(aef20f8e21ef14da9ba50e7d8df50510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large1.png using Guid(aef20f8e21ef14da9ba50e7d8df50510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29492fb9b32e899d691347613e284c89') in 0.017330 seconds
-  Import took 0.021618 seconds .
+  Time since last request: 0.000416 seconds.
+  path: Assets/Scenes/Map/Lightmap-14_comp_light.exr
+  artifactKey: Guid(de6cbd93fd01c964c91fafb1c830b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-14_comp_light.exr using Guid(de6cbd93fd01c964c91fafb1c830b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2855e4d549355de8dd8c0ac88582c363') in 0.027713 seconds
+  Import took 0.031600 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large2.png
-  artifactKey: Guid(0358e94906c704657ab9ca0a8ce5a588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large2.png using Guid(0358e94906c704657ab9ca0a8ce5a588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ef4ba35640cb7ca5d952db19614f0c') in 0.024366 seconds
-  Import took 0.028742 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_OtherFrames.prefab
-  artifactKey: Guid(33164486ce18e46c6b5933ed0380e8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_OtherFrames.prefab using Guid(33164486ce18e46c6b5933ed0380e8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0ef11ebbbb7ef30ea263c0f22dec96') in 0.287748 seconds
-  Import took 0.292678 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/BOXOPHOBIC/Utils/Resources/Boxophobic - BannerBegin.psd
-  artifactKey: Guid(9515108b8376ad7418e8138858201b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BOXOPHOBIC/Utils/Resources/Boxophobic - BannerBegin.psd using Guid(9515108b8376ad7418e8138858201b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03a6b45c837f3d195a640cb86a91d298') in 0.014770 seconds
-  Import took 0.018729 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small1.png
-  artifactKey: Guid(f46c20033f2c549bcb8dd8a3d65ac1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small1.png using Guid(f46c20033f2c549bcb8dd8a3d65ac1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950b652addf44ddae3378bcc1d860665') in 0.025334 seconds
-  Import took 0.030131 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/TexturesMaisCestMieux/Chapo/blanc.png
-  artifactKey: Guid(cb6fbd797a83e844da1a32397f23bda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TexturesMaisCestMieux/Chapo/blanc.png using Guid(cb6fbd797a83e844da1a32397f23bda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ef31d6659a664666b3daa2a02061ed') in 0.025645 seconds
-  Import took 0.030337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Popups/_PrefabsPanel_Popups_1.prefab
-  artifactKey: Guid(a204d3ea0d9c044c585415300146489b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Popups/_PrefabsPanel_Popups_1.prefab using Guid(a204d3ea0d9c044c585415300146489b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc3e115072b9cfce3fb9f8c12b0ae0c3') in 0.103876 seconds
-  Import took 0.109918 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000412 seconds.
-  path: Assets/PolygonParticleFX/Prefabs/FX_CannonShot_01.prefab
-  artifactKey: Guid(f72f0eb4a0fb5934fab797add8da8711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonParticleFX/Prefabs/FX_CannonShot_01.prefab using Guid(f72f0eb4a0fb5934fab797add8da8711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3bc871dbb97a4fa5a059d899b2d3b8') in 0.014862 seconds
-  Import took 0.019493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Label/_PrefabsPanel_Label.prefab
-  artifactKey: Guid(4d028b829fe794a4bb02cb35600edbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Label/_PrefabsPanel_Label.prefab using Guid(4d028b829fe794a4bb02cb35600edbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453daf789cb683d0f1d284cabd4b33ea') in 0.165543 seconds
-  Import took 0.169803 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/TexturesMaisCestMieux/Chapo/Materials/blanc.mat
-  artifactKey: Guid(6f3c2f6af03a7394192d8071e8f26bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/blanc.mat using Guid(6f3c2f6af03a7394192d8071e8f26bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294f2c55a15310c93d80de532bcc029f') in 0.013550 seconds
-  Import took 0.017126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/BOXOPHOBIC/Utils/Resources/Boxophobic - BannerEnd.psd
-  artifactKey: Guid(0dd3fbd5475976a4aa96298afc680d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BOXOPHOBIC/Utils/Resources/Boxophobic - BannerEnd.psd using Guid(0dd3fbd5475976a4aa96298afc680d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbacdfdbba0c50fe71e5ffb971781a02') in 0.012289 seconds
-  Import took 0.016142 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large0.png
-  artifactKey: Guid(8c35201ab90e548489bbcec22209ceaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large0.png using Guid(8c35201ab90e548489bbcec22209ceaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15b49a6967d744d533226979de28bf0b') in 0.016955 seconds
-  Import took 0.020939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large3.png
-  artifactKey: Guid(563ca0f21bfce408b86459e92e3deaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large3.png using Guid(563ca0f21bfce408b86459e92e3deaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c83e255b429b71bbda4cc96f6c3e22d4') in 0.021517 seconds
-  Import took 0.024898 seconds .
+  Time since last request: 0.000189 seconds.
+  path: Assets/Scenes/Map/Lightmap-17_comp_dir.png
+  artifactKey: Guid(7c89f90f29e81dc4b8e99ffbe22be19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-17_comp_dir.png using Guid(7c89f90f29e81dc4b8e99ffbe22be19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca1f9f98f143a27b29937aa8a2426f8') in 0.024237 seconds
+  Import took 0.028356 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000316 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_CardFrames.prefab
-  artifactKey: Guid(a5115502a48b741ddb2b5ba45d38d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_CardFrames.prefab using Guid(a5115502a48b741ddb2b5ba45d38d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff2cc9e321f2b97c9064a8a59039074d') in 0.158293 seconds
-  Import took 0.162333 seconds .
+  path: Assets/Scenes/Map/Lightmap-8_comp_dir.png
+  artifactKey: Guid(6b471e58eb5a3074da5455b4ced8fe3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-8_comp_dir.png using Guid(6b471e58eb5a3074da5455b4ced8fe3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0ee961901ffb439bd57bb37fbdc347') in 0.021825 seconds
+  Import took 0.025379 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Component/Button/Btn_MainButton_Orange.Png
-  artifactKey: Guid(2bc701b63b63f40e0893a9fabeaa0a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Component/Button/Btn_MainButton_Orange.Png using Guid(2bc701b63b63f40e0893a9fabeaa0a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1bbe852b61a958bbac20de3d7341c39') in 0.023598 seconds
-  Import took 0.027183 seconds .
+  Time since last request: 0.000420 seconds.
+  path: Assets/Scenes/Map/Lightmap-16_comp_light.exr
+  artifactKey: Guid(4967d56cb8cc1fc4d8b5c41f87629e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-16_comp_light.exr using Guid(4967d56cb8cc1fc4d8b5c41f87629e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e8a9746309d7de7d13fc13d408e91d') in 0.027229 seconds
+  Import took 0.030521 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Slider/_PrefabsPanel_Slider_2.prefab
-  artifactKey: Guid(b2d8544b4d3d0404f90a8a1acf4f011c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Slider/_PrefabsPanel_Slider_2.prefab using Guid(b2d8544b4d3d0404f90a8a1acf4f011c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a5394fe75a0ac1e4b5810b5fda0085') in 0.270931 seconds
-  Import took 0.274920 seconds .
+  Time since last request: 0.000335 seconds.
+  path: Assets/Scenes/Map/Lightmap-3_comp_light.exr
+  artifactKey: Guid(b17aee0e36bd03a41bf85f62b7bf074e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-3_comp_light.exr using Guid(b17aee0e36bd03a41bf85f62b7bf074e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9efb65f7ba815491c938b3dfadabf22') in 0.022126 seconds
+  Import took 0.025769 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_ItemFrames.prefab
-  artifactKey: Guid(0ac2edb56a7f64cd0b24492680ee1bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_ItemFrames.prefab using Guid(0ac2edb56a7f64cd0b24492680ee1bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4b960fe24387f8fd64bf7c73876bf2') in 0.379424 seconds
-  Import took 0.383778 seconds .
+  Time since last request: 0.000279 seconds.
+  path: Assets/Scenes/Map/Lightmap-10_comp_light.exr
+  artifactKey: Guid(7df42991055dd1e42a77e2d5c3b02f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-10_comp_light.exr using Guid(7df42991055dd1e42a77e2d5c3b02f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3680ea265bf5c3f1dea9ae2704bed1') in 0.022825 seconds
+  Import took 0.026415 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_ListFrames_2.prefab
-  artifactKey: Guid(e00631d7526024011805c55baef6f862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_ListFrames_2.prefab using Guid(e00631d7526024011805c55baef6f862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de2107685ecbf3e91b95ac9c3df60e1') in 0.149449 seconds
-  Import took 0.153478 seconds .
+  Time since last request: 0.000394 seconds.
+  path: Assets/Scenes/Map/Lightmap-13_comp_light.exr
+  artifactKey: Guid(7616e69b55178204ea90c877cca5146a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-13_comp_light.exr using Guid(7616e69b55178204ea90c877cca5146a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24666ed65198e70f8ac3e3151f8b11f') in 0.049186 seconds
+  Import took 0.052947 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Buttons/_PrefabsPanel_Buttons.prefab
-  artifactKey: Guid(fa4a72350af3c40aaaab67c974c5c466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Buttons/_PrefabsPanel_Buttons.prefab using Guid(fa4a72350af3c40aaaab67c974c5c466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2153a99b81033de0b841d47c9c52ffbc') in 0.242063 seconds
-  Import took 0.246402 seconds .
+  Time since last request: 0.000222 seconds.
+  path: Assets/Scenes/Map/Lightmap-9_comp_dir.png
+  artifactKey: Guid(b0f64b3a750937844bbe65ca7b9458b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-9_comp_dir.png using Guid(b0f64b3a750937844bbe65ca7b9458b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f5d878fa1b9255125a4dde8343aee1') in 0.027519 seconds
+  Import took 0.030571 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_ListFrames_1.prefab
-  artifactKey: Guid(4fd693c0c36e94967bfa6a9429bd6211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_ListFrames_1.prefab using Guid(4fd693c0c36e94967bfa6a9429bd6211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58a6c6ee85f1fb9e40ad4895b5bf3fc2') in 0.189825 seconds
-  Import took 0.194732 seconds .
+  Time since last request: 0.000309 seconds.
+  path: Assets/Scenes/Map/Lightmap-5_comp_light.exr
+  artifactKey: Guid(cade9b008cd33ff43a09e47b8a026621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-5_comp_light.exr using Guid(cade9b008cd33ff43a09e47b8a026621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eedc27ab8f7fbbee0abdbc9b1a1ef9b') in 0.026038 seconds
+  Import took 0.029123 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000426 seconds.
-  path: Assets/TexturesMaisCestMieux/Jambes_Torse/blanc.png
-  artifactKey: Guid(603aea543679f8d4b9d213eed9b2c891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TexturesMaisCestMieux/Jambes_Torse/blanc.png using Guid(603aea543679f8d4b9d213eed9b2c891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbe835548e6429e54b2b0d4e88829ca') in 0.011336 seconds
-  Import took 0.015298 seconds .
+  Time since last request: 0.000206 seconds.
+  path: Assets/Scenes/Map/Lightmap-7_comp_dir.png
+  artifactKey: Guid(39089d14b854c474b96bb89b2a2a068a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-7_comp_dir.png using Guid(39089d14b854c474b96bb89b2a2a068a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c286c285d3612276d06b2344530ec45') in 0.025180 seconds
+  Import took 0.028311 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/HYPERCASUAL - Stickman Customization/Animations/CharacterAnimator.controller
-  artifactKey: Guid(e6a1525240699f5489b898e90c63f1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HYPERCASUAL - Stickman Customization/Animations/CharacterAnimator.controller using Guid(e6a1525240699f5489b898e90c63f1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e341eb96c74cde396f57d4122afd1d3') in 0.008912 seconds
-  Import took 0.012775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_BarFrames.prefab
-  artifactKey: Guid(6a9b17f983e2843c4bb24ab89ec3f9e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Frames/_PrefabsPanel_BarFrames.prefab using Guid(6a9b17f983e2843c4bb24ab89ec3f9e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861583b1cc2166d79e474f89a0ddc50a') in 0.035415 seconds
-  Import took 0.039809 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Popups/_PrefabsPanel_Popups_3.prefab
-  artifactKey: Guid(993c740444d1040c2b02aa75e5e79920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Popups/_PrefabsPanel_Popups_3.prefab using Guid(993c740444d1040c2b02aa75e5e79920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575b9cceaa6f535194d41ba8f096b454') in 0.028930 seconds
-  Import took 0.033341 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large4.png
-  artifactKey: Guid(cb873b07dc75243c1942d89018500c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Large4.png using Guid(cb873b07dc75243c1942d89018500c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '459d5154e13c365cbd1d26555625d349') in 0.020752 seconds
-  Import took 0.024281 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000396 seconds.
-  path: Assets/Prefabs/Canvas.prefab
-  artifactKey: Guid(f2a032373ccd6ab418f0c375290a58a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Canvas.prefab using Guid(f2a032373ccd6ab418f0c375290a58a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0157ca5b9609db459efcd8869d965e59') in 0.074651 seconds
-  Import took 0.078880 seconds .
+  Time since last request: 0.000331 seconds.
+  path: Assets/Scenes/Map/Lightmap-2_comp_dir.png
+  artifactKey: Guid(11048d30768dd194cab2c52b6dd24861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-2_comp_dir.png using Guid(11048d30768dd194cab2c52b6dd24861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59f77f8774e413ee92398c58de287ff') in 0.025494 seconds
+  Import took 0.028843 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000275 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small2.png
-  artifactKey: Guid(0daf4da7abc044e2b9b26b6438bee49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small2.png using Guid(0daf4da7abc044e2b9b26b6438bee49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198d73424f37b603878dd19d8ab5ce9d') in 0.014883 seconds
-  Import took 0.017981 seconds .
+  path: Assets/Scenes/Map/Lightmap-0_comp_light.exr
+  artifactKey: Guid(34a2cd0ebd4346241ab4d45a4726adec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-0_comp_light.exr using Guid(34a2cd0ebd4346241ab4d45a4726adec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed1b90ed97abdb536aa285eaac641863') in 0.020748 seconds
+  Import took 0.024504 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Slider/_PrefabsPanel_Slider_1.prefab
-  artifactKey: Guid(8f876d044ba744274b56252f2f270b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Slider/_PrefabsPanel_Slider_1.prefab using Guid(8f876d044ba744274b56252f2f270b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabd642364e106269d456561e4cb295a') in 0.324039 seconds
-  Import took 0.329576 seconds .
+  Time since last request: 0.000249 seconds.
+  path: Assets/Scenes/Map/Lightmap-12_comp_dir.png
+  artifactKey: Guid(e9dac3b8b1a7b624b991baf0112b794e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-12_comp_dir.png using Guid(e9dac3b8b1a7b624b991baf0112b794e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '253c15ced3fab8170c21cdb97a361712') in 0.022521 seconds
+  Import took 0.026502 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Scripts/Animations/animationTest1.anim
-  artifactKey: Guid(e093c98a3153aee4a9d26981a65efb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animations/animationTest1.anim using Guid(e093c98a3153aee4a9d26981a65efb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b8f05f85d135d20fd7332db0878b67') in 0.010154 seconds
-  Import took 0.014554 seconds .
+  Time since last request: 0.000210 seconds.
+  path: Assets/Scenes/Map/Lightmap-9_comp_light.exr
+  artifactKey: Guid(c543491229407da468868cc53927f953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-9_comp_light.exr using Guid(c543491229407da468868cc53927f953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7556f2b38adecfecdf3ca1c6be561c9') in 0.021537 seconds
+  Import took 0.024801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Scenes/Map/LightingData.asset
+  artifactKey: Guid(4f6e37ab164105544a9aa2f983c5b896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/LightingData.asset using Guid(4f6e37ab164105544a9aa2f983c5b896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b052e16b80c3273bca62f9a93152394d') in 0.017008 seconds
+  Import took 0.020473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Scenes/Map/Lightmap-0_comp_dir.png
+  artifactKey: Guid(1a3af7b316773eb48afbf732f3da695e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-0_comp_dir.png using Guid(1a3af7b316773eb48afbf732f3da695e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4963fdaabd0f05f05c0098cb898a8a8') in 0.022448 seconds
+  Import took 0.026209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Scenes/Map/Lightmap-4_comp_dir.png
+  artifactKey: Guid(7166347296e7aa2428ca017d134419af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-4_comp_dir.png using Guid(7166347296e7aa2428ca017d134419af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8389724317ceaac243e905471cf43c27') in 0.024763 seconds
+  Import took 0.028460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Scenes/Map/Lightmap-2_comp_light.exr
+  artifactKey: Guid(1f4ba87095a5947488746703553dfe1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-2_comp_light.exr using Guid(1f4ba87095a5947488746703553dfe1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47cc409f74ffdeda3dd8c2ceeff6b6e8') in 0.021649 seconds
+  Import took 0.025270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Scenes/Map/Lightmap-5_comp_dir.png
+  artifactKey: Guid(4d56a0e3112713b408d6c9c21873f7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-5_comp_dir.png using Guid(4d56a0e3112713b408d6c9c21873f7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35935ddf2026fbf82771718ad319b0a') in 0.022953 seconds
+  Import took 0.026626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Scenes/Map/Lightmap-6_comp_dir.png
+  artifactKey: Guid(7c6012b5dfa7c1f45ab385df2b44d8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-6_comp_dir.png using Guid(7c6012b5dfa7c1f45ab385df2b44d8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a9f798f3451f6e354f614c938bc6c6') in 0.024801 seconds
+  Import took 0.028091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Scenes/Map/Lightmap-10_comp_dir.png
+  artifactKey: Guid(cf92d39cfe11f5c4ab72f91989330ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-10_comp_dir.png using Guid(cf92d39cfe11f5c4ab72f91989330ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e51494d95868388f16c8f0dac4ecb767') in 0.025584 seconds
+  Import took 0.029150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Scenes/Map/Lightmap-8_comp_light.exr
+  artifactKey: Guid(a4225178d09927949be8303d68c7d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-8_comp_light.exr using Guid(a4225178d09927949be8303d68c7d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849b8acbfb8169b4e3990c85fc54eaea') in 0.021191 seconds
+  Import took 0.024697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Scenes/Map/Lightmap-11_comp_dir.png
+  artifactKey: Guid(bb03841709d34a24993cc74ac9a6ee55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-11_comp_dir.png using Guid(bb03841709d34a24993cc74ac9a6ee55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f71b82dda5322796045a2f96c49bf3e') in 0.022331 seconds
+  Import took 0.025952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Scenes/Map/Lightmap-15_comp_light.exr
+  artifactKey: Guid(e1af592b8798602439d7a041c6cb20e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-15_comp_light.exr using Guid(e1af592b8798602439d7a041c6cb20e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4976dd62e08ed526d1637b23396ef35d') in 0.022323 seconds
+  Import took 0.025819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Scenes/Map/Lightmap-3_comp_dir.png
+  artifactKey: Guid(de31f74003e3d154786a958ab486a7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-3_comp_dir.png using Guid(de31f74003e3d154786a958ab486a7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2dbafb4d7512cbb645f664bd85de77') in 0.022931 seconds
+  Import took 0.027533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/Scenes/Map/Lightmap-12_comp_light.exr
+  artifactKey: Guid(48e36d75f64429c4bb883a8456a00fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-12_comp_light.exr using Guid(48e36d75f64429c4bb883a8456a00fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bbb5edfef494465386604044d9e534d') in 0.027516 seconds
+  Import took 0.032333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/Scenes/Map/Lightmap-13_comp_dir.png
+  artifactKey: Guid(6356a9a3c18bb394bb8f3383d93c3993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-13_comp_dir.png using Guid(6356a9a3c18bb394bb8f3383d93c3993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd01bf987b55ccbfd1865abe8ce5bfd7') in 0.024196 seconds
+  Import took 0.027851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Scenes/Map/Lightmap-15_comp_dir.png
+  artifactKey: Guid(125f302ac3e8d334888a11f76ee86e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-15_comp_dir.png using Guid(125f302ac3e8d334888a11f76ee86e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd96de258c8dd63dd6db70f19d42d39bc') in 0.023420 seconds
+  Import took 0.027283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Scenes/Map/Lightmap-16_comp_dir.png
+  artifactKey: Guid(46b05eec487816a46b0e661bb006394b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-16_comp_dir.png using Guid(46b05eec487816a46b0e661bb006394b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238b62fa1336e8eb26224a490379d295') in 0.025975 seconds
+  Import took 0.030053 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000271 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Buttons/Btn_MainButton_Orange.prefab
-  artifactKey: Guid(a8fedbf9c9c4c46529e4f8f91744330c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Buttons/Btn_MainButton_Orange.prefab using Guid(a8fedbf9c9c4c46529e4f8f91744330c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786b6892d2bbd5603f2bf919e8908bff') in 0.022086 seconds
-  Import took 0.027563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000439 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Popups/_PrefabsPanel_Popups_2.prefab
-  artifactKey: Guid(b65f735ab034a4cccbb26664ba321c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/Prefabs/Prefabs_Component_Popups/_PrefabsPanel_Popups_2.prefab using Guid(b65f735ab034a4cccbb26664ba321c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a3a0e3217b450301bc8528c5cc66d9') in 0.072927 seconds
-  Import took 0.077523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/HYPERCASUAL - Stickman Customization/Content/Models/Characters_textures/Characters.fbx
-  artifactKey: Guid(c2e89b51a0089f44eb043875a4dc2505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HYPERCASUAL - Stickman Customization/Content/Models/Characters_textures/Characters.fbx using Guid(c2e89b51a0089f44eb043875a4dc2505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce97d0b914e251be6e98b21bcc46e2f4') in 1.051603 seconds
-  Import took 1.058346 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small0.png
-  artifactKey: Guid(01388e084f08a42709215c4650bd004b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit Casual Game/Casual Game_v2.0/ResourcesData/Sprite/Demo/Demo_ClanFlag/ClanIcon_Symbol_Small0.png using Guid(01388e084f08a42709215c4650bd004b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c8f4c23677a27ec57da0a756eceb77') in 0.017473 seconds
-  Import took 0.022121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.027753 seconds.
-  path: Assets/HYPERCASUAL - Stickman Customization/Animations
-  artifactKey: Guid(8afa9d487fc54f140a12679e805cedb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HYPERCASUAL - Stickman Customization/Animations using Guid(8afa9d487fc54f140a12679e805cedb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e972565951d423ff02282e5a0175bf') in 0.012054 seconds
-  Import took 0.018594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.063540 seconds.
-  path: Assets/HYPERCASUAL - Stickman Customization/Animations/Idle.fbx
-  artifactKey: Guid(6c6a14ea2fad2b44d8e299225ec0e991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HYPERCASUAL - Stickman Customization/Animations/Idle.fbx using Guid(6c6a14ea2fad2b44d8e299225ec0e991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126a41fa01d40bf159d7b70eb297267f') in 0.014138 seconds
-  Import took 0.019843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/HYPERCASUAL - Stickman Customization/Animations/Walk.fbx
-  artifactKey: Guid(16600bc31269a6d46ac896238cf9ac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HYPERCASUAL - Stickman Customization/Animations/Walk.fbx using Guid(16600bc31269a6d46ac896238cf9ac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29bf7255e9434da575021be41d22e2e') in 0.009900 seconds
-  Import took 0.014322 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000701 seconds.
-  path: Assets/HYPERCASUAL - Stickman Customization/Animations/T-Pose.fbx
-  artifactKey: Guid(d58e419c733ceb84a82e10f46e76ac4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HYPERCASUAL - Stickman Customization/Animations/T-Pose.fbx using Guid(d58e419c733ceb84a82e10f46e76ac4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec3843a4562e23b4b81a15078816bcc') in 0.019936 seconds
-  Import took 0.026941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.977832 seconds.
-  path: Assets/Bouncy.physicMaterial
-  artifactKey: Guid(2fa05457653c8e24e8c8fd183b2022f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bouncy.physicMaterial using Guid(2fa05457653c8e24e8c8fd183b2022f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025c115f4a8b526fb95eafc1a7161b93') in 0.009922 seconds
-  Import took 0.016445 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000456 seconds.
-  path: Assets/Main1.mat
-  artifactKey: Guid(0aed1713aea9b2147ab4724f73a79c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main1.mat using Guid(0aed1713aea9b2147ab4724f73a79c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01660e9b2af7dfa0b64853e46743999b') in 0.014965 seconds
-  Import took 0.019446 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/Main2.mat
-  artifactKey: Guid(f2d78074a57cab749a9c97a19041081a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main2.mat using Guid(f2d78074a57cab749a9c97a19041081a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4be038d52d44a590570fbae43bbb65b') in 0.021035 seconds
-  Import took 0.028222 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000321 seconds.
-  path: Assets/Ombre.mat
-  artifactKey: Guid(e3d68d09b0b82c24db806c0c6f9b07cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ombre.mat using Guid(e3d68d09b0b82c24db806c0c6f9b07cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309fe8a0847ac7c1f320d0ca7537b89b') in 0.021378 seconds
-  Import took 0.027238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/Sol.mat
-  artifactKey: Guid(1faf510a65b346e42bd330a0f9d32543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sol.mat using Guid(1faf510a65b346e42bd330a0f9d32543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ef1670e61cfe3fd427056caa913f43') in 0.020484 seconds
-  Import took 0.026345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000361 seconds.
-  path: Assets/EffectSabre.mat
-  artifactKey: Guid(0109284f963cde442819ba97ce26e01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectSabre.mat using Guid(0109284f963cde442819ba97ce26e01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47b0b716b8619df5b45d69fb344801a') in 0.022702 seconds
-  Import took 0.028911 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/New Terrain 2.asset
-  artifactKey: Guid(21389da26c6323e46ae0b16ea7cf21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 2.asset using Guid(21389da26c6323e46ae0b16ea7cf21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a542037c12f0260fdd87cf79700779b') in 0.035897 seconds
-  Import took 0.040895 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
-  path: Assets/red.mat
-  artifactKey: Guid(9256b0bd46c39b545b9de8036dd70c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/red.mat using Guid(9256b0bd46c39b545b9de8036dd70c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16dca0fae24cdcf26e6a50a618e0ed5') in 0.017744 seconds
-  Import took 0.023409 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000380 seconds.
-  path: Assets/classic_hurt.mp3
-  artifactKey: Guid(9bd153b4e5d873f43adf76809e9d8a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/classic_hurt.mp3 using Guid(9bd153b4e5d873f43adf76809e9d8a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9623c4a78b71251800c451260f85e7b') in 0.113159 seconds
-  Import took 0.118247 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/timer.mp3
-  artifactKey: Guid(4587b6f21d88f394e8c0073a1e4af3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/timer.mp3 using Guid(4587b6f21d88f394e8c0073a1e4af3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97058bf061f5efcf507e7c52c778e438') in 0.015236 seconds
-  Import took 0.020927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(b12952a7ed7b7c4428167a866c16790d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(b12952a7ed7b7c4428167a866c16790d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '773fef582b7d107acdfea310c7f2b7a6') in 0.026627 seconds
-  Import took 0.031914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/New Terrain 1.asset
-  artifactKey: Guid(f6501323ce2ab7e41b92da77868226ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 1.asset using Guid(f6501323ce2ab7e41b92da77868226ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52cce5c6aa6cacd216c06adf430b758') in 0.022403 seconds
-  Import took 0.028291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Or.mat
-  artifactKey: Guid(9ffc95822da5489418ca50839931b0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Or.mat using Guid(9ffc95822da5489418ca50839931b0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a457be0bc2ee06ce01c37b4ad38e5d') in 0.018411 seconds
-  Import took 0.022310 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Undertale OST- 015 - sans..mp3
-  artifactKey: Guid(35d9c6126041ce846b1d36701aa3d344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Undertale OST- 015 - sans..mp3 using Guid(35d9c6126041ce846b1d36701aa3d344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06c1e85579f04ed6ce9884577391d0e') in 0.015555 seconds
-  Import took 0.018819 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.603938 seconds.
-  path: Assets/Scripts/Animations/Personnage.controller
-  artifactKey: Guid(d9e46d0890edf434fa917cd5291a063c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animations/Personnage.controller using Guid(d9e46d0890edf434fa917cd5291a063c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d238c9ef67f6011de1e38515224e8c') in 0.018967 seconds
-  Import took 0.023573 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002282 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.843 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1763 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 119.9 MB.
-System memory in use after: 120.0 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2347.
-Total: 2.636600 ms (FindLiveObjects: 0.325900 ms CreateObjectMapping: 0.131800 ms MarkObjects: 2.074900 ms  DeleteObjects: 0.102500 ms)
+  path: Assets/Scenes/Map/Lightmap-4_comp_light.exr
+  artifactKey: Guid(466a1f3f2f4833d4686001d982bd473f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map/Lightmap-4_comp_light.exr using Guid(466a1f3f2f4833d4686001d982bd473f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91fc5854ee1a64d4a1d0ccf8379b767f') in 0.022985 seconds
+  Import took 0.027207 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

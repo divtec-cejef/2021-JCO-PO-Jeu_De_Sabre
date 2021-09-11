@@ -276,13 +276,13 @@ MonoBehaviour:
     value: 3
   toneCurveToeStrength:
     overrideState: 1
-    value: 0
+    value: 1
   toneCurveToeLength:
     overrideState: 1
-    value: 0.484
+    value: 0
   toneCurveShoulderStrength:
     overrideState: 1
-    value: 0
+    value: 0.9999
   toneCurveShoulderLength:
     overrideState: 1
     value: 0.5
@@ -291,7 +291,7 @@ MonoBehaviour:
     value: 0
   toneCurveGamma:
     overrideState: 1
-    value: 1.3
+    value: 1.1
   ldrLut:
     overrideState: 0
     value: {fileID: 0}
