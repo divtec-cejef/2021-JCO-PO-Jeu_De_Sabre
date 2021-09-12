@@ -30,7 +30,7 @@ public class Timer
         if (timer > 0)
         {
             timer -= Time.deltaTime;
-            GameInit.GetUiUpdater().OnTimerUpdate();
+            //GameInit.GetUiUpdater().OnTimerUpdate();
         }
         else
         {

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Camera;
 using Cinemachine;
+using Collisions;
 using Mouvements.Orientation;
 using MySql.Data.MySqlClient;
 using Players;
@@ -104,8 +105,16 @@ namespace Init
         [SerializeField] private TextMeshProUGUI player1WarningTextM;
         
         [SerializeField] private TextMeshProUGUI player1Name;
+        
         [SerializeField] private TextMeshProUGUI player2Name;
         
+        [SerializeField] private TextMeshProUGUI player1EndName;
+        
+        [SerializeField] private TextMeshProUGUI player2EndName;
+        
+        [SerializeField] private TextMeshProUGUI player1EndScore;
+        
+        [SerializeField] private TextMeshProUGUI player2EndScore;
         
         [SerializeField] private GameObject player1KatanaObject;
         
@@ -140,6 +149,8 @@ namespace Init
         
         [SerializeField] private GameObject player2Legs;
 
+        [SerializeField] private GameObject playerAxis;
+
         public static bool isGamePaused;
         
         public static bool isDebugMenuOn;
@@ -148,6 +159,9 @@ namespace Init
         
         private bool isTimerInit;
     
+        // TODO Faut faire une petite transition la, faut faire le stun, faut faire qu'on puisse relancer le jeu a la fin, faut balancer la camera, faut que léo regle ses animation et des déplacements
+        
+        
         private void Awake()
         {
             player1Name.text = Player.GetPlayerName(Player.PLAYER.P1);
@@ -157,7 +171,7 @@ namespace Init
             isGamePaused = false;
             isDebugMenuOn = false;
             isTimerInit = false;
-            // // Initialisation de l'affichage sur plusieurs écrans
+            // // Initialisation de l'affichage sur plusieurs écrans7
             // print("Intitialisation de l'affichage multiple...");
             // gameObject.AddComponent<MultiDisplay>();
         
@@ -211,16 +225,30 @@ namespace Init
                 _katana2.CanMove(false);
 
                 _color = gameObject.GetComponent<Players.Color>();
-                _color.ApplyPlayerColor(player1Hat, player1Body, player1Legs, Player.GetPlayerColor(Player.PLAYER.P1), player2Hat, player2Body, player2Legs, Player.GetPlayerColor(Player.PLAYER.P2));
+                _color.ApplyPlayerColor(player1Hat, player1Body, player1Legs, Player.GetPlayerColor(Player.PLAYER.P1),
+                                        player2Hat, player2Body, player2Legs, Player.GetPlayerColor(Player.PLAYER.P2));
                 
                 // Initialisation de la classe chargée de mettre à jour le HUD
                 print("Initialisation de la mise à jour de l'affichage");
-                _updater = new UiUpdater(player1ScoreText, player2ScoreText, player1StaminaSlider, player2StaminaSlider, timerText, player1ParadeSlider, player2ParadeSlider, player1HealthBar, player2HealthBar, countdownTimer);
+                _updater = new UiUpdater(player1ScoreText, 
+                                        player2ScoreText, 
+                                        player1StaminaSlider, 
+                                        player2StaminaSlider, 
+                                        timerText, 
+                                        player1ParadeSlider, 
+                                        player2ParadeSlider, 
+                                        player1HealthBar, 
+                                        player2HealthBar, 
+                                        countdownTimer, 
+                                        player1EndName, 
+                                        player2EndName, 
+                                        player1EndScore, 
+                                        player2EndScore);
             
                 // Initialisation du timer
-                print("Initialisation du timer...");
-                _timer = new Timer(_config.game_time, soundTimer, gameObject);
-                isTimerInit = true;
+                // print("Initialisation du timer...");
+                // _timer = new Timer(_config.game_time, soundTimer, gameObject);
+                // isTimerInit = true;
             
                 // Initialisaion du gestionnaire de son
                 print("Initialisation de gestionnaire de son...");
@@ -360,6 +388,11 @@ namespace Init
             return _cameraShaking;
         }
 
+        public static Round GetRound()
+        {
+            return _round;
+        }
+        
         public static EmoteHandler GetEmoteHandler(Player.PLAYER player)
         {
             return player == Player.PLAYER.P1 ? _player1EmoteHandler : _player2EmoteHandler;
@@ -445,49 +478,89 @@ namespace Init
 
         public void OnTimerEnd()
         {
-            StartCoroutine(DisplayEndScreen());
+            bool flag = _round.StopRound();
+            CollisionPlayers.timerEnd = true;
+            if(flag)
+                StartCoroutine(FadeToBlack(true));
+            else
+                StartCoroutine(PrepareNextRound());
         }
 
-        IEnumerator DisplayEndScreen()
+        IEnumerator AddBonusPoint(bool startNext)
         {
-            EditData();
-            float timer = 0f;
- 
-            // Zoom in
-            while (timer < 1f)
+            int currentTime = _round.GetCurrentTimer();
+            int timer = currentTime;
+            Player.PLAYER winner = _round.GetRoundWinner();
+
+            if (winner == Player.PLAYER.Other)
             {
-                yield return new WaitForEndOfFrame();
-                timer += Time.deltaTime;
-
-                /*blackPannel.rectTransform.localScale = new Vector3
-                (
-                    blackPannel.rectTransform.localScale.x + (Time.deltaTime * 250 * 2),
-                    blackPannel.rectTransform.localScale.y + (Time.deltaTime * 125 * 2)
-                );*/
-                blackPannel.GetComponent<Image>().color = new Color(0, 0, 0, timer);
+                
             }
-            
-            playerHudPanel.SetActive(false);
-            endScreen.SetActive(true);
-            cameraTravelling.gameObject.SetActive(true);
-            _katana1.CanMove(false);
-            _katana2.CanMove(false);
-
-            timer = 0;
-            
-            while (timer > 1f)
+            else
             {
-                yield return new WaitForEndOfFrame();
-                timer -= Time.deltaTime;
-
-                /*blackPannel.rectTransform.localScale = new Vector3
-                (
-                    blackPannel.rectTransform.localScale.x + (Time.deltaTime * 250 * 2),
-                    blackPannel.rectTransform.localScale.y + (Time.deltaTime * 125 * 2)
-                );*/
-                blackPannel.GetComponent<Image>().color = new Color(0, 0, 0, timer);
+                for (int i = 0; i < currentTime; i++)
+                {
+                    timer--;
+                    _updater.OnTimerUpdate(timer);
+                    Player.UpdatePlayerScore(winner, _config.player_bonus_point);
+                    yield return new WaitForSeconds(_config.player_bonus_point_speed);
+                }
+                Health.Reset();
+                _updater.RefreshHUD();
             }
+            if(startNext)
+                _round.StartNextRound();
+        }
+        
+        IEnumerator PrepareNextRound()
+        {
+            //yield return new WaitForSeconds(1.5f);
+            playerAxis.transform.localPosition = Vector3.zero;
+            playerAxis.transform.localRotation = new Quaternion(0,0,0,0);
+            
+            StartCoroutine(AddBonusPoint(true));
+            
+            //FadeToBlack(false, true);
             yield return null;
+        }
+        
+        IEnumerator FadeToBlack(bool displayEndScreen)
+        {
+            StartCoroutine(AddBonusPoint(false));
+
+            yield return new WaitForSeconds(1.5f);
+            
+            Color color = blackPannel.GetComponent<Image>().color;
+
+            while (blackPannel.GetComponent<Image>().color.a < 1)
+            {
+                float fadeAmount = color.a + (1f * Time.deltaTime);
+
+                color = new Color(color.r, color.g, color.b, fadeAmount);
+                blackPannel.GetComponent<Image>().color = color;
+                yield return null;
+            }
+            
+            if(displayEndScreen)
+            {
+                EditData();
+                _updater.OnEndScreenDisplayed();
+                playerHudPanel.SetActive(false);
+                endScreen.SetActive(true);
+                cameraTravelling.gameObject.SetActive(true);
+                _katana1.CanMove(false); //
+                _katana2.CanMove(false);
+            }
+
+            while (blackPannel.GetComponent<Image>().color.a > 0)
+            {
+                float fadeAmount = color.a - (1f * Time.deltaTime);
+
+                color = new Color(color.r, color.g, color.b, fadeAmount);
+                blackPannel.GetComponent<Image>().color = color;
+                yield return null;
+            }
+                
         }
         
         public void EditData()

@@ -22,7 +22,7 @@ namespace Players.UI
 
         private TextMeshProUGUI timerText;
         
-        private TextMeshProUGUI countdownText;
+        public TextMeshProUGUI countdownText;
 
         private Slider player1ParadeSlider;
         
@@ -32,9 +32,17 @@ namespace Players.UI
         
         private Slider player2HealthBar;
 
-        private bool m_IsSoundPlaying;
-    
+        private TextMeshProUGUI player1EndName;
         
+        private TextMeshProUGUI player2EndName;
+        
+        private TextMeshProUGUI player1EndScore;
+        
+        private TextMeshProUGUI player2EndScore;
+        
+        private bool m_IsSoundPlaying;
+
+
         /// <summary>
         /// Constructeur du UiUpdater
         /// </summary>
@@ -46,9 +54,20 @@ namespace Players.UI
         /// <param name="player2TimerText">Le texte correspondant au timer du joueur 2</param>
         /// <param name="player1ParadeSlider">Le slider correspondant a la slider du joueur 1</param>
         /// <param name="player2ParadeSlider">Le slider correspondant a la slider du joueur 2</param>
-        public UiUpdater(TextMeshProUGUI player1ScoreText, TextMeshProUGUI player2ScoreText, Slider player1StaminaSlider, 
-            Slider player2StaminaSlider, TextMeshProUGUI timerText, Slider player1ParadeSlider, Slider player2ParadeSlider,
-            Slider player1HealthBar, Slider player2HealthBar, TextMeshProUGUI countdownText)
+        public UiUpdater(TextMeshProUGUI player1ScoreText, 
+                        TextMeshProUGUI player2ScoreText,
+                        Slider player1StaminaSlider,
+                        Slider player2StaminaSlider, 
+                        TextMeshProUGUI timerText, 
+                        Slider player1ParadeSlider,
+                        Slider player2ParadeSlider,
+                        Slider player1HealthBar, 
+                        Slider player2HealthBar, 
+                        TextMeshProUGUI countdownText,
+                        TextMeshProUGUI player1EndName, 
+                        TextMeshProUGUI player2EndName,
+                        TextMeshProUGUI player1EndScore, 
+                        TextMeshProUGUI player2EndScore)
         {
             m_IsSoundPlaying = false;
             Debug.Log("\tRécupération des composants graphiques...");
@@ -66,6 +85,12 @@ namespace Players.UI
 
             this.player1HealthBar = player1HealthBar;
             this.player2HealthBar = player2HealthBar;
+
+            this.player1EndName = player1EndName;
+            this.player2EndName = player2EndName;
+            
+            this.player1EndScore = player1EndScore;
+            this.player2EndScore = player2EndScore;
             
             this.player1StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
             this.player2StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
@@ -140,16 +165,14 @@ namespace Players.UI
         /// <summary>
         /// Permet de mettre à jour le timer
         /// </summary>
-        public void OnTimerUpdate()
+        public void OnTimerUpdate(int timer)
         {
-            timerText.text = /*FormatTime(*/GameInit.GetTimer().GetTimer().ToString()/*)*/;
+            timerText.text = timer.ToString(); ///*FormatTime(*/GameInit.GetTimer().GetTimer().ToString()/*)*/;
         }
 
 
         public void OnHealthUpdate()
         {
-            UnityEngine.Debug.Log(Player.GetPlayerHealth(Player.PLAYER.P1));
-            UnityEngine.Debug.Log(Player.GetPlayerHealth(Player.PLAYER.P1));
             player1HealthBar.value = Player.GetPlayerHealth(Player.PLAYER.P1);
             player2HealthBar.value = Player.GetPlayerHealth(Player.PLAYER.P2);
         }
@@ -276,6 +299,22 @@ namespace Players.UI
                     break;
                 }
             }
+        }
+
+        public void OnEndScreenDisplayed()
+        {
+            player1EndName.text = Player.GetPlayerName(Player.PLAYER.P1);
+            player2EndName.text = Player.GetPlayerName(Player.PLAYER.P2);
+
+            player1EndScore.text = Player.GetScore(Player.PLAYER.P1).ToString();
+            player2EndScore.text = Player.GetScore(Player.PLAYER.P2).ToString();
+        }
+
+        public void RefreshHUD()
+        {
+            OnHealthUpdate();
+            OnStaminaUpdate(Player.PLAYER.P1);
+            OnStaminaUpdate(Player.PLAYER.P2);
         }
     }
 }

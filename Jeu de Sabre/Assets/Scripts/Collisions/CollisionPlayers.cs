@@ -67,7 +67,10 @@ namespace Collisions
         private bool isFirstCollisionOfP2 = false;
     
     
-        private bool timerEnd = false;
+        public static bool timerEnd = false;
+
+
+        public static bool canAttack;
         
         public enum TYPE_ATTACK
         {
@@ -81,6 +84,7 @@ namespace Collisions
         
         private void Awake()
         {
+            canAttack = false;
             _player1Face = player1Face;
             _player2Face = player2Face;
             
@@ -92,6 +96,7 @@ namespace Collisions
         private void Update()
         {
             if (!updateRotation) return;
+            //if (!canAttack) return;
 
             //Valeur aléatoire
             float rotationTime  = Random.Range(.05f, .25f);;
@@ -254,7 +259,10 @@ namespace Collisions
 
         private void OnTriggerEnter(Collider other)
         {
-
+            // Vérifie si le jeu autorise l'attaque à ce moment là
+            if (!canAttack) 
+                return;
+            
             // Initialisation du joueur qui a effectuer l'attaque
             Player.PLAYER player = Player.PLAYER.Other;
 
@@ -297,9 +305,9 @@ namespace Collisions
                     
                     timerEnd = false;
 
-                    // Mise à jour du score du joueur
-                    Player.UpdatePlayerScore(player, GameInit.GetGameConfig().attack_score_amount);
+                    // Mise à jour de la vie du joueur
                     bool playerStatus = Player.DecreasePlayerHealth(player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1, GameInit.GetGameConfig().player_health_decrease);
+
                     // Animations et mouvements de l'attaque
                     //attack.onAttack(player, player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1);
 
@@ -321,8 +329,14 @@ namespace Collisions
 
                     if (!playerStatus)
                     {
-                        //fin du round
+                        Player.UpdatePlayerScore(player, (int)(GameInit.GetGameConfig().attack_score_amount * 1.5f));
+                        GameInit.GetRound().isRoundAborted = true;
                     }
+                    else
+                    {
+                        Player.UpdatePlayerScore(player, GameInit.GetGameConfig().attack_score_amount);
+                    }
+                    
                     
                     // Le son TODO changer ca plus tard
                     var position = new Vector3(11.9f, 11.0f, 15.6f);
@@ -332,11 +346,12 @@ namespace Collisions
                 else
                 {
                     timerEnd = true;
-                    //Debug.Log("Pas assez de stamina, attends un peu");
+                    // Si un joueur n'a pas assez de stamina
                 }
             }
             else
             {
+                // Si un joueur attaque en parade
                 //Debug.Log("parade.. arrete... maintenant.. s'il te plait...");
             }
         }

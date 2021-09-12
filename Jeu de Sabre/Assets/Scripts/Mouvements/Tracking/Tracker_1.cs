@@ -17,7 +17,7 @@ public class Tracker_1 : MonoBehaviour
 
     [SerializeField] private float zOffset;
 
-    private static Thread _tracking1;
+    private static bool canTrack;
     
     private String X;
     private String Y;
@@ -27,17 +27,21 @@ public class Tracker_1 : MonoBehaviour
     
     private void Awake()
     {
+        canTrack = false;
         data = new Data();
         userDir = Environment.GetFolderPath(System.Environment.SpecialFolder.UserProfile);
         userDir += "\\Documents\\data.json";
 
-        StartCoroutine(Tracker());
+        //StartCoroutine(Tracker());
     }
 
     IEnumerator Tracker()
     {
         while (true)
         {
+            if (!canTrack) 
+                continue;
+            
             String json = "";
             String[] lines = null;
             bool isReadable = true;
@@ -50,25 +54,25 @@ public class Tracker_1 : MonoBehaviour
                 isReadable = false;
                 print("Erreur de lecture");
             }
-    
+
             if (isReadable)
             {
                 foreach (String line in lines)
                 {
                     json += line;
                 }
-    
+
                 data = JsonUtility.FromJson<Data>(json);
             }
-    
+
             X = data.x;
             Y = data.y;
             radius = data.z;
-    
+
             transform.localPosition = Vector3.Lerp(transform.localPosition,
-                new Vector3(xOffset +float.Parse(X) / xAmplitude, 5 + float.Parse(Y) / yOffset,
+                new Vector3(xOffset + float.Parse(X) / xAmplitude, 5 + float.Parse(Y) / yOffset,
                     zOffset + zAmplitude * float.Parse(radius)), 0.3f);
-    
+
             yield return new WaitForSeconds(0.03f);
         }
     }

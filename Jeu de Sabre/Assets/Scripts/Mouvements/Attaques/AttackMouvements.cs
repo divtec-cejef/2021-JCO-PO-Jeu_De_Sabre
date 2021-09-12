@@ -72,7 +72,6 @@ public class AttackMouvements
         // {
         //     
         // }
-
     }
 
     private void typeAttack(CollisionPlayers.TYPE_ATTACK attack, Animator animeDefender, Animator animeDefenderTrans,

@@ -9,44 +9,33 @@ public class IntroAnim : MonoBehaviour
     public float Strength;
     public static bool startGame;
 
-    private void Awake()
-    {
-        StartCoroutine(PulseEffect());
-    }
 
-    IEnumerator PulseEffect()
+    public IEnumerator PulseEffect()
     {
         Vector3 resetSize = transform.localScale;
         /*while (true)
         {*/
             // Loops forever
-            while (true)
+            transform.gameObject.GetComponent<TextMeshProUGUI>().enabled = true;
+            while (startGame)
             {
-
-                if (!startGame)
+                transform.localScale = resetSize;
+                float timer = 0f;
+                // Zoom in
+                while (timer < 1f)
                 {
-                    transform.gameObject.GetComponent<TextMeshProUGUI>().enabled = false;
-                }
-                else{
-                    
-                    transform.gameObject.GetComponent<TextMeshProUGUI>().enabled = true;
-                    transform.localScale = resetSize;
-                    float timer = 0f;
-                    // Zoom in
-                    while (timer < 1f)
-                    {
-                        yield return new WaitForEndOfFrame();
-                        timer += Time.deltaTime;
+                    yield return new WaitForEndOfFrame();
+                    timer += Time.deltaTime;
 
-                        transform.localScale = new Vector3
-                        (
-                            transform.localScale.x + (Time.deltaTime * Strength * 4),
-                            transform.localScale.y + (Time.deltaTime * Strength * 4)
-                        );
-                    }
+                    transform.localScale = new Vector3
+                    (
+                        transform.localScale.x + (Time.deltaTime * Strength * 4),
+                        transform.localScale.y + (Time.deltaTime * Strength * 4)
+                    );
                 }
-                yield return null;
             }
+            transform.gameObject.GetComponent<TextMeshProUGUI>().enabled = false;
+            yield return null;
         //}
     }
 }

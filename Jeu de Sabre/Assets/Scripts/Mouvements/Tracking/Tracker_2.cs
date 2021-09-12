@@ -15,7 +15,7 @@ public class Tracker_2 : MonoBehaviour
 
     [SerializeField] private float zOffset;
 
-    private static Thread _tracking1;
+    private static bool canTrack;
     
     private String X;
     private String Y;
@@ -25,17 +25,21 @@ public class Tracker_2 : MonoBehaviour
     
     private void Awake()
     {
+        canTrack = false;
         data = new Data();
         userDir = Environment.GetFolderPath(System.Environment.SpecialFolder.UserProfile);
         userDir += "\\Documents\\data1.json";
 
-        StartCoroutine(Tracker());
+        //StartCoroutine(Tracker());
     }
 
     IEnumerator Tracker()
     {
         while (true)
         {
+            if (!canTrack) 
+                continue;
+            
             String json = "";
             String[] lines = null;
             bool isReadable = true;

@@ -33,5 +33,9 @@ namespace Init
         public int player_health_amount;
 
         public int player_health_decrease;
+
+        public int player_bonus_point;
+
+        public float player_bonus_point_speed;
     }
 }
