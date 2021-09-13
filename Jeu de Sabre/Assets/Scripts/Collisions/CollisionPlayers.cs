@@ -104,13 +104,13 @@ namespace Collisions
             float backwardTime  = Random.Range(.02f, .1f);
             float backwardDistance  = Random.Range(1, 10);
 
-            //Joueur 1 côté gauche
+            //Hitbox du joueur 1 côté gauche
             var positionP1Left = player1LeftCollisionCheck.position;
             Vector3 player1StartLeft = new Vector3(positionP1Left.x, positionP1Left.y - 1.1f, positionP1Left.z);
             Vector3 player1EndLeft = new Vector3(positionP1Left.x, positionP1Left.y + 1.1f, positionP1Left.z);
             isPlayer1Left = Physics.CheckCapsule(player1StartLeft, player1EndLeft, 0.1f, sabre2);
 
-            //Joueur 1 côté droit
+            //Hitbox du joueur 1 côté droit
             var positionP1Right = player1RightCollisionCheck.position;
             Vector3 player1StatRight = new Vector3(positionP1Right.x, positionP1Right.y - 1.1f, positionP1Right.z);
             Vector3 player1EndRight = new Vector3(positionP1Right.x, positionP1Right.y + 1.1f, positionP1Right.z);
@@ -158,12 +158,14 @@ namespace Collisions
                 attack.onAttack(Player.PLAYER.P2,Player.PLAYER.P1,currentAttack);
                 //Debug.Log(("C le center isFirstCollisionP1 :"+ isFirstCollisionOfP1));
             }
-
+            
+            //Hitbox coté gauche du joueur 2
             var position2 = player2LeftCollisionCheck.position;
             Vector3 player2StartLeft = new Vector3(position2.x, position2.y - 1.1f, position2.z);
             Vector3 player2EndLeft = new Vector3(position2.x, position2.y + 1.1f, position2.z);
             isPlayer2Left = Physics.CheckCapsule(player2StartLeft, player2EndLeft, 0.1f, sabre1);
 
+            //Hitbox coté droit du joueur 2
             var position3 = player2RightCollisionCheck.position;
             Vector3 player2StartRight = new Vector3(position3.x, position3.y - 1.1f, position3.z);
             Vector3 player2EndRight = new Vector3(position3.x, position3.y + 1.1f, position3.z);
@@ -267,8 +269,8 @@ namespace Collisions
             if (other.CompareTag("Katana1") && !gameObject.CompareTag("Player1"))
             {
                 player = Player.PLAYER.P1;
-                //isFirstCollisionOfP2 = true;
-                //timerEnd = false;
+                isFirstCollisionOfP2 = true;
+                timerEnd = false;
                 //Debug.Log( "isFirstCollisionOfP2 : "+isFirstCollisionOfP2 );
             }
 
@@ -276,8 +278,8 @@ namespace Collisions
             else if (other.CompareTag("Katana2") && !gameObject.CompareTag("Player2"))
             {
                 player = Player.PLAYER.P2;
-                //isFirstCollisionOfP1 = true;
-                //timerEnd = false;
+                isFirstCollisionOfP1 = true;
+                timerEnd = false;
                 //Debug.Log( "isFirstCollisionOfP1: "+isFirstCollisionOfP1 );
             }
 

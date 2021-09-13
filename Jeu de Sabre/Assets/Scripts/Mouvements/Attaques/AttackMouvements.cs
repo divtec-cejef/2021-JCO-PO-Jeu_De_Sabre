@@ -40,8 +40,15 @@ public class AttackMouvements
         Player2Trans = P2T;
     }
 
+    /// <summary>
+    /// Active une animation de déplacment selon le type d'attaque.
+    /// </summary>
+    /// <param name="attacker">Joueur est-y-en donné l'attaque.</param>
+    /// <param name="defender">Joueur est-y-en reçu l'attaque</param>
+    /// <param name="attack">Type d'attaque engagé</param>
     public void onAttack(Player.PLAYER attacker, Player.PLAYER defender, CollisionPlayers.TYPE_ATTACK attack)
     {
+        //Secout la caméra des joueurs
         GameInit.GetCameraShaking().ShakeCamera(attacker, 1.0f, .1f);
         GameInit.GetCameraShaking().ShakeCamera(defender, 1.0f, .3f);
         
@@ -74,6 +81,9 @@ public class AttackMouvements
         // }
     }
 
+    /// <summary>
+    /// Desactive tout les animations de déplacement
+    /// </summary>
     public void disableAttack()
     {
         Animator animeP1 = Player1Char.GetComponent<Animator>();
@@ -81,21 +91,25 @@ public class AttackMouvements
         Animator animeP2 = Player2Char.GetComponent<Animator>();
         Animator animeP2Trans = Player2Trans.GetComponent<Animator>();;
         
+        //Desctive les déplcements à droite
         animeP1.SetBool("isSlideWalkRight", false);
-        animeP1Trans.SetBool("isSlideWalkRight", true);
+        animeP1Trans.SetBool("isSlideWalkRight", false);
         animeP2.SetBool("isSlideWalkRight", false);
         animeP2Trans.SetBool("isSlideWalkRight", false);
-      
+        
+        //Desctive les déplcements à gauche
         animeP1.SetBool("isSlideWalkLeft", false);
         animeP1Trans.SetBool("isSlideWalkLeft", false);
         animeP2.SetBool("isSlideWalkLeft", false);
         animeP2Trans.SetBool("isSlideWalkLeft", false);
      
+        //Desctive les déplcements en arrière
         animeP1.SetBool("isMoveBack", false);
         animeP1Trans.SetBool("isMoveBack", false);
         animeP1.SetBool("isMoveBack", false);
         animeP1Trans.SetBool("isMoveBack", false);
         
+        //Desctive les déplcements en avant
         animeP1.SetBool("isNormalWalk", false);
         animeP1Trans.SetBool("isNormalWalk", false);
         animeP2.SetBool("isNormalWalk", false);
