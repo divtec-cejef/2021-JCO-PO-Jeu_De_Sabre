@@ -158,7 +158,7 @@ namespace Init
         private bool isWarningActive;
         
         private bool isTimerInit;
-    
+     
         // TODO Faut faire une petite transition la, faut faire le stun, faut faire qu'on puisse relancer le jeu a la fin, faut balancer la camera, faut que léo regle ses animation et des déplacements
         
         
