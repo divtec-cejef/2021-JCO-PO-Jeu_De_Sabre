@@ -15,6 +15,7 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Color = UnityEngine.Color;
 
+
 namespace Init
 {
     public class GameInit : MonoBehaviour
@@ -136,7 +137,6 @@ namespace Init
 
         [SerializeField] private UnityEngine.Camera cameraTravelling;
 
-        
         [SerializeField] private GameObject player1Hat;
         
         [SerializeField] private GameObject player1Body;
