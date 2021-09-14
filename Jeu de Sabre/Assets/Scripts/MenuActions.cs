@@ -61,9 +61,9 @@ public class MenuActions : MonoBehaviour
     private int player1Color = 1;
     private int player2Color = 2;
 
-    private string player1Name;
-    private string player2Name;
-    
+    public static int id1;
+    public static int id2;
+
     public static int musicVolume;
     public static int sfxVolume;
 
@@ -116,9 +116,8 @@ public class MenuActions : MonoBehaviour
 
         InscriptionMenu.SetActive(false);
         LoadingMenu.SetActive(true);
-        Player.SetPlayerColors(player1Color, player2Color);
-        Player.SetPlayerNames(player1Name, player2Name);
-        InsertData();
+        GetData();
+        
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / 0.9f);
@@ -183,15 +182,15 @@ public class MenuActions : MonoBehaviour
 
     public void SetName1(string s)
     {
-        player1Name = s;
+        id1 = Int32.Parse(s);
     }
 
     public void SetName2(string s)
     {
-        player2Name = s;
+        id2 = Int32.Parse(s);
     }
     
-    public void InsertData()
+    public void GetData()
     {
     
         string connStr =
@@ -203,16 +202,34 @@ public class MenuActions : MonoBehaviour
         
             conn.Open();
             MySqlCommand Player1 = conn.CreateCommand();
-            Player1.CommandText = "INSERT INTO tb_player VALUES(null, '" + Player.GetPlayerName(Player.PLAYER.P1) + "', 0, " + Player.GetPlayerColor(Player.PLAYER.P1)+ ", 1, 1);";
-            Player1.ExecuteScalar();
-        
+            Player1.CommandText = "SELECT name_player FROM tb_player WHERE identifiant_player = " + id1 + ";";
+            object name1 = Player1.ExecuteScalar();
+            
+            /*/////////////////////////////////////////////////*/
+            
             MySqlCommand Player2 = conn.CreateCommand();
-            Player2.CommandText = "INSERT INTO tb_player VALUES(null, '" + Player.GetPlayerName(Player.PLAYER.P2) + "', 0, " + Player.GetPlayerColor(Player.PLAYER.P2)+ ", 1, 2);";
-            Player2.ExecuteScalar();
+            Player2.CommandText = "SELECT name_player FROM tb_player WHERE identifiant_player = " + id2 + ";";
+            object name2 = Player2.ExecuteScalar();
+            
+            Player.SetPlayerNames(name1.ToString(), name2.ToString());
+            
+            /*/////////////////////////////////////////////////*/
+            
+            MySqlCommand Color1 = conn.CreateCommand();
+            Color1.CommandText = "SELECT color_player FROM tb_player WHERE identifiant_player = " + id1 + ";";
+            object color1 = Color1.ExecuteScalar();
+            
+            /*/////////////////////////////////////////////////*/
+            
+            MySqlCommand Color2 = conn.CreateCommand();
+            Color2.CommandText = "SELECT color_player FROM tb_player WHERE identifiant_player = " + id2 + ";";
+            object color2 = Color2.ExecuteScalar();
+            
+            Player.SetPlayerColors(Int32.Parse(color1.ToString()), Int32.Parse(color2.ToString()));
         }
         catch (Exception ex)
         {
-            print("Ca marche po - " + ex);
+            print("Id Incorrecte - " + ex);
         }
         conn.Close();
         print("Done.");

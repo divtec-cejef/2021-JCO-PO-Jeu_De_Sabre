@@ -42,8 +42,8 @@ public class AttackMouvements
 
     public void onAttack(Player.PLAYER attacker, Player.PLAYER defender, CollisionPlayers.TYPE_ATTACK attack,bool isActif)
     {
-        GameInit.GetCameraShaking().ShakeCamera(attacker, 1.0f, .1f);
-        GameInit.GetCameraShaking().ShakeCamera(defender, 1.0f, .3f);
+        //GameInit.GetCameraShaking().ShakeCamera(attacker, 1.0f, .1f);
+        //GameInit.GetCameraShaking().ShakeCamera(defender, 1.0f, .3f);
         
         animeP1 = Player1Char.GetComponent<Animator>();
         animeP1Trans = Player1Trans.GetComponent<Animator>();

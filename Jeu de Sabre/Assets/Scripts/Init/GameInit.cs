@@ -150,7 +150,27 @@ namespace Init
         [SerializeField] private GameObject player2Legs;
 
         [SerializeField] private GameObject playerAxis;
-
+        
+        [SerializeField] private GameObject player1TransHat;
+        
+        [SerializeField] private GameObject player1TransBody;
+        
+        [SerializeField] private GameObject player1TransLegs;
+        
+        [SerializeField] private GameObject player2TransHat;
+        
+        [SerializeField] private GameObject player2TransBody;
+        
+        [SerializeField] private GameObject player2TransLegs;
+        
+        [SerializeField] private GameObject main1G;
+        
+        [SerializeField] private GameObject main1D;
+        
+        [SerializeField] private GameObject main2G;
+        
+        [SerializeField] private GameObject main2D;
+        
         public static bool isGamePaused;
         
         public static bool isDebugMenuOn;
@@ -226,7 +246,10 @@ namespace Init
 
                 _color = gameObject.GetComponent<Players.Color>();
                 _color.ApplyPlayerColor(player1Hat, player1Body, player1Legs, Player.GetPlayerColor(Player.PLAYER.P1),
-                                        player2Hat, player2Body, player2Legs, Player.GetPlayerColor(Player.PLAYER.P2));
+                                        player2Hat, player2Body, player2Legs, Player.GetPlayerColor(Player.PLAYER.P2),
+                                        player1TransHat, player1TransBody, player1TransLegs,
+                                        player2TransHat, player2TransBody, player2TransLegs,
+                                        main1G, main1D, main2G, main2D);
                 
                 // Initialisation de la classe chargée de mettre à jour le HUD
                 print("Initialisation de la mise à jour de l'affichage");
@@ -571,13 +594,12 @@ namespace Init
             try
             {
                 conn.Open();
-                MySqlCommand Player1 = conn.CreateCommand();
-                Player1.CommandText = "UPDATE tb_player SET score_player = "+  Player.GetScore(Player.PLAYER.P1)+ ", current_game_player = 2 WHERE current_game_player = 1 AND number_player = 1; ";
-                Player1.ExecuteScalar();
-    
-                MySqlCommand Player2 = conn.CreateCommand();
-                Player2.CommandText = "UPDATE tb_player SET score_player = "+  Player.GetScore(Player.PLAYER.P2)+ ", current_game_player = 2 WHERE current_game_player = 1 AND number_player = 2; ";
-                Player2.ExecuteScalar();
+                MySqlCommand CMD_addScore = conn.CreateCommand();
+                CMD_addScore.CommandText = "UPDATE tb_player SET score_knt_player = " + Player.GetScore(Player.PLAYER.P1) + " WHERE identifiant_player  = " + MenuActions.id1 + ";";
+                CMD_addScore.ExecuteScalar();
+                MySqlCommand CMD_addScore2 = conn.CreateCommand();
+                CMD_addScore2.CommandText = "UPDATE tb_player SET score_knt_player = " + Player.GetScore(Player.PLAYER.P2) + " WHERE identifiant_player  = " + MenuActions.id2 + ";";
+                CMD_addScore2.ExecuteScalar();
             }
             catch (Exception ex)
             {
