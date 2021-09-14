@@ -35,7 +35,8 @@ namespace Players
             
             _player1Stamina = GameInit.GetGameConfig().stamina_amount;
             _player2Stamina = GameInit.GetGameConfig().stamina_amount;
-    
+            _player1ExhaustedFx1.active = false;
+            _player2ExhaustedFx1.active = false;
             _canPlayer1Regen = true;
             _canPlayer2Regen = true;
         }
@@ -142,9 +143,9 @@ namespace Players
             SetExthausted(player, true);
 
             if (player == Player.PLAYER.P1)
-                _player1ExhaustedFx1.SetActive(true);
+                _player1ExhaustedFx1.active = true;
             else if (player == Player.PLAYER.P2)
-                _player2ExhaustedFx1.SetActive(true);
+                _player2ExhaustedFx1.active = true;
 
             GameInit.GetEmoteHandler(player).GetRandomEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, playerFace,true);
         }
@@ -157,13 +158,13 @@ namespace Players
             SetExthausted(player, false);
             if (player == Player.PLAYER.P1)
             {
-                _player1ExhaustedFx1.SetActive(false);
-                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face, 1f,true);
+                _player1ExhaustedFx1.active = false;
+                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.HAPPY, CollisionPlayers._player1Face, 1f,true);
             }
             else if (player == Player.PLAYER.P2)
             {
-                _player2ExhaustedFx1.SetActive(false);
-                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face, 1f,true);
+                _player2ExhaustedFx1.active = false;
+                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.HAPPY, CollisionPlayers._player2Face, 1f,true);
             }
         }
         
@@ -191,21 +192,23 @@ namespace Players
         private void Update()
         {
             //Change L'expression du joueur quand il n'a plus de stamina 
-            if (!_isPlayer1Exausted || !_isPlayer2Exausted)
-            {
                 if (Player.GetStamina(Player.PLAYER.P1) < GameInit.GetGameConfig().attack_stamina_decrease)
-                    OnExthaustedEnabled(Player.PLAYER.P1,CollisionPlayers._player1Face);
-                
+                {
+                    OnExthaustedEnabled(Player.PLAYER.P1, CollisionPlayers._player1Face);
+                }
                 else if (Player.GetStamina(Player.PLAYER.P2) < GameInit.GetGameConfig().attack_stamina_decrease)
-                    OnExthaustedEnabled(Player.PLAYER.P2,CollisionPlayers._player2Face);
-            }else {
-                if(_isPlayer1Exausted)
-                    OnExthaustedDisabled(Player.PLAYER.P1);
+                {
+                    OnExthaustedEnabled(Player.PLAYER.P2, CollisionPlayers._player2Face);
+                }
                 else
-                    OnExthaustedDisabled(Player.PLAYER.P2);
-            }
-            
-            if(_canPlayer1Regen)
+                {
+                    if (_isPlayer1Exausted)
+                        OnExthaustedDisabled(Player.PLAYER.P1);
+                    else
+                        OnExthaustedDisabled(Player.PLAYER.P2);
+                }
+
+                if(_canPlayer1Regen)
             {
                 if (_player1Stamina < GameInit.GetGameConfig().stamina_amount /* || !GameInit.getKatanaPlayer1().getParade().getParade()*/)
                 {

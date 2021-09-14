@@ -28,6 +28,7 @@ namespace Init
 
         public bool StopRound()
         {
+            CollisionPlayers.attack.disableAttack();
             GameInit.GetUiUpdater().SetCountdownText("-");
             CollisionPlayers.canAttack = false;
             ResetRound();
