@@ -591,6 +591,7 @@ namespace Init
             string connStr =
                 "Database=lacourseauxtrophees;Server=127.0.0.1;Uid=root;Password=Admlocal1;pooling=false;CharSet=utf8;port=3306";
             MySqlConnection conn = new MySqlConnection(connStr);
+            
             try
             {
                 conn.Open();
