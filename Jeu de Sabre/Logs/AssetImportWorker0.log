@@ -1,0 +1,1197 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'fr' Physical Memory: 8060 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63192
+Successfully changed project path to: C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 69.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Projet/UnityProjet/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics 655 (ID=0x3ea5)
+    Vendor:   
+    VRAM:     4030 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56240
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001597 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 67.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.592 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001771 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 69.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.216 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1816 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2285.
+Total: 2.822100 ms (FindLiveObjects: 0.388900 ms CreateObjectMapping: 0.086600 ms MarkObjects: 2.221500 ms  DeleteObjects: 0.124100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_01.mat
+  artifactKey: Guid(17a14e062db60544b93d69dba591711d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_01.mat using Guid(17a14e062db60544b93d69dba591711d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323e0ea5cde6405aec9fa08091be4ad3') in 0.158757 seconds
+  Import took 0.164716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000629 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Sensei_Brown.prefab
+  artifactKey: Guid(ff3edc24941a7ce4f84d0b4c81590391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Sensei_Brown.prefab using Guid(ff3edc24941a7ce4f84d0b4c81590391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c86f65b7cbc108dbc1e1097af7c0ade') in 0.148747 seconds
+  Import took 0.157804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000877 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Brown.mat
+  artifactKey: Guid(1d42c932d2f4ce4459fefc6cd4c5aa15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Brown.mat using Guid(1d42c932d2f4ce4459fefc6cd4c5aa15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba14398221e161b7be0369aa0eb1b7e') in 0.021025 seconds
+  Import took 0.029390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Base_Large_DoorWay_01_Collision.fbx
+  artifactKey: Guid(354fa95830fec3d4eba1a1c03a5e12f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Base_Large_DoorWay_01_Collision.fbx using Guid(354fa95830fec3d4eba1a1c03a5e12f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a397db708d5a8d1f594246d8e2fe305b') in 0.111019 seconds
+  Import took 0.118274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Wall_01_Collision.fbx
+  artifactKey: Guid(6bdc399d7c7c9e64db8665a0a0fdeeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Wall_01_Collision.fbx using Guid(6bdc399d7c7c9e64db8665a0a0fdeeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae212bcb6d4ae49a699ee0af9bb583e7') in 0.043761 seconds
+  Import took 0.049148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000495 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Bridge_Curved_01_Collision.fbx
+  artifactKey: Guid(6198d31f93a3a1b45be1654a3919aca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Bridge_Curved_01_Collision.fbx using Guid(6198d31f93a3a1b45be1654a3919aca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a90e6415a3fea13330eaf5863627a501') in 0.041942 seconds
+  Import took 0.046780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_02.mat
+  artifactKey: Guid(9a6368653bd828747ba38151e7103742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_02.mat using Guid(9a6368653bd828747ba38151e7103742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f34baa883dd45fbcc8c7acad1f4a77c') in 0.034828 seconds
+  Import took 0.039449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_Black.prefab
+  artifactKey: Guid(f7988944762557542877880bd717822e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_Black.prefab using Guid(f7988944762557542877880bd717822e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebe7d3db843084d6285d16832b86431') in 0.040564 seconds
+  Import took 0.046933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Medium_Legs_01_Collision.fbx
+  artifactKey: Guid(caccdf1a205eae14b836c4063710a2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Medium_Legs_01_Collision.fbx using Guid(caccdf1a205eae14b836c4063710a2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d1fa7afdce0cb2953a45bd7914f5d9') in 0.039217 seconds
+  Import took 0.043785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_CropRow_02_Collision.fbx
+  artifactKey: Guid(42558b98c69345646965f5043a7e4357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_CropRow_02_Collision.fbx using Guid(42558b98c69345646965f5043a7e4357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1ea0f21ec84b5eb7ae41a168d125b4') in 0.036487 seconds
+  Import took 0.041791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Clouds_Mat.mat
+  artifactKey: Guid(2b4db85464d9b394c9dc14cc2fba12ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Clouds_Mat.mat using Guid(2b4db85464d9b394c9dc14cc2fba12ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19036cbe3e76aa65444998d4812d9c8f') in 0.020585 seconds
+  Import took 0.025276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_04.mat
+  artifactKey: Guid(812c74b7f623a484c94aab57ba457ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_04.mat using Guid(812c74b7f623a484c94aab57ba457ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de295334e4deae92d7a9e22f1fbec537') in 0.040102 seconds
+  Import took 0.044924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_03.mat
+  artifactKey: Guid(f58eb4014cacded4d89c32b81aa213c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_03.mat using Guid(f58eb4014cacded4d89c32b81aa213c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0104c9e5be7544ede2f5c2dbb869516') in 0.036560 seconds
+  Import took 0.040827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Geisha_Black.prefab
+  artifactKey: Guid(38306c52799fa2842bf9111f5d382424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Geisha_Black.prefab using Guid(38306c52799fa2842bf9111f5d382424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8632cfe30a9be84347e0bc0c97237ed4') in 0.033142 seconds
+  Import took 0.038361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Tree_01_Collision.fbx
+  artifactKey: Guid(de6881f9261ce4943a110420e45ad72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Tree_01_Collision.fbx using Guid(de6881f9261ce4943a110420e45ad72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8731f16291959374a47715725480d679') in 0.037213 seconds
+  Import took 0.041518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_03.mat
+  artifactKey: Guid(948d2d81149b1704bae6d8bd0ff78a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_03.mat using Guid(948d2d81149b1704bae6d8bd0ff78a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fdf40c5e59edcc5511c97e62b0e5b9b') in 0.022422 seconds
+  Import took 0.026588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Water_Mat.mat
+  artifactKey: Guid(670efced5793a754f8ef786c262b4727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Water_Mat.mat using Guid(670efced5793a754f8ef786c262b4727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921ddd4fe4a50a68ca455fa7f586b395') in 0.021563 seconds
+  Import took 0.027081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Archway_01_Collision.fbx
+  artifactKey: Guid(83a7310bad0bee64bbdddd45251d3bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Archway_01_Collision.fbx using Guid(83a7310bad0bee64bbdddd45251d3bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c1665b30e3b1fc7b5d856cf7435445') in 0.045433 seconds
+  Import took 0.049829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Bridge_03_Collision.fbx
+  artifactKey: Guid(404eac0432570b74b89f3427c83c7088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Bridge_03_Collision.fbx using Guid(404eac0432570b74b89f3427c83c7088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0ad17838793167bb98abd24bae9783') in 0.035688 seconds
+  Import took 0.039700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_White.prefab
+  artifactKey: Guid(f82dc55a17e91bd4689a985e021ce900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_White.prefab using Guid(f82dc55a17e91bd4689a985e021ce900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f536de16148e841a3765f99b58631b11') in 0.040274 seconds
+  Import took 0.045267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Petals_Mat.mat
+  artifactKey: Guid(7e532f6673ab31641bfaaf50f0651df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Petals_Mat.mat using Guid(7e532f6673ab31641bfaaf50f0651df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da38aef058363657eef0e4510aa47d9') in 0.020075 seconds
+  Import took 0.024422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_White.prefab
+  artifactKey: Guid(eb053838e6978164e89d7ffea7c387d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_White.prefab using Guid(eb053838e6978164e89d7ffea7c387d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62abb03863f38108a74dc1bb7a13b4cb') in 0.038295 seconds
+  Import took 0.044484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Block_Stairs_01_Collision.fbx
+  artifactKey: Guid(fd79626336a822b4aaee83d2ec1cb110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Block_Stairs_01_Collision.fbx using Guid(fd79626336a822b4aaee83d2ec1cb110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd960c57c0bd05c81196a3a0210d48dbd') in 0.035852 seconds
+  Import took 0.039763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Room_Long_02_Collision.fbx
+  artifactKey: Guid(775e5452e10e17443bd13401326fa06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Room_Long_02_Collision.fbx using Guid(775e5452e10e17443bd13401326fa06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126285d4ada6a2e53b8003f2c96f7486') in 0.034739 seconds
+  Import took 0.038921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Emmision_Night.mat
+  artifactKey: Guid(8e69766d06efcc64a90dc2b678c2ad8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Emmision_Night.mat using Guid(8e69766d06efcc64a90dc2b678c2ad8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61cb4ac92143729a804a8ee7449b36d') in 0.031419 seconds
+  Import took 0.035378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Grunt_Black.prefab
+  artifactKey: Guid(f586f08344436d648b6c0e2d40f44161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Grunt_Black.prefab using Guid(f586f08344436d648b6c0e2d40f44161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d1c565313731dd23ae42bea74d8600c') in 0.033909 seconds
+  Import took 0.039038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_Black.prefab
+  artifactKey: Guid(b49aa43dd99419842bd25be74ac6d48d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_Black.prefab using Guid(b49aa43dd99419842bd25be74ac6d48d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82b9ed99b9fd257031d74e12258fd303') in 0.037724 seconds
+  Import took 0.042939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_Corner_01_Collision.fbx
+  artifactKey: Guid(8c3d2e752869b5d4a848677df848746d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_Corner_01_Collision.fbx using Guid(8c3d2e752869b5d4a848677df848746d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836fbab427c3216588f498615d016f66') in 0.035653 seconds
+  Import took 0.039883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/PolygonSamurai/Materials/Layout_BaseMesh_Gen_Grey.mat
+  artifactKey: Guid(189f7e75960e51e4c80462cfef0332db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Layout_BaseMesh_Gen_Grey.mat using Guid(189f7e75960e51e4c80462cfef0332db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f85df83e36ee9e2994400be13531344') in 0.018651 seconds
+  Import took 0.023394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Stairs_01_Collision.fbx
+  artifactKey: Guid(43590341725e89a41bda5ea4858e5aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Stairs_01_Collision.fbx using Guid(43590341725e89a41bda5ea4858e5aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33add307e079989a02be0321a3ad5a71') in 0.041098 seconds
+  Import took 0.046070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_02.mat
+  artifactKey: Guid(c49fd74d06e3dc34a96c919e2351aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_02.mat using Guid(c49fd74d06e3dc34a96c919e2351aaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48f928d427122bbbf4dc944ed50735c') in 0.021363 seconds
+  Import took 0.025673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_White.prefab
+  artifactKey: Guid(437cc727618d0944386404d53f0f3cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_White.prefab using Guid(437cc727618d0944386404d53f0f3cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca479d855d292a8c71db4e668b8a48e8') in 0.039781 seconds
+  Import took 0.046251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Bridge_01_Collision.fbx
+  artifactKey: Guid(04744277caee19048b8d996ef845014f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Bridge_01_Collision.fbx using Guid(04744277caee19048b8d996ef845014f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f04fd6f6e10274878f5acb3a5cdb7a2') in 0.037665 seconds
+  Import took 0.042382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_End_01_Collision.fbx
+  artifactKey: Guid(84a05fdf933328647ba5f8bf9d7e1a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_End_01_Collision.fbx using Guid(84a05fdf933328647ba5f8bf9d7e1a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc57ec25de093f058ef124916f963c9c') in 0.035322 seconds
+  Import took 0.039933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_TSection_01_Collision.fbx
+  artifactKey: Guid(2f2fa29608cf8434391cdcc3931e0a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_TSection_01_Collision.fbx using Guid(2f2fa29608cf8434391cdcc3931e0a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c4e62697dfe6399dca5b0bd9383c59') in 0.035544 seconds
+  Import took 0.039121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_Brown.prefab
+  artifactKey: Guid(4e75ae9099e9df246a58c6fd3c7a54f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_Brown.prefab using Guid(4e75ae9099e9df246a58c6fd3c7a54f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8321cfe3d88553b9c170967d7c2587c1') in 0.034414 seconds
+  Import took 0.038662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_01.mat
+  artifactKey: Guid(61838ec19db54eb4d879d80a8b9bce11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_01.mat using Guid(61838ec19db54eb4d879d80a8b9bce11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '114c8242878b45198c1da906632111fd') in 0.031146 seconds
+  Import took 0.035874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Grunt_Brown.prefab
+  artifactKey: Guid(0d96460c76ed55f43bc83fbf37696d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Grunt_Brown.prefab using Guid(0d96460c76ed55f43bc83fbf37696d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d4ab76cfdca4f4e2b7a8eb37f159fd') in 0.034255 seconds
+  Import took 0.040157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_Black.prefab
+  artifactKey: Guid(b8f15482c1461834ba4940cda5faeda2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_Black.prefab using Guid(b8f15482c1461834ba4940cda5faeda2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86321d052d6ad65d6e7c5fdebeee17cf') in 0.033334 seconds
+  Import took 0.037297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_White.prefab
+  artifactKey: Guid(6aa43cee182a20e4587aba4c27d6ba0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_White.prefab using Guid(6aa43cee182a20e4587aba4c27d6ba0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b480cce99182a7c1935e9364bfc175ff') in 0.032342 seconds
+  Import took 0.037186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_CropRow_03_Collision.fbx
+  artifactKey: Guid(bc54fe6ea433e3b48bc0af5ff85581e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_CropRow_03_Collision.fbx using Guid(bc54fe6ea433e3b48bc0af5ff85581e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543ba426145d3a7321b65f6371126c6f') in 0.034099 seconds
+  Import took 0.038287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Grunt_White.prefab
+  artifactKey: Guid(4305593c5d328c54daf646cc25236c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Grunt_White.prefab using Guid(4305593c5d328c54daf646cc25236c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e738fb7d0582187d1a4f861c5d19b9c7') in 0.036228 seconds
+  Import took 0.041120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Geisha_White.prefab
+  artifactKey: Guid(3f7d44898c0dd8f4c9b7ba555fa6671c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Geisha_White.prefab using Guid(3f7d44898c0dd8f4c9b7ba555fa6671c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f100492943a442ce32839394443d8ef7') in 0.032523 seconds
+  Import took 0.037600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Room_Long_01_Collision.fbx
+  artifactKey: Guid(d13a5139c6835ff42a3f80f11baeb4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Room_Long_01_Collision.fbx using Guid(d13a5139c6835ff42a3f80f11baeb4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13540bced2518ef7b9bd9445ed39af60') in 0.036020 seconds
+  Import took 0.040214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_Brown.prefab
+  artifactKey: Guid(61812b6ed71bf114d99332fe32bb4891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Man_Brown.prefab using Guid(61812b6ed71bf114d99332fe32bb4891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692b2fe26c522d6d47f26587e40fac06') in 0.030764 seconds
+  Import took 0.035323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_04.mat
+  artifactKey: Guid(4ccf967449e553347b1b3389133f7db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Tex_04.mat using Guid(4ccf967449e553347b1b3389133f7db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2073b8b389044d03ab18978240060778') in 0.021004 seconds
+  Import took 0.025515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Large_02_Collision.fbx
+  artifactKey: Guid(cec3ef16b91fccb4d87d64332fd1fa84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Large_02_Collision.fbx using Guid(cec3ef16b91fccb4d87d64332fd1fa84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe125ad6e0aff3229b22bc5a62fd1b2') in 0.041520 seconds
+  Import took 0.046424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Large_01_Collision.fbx
+  artifactKey: Guid(2fd36d53e23cb5a4da922c8cad990d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Large_01_Collision.fbx using Guid(2fd36d53e23cb5a4da922c8cad990d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7039cc04316f58356ecb1b94b4f47cd') in 0.035724 seconds
+  Import took 0.039905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Large_Legs_01_Collision.fbx
+  artifactKey: Guid(a2364e1e96816ba4d93dce704f6050e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Large_Legs_01_Collision.fbx using Guid(a2364e1e96816ba4d93dce704f6050e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76354232b32203c135771b43d9d562b9') in 0.039299 seconds
+  Import took 0.043323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Tree_03_Collision.fbx
+  artifactKey: Guid(943fb0fc81a0560489cd7de400db91c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Tree_03_Collision.fbx using Guid(943fb0fc81a0560489cd7de400db91c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4481aae14fc1133fd63a92a73a433aa') in 0.036448 seconds
+  Import took 0.040186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/PolygonSamurai/Materials/Characters_Texture_03.mat
+  artifactKey: Guid(50ef2e349497eeb45bb893f60790a42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/Characters_Texture_03.mat using Guid(50ef2e349497eeb45bb893f60790a42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8a489f610b002d183ab3ed86f2d2a8') in 0.022456 seconds
+  Import took 0.026614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Small_Legs_01_Collision.fbx
+  artifactKey: Guid(8ac2518f88c089740a0136ca8231f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Small_Legs_01_Collision.fbx using Guid(8ac2518f88c089740a0136ca8231f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d67afb060e74b61600c31994963173') in 0.039465 seconds
+  Import took 0.044332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_Brown.prefab
+  artifactKey: Guid(aec173cd5cb500548ad9d9b40112ad02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Ninja_Brown.prefab using Guid(aec173cd5cb500548ad9d9b40112ad02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '400ab9e4cca36e0dfdf03471f6357a18') in 0.034012 seconds
+  Import took 0.038829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_BridgeCover_01_Collision.fbx
+  artifactKey: Guid(3e8f52f24d686174a8819e177da88403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_BridgeCover_01_Collision.fbx using Guid(3e8f52f24d686174a8819e177da88403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f58584aafd807fcf182ff8f00792cf6') in 0.035877 seconds
+  Import took 0.040312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Room_Long_03_Collision.fbx
+  artifactKey: Guid(e6e3274759e8a654991ef8b0cf3134ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Room_Long_03_Collision.fbx using Guid(e6e3274759e8a654991ef8b0cf3134ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb534c70029d363700ca456de275c3bf') in 0.034532 seconds
+  Import took 0.039204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Medium_01_Collision.fbx
+  artifactKey: Guid(a27cb3dd24f14b84aad56c6bfe8116af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Medium_01_Collision.fbx using Guid(a27cb3dd24f14b84aad56c6bfe8116af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2813e5ffb5097653ccea6e70aa8d7b4') in 0.039015 seconds
+  Import took 0.043266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Medium_02_Collision.fbx
+  artifactKey: Guid(b7c40907049abb247989a910a3c059b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Medium_02_Collision.fbx using Guid(b7c40907049abb247989a910a3c059b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a394158a12b328bef2fe7f1dd4155bee') in 0.037333 seconds
+  Import took 0.040635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_Straight_02_Collision.fbx
+  artifactKey: Guid(5604bbc6847fee54d82615030d90a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_Straight_02_Collision.fbx using Guid(5604bbc6847fee54d82615030d90a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f04d9ec252c43912f6efb2ea1ba334eb') in 0.036452 seconds
+  Import took 0.040808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_Black.prefab
+  artifactKey: Guid(b4a5cf1272516ff4e8a48553e0e715f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Village_Woman_Black.prefab using Guid(b4a5cf1272516ff4e8a48553e0e715f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce4995f43c6cd36e101499bacc767366') in 0.033112 seconds
+  Import took 0.037922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Geisha_Brown.prefab
+  artifactKey: Guid(8f2787936b3a38c4e9c4baeb7a824fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Geisha_Brown.prefab using Guid(8f2787936b3a38c4e9c4baeb7a824fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a26ebfe8df5303c276aff2ea50d62eec') in 0.033572 seconds
+  Import took 0.038033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Tree_02_Collision.fbx
+  artifactKey: Guid(2ff6a79b6165a434b9a0e1ae678f395a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Tree_02_Collision.fbx using Guid(2ff6a79b6165a434b9a0e1ae678f395a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31cd035e00946aba3bb441548569eb6') in 0.038703 seconds
+  Import took 0.042497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Castle_Gates_01_Collision.fbx
+  artifactKey: Guid(4cb5d362daab6924289c309270d8d1e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Castle_Gates_01_Collision.fbx using Guid(4cb5d362daab6924289c309270d8d1e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3beceab811603d4671566a083e55da') in 0.037441 seconds
+  Import took 0.041830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Fire_FX.mat
+  artifactKey: Guid(e8bc6160ccf0e9b4e950bcb511403374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Fire_FX.mat using Guid(e8bc6160ccf0e9b4e950bcb511403374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2eb7f37f8d8e3e5f73a76341ff2a06') in 0.019903 seconds
+  Import took 0.025089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Small_02_Collision.fbx
+  artifactKey: Guid(6c355283991fa7e4cb03d57525a3ab8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Small_02_Collision.fbx using Guid(6c355283991fa7e4cb03d57525a3ab8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd921e62e278673e27ba1b6c8648fdcec') in 0.047692 seconds
+  Import took 0.051777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Black.mat
+  artifactKey: Guid(15462656d6ff7074ba33213741cb3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Black.mat using Guid(15462656d6ff7074ba33213741cb3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7608864e75d99d6f081abe80862acdaf') in 0.016635 seconds
+  Import took 0.020562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/PolygonSamurai/Models/FixedScaleCharacters/Characters.fbx
+  artifactKey: Guid(1d561ab794bc05b44aa243d39691c790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/FixedScaleCharacters/Characters.fbx using Guid(1d561ab794bc05b44aa243d39691c790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e824e4d35bb441f2e9e53c5397992d') in 0.157263 seconds
+  Import took 0.161740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Matl_White.mat
+  artifactKey: Guid(6d0613f500c022f48ae1dde75d4fc3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Character_Matl_White.mat using Guid(6d0613f500c022f48ae1dde75d4fc3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c37a56042dfa6ddb089c7f66f4614e6') in 0.016461 seconds
+  Import took 0.022474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_Straight_01_Collision.fbx
+  artifactKey: Guid(e8b3366aa4619a249959a3adc9e2f1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_Straight_01_Collision.fbx using Guid(e8b3366aa4619a249959a3adc9e2f1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c733f60a543f11c2d72f1669cb3e3d2') in 0.035811 seconds
+  Import took 0.040093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Sensei_White.prefab
+  artifactKey: Guid(31c5c12bb5ddd814388a27a7c3e71aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Sensei_White.prefab using Guid(31c5c12bb5ddd814388a27a7c3e71aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe1850891a9f8f51715f958d2d5f591') in 0.038963 seconds
+  Import took 0.044881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Sensei_Black.prefab
+  artifactKey: Guid(3dcfd1a458396ff4a9c358b2e90576b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Sensei_Black.prefab using Guid(3dcfd1a458396ff4a9c358b2e90576b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed4f24e34eeae406a200aabd16f86225') in 0.033788 seconds
+  Import took 0.038350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_4Way_01_Collision.fbx
+  artifactKey: Guid(3f8e816e4c0fe5c4b813ae4053f3f9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Path_4Way_01_Collision.fbx using Guid(3f8e816e4c0fe5c4b813ae4053f3f9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e576c1f3c368b943ba2d20d6c76e81c') in 0.035976 seconds
+  Import took 0.040190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Small_01_Collision.fbx
+  artifactKey: Guid(fff4e9138bb4c3c4ab06962b8f6d5eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Bld_Platform_Small_01_Collision.fbx using Guid(fff4e9138bb4c3c4ab06962b8f6d5eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de347013c015e2a27c2756233989049') in 0.038094 seconds
+  Import took 0.041834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_02.mat
+  artifactKey: Guid(9bc501b055c1fa247ba4c5d1f89d1579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_02.mat using Guid(9bc501b055c1fa247ba4c5d1f89d1579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92d8ab047fa57feb855adc15dcef5fb5') in 0.020159 seconds
+  Import took 0.024355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Bridge_02_Collision.fbx
+  artifactKey: Guid(8331b01cf6bb1eb4aabd40839c7a2e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Bridge_02_Collision.fbx using Guid(8331b01cf6bb1eb4aabd40839c7a2e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '317c37dcfede108f94309d9d0a7766ce') in 0.046580 seconds
+  Import took 0.051067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_Brown.prefab
+  artifactKey: Guid(7a406827440b9f844be79d439f210820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Characters/FixedScaleCharacters/Character_Samurai_Warrior_Brown.prefab using Guid(7a406827440b9f844be79d439f210820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '430780ecfc35fd313fc55a26d7ab5c42') in 0.031735 seconds
+  Import took 0.036392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/PolygonSamurai/Models/Collisions/SM_Env_Snow_Path_TSection_01_Collision.fbx
+  artifactKey: Guid(e01e5253ee214d64aa4267b3867f3372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Models/Collisions/SM_Env_Snow_Path_TSection_01_Collision.fbx using Guid(e01e5253ee214d64aa4267b3867f3372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35d8ce90fd966ed01d616c1ab5bb0d2') in 0.038855 seconds
+  Import took 0.043135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_01.mat
+  artifactKey: Guid(4eaaa3032586832468e97a6452e498a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Materials/PolygonSamurai_Mat_01.mat using Guid(4eaaa3032586832468e97a6452e498a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feac0032d56b110a00b009c136f20cd1') in 0.032694 seconds
+  Import took 0.036726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 282.865326 seconds.
+  path: Assets/PolygonSamurai/Textures/Characters_Texture_01.png
+  artifactKey: Guid(023f25b440efc7a42a0352ee7464260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/Characters_Texture_01.png using Guid(023f25b440efc7a42a0352ee7464260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29aeee4a995537c8a815d56c20beb592') in 0.048700 seconds
+  Import took 0.053952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_03.png
+  artifactKey: Guid(d0d8bf027b133cd4a94474a9a760f2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_03.png using Guid(d0d8bf027b133cd4a94474a9a760f2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc83d75e9c901ccc4f6338b5b4021d4') in 0.012364 seconds
+  Import took 0.018211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000740 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_01.png
+  artifactKey: Guid(57fee65f3ac7eb64e874d0c659e718ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_01.png using Guid(57fee65f3ac7eb64e874d0c659e718ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd986cc868278508f9a9b1ba8b4cd38eb') in 0.022411 seconds
+  Import took 0.029024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000582 seconds.
+  path: Assets/PolygonSamurai/Textures/Characters_Texture_02.png
+  artifactKey: Guid(0f0a3e20c1fa73c498e81e6c4ad76d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/Characters_Texture_02.png using Guid(0f0a3e20c1fa73c498e81e6c4ad76d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bec6e38bcec811e73f137d70610c6306') in 0.017321 seconds
+  Import took 0.023016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Emmision_Night.png
+  artifactKey: Guid(9430476696fc3204ea56ee7ac65539c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Emmision_Night.png using Guid(9430476696fc3204ea56ee7ac65539c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0526a7078447e8a7dafad66006bdce') in 0.012119 seconds
+  Import took 0.017042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/PolygonSamurai/Textures/Characters_Texture_03.png
+  artifactKey: Guid(41ac08dd23d0c8649897f02aca9b74c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/Characters_Texture_03.png using Guid(41ac08dd23d0c8649897f02aca9b74c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26babe7fcd62649eafd35d0eb6303774') in 0.024000 seconds
+  Import took 0.030167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_04.png
+  artifactKey: Guid(f37027a7baf844d41b58d162d542e902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_04.png using Guid(f37027a7baf844d41b58d162d542e902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d81de0fbde433afbd9e8e3565cdc8c') in 0.032327 seconds
+  Import took 0.036732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000497 seconds.
+  path: Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_02.png
+  artifactKey: Guid(5dc12c55c5128854093642240dd83424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Textures/PolygonSamurai_Tex_02.png using Guid(5dc12c55c5128854093642240dd83424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420d926065fc9ccf188090c606bff4a4') in 0.029308 seconds
+  Import took 0.034866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 415.948774 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bamboo_Pole_01.prefab
+  artifactKey: Guid(46b1261fd9646e44a9677ffb227e6fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bamboo_Pole_01.prefab using Guid(46b1261fd9646e44a9677ffb227e6fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9b4fe5c0e29e3e0b3a3281d7344a6e') in 0.022319 seconds
+  Import took 0.027062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bamboo_Pole_02.prefab
+  artifactKey: Guid(6ace688fef2f41d43a4e8eeab19c9523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bamboo_Pole_02.prefab using Guid(6ace688fef2f41d43a4e8eeab19c9523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394eff4292e04e5bbeb1a71f60d36645') in 0.019371 seconds
+  Import took 0.024230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bowl_Large_01.prefab
+  artifactKey: Guid(758688a53520c8e47a63f6af2b0d875c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bowl_Large_01.prefab using Guid(758688a53520c8e47a63f6af2b0d875c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f579b42da0874650043f1b1fb3a32b') in 0.022330 seconds
+  Import took 0.026220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_02.prefab
+  artifactKey: Guid(cd39f9c47593a1f4694148bc9a08ac3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_02.prefab using Guid(cd39f9c47593a1f4694148bc9a08ac3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10333662f249e3a08caf2caa61f6b47e') in 0.019985 seconds
+  Import took 0.024890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_04.prefab
+  artifactKey: Guid(e30e55a5da2838143ae75f51e7fe879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_04.prefab using Guid(e30e55a5da2838143ae75f51e7fe879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c177672f322ab37a52399134f07e3a03') in 0.024296 seconds
+  Import took 0.029050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_03.prefab
+  artifactKey: Guid(b1274e88244349b42882f36ba548c96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_03.prefab using Guid(b1274e88244349b42882f36ba548c96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6144a31bd739f8c4257073df596b0188') in 0.020501 seconds
+  Import took 0.026044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flute_01.prefab
+  artifactKey: Guid(6603e885833ee8e44b574eca008f8791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flute_01.prefab using Guid(6603e885833ee8e44b574eca008f8791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cae30bc46ad5a9cbb02265bc9d9a293') in 0.020011 seconds
+  Import took 0.025104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flag_01.prefab
+  artifactKey: Guid(de987c547c04153409cfda3fe7c0b3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flag_01.prefab using Guid(de987c547c04153409cfda3fe7c0b3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92eec4109ccc039117cf2f1f49b42dba') in 0.020832 seconds
+  Import took 0.024289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Paper_Lantern_02.prefab
+  artifactKey: Guid(a9fd7d3641b11944ca55dca7b29b828e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Paper_Lantern_02.prefab using Guid(a9fd7d3641b11944ca55dca7b29b828e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9fe1e43fbf77cfe403d9de8d3ee252') in 0.019770 seconds
+  Import took 0.024302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bell_01.prefab
+  artifactKey: Guid(338784335536a774091f31f053f72d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bell_01.prefab using Guid(338784335536a774091f31f053f72d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7959336e16300b34c7196a3806908594') in 0.021188 seconds
+  Import took 0.025962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Simple_Straight_01.prefab
+  artifactKey: Guid(e2d0fbabd8eba404cb9b00cdfde098ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Simple_Straight_01.prefab using Guid(e2d0fbabd8eba404cb9b00cdfde098ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ea88fbe73437f0e09f87550ab4ba1b') in 0.033275 seconds
+  Import took 0.038861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000593 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Simple_Straight_02.prefab
+  artifactKey: Guid(f92c301ec022e1f488f6fd6984a338ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Simple_Straight_02.prefab using Guid(f92c301ec022e1f488f6fd6984a338ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e5a6e519ac89be844638c7cdc3c57c0') in 0.030571 seconds
+  Import took 0.035338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Basket_Rice_01.prefab
+  artifactKey: Guid(d7437717dda0b51419261499e61514fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Basket_Rice_01.prefab using Guid(d7437717dda0b51419261499e61514fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9969d384726ec5c454d4b5aaaa3a777f') in 0.038018 seconds
+  Import took 0.045627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flag_02.prefab
+  artifactKey: Guid(59b8e56c411d498419db54e979d49875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flag_02.prefab using Guid(59b8e56c411d498419db54e979d49875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bcb3b3b77d638c18d3157914976a2a0') in 0.027161 seconds
+  Import took 0.032537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Gong_02.prefab
+  artifactKey: Guid(57bcca543177dd54d8b39d1fa8fa8aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Gong_02.prefab using Guid(57bcca543177dd54d8b39d1fa8fa8aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec66096c30d9a3fa31aee50e03f4ad8') in 0.032706 seconds
+  Import took 0.038342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_05.prefab
+  artifactKey: Guid(cf32fb5dd50b2af4da6af3dc49e6471c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_05.prefab using Guid(cf32fb5dd50b2af4da6af3dc49e6471c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d6704a46e2dea9759112abb33c9e040') in 0.026468 seconds
+  Import took 0.030537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Naginata_01.prefab
+  artifactKey: Guid(b6b0764dbc9d8af47a9396cd3ed1f41a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Naginata_01.prefab using Guid(b6b0764dbc9d8af47a9396cd3ed1f41a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '798d1cdd1d2860dc6d21815c1f251a65') in 0.018331 seconds
+  Import took 0.021988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Ninjato_01.prefab
+  artifactKey: Guid(ac53f9d05b915884ab3ce6d0a7113315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Ninjato_01.prefab using Guid(ac53f9d05b915884ab3ce6d0a7113315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249ab0d7ec8c21136d42bdda2154db1f') in 0.017931 seconds
+  Import took 0.022013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Tanto_Covered_01.prefab
+  artifactKey: Guid(986c86c769d65ba44ae8aba7a7462b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Tanto_Covered_01.prefab using Guid(986c86c769d65ba44ae8aba7a7462b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896a0599483258d61c4a2be7e0946b21') in 0.019932 seconds
+  Import took 0.024225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Naginata_02.prefab
+  artifactKey: Guid(df0557f1b34280a4ba8fd22a36aa7b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Naginata_02.prefab using Guid(df0557f1b34280a4ba8fd22a36aa7b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1567f690e9365d1821d42f4b12d1e863') in 0.041874 seconds
+  Import took 0.047709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Odachi_01.prefab
+  artifactKey: Guid(d44f072607d893145b2f6d39c8229bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Odachi_01.prefab using Guid(d44f072607d893145b2f6d39c8229bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c016b2cd1e93b99de20125d6cd35d5d') in 0.031765 seconds
+  Import took 0.036172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_JuMonjiYari_01.prefab
+  artifactKey: Guid(5a8971cccbae9b049bc6d7e7b88c0592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_JuMonjiYari_01.prefab using Guid(5a8971cccbae9b049bc6d7e7b88c0592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a11e0d77c707b3162c011bbf3d4fb81') in 0.028609 seconds
+  Import took 0.034102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Bamboo_02.prefab
+  artifactKey: Guid(4dc09de7863629c4b89bf12e0775d39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Bamboo_02.prefab using Guid(4dc09de7863629c4b89bf12e0775d39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de619b6c3a8aba31b229003afab4f669') in 0.029455 seconds
+  Import took 0.034551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Simple_Post_01.prefab
+  artifactKey: Guid(8554f55ca1abf6c49a1ad0563de06c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Simple_Post_01.prefab using Guid(8554f55ca1abf6c49a1ad0563de06c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8fb527af2a7a2c224c36183b2e0b18') in 0.031499 seconds
+  Import took 0.037702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_01.prefab
+  artifactKey: Guid(7429754a23785f040b4ff31abd19014e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_01.prefab using Guid(7429754a23785f040b4ff31abd19014e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c6dd20c85a2aee93172bbc7968e264') in 0.031316 seconds
+  Import took 0.038342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bucket_01.prefab
+  artifactKey: Guid(68c3bc3ff3150de478bdcb9fca69ee8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bucket_01.prefab using Guid(68c3bc3ff3150de478bdcb9fca69ee8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7343287a4e6d2f2eb52f8740a94f4b2b') in 0.029943 seconds
+  Import took 0.034970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000796 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_03.prefab
+  artifactKey: Guid(c6a547ea0c6639d40ba70d3d6f27eb30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_03.prefab using Guid(c6a547ea0c6639d40ba70d3d6f27eb30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579e2cba0f6db248ec7d3c70ce1c0f3d') in 0.033378 seconds
+  Import took 0.038408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Tanto_01.prefab
+  artifactKey: Guid(4550e75c38334cd4b8fa8af861566dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Tanto_01.prefab using Guid(4550e75c38334cd4b8fa8af861566dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a69dc5cab206974f6c35f1e81d5f4a') in 0.029890 seconds
+  Import took 0.036101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_BoStaff_01.prefab
+  artifactKey: Guid(e42a540304b70c642a220ce9574f7e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_BoStaff_01.prefab using Guid(e42a540304b70c642a220ce9574f7e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '717b87c770b9480ae3aa21c80bf9585c') in 0.032283 seconds
+  Import took 0.036864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Shuriken_02.prefab
+  artifactKey: Guid(58bbad6d81bb38843ac202ebba09c4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Shuriken_02.prefab using Guid(58bbad6d81bb38843ac202ebba09c4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f8a9a02968f52099fd098d94834fd53') in 0.028505 seconds
+  Import took 0.033268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_05.prefab
+  artifactKey: Guid(625530126d9a2cb4a98ace8d9ee1d72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_05.prefab using Guid(625530126d9a2cb4a98ace8d9ee1d72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a6056d5afdbc5be4ff97974dd685f2') in 0.027190 seconds
+  Import took 0.032252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flag_04.prefab
+  artifactKey: Guid(f6a4c13be7c8fc4419af1757ac773720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flag_04.prefab using Guid(f6a4c13be7c8fc4419af1757ac773720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f01594442e323f3f56087d11fe3fbe') in 0.024165 seconds
+  Import took 0.030969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Kunai_01.prefab
+  artifactKey: Guid(a8929d8c11f00b24d9d8e3bf32fedfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Kunai_01.prefab using Guid(a8929d8c11f00b24d9d8e3bf32fedfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80da12089adb0b3a5ffc623f000c10de') in 0.024370 seconds
+  Import took 0.030251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_06.prefab
+  artifactKey: Guid(f377bf2d0bd778443b66a4a960eb1da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_06.prefab using Guid(f377bf2d0bd778443b66a4a960eb1da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c40b7ba3177426376b9c894f38e2b02') in 0.022609 seconds
+  Import took 0.027357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_01.prefab
+  artifactKey: Guid(8a22506deb5dee24aa46ea0dbae158fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fan_01.prefab using Guid(8a22506deb5dee24aa46ea0dbae158fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840da9b6a7fd2a0835a525a6d67ec044') in 0.033667 seconds
+  Import took 0.038233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Tonfa_01.prefab
+  artifactKey: Guid(9a948a3e41c0dcf439990b43bb8542fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Tonfa_01.prefab using Guid(9a948a3e41c0dcf439990b43bb8542fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3fc88ae423fb1c4b9ec5d56c4f0697f') in 0.040459 seconds
+  Import took 0.045526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bucket_02.prefab
+  artifactKey: Guid(21c6019c643d76a47b57d3d30c920ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bucket_02.prefab using Guid(21c6019c643d76a47b57d3d30c920ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54bd0ac5900b6de536687c30b9b3e037') in 0.021903 seconds
+  Import took 0.027109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_04.prefab
+  artifactKey: Guid(639bd5211e58d524aaf948a6ca884ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_04.prefab using Guid(639bd5211e58d524aaf948a6ca884ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c10ef1fa087cbaa054bb345d375fc26') in 0.031490 seconds
+  Import took 0.036657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_07.prefab
+  artifactKey: Guid(f5619f0bb223dd74aa46cc34b0ab1ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_07.prefab using Guid(f5619f0bb223dd74aa46cc34b0ab1ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f858ac34c00cfd8e749dd32ebb859f9') in 0.029230 seconds
+  Import took 0.035506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Gong_01.prefab
+  artifactKey: Guid(1f190ff0fa2569b4eae237b58389b2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Gong_01.prefab using Guid(1f190ff0fa2569b4eae237b58389b2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10700af8932491e1de5b9e375555f03c') in 0.024423 seconds
+  Import took 0.030773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flag_03.prefab
+  artifactKey: Guid(24269a25e9c7b2d428a1e593bd8461ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Flag_03.prefab using Guid(24269a25e9c7b2d428a1e593bd8461ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcd956e50f5461a14415b983b7f139a') in 0.023180 seconds
+  Import took 0.026920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Paper_Lantern_01.prefab
+  artifactKey: Guid(5bf2520ef3e005a4f9e67fdc5ba38bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Paper_Lantern_01.prefab using Guid(5bf2520ef3e005a4f9e67fdc5ba38bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c589e1ca247160d6ec85141bd59b789c') in 0.027774 seconds
+  Import took 0.034459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bowl_01.prefab
+  artifactKey: Guid(0f166e67f8aed0a41bacf95a90101914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bowl_01.prefab using Guid(0f166e67f8aed0a41bacf95a90101914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467258a10ab64cae49f1e5136b3f9b31') in 0.030977 seconds
+  Import took 0.037172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bonsai_01.prefab
+  artifactKey: Guid(05e8923a74a854c4b909410b26f8df25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bonsai_01.prefab using Guid(05e8923a74a854c4b909410b26f8df25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817fe0d2a468a9f11b356d964dba8bf0') in 0.027259 seconds
+  Import took 0.032028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bucket_Pole_01.prefab
+  artifactKey: Guid(34812ad4fe3782b4f8565aa31d736f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Bucket_Pole_01.prefab using Guid(34812ad4fe3782b4f8565aa31d736f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fdd0ff6f87c254314a7e3b091b2abb7') in 0.024977 seconds
+  Import took 0.031893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_02.prefab
+  artifactKey: Guid(12431def28cf5fd40b265a60794b0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Pot_02.prefab using Guid(12431def28cf5fd40b265a60794b0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b2c10eb27e28d062f8453eb2296455') in 0.025588 seconds
+  Import took 0.031844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000510 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Bamboo_01.prefab
+  artifactKey: Guid(fa51b0519cc3f354fb4c18210bb05785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Props/SM_Prop_Fence_Bamboo_01.prefab using Guid(fa51b0519cc3f354fb4c18210bb05785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03524df81d8818b40612a0c00b441624') in 0.030125 seconds
+  Import took 0.035136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Odachi_Covered_01.prefab
+  artifactKey: Guid(672a93209231a044480b67903aa744f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Odachi_Covered_01.prefab using Guid(672a93209231a044480b67903aa744f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5970ece5b20f4ed2366f0b57091837') in 0.025758 seconds
+  Import took 0.030636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Shuriken_01.prefab
+  artifactKey: Guid(2ab04f1ae8c6cf44ebc104d722d22baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Shuriken_01.prefab using Guid(2ab04f1ae8c6cf44ebc104d722d22baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '344547f53a8c3b6902e0deb491b47726') in 0.023747 seconds
+  Import took 0.028283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Kunai_02.prefab
+  artifactKey: Guid(4635bd33ee58fc342bdf2219cd38db35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Kunai_02.prefab using Guid(4635bd33ee58fc342bdf2219cd38db35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de66696922366e0b9b6d2e64d9990b31') in 0.023246 seconds
+  Import took 0.026872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Sai_01.prefab
+  artifactKey: Guid(58e0cec82b1edce4b83a4753b7b73035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonSamurai/Prefabs/Weapons/SM_Wep_Sai_01.prefab using Guid(58e0cec82b1edce4b83a4753b7b73035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90192e2241ce21dca7f3e543dd8e9e39') in 0.030597 seconds
+  Import took 0.036524 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021282 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.589 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1763 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.2 MB.
+System memory in use after: 119.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2334.
+Total: 3.416500 ms (FindLiveObjects: 0.231500 ms CreateObjectMapping: 0.082900 ms MarkObjects: 3.049100 ms  DeleteObjects: 0.049700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002260 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.176 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1763 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.3 MB.
+System memory in use after: 119.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2337.
+Total: 6.506800 ms (FindLiveObjects: 1.339400 ms CreateObjectMapping: 0.155600 ms MarkObjects: 4.977500 ms  DeleteObjects: 0.031500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

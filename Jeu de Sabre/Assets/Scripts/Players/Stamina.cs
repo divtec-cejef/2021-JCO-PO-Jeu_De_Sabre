@@ -170,7 +170,7 @@ namespace Players
             else if (player == Player.PLAYER.P2)
             {
                 _player2ExhaustedFx1.active = false;
-                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.HAPPY, CollisionPlayers._player1Face, 1f,false);
+                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.HAPPY, CollisionPlayers._player2Face, 1f,false);
             }
         }
         

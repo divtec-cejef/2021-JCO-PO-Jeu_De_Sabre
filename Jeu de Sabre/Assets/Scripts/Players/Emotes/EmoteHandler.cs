@@ -94,7 +94,7 @@ public class EmoteHandler : MonoBehaviour
 
         return currentEmote;
     }
-    
+     
     public Material GetRandomEmote(EMOTE_TYPE type, GameObject playerFace, bool resetFace)
     {
         return GetRandomEmote(type, playerFace, 1f, resetFace);
