@@ -136,36 +136,41 @@ namespace Players
             }
         }
 
-        /// <summary>
-        /// Fonction appelé lors de la première frame de la fatigue
-        /// </summary>
+       /// <summary>
+       /// Fonction appelé lors de la première frame de la fatigue
+       /// Elle active l'effet d'Exthausted ainsi que l'emote Exthausted. 
+       /// </summary>
+       /// <param name="player">Le joueur auquel on souhaite activer la fatigue</param>
+       /// <param name="playerFace">Le visage du joueur à modifier</param>
         public static void enabledExthausted(Player.PLAYER player, GameObject playerFace)
         {
             SetExthausted(player, true);
 
             if (player == Player.PLAYER.P1)
-                _player1ExhaustedFx1.SetActive(true);
+                _player1ExhaustedFx1.active = true;
             else if (player == Player.PLAYER.P2)
-                _player2ExhaustedFx1.SetActive(true);
+                _player2ExhaustedFx1.active = true;
 
             GameInit.GetEmoteHandler(player).GetRandomEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, playerFace,true);
         }
         
         /// <summary>
         /// Fonction appelé lorsque la fatigue s'arrête
-        /// </summary> 
+        /// Elle désactive l'effet d'Exthausted ainsi que l'emote Exthausted. 
+        /// </summary>
+        /// <param name="player">Le joueur auquel on souhaite déactiver la fatigue</param>
         public static void disabledExthausted(Player.PLAYER player)
         {
             SetExthausted(player, false);
             if (player == Player.PLAYER.P1)
             {
-                _player1ExhaustedFx1.active = true;
-                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face, 1f,true);
+                _player1ExhaustedFx1.active = false;
+                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.HAPPY, CollisionPlayers._player1Face, 1f,false);
             }
             else if (player == Player.PLAYER.P2)
             {
-                _player2ExhaustedFx1.active = true;
-                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.EXHAUSTED, CollisionPlayers._player1Face, 1f,true);
+                _player2ExhaustedFx1.active = false;
+                GameInit.GetEmoteHandler(Player.PLAYER.P2).SetEmote(EmoteHandler.EMOTE_TYPE.HAPPY, CollisionPlayers._player1Face, 1f,false);
             }
         }
         
@@ -193,19 +198,21 @@ namespace Players
         private void Update()
         {
             //Change L'expression du joueur quand il n'a plus de stamina 
-            if (!_isPlayer1Exausted || !_isPlayer2Exausted)
-            {
+            
                 if (Player.GetStamina(Player.PLAYER.P1) < GameInit.GetGameConfig().attack_stamina_decrease)
                     enabledExthausted(Player.PLAYER.P1,CollisionPlayers._player1Face);
                 
                 else if (Player.GetStamina(Player.PLAYER.P2) < GameInit.GetGameConfig().attack_stamina_decrease)
                     enabledExthausted(Player.PLAYER.P2,CollisionPlayers._player2Face);
-            }else {
-                if(_isPlayer1Exausted)
-                    disabledExthausted(Player.PLAYER.P1);
                 else
-                    disabledExthausted(Player.PLAYER.P2);
-            }
+                {
+                    if(_isPlayer1Exausted)
+                        disabledExthausted(Player.PLAYER.P1);
+                    else
+                        disabledExthausted(Player.PLAYER.P2);
+                } 
+                    
+            
             
             if(_canPlayer1Regen)
             {
