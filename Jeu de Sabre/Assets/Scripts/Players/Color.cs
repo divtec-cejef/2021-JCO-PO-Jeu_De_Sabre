@@ -73,19 +73,19 @@ namespace Players
             
             UnityEngine.Color player1TransColor = color1 switch
             {
-                1 => new UnityEngine.Color(255, 0, 0, .03f),
-                2 => new UnityEngine.Color(0, 50, 200, .03f),
-                3 => new UnityEngine.Color(0, 200, 0, .03f),
-                4 => new UnityEngine.Color(255, 0, 220, .03f),
-                5 => new UnityEngine.Color(255, 150, 0, .03f),
-                6 => new UnityEngine.Color(255, 255, 0, .03f),
-                7 => new UnityEngine.Color(0, 0, 0, .03f),
-                8 => new UnityEngine.Color(255, 255, 255, .03f),
-                9 => new UnityEngine.Color(180, 0, 255, .03f),
-                10 => new UnityEngine.Color(70, 30, 0, .03f),
-                11 => new UnityEngine.Color(0, 255, 255, .03f),
-                12 => new UnityEngine.Color(0, 255, 0, .03f),
-                _ => new UnityEngine.Color(255, 0, 0, .03f)
+                1 => new UnityEngine.Color(255, 0, 0),
+                2 => new UnityEngine.Color(0, 50, 200),
+                3 => new UnityEngine.Color(0, 200, 0),
+                4 => new UnityEngine.Color(255, 0, 220),
+                5 => new UnityEngine.Color(255, 150, 0),
+                6 => new UnityEngine.Color(255, 255, 0),
+                7 => new UnityEngine.Color(0, 0, 0),
+                8 => new UnityEngine.Color(255, 255, 255),
+                9 => new UnityEngine.Color(180, 0, 255),
+                10 => new UnityEngine.Color(70, 30, 0),
+                11 => new UnityEngine.Color(0, 255, 255),
+                12 => new UnityEngine.Color(0, 255, 0),
+                _ => new UnityEngine.Color(255, 0, 0)
             };
             //
             // hatTrans1.GetComponent<Renderer>().material.color = player1TransColor;

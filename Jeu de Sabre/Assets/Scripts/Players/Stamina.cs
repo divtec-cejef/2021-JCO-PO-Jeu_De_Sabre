@@ -35,8 +35,6 @@ namespace Players
             
             _player1Stamina = GameInit.GetGameConfig().stamina_amount;
             _player2Stamina = GameInit.GetGameConfig().stamina_amount;
-            _player1ExhaustedFx1.active = false;
-            _player2ExhaustedFx1.active = false;
             _canPlayer1Regen = true;
             _canPlayer2Regen = true;
         }
@@ -192,23 +190,25 @@ namespace Players
         private void Update()
         {
             //Change L'expression du joueur quand il n'a plus de stamina 
-                if (Player.GetStamina(Player.PLAYER.P1) < GameInit.GetGameConfig().attack_stamina_decrease)
-                {
-                    OnExthaustedEnabled(Player.PLAYER.P1, CollisionPlayers._player1Face);
-                }
-                else if (Player.GetStamina(Player.PLAYER.P2) < GameInit.GetGameConfig().attack_stamina_decrease)
-                {
-                    OnExthaustedEnabled(Player.PLAYER.P2, CollisionPlayers._player2Face);
-                }
+            if (Player.GetStamina(Player.PLAYER.P1) < GameInit.GetGameConfig().attack_stamina_decrease)
+            {
+                OnExthaustedEnabled(Player.PLAYER.P1, CollisionPlayers._player1Face);
+            }
+            else if (Player.GetStamina(Player.PLAYER.P2) < GameInit.GetGameConfig().attack_stamina_decrease)
+            {
+                OnExthaustedEnabled(Player.PLAYER.P2, CollisionPlayers._player2Face);
+            }
+            else
+            {
+                if (_isPlayer1Exausted)
+                    OnExthaustedDisabled(Player.PLAYER.P1);
                 else
-                {
-                    if (_isPlayer1Exausted)
-                        OnExthaustedDisabled(Player.PLAYER.P1);
-                    else
-                        OnExthaustedDisabled(Player.PLAYER.P2);
-                }
+                    OnExthaustedDisabled(Player.PLAYER.P2);
+            }
 
-                if(_canPlayer1Regen)
+            print("PLAYER 1 CAN REGEN " + _canPlayer1Regen + " - PLAYER 2 CAN REGEN " + _canPlayer2Regen);
+            
+            if(_canPlayer1Regen)
             {
                 if (_player1Stamina < GameInit.GetGameConfig().stamina_amount /* || !GameInit.getKatanaPlayer1().getParade().getParade()*/)
                 {

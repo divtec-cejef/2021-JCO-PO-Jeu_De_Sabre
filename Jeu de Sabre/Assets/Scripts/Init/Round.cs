@@ -29,6 +29,7 @@ namespace Init
         public bool StopRound()
         {
             CollisionPlayers.attack.disableAttack();
+            GameInit.GetUiUpdater().UpdateRoundHUD(GetRoundWinner(), roundNumber);
             GameInit.GetUiUpdater().SetCountdownText("-");
             CollisionPlayers.canAttack = false;
             ResetRound();
@@ -80,7 +81,6 @@ namespace Init
             updater.SetCountdownText("GO ! ");
             yield return new WaitForSeconds(.5f);
             IntroAnim.startGame = false;
-            
             CollisionPlayers.canAttack = true;
 
             StartCoroutine(RoundTimer());

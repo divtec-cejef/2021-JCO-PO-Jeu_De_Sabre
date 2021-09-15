@@ -205,11 +205,15 @@ public class MenuActions : MonoBehaviour
             Player1.CommandText = "SELECT name_player FROM tb_player WHERE identifiant_player = " + id1 + ";";
             object name1 = Player1.ExecuteScalar();
             
+            Debug.LogError(name1.ToString());
+            
             /*/////////////////////////////////////////////////*/
             
             MySqlCommand Player2 = conn.CreateCommand();
             Player2.CommandText = "SELECT name_player FROM tb_player WHERE identifiant_player = " + id2 + ";";
             object name2 = Player2.ExecuteScalar();
+            
+            Debug.LogError(name2.ToString());
             
             Player.SetPlayerNames(name1.ToString(), name2.ToString());
             
@@ -219,11 +223,15 @@ public class MenuActions : MonoBehaviour
             Color1.CommandText = "SELECT color_player FROM tb_player WHERE identifiant_player = " + id1 + ";";
             object color1 = Color1.ExecuteScalar();
             
+            Debug.LogError(Int32.Parse(color1.ToString()));
+            
             /*/////////////////////////////////////////////////*/
             
             MySqlCommand Color2 = conn.CreateCommand();
             Color2.CommandText = "SELECT color_player FROM tb_player WHERE identifiant_player = " + id2 + ";";
             object color2 = Color2.ExecuteScalar();
+            
+            Debug.LogError(Int32.Parse(color2.ToString()));
             
             Player.SetPlayerColors(Int32.Parse(color1.ToString()), Int32.Parse(color2.ToString()));
         }

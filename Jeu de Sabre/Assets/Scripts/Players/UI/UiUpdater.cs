@@ -41,6 +41,26 @@ namespace Players.UI
         private TextMeshProUGUI player2EndScore;
         
         private bool m_IsSoundPlaying;
+        
+        private GameObject player1Round1Win;
+        private GameObject player1Round1Lose;
+        private GameObject player1Round1Draw;
+        private GameObject player1Round2Win;
+        private GameObject player1Round2Lose;
+        private GameObject player1Round2Draw;
+        private GameObject player1Round3Win;
+        private GameObject player1Round3Lose;
+        private GameObject player1Round3Draw;
+        
+        private GameObject player2Round1Win;
+        private GameObject player2Round1Lose;
+        private GameObject player2Round1Draw;
+        private GameObject player2Round2Win;
+        private GameObject player2Round2Lose;
+        private GameObject player2Round2Draw;
+        private GameObject player2Round3Win;
+        private GameObject player2Round3Lose;
+        private GameObject player2Round3Draw;
 
 
         /// <summary>
@@ -67,7 +87,25 @@ namespace Players.UI
                         TextMeshProUGUI player1EndName, 
                         TextMeshProUGUI player2EndName,
                         TextMeshProUGUI player1EndScore, 
-                        TextMeshProUGUI player2EndScore)
+                        TextMeshProUGUI player2EndScore,
+                        GameObject player1Round1Win,
+                        GameObject player1Round1Lose,
+                        GameObject player1Round1Draw,
+                        GameObject player1Round2Win,
+                        GameObject player1Round2Lose,
+                        GameObject player1Round2Draw,
+                        GameObject player1Round3Win,
+                        GameObject player1Round3Lose,
+                        GameObject player1Round3Draw,
+                        GameObject player2Round1Win,
+                        GameObject player2Round1Lose,
+                        GameObject player2Round1Draw,
+                        GameObject player2Round2Win,
+                        GameObject player2Round2Lose,
+                        GameObject player2Round2Draw,
+                        GameObject player2Round3Win,
+                        GameObject player2Round3Lose,
+                        GameObject player2Round3Draw)
         {
             m_IsSoundPlaying = false;
             Debug.Log("\tRécupération des composants graphiques...");
@@ -91,6 +129,26 @@ namespace Players.UI
             
             this.player1EndScore = player1EndScore;
             this.player2EndScore = player2EndScore;
+
+            this.player1Round1Win = player1Round1Win;
+            this.player1Round1Lose = player1Round1Lose;
+            this.player1Round1Draw = player1Round1Draw;
+            this.player1Round2Win = player1Round2Win;
+            this.player1Round2Lose = player1Round2Lose;
+            this.player1Round2Draw = player1Round2Draw;
+            this.player1Round3Win = player1Round3Win;
+            this.player1Round3Lose = player1Round3Lose;
+            this.player1Round3Draw = player1Round3Draw;
+            
+            this.player2Round1Win = player2Round1Win;
+            this.player2Round1Lose = player2Round1Lose;
+            this.player2Round1Draw = player2Round1Draw;
+            this.player2Round2Win = player2Round2Win;
+            this.player2Round2Lose = player2Round2Lose;
+            this.player2Round2Draw = player2Round2Draw;
+            this.player2Round3Win = player2Round3Win;
+            this.player2Round3Lose = player2Round3Lose;
+            this.player2Round3Draw = player2Round3Draw;
             
             this.player1StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
             this.player2StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
@@ -310,6 +368,65 @@ namespace Players.UI
             player2EndScore.text = Player.GetScore(Player.PLAYER.P2).ToString();
         }
 
+        public void UpdateRoundHUD(Player.PLAYER winner, int roundId)
+        {
+
+            if (winner == Player.PLAYER.P1)
+            {
+                if (roundId == 1)
+                {
+                    player1Round1Win.SetActive(true);
+                    player2Round1Lose.SetActive(true);
+                }
+                else if (roundId == 2)
+                {
+                    player1Round2Win.SetActive(true);
+                    player2Round2Lose.SetActive(true);
+                }
+                else if (roundId == 3)
+                {
+                    player1Round3Win.SetActive(true);
+                    player2Round3Lose.SetActive(true);
+                }
+            }
+            else if (winner == Player.PLAYER.P2)
+            {
+                if (roundId == 1)
+                {
+                    player1Round1Lose.SetActive(true);
+                    player2Round1Win.SetActive(true);
+                }
+                else if (roundId == 2)
+                {
+                    player1Round2Lose.SetActive(true);
+                    player2Round2Win.SetActive(true);
+                }
+                else if (roundId == 3)
+                {
+                    player1Round3Lose.SetActive(true);
+                    player2Round3Win.SetActive(true);
+                }
+            }
+            else
+            {
+                if (roundId == 1)
+                {
+                    player1Round1Draw.SetActive(true);
+                    player2Round1Draw.SetActive(true);
+                }
+                else if (roundId == 2)
+                {
+                    player1Round2Draw.SetActive(true);
+                    player2Round2Draw.SetActive(true);
+                }
+                else if (roundId == 3)
+                {
+                    player1Round3Draw.SetActive(true);
+                    player2Round3Draw.SetActive(true);
+                }
+            }
+        }
+        
         public void RefreshHUD()
         {
             OnHealthUpdate();

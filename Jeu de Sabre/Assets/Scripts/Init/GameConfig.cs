@@ -37,5 +37,27 @@ namespace Init
         public int player_bonus_point;
 
         public float player_bonus_point_speed;
+
+        public float rotation_time_min;
+        
+        public float rotation_time_max;
+
+        public float rotation_angle_min;
+
+        public float rotation_angle_max;
+
+        public float backward_mouvement_chance;
+
+        public float backward_distance_min;
+
+        public float backward_distance_max;
+
+        public float camera_shaking_force_attacker;
+
+        public float camera_shaking_duration_attacker;
+        
+        public float camera_shaking_force_defender;
+
+        public float camera_shaking_duration_defender;
     }
 }

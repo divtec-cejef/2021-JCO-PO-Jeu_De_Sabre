@@ -99,11 +99,11 @@ namespace Collisions
             //if (!canAttack) return;
 
             //Valeur aléatoire
-            float rotationTime  = Random.Range(.05f, .25f);;
-            float rotationAngle  = Random.Range(100, 200);
-            bool backwardMouvement = Random.Range(0, 2) == 0;
-            float backwardTime  = Random.Range(.02f, .1f);
-            float backwardDistance  = Random.Range(1, 10);
+            float rotationTime  = Random.Range(GameInit.GetGameConfig().rotation_time_min, GameInit.GetGameConfig().rotation_time_max);;
+            float rotationAngle  = Random.Range(GameInit.GetGameConfig().rotation_angle_min, GameInit.GetGameConfig().rotation_angle_max);
+            bool backwardMouvement = Random.Range(0, (GameInit.GetGameConfig().backward_mouvement_chance - 1)) == 0;
+            //float backwardTime  = Random.Range(.02f, .1f);
+            float backwardDistance  = Random.Range(GameInit.GetGameConfig().backward_distance_min, GameInit.GetGameConfig().backward_distance_max);
 
             //Hitbox du joueur 1 côté gauche
             var positionP1Left = player1LeftCollisionCheck.position;

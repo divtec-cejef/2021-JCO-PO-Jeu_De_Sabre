@@ -170,6 +170,26 @@ namespace Init
         [SerializeField] private GameObject main2G;
         
         [SerializeField] private GameObject main2D;
+
+        [SerializeField] private GameObject player1Round1Win;
+        [SerializeField] private GameObject player1Round1Lose;
+        [SerializeField] private GameObject player1Round1Draw;
+        [SerializeField] private GameObject player1Round2Win;
+        [SerializeField] private GameObject player1Round2Lose;
+        [SerializeField] private GameObject player1Round2Draw;
+        [SerializeField] private GameObject player1Round3Win;
+        [SerializeField] private GameObject player1Round3Lose;
+        [SerializeField] private GameObject player1Round3Draw;
+        
+        [SerializeField] private GameObject player2Round1Win;
+        [SerializeField] private GameObject player2Round1Lose;
+        [SerializeField] private GameObject player2Round1Draw;
+        [SerializeField] private GameObject player2Round2Win;
+        [SerializeField] private GameObject player2Round2Lose;
+        [SerializeField] private GameObject player2Round2Draw;
+        [SerializeField] private GameObject player2Round3Win;
+        [SerializeField] private GameObject player2Round3Lose;
+        [SerializeField] private GameObject player2Round3Draw;
         
         public static bool isGamePaused;
         
@@ -266,7 +286,25 @@ namespace Init
                                         player1EndName, 
                                         player2EndName, 
                                         player1EndScore, 
-                                        player2EndScore);
+                                        player2EndScore,
+                                        player1Round1Win,
+                                        player1Round1Lose,
+                                        player1Round1Draw,
+                                        player1Round2Win,
+                                        player1Round2Lose,
+                                        player1Round2Draw,
+                                        player1Round3Win,
+                                        player1Round3Lose,
+                                        player1Round3Draw,
+                                        player2Round1Win,
+                                        player2Round1Lose,
+                                        player2Round1Draw,
+                                        player2Round2Win,
+                                        player2Round2Lose,
+                                        player2Round2Draw,
+                                        player2Round3Win,
+                                        player2Round3Lose,
+                                        player2Round3Draw);
             
                 // Initialisation du timer
                 // print("Initialisation du timer...");
