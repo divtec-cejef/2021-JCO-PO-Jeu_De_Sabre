@@ -49,11 +49,15 @@ namespace Players
             if (player == Player.PLAYER.P1)
             {
                 _player1Stamina += value * Time.deltaTime;
+                if (_player1Stamina > GameInit.GetGameConfig().stamina_amount)
+                    _player1Stamina = GameInit.GetGameConfig().stamina_amount;
                 GameInit.GetUiUpdater().OnStaminaUpdate(player);
             }
             else
             {
                 _player2Stamina += value * Time.deltaTime;
+                if (_player2Stamina > GameInit.GetGameConfig().stamina_amount)
+                    _player2Stamina = GameInit.GetGameConfig().stamina_amount;
                 GameInit.GetUiUpdater().OnStaminaUpdate(player);
             }
         }
@@ -212,9 +216,6 @@ namespace Players
             {
                 if (_player1Stamina < GameInit.GetGameConfig().stamina_amount /* || !GameInit.getKatanaPlayer1().getParade().getParade()*/)
                 {
-                    if (_player1Stamina + GameInit.GetGameConfig().stamina_regeneration_rate > GameInit.GetGameConfig().stamina_amount)
-                        _player1Stamina = GameInit.GetGameConfig().stamina_amount;
-                    
                     UpdateStamina(Player.PLAYER.P1, GameInit.GetGameConfig().stamina_regeneration_rate);
                 }
             }
@@ -224,9 +225,6 @@ namespace Players
 
             if (!(_player2Stamina < GameInit.GetGameConfig().stamina_amount)) 
                 return;
-
-            if (_player2Stamina + GameInit.GetGameConfig().stamina_regeneration_rate > GameInit.GetGameConfig().stamina_amount)
-                _player2Stamina = GameInit.GetGameConfig().stamina_amount;
             
             UpdateStamina(Player.PLAYER.P2, GameInit.GetGameConfig().stamina_regeneration_rate);
         }

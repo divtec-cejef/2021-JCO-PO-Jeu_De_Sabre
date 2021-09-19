@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using Init;
 using Mouvements.Parade;
 using TMPro;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
@@ -61,19 +63,24 @@ namespace Players.UI
         private GameObject player2Round3Win;
         private GameObject player2Round3Lose;
         private GameObject player2Round3Draw;
+        
+        private Image player1StaminaIcon;
+        private Image player1NoStam;
+        private Image player1StaminaSliderFill;
+        private Image player1StaminaSliderFrame;
+        
+        private Image player2StaminaIcon;
+        private Image player2NoStam;
+        private Image player2StaminaSliderFill;
+        private Image player2StaminaSliderFrame;
 
+        public bool canP1Blink = true;
+        public bool canP2Blink = true;
+        
 
         /// <summary>
-        /// Constructeur du UiUpdater
+        /// Contructeur de UiUpdater
         /// </summary>
-        /// <param name="player1ScoreText">Le texte correspondant au score du joueur 1</param>
-        /// <param name="player2ScoreText">Le texte correspondant au score du joueur 2</param>
-        /// <param name="player1StaminaSlider">Le slider correspondant a la stamina du joueur 1</param>
-        /// <param name="player2StaminaSlider">Le slider correspondant a la stamina du joueur 2</param>
-        /// <param name="timerText">Le texte correspondant au timer du joueur 1</param>
-        /// <param name="player2TimerText">Le texte correspondant au timer du joueur 2</param>
-        /// <param name="player1ParadeSlider">Le slider correspondant a la slider du joueur 1</param>
-        /// <param name="player2ParadeSlider">Le slider correspondant a la slider du joueur 2</param>
         public UiUpdater(TextMeshProUGUI player1ScoreText, 
                         TextMeshProUGUI player2ScoreText,
                         Slider player1StaminaSlider,
@@ -105,7 +112,15 @@ namespace Players.UI
                         GameObject player2Round2Draw,
                         GameObject player2Round3Win,
                         GameObject player2Round3Lose,
-                        GameObject player2Round3Draw)
+                        GameObject player2Round3Draw,
+                        Image player1StaminaIcon,
+                        Image player1NoStam,
+                        Image player1StaminaSliderFill,
+                        Image player1StaminaSliderFrame,
+                        Image player2StaminaIcon,
+                        Image player2NoStam,
+                        Image player2StaminaSliderFill,
+                        Image player2StaminaSliderFrame)
         {
             m_IsSoundPlaying = false;
             Debug.Log("\tRécupération des composants graphiques...");
@@ -149,6 +164,16 @@ namespace Players.UI
             this.player2Round3Win = player2Round3Win;
             this.player2Round3Lose = player2Round3Lose;
             this.player2Round3Draw = player2Round3Draw;
+
+            this.player1StaminaIcon = player1StaminaIcon;
+            this.player1NoStam = player1NoStam;
+            this.player1StaminaSliderFill = player1StaminaSliderFill;
+            this.player1StaminaSliderFrame = player1StaminaSliderFrame;
+            
+            this.player2StaminaIcon = player2StaminaIcon;
+            this.player2NoStam = player2NoStam;
+            this.player2StaminaSliderFill = player2StaminaSliderFill;
+            this.player2StaminaSliderFrame = player2StaminaSliderFrame;
             
             this.player1StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
             this.player2StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
@@ -167,6 +192,100 @@ namespace Players.UI
             
             countdownText.text = text;
         }
+
+        public IEnumerator DispalayLowStamina(Player.PLAYER player)
+        {
+            if (player == Player.PLAYER.P1) canP1Blink = false;
+            else canP2Blink = false;
+            Image noStam = player == Player.PLAYER.P1 ? player1NoStam : player2NoStam;
+            
+            UnityEngine.Color color = noStam.color;
+            int counter = 0;
+            while (counter < 2)
+            {
+                while (noStam.color.a < 1)
+                {
+                    float fadeAmount = color.a + (8f * Time.deltaTime);
+
+                    color = new UnityEngine.Color(color.r, color.g, color.b, fadeAmount);
+                    noStam.color = color;
+                    yield return null;
+                }
+
+                while (noStam.color.a > 0)
+                {
+                    float fadeAmount = color.a - (8f * Time.deltaTime);
+
+                    color = new UnityEngine.Color(color.r, color.g, color.b, fadeAmount);
+                    noStam.color = color;
+                    yield return null;
+                }
+
+                yield return new WaitForSeconds(0.1f);
+                counter++;
+            }
+            if (player == Player.PLAYER.P1) canP1Blink = true;
+            else canP2Blink = true;
+        }
+        public IEnumerator DispalayLowStaminaFill(Player.PLAYER player)
+        {
+            Image sliderFill = player == Player.PLAYER.P1 ? player1StaminaSliderFill : player2StaminaSliderFill;
+            UnityEngine.Color color = sliderFill.color;
+            int counter = 0;
+            while (counter < 2)
+            {
+                while (sliderFill.color.b > 0)
+                {
+                    float fadeAmount = color.b - (8f * Time.deltaTime);
+
+                    color = new UnityEngine.Color(color.r, fadeAmount, fadeAmount, 1);
+                    sliderFill.color = color;
+                    yield return null;
+                }
+                while (sliderFill.color.b < 1)
+                {
+                    float fadeAmount = color.b + (8f * Time.deltaTime);
+
+                    color = new UnityEngine.Color(color.r, fadeAmount, fadeAmount, 1);
+                    sliderFill.color = color;
+                    yield return null;
+                }
+                yield return new WaitForSeconds(0.1f);
+                counter++;
+            }
+        }
+        public IEnumerator DispalayLowStaminaIcon(Player.PLAYER player)
+        {
+            Image staminaIcon = player == Player.PLAYER.P1 ? player1StaminaIcon : player2StaminaIcon;
+            UnityEngine.Color color = staminaIcon.color;
+            int counter = 0;
+            while (counter < 2)
+            {
+                while (staminaIcon.color.b > 0)
+                {
+                    float fadeAmount = color.b - (8f * Time.deltaTime);
+
+                    color = new UnityEngine.Color(color.r, fadeAmount, fadeAmount, 1);
+                    staminaIcon.color = color;
+                    yield return null;
+                }
+                while (staminaIcon.color.b < 1)
+                {
+                    float fadeAmount = color.b + (8f * Time.deltaTime);
+
+                    color = new UnityEngine.Color(color.r, fadeAmount, fadeAmount, 1);
+                    staminaIcon.color = color;
+                    yield return null;
+                }
+                yield return new WaitForSeconds(0.1f);
+                counter++;
+            }
+        }
+
+        public bool canBlink(Player.PLAYER player)
+        {
+            return player == Player.PLAYER.P1 ? canP1Blink : canP2Blink;
+        }
         
         /// <summary>
         /// Permet de mettre à jour le score
@@ -175,9 +294,9 @@ namespace Players.UI
         public void OnScoreUpdate(Player.PLAYER player)
         {
             if (player == Player.PLAYER.P1)
-                player1ScoreText.text = FormatScore(Player.GetScore(player));
+                player1ScoreText.text = FormatScore(Player.GetScore(player), true);
             else
-                player2ScoreText.text = FormatScore(Player.GetScore(player));
+                player2ScoreText.text = FormatScore(Player.GetScore(player), true);
         }
 
         /// <summary>
@@ -198,7 +317,7 @@ namespace Players.UI
         /// </summary>
         /// <param name="score">Le score a formater</param>
         /// <returns>Le score formaté</returns>
-        private String FormatScore(int score)
+        private String FormatScore(int score, bool addScoreText)
         {
             String scoreString;
         
@@ -217,7 +336,7 @@ namespace Players.UI
                     scoreString = "0" + scoreString;
             }
         
-            return "Score : " + scoreString;
+            return addScoreText ? "Score : " + scoreString : scoreString;
         }
     
         /// <summary>
@@ -358,14 +477,31 @@ namespace Players.UI
                 }
             }
         }
-
+        
+        
+        
         public void OnEndScreenDisplayed()
         {
-            player1EndName.text = Player.GetPlayerName(Player.PLAYER.P1);
-            player2EndName.text = Player.GetPlayerName(Player.PLAYER.P2);
+            // TODO  je faisais que les round gagnées et perdu s'affiche dans le score final
+        
+            string first = Player.GetPlayerName(Player.PLAYER.P1);
+            string second = Player.GetPlayerName(Player.PLAYER.P2);
+            string firstScore = FormatScore(Player.GetScore(Player.PLAYER.P1), false);
+            string secondScore = FormatScore(Player.GetScore(Player.PLAYER.P2), false);
 
-            player1EndScore.text = Player.GetScore(Player.PLAYER.P1).ToString();
-            player2EndScore.text = Player.GetScore(Player.PLAYER.P2).ToString();
+            if (Player.GetScore(Player.PLAYER.P1) < Player.GetScore(Player.PLAYER.P2))
+            {
+                first = Player.GetPlayerName(Player.PLAYER.P2);
+                second = Player.GetPlayerName(Player.PLAYER.P1);
+                firstScore = FormatScore(Player.GetScore(Player.PLAYER.P2), false);
+                secondScore = FormatScore(Player.GetScore(Player.PLAYER.P1), false);
+            }
+                            
+            player1EndName.text = first;
+            player2EndName.text = second;
+
+            player1EndScore.text = firstScore;
+            player2EndScore.text = secondScore;
         }
 
         public void UpdateRoundHUD(Player.PLAYER winner, int roundId)

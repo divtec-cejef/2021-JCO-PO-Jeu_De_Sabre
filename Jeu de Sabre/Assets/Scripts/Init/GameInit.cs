@@ -191,6 +191,16 @@ namespace Init
         [SerializeField] private GameObject player2Round3Lose;
         [SerializeField] private GameObject player2Round3Draw;
         
+        [SerializeField] private Image player1StaminaIcon;
+        [SerializeField] private Image player1NoStam;
+        [SerializeField] private Image player1StaminaSliderFill;
+        [SerializeField] private Image player1StaminaSliderFrame;
+        
+        [SerializeField] private Image player2StaminaIcon;
+        [SerializeField] private Image player2NoStam;
+        [SerializeField] private Image player2StaminaSliderFill;
+        [SerializeField] private Image player2StaminaSliderFrame;
+        
         public static bool isGamePaused;
         
         public static bool isDebugMenuOn;
@@ -198,6 +208,7 @@ namespace Init
         private bool isWarningActive;
         
         private bool isTimerInit;
+        private bool isGameEnd;
      
         // TODO Faut faire une petite transition la, faut faire le stun, faut faire qu'on puisse relancer le jeu a la fin, faut balancer la camera, faut que léo regle ses animation et des déplacements
         
@@ -304,7 +315,15 @@ namespace Init
                                         player2Round2Draw,
                                         player2Round3Win,
                                         player2Round3Lose,
-                                        player2Round3Draw);
+                                        player2Round3Draw,
+                                        player1StaminaIcon,
+                                        player1NoStam,
+                                        player1StaminaSliderFill,
+                                        player1StaminaSliderFrame,
+                                        player2StaminaIcon,
+                                        player2NoStam,
+                                        player2StaminaSliderFill,
+                                        player2StaminaSliderFrame);
             
                 // Initialisation du timer
                 // print("Initialisation du timer...");
@@ -474,6 +493,34 @@ namespace Init
                     Pause();
             }
 
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                if (_updater.canP1Blink)
+                {
+                    StartCoroutine(_updater.DispalayLowStamina(Player.PLAYER.P1));
+                    StartCoroutine(_updater.DispalayLowStaminaFill(Player.PLAYER.P1));
+                    StartCoroutine(_updater.DispalayLowStaminaIcon(Player.PLAYER.P1));
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                if (_updater.canP2Blink)
+                {
+                    StartCoroutine(_updater.DispalayLowStamina(Player.PLAYER.P2));
+                    StartCoroutine(_updater.DispalayLowStaminaFill(Player.PLAYER.P2));
+                    StartCoroutine(_updater.DispalayLowStaminaIcon(Player.PLAYER.P2));
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (isGameEnd)
+                {
+                    isGameEnd = false;
+                    SceneManager.LoadScene("Scenes/MainMenu");
+                }
+            }
+
             // Recalibration du sabre 1 lors de l'appui sur la touche 1
             if (Input.GetKeyDown(KeyCode.Alpha1))
                 KatanaOrientation.SetDefaultCalibration(Player.PLAYER.P1);
@@ -551,7 +598,7 @@ namespace Init
         {
             int currentTime = _round.GetCurrentTimer();
             int timer = currentTime;
-            Player.PLAYER winner = _round.GetRoundWinner();
+            Player.PLAYER winner = _round.GetRoundWinner(true);
 
             if (winner == Player.PLAYER.Other)
             {
@@ -611,6 +658,7 @@ namespace Init
                 cameraTravelling.gameObject.SetActive(true);
                 _katana1.CanMove(false); //
                 _katana2.CanMove(false);
+                isGameEnd = true;
             }
 
             while (blackPannel.GetComponent<Image>().color.a > 0)

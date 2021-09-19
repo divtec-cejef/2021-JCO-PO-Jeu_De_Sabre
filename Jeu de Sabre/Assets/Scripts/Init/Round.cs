@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using Collisions;
 using Players;
 using Players.UI;
@@ -13,8 +14,11 @@ namespace Init
         private bool isRoundFinished;
         public bool isRoundAborted;
 
+        private List<Player.PLAYER> winners;
+
         public Round()
         {
+            winners = new List<Player.PLAYER>();
             currentRoundTimer = GameInit.GetGameConfig().game_time;
             isRoundAborted = false;
             isRoundFinished = false;
@@ -29,7 +33,7 @@ namespace Init
         public bool StopRound()
         {
             CollisionPlayers.attack.disableAttack();
-            GameInit.GetUiUpdater().UpdateRoundHUD(GetRoundWinner(), roundNumber);
+            GameInit.GetUiUpdater().UpdateRoundHUD(GetRoundWinner(false), roundNumber);
             GameInit.GetUiUpdater().SetCountdownText("-");
             CollisionPlayers.canAttack = false;
             ResetRound();
@@ -86,18 +90,21 @@ namespace Init
             StartCoroutine(RoundTimer());
         }
 
-        public Player.PLAYER GetRoundWinner()
+        public Player.PLAYER GetRoundWinner(bool insertPlayer)
         {
             int heal1 = Player.GetPlayerHealth(Player.PLAYER.P1);
             int heal2 = Player.GetPlayerHealth(Player.PLAYER.P2);
+
+            Player.PLAYER winner = Player.PLAYER.Other;
             
             if (heal1 > heal2)
-                return Player.PLAYER.P1;
+                winner = Player.PLAYER.P1;
             if (heal2 > heal1)
-                return Player.PLAYER.P2;
+                winner = Player.PLAYER.P2;
             
             // Egalité au niveau de la vie
-            return Player.PLAYER.Other;
+            if(insertPlayer) winners.Add(winner);
+            return winner;
         }
         
         public void ResetRound()

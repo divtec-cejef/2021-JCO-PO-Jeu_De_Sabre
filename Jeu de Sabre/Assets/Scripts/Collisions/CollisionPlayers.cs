@@ -346,6 +346,12 @@ namespace Collisions
                 else
                 {
                     timerEnd = true;
+                    if (GameInit.GetUiUpdater().canBlink(player))
+                    {
+                        StartCoroutine(GameInit.GetUiUpdater().DispalayLowStamina(player));
+                        StartCoroutine(GameInit.GetUiUpdater().DispalayLowStaminaFill(player));
+                        StartCoroutine(GameInit.GetUiUpdater().DispalayLowStaminaIcon(player));
+                    }
                     // Si un joueur n'a pas assez de stamina
                 }
             }
