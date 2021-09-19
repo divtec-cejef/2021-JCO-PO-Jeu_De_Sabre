@@ -56,6 +56,7 @@ namespace Players
         {
             _player1Health = GameInit.GetGameConfig().player_health_amount;
             _player2Health = GameInit.GetGameConfig().player_health_amount;
+            GameInit.GetUiUpdater().UpdateDamageOverlay();
         }
     }
 }

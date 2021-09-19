@@ -307,7 +307,9 @@ namespace Collisions
 
                     // Mise à jour de la vie du joueur
                     bool playerStatus = Player.DecreasePlayerHealth(player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1, GameInit.GetGameConfig().player_health_decrease);
-
+                    
+                    if(GameInit.GetUiUpdater().canHealthBlink(player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1))
+                        StartCoroutine(GameInit.GetUiUpdater().DisplayHealthWarning(player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1));
                     // Animations et mouvements de l'attaque
                     //attack.onAttack(player, player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1);
 

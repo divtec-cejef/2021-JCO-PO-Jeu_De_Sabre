@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Camera;
+using LayerLab;
 using MySql.Data.MySqlClient;
 using Players;
 using TMPro;
@@ -50,6 +51,8 @@ public class MenuActions : MonoBehaviour
     
     [SerializeField] private Image player1SelectedIcon;
     [SerializeField] private Image player2SelectedIcon;
+
+    [SerializeField] private GameObject errorPanel;
     
     
     
@@ -107,7 +110,10 @@ public class MenuActions : MonoBehaviour
 
     public void StartGame()
     {
-        StartCoroutine(LoadGame());
+        if (GetData())
+            StartCoroutine(LoadGame());
+        else
+            errorPanel.SetActive(true);
     }
 
     private IEnumerator LoadGame()
@@ -116,15 +122,14 @@ public class MenuActions : MonoBehaviour
 
         InscriptionMenu.SetActive(false);
         LoadingMenu.SetActive(true);
-        GetData();
         
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / 0.9f);
-
+    
             LoadingSlider.value = progress;
             LoadingText.text = (int)(progress * 100f) + "%";
-            
+        
             yield return null;
         }
     }
@@ -138,19 +143,29 @@ public class MenuActions : MonoBehaviour
     {
         if (settings)
         {
-            MainMenu.SetActive(true);
+            InscriptionMenu.SetActive(true);
             SettingsMenu.SetActive(false);
             settings = false;
         }
         else
         {
-            MainMenu.SetActive(false);
+            InscriptionMenu.SetActive(false);
             SettingsMenu.SetActive(true);
             settings = true;
 
             MusicSlider.value = musicVolume;
             SfxSlider.value = sfxVolume;
         }
+    }
+
+    public void Retour()
+    {
+        errorPanel.SetActive(false);
+    }
+
+    public void LaunchAnyway()
+    {
+        StartCoroutine(LoadGame());
     }
     
     public void Inscription()
@@ -190,58 +205,63 @@ public class MenuActions : MonoBehaviour
         id2 = Int32.Parse(s);
     }
     
-    public void GetData()
+    public bool GetData()
     {
     
         string connStr =
             "Database=lacourseauxtrophees;Server=127.0.0.1;Uid=root;Password=Admlocal1;pooling=false;CharSet=utf8;port=3306";
         MySqlConnection conn = new MySqlConnection(connStr);
-    
+
         try
         {
-        
+
             conn.Open();
             MySqlCommand Player1 = conn.CreateCommand();
             Player1.CommandText = "SELECT name_player FROM tb_player WHERE identifiant_player = " + id1 + ";";
             object name1 = Player1.ExecuteScalar();
-            
+
             Debug.LogError(name1.ToString());
-            
+
             /*/////////////////////////////////////////////////*/
-            
+
             MySqlCommand Player2 = conn.CreateCommand();
             Player2.CommandText = "SELECT name_player FROM tb_player WHERE identifiant_player = " + id2 + ";";
             object name2 = Player2.ExecuteScalar();
-            
+
             Debug.LogError(name2.ToString());
-            
+
             Player.SetPlayerNames(name1.ToString(), name2.ToString());
-            
+
             /*/////////////////////////////////////////////////*/
-            
+
             MySqlCommand Color1 = conn.CreateCommand();
             Color1.CommandText = "SELECT color_player FROM tb_player WHERE identifiant_player = " + id1 + ";";
             object color1 = Color1.ExecuteScalar();
-            
+
             Debug.LogError(Int32.Parse(color1.ToString()));
-            
+
             /*/////////////////////////////////////////////////*/
-            
+
             MySqlCommand Color2 = conn.CreateCommand();
             Color2.CommandText = "SELECT color_player FROM tb_player WHERE identifiant_player = " + id2 + ";";
             object color2 = Color2.ExecuteScalar();
-            
+
             Debug.LogError(Int32.Parse(color2.ToString()));
-            
+
             Player.SetPlayerColors(Int32.Parse(color1.ToString()), Int32.Parse(color2.ToString()));
         }
         catch (Exception ex)
         {
             print("Id Incorrecte - " + ex);
+            return false;
         }
-        conn.Close();
-        print("Done.");
-    
+        finally
+        {
+            conn.Close();
+            print("Done.");
+        }
+
+        return true;
     }
     
     /* --------- Personnalisation du joueur --------- */

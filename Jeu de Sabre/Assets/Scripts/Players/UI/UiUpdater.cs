@@ -73,13 +73,29 @@ namespace Players.UI
         private Image player2NoStam;
         private Image player2StaminaSliderFill;
         private Image player2StaminaSliderFrame;
+        
+        
+        private Image player1DamageOverlay;
+        private Image player2DamageOverlay;
+        
+        private Image player1HealthDamage;
+        private Image player2HealthDamage;
+        
+        
+        private GameObject player1RoundEnd;
+        private GameObject player2RoundEnd;
+
+        private GameObject finDuRound;
 
         public bool canP1Blink = true;
         public bool canP2Blink = true;
+
+        public bool canP1HealBlink = true;
+        public bool canP2HealBlink = true;
         
 
         /// <summary>
-        /// Contructeur de UiUpdater
+        /// Constructeur de UiUpdater
         /// </summary>
         public UiUpdater(TextMeshProUGUI player1ScoreText, 
                         TextMeshProUGUI player2ScoreText,
@@ -120,7 +136,14 @@ namespace Players.UI
                         Image player2StaminaIcon,
                         Image player2NoStam,
                         Image player2StaminaSliderFill,
-                        Image player2StaminaSliderFrame)
+                        Image player2StaminaSliderFrame,
+                        Image player1DamageOverlay,
+                        Image player2DamageOverlay,
+                        Image player1HealthDamage,
+                        Image player2HealthDamage,
+                        GameObject player1RoundEnd,
+                        GameObject player2RoundEnd,
+                        GameObject finDuRound)
         {
             m_IsSoundPlaying = false;
             Debug.Log("\tRécupération des composants graphiques...");
@@ -174,6 +197,17 @@ namespace Players.UI
             this.player2NoStam = player2NoStam;
             this.player2StaminaSliderFill = player2StaminaSliderFill;
             this.player2StaminaSliderFrame = player2StaminaSliderFrame;
+
+            this.player1DamageOverlay = player1DamageOverlay;
+            this.player2DamageOverlay = player2DamageOverlay;
+
+            this.player1HealthDamage = player1HealthDamage;
+            this.player2HealthDamage = player2HealthDamage;
+
+            this.player1RoundEnd = player1RoundEnd;
+            this.player2RoundEnd = player2RoundEnd;
+
+            this.finDuRound = finDuRound;
             
             this.player1StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
             this.player2StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
@@ -287,6 +321,11 @@ namespace Players.UI
             return player == Player.PLAYER.P1 ? canP1Blink : canP2Blink;
         }
         
+        public bool canHealthBlink(Player.PLAYER player)
+        {
+            return player == Player.PLAYER.P1 ? canP1HealBlink : canP2HealBlink;
+        }
+        
         /// <summary>
         /// Permet de mettre à jour le score
         /// </summary>
@@ -328,7 +367,7 @@ namespace Players.UI
                 scoreString = "0" + score;
 
                 if (score >= 100) 
-                    return "Score : " + scoreString;
+                    return addScoreText ? "Score : " + scoreString : scoreString;
             
                 scoreString = "0" + scoreString;
             
@@ -352,8 +391,56 @@ namespace Players.UI
         {
             player1HealthBar.value = Player.GetPlayerHealth(Player.PLAYER.P1);
             player2HealthBar.value = Player.GetPlayerHealth(Player.PLAYER.P2);
+            
+            UpdateDamageOverlay();
         }
-    
+
+        public void UpdateDamageOverlay()
+        {
+            player1DamageOverlay.color = new UnityEngine.Color(
+                                        player1DamageOverlay.color.r, 
+                                        player1DamageOverlay.color.g,
+                                        player1DamageOverlay.color.b, 
+                                        1f - (Player.GetPlayerHealth(Player.PLAYER.P1) / (float)GameInit.GetGameConfig().player_health_amount));
+            
+            player2DamageOverlay.color = new UnityEngine.Color(
+                                        player2DamageOverlay.color.r, 
+                                        player2DamageOverlay.color.g,
+                                        player2DamageOverlay.color.b, 
+                                        1f - (Player.GetPlayerHealth(Player.PLAYER.P2) / (float)GameInit.GetGameConfig().player_health_amount));
+
+        }
+
+        public IEnumerator DisplayHealthWarning(Player.PLAYER player)
+        {
+            if (player == Player.PLAYER.P1) canP1HealBlink = false;
+            else canP2HealBlink = false;
+            Image noStam = player == Player.PLAYER.P1 ? player1HealthDamage : player2HealthDamage;
+            
+            UnityEngine.Color color = noStam.color;
+            int counter = 0;
+            
+            while (noStam.color.a < 1)
+            {
+                float fadeAmount = color.a + (8f * Time.deltaTime);
+
+                color = new UnityEngine.Color(color.r, color.g, color.b, fadeAmount);
+                noStam.color = color;
+                yield return null;
+            }
+
+            while (noStam.color.a > 0)
+            {
+                float fadeAmount = color.a - (8f * Time.deltaTime);
+
+                color = new UnityEngine.Color(color.r, color.g, color.b, fadeAmount);
+                noStam.color = color;
+                yield return null;
+            }
+            if (player == Player.PLAYER.P1) canP1HealBlink = true;
+            else canP2HealBlink = true;
+        }
+        
         // /// <summary>
         // /// Permet de formatter le timer au format 00:00
         // /// </summary>
@@ -491,6 +578,12 @@ namespace Players.UI
 
             if (Player.GetScore(Player.PLAYER.P1) < Player.GetScore(Player.PLAYER.P2))
             {
+                Vector3 pos1 = player1RoundEnd.GetComponent<RectTransform>().localPosition;
+                Vector3 pos2 = player2RoundEnd.GetComponent<RectTransform>().localPosition;
+
+                player1RoundEnd.GetComponent<RectTransform>().localPosition = pos2;
+                player2RoundEnd.GetComponent<RectTransform>().localPosition = pos1;
+                
                 first = Player.GetPlayerName(Player.PLAYER.P2);
                 second = Player.GetPlayerName(Player.PLAYER.P1);
                 firstScore = FormatScore(Player.GetScore(Player.PLAYER.P2), false);

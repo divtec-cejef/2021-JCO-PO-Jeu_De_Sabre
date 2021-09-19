@@ -200,6 +200,38 @@ namespace Init
         [SerializeField] private Image player2NoStam;
         [SerializeField] private Image player2StaminaSliderFill;
         [SerializeField] private Image player2StaminaSliderFrame;
+
+        [SerializeField] private Image player1DamageOverlay;
+        [SerializeField] private Image player2DamageOverlay;
+
+        [SerializeField] private Image player1HealthDamage;
+        [SerializeField] private Image player2HealthDamage;
+        
+        [SerializeField] private GameObject player1Round1WinEnd;
+        [SerializeField] private GameObject player1Round1LoseEnd;
+        [SerializeField] private GameObject player1Round1DrawEnd;
+        [SerializeField] private GameObject player1Round2WinEnd;
+        [SerializeField] private GameObject player1Round2LoseEnd;
+        [SerializeField] private GameObject player1Round2DrawEnd;
+        [SerializeField] private GameObject player1Round3WinEnd;
+        [SerializeField] private GameObject player1Round3LoseEnd;
+        [SerializeField] private GameObject player1Round3DrawEnd;
+        
+        [SerializeField] private GameObject player2Round1WinEnd;
+        [SerializeField] private GameObject player2Round1LoseEnd;
+        [SerializeField] private GameObject player2Round1DrawEnd;
+        [SerializeField] private GameObject player2Round2WinEnd;
+        [SerializeField] private GameObject player2Round2LoseEnd;
+        [SerializeField] private GameObject player2Round2DrawEnd;
+        [SerializeField] private GameObject player2Round3WinEnd;
+        [SerializeField] private GameObject player2Round3LoseEnd;
+        [SerializeField] private GameObject player2Round3DrawEnd;
+
+        [SerializeField] private GameObject player1RoundEnd;
+        [SerializeField] private GameObject player2RoundEnd;
+
+        [SerializeField] private GameObject finDuRound;
+        [SerializeField] private Image roundTransition;
         
         public static bool isGamePaused;
         
@@ -323,7 +355,14 @@ namespace Init
                                         player2StaminaIcon,
                                         player2NoStam,
                                         player2StaminaSliderFill,
-                                        player2StaminaSliderFrame);
+                                        player2StaminaSliderFrame,
+                                        player1DamageOverlay,
+                                        player2DamageOverlay,
+                                        player1HealthDamage,
+                                        player2HealthDamage,
+                                        player1RoundEnd,
+                                        player2RoundEnd,
+                                        finDuRound);
             
                 // Initialisation du timer
                 // print("Initialisation du timer...");
@@ -586,13 +625,57 @@ namespace Init
 
         public void OnTimerEnd()
         {
-            bool flag = _round.StopRound();
             CollisionPlayers.timerEnd = true;
+            StartCoroutine(DisplayRoundEnd());
+        }
+        
+        private IEnumerator DisplayRoundEnd()
+        {
+            finDuRound.SetActive(true);
+            bool flag = _round.StopRound();
+
+            Color color = finDuRound.GetComponent<TextMeshProUGUI>().color;
+            
+            while (finDuRound.GetComponent<TextMeshProUGUI>().color.a < 1)
+            {
+                float fadeAmount = color.a + (0.8f * Time.deltaTime);
+
+                color = new Color(color.r, color.g, color.b, fadeAmount);
+                roundTransition.color = new Color(roundTransition.color.r, roundTransition.color.g, roundTransition.color.b, fadeAmount);
+
+                finDuRound.GetComponent<TextMeshProUGUI>().color = color;
+                yield return null;
+            }
+            
+            
             if(flag)
                 StartCoroutine(FadeToBlack(true));
             else
                 StartCoroutine(PrepareNextRound());
         }
+
+        private IEnumerator DisableRoundEnd(bool restart)
+        {
+            Color color = finDuRound.GetComponent<TextMeshProUGUI>().color;
+
+            while (finDuRound.GetComponent<TextMeshProUGUI>().color.a > 0)
+            {
+                float fadeAmount = color.a - (0.8f * Time.deltaTime);
+
+                color = new Color(color.r, color.g, color.b, fadeAmount);
+                finDuRound.GetComponent<TextMeshProUGUI>().color = color;
+                roundTransition.color = new Color(roundTransition.color.r, roundTransition.color.g, roundTransition.color.b, fadeAmount);
+                yield return null;
+            }
+            finDuRound.SetActive(false);
+            yield return new WaitForSeconds(0.8f);
+
+            if (restart)
+            {
+                _round.StartNextRound();
+            }
+        }
+
 
         IEnumerator AddBonusPoint(bool startNext)
         {
@@ -600,6 +683,8 @@ namespace Init
             int timer = currentTime;
             Player.PLAYER winner = _round.GetRoundWinner(true);
 
+
+            
             if (winner == Player.PLAYER.Other)
             {
                 
@@ -616,13 +701,16 @@ namespace Init
                 Health.Reset();
                 _updater.RefreshHUD();
             }
-            if(startNext)
-                _round.StartNextRound();
+
+            if (startNext)
+            {
+                StartCoroutine(DisableRoundEnd(true));
+            }
         }
         
         IEnumerator PrepareNextRound()
         {
-            //yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1.5f);
             playerAxis.transform.localPosition = Vector3.zero;
             playerAxis.transform.localRotation = new Quaternion(0,0,0,0);
             
@@ -659,6 +747,13 @@ namespace Init
                 _katana1.CanMove(false); //
                 _katana2.CanMove(false);
                 isGameEnd = true;
+                StartCoroutine(DisableRoundEnd(false));
+                yield return new WaitForSeconds(0.8f);
+
+                for (int i = 0; i < 3; i++)
+                {
+                    UpdateRoundHUD(_round.winners[i], i+1);
+                }
             }
 
             while (blackPannel.GetComponent<Image>().color.a > 0)
@@ -702,6 +797,65 @@ namespace Init
             // Déconnexion des manettes à la fermeture du jeu
             PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer1Controller());
             PSMoveAPI.psmove_disconnect(_controllerHandler.GetPlayer2Controller());
+        }
+        
+        public void UpdateRoundHUD(Player.PLAYER winner, int roundId)
+        {
+
+            if (winner == Player.PLAYER.P1)
+            {
+                if (roundId == 1)
+                {
+                    player1Round1WinEnd.SetActive(true);
+                    player2Round1LoseEnd.SetActive(true);
+                }
+                else if (roundId == 2)
+                {
+                    player1Round2WinEnd.SetActive(true);
+                    player2Round2LoseEnd.SetActive(true);
+                }
+                else if (roundId == 3)
+                {
+                    player1Round3WinEnd.SetActive(true);
+                    player2Round3LoseEnd.SetActive(true);
+                }
+            }
+            else if (winner == Player.PLAYER.P2)
+            {
+                if (roundId == 1)
+                {
+                    player1Round1LoseEnd.SetActive(true);
+                    player2Round1WinEnd.SetActive(true);
+                }
+                else if (roundId == 2)
+                {
+                    player1Round2LoseEnd.SetActive(true);
+                    player2Round2WinEnd.SetActive(true);
+                }
+                else if (roundId == 3)
+                {
+                    player1Round3LoseEnd.SetActive(true);
+                    player2Round3WinEnd.SetActive(true);
+                }
+            }
+            else
+            {
+                if (roundId == 1)
+                {
+                    player1Round1DrawEnd.SetActive(true);
+                    player2Round1DrawEnd.SetActive(true);
+                }
+                else if (roundId == 2)
+                {
+                    player1Round2DrawEnd.SetActive(true);
+                    player2Round2DrawEnd.SetActive(true);
+                }
+                else if (roundId == 3)
+                {
+                    player1Round3DrawEnd.SetActive(true);
+                    player2Round3DrawEnd.SetActive(true);
+                }
+            }
         }
     }
 }

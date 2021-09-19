@@ -14,7 +14,7 @@ namespace Init
         private bool isRoundFinished;
         public bool isRoundAborted;
 
-        private List<Player.PLAYER> winners;
+        public List<Player.PLAYER> winners;
 
         public Round()
         {
@@ -32,6 +32,7 @@ namespace Init
 
         public bool StopRound()
         {
+            print("GROSSE PUTE");
             CollisionPlayers.attack.disableAttack();
             GameInit.GetUiUpdater().UpdateRoundHUD(GetRoundWinner(false), roundNumber);
             GameInit.GetUiUpdater().SetCountdownText("-");

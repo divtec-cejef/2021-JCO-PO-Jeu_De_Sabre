@@ -8,18 +8,19 @@ public class IntroAnim : MonoBehaviour
 {
     public float Strength;
     public static bool startGame;
+    private Vector3 basicSize;
 
 
     public IEnumerator PulseEffect()
     {
-        Vector3 resetSize = transform.localScale;
+        basicSize = transform.localScale;
         /*while (true)
         {*/
             // Loops forever
             transform.gameObject.GetComponent<TextMeshProUGUI>().enabled = true;
             while (startGame)
             {
-                transform.localScale = resetSize;
+                transform.localScale = basicSize;
                 float timer = 0f;
                 // Zoom in
                 while (timer < 1f)
@@ -35,6 +36,9 @@ public class IntroAnim : MonoBehaviour
                 }
             }
             transform.gameObject.GetComponent<TextMeshProUGUI>().enabled = false;
+            
+            
+            transform.localScale = basicSize;
             yield return null;
         //}
     }
