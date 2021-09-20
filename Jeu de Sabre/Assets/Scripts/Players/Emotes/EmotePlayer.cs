@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Players;
 using UnityEngine;
 
 public class EmotePlayer : MonoBehaviour
@@ -16,6 +18,8 @@ public class EmotePlayer : MonoBehaviour
     [SerializeField] private Material happy_2;
     [SerializeField] private Material happy_3;
     [SerializeField] private Material exhausted_1;
+    [SerializeField] private  GameObject player1Menacing;
+    [SerializeField] private  GameObject player2Menacing;
     
     private static Material _sad_1;
     private static Material _sad_2;
@@ -30,6 +34,8 @@ public class EmotePlayer : MonoBehaviour
     private static Material _happy_2;
     private static Material _happy_3;
     private static Material _exhausted_1;
+    private static GameObject _player1Menacing;
+    private static GameObject _player2Menacing;
 
     private void Awake()
     {
@@ -51,6 +57,9 @@ public class EmotePlayer : MonoBehaviour
         _happy_3 = happy_3;
 
         _exhausted_1 = exhausted_1;
+
+        _player1Menacing = player1Menacing;
+        _player2Menacing = player2Menacing;
     }
 
     public static List<Material> GetSadEmote()
@@ -98,5 +107,18 @@ public class EmotePlayer : MonoBehaviour
         List<Material> exhausted = new List<Material>();
         exhausted.Add(_exhausted_1);
         return exhausted;
+    }
+
+    public static void SetMenacingEffect(Player.PLAYER player,bool isActive)
+    {
+        
+        if(player == Player.PLAYER.P1)
+        {
+            _player1Menacing.active = isActive;
+        }else if (player == Player.PLAYER.P2)
+        {
+            _player2Menacing.active = isActive;
+        }
+
     }
 }

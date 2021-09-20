@@ -224,7 +224,7 @@ namespace Collisions
                     roteTimer = 0f;
                     Travelling.anglesToRotate = Vector3.zero;
                     timerEnd = true;
-                    attack.disableAttack();
+                    //attack.disableAttack();
                 }
             }
 
@@ -238,9 +238,12 @@ namespace Collisions
                     backTimer = 0f;
                     Travelling.distanceToMove = Vector3.zero;
                     timerEnd = true;
-                    attack.disableAttack();
+                    
                 }
                 
+            }
+            if(timerEnd){
+                attack.disableAttack();
             }
 
         }
