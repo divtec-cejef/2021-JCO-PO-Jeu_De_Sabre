@@ -58,8 +58,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -107,29 +109,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 1680}
+      Script: {instanceID: 2352}
     - Class: 114
-      Script: {instanceID: 1826}
+      Script: {instanceID: 2498}
     - Class: 114
-      Script: {instanceID: 1926}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 2206}
+      Script: {instanceID: 2876}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 2722}
+      Script: {instanceID: 3392}
     - Class: 114
-      Script: {instanceID: 2766}
+      Script: {instanceID: 3436}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3746}
     - Class: 114
-      Script: {instanceID: 3912}
+      Script: {instanceID: 4580}
     - Class: 114
-      Script: {instanceID: 4314}
+      Script: {instanceID: 4982}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 5000}
     - Class: 114
-      Script: {instanceID: 4628}
+      Script: {instanceID: 5296}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -204,91 +206,91 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 1768}
+      Script: {instanceID: 2440}
     - Class: 114
-      Script: {instanceID: 1826}
+      Script: {instanceID: 2498}
     - Class: 114
-      Script: {instanceID: 1926}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 1938}
+      Script: {instanceID: 2608}
     - Class: 114
-      Script: {instanceID: 2078}
+      Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 2104}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 2146}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 2154}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 2170}
+      Script: {instanceID: 2840}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 2384}
+      Script: {instanceID: 3054}
     - Class: 114
-      Script: {instanceID: 2404}
+      Script: {instanceID: 3074}
     - Class: 114
-      Script: {instanceID: 2436}
+      Script: {instanceID: 3106}
     - Class: 114
-      Script: {instanceID: 2506}
+      Script: {instanceID: 3176}
     - Class: 114
-      Script: {instanceID: 2536}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 2722}
+      Script: {instanceID: 3392}
     - Class: 114
-      Script: {instanceID: 2766}
+      Script: {instanceID: 3436}
     - Class: 114
-      Script: {instanceID: 2786}
+      Script: {instanceID: 3456}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 3524}
     - Class: 114
-      Script: {instanceID: 3040}
+      Script: {instanceID: 3710}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3746}
     - Class: 114
-      Script: {instanceID: 3150}
+      Script: {instanceID: 3820}
     - Class: 114
-      Script: {instanceID: 3226}
+      Script: {instanceID: 3896}
     - Class: 114
-      Script: {instanceID: 3282}
-    - Class: 114
-      Script: {instanceID: 3546}
-    - Class: 114
-      Script: {instanceID: 3576}
-    - Class: 114
-      Script: {instanceID: 3646}
-    - Class: 114
-      Script: {instanceID: 3678}
-    - Class: 114
-      Script: {instanceID: 3786}
-    - Class: 114
-      Script: {instanceID: 3868}
-    - Class: 114
-      Script: {instanceID: 3926}
-    - Class: 114
-      Script: {instanceID: 4164}
+      Script: {instanceID: 3952}
     - Class: 114
       Script: {instanceID: 4214}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 4244}
     - Class: 114
-      Script: {instanceID: 4604}
+      Script: {instanceID: 4314}
     - Class: 114
-      Script: {instanceID: 4836}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4908}
+      Script: {instanceID: 4454}
     - Class: 114
-      Script: {instanceID: 4926}
+      Script: {instanceID: 4536}
     - Class: 114
-      Script: {instanceID: 5016}
+      Script: {instanceID: 4594}
     - Class: 114
-      Script: {instanceID: 5092}
+      Script: {instanceID: 4832}
     - Class: 114
-      Script: {instanceID: 5132}
+      Script: {instanceID: 4882}
+    - Class: 114
+      Script: {instanceID: 5208}
+    - Class: 114
+      Script: {instanceID: 5272}
+    - Class: 114
+      Script: {instanceID: 5504}
+    - Class: 114
+      Script: {instanceID: 5576}
+    - Class: 114
+      Script: {instanceID: 5594}
+    - Class: 114
+      Script: {instanceID: 5684}
+    - Class: 114
+      Script: {instanceID: 5760}
+    - Class: 114
+      Script: {instanceID: 5800}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -476,7 +478,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 1e2337bda2752b2d1e20c28a43336a37
+      Hash: 47244e30b0e30271ca766bb8c2756ca6
     assemblyName: Assembly-CSharp.dll
     namespaceName: Init
     className: Round
@@ -878,7 +880,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 4bd0d0eee16af11c8033d623ef33fd3e
+      Hash: e2e67298a5cffc42b3a5660af6312bd0
     assemblyName: Assembly-CSharp.dll
     namespaceName: Init
     className: GameInit
@@ -1190,7 +1192,7 @@ ScriptsOnlyBuild:
     className: CinemachineIndependentImpulseListener
   - hash:
       serializedVersion: 2
-      Hash: b8019004e63cb83e25fc31737b20ef38
+      Hash: ad8bc0840f5071fd14fae357a2867b96
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuActions
@@ -1600,4 +1602,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Map.unity
-  playerPath: F:/KatanaNoTatakai-7.9 pixels/Jeu de Sabre.exe
+  playerPath: F:/KatanaNoTatakai-8.0/Jeu de Sabre.exe

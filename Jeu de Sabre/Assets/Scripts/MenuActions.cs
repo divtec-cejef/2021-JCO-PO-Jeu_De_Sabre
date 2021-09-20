@@ -61,8 +61,8 @@ public class MenuActions : MonoBehaviour
     private bool settings = false;
     private bool inscription = false;
 
-    private int player1Color = 1;
-    private int player2Color = 2;
+    private int player1Color = 2;
+    private int player2Color = 1;
 
     public static int id1;
     public static int id2;
@@ -75,6 +75,11 @@ public class MenuActions : MonoBehaviour
 
     private void Awake()
     {
+        id1 = Int32.MinValue;
+        id2 = Int32.MinValue;
+        player1Color = 1;
+        player1Color = 2;
+    
         player1Buttons = new List<Button>();
         player1Buttons.Add(player1Red);
         player1Buttons.Add(player1Blue);
@@ -138,7 +143,7 @@ public class MenuActions : MonoBehaviour
     {
         Application.Quit();
     }
-
+    
     public void Settings()
     {
         if (settings)
@@ -197,12 +202,26 @@ public class MenuActions : MonoBehaviour
 
     public void SetName1(string s)
     {
-        id1 = Int32.Parse(s);
+        try
+        {
+            id1 = Int32.Parse(s);
+        }
+        catch (Exception e)
+        {
+            id1 = Int32.MinValue;
+        }
     }
 
     public void SetName2(string s)
     {
-        id2 = Int32.Parse(s);
+        try
+        {
+            id2 = Int32.Parse(s);
+        }
+        catch (Exception e)
+        {
+            id2 = Int32.MinValue;
+        }
     }
     
     public bool GetData()

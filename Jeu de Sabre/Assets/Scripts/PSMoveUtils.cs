@@ -11,7 +11,7 @@ public class PSMoveUtils
     /// </summary>
     /// <param name="player">Le joueur auquel on souhaite changer la couleur</param>
     /// <param name="color">La nouvelle couleur</param>
-    [Obsolete("Veuillez utiliser MoveAPI.SetLED")]
+    [Obsolete("Veuillez ne pas utiliser cette méthode afin de ne pas perturber le fonctionnement de la caméra")]
     public static void SetLed(Player.PLAYER player, Color color)
     {
         if (player == Player.PLAYER.P1)
@@ -30,16 +30,15 @@ public class PSMoveUtils
     /// </summary>
     /// <param name="player">Le joueur auquel on souhaite faire vibrer la manette</param>
     /// <param name="level">Le niveau de vibration</param>
-    [Obsolete("Veuillez utiliser MoveAPI.SetRumble")]
     public static void SetVibration(Player.PLAYER player, System.Byte level)
     {
         if (player == Player.PLAYER.P1)
         {
-            //PSMoveAPI.psmove_set_rumble(GameInit.GetControllerHandler().GetPlayer1Controller(), level);
+            PSMoveAPI.psmove_set_rumble(GameInit.GetControllerHandler().GetPlayer1Controller(), level);
         }
         else
         {
-            //PSMoveAPI.psmove_set_rumble(GameInit.GetControllerHandler().GetPlayer2Controller(), level);
+            PSMoveAPI.psmove_set_rumble(GameInit.GetControllerHandler().GetPlayer2Controller(), level);
         }
     }
 }

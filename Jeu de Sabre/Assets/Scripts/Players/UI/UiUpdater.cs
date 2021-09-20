@@ -82,8 +82,13 @@ namespace Players.UI
         private Image player2HealthDamage;
         
         
+        private TextMeshProUGUI player1ScorePlusPrefab;
+        private TextMeshProUGUI player2ScorePlusPrefab;
+        
         private GameObject player1RoundEnd;
         private GameObject player2RoundEnd;
+
+        private GameObject gameInit;
 
         private GameObject finDuRound;
 
@@ -143,7 +148,10 @@ namespace Players.UI
                         Image player2HealthDamage,
                         GameObject player1RoundEnd,
                         GameObject player2RoundEnd,
-                        GameObject finDuRound)
+                        GameObject finDuRound,
+                        GameObject gameInit/*,
+                        TextMeshProUGUI player1ScorePlusPrefab,
+                        TextMeshProUGUI player2ScorePlusPrefab*/)
         {
             m_IsSoundPlaying = false;
             Debug.Log("\tRécupération des composants graphiques...");
@@ -156,6 +164,9 @@ namespace Players.UI
             this.timerText = timerText;
             this.countdownText = countdownText;
 
+            //this.player1ScorePlusPrefab = player1ScorePlusPrefab;
+            //this.player2ScorePlusPrefab = player2ScorePlusPrefab;
+            
             this.player1ParadeSlider = player1ParadeSlider;
             this.player2ParadeSlider = player2ParadeSlider;
 
@@ -208,7 +219,7 @@ namespace Players.UI
             this.player2RoundEnd = player2RoundEnd;
 
             this.finDuRound = finDuRound;
-            
+            this.gameInit = gameInit;
             this.player1StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
             this.player2StaminaSlider.maxValue = GameInit.GetGameConfig().stamina_amount;
         
@@ -324,6 +335,11 @@ namespace Players.UI
         public bool canHealthBlink(Player.PLAYER player)
         {
             return player == Player.PLAYER.P1 ? canP1HealBlink : canP2HealBlink;
+        }
+
+        public void PlayerScorePlusAnimation(Player.PLAYER player, string text)
+        {
+            gameInit.GetComponent<GameInit>().PlayScorePlusAnimation(player, text);
         }
         
         /// <summary>

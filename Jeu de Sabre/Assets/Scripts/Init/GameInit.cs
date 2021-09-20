@@ -230,8 +230,17 @@ namespace Init
         [SerializeField] private GameObject player1RoundEnd;
         [SerializeField] private GameObject player2RoundEnd;
 
+        [SerializeField] private GameObject player1ScorePlusPrefab;
+        [SerializeField] private TextMeshProUGUI player1ScorePlusPrefabText;
+        [SerializeField] private GameObject player2ScorePlusPrefab;
+        [SerializeField] private TextMeshProUGUI player2ScorePlusPrefabText;
+        [SerializeField] private GameObject playerScorePlusParent;
+        
         [SerializeField] private GameObject finDuRound;
         [SerializeField] private Image roundTransition;
+
+        [SerializeField] private GameObject player1LightSaber;
+        [SerializeField] private GameObject player2LightSaber;
         
         public static bool isGamePaused;
         
@@ -247,6 +256,9 @@ namespace Init
         
         private void Awake()
         {
+            Player.ReinitScore(Player.PLAYER.P1);
+            Player.ReinitScore(Player.PLAYER.P2);
+            
             player1Name.text = Player.GetPlayerName(Player.PLAYER.P1);
             player2Name.text = Player.GetPlayerName(Player.PLAYER.P2);
             
@@ -362,7 +374,10 @@ namespace Init
                                         player2HealthDamage,
                                         player1RoundEnd,
                                         player2RoundEnd,
-                                        finDuRound);
+                                        finDuRound,
+                                        gameObject/*,
+                                        player1ScorePlusPrefab,
+                                        player2ScorePlusPrefab*/);
             
                 // Initialisation du timer
                 // print("Initialisation du timer...");
@@ -532,8 +547,38 @@ namespace Init
                     Pause();
             }
 
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (player1LightSaber.activeInHierarchy)
+                {
+                    player1LightSaber.SetActive(false);
+                    player1KatanaObject.GetComponent<MeshRenderer>().enabled = true;
+                }
+                else
+                {
+                    player1LightSaber.SetActive(true);
+                    player1KatanaObject.GetComponent<MeshRenderer>().enabled = false;
+                }
+            }
+            
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                if (player2LightSaber.activeInHierarchy)
+                {
+                    player2LightSaber.SetActive(false);
+                    player2KatanaObject.GetComponent<MeshRenderer>().enabled = true;
+                }
+                else
+                {
+                    player2LightSaber.SetActive(true);
+                    player2KatanaObject.GetComponent<MeshRenderer>().enabled = false;
+                }
+            }
+            
             if (Input.GetKeyDown(KeyCode.A))
             {
+                //PlayScorePlusAnimation(Player.PLAYER.P1);
+
                 if (_updater.canP1Blink)
                 {
                     StartCoroutine(_updater.DispalayLowStamina(Player.PLAYER.P1));
@@ -695,6 +740,7 @@ namespace Init
                 {
                     timer--;
                     _updater.OnTimerUpdate(timer);
+                    GameInit.GetUiUpdater().PlayerScorePlusAnimation(winner, _config.player_bonus_point.ToString());
                     Player.UpdatePlayerScore(winner, _config.player_bonus_point);
                     yield return new WaitForSeconds(_config.player_bonus_point_speed);
                 }
@@ -855,6 +901,28 @@ namespace Init
                     player1Round3DrawEnd.SetActive(true);
                     player2Round3DrawEnd.SetActive(true);
                 }
+            }
+        }
+        
+        public void PlayScorePlusAnimation(Player.PLAYER player, string text)
+        {
+            if (player == Player.PLAYER.P1)
+            {
+                var scorePlus = Instantiate (player1ScorePlusPrefab, Vector3.zero, Quaternion.identity);
+                scorePlus.transform.parent = playerScorePlusParent.transform;
+                scorePlus.GetComponent<RectTransform>().localPosition = new Vector3(-354, 122.5f, 0f);
+                scorePlus.GetComponent<RectTransform>().localScale = new Vector3(0.8f, 0.8f,0.8f);
+                scorePlus.GetComponent<TextMeshProUGUI>().text = "+" + text;
+                Destroy(scorePlus, 0.8f);
+            }
+            else
+            {
+                var scorePlus = Instantiate (player2ScorePlusPrefab, Vector3.zero, Quaternion.identity);
+                scorePlus.transform.parent = playerScorePlusParent.transform;
+                scorePlus.GetComponent<RectTransform>().localPosition = new Vector3(404, 122.5f, 0f);
+                scorePlus.GetComponent<RectTransform>().localScale = new Vector3(0.8f, 0.8f,0.8f);
+                scorePlus.GetComponent<TextMeshProUGUI>().text = "+" + text;
+                Destroy(scorePlus, 0.8f);
             }
         }
     }

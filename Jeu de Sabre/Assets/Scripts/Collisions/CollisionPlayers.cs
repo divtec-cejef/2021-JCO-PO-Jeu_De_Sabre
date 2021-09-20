@@ -235,8 +235,14 @@ namespace Collisions
                 {
                     backTimer = 0f;
                     Travelling.distanceToMove = Vector3.zero;
+                    timerEnd = true;
                     attack.disableAttack();
                 }
+            }
+
+            if (timerEnd)
+            {
+                attack.disableAttack();
             }
         }
 
@@ -298,6 +304,8 @@ namespace Collisions
                 // Si le joueur à assez d'endurance pour porter le coup
                 if (Player.DecreaseStamina(player, GameInit.GetGameConfig().attack_stamina_decrease))
                 {
+                    GameInit.GetUiUpdater().PlayerScorePlusAnimation(player, GameInit.GetGameConfig().attack_score_amount.ToString());
+                    
                     if (player == Player.PLAYER.P1)
                         isFirstCollisionOfP2 = true;
                     else

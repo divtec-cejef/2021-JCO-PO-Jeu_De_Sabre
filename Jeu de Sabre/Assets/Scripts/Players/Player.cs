@@ -6,8 +6,8 @@ namespace Players
 {
     public class Player
     {
-        private static int player1Color = 1;
-        private static int player2Color = 2;
+        private static int player1Color = 2;
+        private static int player2Color = 1;
         private static String player1Name = "Player 1";
         private static String player2Name = "Player 2";
         
