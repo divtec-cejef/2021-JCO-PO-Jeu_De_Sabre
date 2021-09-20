@@ -206,11 +206,11 @@ namespace Players
             {
                 if (_isPlayer1Exausted)
                     OnExthaustedDisabled(Player.PLAYER.P1);
-                else
+                if(_isPlayer2Exausted)
                     OnExthaustedDisabled(Player.PLAYER.P2);
             }
 
-            print("PLAYER 1 CAN REGEN " + _canPlayer1Regen + " - PLAYER 2 CAN REGEN " + _canPlayer2Regen);
+            //print("PLAYER 1 CAN REGEN " + _canPlayer1Regen + " - PLAYER 2 CAN REGEN " + _canPlayer2Regen);
             
             if(_canPlayer1Regen)
             {

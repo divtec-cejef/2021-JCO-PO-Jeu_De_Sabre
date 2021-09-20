@@ -289,11 +289,11 @@ namespace Init
                 // Initialisation de la vie
                 print("Initialisation du système de vie...");
                 gameObject.AddComponent<Health>();
-                
+              
                 // Récupération des manettes
                 print("Récupération des manettes...");
                 _controllerHandler = _connecter.GetHandler();
-            
+           
                 // Initialisation de l'orientation de la manette 1
                 print("Initialisation de la rotation du joueur 1...");
                 _katana1 = new KatanaOrientation(Player.PLAYER.P1, _controllerHandler.GetPlayer1Controller(), player1ParadeFx1,
@@ -395,7 +395,7 @@ namespace Init
             }
             else
             {
-                print(_connecter.GetError());
+               print(_connecter.GetError());
                 DisplayWarningMessage(_connecter.GetError(), player1WarningText, player1WarningTextM);
             }
         }

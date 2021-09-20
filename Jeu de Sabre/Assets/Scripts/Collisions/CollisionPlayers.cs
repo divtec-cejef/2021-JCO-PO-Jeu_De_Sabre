@@ -215,10 +215,9 @@ namespace Collisions
                 attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,currentAttack);
             }
             
-            
+            //Fait tourner les joueurs
             if (roteTimer != 0f)
             {
-               
                 roteTimer += Time.deltaTime;
                 if (roteTimer > rotationTime)
                 {
@@ -228,6 +227,9 @@ namespace Collisions
                     attack.disableAttack();
                 }
             }
+
+            
+            //Fait reculer les joueurs
             if (backTimer != 0f)
             {
                 backTimer += Time.deltaTime;
@@ -235,9 +237,12 @@ namespace Collisions
                 {
                     backTimer = 0f;
                     Travelling.distanceToMove = Vector3.zero;
+                    timerEnd = true;
                     attack.disableAttack();
                 }
+                
             }
+
         }
 
         private void OnTriggerStay(Collider other)
