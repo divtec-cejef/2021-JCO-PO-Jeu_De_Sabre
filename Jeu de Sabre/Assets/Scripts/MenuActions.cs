@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using Camera;
 using LayerLab;
 using MySql.Data.MySqlClient;
@@ -233,6 +234,10 @@ public class MenuActions : MonoBehaviour
 
         try
         {
+            if (id1.Equals(Int32.MaxValue) || id2.Equals(Int32.MaxValue))
+            {
+                throw CheckoutException.Canceled;
+            }
 
             conn.Open();
             MySqlCommand Player1 = conn.CreateCommand();

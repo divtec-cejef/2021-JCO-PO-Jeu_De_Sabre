@@ -32,8 +32,7 @@ namespace Init
 
         public bool StopRound()
         {
-            print("GROSSE PUTE");
-            CollisionPlayers.attack.disableAttack();
+            CollisionPlayers.attack.DisableAnimation();
             GameInit.GetUiUpdater().UpdateRoundHUD(GetRoundWinner(false), roundNumber);
             GameInit.GetUiUpdater().SetCountdownText("-");
             CollisionPlayers.canAttack = false;

@@ -58,10 +58,10 @@ public class AttackMouvements
         animeP2Trans = Player2Trans.GetComponent<Animator>();
 
         if (defender == Player.PLAYER.P1) 
-            typeAttack(attack, animeP1, animeP1Trans,animeP2, animeP2Trans);
+            SetAnimation(attack, animeP1, animeP1Trans,animeP2, animeP2Trans);
         
         else if(defender == Player.PLAYER.P2) 
-            typeAttack(attack, animeP2, animeP2Trans,animeP1, animeP1Trans);
+            SetAnimation(attack, animeP2, animeP2Trans,animeP1, animeP1Trans);
 
         // if (attacker == Player.Joueur.P1)
         // {
@@ -81,16 +81,26 @@ public class AttackMouvements
         // }
     }
 
+    // public void DisableWalkAnim()
+    // {
+    //     //Desctive les déplcements en arrière
+    //     animeP1.SetBool("isMoveBack", false);
+    //     animeP1Trans.SetBool("isMoveBack", false);
+    //     animeP2.SetBool("isMoveBack", false);
+    //     animeP2Trans.SetBool("isMoveBack", false);
+    //     
+    //     //Desctive les déplcements en avant
+    //     animeP1.SetBool("isNormalWalk", false);
+    //     animeP1Trans.SetBool("isNormalWalk", false);
+    //     animeP2.SetBool("isNormalWalk", false);
+    //     animeP2Trans.SetBool("isNormalWalk", false);
+    // }
+    
     /// <summary>
     /// Desactive tout les animations de déplacement
     /// </summary>
-    public void disableAttack()
+    public void DisableAnimation()
     {
-        Animator animeP1 = Player1Char.GetComponent<Animator>();
-        Animator animeP1Trans = Player1Trans.GetComponent<Animator>();
-        Animator animeP2 = Player2Char.GetComponent<Animator>();
-        Animator animeP2Trans = Player2Trans.GetComponent<Animator>();;
-        
         //Desctive les déplcements à droite
         animeP1.SetBool("isSlideWalkRight", false);
         animeP1Trans.SetBool("isSlideWalkRight", false);
@@ -116,7 +126,7 @@ public class AttackMouvements
         animeP2Trans.SetBool("isNormalWalk", false);
     }
 
-    private void typeAttack(CollisionPlayers.TYPE_ATTACK attack, Animator animeDefender, Animator animeDefenderTrans,
+    private void SetAnimation(CollisionPlayers.TYPE_ATTACK attack, Animator animeDefender, Animator animeDefenderTrans,
         Animator animeAttacker, Animator animeAttackerTrans)
     {
         switch (attack)
