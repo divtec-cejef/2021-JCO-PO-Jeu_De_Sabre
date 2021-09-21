@@ -118,7 +118,7 @@ public class EmoteHandler : MonoBehaviour
 
     public void menacingEffect(Player.PLAYER player,bool isActive)
     {
-        EmotePlayer.SetMenacingEffect(player, isActive);
+        EmotePlayer.SetMenacingEffect(player);
         playerFace.GetComponent<Renderer>().material = angry[0];
     }
 }

@@ -120,11 +120,8 @@ namespace Collisions
             if (isPlayer1Left && roteTimer == 0 && !isPlayer1Right && isFirstCollisionOfP1)
             {
                 Travelling.anglesToRotate = new Vector3(0, -rotationAngle, 0);
-                if (backwardMouvement)
-                {
-                    Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
-                    backTimer = .01f;
-                } 
+                Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
+                backTimer = .01f;
                 roteTimer = .01f;
                 isPlayer1Left = false;
                 isFirstCollisionOfP1 = false;
@@ -134,12 +131,8 @@ namespace Collisions
             }else if (isPlayer1Right && roteTimer == 0 && !isPlayer1Left && isFirstCollisionOfP1)
             {
                 Travelling.anglesToRotate = new Vector3(0, +rotationAngle, 0);
-                if (backwardMouvement)
-                {
-                    Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
-                    backTimer = .01f;
-                } 
-                roteTimer = .01f;
+                Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance); 
+                backTimer = .01f; roteTimer = .01f;
                 isPlayer1Right = false;
                 isFirstCollisionOfP1 = false;
                 currentAttack = TYPE_ATTACK.RIGHT;
@@ -147,11 +140,8 @@ namespace Collisions
                 //Debug.Log(("C la droite isFirstCollisionP1 :"+ isFirstCollisionOfP1));
             }else if ( backTimer == 0 && !isPlayer1Left && !isPlayer1Right && isFirstCollisionOfP1)
             {
-                if (backwardMouvement)
-                {
-                    Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
-                    backTimer = .01f;
-                } 
+                Travelling.distanceToMove = new Vector3(0, 0, -backwardDistance);
+                backTimer = .01f;
                 roteTimer = 0f;
                 isPlayer1Center = false;
                 isFirstCollisionOfP1 = false;
@@ -175,38 +165,29 @@ namespace Collisions
             if (isPlayer2Left && roteTimer == 0 && !isPlayer2Right && isFirstCollisionOfP2)
             {
                 Travelling.anglesToRotate = new Vector3(0, -rotationAngle, 0);
-                if (backwardMouvement)
-                {
-                    Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
-                    backTimer = .01f;
-                } 
+                Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
+                backTimer = .01f;
                 roteTimer = .01f;
                 isPlayer2Left = false;
                 isFirstCollisionOfP2 = false;
                 currentAttack = TYPE_ATTACK.LEFT;
                 attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,currentAttack);
-                //Debug.Log(("C LA GOCHE isFirstCollisionPlayer2 :"+ isFirstCollisionOfP2));
+                //Debug.Log(("C LA gauche isFirstCollisionPlayer2 :"+ isFirstCollisionOfP2));
             }else if (isPlayer2Right && roteTimer == 0 && !isPlayer2Left && isFirstCollisionOfP2)
             {
                 Travelling.anglesToRotate = new Vector3(0, +rotationAngle, 0);
-                if (backwardMouvement)
-                {
-                    Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
-                    backTimer = .01f;
-                } 
+                Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
+                backTimer = .01f;
                 roteTimer = .01f;
                 isPlayer2Right = false;
                 isFirstCollisionOfP2 = false;
                 currentAttack = TYPE_ATTACK.RIGHT;
                 attack.onAttack(Player.PLAYER.P1,Player.PLAYER.P2,currentAttack);
-                //Debug.Log(("C LA DROUATE isFirstCollisionPlayer2 :"+ isFirstCollisionOfP2));
+                //Debug.Log(("C la droite isFirstCollisionPlayer2 :"+ isFirstCollisionOfP2));
             }else if ( backTimer == 0 && !isPlayer2Left && !isPlayer2Right && isFirstCollisionOfP2)
             {
-                if (backwardMouvement)
-                {
-                    Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
-                    backTimer = .01f;
-                }
+                Travelling.distanceToMove = new Vector3(0, 0, backwardDistance);
+                backTimer = .01f;
                 Debug.Log(("C le center isFirstCollisionP2 :"+ isFirstCollisionOfP2));
                 roteTimer = 0f;
                 isPlayer2Center = false;
@@ -224,12 +205,11 @@ namespace Collisions
                     roteTimer = 0f;
                     Travelling.anglesToRotate = Vector3.zero;
                     timerEnd = true;
-                    //attack.disableAttack();
+                    attack.DisableAnimation();
                 }
             }
 
-            
-            //Fait reculer les joueurs
+            //Fait reculer/avancer les joueurs
             if (backTimer != 0f)
             {
                 backTimer += Time.deltaTime;
@@ -238,20 +218,17 @@ namespace Collisions
                     backTimer = 0f;
                     Travelling.distanceToMove = Vector3.zero;
                     timerEnd = true;
-                    
+                    attack.DisableAnimation();
                 }
                 
             }
-            if(timerEnd){
-                attack.disableAttack();
-            }
-
         }
 
         private void OnTriggerStay(Collider other)
         {
             if (timerEnd)
             {
+                attack.DisableAnimation();
                 if (isFirstCollisionOfP1)
                 {
                     isFirstCollisionOfP1 = false;

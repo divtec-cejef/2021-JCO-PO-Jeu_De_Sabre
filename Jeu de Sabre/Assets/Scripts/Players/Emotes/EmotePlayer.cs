@@ -18,8 +18,8 @@ public class EmotePlayer : MonoBehaviour
     [SerializeField] private Material happy_2;
     [SerializeField] private Material happy_3;
     [SerializeField] private Material exhausted_1;
-    [SerializeField] private  GameObject player1Menacing;
-    [SerializeField] private  GameObject player2Menacing;
+    [SerializeField] private  ParticleSystem player1Menacing;
+    [SerializeField] private  ParticleSystem player2Menacing;
     
     private static Material _sad_1;
     private static Material _sad_2;
@@ -34,12 +34,13 @@ public class EmotePlayer : MonoBehaviour
     private static Material _happy_2;
     private static Material _happy_3;
     private static Material _exhausted_1;
-    private static GameObject _player1Menacing;
-    private static GameObject _player2Menacing;
+    private static ParticleSystem _player1Menacing;
+    private static ParticleSystem _player2Menacing;
 
     private void Awake()
     {
-        print("AWAKE");
+        //print("AWAKE");
+
         _sad_1 = sad_1;
         _sad_2 = sad_2;
         _sad_3 = sad_3;
@@ -109,15 +110,15 @@ public class EmotePlayer : MonoBehaviour
         return exhausted;
     }
 
-    public static void SetMenacingEffect(Player.PLAYER player,bool isActive)
+    public static void SetMenacingEffect(Player.PLAYER player)
     {
         
         if(player == Player.PLAYER.P1)
         {
-            _player1Menacing.active = isActive;
+            _player1Menacing.Play(); 
         }else if (player == Player.PLAYER.P2)
         {
-            _player2Menacing.active = isActive;
+            _player2Menacing.Play();
         }
 
     }
