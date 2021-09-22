@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - Mouvements.Orientation.Katana2
     - Players.Color
     - Pulse
+    - ShakingObj
     - Tracker_1
     - Tracker_2
     - TrackingAdvers
@@ -58,10 +59,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -117,21 +116,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2206}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2578}
     - Class: 114
-      Script: {instanceID: 2722}
+      Script: {instanceID: 2724}
     - Class: 114
-      Script: {instanceID: 2766}
+      Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3078}
     - Class: 114
-      Script: {instanceID: 3912}
+      Script: {instanceID: 3914}
     - Class: 114
-      Script: {instanceID: 4314}
+      Script: {instanceID: 4316}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 4334}
     - Class: 114
-      Script: {instanceID: 4628}
+      Script: {instanceID: 4630}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -226,71 +225,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2180}
     - Class: 114
-      Script: {instanceID: 2384}
+      Script: {instanceID: 2306}
     - Class: 114
-      Script: {instanceID: 2404}
+      Script: {instanceID: 2386}
     - Class: 114
-      Script: {instanceID: 2436}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2506}
+      Script: {instanceID: 2438}
     - Class: 114
-      Script: {instanceID: 2536}
+      Script: {instanceID: 2508}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2538}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2578}
     - Class: 114
-      Script: {instanceID: 2722}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 2766}
+      Script: {instanceID: 2724}
     - Class: 114
-      Script: {instanceID: 2786}
+      Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2788}
     - Class: 114
-      Script: {instanceID: 3040}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3150}
+      Script: {instanceID: 3078}
     - Class: 114
-      Script: {instanceID: 3226}
+      Script: {instanceID: 3152}
     - Class: 114
-      Script: {instanceID: 3282}
+      Script: {instanceID: 3228}
     - Class: 114
-      Script: {instanceID: 3546}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 3576}
+      Script: {instanceID: 3548}
     - Class: 114
-      Script: {instanceID: 3646}
+      Script: {instanceID: 3578}
     - Class: 114
-      Script: {instanceID: 3678}
+      Script: {instanceID: 3648}
     - Class: 114
-      Script: {instanceID: 3786}
+      Script: {instanceID: 3680}
     - Class: 114
-      Script: {instanceID: 3868}
+      Script: {instanceID: 3788}
     - Class: 114
-      Script: {instanceID: 3926}
+      Script: {instanceID: 3870}
     - Class: 114
-      Script: {instanceID: 4164}
+      Script: {instanceID: 3928}
     - Class: 114
-      Script: {instanceID: 4214}
+      Script: {instanceID: 4166}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 4216}
     - Class: 114
-      Script: {instanceID: 4604}
+      Script: {instanceID: 4542}
     - Class: 114
-      Script: {instanceID: 4836}
+      Script: {instanceID: 4606}
     - Class: 114
-      Script: {instanceID: 4908}
+      Script: {instanceID: 4838}
     - Class: 114
-      Script: {instanceID: 4926}
+      Script: {instanceID: 4910}
     - Class: 114
-      Script: {instanceID: 5016}
+      Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5092}
+      Script: {instanceID: 5018}
     - Class: 114
-      Script: {instanceID: 5132}
+      Script: {instanceID: 5094}
+    - Class: 114
+      Script: {instanceID: 5134}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -598,6 +599,12 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
+      Hash: d7375604b98e37f829ce86d03fba6c11
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShakingObj
+  - hash:
+      serializedVersion: 2
       Hash: 6d771863187a1b86f42bd8c63f0358a5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -622,7 +629,7 @@ ScriptsOnlyBuild:
     className: InputActionEditorWindow
   - hash:
       serializedVersion: 2
-      Hash: 99bd7c29eca056100247cec5b87ea0fc
+      Hash: fb46f9d310ea594dd58c85a1fc54ac77
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EmotePlayer
@@ -1602,4 +1609,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Map.unity
-  playerPath: F:/KatanaNoTatakai-8.2/Jeu de Sabre.exe
+  playerPath: F:/KatanaNoTatakai-9.1 FINAL/Jeu de Sabre.exe

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Collisions;
+using Players;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -112,5 +113,11 @@ public class EmoteHandler : MonoBehaviour
     {
         CollisionPlayers._player1Face.GetComponent<Renderer>().material = GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false);
         CollisionPlayers._player2Face.GetComponent<Renderer>().material = GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false);
+    }
+    
+    public void menacingEffect(Player.PLAYER player)
+    {
+        EmotePlayer.SetMenacingEffect(player);
+        playerFace.GetComponent<Renderer>().material = angry[0];
     }
 }

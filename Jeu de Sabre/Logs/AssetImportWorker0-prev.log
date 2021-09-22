@@ -1,0 +1,305 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'fr' Physical Memory: 8166 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Katana No Tatakai/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60948
+Successfully changed project path to: C:/Users/Katana No Tatakai/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+C:/Users/Katana No Tatakai/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 101.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path F:/Programmes/BigUnity/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Katana No Tatakai/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu de Sabre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'F:/Programmes/BigUnity/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'F:/Programmes/BigUnity/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'F:/Programmes/BigUnity/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/Programmes/BigUnity/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001530 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 128.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.503 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002647 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 104.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.827 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 2.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1817 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.5 MB.
+System memory in use after: 106.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2286.
+Total: 2.548500 ms (FindLiveObjects: 0.212800 ms CreateObjectMapping: 0.071600 ms MarkObjects: 2.174100 ms  DeleteObjects: 0.088200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/TexturesMaisCestMieux/Chapo/rouge.png
+  artifactKey: Guid(6598ca5d4d39a764ba2e15df097e1b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/rouge.png using Guid(6598ca5d4d39a764ba2e15df097e1b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2479674d8e96df8d66cf30eecbfb2c5c') in 0.242229 seconds
+  Import took 0.247207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/brun.png
+  artifactKey: Guid(dd60d2ab6df59b4468a6fcd383836ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/brun.png using Guid(dd60d2ab6df59b4468a6fcd383836ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2d9932735ba9100c6807f5a33e23f9') in 0.032569 seconds
+  Import took 0.040641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000727 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/blanc.png
+  artifactKey: Guid(cb6fbd797a83e844da1a32397f23bda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/blanc.png using Guid(cb6fbd797a83e844da1a32397f23bda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ef31d6659a664666b3daa2a02061ed') in 0.027973 seconds
+  Import took 0.034637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo
+  artifactKey: Guid(2aed5b4beaaf00646a061f0e6dd06b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo using Guid(2aed5b4beaaf00646a061f0e6dd06b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1add92db4cf83834af79988173ae97') in 0.010771 seconds
+  Import took 0.016833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/bleu.png
+  artifactKey: Guid(f6bf199fcc4852e49a585144954fd488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/bleu.png using Guid(f6bf199fcc4852e49a585144954fd488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec15b4785618172cbe16feb6295c55c') in 0.012819 seconds
+  Import took 0.021316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/rose.png
+  artifactKey: Guid(c1df8e53da369854eb23d576e4574c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/rose.png using Guid(c1df8e53da369854eb23d576e4574c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797f1110989cdf2142003da5a6cf01d5') in 0.028773 seconds
+  Import took 0.034053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/lime.png
+  artifactKey: Guid(31675178c0a4bce4fb0f930806257e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/lime.png using Guid(31675178c0a4bce4fb0f930806257e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18e9c9ace8b049952971abfcd620892') in 0.019832 seconds
+  Import took 0.025974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/cyan.png
+  artifactKey: Guid(48d5c69c28f959843a31e9a5f82841c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/cyan.png using Guid(48d5c69c28f959843a31e9a5f82841c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34011a0f90e47eeb095a86c5d61e3f99') in 0.072455 seconds
+  Import took 0.077123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/orange.png
+  artifactKey: Guid(f971a4646f2eed34caa8b4c1e4fd2fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/orange.png using Guid(f971a4646f2eed34caa8b4c1e4fd2fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24c174e3a852935fa164ba05ecfd647') in 0.026481 seconds
+  Import took 0.032537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002003 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/cyan.png
+  artifactKey: Guid(48d5c69c28f959843a31e9a5f82841c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/cyan.png using Guid(48d5c69c28f959843a31e9a5f82841c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34011a0f90e47eeb095a86c5d61e3f99') in 0.010151 seconds
+  Import took 0.015266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/jaune.png
+  artifactKey: Guid(89b118443076d7a49b7ec3823946c74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/jaune.png using Guid(89b118443076d7a49b7ec3823946c74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7ef2001b260075f8e7b7ef53fc39a3') in 0.026495 seconds
+  Import took 0.036724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/violet.png
+  artifactKey: Guid(ca00b27e112f7a44b812a57873a1a5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/violet.png using Guid(ca00b27e112f7a44b812a57873a1a5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb92d142a279f1671fa5c3598e971ae') in 0.033743 seconds
+  Import took 0.037706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/vert_dark.png
+  artifactKey: Guid(78fa54678a7a1dd4c94dd05ac996d0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/vert_dark.png using Guid(78fa54678a7a1dd4c94dd05ac996d0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b4b1d3e8e5b20eb2c966d17e1cce5c') in 0.017126 seconds
+  Import took 0.021646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/noir.png
+  artifactKey: Guid(ef269b0ecc0ced044a7bf127cafd7c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/noir.png using Guid(ef269b0ecc0ced044a7bf127cafd7c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1154cfe7965c7d69c858e3fa0c3f05bc') in 0.023498 seconds
+  Import took 0.028749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.023982 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials
+  artifactKey: Guid(70c90a4d748fcbd4abe03df4aec0d68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials using Guid(70c90a4d748fcbd4abe03df4aec0d68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69fb29e38c3e927c3ea206f97b009bc7') in 0.009066 seconds
+  Import took 0.013809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.124738 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/blanc.mat
+  artifactKey: Guid(6f3c2f6af03a7394192d8071e8f26bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/blanc.mat using Guid(6f3c2f6af03a7394192d8071e8f26bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294f2c55a15310c93d80de532bcc029f') in 0.119763 seconds
+  Import took 0.124614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/bleu.mat
+  artifactKey: Guid(af5782d7af72e4644b25ed01ccfaa2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/bleu.mat using Guid(af5782d7af72e4644b25ed01ccfaa2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26cc02be450d2ba0ca7725ecd483ae14') in 0.020933 seconds
+  Import took 0.025968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/orange.mat
+  artifactKey: Guid(34c5b7701890d864197c2432da51b0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/orange.mat using Guid(34c5b7701890d864197c2432da51b0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09d0ab0ef0dde855c0bd134e9a761dd6') in 0.018036 seconds
+  Import took 0.023437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/jaune.mat
+  artifactKey: Guid(87a0f6fcc22c28948b256af563210b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/jaune.mat using Guid(87a0f6fcc22c28948b256af563210b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72fa53ca2e5dce3024286862f55e5a41') in 0.017380 seconds
+  Import took 0.021619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/vert_dark.mat
+  artifactKey: Guid(ad40de453da70a64bb93af2a19aafeab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/vert_dark.mat using Guid(ad40de453da70a64bb93af2a19aafeab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e825b67f77ce9b4789e860fcad90eee') in 0.017548 seconds
+  Import took 0.025140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/lime.mat
+  artifactKey: Guid(4707f35c7a1f42442b154bf48cb5d41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/lime.mat using Guid(4707f35c7a1f42442b154bf48cb5d41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6935ea482e4774c44f31753eae14a744') in 0.017689 seconds
+  Import took 0.022429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/rouge.mat
+  artifactKey: Guid(78e89717c798b1742aa5bee0d72b325c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/rouge.mat using Guid(78e89717c798b1742aa5bee0d72b325c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c549fa297827798a41e2649cb66fed84') in 0.015224 seconds
+  Import took 0.023743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/violet.mat
+  artifactKey: Guid(87dbb176cdd9c9b4eb3b33554f238852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/violet.mat using Guid(87dbb176cdd9c9b4eb3b33554f238852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31107019aacdc7080fc8eed01de8a48f') in 0.016479 seconds
+  Import took 0.022576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/noir.mat
+  artifactKey: Guid(897bea06e079208418bbc83b9139966c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/noir.mat using Guid(897bea06e079208418bbc83b9139966c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9342941513f787aeb3d7d1a83704e1') in 0.023241 seconds
+  Import took 0.027879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/cyan.mat
+  artifactKey: Guid(70cf64c746ed8d442abfeb8eaf1a8a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/cyan.mat using Guid(70cf64c746ed8d442abfeb8eaf1a8a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398064308408e77d3749da750ed90afc') in 0.014139 seconds
+  Import took 0.019157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/rose.mat
+  artifactKey: Guid(3c3226308adf30745b5d86b98a785d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/rose.mat using Guid(3c3226308adf30745b5d86b98a785d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3664b84532b2aaf32bdbd551740bb1a3') in 0.014402 seconds
+  Import took 0.021221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/TexturesMaisCestMieux/Chapo/Materials/brun.mat
+  artifactKey: Guid(5964ed77fd9e7ed499dcafe33bf1a90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TexturesMaisCestMieux/Chapo/Materials/brun.mat using Guid(5964ed77fd9e7ed499dcafe33bf1a90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0babab8518baa4f480ff2cc2166b3ad') in 0.018058 seconds
+  Import took 0.022668 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002435 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.294 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1764 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2331.
+Total: 2.417800 ms (FindLiveObjects: 0.269800 ms CreateObjectMapping: 0.086300 ms MarkObjects: 2.033100 ms  DeleteObjects: 0.026700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

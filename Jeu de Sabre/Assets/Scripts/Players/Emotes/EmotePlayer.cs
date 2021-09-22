@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Players;
 using UnityEngine;
 
 public class EmotePlayer : MonoBehaviour
@@ -16,6 +17,8 @@ public class EmotePlayer : MonoBehaviour
     [SerializeField] private Material happy_2;
     [SerializeField] private Material happy_3;
     [SerializeField] private Material exhausted_1;
+    [SerializeField] private  ParticleSystem player1Menacing;
+    [SerializeField] private  ParticleSystem player2Menacing;
     
     private static Material _sad_1;
     private static Material _sad_2;
@@ -30,10 +33,12 @@ public class EmotePlayer : MonoBehaviour
     private static Material _happy_2;
     private static Material _happy_3;
     private static Material _exhausted_1;
+    private static ParticleSystem _player1Menacing;
+    private static ParticleSystem _player2Menacing;
 
     private void Awake()
     {
-        print("AWAKE");
+        //print("AWAKE");
         _sad_1 = sad_1;
         _sad_2 = sad_2;
         _sad_3 = sad_3;
@@ -51,6 +56,12 @@ public class EmotePlayer : MonoBehaviour
         _happy_3 = happy_3;
 
         _exhausted_1 = exhausted_1;
+        
+        _player1Menacing = player1Menacing;
+        _player2Menacing = player2Menacing;
+        
+        _player1Menacing.Stop();
+        _player2Menacing.Stop();
     }
 
     public static List<Material> GetSadEmote()
@@ -98,5 +109,18 @@ public class EmotePlayer : MonoBehaviour
         List<Material> exhausted = new List<Material>();
         exhausted.Add(_exhausted_1);
         return exhausted;
+    }
+    
+    public static void SetMenacingEffect(Player.PLAYER player)
+    {
+        
+        if(player == Player.PLAYER.P1)
+        {
+            _player1Menacing.Play(); 
+        }else if (player == Player.PLAYER.P2)
+        {
+            _player2Menacing.Play();
+        }
+
     }
 }
