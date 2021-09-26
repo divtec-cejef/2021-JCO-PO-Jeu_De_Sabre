@@ -32,6 +32,32 @@ namespace Players
         [SerializeField] private Material playerCyanClothes;
         [SerializeField] private Material playerLimeClothes;
         
+        [SerializeField] private Material playerRedHatTrans;
+        [SerializeField] private Material playerBlueHatTrans;
+        [SerializeField] private Material playerGreenHatTrans;
+        [SerializeField] private Material playerPinkHatTrans;
+        [SerializeField] private Material playerOrangeHatTrans;
+        [SerializeField] private Material playerYellowHatTrans;
+        [SerializeField] private Material playerBlackHatTrans;
+        [SerializeField] private Material playerWhiteHatTrans;
+        [SerializeField] private Material playerMagentaHatTrans;
+        [SerializeField] private Material playerBrownHatTrans;
+        [SerializeField] private Material playerCyanHatTrans;
+        [SerializeField] private Material playerLimeHatTrans;
+        
+        [SerializeField] private Material playerRedClothesTrans;
+        [SerializeField] private Material playerBlueClothesTrans;
+        [SerializeField] private Material playerGreenClothesTrans;
+        [SerializeField] private Material playerPinkClothesTrans;
+        [SerializeField] private Material playerOrangeClothesTrans;
+        [SerializeField] private Material playerYellowClothesTrans;
+        [SerializeField] private Material playerBlackClothesTrans;
+        [SerializeField] private Material playerWhiteClothesTrans;
+        [SerializeField] private Material playerMagentaClothesTrans;
+        [SerializeField] private Material playerBrownClothesTrans;
+        [SerializeField] private Material playerCyanClothesTrans;
+        [SerializeField] private Material playerLimeClothesTrans;
+        
         
 
         public void ApplyPlayerColor(GameObject hat1, GameObject body1, GameObject leg1, int color1, GameObject hat2, GameObject body2, GameObject leg2, int color2,
@@ -87,18 +113,50 @@ namespace Players
                 12 => new UnityEngine.Color(0, 255, 0),
                 _ => new UnityEngine.Color(255, 0, 0)
             };
-            //
-            // hatTrans1.GetComponent<Renderer>().material.color = player1TransColor;
-            // bodyTrans1.GetComponent<Renderer>().material.color = player1TransColor;
-            // legTrans1.GetComponent<Renderer>().material.color = player1TransColor;
-            // legTrans1.GetComponent<Renderer>().sha;
+            
+            Material player1ClothesTrans = color1 switch
+            {
+                1 => playerRedClothesTrans,
+                2 => playerBlueClothesTrans,
+                3 => playerGreenClothesTrans,
+                4 => playerPinkClothesTrans,
+                5 => playerOrangeClothesTrans,
+                6 => playerYellowClothesTrans,
+                7 => playerBlackClothesTrans,
+                8 => playerWhiteClothesTrans,
+                9 => playerMagentaClothesTrans,
+                10 => playerBrownClothesTrans,
+                11 => playerCyanClothesTrans,
+                12 => playerLimeClothesTrans,
+                _ => playerRedClothesTrans
+            };
+            Material player1HatTrans = color1 switch
+            {
+                1 => playerRedHatTrans,
+                2 => playerBlueHatTrans,
+                3 => playerGreenHatTrans,
+                4 => playerPinkHatTrans,
+                5 => playerOrangeHatTrans,
+                6 => playerYellowHatTrans,
+                7 => playerBlackHatTrans,
+                8 => playerWhiteHatTrans,
+                9 => playerMagentaHatTrans,
+                10 => playerBrownHatTrans,
+                11 => playerCyanHatTrans,
+                12 => playerLimeHatTrans,
+                _ => playerRedHatTrans
+            };
+            
             main1D.GetComponent<Renderer>().material.color = player1TransColor;
             main1G.GetComponent<Renderer>().material.color = player1TransColor;
             
             hat1.GetComponent<Renderer>().material = player1Hat;
             body1.GetComponent<Renderer>().material = player1Clothes;
             leg1.GetComponent<Renderer>().material = player1Clothes;
-
+            
+            hatTrans1.GetComponent<Renderer>().material = player1HatTrans;
+            bodyTrans1.GetComponent<Renderer>().material = player1ClothesTrans;
+            legTrans1.GetComponent<Renderer>().material = player1ClothesTrans;
             
             
             Material player2Clothes = color2 switch
@@ -150,16 +208,49 @@ namespace Players
                 12 => new UnityEngine.Color(0, 255, 0, .03f),
                 _ => new UnityEngine.Color(255, 0, 0, .03f)
             };
-            //
-            // hatTrans2.GetComponent<Renderer>().material.color = player2TransColor;
-            // bodyTrans2.GetComponent<Renderer>().material.color = player2TransColor;
-            // legTrans2.GetComponent<Renderer>().material.color = player2TransColor;
+            Material player2ClothesTrans = color2 switch
+            {
+                1 => playerRedClothesTrans,
+                2 => playerBlueClothesTrans,
+                3 => playerGreenClothesTrans,
+                4 => playerPinkClothesTrans,
+                5 => playerOrangeClothesTrans,
+                6 => playerYellowClothesTrans,
+                7 => playerBlackClothesTrans,
+                8 => playerWhiteClothesTrans,
+                9 => playerMagentaClothesTrans,
+                10 => playerBrownClothesTrans,
+                11 => playerCyanClothesTrans,
+                12 => playerLimeClothesTrans,
+                _ => playerRedClothesTrans
+            };
+            Material player2HatTrans = color2 switch
+            {
+                1 => playerRedHatTrans,
+                2 => playerBlueHatTrans,
+                3 => playerGreenHatTrans,
+                4 => playerPinkHatTrans,
+                5 => playerOrangeHatTrans,
+                6 => playerYellowHatTrans,
+                7 => playerBlackHatTrans,
+                8 => playerWhiteHatTrans,
+                9 => playerMagentaHatTrans,
+                10 => playerBrownHatTrans,
+                11 => playerCyanHatTrans,
+                12 => playerLimeHatTrans,
+                _ => playerRedHatTrans
+            };
+            
             main2D.GetComponent<Renderer>().material.color = player2TransColor;
             main2G.GetComponent<Renderer>().material.color = player2TransColor;
             
             hat2.GetComponent<Renderer>().material = player2Hat;
             body2.GetComponent<Renderer>().material = player2Clothes;
             leg2.GetComponent<Renderer>().material = player2Clothes;
+
+            hatTrans2.GetComponent<Renderer>().material = player2HatTrans;
+            bodyTrans2.GetComponent<Renderer>().material = player2ClothesTrans;
+            legTrans2.GetComponent<Renderer>().material = player2ClothesTrans;
         }
     }
 }

@@ -6,6 +6,9 @@ using Color = UnityEngine.Color;
 
 public class PSMoveUtils
 {
+    public static int vibrationp1 = 0;
+    public static int vibrationp2 = 0;
+    
     /// <summary>
     /// Permet de modifier la couleur des leds de la manette
     /// </summary>
@@ -34,10 +37,12 @@ public class PSMoveUtils
     {
         if (player == Player.PLAYER.P1)
         {
+            vibrationp1 = level;
             PSMoveAPI.psmove_set_rumble(GameInit.GetControllerHandler().GetPlayer1Controller(), level);
         }
         else
         {
+            vibrationp2 = level;
             PSMoveAPI.psmove_set_rumble(GameInit.GetControllerHandler().GetPlayer2Controller(), level);
         }
     }

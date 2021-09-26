@@ -24,10 +24,11 @@ public class AttackMouvements
     private GameObject Player2Trans;
     
 
-    private Animator animeP1;
-    private Animator animeP1Trans;
-    private Animator animeP2;
-    private Animator animeP2Trans;
+    public static Animator animeP1;
+    public static Animator animeP1Trans;
+    public static Animator animeP2;
+    public static Animator animeP2Trans;
+    
 
 
     public AttackMouvements(GameObject P1A, GameObject P2A, GameObject P1C, GameObject P1T, GameObject P2C, GameObject P2T)
@@ -38,8 +39,13 @@ public class AttackMouvements
         Player1Trans = P1T;
         Player2Char = P2C;
         Player2Trans = P2T;
+        
+        animeP1 = Player1Char.GetComponent<Animator>();
+        animeP1Trans = Player1Trans.GetComponent<Animator>();
+        animeP2 = Player2Char.GetComponent<Animator>();
+        animeP2Trans = Player2Trans.GetComponent<Animator>();
     }
-
+    
     /// <summary>
     /// Active une animation de déplacment selon le type d'attaque.
     /// </summary>
@@ -52,11 +58,11 @@ public class AttackMouvements
         GameInit.GetCameraShaking().ShakeCamera(attacker, GameInit.GetGameConfig().camera_shaking_force_attacker, GameInit.GetGameConfig().camera_shaking_duration_attacker);
         GameInit.GetCameraShaking().ShakeCamera(defender, GameInit.GetGameConfig().camera_shaking_force_defender, GameInit.GetGameConfig().camera_shaking_duration_defender);
         
-        animeP1 = Player1Char.GetComponent<Animator>();
-        animeP1Trans = Player1Trans.GetComponent<Animator>();
-        animeP2 = Player2Char.GetComponent<Animator>();
-        animeP2Trans = Player2Trans.GetComponent<Animator>();
-
+        // animeP1 = Player1Char.GetComponent<Animator>();
+        // animeP1Trans = Player1Trans.GetComponent<Animator>();
+        // animeP2 = Player2Char.GetComponent<Animator>();
+        // animeP2Trans = Player2Trans.GetComponent<Animator>();
+        
         if (defender == Player.PLAYER.P1) 
             SetAnimation(attack, animeP1, animeP1Trans,animeP2, animeP2Trans);
         
@@ -126,6 +132,14 @@ public class AttackMouvements
         animeP2Trans.SetBool("isNormalWalk", false);
     }
 
+    public void DisableDeath()
+    {
+        animeP1.SetBool("isDead", false);
+        animeP1Trans.SetBool("isDead", false);
+        animeP2.SetBool("isDead", false);
+        animeP2Trans.SetBool("isDead", false);
+    }
+    
     private void SetAnimation(CollisionPlayers.TYPE_ATTACK attack, Animator animeDefender, Animator animeDefenderTrans,
         Animator animeAttacker, Animator animeAttackerTrans)
     {

@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - Init.GameInit
     - IntroAnim
     - MenuActions
+    - Mouvements.CameraController
     - Mouvements.FollowElement
     - Mouvements.Orientation.Katana1
     - Mouvements.Orientation.Katana2
@@ -59,8 +60,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -108,29 +111,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 1680}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 1826}
+      Script: {instanceID: 1682}
     - Class: 114
       Script: {instanceID: 1926}
     - Class: 114
       Script: {instanceID: 2206}
     - Class: 114
-      Script: {instanceID: 2578}
+      Script: {instanceID: 2580}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 3078}
+      Script: {instanceID: 3080}
     - Class: 114
-      Script: {instanceID: 3914}
+      Script: {instanceID: 3916}
     - Class: 114
-      Script: {instanceID: 4316}
+      Script: {instanceID: 4318}
     - Class: 114
-      Script: {instanceID: 4334}
+      Script: {instanceID: 4336}
     - Class: 114
-      Script: {instanceID: 4630}
+      Script: {instanceID: 4632}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -205,9 +208,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 1768}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 1826}
+      Script: {instanceID: 1770}
     - Class: 114
       Script: {instanceID: 1926}
     - Class: 114
@@ -233,65 +236,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2438}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2456}
     - Class: 114
-      Script: {instanceID: 2538}
+      Script: {instanceID: 2510}
     - Class: 114
-      Script: {instanceID: 2578}
+      Script: {instanceID: 2540}
     - Class: 114
-      Script: {instanceID: 2658}
+      Script: {instanceID: 2580}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 2790}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 3078}
+      Script: {instanceID: 3044}
     - Class: 114
-      Script: {instanceID: 3152}
+      Script: {instanceID: 3080}
     - Class: 114
-      Script: {instanceID: 3228}
+      Script: {instanceID: 3154}
     - Class: 114
-      Script: {instanceID: 3284}
+      Script: {instanceID: 3230}
     - Class: 114
-      Script: {instanceID: 3548}
+      Script: {instanceID: 3286}
     - Class: 114
-      Script: {instanceID: 3578}
+      Script: {instanceID: 3550}
     - Class: 114
-      Script: {instanceID: 3648}
+      Script: {instanceID: 3580}
     - Class: 114
-      Script: {instanceID: 3680}
+      Script: {instanceID: 3650}
     - Class: 114
-      Script: {instanceID: 3788}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 3870}
+      Script: {instanceID: 3790}
     - Class: 114
-      Script: {instanceID: 3928}
+      Script: {instanceID: 3872}
     - Class: 114
-      Script: {instanceID: 4166}
+      Script: {instanceID: 3930}
     - Class: 114
-      Script: {instanceID: 4216}
+      Script: {instanceID: 4168}
     - Class: 114
-      Script: {instanceID: 4542}
+      Script: {instanceID: 4218}
     - Class: 114
-      Script: {instanceID: 4606}
+      Script: {instanceID: 4544}
     - Class: 114
-      Script: {instanceID: 4838}
+      Script: {instanceID: 4608}
     - Class: 114
-      Script: {instanceID: 4910}
+      Script: {instanceID: 4840}
     - Class: 114
-      Script: {instanceID: 4928}
+      Script: {instanceID: 4912}
     - Class: 114
-      Script: {instanceID: 5018}
+      Script: {instanceID: 4930}
     - Class: 114
-      Script: {instanceID: 5094}
+      Script: {instanceID: 5020}
     - Class: 114
-      Script: {instanceID: 5134}
+      Script: {instanceID: 5096}
+    - Class: 114
+      Script: {instanceID: 5136}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -383,6 +388,12 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -459,12 +470,6 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineTriggerAction
-  - hash:
-      serializedVersion: 2
-      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Slider
   - hash:
       serializedVersion: 2
       Hash: 9b06583966b5c25325233c4ef1ab1fd4
@@ -563,7 +568,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: c2f1563681d6463c54f4897b86b0d86d
+      Hash: c0f88ea9109ba6ec36d37b710fec83f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: Players
     className: Color
@@ -629,7 +634,7 @@ ScriptsOnlyBuild:
     className: InputActionEditorWindow
   - hash:
       serializedVersion: 2
-      Hash: fb46f9d310ea594dd58c85a1fc54ac77
+      Hash: 9f24e4aa212ee100a217957128293922
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EmotePlayer
@@ -663,6 +668,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: PostProcessLayer
+  - hash:
+      serializedVersion: 2
+      Hash: 5c2c7bd2fb362b24cd245d1f6ac1bc0e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Mouvements
+    className: CameraController
   - hash:
       serializedVersion: 2
       Hash: 5f170942ee57c7a568f5bcfc7521adea
@@ -887,7 +898,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: e18d3506fdcd4a1f1fcf1f5bfaad2bfe
+      Hash: 28705ac9e52c39a6ab9b0aceba08dc87
     assemblyName: Assembly-CSharp.dll
     namespaceName: Init
     className: GameInit
@@ -1609,4 +1620,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Map.unity
-  playerPath: F:/KatanaNoTatakai-9.1 FINAL/Jeu de Sabre.exe
+  playerPath: F:/KatanaNoTatakai-9.8 FINAL/Jeu de Sabre.exe

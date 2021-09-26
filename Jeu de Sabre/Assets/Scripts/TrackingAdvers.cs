@@ -13,14 +13,13 @@ public class TrackingAdvers : MonoBehaviour
     [SerializeField] float smooth;
 
     void Start () {
-        offsetCameraJ = transform.position - targetJoueur.position;
+        //offsetCameraJ = transform.position - targetJoueur.position;
     }
     
     void Update () {
-        Vector3 cameraPositionJ1 = targetJoueur.position + offsetCameraJ;
+        /*Vector3 cameraPositionJ1 = targetJoueur.position + offsetCameraJ;
         Vector3 smoothPosition = Vector3.Lerp(transform.position, cameraPositionJ1, smooth);
         transform.position = smoothPosition;
-        transform.LookAt(targetJoueur);
+        transform.LookAt(targetJoueur);*/
     }
 }
-

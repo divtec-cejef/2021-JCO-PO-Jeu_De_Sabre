@@ -17,6 +17,7 @@ public class EmotePlayer : MonoBehaviour
     [SerializeField] private Material happy_2;
     [SerializeField] private Material happy_3;
     [SerializeField] private Material exhausted_1;
+    [SerializeField] private Material death_1;
     [SerializeField] private  ParticleSystem player1Menacing;
     [SerializeField] private  ParticleSystem player2Menacing;
     
@@ -33,6 +34,7 @@ public class EmotePlayer : MonoBehaviour
     private static Material _happy_2;
     private static Material _happy_3;
     private static Material _exhausted_1;
+    private static Material _death_1;
     private static ParticleSystem _player1Menacing;
     private static ParticleSystem _player2Menacing;
 
@@ -56,6 +58,8 @@ public class EmotePlayer : MonoBehaviour
         _happy_3 = happy_3;
 
         _exhausted_1 = exhausted_1;
+
+        _death_1 = death_1;
         
         _player1Menacing = player1Menacing;
         _player2Menacing = player2Menacing;
@@ -81,6 +85,8 @@ public class EmotePlayer : MonoBehaviour
         angry.Add(_angry_2);
         angry.Add(_angry_3);
 
+        print(angry);
+        
         return angry;
     }
     
@@ -109,6 +115,13 @@ public class EmotePlayer : MonoBehaviour
         List<Material> exhausted = new List<Material>();
         exhausted.Add(_exhausted_1);
         return exhausted;
+    }
+
+    public static List<Material> GetDeathEmote()
+    {
+        List<Material> death = new List<Material>();
+        death.Add(_death_1);
+        return death;
     }
     
     public static void SetMenacingEffect(Player.PLAYER player)

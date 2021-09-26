@@ -36,8 +36,6 @@ namespace Collisions
                 Player.SetStamina(Player.PLAYER.P1, 0);
             }
         
-            // TODO si ils sont les deux en parade bah c'est celui qui y est depuis le moins de temps qui gagne
-
             print("1 : " + GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParade() + ". 2 : " +
                   GameInit.GetPlayer2KatanaOrientation().GetPlayerParade().GetParade() + ".");
         
@@ -51,12 +49,15 @@ namespace Collisions
             // Vibration des manettes
             PSMoveUtils.SetVibration(Player.PLAYER.P1, 255);
             PSMoveUtils.SetVibration(Player.PLAYER.P2, 255);
+            
+            GameInit.GetSoundHandler().GetSoundCollision().Play();
         }
 
         private void OnCollisionExit(Collision other)
         {
             // Stoppe la vibration des manettes
-            PSMoveUtils.SetVibration(Player.PLAYER.P1, 0); PSMoveUtils.SetVibration(Player.PLAYER.P2, 0); 
+            PSMoveUtils.SetVibration(Player.PLAYER.P1, 0); 
+            PSMoveUtils.SetVibration(Player.PLAYER.P2, 0); 
             // Physics.IgnoreCollision(other.collider, katana_1.GetComponent<Collider>(), false);
         
             // Detruit l'effet de collision

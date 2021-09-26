@@ -35,7 +35,7 @@ public class Tracker_1 : MonoBehaviour
         //offset = new CamOffset();
         userDir = Environment.GetFolderPath(System.Environment.SpecialFolder.UserProfile);
         userDir += "\\Documents\\data.json";
-        canTrack = true;
+        //canTrack = true;
         //StartCoroutine(Tracker());
     }
 

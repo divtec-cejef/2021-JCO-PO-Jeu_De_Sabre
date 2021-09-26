@@ -34,12 +34,15 @@ namespace Mouvements.Parade
         
         private bool isCanceled;
 
+        private bool hasDisabled;
+
         public void Init(float paradeTimer, GameObject paradeFx1, GameObject paradeFx2, GameObject paradeFxPos, GameObject katanaAxis,
             Player.PLAYER player, KatanaOrientation katanaOrientation, Slider paradeSlider)
         {
             SetParade(false);
             SetReady(true);
             SetCanceled(false);
+            hasDisabled = false;
             this.player = player;
             this.paradeTimer = paradeTimer;
             this.paradeFx1 = paradeFx1;
@@ -56,7 +59,12 @@ namespace Mouvements.Parade
         /// </summary>
         public void OnParadeEnabled()
         {
-            PSMoveUtils.SetVibration(player, 255);
+            if (player == Player.PLAYER.P1)
+                GameInit._player1Character.GetComponent<CapsuleCollider>().enabled = false;
+            else
+                GameInit._player2Character.GetComponent<CapsuleCollider>().enabled = false;
+            
+            //PSMoveUtils.SetVibration(player, 255);
 
             var rotation = paradeFxPos.transform.rotation;
             var position = paradeFxPos.transform.position;
@@ -116,11 +124,15 @@ namespace Mouvements.Parade
         /// </summary>
         public void OnParadeDisabled()
         {
+            if (player == Player.PLAYER.P1)
+                GameInit._player1Character.GetComponent<CapsuleCollider>().enabled = true;
+            else
+                GameInit._player2Character.GetComponent<CapsuleCollider>().enabled = true;
+
             
             GameInit.GetUiUpdater().OnParadeDisabled(player);
             SetParade(false);
             katanaOrientation.CanMove(true);
-            PSMoveUtils.SetVibration(player, 0);
         }
         
         /// <summary>

@@ -33,6 +33,11 @@ public class EmoteHandler : MonoBehaviour
         timer = 0;
     }
 
+    public EmoteHandler(GameObject playerFace)
+    {
+        this.playerFace = playerFace;
+    }
+    
     public void SetEmote(EMOTE_TYPE type, GameObject playerFace, float resetTime, bool resetFace)
     {
         playerFace.GetComponent<Renderer>().material = GetRandomEmote(type, playerFace, resetTime, resetFace);
@@ -115,9 +120,16 @@ public class EmoteHandler : MonoBehaviour
         CollisionPlayers._player2Face.GetComponent<Renderer>().material = GetRandomEmote(EMOTE_TYPE.HAPPY, playerFace, 0, false);
     }
     
-    public void menacingEffect(Player.PLAYER player)
+    public void MenacingEffect(Player.PLAYER player)
     {
         EmotePlayer.SetMenacingEffect(player);
+        angry = EmotePlayer.GetAngryEmote();
+        print(angry.Count);
         playerFace.GetComponent<Renderer>().material = angry[0];
+    }
+
+    public void SetDeathEmote()
+    {
+        playerFace.GetComponent<Renderer>().material = EmotePlayer.GetDeathEmote()[0];
     }
 }

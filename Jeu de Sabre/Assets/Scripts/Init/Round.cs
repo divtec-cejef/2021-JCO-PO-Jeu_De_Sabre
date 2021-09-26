@@ -45,6 +45,11 @@ namespace Init
 
         public void StartNextRound()
         {
+            if(Random.Range(0,2) == 0)
+                GameInit.GetEmoteHandler(Player.PLAYER.P1).MenacingEffect(Player.PLAYER.P1);
+            else
+                GameInit.GetEmoteHandler(Player.PLAYER.P2).MenacingEffect(Player.PLAYER.P2);
+            
             currentRoundTimer = GameInit.GetGameConfig().game_time;
             isRoundAborted = false;
             isRoundFinished = false;
@@ -110,7 +115,6 @@ namespace Init
         public void ResetRound()
         {
             Stamina.Reset();
-            GameInit.GetEmoteHandler(Player.PLAYER.P1).Reset();
             GameInit.GetUiUpdater().RefreshHUD();
             GameInit.GetPlayer1KatanaOrientation().CanMove(false);
             GameInit.GetPlayer2KatanaOrientation().CanMove(false);
