@@ -1,0 +1,24 @@
+# Starting compiling UnityEngine.TestRunner.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-cc92a766151d05348a255c7acd9b65e7
+# Starting compiling UnityEngine.UI.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-baf00d925318d614ba5488092e74972d
+# Starting compiling Boxophobic.Utils.Scripts.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-9aa4dad8123648b408d5e7aaf6442bb0
+# Starting compiling Unity.Postprocessing.Runtime.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-63de3b84285bdfa45a473a31a2485a53
+# Starting compiling Unity.Formats.Fbx.Runtime.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-4076a78e07fcbba41bc8ef2b52d24561
+# Starting compiling Unity.Timeline.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-a2a27670dbd429441a736ad361cacd11
+# Starting compiling Unity.TextMeshPro.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-86386e9687ce55b499e52e2a7c0b10a1
+# Starting compiling Unity.InputSystem.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-a89a56af430da5d458bf2f46add96923
+# Starting compiling Autodesk.Fbx.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-f9821c07abcfc71418f826808b2aff7a
+# Starting compiling FbxBuildTestAssets.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-8a7784e829995434eba6da83c2779b1b
+# Starting compiling Cinemachine.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-ccc0cd5d40ac2354dbda9db3a8a51b3c
+# Starting compiling Assembly-CSharp.dll
+F:\Programmes\BigUnity\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-edff7e9bfa0c8944da6f8bdf6d5d2223

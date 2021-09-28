@@ -1,3 +1,4 @@
+using System.Collections;
 using Init;
 using Players;
 using UnityEngine;
@@ -9,6 +10,9 @@ namespace Collisions
         [SerializeField] private GameObject collisionFx;
         
         private GameObject collision;
+
+        public static bool _isPlayer1Stun;
+        public static bool _isPlayer2Stun;
     
         private void OnCollisionEnter(Collision other)
         {
@@ -28,12 +32,14 @@ namespace Collisions
             if (GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParade())
             {
                 Player.SetStamina(Player.PLAYER.P2, 0);
+                StartCoroutine(StaminaCooldown(Player.PLAYER.P2));
             }
         
             // Si le joueur 2 est en parade, baisse de la stamina du joueur 1
             else if (GameInit.GetPlayer2KatanaOrientation().GetPlayerParade().GetParade())
             {
                 Player.SetStamina(Player.PLAYER.P1, 0);
+                StartCoroutine(StaminaCooldown(Player.PLAYER.P1));
             }
         
             print("1 : " + GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParade() + ". 2 : " +
@@ -62,6 +68,30 @@ namespace Collisions
         
             // Detruit l'effet de collision
             Destroy(collision, 0.2f);
+        }
+
+        IEnumerator StaminaCooldown(Player.PLAYER player)
+        {
+            if (player == Player.PLAYER.P1)
+            {
+                Stamina.CanPlayer1Regen(false);
+                _isPlayer1Stun = true;
+                GameInit._player1StunEffect.gameObject.SetActive(true);
+                yield return new WaitForSeconds(GameInit.GetGameConfig().parade_stun);
+                GameInit._player1StunEffect.gameObject.SetActive(false);
+                _isPlayer1Stun = false;
+                Stamina.CanPlayer1Regen(true);
+            }
+            else
+            {
+                Stamina.CanPlayer2Regen(false);
+                _isPlayer2Stun = true;
+                GameInit._player2StunEffect.gameObject.SetActive(true);
+                yield return new WaitForSeconds(GameInit.GetGameConfig().parade_stun);
+                GameInit._player2StunEffect.gameObject.SetActive(false);
+                _isPlayer2Stun = false;
+                Stamina.CanPlayer2Regen(true);
+            }
         }
     }
 }

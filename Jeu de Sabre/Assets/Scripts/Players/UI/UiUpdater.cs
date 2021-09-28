@@ -540,13 +540,11 @@ namespace Players.UI
             {
                 case Player.PLAYER.P1:
                 {
-                    Stamina.CanPlayer1Regen(true);
-                
                     Parade parade = GameInit.GetPlayer1KatanaOrientation().GetPlayerParade();
                     float timer = parade.GetParadeTimer();
                     if (timer < GameInit.GetGameConfig().parade_duration)
                     {
-                        timer += 1f * Time.deltaTime;
+                        timer += (1f / GameInit.GetGameConfig().parade_recovery) * Time.deltaTime;
                     }
                     else
                     {
@@ -560,13 +558,11 @@ namespace Players.UI
                 }
                 case Player.PLAYER.P2:
                 {
-                    Stamina.CanPlayer2Regen(true);
-                
                     Parade parade = GameInit.GetPlayer2KatanaOrientation().GetPlayerParade();
                     float timer = parade.GetParadeTimer();
                     if (timer < GameInit.GetGameConfig().parade_duration)
                     {
-                        timer += 1f * Time.deltaTime;
+                        timer += (1f / GameInit.GetGameConfig().parade_recovery) * Time.deltaTime;
                     }
                     else
                     {

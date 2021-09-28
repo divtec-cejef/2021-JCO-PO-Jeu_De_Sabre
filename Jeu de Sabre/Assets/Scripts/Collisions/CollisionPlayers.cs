@@ -350,7 +350,7 @@ namespace Collisions
                     timerEnd = false;
 
                     // Mise à jour de la vie du joueur et récupération de son état
-                    bool playerStatus = Player.DecreasePlayerHealth(player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1, GameInit.GetGameConfig().player_health_decrease);
+                    bool playerStatus = Player.DecreasePlayerHealth(player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1, (int)(GameInit.GetGameConfig().player_health_decrease * GameInit.GetGameConfig().stun_multiplier));
                     
                     // Clignotement de la barre de vie du joueur qui vient de se prendre un coup
                     if(GameInit.GetUiUpdater().canHealthBlink(player == Player.PLAYER.P1 ? Player.PLAYER.P2 : Player.PLAYER.P1))
@@ -375,7 +375,7 @@ namespace Collisions
                         }
                     }
 
-                    int scorePlus;
+                    float scorePlus;
                     
                     // Si le joueur est mort, fin du round et point bonus
                     if (!playerStatus)
@@ -387,9 +387,21 @@ namespace Collisions
                     {
                         scorePlus = GameInit.GetGameConfig().attack_score_amount;
                     }
+
+                    if (player == Player.PLAYER.P1)
+                    {
+                        if (CollisionSabres._isPlayer2Stun)
+                            scorePlus *= GameInit.GetGameConfig().stun_multiplier;
+                    }
+                    
+                    if (player == Player.PLAYER.P2)
+                    {
+                        if (CollisionSabres._isPlayer1Stun)
+                            scorePlus *= GameInit.GetGameConfig().stun_multiplier;
+                    }
                     
                     // Mise à jour du score du joueur 
-                    Player.UpdatePlayerScore(player, scorePlus);
+                    Player.UpdatePlayerScore(player, (int)scorePlus);
                     
                     // Lancement de l'animation de gain de points
                     GameInit.GetUiUpdater().PlayerScorePlusAnimation(player, scorePlus.ToString());

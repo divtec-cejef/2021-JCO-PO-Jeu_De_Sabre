@@ -1,4 +1,5 @@
 using Init;
+using Players;
 using UnityEngine;
 
 namespace Mouvements.Orientation
@@ -38,6 +39,7 @@ namespace Mouvements.Orientation
             // Au relachement de la parade
             if (Input.GetKeyUp(KeyCode.Q) && player1KatanaOrientation.GetPlayerParade().GetParade())
             {
+                Stamina.CanPlayer1Regen(true);
                 player1KatanaOrientation.GetPlayerParade().SetParade(false);
             } 
         

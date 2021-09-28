@@ -211,6 +211,14 @@ namespace Players
                     OnExthaustedDisabled(Player.PLAYER.P2);
             }
 
+            if (!CollisionSabres._isPlayer1Stun &&
+                !GameInit.GetPlayer1KatanaOrientation().GetPlayerParade().GetParade())
+                _canPlayer1Regen = true;
+            
+            if (!CollisionSabres._isPlayer2Stun && 
+                !GameInit.GetPlayer2KatanaOrientation().GetPlayerParade().GetParade())
+                _canPlayer2Regen = true;
+            
             //print("PLAYER 1 CAN REGEN " + _canPlayer1Regen + " - PLAYER 2 CAN REGEN " + _canPlayer2Regen);
             
             if(_canPlayer1Regen)
@@ -247,11 +255,11 @@ namespace Players
         {
             return _canPlayer1Regen;
         }
-        
+
         /// <summary>
         /// Permet de modifier si le joueur 2 peut régénérer
         /// </summary>
-        /// <param name="canPlayer1Regen">Est-ce que le joueur 2 peut régénérer</param>
+        /// <param name="canPlayer2Regen">Est-ce que le joueur 2 peut régénérer</param>
         public static void CanPlayer2Regen(bool canPlayer2Regen)
         {
             Stamina._canPlayer2Regen = canPlayer2Regen;

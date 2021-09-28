@@ -11,8 +11,10 @@ namespace Init
         public int run_out_of_time;
         
         public float parade_duration;
+
+        public float parade_recovery;
         
-        public int parade_multiplier;
+        public int parade_stun;
         
         public float parade_stamina_decrease_rate;
         
@@ -26,7 +28,7 @@ namespace Init
         
         public float attack_stamina_decrease;
         
-        public int stun_multiplier;
+        public float stun_multiplier;
         
         public float katana_lerp_duration;
 

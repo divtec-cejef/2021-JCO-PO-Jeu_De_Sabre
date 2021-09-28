@@ -291,8 +291,14 @@ namespace Init
         [SerializeField] private AudioSource soundHurt7;
         [SerializeField] private AudioSource soundHurt8;
 
+        [SerializeField] private ParticleSystem player1StunEffect;
+        [SerializeField] private ParticleSystem player2StunEffect;
+
         public static GameObject _player1Character;
         public static GameObject _player2Character;
+
+        public static ParticleSystem _player1StunEffect;
+        public static ParticleSystem _player2StunEffect;
         
         public static bool isGamePaused;
         
@@ -307,6 +313,10 @@ namespace Init
          {
              _player1Character = player1Character;
              _player2Character = player2Character;
+             
+             _player1StunEffect = player1StunEffect;
+             _player2StunEffect = player2StunEffect;
+             
              // Réinitiation des scores afin d'éviter de récupérer ceux des anciens joueurs
              Player.ReinitScore(Player.PLAYER.P1);
              Player.ReinitScore(Player.PLAYER.P2);
@@ -857,7 +867,9 @@ namespace Init
             
             
             if (winner == Player.PLAYER.P1)
-            {_soundHandler.GetSoundDeath().Play();
+            {
+                player2StunEffect.gameObject.SetActive(true);
+                _soundHandler.GetSoundDeath().Play();
                 // Activation de l'animation de chute pour le joueur 2
                 AttackMouvements.animeP2.SetBool("isDead", true);
                 AttackMouvements.animeP2Trans.SetBool("isDead", true);
@@ -884,7 +896,9 @@ namespace Init
                 player2Dust.Play();
             }
             else if (winner == Player.PLAYER.P2)
-            {_soundHandler.GetSoundDeath().Play();
+            {
+                player1StunEffect.gameObject.SetActive(true);
+                _soundHandler.GetSoundDeath().Play();
                 // Activation de l'animation de chute pour le joueur 1
                 AttackMouvements.animeP1.SetBool("isDead", true);
                 AttackMouvements.animeP1Trans.SetBool("isDead", true);
@@ -994,6 +1008,9 @@ namespace Init
             player2TransLegs.GetComponent<Renderer>().material.color = col;
             player2TransBody.GetComponent<Renderer>().material.color = col;
             player2TransHat.GetComponent<Renderer>().material.color = col;
+            
+            player1StunEffect.gameObject.SetActive(false);
+            player2StunEffect.gameObject.SetActive(false);
 
             GetEmoteHandler(Player.PLAYER.P1).Reset();
 
