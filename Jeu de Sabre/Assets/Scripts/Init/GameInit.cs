@@ -1173,7 +1173,7 @@ namespace Init
                 {
                     UpdateRoundHUD(_round.winners[i], i+1);
                 }
-            }
+            } 
 
             // Disparition du fondu au noir
             while (blackPannel.GetComponent<Image>().color.a > 0)

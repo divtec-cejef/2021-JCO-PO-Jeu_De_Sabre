@@ -238,6 +238,10 @@ namespace Players.UI
             countdownText.text = text;
         }
 
+        /// <summary>
+        /// Clignotement de l'endurance
+        /// </summary>
+        /// <param name="player">Le joueur auquel ou souhaite faire clignoter l'endurance</param>
         public IEnumerator DispalayLowStamina(Player.PLAYER player)
         {
             if (player == Player.PLAYER.P1) canP1Blink = false;
@@ -272,6 +276,11 @@ namespace Players.UI
             if (player == Player.PLAYER.P1) canP1Blink = true;
             else canP2Blink = true;
         }
+        
+        /// <summary>
+        /// Clignotement de l'endurance
+        /// </summary>
+        /// <param name="player">Le joueur auquel ou souhaite faire clignoter l'endurance</param>
         public IEnumerator DispalayLowStaminaFill(Player.PLAYER player)
         {
             Image sliderFill = player == Player.PLAYER.P1 ? player1StaminaSliderFill : player2StaminaSliderFill;
@@ -299,6 +308,10 @@ namespace Players.UI
                 counter++;
             }
         }
+        /// <summary>
+        /// Clignotement de l'endurance
+        /// </summary>
+        /// <param name="player">Le joueur auquel ou souhaite faire clignoter l'endurance</param>
         public IEnumerator DispalayLowStaminaIcon(Player.PLAYER player)
         {
             Image staminaIcon = player == Player.PLAYER.P1 ? player1StaminaIcon : player2StaminaIcon;
@@ -337,6 +350,10 @@ namespace Players.UI
             return player == Player.PLAYER.P1 ? canP1HealBlink : canP2HealBlink;
         }
 
+        /// <summary>
+        /// Lancement de l'animation de gain de score
+        /// </summary>
+        /// <param name="player">Le joueur auquel ou souhaite afficher le gain de score</param>
         public void PlayerScorePlusAnimation(Player.PLAYER player, string text)
         {
             gameInit.GetComponent<GameInit>().PlayScorePlusAnimation(player, text);

@@ -68,6 +68,10 @@ public class EmotePlayer : MonoBehaviour
         _player2Menacing.Stop();
     }
 
+    /// <summary>
+    /// Permet de récupérer les emotes SAD
+    /// </summary>
+    /// <returns>Une liste d'emote SAD</returns>
     public static List<Material> GetSadEmote()
     {
         List<Material> sad = new List<Material>();
@@ -78,6 +82,10 @@ public class EmotePlayer : MonoBehaviour
         return sad;
     }
     
+    /// <summary>
+    /// Permet de récupérer les emotes ANGRY
+    /// </summary>
+    /// <returns>Une liste d'emote ANGRY</returns>
     public static List<Material> GetAngryEmote()
     {
         List<Material> angry = new List<Material>();
@@ -90,6 +98,10 @@ public class EmotePlayer : MonoBehaviour
         return angry;
     }
     
+    /// <summary>
+    /// Permet de récupérer les emotes HURT
+    /// </summary>
+    /// <returns>Une liste d'emote HURT</returns>
     public static List<Material> GetHurtEmote()
     {
         List<Material> hurt = new List<Material>();
@@ -100,6 +112,10 @@ public class EmotePlayer : MonoBehaviour
         return hurt;
     }
     
+    /// <summary>
+    /// Permet de récupérer les emotes HAPPY
+    /// </summary>
+    /// <returns>Une liste d'emote HAPPY</returns>
     public static List<Material> GetHappyEmote()
     {
         List<Material> happy = new List<Material>();
@@ -110,6 +126,10 @@ public class EmotePlayer : MonoBehaviour
         return happy;
     }
     
+    /// <summary>
+    /// Permet de récupérer le emote EXHAUSTED
+    /// </summary>
+    /// <returns>Une liste d'emote EXHAUSTED</returns>
     public static List<Material> GetExhaustedEmote()
     {
         List<Material> exhausted = new List<Material>();
@@ -117,6 +137,10 @@ public class EmotePlayer : MonoBehaviour
         return exhausted;
     }
 
+    /// <summary>
+    /// Permet de récupérer le emote DEATH
+    /// </summary>
+    /// <returns>Une liste d'emote DEATH</returns>
     public static List<Material> GetDeathEmote()
     {
         List<Material> death = new List<Material>();
@@ -124,9 +148,12 @@ public class EmotePlayer : MonoBehaviour
         return death;
     }
     
+    /// <summary>
+    /// Permet d'appliquer l'effet de menage
+    /// </summary>
+    /// <param name="player">Le joueur auquel on souhaite ajouter l'effet</param>
     public static void SetMenacingEffect(Player.PLAYER player)
     {
-        
         if(player == Player.PLAYER.P1)
         {
             _player1Menacing.Play(); 

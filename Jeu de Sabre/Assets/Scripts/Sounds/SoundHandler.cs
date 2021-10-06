@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Sounds
 {
-    public class SoundHandler
+    public class SoundHandler 
     {
         public AudioSource soundGong1;
         public AudioSource soundGong2;
@@ -29,6 +29,10 @@ namespace Sounds
         public AudioSource soundHurt7;
         public AudioSource soundHurt8;
         
+        /// <summary>
+        /// Permet de récupérer un son de collision aléatoire
+        /// </summary>
+        /// <returns>Le son</returns>
         public AudioSource GetSoundCollision()
         {
             float pitch = Random.Range(0.9f, 1.3f);
@@ -42,6 +46,10 @@ namespace Sounds
             return soundCollision2;
         }
         
+        /// <summary>
+        /// Permet de récupérer un son de slash aléatoire
+        /// </summary>
+        /// <returns>Le son</returns>
         public AudioSource GetSoundSlash()
         {
             float pitch = Random.Range(0.9f, 1.3f);
@@ -61,6 +69,10 @@ namespace Sounds
             return soundSlash3;
         }
 
+        /// <summary>
+        /// Permet de récupérer un son de mort aléatoire
+        /// </summary>
+        /// <returns>Le son</returns>
         public AudioSource GetSoundDeath()
         {
             float pitch = Random.Range(0.9f, 1.3f);

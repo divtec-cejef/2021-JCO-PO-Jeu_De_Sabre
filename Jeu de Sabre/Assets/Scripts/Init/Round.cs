@@ -14,10 +14,15 @@ namespace Init
         private bool isRoundFinished;
         public bool isRoundAborted;
 
+        // List des gagnants 
         public List<Player.PLAYER> winners;
 
+        /// <summary>
+        /// Constructeur du Round
+        /// </summary>
         public Round()
         {
+            // Initialisation des valeurs du round
             winners = new List<Player.PLAYER>();
             currentRoundTimer = GameInit.GetGameConfig().game_time;
             isRoundAborted = false;
@@ -30,36 +35,55 @@ namespace Init
             return roundNumber;
         }
 
+        /// <summary>
+        /// Permet de stopper le round et de le réinitialiser
+        /// </summary>
+        /// <returns>Est-ce que le round était le dernier</returns>
         public bool StopRound()
         {
+            // Réinitialisation de toute les valeurs unique à un round
             CollisionPlayers.attack.DisableAnimation();
             GameInit.GetUiUpdater().UpdateRoundHUD(GetRoundWinner(false), roundNumber);
             GameInit.GetUiUpdater().SetCountdownText("-");
             CollisionPlayers.canAttack = false;
             ResetRound();
+            
+            // Mise à jour du round et vérification du dernier
             if (roundNumber == 3)
                 return true;
             roundNumber++;
             return false;
         }
 
+        /// <summary>
+        /// Lancement du prochain round
+        /// </summary>
         public void StartNextRound()
         {
+            // Activation de l'effet de menace sur un des deux joueur
             if(Random.Range(0,2) == 0)
                 GameInit.GetEmoteHandler(Player.PLAYER.P1).MenacingEffect(Player.PLAYER.P1);
             else
                 GameInit.GetEmoteHandler(Player.PLAYER.P2).MenacingEffect(Player.PLAYER.P2);
             
+            // Réinitialisation de certaine valeur
             currentRoundTimer = GameInit.GetGameConfig().game_time;
             isRoundAborted = false;
             isRoundFinished = false;
+            
+            // Lancement du timer
             StartCoroutine(CountdownTimer());
         }
         
+        /// <summary>
+        /// Permet de lancer le timer du round tant qu'il n'est pas terminé ou que le round n'est pas arrêté prématurément
+        /// </summary>
         IEnumerator RoundTimer()
         {
+            // Boucle infinie tant que le round est en cours
             while (!isRoundAborted && !isRoundFinished)
             {
+                // Baisse du timer et mise à jour de l'affichage
                 if (currentRoundTimer > 0)
                 {
                     currentRoundTimer -= Time.deltaTime;
@@ -72,9 +96,14 @@ namespace Init
 
                 yield return new WaitForEndOfFrame();
             }
+            // Appel de la fonction appelé la fin du timer
             GetComponent<GameInit>().OnTimerEnd();
         }
         
+        /// <summary>
+        /// Permet d'afficher le décompte au début du round
+        /// </summary>
+        /// <returns></returns>
         IEnumerator CountdownTimer()
         {
             yield return new WaitForSeconds(1.5f);
@@ -95,11 +124,18 @@ namespace Init
             StartCoroutine(RoundTimer());
         }
 
+        /// <summary>
+        /// Permet de récupérer le gagnant du round qui vient d'être joué
+        /// </summary>
+        /// <param name="insertPlayer">Est-ce que le gagnant doit-être inscrit dans la liste</param>
+        /// <returns></returns>
         public Player.PLAYER GetRoundWinner(bool insertPlayer)
         {
+            // Récupération de la vie des deux joueurs
             int heal1 = Player.GetPlayerHealth(Player.PLAYER.P1);
             int heal2 = Player.GetPlayerHealth(Player.PLAYER.P2);
 
+            // Détermination du gagnant
             Player.PLAYER winner = Player.PLAYER.Other;
             
             if (heal1 > heal2)
@@ -107,11 +143,14 @@ namespace Init
             if (heal2 > heal1)
                 winner = Player.PLAYER.P2;
             
-            // Egalité au niveau de la vie
+            // Si il faut inscrire le joueur, ajout dans la liste
             if(insertPlayer) winners.Add(winner);
             return winner;
         }
         
+        /// <summary>
+        /// Permet de réinitialiser le round
+        /// </summary>
         public void ResetRound()
         {
             Stamina.Reset();

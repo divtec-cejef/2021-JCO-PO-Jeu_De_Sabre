@@ -6,7 +6,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637683417298187601
+      ticks: 637689443497928275
     m_Hash: 2211515560
   m_LockFileStatus:
     m_FilePath: C:/Users/Katana No Tatakai/Documents/GitHub/2021-JCO-PO-Jeu_De_Sabre/Jeu
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637683417298591753
+      ticks: 637689443498168135
     m_Hash: 518315582
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -214,6 +214,8 @@ m_PackageAssets:
         - 1.9.0
         - 1.10.2
         - 1.11.2
+        - 1.12.5
+        - 1.13.5
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -231,6 +233,7 @@ m_PackageAssets:
         - 1.6.0
         - 1.8.0
         - 1.10.2
+        - 1.12.5
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15

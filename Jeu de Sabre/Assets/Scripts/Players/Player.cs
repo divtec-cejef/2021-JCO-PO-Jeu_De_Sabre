@@ -19,38 +19,64 @@ namespace Players
             Other
         }
 
+        /// <summary>
+        /// Permet de récupérer le nom du joueur passé en paramètre
+        /// </summary>
+        /// <param name="player">Le joueur auquel on souhaite connaitre le nom</param>
+        /// <returns>Le nom du joueur</returns>
         public static String GetPlayerName(PLAYER player)
         {
             return player == PLAYER.P1 ? player1Name : player2Name;
         }
 
+        /// <summary>
+        /// Permet de modifier le nom des joueurs
+        /// </summary>
+        /// <param name="name1">Nom du joueur 1</param>
+        /// <param name="name2">Nom du joueur 2</param>
         public static void SetPlayerNames(String name1, String name2)
         {
             player1Name = name1;
             player2Name = name2;
         }
 
+        /// <summary>
+        /// Permet de connaitre la couleur du joueur passé en paramètre
+        /// </summary>
+        /// <param name="player">Le joueur auquel on souhaite connaitre la couleur</param>
+        /// <returns>La couleur du joueur</returns>
         public static int GetPlayerColor(PLAYER player)
         {
             return player == PLAYER.P1 ? player1Color : player2Color;
         }
         
+        /// <summary>
+        /// Permet de changer la couleur des joueurs
+        /// </summary>
+        /// <param name="color1">La couleur du joueur 1</param>
+        /// <param name="color2">La couleur du joueur 2</param>
         public static void SetPlayerColors(int color1, int color2)
         {
             player1Color = color1;
             player2Color = color2;
         }
 
-        // public static void ApplyPlayerColor(GameObject hat1, GameObject body1, GameObject leg1, int color1, GameObject hat2, GameObject body2, GameObject leg2, int color2)
-        // {
-        //     ApplyPlayerColor(hat1, body1, leg1, color1, hat2, body2, leg2, color2);
-        // }
-        
+        /// <summary>
+        /// Permet de faire descendre la vie du joueur passé en paramètre
+        /// </summary>
+        /// <param name="player">Le joueur auquel on souhaite faire baisser la vie</param>
+        /// <param name="amount">La valeur de vie à baisser</param>
+        /// <returns>Est-ce que la vie a pu etre baissé</returns>
         public static bool DecreasePlayerHealth(PLAYER player, int amount)
         {
             return Health.DecreaseHealth(player, amount);
         }
 
+        /// <summary>
+        /// Permet de récupérer la vie du joueur passé en paramètre
+        /// </summary>
+        /// <param name="player">Le joueur auquel on souhaite récupérer la vie</param>
+        /// <returns>La vie du joueur</returns>
         public static int GetPlayerHealth(PLAYER player)
         {
             return Health.GetPlayerHealth(player);

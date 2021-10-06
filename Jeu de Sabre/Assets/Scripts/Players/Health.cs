@@ -5,6 +5,7 @@ namespace Players
 {
     public class Health : MonoBehaviour
     {
+        // La vie des joueurs
         private static int _player1Health;
         private static int _player2Health;
 
@@ -14,6 +15,12 @@ namespace Players
             _player2Health = GameInit.GetGameConfig().player_health_amount;
         }
 
+        /// <summary>
+        /// Permet de faire descendre la vie du joueur passé en paramètre
+        /// </summary>
+        /// <param name="player">Le joueur auquel on souhaite faire baisser la vie</param>
+        /// <param name="amount">La valeur de vie à baisser</param>
+        /// <returns>Est-ce que la vie a pu etre baissé</returns>
         public static bool DecreaseHealth(Player.PLAYER player, int amount)
         {
             switch (player)
@@ -47,11 +54,19 @@ namespace Players
             }
         }
 
+        /// <summary>
+        /// Permet de récupérer la vie du joueur passé en paramètre
+        /// </summary>
+        /// <param name="player">Le joueur auquel on souhaite récupérer la vie</param>
+        /// <returns>La vie du joueur</returns>
         public static int GetPlayerHealth(Player.PLAYER player)
         {
             return player == Player.PLAYER.P1 ? _player1Health : _player2Health;
         }
 
+        /// <summary>
+        /// Permet de réinitialiser la vie
+        /// </summary>
         public static void Reset()
         {
             _player1Health = GameInit.GetGameConfig().player_health_amount;

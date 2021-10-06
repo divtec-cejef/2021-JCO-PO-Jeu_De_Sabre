@@ -4,6 +4,7 @@ namespace Camera
 {
     public class MultiDisplay : MonoBehaviour
     {
+        // On l'utilise plus 
         private void Awake()
         {
             // Affichage du nombre d'écran connecté

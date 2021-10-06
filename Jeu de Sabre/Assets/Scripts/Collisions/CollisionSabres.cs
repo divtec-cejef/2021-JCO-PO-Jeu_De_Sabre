@@ -70,13 +70,21 @@ namespace Collisions
             Destroy(collision, 0.2f);
         }
 
+        /// <summary>
+        /// Ajoute un cooldown à la remontée de l'endurance
+        /// </summary>
+        /// <param name="player">Le joueur affecté par le cooldown</param>
         IEnumerator StaminaCooldown(Player.PLAYER player)
         {
             if (player == Player.PLAYER.P1)
             {
+                // Bloque la régénération de l'endurance
                 Stamina.CanPlayer1Regen(false);
+                // Indication que le joueur est paralysé
                 _isPlayer1Stun = true;
+                // Activation de l'effet d'étoile
                 GameInit._player1StunEffect.gameObject.SetActive(true);
+                // Attente en fonction des valeurs renseignées dans le fichier de configuration
                 yield return new WaitForSeconds(GameInit.GetGameConfig().parade_stun);
                 GameInit._player1StunEffect.gameObject.SetActive(false);
                 _isPlayer1Stun = false;
@@ -84,9 +92,13 @@ namespace Collisions
             }
             else
             {
+                // Bloque la régénération de l'endurance
                 Stamina.CanPlayer2Regen(false);
+                // Indication que le joueur est paralysé
                 _isPlayer2Stun = true;
+                // Activation de l'effet d'étoile
                 GameInit._player2StunEffect.gameObject.SetActive(true);
+                // Attente en fonction des valeurs renseignées dans le fichier de configuration
                 yield return new WaitForSeconds(GameInit.GetGameConfig().parade_stun);
                 GameInit._player2StunEffect.gameObject.SetActive(false);
                 _isPlayer2Stun = false;

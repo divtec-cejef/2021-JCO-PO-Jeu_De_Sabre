@@ -8,6 +8,11 @@ namespace Init
 
         private IntPtr player2Controller;
 
+        /// <summary>
+        /// Constructeur de ControllerHandler
+        /// </summary>
+        /// <param name="player1Controller">La manette du joueur 1</param>
+        /// <param name="player2Controller">La manette du joueur 2</param>
         public ControllerHandler(IntPtr player1Controller, IntPtr player2Controller)
         {
             this.player1Controller = player1Controller;

@@ -273,8 +273,10 @@ namespace Players
         {
             return _canPlayer2Regen;
         }
-
-
+        
+        /// <summary>
+        /// Permet de réinitialiser l'endurance
+        /// </summary>
         public static void Reset()
         {
             _player1ExhaustedFx1.SetActive(false);

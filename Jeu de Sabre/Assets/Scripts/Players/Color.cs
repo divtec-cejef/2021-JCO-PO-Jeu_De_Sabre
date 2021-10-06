@@ -5,7 +5,6 @@ namespace Players
 {
     public class Color : MonoBehaviour
     {
-        
         [SerializeField] private Material playerRedHat;
         [SerializeField] private Material playerBlueHat;
         [SerializeField] private Material playerGreenHat;
@@ -58,8 +57,9 @@ namespace Players
         [SerializeField] private Material playerCyanClothesTrans;
         [SerializeField] private Material playerLimeClothesTrans;
         
-        
-
+        /// <summary>
+        /// Permet d'appliquer les bonnes couleurs au joueur
+        /// </summary>
         public void ApplyPlayerColor(GameObject hat1, GameObject body1, GameObject leg1, int color1, GameObject hat2, GameObject body2, GameObject leg2, int color2,
         GameObject hatTrans1, GameObject bodyTrans1, GameObject legTrans1, GameObject hatTrans2, GameObject bodyTrans2, GameObject legTrans2,
         GameObject main1G, GameObject main1D, GameObject main2G, GameObject main2D)
@@ -147,6 +147,7 @@ namespace Players
                 _ => playerRedHatTrans
             };
             
+            // Application des couleurs et des materiaux au objet
             main1D.GetComponent<Renderer>().material.color = player1TransColor;
             main1G.GetComponent<Renderer>().material.color = player1TransColor;
             
@@ -240,7 +241,7 @@ namespace Players
                 12 => playerLimeHatTrans,
                 _ => playerRedHatTrans
             };
-            
+            // Application des couleurs et des materiaux au objet
             main2D.GetComponent<Renderer>().material.color = player2TransColor;
             main2G.GetComponent<Renderer>().material.color = player2TransColor;
             

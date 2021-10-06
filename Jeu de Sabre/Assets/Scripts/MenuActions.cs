@@ -224,7 +224,10 @@ public class MenuActions : MonoBehaviour
             id2 = Int32.MinValue;
         }
     }
-    
+    /// <summary>
+    /// Permet de récupérer les données des joueurs dans la base de données
+    /// </summary>
+    /// <returns>Est-ce qu'une erreur est survenue</returns>
     public bool GetData()
     {
     

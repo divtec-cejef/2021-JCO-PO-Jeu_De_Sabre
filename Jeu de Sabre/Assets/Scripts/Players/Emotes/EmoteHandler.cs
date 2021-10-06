@@ -38,17 +38,27 @@ public class EmoteHandler : MonoBehaviour
         this.playerFace = playerFace;
     }
     
+    /// <summary>
+    /// Permet d'appliquer une emote au joueur
+    /// </summary>
+    /// <param name="type">Le type d'emote à appliquer</param>
+    /// <param name="playerFace">Le visage du joueur</param>
+    /// <param name="resetTime">Le temps après lequel l'emote revient de base</param>
+    /// <param name="resetFace">Faut-il réinitialisé le visage</param>
     public void SetEmote(EMOTE_TYPE type, GameObject playerFace, float resetTime, bool resetFace)
     {
         playerFace.GetComponent<Renderer>().material = GetRandomEmote(type, playerFace, resetTime, resetFace);
     }
-    
-    public void SetEmote(EMOTE_TYPE type, GameObject playerFace, bool resetFace)
-    {
-        playerFace.GetComponent<Renderer>().material = GetRandomEmote(type, playerFace, 1f, resetFace);
-    }
-    
-    
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="type"></param>
+    /// <param name="playerFace"></param>
+    /// <param name="resetTime"></param>
+    /// <param name="resetFace"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     public Material GetRandomEmote(EMOTE_TYPE type, GameObject playerFace, float resetTime, bool resetFace)
     {
         int rand;

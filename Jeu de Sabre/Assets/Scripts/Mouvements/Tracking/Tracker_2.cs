@@ -25,69 +25,24 @@ public class Tracker_2 : MonoBehaviour
     private String userDir;
     
     private Data data;
-    
-    //private CamOffset offset;
-    
+
     private void Awake()
     {
+        // Initialisation de l'emplacement du fichier Json
         canTrack = false;
         data = new Data();
-        //offset = new CamOffset();
         userDir = Environment.GetFolderPath(System.Environment.SpecialFolder.UserProfile);
         userDir += "\\Documents\\data1.json";
         canTrack = true;
-        //StartCoroutine(Tracker());
     }
 
-    // IEnumerator Tracker()
-    // {
-    //     while (true)
-    //     {
-    //         if (!canTrack) 
-    //             continue;
-    //         
-    //         String json = "";
-    //         String[] lines = null;
-    //         bool isReadable = true;
-    //         try
-    //         {
-    //             lines = System.IO.File.ReadAllLines(@userDir);
-    //         }
-    //         catch (Exception e)
-    //         {
-    //             isReadable = false;
-    //             print("Erreur de lecture");
-    //         }
-    //
-    //         if (isReadable)
-    //         {
-    //             foreach (String line in lines)
-    //             {
-    //                 json += line;
-    //             }
-    //
-    //             data = JsonUtility.FromJson<Data>(json);
-    //         }
-    //
-    //         X = data.x;
-    //         Y = data.y;
-    //         radius = data.z;
-    //
-    //         transform.localPosition = Vector3.Lerp(transform.localPosition,
-    //             new Vector3((xOffset + float.Parse(X) / xAmplitude) - offset.xOffset,
-    //                 (5 + float.Parse(Y) / yOffset) - offset.yOffset,
-    //                 (zOffset + zAmplitude * float.Parse(radius) + 0.7f- offset.zOffset)),
-    //             0.3f);
-    //
-    //         yield return new WaitForSeconds(0.05f);
-    //     }
-    // }
 
     private void Update()
     {
         if (!canTrack) 
             return;
         
+        // Récupération des valeurs du Json
         String json = "";
         String[] lines = null;
         bool isReadable = true;
@@ -114,7 +69,8 @@ public class Tracker_2 : MonoBehaviour
         X = data.x;
         Y = data.y;
         radius = data.z;
-
+        
+        // Application des valeurs au sabre
         transform.localPosition = Vector3.Lerp(transform.localPosition,
             new Vector3((xOffset + float.Parse(X) / xAmplitude),
                 (4.5f + float.Parse(Y) / yAmplitude),
@@ -122,23 +78,6 @@ public class Tracker_2 : MonoBehaviour
             0.3f);
     
     }
-    //
-    //
-    // private class CamOffset
-    // {
-    //     public float xOffset;
-    //     
-    //     public float yOffset;
-    //     
-    //     public float zOffset;
-    //
-    //     public CamOffset()
-    //     {
-    //         xOffset = 0;
-    //         yOffset = 4.5f;
-    //         zOffset = 0.7f;
-    //     }
-    // }
 
     [Serializable]
     private class Data
